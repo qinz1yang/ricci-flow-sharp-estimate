@@ -25,7 +25,7 @@ data. No linter is disabled. Syntax/style linters are enabled in ordinary
 compilation. The expected header license text is configured for this private,
 unlicensed project; all header checks remain active.
 
-The root aggregate is a real consumer of all twenty-one current modules. Importing it is required
+The root aggregate is a real consumer of all twenty-six current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -45,5 +45,10 @@ The [stability receipt](evidence/continuation-2/receipt.json),
 [axiom closure](evidence/continuation-2/axioms.txt), and
 [elaborated statements](evidence/continuation-2/signatures.txt) cover all twenty-one modules,
 including the actual weighted variance, obstacle anchor, explicit coercivity and hemisphere bounds.
-Independent review of the new layers is pending. All mandatory open mathematics is recorded
+The analytic layers passed scoped independent Round 1 review at `2302ad1`.
+The [smooth metric receipt](evidence/round-2/receipt.json),
+[axiom closure](evidence/round-2/axioms.txt), and
+[elaborated statements](evidence/round-2/signatures.txt) cover all twenty-six modules,
+including the smooth balanced-profile pole factors and actual sphere metric.
+Independent review of this geometric layer is pending. All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

@@ -1,0 +1,12 @@
+{
+  "source_sha256": "f7ecb8e44c1beb63a903de06c71b7890501cabc262068e13f8bca936fa95aafb",
+  "theorem_map_sha256": "64c757cf0ce58fda85e2e25f7753d75280793eab5bd98b499b7dc86447669185",
+  "labels": 32,
+  "references": 28,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; TeX engine unavailable",
+  "independent_review": "analytic section accepted at 2302ad1; new pole/metric section pending outer review"
+}

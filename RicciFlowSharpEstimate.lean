@@ -20,3 +20,8 @@ import RicciFlowSharpEstimate.Analysis.WeightedAnchor
 import RicciFlowSharpEstimate.Analysis.ReflectionEnergy
 import RicciFlowSharpEstimate.Variational.Stability
 import RicciFlowSharpEstimate.Variational.HemisphereStability
+import RicciFlowSharpEstimate.Analysis.SmoothFactor
+import RicciFlowSharpEstimate.Geometry.RotationalProfile
+import RicciFlowSharpEstimate.Geometry.RotationalPoleData
+import RicciFlowSharpEstimate.Geometry.RotationalSphereMetric
+import RicciFlowSharpEstimate.Geometry.BalancedSphereMetric

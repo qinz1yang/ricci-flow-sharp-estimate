@@ -8,9 +8,11 @@ strictness for differentiable competitors, and a quantitative exponential tangen
 estimate. The actual weighted variance identity and obstacle anchor now prove
 L² stability with constant `[12C/(5α) + log C/(2α³)]⁻¹`, including cap one,
 and the two hemisphere deficits control reflection and symmetrization errors.
-No geometric headline has yet been proved.
-The first layer passed independent review; the new variational layers and working
-manuscript await review.
+The native smooth metric producer now retains the original balanced profile,
+globally removable pole factors and actual sphere tensor law, with a scaled-round
+constant-profile witness. Curvature, volume, Hodge/Haar, CK and separation remain open.
+The complete analytic layer and current analytic manuscript passed scoped
+independent Round 1 review at `2302ad1`.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -33,11 +35,11 @@ isometry used for the two zonal components.
 
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
-| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Open; historical statements inspected only. |
-| All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem complete, including the actual `C=1` value. Independent acceptance pending. |
-| Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. Independent acceptance pending. |
-| Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent acceptance pending. |
-| Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form, subject to proving the new Haar equality bridge. | Open, including the equality bridge and all geometric producers. |
+| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Open; genuine smooth metric/pole producer is native, while curvature/volume, section jets and Haar/reduction remain required. |
+| All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
+| Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
+| Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
+| Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form, subject to proving the new Haar equality bridge. | Open, including the equality bridge and the remaining geometric producers. |
 | Structural separation | Plateau instability and valid geometric recovery give `C_rot<C_CK` for all one-forms in the same metric class, without a chosen rational intermediate cap. | Open. Exact unrestricted value is not claimed. |
 
 The formulas and additional exact calculations appear in
@@ -45,8 +47,9 @@ The formulas and additional exact calculations appear in
 [the stability derivation](research/stability.md), and
 [the geometric audit](research/geometry-audit.md). They are research records,
 not by themselves established paper results. The new working manuscript includes
-only claims mapped to native variational and stability proofs; geometric results
-remain absent as established claims.
+only claims mapped to native proofs. Its first geometric section proves smooth
+balanced-profile pole factors and the actual smooth positive sphere metric;
+the later geometric reductions and headlines remain absent as established claims.
 
 ## Shared dependency graph
 
@@ -62,7 +65,7 @@ flowchart TD
   A[Obstacle anchoring: native] --> S
   C --> S
   S --> N[Two-hemisphere near-symmetry: native]
-  G[Smooth metric and pole producers] --> H[Genuine Haar projection and canonical jets]
+  G[Smooth metric and pole producers: native] --> H[Genuine Haar projection and canonical jets]
   G --> J[Exact zonal reduction]
   H --> Q[Haar split and nonnegative remainder]
   W[Positive scalar Haar gap] --> Z[Zero remainder iff zero form]
@@ -84,8 +87,8 @@ Each box has one mathematical role; shared nodes are not reimplemented per
 headline. The analytic stability layer now uses actual interval means and primitives,
 the full normalized lower-obstacle weight, and the true calibrated deficit. Its
 general anchoring lemma derives every product's integrability from compact-interval
-continuity. The next native frontier is the genuine smooth metric, pole factors and
-section jets, followed by the Haar and dissipation bridges. Geometry proceeds through
+continuity. The next native frontier is the curvature/volume and actual section jets
+of the produced metric, followed by the Haar and dissipation bridges. Geometry proceeds through
 real producers, not by moving the historical aggregate into the new project.
 
 ## Corrected conventions and load-bearing risks
@@ -142,3 +145,10 @@ Those reference modules have no copyright/license header to copy. No historical
 module or blanket linter disable is imported. New file headers preserve the
 private project's absence of a license grant; the header linter remains enabled
 with its expected license text configured accordingly.
+
+The balanced-profile derivative and positivity arguments, pole-removal construction
+and rank-one metric method adapt the owner's historical `BalancedRotationalProfile`,
+`SmoothBalancedRotationalSphereMetric`, `RotationalSphereMetric` and
+`BalancedRotationalSphereMetric` sources. The released DG Hadamard theorem replaces
+the old quotient machinery. The metric construction uses current actual height
+derivatives and ambient tangent orthogonality; it imports no historical aggregate.

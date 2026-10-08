@@ -35,9 +35,14 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.ReflectionEnergy",
     "RicciFlowSharpEstimate.Variational.Stability",
     "RicciFlowSharpEstimate.Variational.HemisphereStability",
+    "RicciFlowSharpEstimate.Analysis.SmoothFactor",
+    "RicciFlowSharpEstimate.Geometry.RotationalProfile",
+    "RicciFlowSharpEstimate.Geometry.RotationalPoleData",
+    "RicciFlowSharpEstimate.Geometry.RotationalSphereMetric",
+    "RicciFlowSharpEstimate.Geometry.BalancedSphereMetric",
 ]
 OPTIONS = [
-    "-j2", "-M4096", "-DautoImplicit=false", "-Dpp.unicode.fun=true",
+    "-M4096", "-DautoImplicit=false", "-Dpp.unicode.fun=true",
     "-DmaxSynthPendingDepth=3", "-Dweak.linter.mathlibStandardSet=true",
     "-Dlinter.style.header.license=No license is granted by this file.",
 ]
@@ -88,7 +93,22 @@ SELECTOR = r"""
       `RicciFlowSharpEstimate.Variational.pairFunctional_deficit_controls_L2,
       `RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_evenExtension,
       `RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_reflection,
-      `RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_symmetrization
+      `RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_symmetrization,
+      `RicciFlowSharpEstimate.Analysis.exists_contDiff_one_sub_sq_factor_of_roots,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_pos_of_balance,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_strictMonoOn,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_contDiff,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_const,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.exists_smooth_positive_warp_factor,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.exists_poleData,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant,
+      `RicciFlowSharpEstimate.Geometry.sphereHeight_contMDiff,
+      `RicciFlowSharpEstimate.Geometry.heightOneForm_apply,
+      `RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.heightOneForm_sq_le,
+      `RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.metric_inner_apply,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metric_inner,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant_metric_inner,
+      `RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -209,6 +229,36 @@ SIGNATURE_DRIVER = """import RicciFlowSharpEstimate
 #check RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_evenExtension
 #check RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_reflection
 #check RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_symmetrization
+#check RicciFlowSharpEstimate.Analysis.exists_contDiff_one_sub_sq_factor_of_roots
+#print RicciFlowSharpEstimate.Geometry.RotationalProfile.balance
+#print RicciFlowSharpEstimate.Geometry.RotationalProfile.warp
+#print RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_hasDerivAt
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_hasDerivAt
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_strictMonoOn
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_northPole_slope
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_southPole_slope
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_pos_of_balance
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_contDiff
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_const
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.balance_const
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.exists_smooth_positive_warp_factor
+#print RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.exists_poleData
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant
+#print RicciFlowSharpEstimate.Geometry.RotationalSphere
+#print RicciFlowSharpEstimate.Geometry.sphereHeight
+#check RicciFlowSharpEstimate.Geometry.sphereHeight_contMDiff
+#check RicciFlowSharpEstimate.Geometry.sphereHeight_mem_Icc
+#print RicciFlowSharpEstimate.Geometry.heightOneForm
+#check RicciFlowSharpEstimate.Geometry.heightOneForm_apply
+#print RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients
+#check RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.heightOneForm_sq_le
+#check RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.metric_inner_apply
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radial_identity
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metric_inner
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant_metric_inner
+#check RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile
 """
 
 

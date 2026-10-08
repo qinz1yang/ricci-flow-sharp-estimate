@@ -1,12 +1,13 @@
 # Theorem-to-paper map
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
-It contains the variational solution, explicit L² stability and hemisphere symmetry;
-the mandatory geometric sections remain unwritten. This map does
-not certify the full suite or independent acceptance of the new manuscript.
+It contains the variational solution, explicit L² stability, hemisphere symmetry,
+and smooth balanced-profile metric construction. The Hodge/Haar, CK and separation
+sections remain unwritten. This map does
+not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
-The unchanged first-layer statements passed the Round 0 independent review;
-new variational/stability statements and the manuscript remain pending independent acceptance.
+The analytic statements and current manuscript passed scoped independent Round 1
+review at `2302ad1`. Subsequent geometric development requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -37,9 +38,15 @@ new variational/stability statements and the manuscript remain pending independe
 | Full lower-obstacle weight has mass one and squared mass `6/(5α)` | `integral_lowerObstacleWeight`, `integral_lowerObstacleWeight_sq` in `Variational/ObstacleWeight.lean` | Native exact polynomial moments for `0<α≤1`. |
 | Actual first variation controls the weighted error | `integral_lowerObstacleWeight_error_sq_le` in `Variational/ObstacleAnchoring.lean` | Native consequence of actual obstacle values and calibration, with no assumed anchor. |
 | Variance plus a normalized weight controls the constant mode | `RicciFlowSharpEstimate.Analysis.integral_sq_le_of_variance_anchor` in `Analysis/WeightedAnchor.lean` | Native general compact-interval engine; continuity supplies all product integrability. |
-| Explicit positive cap-dependent L² stability | `stabilityConstant_pos`, `pairFunctional_deficit_controls_L2` in `Variational/Stability.lean` | Native coefficient `[12C/(5α)+log C/(2α³)]⁻¹`; cap one handled directly. Independent review pending. |
+| Explicit positive cap-dependent L² stability | `stabilityConstant_pos`, `pairFunctional_deficit_controls_L2` in `Variational/Stability.lean` | Native coefficient `[12C/(5α)+log C/(2α³)]⁻¹`; cap one handled directly. Independent review passed. |
 | Full-interval even-extension, reflection and symmetrization bounds | `hemisphereDeficit_controls_evenExtension`, `hemisphereDeficit_controls_reflection`, `hemisphereDeficit_controls_symmetrization` in `Variational/HemisphereStability.lean` | Native bounds `D/c`, `4D/c`, `D/c`; no reflection or balance assumption. Geometry is a separate consumer. |
-| Smooth metric/pole producers, canonical section jets, Haar split and equality | No native declaration yet | Mandatory geometric dependencies. |
+| Global smooth factor at the two distinct endpoints | `RicciFlowSharpEstimate.Analysis.exists_contDiff_one_sub_sq_factor_of_roots` in `Analysis/SmoothFactor.lean` | Two applications of released native Hadamard factorization; no new assumption. |
+| Actual balance, moment coordinate and warping integral, smoothness and strict interior positivity | `RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_hasDerivAt`, `warp_hasDerivAt`, `momentCoordinate_strictMonoOn`, `warp_pos_of_balance`, `warp_contDiff` in `Geometry/RotationalProfile.lean` | Native analytic producer; pole derivative ratios and constant-profile formulas included. |
+| Both globally smooth removable pole factors, positivity and endpoint values | `RicciFlowSharpEstimate.Geometry.RotationalProfile.exists_smooth_positive_warp_factor`, `exists_poleData` in `Geometry/RotationalPoleData.lean` | Native producer retains `D.a=a`; factors are proved from the original natural hypotheses. |
+| Actual sphere height differential and its tangent bound | `RicciFlowSharpEstimate.Geometry.heightOneForm_apply`, `HeightMetricCoefficients.heightOneForm_sq_le` in `Geometry/RotationalSphereMetric.lean` | Actual unit sphere, derivative and round metric; no arbitrary covector or jet. |
+| Genuine smooth metric and exact profile-specific tensor law | `RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile`, `RotationalProfile.PoleData.metric_inner` in `Geometry/BalancedSphereMetric.lean` | Native positive metric with original profile and metric tying equations; new independent review pending. |
+| Positive constant profiles give the scaled round metric | `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant_metric_inner` | Actual tangent-vector evaluation law; nonvacuous family. |
+| Curvature/volume, canonical section jets, Haar split and equality | No native declaration yet | Mandatory geometric dependencies. |
 | Exact CK threshold, full smooth equality, smooth supercritical witnesses | No native declaration yet | Mandatory. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
 
@@ -56,15 +63,18 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:variance` | `pairQuadratic_eq_centered_integrals`, `integral_unitCentered_sq_le_pairQuadratic`, actual `unitMean`, `unitCentered`, `centeredPrimitive` |
 | `thm:stability` | `stabilityConstant_pos`, `pairFunctional_deficit_controls_L2`, `pairRemainder_ge_quadratic_integral`, both obstacle-weight moments, `integral_lowerObstacleWeight_error_sq_le`, `RicciFlowSharpEstimate.Analysis.integral_sq_le_of_variance_anchor` |
 | `cor:hemispheres` | All three `hemisphereDeficit_controls_...` theorems; actual `hemisphereDeficit`; substitution and squared-error identities in `Analysis/ReflectionEnergy.lean` |
+| `lem:pole-factors` | `Analysis.exists_contDiff_one_sub_sq_factor_of_roots`; `Geometry.RotationalProfile` actual integral definitions, derivative/smoothness/monotonicity/endpoint/positivity theorems; `exists_poleData` and `PoleData.constant` |
+| `thm:smooth-metric` | `Geometry.exists_metric_of_smooth_positive_balanced_profile`; actual `heightOneForm_apply`, `HeightMetricCoefficients.heightOneForm_sq_le`, `RotationalProfile.PoleData.metric_inner`, `radial_identity`, and `constant_metric_inner` |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints
-and equality, matching the native quantifiers. It does
+and equality, matching the native quantifiers. The metric construction requires
+globally smooth profiles positive on `[-1,1]`, exactly as in the native producer. It does
 not claim that the infimum over a smooth class is the same value without a smooth
 approximation theorem. No TeX engine was available in the working environment, so
 typesetting has not been validated.
 
-Independent statement/manuscript acceptance remains required. The conditional
+Independent statement/manuscript acceptance of later geometric claims remains required. The conditional
 first-order criterion is now specialized through the actual calibration, rather
 than being presented alone as the minimum. Geometric claims must retain the same metric,
 section producers, pullback maps, curvature bounds and quantifiers.

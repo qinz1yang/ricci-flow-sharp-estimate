@@ -405,4 +405,85 @@ reflection error, proving \eqref{eq:symmetrization}.
 At cap one all three errors vanish directly.
 \end{proof}
 
+\section{Smooth balanced profiles}
+
+Let $a:\R\to\R$ be globally smooth, positive on $[-1,1]$, and balanced:
+\begin{equation}\label{eq:balance}
+ \int_{-1}^1 v a(v)\,dv=0.
+\end{equation}
+Define the actual moment coordinate and warping function by
+\begin{equation}\label{eq:warping}
+ x(v)=\int_0^v a(\xi)\,d\xi,
+ \qquad f(v)=2\int_v^1 \xi a(\xi)\,d\xi.
+\end{equation}
+
+\begin{lemma}\label{lem:pole-factors}
+The functions $x$ and $f$ are globally smooth, with $x'=a$ and
+$f'=-2va$. The coordinate $x$ is strictly increasing on $[-1,1]$.
+Moreover, $f(-1)=f(1)=0$, $f>0$ on $(-1,1)$, and there exist globally
+smooth real functions $b,c$ such that, on the whole real line,
+\begin{equation}\label{eq:pole-factors}
+ f(v)=(1-v^2)b(v),\qquad a(v)^2-b(v)^2=(1-v^2)c(v).
+\end{equation}
+Here $b>0$ on $[-1,1]$ and $b(\pm1)=a(\pm1)$.
+For a constant profile $a=r>0$, one may take $b=r$ and $c=0$.
+\end{lemma}
+
+\begin{proof}
+The derivative formulas follow from the fundamental theorem of calculus;
+they also imply global smoothness. Positivity of $a$ makes the integral
+of $a$ between any two distinct points of $[-1,1]$ positive, proving strict
+monotonicity of $x$. The northern endpoint value is immediate and the
+southern one is exactly the balance condition. For $0\leq v<1$, the
+integrand in the northern expression for $f$ is positive on $(v,1)$.
+For $-1<v<0$, balance rewrites that expression as
+$f(v)=-2\int_{-1}^v \xi a(\xi)\,d\xi>0$.
+
+For a globally smooth function $p$ with $p(t)=0$, the fundamental theorem
+gives the smooth factorization
+\[
+ p(v)=(v-t)\int_0^1 p'(t+s(v-t))\,ds.
+\]
+Applying it successively at the two distinct roots $-1,1$ gives a globally
+smooth factor of $1-v^2$. Apply this first to $f$ to obtain $b$.
+Differentiating $f=(1-v^2)b$ at each pole and using $f'=-2va$ yields
+$b(\pm1)=a(\pm1)$. Interior positivity follows from $f>0$ and $1-v^2>0$;
+the endpoint values give positivity at the poles. Thus $a^2-b^2$ vanishes
+at both poles, and the same factorization gives $c$.
+Finally, for $a=r$ direct integration gives $f(v)=r(1-v^2)$, which verifies
+the stated constant-profile factors.
+\end{proof}
+
+\begin{theorem}\label{thm:smooth-metric}
+Let $a$ satisfy the hypotheses of Lemma~\ref{lem:pole-factors}, and let
+$b,c$ be the factors supplied there. On the standard unit sphere
+$S^2\subset\R^3$, let $z$ be the third coordinate and $g_0$ the round metric.
+Then
+\begin{equation}\label{eq:global-metric}
+ g=b(z)g_0+\frac{c(z)}{b(z)}\,dz\otimes dz
+\end{equation}
+is a smooth positive Riemannian metric on the whole sphere, including both
+poles. For the constant profile $a=r>0$ with $b=r,c=0$, it is exactly $r g_0$.
+\end{theorem}
+
+\begin{proof}
+The height takes values in $[-1,1]$, where $b$ is positive, so both scalar
+coefficients in \eqref{eq:global-metric} are smooth on the sphere. The
+one-form $dz$ is the actual differential of the smooth coordinate function,
+hence the displayed tensor is smooth at the poles as well as elsewhere.
+For $p\in S^2$ and $v\in T_pS^2$, orthogonality $p\cdot v=0$ gives
+\[
+ dz_p(v)=\bigl(e_3-z(p)p\bigr)\cdot v,\qquad
+ |dz_p(v)|^2\leq\bigl(1-z(p)^2\bigr)g_0(v,v).
+\]
+Write $q=c(z)/b(z)$. If $q\geq0$, positivity follows from $b(z)>0$.
+If $q<0$, the same bound and the second factorization in
+\eqref{eq:pole-factors} give
+\[
+ g(v,v)\geq\bigl[b(z)+q(1-z^2)\bigr]g_0(v,v)
+       =\frac{a(z)^2}{b(z)}g_0(v,v)>0\qquad(v\ne0).
+\]
+The constant-profile formula follows directly from $b=r,c=0$.
+\end{proof}
+
 \end{document}
