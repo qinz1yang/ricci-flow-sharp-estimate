@@ -22,6 +22,10 @@ for every cap, and an exact convex deficit identity proves uniqueness.
 At every nondegenerate cap the minimizer has derivative jumps at both
 contacts; every admissible function differentiable in the interior has
 strictly larger value.
+The deficit also controls the squared $L^2$ distance to the minimizer with
+an explicit positive cap-dependent constant. Applying this estimate to two
+hemispheres gives quantitative reflection symmetry without imposing symmetry
+as a constraint.
 \end{abstract}
 
 \section{The constrained problem}
@@ -250,6 +254,155 @@ The function $t\mapsto e^t-e^mt^2/2$ has nonnegative second derivative
 on $[m,\infty)$. Its supporting-line inequality at $y$, applied to $x$,
 is exactly the stated bound after rearrangement. This applies in either
 order of $x$ and $y$, including the boundary value $m$.
+\end{proof}
+
+\section{Quantitative stability}
+
+For a continuous real function $\delta$ on $[0,1]$, define
+\[
+ \mathcal Q(\delta)=\int_0^1\int_0^s
+       2s\bigl(\delta(v)-\delta(s)\bigr)^2\,dv\,ds,
+ \qquad \mu=\int_0^1\delta,
+ \qquad g=\delta-\mu,
+ \qquad G(x)=\int_0^xg.
+\]
+\begin{lemma}\label{lem:variance}
+The actual weighted pair integral satisfies
+\begin{equation}\label{eq:variance}
+ \mathcal Q(\delta)=\int_0^1(1+x^2)g(x)^2\,dx
+                       +2\int_0^1G(x)^2\,dx.
+\end{equation}
+In particular $\mathcal Q(\delta)\geq\int_0^1g^2$.
+\end{lemma}
+\begin{proof}
+Centering does not change pair differences, and $\int_0^1g=0$.
+Let $H(x)=\int_0^xg(v)^2\,dv$. Expanding the inner integral gives
+\[
+ \mathcal Q(g)=\int_0^1
+    \bigl(2xH(x)-4xg(x)G(x)+2x^2g(x)^2\bigr)\,dx.
+\]
+The function $F(x)=(x^2-1)H(x)-2xG(x)^2$ is continuous up to the
+endpoints and differentiable in the interior. Direct differentiation gives
+\[
+ F'(x)=2xH(x)-4xg(x)G(x)+2x^2g(x)^2
+                   -\bigl((1+x^2)g(x)^2+2G(x)^2\bigr).
+\]
+Since $G(0)=G(1)=H(0)=0$, both endpoint values of $F$ vanish.
+The fundamental theorem of calculus proves \eqref{eq:variance}. All
+integrands are continuous; no derivative of $\delta$ is required.
+The final inequality follows from nonnegativity of the additional terms.
+\end{proof}
+
+\begin{theorem}\label{thm:stability}
+For $C\geq1$, let $\alpha$ and $k_*$ be as in Theorem~\ref{thm:minimum},
+and define
+\begin{equation}\label{eq:stabilityconstant}
+ c(C)=\left(\frac{12C}{5\alpha}
+                +\frac{\log C}{2\alpha^3}\right)^{-1}>0.
+\end{equation}
+Every $k\in\mathcal A_C$ satisfies
+\begin{equation}\label{eq:stability}
+ \I(k)-\I(k_*)\geq c(C)\int_0^1|k(v)-k_*(v)|^2\,dv.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+At $C=1$, both profiles vanish on the unit interval, so the assertion is
+immediate. For $C>1$, set $L=\log C$, $\delta=k-k_*$ and
+$D=\I(k)-\I(k_*)$. Write the exact deficit as
+$D=\mathcal P+\mathcal R$, where
+$\mathcal P=\int_0^1 A(v)\delta(v)\,dv\geq0$.
+For every pair $v<s$, the differences
+$x=k(v)-k(s)$ and $y=k_*(v)-k_*(s)$ are at least $-L$.
+Lemma~\ref{lem:quadratic} with $m=-L$ gives
+\[
+ e^y\bigl(e^{\delta(v)-\delta(s)}-1-\delta(v)+\delta(s)\bigr)
+ \geq\frac1{2C}\bigl(\delta(v)-\delta(s)\bigr)^2.
+\]
+Multiplication by $2s$ and integration yield
+$\mathcal R\geq a\mathcal Q(\delta)$, where $a=1/(2C)>0$.
+With $\mu,g$ as above and $V=\int_0^1g^2$, Lemma~\ref{lem:variance}
+therefore gives
+\begin{equation}\label{eq:variancebudget}
+ \mathcal P+aV\leq D.
+\end{equation}
+
+To control the constant mode, use the complete lower-obstacle weight
+\[
+ w(v)=\frac{3\max\{\alpha^2-v^2,0\}}{2\alpha^3}
+       \quad(0\leq v\leq1).
+\]
+This is continuous and nonnegative. Polynomial integration gives
+\begin{equation}\label{eq:weightmoments}
+ \int_0^1w=1,\qquad \int_0^1w^2=\frac6{5\alpha},\qquad
+ r:=\int_0^1(w-1)^2=\frac6{5\alpha}-1\geq0.
+\end{equation}
+On $[0,\alpha]$, the lower obstacle gives $\delta=k\in[0,L]$ and
+$A(v)=3(\alpha^2-v^2)$. Elsewhere $w=0$ and $A\delta\geq0$.
+Thus the pointwise bound $\delta^2\leq L\delta$ on the support of
+$w$ proves
+\begin{equation}\label{eq:anchor}
+ \int_0^1w\delta^2\leq b\mathcal P,
+ \qquad b=\frac{L}{2\alpha^3}\geq0.
+\end{equation}
+
+Put $u=\int_0^1w\delta$. Positivity of
+$\int_0^1w(\delta-u)^2$ and $\int_0^1w=1$ imply
+$u^2\leq\int_0^1w\delta^2\leq b\mathcal P$.
+The identity $\int_0^1(w-1)g=u-\mu$ and Cauchy--Schwarz give
+$(u-\mu)^2\leq rV$. This instance of Cauchy--Schwarz follows directly
+by expanding the nonnegative quadratic integral
+$\int_0^1(t(w-1)+g)^2$ for every real $t$.
+Consequently
+\[
+ |\mu|\leq\sqrt{b\mathcal P}+\sqrt{rV},\qquad
+ \mu^2\leq (b+r/a)(\mathcal P+aV)\leq(b+r/a)D.
+\]
+The middle inequality is the two-dimensional Cauchy--Schwarz inequality
+applied to $(\sqrt b,\sqrt{r/a})$ and
+$(\sqrt{\mathcal P},\sqrt{aV})$.
+Finally $\int_0^1\delta^2=V+\mu^2$, and \eqref{eq:variancebudget}
+implies $V\leq D/a$. Combining these facts with \eqref{eq:weightmoments}
+gives
+\[
+ \int_0^1\delta^2\leq\left(b+\frac{1+r}{a}\right)D
+ =\left(\frac{\log C}{2\alpha^3}+\frac{12C}{5\alpha}\right)D.
+\]
+The coefficient is positive because $C,\alpha>0$ and $\log C\geq0$.
+This proves \eqref{eq:stability}. No optimality of $c(C)$ is asserted.
+\end{proof}
+
+\section{Two hemispheres and near-equatorial symmetry}
+
+\begin{corollary}\label{cor:hemispheres}
+Let $h:\R\to\R$ be continuous on $[-1,1]$ and satisfy
+$0\leq h\leq\log C$ there, where $C\geq1$. Define
+\[
+ k_+(v)=h(v),\qquad k_-(v)=h(-v),\qquad
+ \mathcal D=\I(k_+)+\I(k_-)-2\I(k_*).
+\]
+Then
+\begin{align}
+ \int_{-1}^1|h(v)-k_*(|v|)|^2\,dv
+       &\leq\frac{\mathcal D}{c(C)},\label{eq:fullprofile}\\
+ \int_{-1}^1|h(v)-h(-v)|^2\,dv
+       &\leq\frac{4\mathcal D}{c(C)},\label{eq:reflection}\\
+ \int_{-1}^1\left|h(v)-\frac{h(v)+h(-v)}2\right|^2\,dv
+       &\leq\frac{\mathcal D}{c(C)}.\label{eq:symmetrization}
+\end{align}
+No reflection or balance condition is imposed on $h$.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:stability} to each hemisphere. Splitting the
+integral at zero and substituting $v\mapsto-v$ on the southern half
+identifies their summed squared errors with the left side of
+\eqref{eq:fullprofile}. At each northern point, the elementary inequality
+$(x-y)^2\leq2x^2+2y^2$, applied to the two errors against $k_*$,
+bounds the reflection error. That error has equal integrals on the two
+halves, giving the factor four in \eqref{eq:reflection}.
+The symmetrization error is pointwise one quarter of the squared
+reflection error, proving \eqref{eq:symmetrization}.
+At cap one all three errors vanish directly.
 \end{proof}
 
 \end{document}

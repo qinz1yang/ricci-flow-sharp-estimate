@@ -27,6 +27,14 @@ MODULES = [
     "RicciFlowSharpEstimate.Variational.PairRigidity",
     "RicciFlowSharpEstimate.Variational.ContactRegularity",
     "RicciFlowSharpEstimate.Variational.OptimizerRigidity",
+    "RicciFlowSharpEstimate.Variational.ObstacleWeight",
+    "RicciFlowSharpEstimate.Variational.ObstacleAnchoring",
+    "RicciFlowSharpEstimate.Variational.RemainderCoercivity",
+    "RicciFlowSharpEstimate.Variational.WeightedVariance",
+    "RicciFlowSharpEstimate.Analysis.WeightedAnchor",
+    "RicciFlowSharpEstimate.Analysis.ReflectionEnergy",
+    "RicciFlowSharpEstimate.Variational.Stability",
+    "RicciFlowSharpEstimate.Variational.HemisphereStability",
 ]
 OPTIONS = [
     "-j2", "-M4096", "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -63,12 +71,29 @@ SELECTOR = r"""
       `RicciFlowSharpEstimate.Variational.pairFunctional_eq_obstacleLogProfile_iff,
       `RicciFlowSharpEstimate.Variational.pairFunctional_ge_closedForm,
       `RicciFlowSharpEstimate.Variational.pairFunctional_eq_closedForm_iff,
-      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_lt_of_differentiableOn
+      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_lt_of_differentiableOn,
+      `RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight,
+      `RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight_sq,
+      `RicciFlowSharpEstimate.Variational.pairFirstVariation_eq_intervalIntegral_marginal,
+      `RicciFlowSharpEstimate.Variational.pairFirstVariation_obstacleLogProfile_nonneg,
+      `RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight_error_sq_le,
+      `RicciFlowSharpEstimate.Variational.pairRemainder_ge_quadratic_integral,
+      `RicciFlowSharpEstimate.Variational.pairQuadratic_eq_centered_integrals,
+      `RicciFlowSharpEstimate.Variational.integral_unitCentered_sq_le_pairQuadratic,
+      `RicciFlowSharpEstimate.Analysis.integral_sq_le_of_variance_anchor,
+      `RicciFlowSharpEstimate.Analysis.integral_evenExtension_error_sq_eq,
+      `RicciFlowSharpEstimate.Analysis.integral_reflection_error_sq_le,
+      `RicciFlowSharpEstimate.Analysis.integral_symmetrization_error_sq_eq,
+      `RicciFlowSharpEstimate.Variational.stabilityConstant_pos,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_deficit_controls_L2,
+      `RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_evenExtension,
+      `RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_reflection,
+      `RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_symmetrization
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
-  if decls.size < 150 then
-    throwError "Expected at least one hundred fifty project declarations"
+  if decls.size < 200 then
+    throwError "Expected at least two hundred project declarations"
 """.lstrip("\n")
 LINT_DRIVER = "import RicciFlowSharpEstimate\n\nopen Lean Elab Command in\nrun_cmd do\n" + SELECTOR + r"""
   for declName in decls do
@@ -160,6 +185,30 @@ SIGNATURE_DRIVER = """import RicciFlowSharpEstimate
 #check RicciFlowSharpEstimate.Variational.pairFunctional_ge_closedForm
 #check RicciFlowSharpEstimate.Variational.pairFunctional_eq_closedForm_iff
 #check RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_lt_of_differentiableOn
+#print RicciFlowSharpEstimate.Variational.lowerObstacleWeight
+#check RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight
+#check RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight_sq
+#check RicciFlowSharpEstimate.Variational.pairFirstVariation_eq_intervalIntegral_marginal
+#check RicciFlowSharpEstimate.Variational.pairFirstVariation_obstacleLogProfile_nonneg
+#check RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight_error_sq_le
+#check RicciFlowSharpEstimate.Variational.pairRemainder_ge_quadratic_integral
+#print RicciFlowSharpEstimate.Variational.pairQuadratic
+#print RicciFlowSharpEstimate.Variational.unitMean
+#print RicciFlowSharpEstimate.Variational.unitCentered
+#print RicciFlowSharpEstimate.Variational.centeredPrimitive
+#check RicciFlowSharpEstimate.Variational.pairQuadratic_eq_centered_integrals
+#check RicciFlowSharpEstimate.Variational.integral_unitCentered_sq_le_pairQuadratic
+#check RicciFlowSharpEstimate.Analysis.integral_sq_le_of_variance_anchor
+#check RicciFlowSharpEstimate.Analysis.integral_evenExtension_error_sq_eq
+#check RicciFlowSharpEstimate.Analysis.integral_reflection_error_sq_le
+#check RicciFlowSharpEstimate.Analysis.integral_symmetrization_error_sq_eq
+#print RicciFlowSharpEstimate.Variational.stabilityConstant
+#check RicciFlowSharpEstimate.Variational.stabilityConstant_pos
+#check RicciFlowSharpEstimate.Variational.pairFunctional_deficit_controls_L2
+#print RicciFlowSharpEstimate.Variational.hemisphereDeficit
+#check RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_evenExtension
+#check RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_reflection
+#check RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_symmetrization
 """
 
 

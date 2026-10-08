@@ -6,8 +6,9 @@ for one-form Hodge dissipation. The complete theorem suite is still open.
 The native variational development proves the explicit minimum for every
 cap `C≥1`, uniqueness on `[0,1]`, the degenerate endpoint, exact contact
 derivative jumps, and strictness for differentiable competitors at `C>1`.
-It also proves the quadratic exponential estimate needed for stability.
-The L² stability and geometric sharpness theorems remain open. The first
+It also proves explicit positive L² deficit coercivity, including constant-mode
+anchoring, and quantitative near-equatorial symmetry without assuming symmetry.
+The geometric sharpness and separation theorems remain open. The first
 foundation layer passed independent review; the new results await review.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the

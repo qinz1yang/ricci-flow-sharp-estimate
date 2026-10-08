@@ -1,6 +1,12 @@
 # Research derivation: quantitative stability and symmetry
 
-Status: **unformalized research derivation**. The displayed estimates are not yet native Lean theorems and must not enter the paper as established results.
+Status: the core estimates (2), (5), and (11)–(13) now have native proofs in
+`Variational/Stability.lean`, `WeightedVariance.lean`, and `HemisphereStability.lean`,
+with the actual obstacle and constant-mode anchoring dependencies. See
+`docs/theorem-map.md` for exact declarations and evidence. This document retains the
+original research derivation; its optional profile-exponential consequence (14) and
+any geometric dissipation conversion remain unformalized. Independent acceptance
+of the new native statements and manuscript is pending.
 
 ## Main conclusion and prerequisite
 

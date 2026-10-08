@@ -129,4 +129,19 @@ theorem pairFunctional_eq_intervalIntegral (k : ℝ → ℝ)
         (∫ t in 0..s, Real.exp (k t)) := by
       rw [integral_Icc_eq_integral_Ioc, intervalIntegral.integral_of_le (by norm_num)]
 
+/-- The actual first variation has its marginal formula on the unit interval. -/
+theorem pairFirstVariation_eq_intervalIntegral_marginal (k g : ℝ → ℝ)
+    (hk : ContinuousOn k (Icc 0 1)) (hg : ContinuousOn g (Icc 0 1)) :
+    pairFirstVariation k g = ∫ v in 0..1, pairMarginal g v * (k v - g v) := by
+  rw [pairFirstVariation_eq_integral_marginal k g hk hg]
+  have hs : (fun v => pairMarginal g v * (k v - g v)) =
+      (Icc (0 : ℝ) 1).indicator (fun v => pairMarginal g v * (k v - g v)) := by
+    funext v
+    by_cases hv : v ∈ Icc (0 : ℝ) 1
+    · rw [indicator_of_mem hv]
+    · rw [indicator_of_notMem hv, pairMarginal_eq_zero_of_not_mem g v hv, zero_mul]
+  conv_lhs => rw [hs]
+  rw [integral_indicator measurableSet_Icc, integral_Icc_eq_integral_Ioc,
+    intervalIntegral.integral_of_le (by norm_num)]
+
 end RicciFlowSharpEstimate.Variational

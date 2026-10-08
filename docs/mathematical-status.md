@@ -5,7 +5,10 @@ exact deficit, the actual continuous admissible obstacle candidate, its contacts
 and actual prefix/tail primitives, its explicit marginal calibration and minimization,
 the exact all-cap value, interval uniqueness, both contact derivative jumps and
 strictness for differentiable competitors, and a quantitative exponential tangent
-estimate. They do not yet prove L² stability or any geometric headline.
+estimate. The actual weighted variance identity and obstacle anchor now prove
+L² stability with constant `[12C/(5α) + log C/(2α³)]⁻¹`, including cap one,
+and the two hemisphere deficits control reflection and symmetrization errors.
+No geometric headline has yet been proved.
 The first layer passed independent review; the new variational layers and working
 manuscript await review.
 The full six-part suite below remains
@@ -33,7 +36,7 @@ isometry used for the two zonal components.
 | Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Open; historical statements inspected only. |
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem complete, including the actual `C=1` value. Independent acceptance pending. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. Independent acceptance pending. |
-| Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Quantitative exponential engine proved; weighted variance, anchoring and the final bound remain open. |
+| Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent acceptance pending. |
 | Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form, subject to proving the new Haar equality bridge. | Open, including the equality bridge and all geometric producers. |
 | Structural separation | Plateau instability and valid geometric recovery give `C_rot<C_CK` for all one-forms in the same metric class, without a chosen rational intermediate cap. | Open. Exact unrestricted value is not claimed. |
 
@@ -42,7 +45,7 @@ The formulas and additional exact calculations appear in
 [the stability derivation](research/stability.md), and
 [the geometric audit](research/geometry-audit.md). They are research records,
 not by themselves established paper results. The new working manuscript includes
-only claims mapped to native variational proofs; stability and geometric results
+only claims mapped to native variational and stability proofs; geometric results
 remain absent as established claims.
 
 ## Shared dependency graph
@@ -54,11 +57,11 @@ flowchart TD
   C --> OV[Exact optimal value: native]
   O --> C
   C --> R[Optimizer rigidity and contact regularity: native]
-  E[Exponential quadratic remainder: native] --> S[Positive L2 stability]
-  V[Weighted pair variance] --> S
-  A[Obstacle anchoring] --> S
+  E[Exponential quadratic remainder: native] --> S[Positive L2 stability: native]
+  V[Weighted pair variance: native] --> S
+  A[Obstacle anchoring: native] --> S
   C --> S
-  S --> N[Two-hemisphere near-symmetry]
+  S --> N[Two-hemisphere near-symmetry: native]
   G[Smooth metric and pole producers] --> H[Genuine Haar projection and canonical jets]
   G --> J[Exact zonal reduction]
   H --> Q[Haar split and nonnegative remainder]
@@ -78,11 +81,12 @@ flowchart TD
 ```
 
 Each box has one mathematical role; shared nodes are not reimplemented per
-headline. The next native layer proves the actual weighted pair-variance identity,
-the obstacle weight integrals, and the constant-mode anchor, then combines them
-with the calibrated deficit for L² stability and hemisphere symmetry. These
-independent leaves use the same interval and profile API. Geometry proceeds through real
-producers, not by moving the historical aggregate into the new project.
+headline. The analytic stability layer now uses actual interval means and primitives,
+the full normalized lower-obstacle weight, and the true calibrated deficit. Its
+general anchoring lemma derives every product's integrability from compact-interval
+continuity. The next native frontier is the genuine smooth metric, pole factors and
+section jets, followed by the Haar and dissipation bridges. Geometry proceeds through
+real producers, not by moving the historical aggregate into the new project.
 
 ## Corrected conventions and load-bearing risks
 

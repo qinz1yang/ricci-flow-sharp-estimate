@@ -1,12 +1,12 @@
 # Theorem-to-paper map
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
-It currently contains the variational solution and the exponential quadratic lemma;
-the mandatory stability and geometric sections remain unwritten. This map does
+It contains the variational solution, explicit L² stability and hemisphere symmetry;
+the mandatory geometric sections remain unwritten. This map does
 not certify the full suite or independent acceptance of the new manuscript.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The unchanged first-layer statements passed the Round 0 independent review;
-new variational statements and the manuscript remain pending independent acceptance.
+new variational/stability statements and the manuscript remain pending independent acceptance.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -32,7 +32,13 @@ new variational statements and the manuscript remain pending independent accepta
 | Four exact one-sided contact derivatives; both derivative jumps | `hasDerivWithinAt_obstacleLogProfile_lowerContact_Iic/Ici`, `hasDerivWithinAt_obstacleLogProfile_upperContact_Iic/Ici`, both `not_differentiableAt_...` in `Variational/ContactRegularity.lean` | Native for the actual profile. Inward derivatives and jumps require `C>1`. |
 | Full bound and equality exactly on `[0,1]` | `pairFunctional_ge_closedForm`, `pairFunctional_eq_closedForm_iff` in `Variational/OptimizerRigidity.lean` | Native. The two obstacles force the actual remainder constant to be zero. |
 | Strict bound for admissible competitors differentiable on `(0,1)` at `C>1` | `pairFunctional_obstacleLogProfile_lt_of_differentiableOn` | Native exclusion of attainment of the continuous-class minimum. It does not assert smooth approximation or a geometric equality classification. |
-| Explicit positive L² stability and hemisphere near-symmetry | No native declaration yet | Mandatory. Source-only derivation retained. |
+| Actual pair remainder controls the quadratic integral with coefficient `1/(2C)` | `pairRemainder_ge_quadratic_integral` in `Variational/RemainderCoercivity.lean` | Native for two continuous cap-admissible profiles; actual triangle integrability is proved. |
+| Exact centered weighted variance and coercivity | `pairQuadratic_eq_centered_integrals`, `integral_unitCentered_sq_le_pairQuadratic` in `Variational/WeightedVariance.lean` | Native actual mean/primitive identity; no derivative of the competitor. |
+| Full lower-obstacle weight has mass one and squared mass `6/(5α)` | `integral_lowerObstacleWeight`, `integral_lowerObstacleWeight_sq` in `Variational/ObstacleWeight.lean` | Native exact polynomial moments for `0<α≤1`. |
+| Actual first variation controls the weighted error | `integral_lowerObstacleWeight_error_sq_le` in `Variational/ObstacleAnchoring.lean` | Native consequence of actual obstacle values and calibration, with no assumed anchor. |
+| Variance plus a normalized weight controls the constant mode | `RicciFlowSharpEstimate.Analysis.integral_sq_le_of_variance_anchor` in `Analysis/WeightedAnchor.lean` | Native general compact-interval engine; continuity supplies all product integrability. |
+| Explicit positive cap-dependent L² stability | `stabilityConstant_pos`, `pairFunctional_deficit_controls_L2` in `Variational/Stability.lean` | Native coefficient `[12C/(5α)+log C/(2α³)]⁻¹`; cap one handled directly. Independent review pending. |
+| Full-interval even-extension, reflection and symmetrization bounds | `hemisphereDeficit_controls_evenExtension`, `hemisphereDeficit_controls_reflection`, `hemisphereDeficit_controls_symmetrization` in `Variational/HemisphereStability.lean` | Native bounds `D/c`, `4D/c`, `D/c`; no reflection or balance assumption. Geometry is a separate consumer. |
 | Smooth metric/pole producers, canonical section jets, Haar split and equality | No native declaration yet | Mandatory geometric dependencies. |
 | Exact CK threshold, full smooth equality, smooth supercritical witnesses | No native declaration yet | Mandatory. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
@@ -47,9 +53,13 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:deficit` | `pairFunctional_sub_eq_integral_marginal`, `pairMarginal_eq_intervalIntegrals`, `pairMarginal_eq_zero_of_not_mem`, `pairRemainder_nonneg`, `pairRemainder_eq_zero_iff` |
 | `thm:contacts` | Four one-sided derivative theorems, both contact nondifferentiability theorems, and `pairFunctional_obstacleLogProfile_lt_of_differentiableOn` |
 | `lem:quadratic` | `RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower` |
+| `lem:variance` | `pairQuadratic_eq_centered_integrals`, `integral_unitCentered_sq_le_pairQuadratic`, actual `unitMean`, `unitCentered`, `centeredPrimitive` |
+| `thm:stability` | `stabilityConstant_pos`, `pairFunctional_deficit_controls_L2`, `pairRemainder_ge_quadratic_integral`, both obstacle-weight moments, `integral_lowerObstacleWeight_error_sq_le`, `RicciFlowSharpEstimate.Analysis.integral_sq_le_of_variance_anchor` |
+| `cor:hemispheres` | All three `hemisphereDeficit_controls_...` theorems; actual `hemisphereDeficit`; substitution and squared-error identities in `Analysis/ReflectionEnergy.lean` |
 
-The manuscript uses real functions continuous only on `[0,1]`, with all constraints
-and equality restricted to that interval, matching the native quantifiers. It does
+The manuscript uses real functions continuous only on `[0,1]` for the one-sided
+problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints
+and equality, matching the native quantifiers. It does
 not claim that the infimum over a smooth class is the same value without a smooth
 approximation theorem. No TeX engine was available in the working environment, so
 typesetting has not been validated.

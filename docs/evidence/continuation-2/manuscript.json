@@ -1,0 +1,21 @@
+{
+  "source": "paper/exponential_pair.tex",
+  "source_sha256": "cb8b392d3f1937811fe57df6440144a07cf94db7206b1aa2c976436068dfab4f",
+  "theorem_map_sha256": "f2d2cb89a3f592c4c02e76fc8728b79d9e8021e2c2b10afd7a96e6537370014f",
+  "checks": {
+    "balanced_environments": true,
+    "balanced_unescaped_braces": true,
+    "unique_labels": true,
+    "references_resolved": true
+  },
+  "typesetting_engines": {
+    "pdflatex": null,
+    "latexmk": null,
+    "tectonic": null,
+    "lualatex": null,
+    "xelatex": null
+  },
+  "typesetting_run": false,
+  "mathematical_independent_review": "pending outer review",
+  "scope": "Variational solution, rigidity, explicit L2 stability and hemisphere symmetry; mandatory geometry/separation sections remain unwritten. Structural source checks are not TeX compilation or mathematical acceptance."
+}
