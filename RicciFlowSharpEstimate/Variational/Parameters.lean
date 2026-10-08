@@ -108,4 +108,21 @@ theorem capParameter_eq_one_iff (C : ℝ) (hC : 1 ≤ C) :
   · rintro rfl
     exact capParameter_one
 
+/-- Larger admissible caps have strictly larger parameters. -/
+theorem strictMonoOn_capParameter : StrictMonoOn capParameter (Set.Ici 1) := by
+  intro C hC D hD hCD
+  have hCpos : 0 < C := lt_of_lt_of_le zero_lt_one hC
+  have hDpos : 0 < D := lt_of_lt_of_le zero_lt_one hD
+  have hlog := Real.strictMonoOn_log hCpos hDpos hCD
+  by_contra h
+  have hreverse := strictMonoOn_logCap.monotoneOn (one_le_capParameter D)
+    (one_le_capParameter C) (le_of_not_gt h)
+  rw [logCap_capParameter D hD, logCap_capParameter C hC] at hreverse
+  exact (not_le_of_gt hlog) hreverse
+
+/-- Every nondegenerate cap has parameter strictly above one. -/
+theorem one_lt_capParameter (C : ℝ) (hC : 1 < C) : 1 < capParameter C := by
+  have h := strictMonoOn_capParameter (show (1 : ℝ) ∈ Set.Ici 1 by norm_num) hC.le hC
+  simpa using h
+
 end RicciFlowSharpEstimate.Variational

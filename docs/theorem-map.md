@@ -2,18 +2,26 @@
 
 The manuscript has not yet been written. This map distinguishes the native
 foundation from prospective paper claims; it does not certify the full suite.
-All names below use namespace `RicciFlowSharpEstimate.Variational`.
+Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
+The unchanged first-layer statements passed the Round 0 independent review;
+new candidate-layer statements remain pending independent acceptance.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
-| Existence and uniqueness of the cap parameter for every `C≥1` | `existsUnique_capParameter` in `Variational/Parameters.lean` | Native foundation; outer review pending. |
-| Canonical parameter satisfies its equation; endpoint is exactly `C=1` | `capParameter_spec`, `capParameter_eq_one_iff` | Native producer and endpoint facts; outer review pending. |
+| Existence and uniqueness of the cap parameter for every `C≥1` | `existsUnique_capParameter` in `Variational/Parameters.lean` | Native foundation; independent review passed. |
+| Canonical parameter satisfies its equation; endpoint is exactly `C=1` | `capParameter_spec`, `capParameter_eq_one_iff` | Native producer and endpoint facts; independent review passed. |
 | Exact deficit for two profiles continuous only on `[0,1]` | `pairFunctional_sub_eq_integral_marginal` in `Variational/PairFunctional.lean` | Native analytic engine with actual triangular kernel and derived marginal. |
 | First variation is the actual marginal pairing | `pairFirstVariation_eq_integral_marginal` | Native Fubini bridge used by explicit calibration. |
 | Exponential remainder is nonnegative | `pairRemainder_nonneg` | Native convexity fact; no cap or optimizer assumption. |
 | First-order sign certifies a comparison | `pairFunctional_le_of_firstVariation_nonneg` | Conditional analytic criterion, not a solved optimizer headline. |
 | Exterior values and additive constants do not alter the functional | `pairFunctional_congr`, `pairFunctional_add_const` | Native domain/invariance API. |
-| Actual admissibility, explicit marginal, all-cap value | No native declaration yet | Mandatory next variational layer. |
+| Strict growth of the canonical parameter with the cap | `strictMonoOn_capParameter`, `one_lt_capParameter` | Native candidate dependency. |
+| Actual contact ordering and exact matching identities | `contact_bounds`, `one_sub_upperContact_sq`, `lowerContact_div_parameter` in `Variational/Contacts.lean` | Native for the stated real parameter domains. |
+| Actual free-arc primitives, endpoints and oriented integrals | `hasDerivAt_freeLeftPrimitive`, `hasDerivAt_freeRightPrimitive`, `integral_freeExponential`, `integral_two_mul_div_freeExponential` in `Variational/FreeArc.lean` | Native on positive scale/coordinate domains; endpoint identities retain their natural hypotheses. |
+| Actual continuous candidate, its literal piecewise formula and cap bounds | `obstacleExponential_eq_piecewise`, `obstacleLogProfile_admissible` in `Variational/ObstacleProfile.lean` | Native admissibility; not a claim of optimality. |
+| Candidate endpoint and exact strict-contact condition | `obstacleLogProfile_one`, `contact_separation_iff` | Native, including `C=1`. |
+| Exponential remainder dominates a positive quadratic term | `RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower` in `Analysis/ExponentialRemainder.lean` | Native for `m≤x,y`, with both endpoint orders. Not the integrated L² stability bound. |
+| Joined-profile primitives, explicit marginal, all-cap value | No native declaration yet | Mandatory next variational layer. |
 | Equality iff the canonical optimizer; contact nonsmoothness | No native declaration yet | Mandatory. |
 | Explicit positive L² stability and hemisphere near-symmetry | No native declaration yet | Mandatory. Source-only derivation retained. |
 | Smooth metric/pole producers, canonical section jets, Haar split and equality | No native declaration yet | Mandatory geometric dependencies. |

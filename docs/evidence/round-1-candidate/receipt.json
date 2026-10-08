@@ -1,0 +1,270 @@
+{
+  "source_hashes": {
+    "RicciFlowSharpEstimate.lean": "84a09fc1cfbc4f09e50aa460dff3829cf1e2da6214b1788e3863f176c7c1e710",
+    "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9",
+    "scripts/check_native.py": "fa5756b6e244722191cd2d0de7bda1cacd75a750f6d6367f75edfed8da334d85",
+    "RicciFlowSharpEstimate/Variational/Parameters.lean": "b3cb1d39baa68fbee6d50a0dcd1c690729ea78175f63220044cc0b75dbb17a38",
+    "RicciFlowSharpEstimate/Variational/PairFunctional.lean": "1db9dac3c287473242f14139d5629de0d20228879feedfe9e4d92f3db4f3b200",
+    "RicciFlowSharpEstimate/Variational/Contacts.lean": "5cb3aa476a9b5705474bae7e5546752028b31c7c6c8149e297b4dee68a2df026",
+    "RicciFlowSharpEstimate/Variational/FreeArc.lean": "755a38247bd9c53766a32117a8f75521101603f0a1afb6bc2cc39a46b1488b69",
+    "RicciFlowSharpEstimate/Variational/ObstacleProfile.lean": "605004376f21c4f4807f96f7efef87272c1e89b247afa7084f218870e0e50601",
+    "RicciFlowSharpEstimate/Analysis/ExponentialRemainder.lean": "21229bc066fa3d02250c2e657c3ae689e0e361a4f92e9b0c14db6206445b2145"
+  },
+  "platform": "Linux-6.8.0-1069-gcp-x86_64-with-glibc2.35",
+  "lean_version": "Lean (version 4.35.0-rc3, x86_64-unknown-linux-gnu, commit 470d5ce1400764999581fd26d5d72b00d990b0f4, Release)",
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "dependencies": {
+    "DifferentialGeometry": {
+      "revision": "788efe97894474c032de6dfb1289d515f613d15a",
+      "tracked_sources_clean": true
+    },
+    "mathlib": {
+      "revision": "c55e6e786f49471c72fbddbec5415808896aec1e",
+      "tracked_sources_clean": true
+    },
+    "plausible": {
+      "revision": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+      "tracked_sources_clean": true
+    },
+    "LeanSearchClient": {
+      "revision": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+      "tracked_sources_clean": true
+    },
+    "importGraph": {
+      "revision": "7e81a29bda33a6b257bd37557a6aa6aebe175d96",
+      "tracked_sources_clean": true
+    },
+    "proofwidgets": {
+      "revision": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+      "tracked_sources_clean": true
+    },
+    "aesop": {
+      "revision": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+      "tracked_sources_clean": true
+    },
+    "Qq": {
+      "revision": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "tracked_sources_clean": true
+    },
+    "batteries": {
+      "revision": "3b7c8101932390d60e92a3f3d917901d5b5a773b",
+      "tracked_sources_clean": true
+    },
+    "Cli": {
+      "revision": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "tracked_sources_clean": true
+    }
+  },
+  "commands": [
+    {
+      "label": "root-build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "output_sha256": "164673241b6d76eae44cfffc5d00490751aff71a4ab659ba82c9fa1035d094ec"
+    },
+    {
+      "label": "lean-version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output_sha256": "948624fc4eacf0eb148f98d864af4814b3e60174b0a53f6817afc937e41279d3"
+    },
+    {
+      "label": "lean-path",
+      "command": [
+        "lake",
+        "env",
+        "which",
+        "lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "1d78fba986221c369ff109d824029f996919cbe065b3549105b4db6f5fcf1182"
+    },
+    {
+      "label": "parameters",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/Parameters.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "pairfunctional",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/PairFunctional.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "contacts",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/Contacts.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "freearc",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/FreeArc.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "obstacleprofile",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/ObstacleProfile.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "exponentialremainder",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/ExponentialRemainder.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "linters",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-x2fgzdrr/math-target-5ukzl82o/Linters.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "driver_sha256": "f41528f76ea01b0e8721e58c0a360a29a7565fd1a5d79291d41576d99b515e41"
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-x2fgzdrr/math-target-5ukzl82o/Axioms.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "f90b697edb575d748db2fa3e3ff1f093c467efc12938af9f4eff824fecbb37f3",
+      "driver_sha256": "1e6f3622f7cb0c824f0313ab8dadc8b3ae0b2d06800226b7fb76af5a727a5694"
+    },
+    {
+      "label": "signatures",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j2",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-x2fgzdrr/math-target-5ukzl82o/Signatures.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "884706d1ba2e6bc642eacad43229f2be2442f26df0a631e873abeeafb4144ed0",
+      "driver_sha256": "6f4d917c3f97a2704f0e6bace1b5772e4a8f43d7ef718471b139fa4b9d9f0960"
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declaration_linters": [
+    "unusedArguments",
+    "simpNF",
+    "synTaut"
+  ],
+  "defLemma_replacement": "Native getConstInfo/Meta.isProp inspection of declaration kinds",
+  "independent_review": "pending outer review; native evidence alone is not suite acceptance"
+}

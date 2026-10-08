@@ -16,6 +16,10 @@ ROOT = Path(__file__).resolve().parents[1]
 MODULES = [
     "RicciFlowSharpEstimate.Variational.Parameters",
     "RicciFlowSharpEstimate.Variational.PairFunctional",
+    "RicciFlowSharpEstimate.Variational.Contacts",
+    "RicciFlowSharpEstimate.Variational.FreeArc",
+    "RicciFlowSharpEstimate.Variational.ObstacleProfile",
+    "RicciFlowSharpEstimate.Analysis.ExponentialRemainder",
 ]
 OPTIONS = [
     "-j2", "-M4096", "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -28,11 +32,19 @@ SELECTOR = r"""
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
       `RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq_integral_marginal,
-      `RicciFlowSharpEstimate.Variational.pairFunctional_congr] do
+      `RicciFlowSharpEstimate.Variational.pairFunctional_congr,
+      `RicciFlowSharpEstimate.Variational.strictMonoOn_capParameter,
+      `RicciFlowSharpEstimate.Variational.contact_bounds,
+      `RicciFlowSharpEstimate.Variational.one_sub_upperContact_sq,
+      `RicciFlowSharpEstimate.Variational.integral_freeExponential,
+      `RicciFlowSharpEstimate.Variational.integral_two_mul_div_freeExponential,
+      `RicciFlowSharpEstimate.Variational.obstacleLogProfile_admissible,
+      `RicciFlowSharpEstimate.Variational.contact_separation_iff,
+      `RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
-  if decls.size < 26 then
-    throwError "Expected at least the twenty-six public declarations"
+  if decls.size < 70 then
+    throwError "Expected at least seventy project declarations"
 """.lstrip("\n")
 LINT_DRIVER = "import RicciFlowSharpEstimate\n\nopen Lean Elab Command in\nrun_cmd do\n" + SELECTOR + r"""
   for declName in decls do
@@ -78,6 +90,23 @@ SIGNATURE_DRIVER = """import RicciFlowSharpEstimate
 #check RicciFlowSharpEstimate.Variational.pairRemainder_nonneg
 #check RicciFlowSharpEstimate.Variational.pairFunctional_le_of_firstVariation_nonneg
 #check RicciFlowSharpEstimate.Variational.pairFunctional_congr
+#check RicciFlowSharpEstimate.Variational.strictMonoOn_capParameter
+#print RicciFlowSharpEstimate.Variational.lowerContact
+#print RicciFlowSharpEstimate.Variational.upperContact
+#check RicciFlowSharpEstimate.Variational.contact_bounds
+#check RicciFlowSharpEstimate.Variational.one_sub_upperContact_sq
+#print RicciFlowSharpEstimate.Variational.freeExponential
+#print RicciFlowSharpEstimate.Variational.freeLeftPrimitive
+#print RicciFlowSharpEstimate.Variational.freeRightPrimitive
+#check RicciFlowSharpEstimate.Variational.integral_freeExponential
+#check RicciFlowSharpEstimate.Variational.integral_two_mul_div_freeExponential
+#print RicciFlowSharpEstimate.Variational.obstacleExponential
+#print RicciFlowSharpEstimate.Variational.obstacleLogProfile
+#check RicciFlowSharpEstimate.Variational.obstacleExponential_eq_piecewise
+#check RicciFlowSharpEstimate.Variational.obstacleLogProfile_admissible
+#check RicciFlowSharpEstimate.Variational.obstacleLogProfile_one
+#check RicciFlowSharpEstimate.Variational.contact_separation_iff
+#check RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower
 """
 
 

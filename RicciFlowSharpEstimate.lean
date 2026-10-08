@@ -1,3 +1,7 @@
 import DifferentialGeometry.Analysis.Convex.Integral
 import RicciFlowSharpEstimate.Variational.Parameters
 import RicciFlowSharpEstimate.Variational.PairFunctional
+import RicciFlowSharpEstimate.Variational.Contacts
+import RicciFlowSharpEstimate.Variational.FreeArc
+import RicciFlowSharpEstimate.Variational.ObstacleProfile
+import RicciFlowSharpEstimate.Analysis.ExponentialRemainder

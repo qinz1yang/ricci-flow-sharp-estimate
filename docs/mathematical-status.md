@@ -1,9 +1,11 @@
 # Mathematical scope and dependency graph
 
-This project is incomplete. The first native layer proves the all-cap parameter
-and the generic exact deficit of the actual triangular functional. It does not
-yet prove the optimizer, its optimal value, stability, or any geometric headline.
-Independent outer acceptance is pending. The full six-part suite below remains
+This project is incomplete. Native layers prove the all-cap parameter, the generic
+exact deficit, the actual continuous admissible obstacle candidate, its contacts
+and free-arc primitives, and a quantitative exponential tangent estimate. They do
+not yet prove optimality, the optimal value, L² stability, or any geometric headline.
+The first layer passed independent review; the candidate layer awaits that review.
+The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
 
@@ -26,9 +28,9 @@ isometry used for the two zonal components.
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
 | Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Open; historical statements inspected only. |
-| All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Parameter and generic deficit proved; explicit profile/calibration/value open. |
-| Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Open. Parameter endpoint alone is proved. |
-| Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Explicit source-only route derived; native proof open. |
+| All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Parameter, generic deficit, actual candidate admissibility and free-arc primitives proved; joined primitives/calibration/value open. |
+| Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Equality classification open. Candidate endpoint and strict contact separation exactly at `C>1` are proved. |
+| Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Quantitative exponential engine proved; weighted variance, anchoring and the final bound remain open. |
 | Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form, subject to proving the new Haar equality bridge. | Open, including the equality bridge and all geometric producers. |
 | Structural separation | Plateau instability and valid geometric recovery give `C_rot<C_CK` for all one-forms in the same metric class, without a chosen rational intermediate cap. | Open. Exact unrestricted value is not claimed. |
 
@@ -42,11 +44,11 @@ not established paper results. No manuscript currently claims these open results
 
 ```mermaid
 flowchart TD
-  P[Cap parameter: native] --> O[Explicit obstacle profile and contact identities]
+  P[Cap parameter: native] --> O[Admissible obstacle profile and contacts: native]
   D[Exact pair deficit and marginal: native] --> C[Explicit calibration and optimal value]
   O --> C
   C --> R[Optimizer rigidity and contact regularity]
-  E[Exponential quadratic remainder] --> S[Positive L2 stability]
+  E[Exponential quadratic remainder: native] --> S[Positive L2 stability]
   V[Weighted pair variance] --> S
   A[Obstacle anchoring] --> S
   C --> S
@@ -62,15 +64,16 @@ flowchart TD
   C --> B[Box and balance preserving smooth approximation]
   B --> X[Smooth supercritical geometric witnesses]
   J --> X
-  T[Plateau instability] --> F[Area-coordinate exact-moment recovery]
+  T[Plateau instability] --> TC[Moment-preserving curvature contraction]
+  TC --> F[Area-coordinate exact-moment recovery in a strictly subcritical box]
   F --> SEP[Structural strict separation]
   C --> T
   J --> SEP
 ```
 
 Each box has one mathematical role; shared nodes are not reimplemented per
-headline. The next native layer should define the contacts and glued profile,
-prove actual admissibility and its primitive formulas, and specialize the
+headline. The next native layer evaluates the actual joined-profile primitives,
+connects triangular and iterated interval integrals, and specializes the
 already checked marginal identity. The variance and anchoring branches may be
 formalized independently in bounded tasks. Geometry proceeds through real
 producers, not by moving the historical aggregate into the new project.
@@ -96,6 +99,13 @@ producers, not by moving the historical aggregate into the new project.
 - General-probe action involves `a'`. Uniform approximation of `a` alone is
   insufficient for its convergence. Reconstruct the area-coordinate exact
   moment recovery and actual meridional action continuity instead.
+- Critical-box recovery alone only gives a ratio at most `C_CK`. After proving
+  negative action for a fixed smooth plateau probe, first contract the normalized
+  curvature by `K_t=(1−t)K_*+2t`. Both exact moments are preserved. For `0<t<1`,
+  the box `[L, L*C_CK]` contracts to `[lo_t, hi_t]` with
+  `C_CK−hi_t/lo_t=2t(C_CK−1)/lo_t>0`. Actual action continuity must preserve
+  negativity before smoothing inside this smaller box. This is a required native
+  dependency, not an inference from critical-box recovery.
 - No smooth attainment at the unrestricted endpoint has been established.
   Static negative dissipation proves neither coupled-flow existence nor CK
   preservation along a flow.
