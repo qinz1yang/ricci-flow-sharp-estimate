@@ -8,10 +8,10 @@ cap `C≥1`, uniqueness on `[0,1]`, the degenerate endpoint, exact contact
 derivative jumps, and strictness for differentiable competitors at `C>1`.
 It also proves explicit positive L² deficit coercivity, including constant-mode
 anchoring, and quantitative near-equatorial symmetry without assuming symmetry.
-The analytic layer passed independent review. The smooth balanced-profile
-construction now produces a genuine sphere metric with both pole factors and
-the exact tensor law; this new geometric layer awaits independent review.
-Curvature/volume, Hodge/Haar reductions, geometric sharpness and separation remain open.
+The analytic layer and smooth sphere-metric producer passed independent review.
+The actual cylinder pullback, global volume density and height integral now have
+native proofs. Intrinsic curvature, Hodge/Haar reductions, geometric sharpness
+and separation remain the active geometric frontier.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

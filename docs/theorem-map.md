@@ -2,12 +2,15 @@
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
-and smooth balanced-profile metric construction. The Hodge/Haar, CK and separation
+smooth balanced-profile metric construction, cylinder pullback and volume/height identities.
+The Hodge/Haar, CK and separation
 sections remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
+The prefixes `Geometry` and `Analysis` below are relative to `RicciFlowSharpEstimate`.
 The analytic statements and current manuscript passed scoped independent Round 1
-review at `2302ad1`. Subsequent geometric development requires its own review.
+review at `2302ad1`; the smooth metric producer passed Round 2 review at `76143bb`.
+Subsequent geometric development requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -44,9 +47,15 @@ review at `2302ad1`. Subsequent geometric development requires its own review.
 | Actual balance, moment coordinate and warping integral, smoothness and strict interior positivity | `RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_hasDerivAt`, `warp_hasDerivAt`, `momentCoordinate_strictMonoOn`, `warp_pos_of_balance`, `warp_contDiff` in `Geometry/RotationalProfile.lean` | Native analytic producer; pole derivative ratios and constant-profile formulas included. |
 | Both globally smooth removable pole factors, positivity and endpoint values | `RicciFlowSharpEstimate.Geometry.RotationalProfile.exists_smooth_positive_warp_factor`, `exists_poleData` in `Geometry/RotationalPoleData.lean` | Native producer retains `D.a=a`; factors are proved from the original natural hypotheses. |
 | Actual sphere height differential and its tangent bound | `RicciFlowSharpEstimate.Geometry.heightOneForm_apply`, `HeightMetricCoefficients.heightOneForm_sq_le` in `Geometry/RotationalSphereMetric.lean` | Actual unit sphere, derivative and round metric; no arbitrary covector or jet. |
-| Genuine smooth metric and exact profile-specific tensor law | `RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile`, `RotationalProfile.PoleData.metric_inner` in `Geometry/BalancedSphereMetric.lean` | Native positive metric with original profile and metric tying equations; new independent review pending. |
+| Genuine smooth metric and exact profile-specific tensor law | `RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile`, `RotationalProfile.PoleData.metric_inner` in `Geometry/BalancedSphereMetric.lean` | Native positive metric with original profile and metric tying equations; independent review passed. |
 | Positive constant profiles give the scaled round metric | `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant_metric_inner` | Actual tangent-vector evaluation law; nonvacuous family. |
-| Curvature/volume, canonical section jets, Haar split and equality | No native declaration yet | Mandatory geometric dependencies. |
+| Actual smooth cylinder map, its differential and pullback tensor | `Geometry.cylinderMap_contMDiff`, `cylinderMap_dIncl_mfderiv`, `cylinderMap_mfderiv_injective`, `RotationalProfile.PoleData.cylinderMap_metric_inner` in `Geometry/RotationalCoordinates.lean` | Physical height and angle, actual manifold derivative, original metric. |
+| Rank-one Gram determinant over a commutative ring | `LinearMap.det_smul_add_rankOne_gram_fin_two` in `LinearAlgebra/RankOneDeterminant.lean` | Natural algebraic engine; no nonsingularity assumption. |
+| Actual metric determinant, density and volume measure | `Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric`, `chartDensity_metric`, `volume_metric_eq_withDensity`, `integral_volume_metric` in `Geometry/RotationalVolume.lean` | Original `D.metric` and `D.a(sphereHeight)` throughout. |
+| Exact round and profile-weighted height disintegration | `Geometry.integral_round_height` in `Geometry/SphereHeightIntegral.lean`; `RotationalProfile.PoleData.integral_height_metric` in `Geometry/RotationalVolume.lean` | Actual Riemannian measures; `2*pi` factor; interval-local continuity. |
+| Intrinsic scalar curvature from an actual radial diagonal chart two-jet | `Geometry.metricScalarAt_eq_radialDiagonalJet` in `Geometry/RotationalDiagonalCurvature.lean` | Genuine metric/jet engine with internal regularity and nonvanishing proofs; not yet the sphere-curvature headline. |
+| Actual height-profile derivative substitution | `Geometry.RotationalProfile.PoleData.radial_curvature_identity` in `Geometry/RotationalCurvatureProfile.lean` | Actual derivatives of `warp a` and `a^2/warp a`; intrinsic geometric consumer remains next. |
+| Intrinsic sphere curvature, canonical section jets, Haar split and equality | No native final declaration yet | Mandatory geometric dependencies. |
 | Exact CK threshold, full smooth equality, smooth supercritical witnesses | No native declaration yet | Mandatory. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
 
@@ -65,6 +74,8 @@ The manuscript's current statements are tied to native proofs as follows:
 | `cor:hemispheres` | All three `hemisphereDeficit_controls_...` theorems; actual `hemisphereDeficit`; substitution and squared-error identities in `Analysis/ReflectionEnergy.lean` |
 | `lem:pole-factors` | `Analysis.exists_contDiff_one_sub_sq_factor_of_roots`; `Geometry.RotationalProfile` actual integral definitions, derivative/smoothness/monotonicity/endpoint/positivity theorems; `exists_poleData` and `PoleData.constant` |
 | `thm:smooth-metric` | `Geometry.exists_metric_of_smooth_positive_balanced_profile`; actual `heightOneForm_apply`, `HeightMetricCoefficients.heightOneForm_sq_le`, `RotationalProfile.PoleData.metric_inner`, `radial_identity`, and `constant_metric_inner` |
+| `lem:cylinder-metric` | `Geometry.cylinderMap_contMDiff`, `sphereHeight_cylinderMap`, `cylinderMap_dIncl_mfderiv`, `cylinderMap_round_inner`, `cylinderMap_mfderiv_injective`, `RotationalProfile.PoleData.cylinderMap_metric_inner` |
+| `thm:volume-height` | `Geometry.round_grad_sphereHeight_inner_self`; `RotationalProfile.PoleData.volume_metric_eq_withDensity`; `Geometry.integral_round_height`; `RotationalProfile.PoleData.integral_height_metric` |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

@@ -8,6 +8,7 @@ import argparse
 import hashlib
 import json
 import platform
+import shutil
 import subprocess
 import tempfile
 from pathlib import Path
@@ -40,9 +41,15 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalPoleData",
     "RicciFlowSharpEstimate.Geometry.RotationalSphereMetric",
     "RicciFlowSharpEstimate.Geometry.BalancedSphereMetric",
+    "RicciFlowSharpEstimate.LinearAlgebra.RankOneDeterminant",
+    "RicciFlowSharpEstimate.Geometry.SphereHeightIntegral",
+    "RicciFlowSharpEstimate.Geometry.RotationalVolume",
+    "RicciFlowSharpEstimate.Geometry.RotationalDiagonalCurvature",
+    "RicciFlowSharpEstimate.Geometry.RotationalCurvatureProfile",
+    "RicciFlowSharpEstimate.Geometry.RotationalCoordinates",
 ]
 OPTIONS = [
-    "-M4096", "-DautoImplicit=false", "-Dpp.unicode.fun=true",
+    "-DautoImplicit=false", "-Dpp.unicode.fun=true",
     "-DmaxSynthPendingDepth=3", "-Dweak.linter.mathlibStandardSet=true",
     "-Dlinter.style.header.license=No license is granted by this file.",
 ]
@@ -108,7 +115,22 @@ SELECTOR = r"""
       `RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.metric_inner_apply,
       `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metric_inner,
       `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant_metric_inner,
-      `RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile
+      `RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile,
+      `LinearMap.det_smul_add_rankOne_gram_fin_two,
+      `RicciFlowSharpEstimate.Geometry.round_grad_sphereHeight_inner_self,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.chartDensity_metric,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.volume_metric_eq_withDensity,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.integral_volume_metric,
+      `RicciFlowSharpEstimate.Geometry.integral_round_height,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.integral_height_metric,
+      `RicciFlowSharpEstimate.Geometry.metricScalarAt_eq_radialDiagonalJet,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radial_curvature_identity,
+      `RicciFlowSharpEstimate.Geometry.cylinderMap_contMDiff,
+      `RicciFlowSharpEstimate.Geometry.sphereHeight_cylinderMap,
+      `RicciFlowSharpEstimate.Geometry.cylinderMap_dIncl_mfderiv,
+      `RicciFlowSharpEstimate.Geometry.cylinderMap_mfderiv_injective,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_metric_inner
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -259,6 +281,30 @@ SIGNATURE_DRIVER = """import RicciFlowSharpEstimate
 #check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metric_inner
 #check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant_metric_inner
 #check RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile
+#check LinearMap.det_smul_add_rankOne_gram_fin_two
+#check RicciFlowSharpEstimate.Geometry.round_grad_sphereHeight_inner_self
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.chartDensity_metric
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.volume_metric_eq_withDensity
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.integral_volume_metric
+#check RicciFlowSharpEstimate.Geometry.integral_round_height
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.integral_height_metric
+#check RicciFlowSharpEstimate.Geometry.metricScalarAt_eq_radialDiagonalJet
+#print RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radialCoefficient
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radialCoefficient_contDiffOn
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.deriv_warp_hasDerivAt
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radialCoefficient_hasDerivAt
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radial_curvature_identity
+#print RicciFlowSharpEstimate.Geometry.cylinderDomain
+#print RicciFlowSharpEstimate.Geometry.cylinderMap
+#check RicciFlowSharpEstimate.Geometry.cylinderMap_coe
+#check RicciFlowSharpEstimate.Geometry.sphereHeight_cylinderMap
+#check RicciFlowSharpEstimate.Geometry.cylinderMap_contMDiff
+#check RicciFlowSharpEstimate.Geometry.cylinderMap_dIncl_mfderiv
+#check RicciFlowSharpEstimate.Geometry.cylinderMap_round_inner
+#check RicciFlowSharpEstimate.Geometry.cylinderMap_mfderiv_injective
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_warp_pos
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_metric_inner
 """
 
 
@@ -269,6 +315,8 @@ def digest(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--reuse-receipt", type=Path,
+                        help="Reuse unchanged successful source elaborations from a prior receipt")
     args = parser.parse_args()
     output = args.output_dir.resolve()
     output.mkdir(parents=True, exist_ok=True)
@@ -304,7 +352,47 @@ def main():
             raise RuntimeError(f"Dependency revision mismatch: {package['name']}")
         subprocess.run(["git", "-C", str(package_path), "diff", "--quiet", "HEAD"], check=True)
         dependency_state[package["name"]] = {"revision": revision, "tracked_sources_clean": True}
+    reusable = {}
+    if args.reuse_receipt:
+        prior_path = args.reuse_receipt.resolve()
+        prior = json.loads(prior_path.read_text())
+        fixed = ["lakefile.toml", "lean-toolchain", "lake-manifest.json"]
+        prior_modules = [p for p in prior["source_hashes"]
+                         if p.startswith("RicciFlowSharpEstimate/") and p.endswith(".lean")]
+        if not prior_modules or any(hashes.get(p) != prior["source_hashes"][p]
+                                    for p in fixed + prior_modules):
+            raise RuntimeError("Reuse requires unchanged prior sources and configuration")
+        if (prior["lean_binary_sha256"] != digest(lean_path)
+                or prior["dependencies"] != dependency_state):
+            raise RuntimeError("Reuse compiler or dependencies differ")
+        for entry in prior["commands"]:
+            command = entry["command"]
+            if not command:
+                continue
+            source = Path(command[-1])
+            if not source.is_relative_to(ROOT):
+                continue
+            relative = str(source.relative_to(ROOT))
+            if relative not in prior_modules:
+                continue
+            if [x for x in command if x.startswith("-D")] != OPTIONS:
+                raise RuntimeError("Reuse elaboration or linter options differ")
+            raw = prior_path.parent / (entry["label"] + ".txt")
+            if (entry["exit_code"] or digest(raw) != entry["output_sha256"]
+                    or raw.read_text().strip()):
+                raise RuntimeError("Reuse source evidence is not silent and successful")
+            reusable[relative] = (entry, raw, prior_path, digest(prior_path))
     for module in MODULES:
+        relative = module.replace(".", "/") + ".lean"
+        if relative in reusable:
+            entry, raw, prior_path, prior_hash = reusable[relative]
+            target = output / (entry["label"] + ".txt")
+            if raw.resolve() == target.resolve():
+                raise RuntimeError("Reuse requires a distinct output directory")
+            shutil.copyfile(raw, target)
+            commands.append({**entry, "reused_from": {
+                "receipt": str(prior_path.relative_to(ROOT)), "sha256": prior_hash}})
+            continue
         run(module.rsplit(".", 1)[1].lower(),
             ["lake", "env", "lean", *OPTIONS, str(ROOT / (module.replace(".", "/") + ".lean"))],
             silent=True)

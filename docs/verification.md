@@ -7,7 +7,7 @@ python3 scripts/check_native.py --output-dir /tmp/rfse-native-evidence
 ```
 
 The script first builds the root aggregate, then elaborates each canonical source
-afresh with the repository options,
+with the repository options,
 runs declaration checks, queries exact statements, and checks actual transitive
 axiom closure. It hashes all project sources in this layer, the root aggregate,
 manifest, toolchain declaration, build configuration and verification script,
@@ -25,7 +25,15 @@ data. No linter is disabled. Syntax/style linters are enabled in ordinary
 compilation. The expected header license text is configured for this private,
 unlicensed project; all header checks remain active.
 
-The root aggregate is a real consumer of all twenty-six current modules. Importing it is required
+The optional `--reuse-receipt` argument reuses successful source elaborations only
+when every prior project source, configuration, dependency revision, compiler hash
+and semantic `-D` option still matches. Each reused output is verified and records
+its prior receipt and hash. Original resource flags remain in the original recorded
+commands; they are not semantic Lean options. The aggregate, declaration linters,
+signatures and transitive-axiom audit always run again. New or changed source must
+be elaborated afresh. Use a distinct output directory for each checkpoint.
+
+The root aggregate is a real consumer of all thirty-two current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -50,5 +58,10 @@ The [smooth metric receipt](evidence/round-2/receipt.json),
 [axiom closure](evidence/round-2/axioms.txt), and
 [elaborated statements](evidence/round-2/signatures.txt) cover all twenty-six modules,
 including the smooth balanced-profile pole factors and actual sphere metric.
-Independent review of this geometric layer is pending. All mandatory open mathematics is recorded
+That producer layer passed scoped independent Round 2 review at `76143bb`.
+The [coordinate/volume receipt](evidence/round-3/receipt.json) adds the actual
+cylinder pullback, determinant/density laws and exact height integral. Its source
+checks reuse the unchanged 26-module receipt and freshly elaborate the six new
+modules; declaration and transitive-axiom checks cover the complete aggregate.
+Independent review of this new layer is pending. All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

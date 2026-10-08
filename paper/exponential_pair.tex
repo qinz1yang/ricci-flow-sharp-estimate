@@ -486,4 +486,85 @@ If $q<0$, the same bound and the second factorization in
 The constant-profile formula follows directly from $b=r,c=0$.
 \end{proof}
 
+\section{Cylinder coordinates and area}
+
+For $-1<v<1$ and $\theta\in\R$, put $\rho(v)=\sqrt{1-v^2}$ and
+\[
+ \Phi(v,\theta)=(\rho(v)\cos\theta,\rho(v)\sin\theta,v)\in S^2.
+\]
+The angle is a real parameter, so no global injectivity is asserted.
+
+\begin{lemma}\label{lem:cylinder-metric}
+The map $\Phi$ is smooth and has injective differential. Its height is $v$,
+and the metric of Theorem~\ref{thm:smooth-metric} satisfies
+\begin{equation}\label{eq:cylinder-metric}
+ \Phi^*g=\frac{a(v)^2}{f(v)}\,dv^2+f(v)\,d\theta^2.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The identity $\rho^2+v^2=1$ gives the sphere constraint, and $\rho>0$
+gives smoothness on the stated domain. The actual derivatives are
+\[
+ \Phi_v=\left(-\frac v\rho\cos\theta,-\frac v\rho\sin\theta,1\right),
+ \qquad
+ \Phi_\theta=(-\rho\sin\theta,\rho\cos\theta,0).
+\]
+Their round inner products are $\rho^{-2}$, $0$, and $\rho^2$,
+respectively. In particular the differential is injective. Since
+$dz(\Phi_v)=1$ and $dz(\Phi_\theta)=0$, the radial coefficient of the
+pullback of \eqref{eq:global-metric} is
+\[
+ \frac b{1-v^2}+\frac cb
+ =\frac{b^2+(1-v^2)c}{(1-v^2)b}
+ =\frac{a^2}{f}.
+\]
+The angular coefficient is $(1-v^2)b=f$, and the mixed coefficient
+vanishes. These equalities give \eqref{eq:cylinder-metric}.
+\end{proof}
+
+\begin{theorem}\label{thm:volume-height}
+Write $d\mu_0$ for round area measure. The metric of
+Theorem~\ref{thm:smooth-metric} has the global area identity
+\begin{equation}\label{eq:volume-profile}
+ d\mu_g=a(z)\,d\mu_0.
+\end{equation}
+For every $F:\R\to\R$ continuous on $[-1,1]$,
+\begin{equation}\label{eq:height-integral}
+ \int_{S^2}F(z)\,d\mu_g
+   =2\pi\int_{-1}^1 a(v)F(v)\,dv.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The round gradient of height at $p$ is $e_3-z(p)p$, of squared length
+$1-z(p)^2$. In a round orthonormal tangent basis, the determinant of
+$b g_0+q\,dz\otimes dz$ is
+\[
+ b^2+bq\,|dz|_{g_0}^2=b^2+c(1-z^2)=a^2,
+ \qquad q=c/b.
+\]
+Thus its area density relative to $g_0$ is $a>0$. The computation is
+valid at the poles and in every chart, proving the measure identity
+\eqref{eq:volume-profile}.
+
+For completeness, the round height disintegration follows directly
+from the two hemisphere graphs. On the open unit disk in $\R^2$,
+the upper graph $y\mapsto(y,\sqrt{1-|y|^2})$ has area density
+$(1-|y|^2)^{-1/2}$. The lower graph has the same density and negative
+height. The equator has round area zero. Radial integration and the
+substitution $u=\sqrt{1-r^2}$ therefore give, for continuous $G$ on
+$[-1,1]$,
+\[
+ \int_{S^2}G(z)\,d\mu_0
+ =2\pi\int_0^1
+   \frac{r\,[G(\sqrt{1-r^2})+G(-\sqrt{1-r^2})]}{\sqrt{1-r^2}}\,dr
+ =2\pi\int_{-1}^1G(u)\,du.
+\]
+All integrals converge: $G$ is bounded and
+$r/\sqrt{1-r^2}$ is integrable on $(0,1)$.
+Applying this formula to $G=aF$ and using \eqref{eq:volume-profile}
+proves \eqref{eq:height-integral}.
+\end{proof}
+
 \end{document}

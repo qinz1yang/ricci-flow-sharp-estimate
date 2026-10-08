@@ -1,0 +1,12 @@
+{
+  "source_sha256": "195ca0f31e7e2b1185b07d675208ee8d37ff81ce58b4e1e2e61a62a066c8a169",
+  "theorem_map_sha256": "24ef35a782a54f0ff8145f220357b8d53409f50df96f02a93f3b34224276e09b",
+  "labels": 37,
+  "references": 35,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; final manuscript typesetting remains required",
+  "independent_review": "analytic and metric-producer claims accepted; new cylinder and volume claims pending outer review"
+}
