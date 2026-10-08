@@ -1,0 +1,57 @@
+Selected 42 project declarations, including private/generated declarations
+RicciFlowSharpEstimate.Variational.pairWeight._proof_1: [propext]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.continuousOn_pairDifference: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairWeight: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_le_of_firstVariation_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.measurableSet_orderedTriangle: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.orderedTriangle: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.strictMonoOn_logCap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_spec: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuousOn_logCap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap._proof_2: [propext]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_remainder: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap_one: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_triangle_of_continuousOn: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.pairFunctional_add_const: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrable_pairWeight_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairWeight.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_pairKernel: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_eq_one_iff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.existsUnique_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_congr: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.one_le_capParameter: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_firstVariation: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_eq_of_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation_eq_integral_marginal: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.orderedTriangle_subset_square: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq_integral_marginal: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap: [propext, Classical.choice, Quot.sound]

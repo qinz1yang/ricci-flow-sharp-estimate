@@ -1,12 +1,22 @@
 # Ricci flow sharp estimates
 
-A new pure mathematics and Lean project studying sharp rotational curvature
-pinching estimates for one-form Hodge dissipation.
+A new pure mathematics and Lean project on sharp rotational curvature pinching
+for one-form Hodge dissipation. The complete theorem suite is still open.
 
-Lean and Mathlib: `v4.35.0-rc3`. DifferentialGeometry: `v0.1.4`, with the
-resolved revision recorded in `lake-manifest.json`.
+The first native layer proves existence and uniqueness of the all-cap
+variational parameter, its endpoint characterization, and the exact convex
+deficit identity for the actual exponential pair integral, including its
+marginal/Fubini formula. It does not yet prove the explicit optimizer or the
+geometric sharpness theorems. Independent outer acceptance is pending.
 
-The initial commit is an environment bootstrap, not a mathematical result.
-Only precisely stated results with native Lean compiler, transitive axiom,
-and mathematical review evidence may be reported as verified. Paper theorem
-statements must match their checked formal statements.
+Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
+resolved revision pinned in `lake-manifest.json`.
+
+- [Mathematical scope, dependencies and exact frontier](docs/mathematical-status.md)
+- [Theorem-to-paper map](docs/theorem-map.md)
+- [Native verification and reproduction](docs/verification.md)
+- [Blackbox and axiom registry](docs/blackbox-registry.md)
+
+```sh
+python3 scripts/check_native.py --output-dir /tmp/rfse-native-evidence
+```

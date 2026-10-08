@@ -1,0 +1,35 @@
+RicciFlowSharpEstimate.Variational.existsUnique_capParameter (C : ℝ) (hC : 1 ≤ C) :
+  ∃! q, 1 ≤ q ∧ Real.log q + 2 / 3 * (q ^ 3 - 1) = Real.log C
+RicciFlowSharpEstimate.Variational.capParameter_spec (C : ℝ) (hC : 1 ≤ C) :
+  1 ≤ RicciFlowSharpEstimate.Variational.capParameter C ∧
+    Real.log (RicciFlowSharpEstimate.Variational.capParameter C) +
+        2 / 3 * (RicciFlowSharpEstimate.Variational.capParameter C ^ 3 - 1) =
+      Real.log C
+RicciFlowSharpEstimate.Variational.capParameter_eq_one_iff (C : ℝ) (hC : 1 ≤ C) :
+  RicciFlowSharpEstimate.Variational.capParameter C = 1 ↔ C = 1
+def RicciFlowSharpEstimate.Variational.orderedTriangle : Set (ℝ × ℝ) :=
+{p | 0 ≤ p.1 ∧ p.1 < p.2 ∧ p.2 ≤ 1}
+def RicciFlowSharpEstimate.Variational.pairFunctional : (ℝ → ℝ) → ℝ :=
+fun k ↦ ∫ (p : ℝ × ℝ) in RicciFlowSharpEstimate.Variational.orderedTriangle, 2 * p.2 * Real.exp (k p.1 - k p.2)
+def RicciFlowSharpEstimate.Variational.pairMarginal : (ℝ → ℝ) → ℝ → ℝ :=
+fun g v ↦
+  (∫ (s : ℝ), RicciFlowSharpEstimate.Variational.pairWeight g (v, s)) -
+    ∫ (t : ℝ), RicciFlowSharpEstimate.Variational.pairWeight g (t, v)
+def RicciFlowSharpEstimate.Variational.pairRemainder : (ℝ → ℝ) → (ℝ → ℝ) → ℝ :=
+fun k g ↦
+  ∫ (p : ℝ × ℝ) in RicciFlowSharpEstimate.Variational.orderedTriangle,
+    2 * p.2 * Real.exp (g p.1 - g p.2) *
+      (Real.exp (k p.1 - g p.1 - (k p.2 - g p.2)) - 1 - (k p.1 - g p.1 - (k p.2 - g p.2)))
+RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq_integral_marginal (k g : ℝ → ℝ)
+  (hk : ContinuousOn k (Set.Icc 0 1)) (hg : ContinuousOn g (Set.Icc 0 1)) :
+  RicciFlowSharpEstimate.Variational.pairFunctional k - RicciFlowSharpEstimate.Variational.pairFunctional g =
+    (∫ (v : ℝ), RicciFlowSharpEstimate.Variational.pairMarginal g v * (k v - g v)) +
+      RicciFlowSharpEstimate.Variational.pairRemainder k g
+RicciFlowSharpEstimate.Variational.pairRemainder_nonneg (k g : ℝ → ℝ) :
+  0 ≤ RicciFlowSharpEstimate.Variational.pairRemainder k g
+RicciFlowSharpEstimate.Variational.pairFunctional_le_of_firstVariation_nonneg (k g : ℝ → ℝ)
+  (hk : ContinuousOn k (Set.Icc 0 1)) (hg : ContinuousOn g (Set.Icc 0 1))
+  (hfirst : 0 ≤ RicciFlowSharpEstimate.Variational.pairFirstVariation k g) :
+  RicciFlowSharpEstimate.Variational.pairFunctional g ≤ RicciFlowSharpEstimate.Variational.pairFunctional k
+RicciFlowSharpEstimate.Variational.pairFunctional_congr (k g : ℝ → ℝ) (h : ∀ v ∈ Set.Icc 0 1, k v = g v) :
+  RicciFlowSharpEstimate.Variational.pairFunctional k = RicciFlowSharpEstimate.Variational.pairFunctional g
