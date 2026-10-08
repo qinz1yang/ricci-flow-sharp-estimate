@@ -20,6 +20,9 @@ MODULES = [
     "RicciFlowSharpEstimate.Variational.FreeArc",
     "RicciFlowSharpEstimate.Variational.ObstacleProfile",
     "RicciFlowSharpEstimate.Analysis.ExponentialRemainder",
+    "RicciFlowSharpEstimate.Variational.ObstaclePrimitives",
+    "RicciFlowSharpEstimate.Variational.PairIteration",
+    "RicciFlowSharpEstimate.Variational.Calibration",
 ]
 OPTIONS = [
     "-j2", "-M4096", "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -40,11 +43,18 @@ SELECTOR = r"""
       `RicciFlowSharpEstimate.Variational.integral_two_mul_div_freeExponential,
       `RicciFlowSharpEstimate.Variational.obstacleLogProfile_admissible,
       `RicciFlowSharpEstimate.Variational.contact_separation_iff,
-      `RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower] do
+      `RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower,
+      `RicciFlowSharpEstimate.Variational.obstacleTail_eq_free,
+      `RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_high,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_eq_intervalIntegral,
+      `RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_low,
+      `RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_free,
+      `RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_high,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_le] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
-  if decls.size < 70 then
-    throwError "Expected at least seventy project declarations"
+  if decls.size < 100 then
+    throwError "Expected at least one hundred project declarations"
 """.lstrip("\n")
 LINT_DRIVER = "import RicciFlowSharpEstimate\n\nopen Lean Elab Command in\nrun_cmd do\n" + SELECTOR + r"""
   for declName in decls do
@@ -107,6 +117,22 @@ SIGNATURE_DRIVER = """import RicciFlowSharpEstimate
 #check RicciFlowSharpEstimate.Variational.obstacleLogProfile_one
 #check RicciFlowSharpEstimate.Variational.contact_separation_iff
 #check RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower
+#print RicciFlowSharpEstimate.Variational.obstaclePrefix
+#print RicciFlowSharpEstimate.Variational.obstacleTail
+#check RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_low
+#check RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_free
+#check RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_high
+#check RicciFlowSharpEstimate.Variational.obstacleTail_eq_low
+#check RicciFlowSharpEstimate.Variational.obstacleTail_eq_free
+#check RicciFlowSharpEstimate.Variational.obstacleTail_eq_high
+#check RicciFlowSharpEstimate.Variational.pairMarginal_eq_intervalIntegrals
+#check RicciFlowSharpEstimate.Variational.pairMarginal_eq_zero_of_not_mem
+#check RicciFlowSharpEstimate.Variational.integrable_pairMarginal
+#check RicciFlowSharpEstimate.Variational.pairFunctional_eq_intervalIntegral
+#check RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_low
+#check RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_free
+#check RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_high
+#check RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_le
 """
 
 

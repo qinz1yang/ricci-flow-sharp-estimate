@@ -21,7 +21,11 @@ new candidate-layer statements remain pending independent acceptance.
 | Actual continuous candidate, its literal piecewise formula and cap bounds | `obstacleExponential_eq_piecewise`, `obstacleLogProfile_admissible` in `Variational/ObstacleProfile.lean` | Native admissibility; not a claim of optimality. |
 | Candidate endpoint and exact strict-contact condition | `obstacleLogProfile_one`, `contact_separation_iff` | Native, including `C=1`. |
 | Exponential remainder dominates a positive quadratic term | `RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower` in `Analysis/ExponentialRemainder.lean` | Native for `m≤x,y`, with both endpoint orders. Not the integrated L² stability bound. |
-| Joined-profile primitives, explicit marginal, all-cap value | No native declaration yet | Mandatory next variational layer. |
+| Actual joined-profile prefix/tail integrals on all three regions | `obstaclePrefix_eq_low/free/high`, `obstacleTail_eq_low/free/high` in `Variational/ObstaclePrimitives.lean` | Native for all `q≥1`, including coincident contacts. |
+| Actual triangle/interval correspondence and marginal support | `pairFunctional_eq_intervalIntegral`, `pairMarginal_eq_intervalIntegrals`, `pairMarginal_eq_zero_of_not_mem`, `integrable_pairMarginal` in `Variational/PairIteration.lean` | Native Fubini and endpoint-measure bridge; interval continuity supplies genuine integrability. |
+| Three exact candidate marginals and obstacle signs | `pairMarginal_obstacleLogProfile_low/free/high`, `obstacle_marginal_mul_sub_nonneg` in `Variational/Calibration.lean` | Native formulas `3(α²−v²)`, `0`, `−3(v−β)(v+1/(3β))`. |
+| Explicit candidate minimizes at every cap | `pairFunctional_obstacleLogProfile_le` | Native for every interval-continuous admissible competitor; the first-variation sign is proved. |
+| Full exact optimal value | No native declaration yet | Mandatory next variational leaf. |
 | Equality iff the canonical optimizer; contact nonsmoothness | No native declaration yet | Mandatory. |
 | Explicit positive L² stability and hemisphere near-symmetry | No native declaration yet | Mandatory. Source-only derivation retained. |
 | Smooth metric/pole producers, canonical section jets, Haar split and equality | No native declaration yet | Mandatory geometric dependencies. |

@@ -1,0 +1,5 @@
+✔ [2746/2750] Built RicciFlowSharpEstimate.Variational.ObstaclePrimitives (5.9s)
+✔ [2747/2750] Built RicciFlowSharpEstimate.Variational.PairIteration (6.2s)
+✔ [2748/2750] Built RicciFlowSharpEstimate.Variational.Calibration (5.4s)
+✔ [2749/2750] Built RicciFlowSharpEstimate (4.9s)
+Build completed successfully (2750 jobs).

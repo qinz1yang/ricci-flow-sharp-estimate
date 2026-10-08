@@ -5,3 +5,6 @@ import RicciFlowSharpEstimate.Variational.Contacts
 import RicciFlowSharpEstimate.Variational.FreeArc
 import RicciFlowSharpEstimate.Variational.ObstacleProfile
 import RicciFlowSharpEstimate.Analysis.ExponentialRemainder
+import RicciFlowSharpEstimate.Variational.ObstaclePrimitives
+import RicciFlowSharpEstimate.Variational.PairIteration
+import RicciFlowSharpEstimate.Variational.Calibration

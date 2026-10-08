@@ -1,0 +1,207 @@
+Selected 156 project declarations, including private/generated declarations
+RicciFlowSharpEstimate.Variational.upperContact_sq_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairWeight._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.upperContact_one: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.continuousOn_pairDifference: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_eq_low: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_eq_piecewise: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_eq_zero_of_not_mem: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_high: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeLeftPrimitive_self: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.exp_obstacleLogProfile: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.integrable_pairMarginal: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairWeight: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacle_marginal_mul_sub_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_eq_intervalIntegrals: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_sq_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_le_of_firstVariation_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap_capParameter: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.FreeArc.0.RicciFlowSharpEstimate.Variational.sqrt_mul_sq_div: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.measurableSet_orderedTriangle: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.integral_freeExponential: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.pairWeight_eq_zero_of_second_not_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.continuous_weightedReciprocal: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.freeLeftPrimitive.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.obstacleExponential_bounds: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.orderedTriangle: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_2: [propext]
+RicciFlowSharpEstimate.Variational.obstaclePrefix.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_eq_low: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_eq_intervalIntegral: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.strictMonoOn_logCap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuous_obstacleExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.integral_two_mul_div_freeExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.Contacts.0.RicciFlowSharpEstimate.Variational.lowerContact_sq_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_free: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_spec: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuousOn_logCap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_pos: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_2: [propext]
+RicciFlowSharpEstimate.Variational.logCap._proof_2: [propext]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.integral_two_mul_div_const: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_low: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeRightPrimitive_mul_sq: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.integrable_pairWeight_of_continuousOn: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_eq_upperContact_iff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.exp_logCap: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_remainder: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_le: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential_pos: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_lt_upperContact: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_triangle_of_continuousOn: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.integral_pairWeight_backward: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.strictMonoOn_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.freeRightPrimitive.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.Calibration.0.RicciFlowSharpEstimate.Variational.free_marginal_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_add_const: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail_eq_low: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_1: [propext]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_bounds: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_4: [propext]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_low: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_eq_high: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact_pos: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrable_pairWeight_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_5: [propext]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_7: [propext]
+RicciFlowSharpEstimate.Variational.pairWeight.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivAt_freeRightPrimitive: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_pairKernel: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_3: [propext]
+RicciFlowSharpEstimate.Variational.capParameter_eq_one_iff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact_lt_one: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_1: [propext]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_3: [propext]
+RicciFlowSharpEstimate.Variational.pairFirstVariation.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeLeftPrimitive: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential._proof_2: [propext]
+_private.RicciFlowSharpEstimate.Variational.Contacts.0.RicciFlowSharpEstimate.Variational.contactDenominator_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.freeRightPrimitive: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuous_obstacleLogProfile: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.existsUnique_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_congr: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.one_le_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_free: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_firstVariation: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.freeRightPrimitive_self: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_5: [propext]
+RicciFlowSharpEstimate.Variational.obstacleTail_eq_high: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_7: [propext]
+RicciFlowSharpEstimate.Variational.capParameter_eq_of_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation_eq_integral_marginal: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential_self: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_eq_high: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.FreeArc.0.RicciFlowSharpEstimate.Variational.hasDerivAt_freePhase: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_pos: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail_eq_free: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstacleProfile.0.RicciFlowSharpEstimate.Variational.freeExponential_mono: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.orderedTriangle_subset_square: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_eq_free: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq_integral_marginal: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential_mul_sq: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.integral_pairWeight_forward: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuous_freeExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstaclePrefix: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.pairWeight_eq_zero_of_first_not_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_4: [propext]
+RicciFlowSharpEstimate.Variational.contact_separation_iff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_div_parameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivAt_freeLeftPrimitive: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.one_lt_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.orderedTriangle.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_high: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.FreeArc.0.RicciFlowSharpEstimate.Variational.two_mul_div_freeExponential: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.one_sub_upperContact_sq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.contact_bounds: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeLeftPrimitive_mul_sq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_le_upperContact: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_admissible: [propext, Classical.choice, Quot.sound]
