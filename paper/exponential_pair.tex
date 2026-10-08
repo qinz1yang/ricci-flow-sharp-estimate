@@ -567,4 +567,48 @@ Applying this formula to $G=aF$ and using \eqref{eq:volume-profile}
 proves \eqref{eq:height-integral}.
 \end{proof}
 
+\begin{theorem}\label{thm:curvature-profile}
+The Gauss curvature of the metric in Theorem~\ref{thm:smooth-metric} is
+\begin{equation}\label{eq:curvature-profile}
+ K_g(p)=\frac1{a(z(p))}\qquad(p\in S^2).
+\end{equation}
+Equivalently, its scalar curvature is $2/a(z)$, and every nondegenerate
+tangent two-plane has sectional curvature $1/a(z)$.
+\end{theorem}
+
+\begin{proof}
+For any point with $-1<z<1$, choosing the argument of its first two
+coordinates gives a preimage under $\Phi$. The differential computed in
+Lemma~\ref{lem:cylinder-metric} is invertible between the two tangent spaces,
+so the inverse function theorem makes $\Phi$ a local coordinate map there.
+Set $E=a^2/f$ and $F=f$. The nonzero Levi--Civita coefficients of
+$E\,dv^2+F\,d\theta^2$ are
+\[
+ \Gamma^v_{vv}=\frac{E'}{2E},\qquad
+ \Gamma^v_{\theta\theta}=-\frac{F'}{2E},\qquad
+ \Gamma^\theta_{v\theta}=\Gamma^\theta_{\theta v}=\frac{F'}{2F}.
+\]
+Substitution in the curvature tensor gives
+\[
+ \operatorname{Ric}_{vv}
+ =-\frac{F''}{2F}+\frac{(F')^2}{4F^2}+\frac{E'F'}{4EF}.
+\]
+In dimension two, contracting the curvature tensor gives
+$\operatorname{Ric}=K_g g$ and scalar curvature $2K_g$. Consequently
+\[
+ K_g
+ =-\frac{F''}{2EF}+\frac{(F')^2}{4EF^2}+\frac{E'F'}{4E^2F}
+ =-\frac1{2\sqrt{EF}}\left(\frac{F'}{\sqrt{EF}}\right)'.
+\]
+Here $\sqrt{EF}=a>0$ and $F'=f'=-2va$, so the last expression is $1/a$.
+This computes the intrinsic curvature of the same metric through its
+actual local pullback.
+
+The cylinder image is precisely the complement of the two poles and is
+dense in $S^2$. Both the scalar curvature of the smooth metric and
+$2/a(z)$ are continuous on the whole sphere. Their equality therefore
+extends over the poles. The two-dimensional scalar/sectional curvature
+identity proves the equivalent assertions.
+\end{proof}
+
 \end{document}

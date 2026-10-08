@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all thirty-two current modules. Importing it is required
+The root aggregate is a real consumer of all thirty-four current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -63,5 +63,9 @@ The [coordinate/volume receipt](evidence/round-3/receipt.json) adds the actual
 cylinder pullback, determinant/density laws and exact height integral. Its source
 checks reuse the unchanged 26-module receipt and freshly elaborate the six new
 modules; declaration and transitive-axiom checks cover the complete aggregate.
-Independent review of this new layer is pending. All mandatory open mathematics is recorded
+The [curvature receipt](evidence/round-3-curvature/receipt.json) extends this to
+the exact cylinder range and the intrinsic scalar/sectional curvature of the same
+metric on the whole sphere. It reuses the unchanged 32 source checks and freshly
+checks the two final modules, root aggregate and all declaration/axiom/signature drivers.
+Independent review of the new layers is pending. All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

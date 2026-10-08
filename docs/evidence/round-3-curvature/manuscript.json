@@ -1,0 +1,12 @@
+{
+  "source_sha256": "e378e75cecf0ad73a98694635323ae759e5b3cdc7aa797a00e789df6551dd0c5",
+  "theorem_map_sha256": "f32c177efd655b4cb621f4831123e995fb571c6b1fa469c887a15b8cfe3d63a7",
+  "labels": 39,
+  "references": 37,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; final manuscript typesetting remains required",
+  "independent_review": "earlier analytic/producer claims accepted; new coordinate, volume and curvature claims pending outer review"
+}

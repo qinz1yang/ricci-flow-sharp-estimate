@@ -2,16 +2,17 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All thirty-two current analytic, variational and geometric modules depend transitively only on
+All thirty-four current analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-3/axioms.txt) covers 497 declarations.
+The [current native report](evidence/round-3-curvature/axioms.txt) covers 565 declarations.
 This includes the released Hadamard factorization and smooth metric construction
-as actual transitive dependencies of the new pole and sphere-metric producers.
+as actual transitive dependencies of the pole and sphere-metric producers. It
+also checks the actual curvature, local pullback, coordinate and measure dependencies.
 
 The unformalized derivations and historical reference statements are not
 blackboxes and are not imported assumptions. Their native proof obligations

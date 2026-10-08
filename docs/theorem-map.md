@@ -2,7 +2,8 @@
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
-smooth balanced-profile metric construction, cylinder pullback and volume/height identities.
+smooth balanced-profile metric construction, cylinder pullback, intrinsic curvature
+and volume/height identities.
 The Hodge/Haar, CK and separation
 sections remain unwritten. This map does
 not certify the full suite.
@@ -53,9 +54,11 @@ Subsequent geometric development requires its own review.
 | Rank-one Gram determinant over a commutative ring | `LinearMap.det_smul_add_rankOne_gram_fin_two` in `LinearAlgebra/RankOneDeterminant.lean` | Natural algebraic engine; no nonsingularity assumption. |
 | Actual metric determinant, density and volume measure | `Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric`, `chartDensity_metric`, `volume_metric_eq_withDensity`, `integral_volume_metric` in `Geometry/RotationalVolume.lean` | Original `D.metric` and `D.a(sphereHeight)` throughout. |
 | Exact round and profile-weighted height disintegration | `Geometry.integral_round_height` in `Geometry/SphereHeightIntegral.lean`; `RotationalProfile.PoleData.integral_height_metric` in `Geometry/RotationalVolume.lean` | Actual Riemannian measures; `2*pi` factor; interval-local continuity. |
-| Intrinsic scalar curvature from an actual radial diagonal chart two-jet | `Geometry.metricScalarAt_eq_radialDiagonalJet` in `Geometry/RotationalDiagonalCurvature.lean` | Genuine metric/jet engine with internal regularity and nonvanishing proofs; not yet the sphere-curvature headline. |
-| Actual height-profile derivative substitution | `Geometry.RotationalProfile.PoleData.radial_curvature_identity` in `Geometry/RotationalCurvatureProfile.lean` | Actual derivatives of `warp a` and `a^2/warp a`; intrinsic geometric consumer remains next. |
-| Intrinsic sphere curvature, canonical section jets, Haar split and equality | No native final declaration yet | Mandatory geometric dependencies. |
+| Intrinsic scalar curvature from an actual radial diagonal chart two-jet | `Geometry.metricScalarAt_eq_radialDiagonalJet` in `Geometry/RotationalDiagonalCurvature.lean` | Genuine metric/jet engine with internal regularity and nonvanishing proofs, consumed by the actual sphere-curvature theorem. |
+| Actual height-profile derivative substitution | `Geometry.RotationalProfile.PoleData.radial_curvature_identity` in `Geometry/RotationalCurvatureProfile.lean` | Actual derivatives of `warp a` and `a^2/warp a`, used in the intrinsic computation. |
+| Exact cylinder range and density in the sphere | `Geometry.range_cylinderMap`, `denseRange_cylinderMap` in `Geometry/RotationalCoordinateRange.lean` | The same actual coordinate map; no global angle injectivity assertion. |
+| Actual scalar and sectional curvature everywhere, including poles | `Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap`, `metricScalarAt_metric`, `sectionalCurvature_metric` in `Geometry/RotationalCurvature.lean` | Actual `D.metric`, original `D.a`, true Levi–Civita curvature; no jet or curvature hypothesis. |
+| Canonical section jets, Haar split and equality | No native final declaration yet | Mandatory geometric dependencies. |
 | Exact CK threshold, full smooth equality, smooth supercritical witnesses | No native declaration yet | Mandatory. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
 
@@ -76,6 +79,7 @@ The manuscript's current statements are tied to native proofs as follows:
 | `thm:smooth-metric` | `Geometry.exists_metric_of_smooth_positive_balanced_profile`; actual `heightOneForm_apply`, `HeightMetricCoefficients.heightOneForm_sq_le`, `RotationalProfile.PoleData.metric_inner`, `radial_identity`, and `constant_metric_inner` |
 | `lem:cylinder-metric` | `Geometry.cylinderMap_contMDiff`, `sphereHeight_cylinderMap`, `cylinderMap_dIncl_mfderiv`, `cylinderMap_round_inner`, `cylinderMap_mfderiv_injective`, `RotationalProfile.PoleData.cylinderMap_metric_inner` |
 | `thm:volume-height` | `Geometry.round_grad_sphereHeight_inner_self`; `RotationalProfile.PoleData.volume_metric_eq_withDensity`; `Geometry.integral_round_height`; `RotationalProfile.PoleData.integral_height_metric` |
+| `thm:curvature-profile` | `Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap`, `metricScalarAt_metric`, `sectionalCurvature_metric`; actual derived chart jets; `range_cylinderMap`, `denseRange_cylinderMap`; continuity of the same metric's scalar curvature |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

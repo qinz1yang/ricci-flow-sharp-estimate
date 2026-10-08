@@ -47,6 +47,8 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalDiagonalCurvature",
     "RicciFlowSharpEstimate.Geometry.RotationalCurvatureProfile",
     "RicciFlowSharpEstimate.Geometry.RotationalCoordinates",
+    "RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange",
+    "RicciFlowSharpEstimate.Geometry.RotationalCurvature",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -130,7 +132,12 @@ SELECTOR = r"""
       `RicciFlowSharpEstimate.Geometry.sphereHeight_cylinderMap,
       `RicciFlowSharpEstimate.Geometry.cylinderMap_dIncl_mfderiv,
       `RicciFlowSharpEstimate.Geometry.cylinderMap_mfderiv_injective,
-      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_metric_inner
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_metric_inner,
+      `RicciFlowSharpEstimate.Geometry.range_cylinderMap,
+      `RicciFlowSharpEstimate.Geometry.denseRange_cylinderMap,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_metric,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.sectionalCurvature_metric
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -305,6 +312,11 @@ SIGNATURE_DRIVER = """import RicciFlowSharpEstimate
 #check RicciFlowSharpEstimate.Geometry.cylinderMap_mfderiv_injective
 #check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_warp_pos
 #check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_metric_inner
+#check RicciFlowSharpEstimate.Geometry.range_cylinderMap
+#check RicciFlowSharpEstimate.Geometry.denseRange_cylinderMap
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_metric
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.sectionalCurvature_metric
 """
 
 
@@ -319,6 +331,8 @@ def main():
                         help="Reuse unchanged successful source elaborations from a prior receipt")
     args = parser.parse_args()
     output = args.output_dir.resolve()
+    if args.reuse_receipt and args.reuse_receipt.resolve().parent == output:
+        raise ValueError("Reuse requires a distinct output directory")
     output.mkdir(parents=True, exist_ok=True)
     (output / "receipt.json").unlink(missing_ok=True)
     inputs = [ROOT / "RicciFlowSharpEstimate.lean", ROOT / "lakefile.toml",
@@ -391,7 +405,8 @@ def main():
                 raise RuntimeError("Reuse requires a distinct output directory")
             shutil.copyfile(raw, target)
             commands.append({**entry, "reused_from": {
-                "receipt": str(prior_path.relative_to(ROOT)), "sha256": prior_hash}})
+                "receipt": (str(prior_path.relative_to(ROOT)) if prior_path.is_relative_to(ROOT)
+                            else str(prior_path)), "sha256": prior_hash}})
             continue
         run(module.rsplit(".", 1)[1].lower(),
             ["lake", "env", "lean", *OPTIONS, str(ROOT / (module.replace(".", "/") + ".lean"))],

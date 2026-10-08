@@ -31,3 +31,5 @@ import RicciFlowSharpEstimate.Geometry.RotationalDiagonalCurvature
 import RicciFlowSharpEstimate.Geometry.RotationalCurvatureProfile
 import RicciFlowSharpEstimate.Geometry.RotationalCoordinates
 import RicciFlowSharpEstimate.Geometry.SphereHeightIntegral
+import RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange
+import RicciFlowSharpEstimate.Geometry.RotationalCurvature
