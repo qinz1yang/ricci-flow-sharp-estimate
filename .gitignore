@@ -1,0 +1,15 @@
+.lake/
+.references/
+.humanize/
+.codex/
+AGENTS.md
+**/AGENTS.md
+*.olean
+*.ilean
+*.trace
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+__pycache__/

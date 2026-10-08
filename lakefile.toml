@@ -1,0 +1,17 @@
+name = "RicciFlowSharpEstimate"
+version = "0.1.0"
+defaultTargets = ["RicciFlowSharpEstimate"]
+
+[leanOptions]
+autoImplicit = false
+pp.unicode.fun = true
+maxSynthPendingDepth = 3
+weak.linter.mathlibStandardSet = true
+
+[[require]]
+name = "DifferentialGeometry"
+git = "https://github.com/qinz1yang/differential-geometry.git"
+rev = "v0.1.4"
+
+[[lean_lib]]
+name = "RicciFlowSharpEstimate"
