@@ -1,10 +1,12 @@
 # Theorem-to-paper map
 
-The manuscript has not yet been written. This map distinguishes the native
-foundation from prospective paper claims; it does not certify the full suite.
+The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
+It currently contains the variational solution and the exponential quadratic lemma;
+the mandatory stability and geometric sections remain unwritten. This map does
+not certify the full suite or independent acceptance of the new manuscript.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The unchanged first-layer statements passed the Round 0 independent review;
-new candidate-layer statements remain pending independent acceptance.
+new variational statements and the manuscript remain pending independent acceptance.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -25,14 +27,34 @@ new candidate-layer statements remain pending independent acceptance.
 | Actual triangle/interval correspondence and marginal support | `pairFunctional_eq_intervalIntegral`, `pairMarginal_eq_intervalIntegrals`, `pairMarginal_eq_zero_of_not_mem`, `integrable_pairMarginal` in `Variational/PairIteration.lean` | Native Fubini and endpoint-measure bridge; interval continuity supplies genuine integrability. |
 | Three exact candidate marginals and obstacle signs | `pairMarginal_obstacleLogProfile_low/free/high`, `obstacle_marginal_mul_sub_nonneg` in `Variational/Calibration.lean` | Native formulas `3(α²−v²)`, `0`, `−3(v−β)(v+1/(3β))`. |
 | Explicit candidate minimizes at every cap | `pairFunctional_obstacleLogProfile_le` | Native for every interval-continuous admissible competitor; the first-variation sign is proved. |
-| Full exact optimal value | No native declaration yet | Mandatory next variational leaf. |
-| Equality iff the canonical optimizer; contact nonsmoothness | No native declaration yet | Mandatory. |
+| Full exact all-cap value and direct `C=1` value | `pairFunctional_obstacleLogProfile_eq`, `pairFunctional_obstacleLogProfile_one` in `Variational/OptimalValue.lean` | Native evaluation of the actual triangular functional. |
+| Vanishing actual remainder iff interval difference is constant | `pairRemainder_eq_zero_iff` in `Variational/PairRigidity.lean` | Native integrability, open-set positive measure and endpoint-continuity argument. |
+| Four exact one-sided contact derivatives; both derivative jumps | `hasDerivWithinAt_obstacleLogProfile_lowerContact_Iic/Ici`, `hasDerivWithinAt_obstacleLogProfile_upperContact_Iic/Ici`, both `not_differentiableAt_...` in `Variational/ContactRegularity.lean` | Native for the actual profile. Inward derivatives and jumps require `C>1`. |
+| Full bound and equality exactly on `[0,1]` | `pairFunctional_ge_closedForm`, `pairFunctional_eq_closedForm_iff` in `Variational/OptimizerRigidity.lean` | Native. The two obstacles force the actual remainder constant to be zero. |
+| Strict bound for admissible competitors differentiable on `(0,1)` at `C>1` | `pairFunctional_obstacleLogProfile_lt_of_differentiableOn` | Native exclusion of attainment of the continuous-class minimum. It does not assert smooth approximation or a geometric equality classification. |
 | Explicit positive L² stability and hemisphere near-symmetry | No native declaration yet | Mandatory. Source-only derivation retained. |
 | Smooth metric/pole producers, canonical section jets, Haar split and equality | No native declaration yet | Mandatory geometric dependencies. |
 | Exact CK threshold, full smooth equality, smooth supercritical witnesses | No native declaration yet | Mandatory. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
 
-Only matched, accepted statements may enter the eventual paper as established
-results. The conditional first-order criterion must not be presented as the
-explicit all-cap minimum. Geometric claims must retain the same metric,
+The manuscript's current statements are tied to native proofs as follows:
+
+| TeX label | Exact native coverage |
+|---|---|
+| `thm:minimum` | `existsUnique_capParameter`, `obstacleLogProfile_admissible`, `pairFunctional_ge_closedForm`, `pairFunctional_eq_closedForm_iff`, `pairFunctional_obstacleLogProfile_one` |
+| `lem:parameter` | `strictMonoOn_capParameter`, `capParameter_eq_one_iff`, `contact_bounds`, `upperContact_sq_eq`, `one_sub_upperContact_sq`, `lowerContact_div_parameter`, `contact_separation_iff` |
+| `lem:primitives` | All six `obstaclePrefix_eq_...` / `obstacleTail_eq_...` and three `pairMarginal_obstacleLogProfile_...` formulas |
+| `lem:deficit` | `pairFunctional_sub_eq_integral_marginal`, `pairMarginal_eq_intervalIntegrals`, `pairMarginal_eq_zero_of_not_mem`, `pairRemainder_nonneg`, `pairRemainder_eq_zero_iff` |
+| `thm:contacts` | Four one-sided derivative theorems, both contact nondifferentiability theorems, and `pairFunctional_obstacleLogProfile_lt_of_differentiableOn` |
+| `lem:quadratic` | `RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower` |
+
+The manuscript uses real functions continuous only on `[0,1]`, with all constraints
+and equality restricted to that interval, matching the native quantifiers. It does
+not claim that the infimum over a smooth class is the same value without a smooth
+approximation theorem. No TeX engine was available in the working environment, so
+typesetting has not been validated.
+
+Independent statement/manuscript acceptance remains required. The conditional
+first-order criterion is now specialized through the actual calibration, rather
+than being presented alone as the minimum. Geometric claims must retain the same metric,
 section producers, pullback maps, curvature bounds and quantifiers.

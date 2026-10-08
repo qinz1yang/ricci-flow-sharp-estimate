@@ -8,3 +8,7 @@ import RicciFlowSharpEstimate.Analysis.ExponentialRemainder
 import RicciFlowSharpEstimate.Variational.ObstaclePrimitives
 import RicciFlowSharpEstimate.Variational.PairIteration
 import RicciFlowSharpEstimate.Variational.Calibration
+import RicciFlowSharpEstimate.Variational.OptimalValue
+import RicciFlowSharpEstimate.Variational.PairRigidity
+import RicciFlowSharpEstimate.Variational.ContactRegularity
+import RicciFlowSharpEstimate.Variational.OptimizerRigidity

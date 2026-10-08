@@ -23,6 +23,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Variational.ObstaclePrimitives",
     "RicciFlowSharpEstimate.Variational.PairIteration",
     "RicciFlowSharpEstimate.Variational.Calibration",
+    "RicciFlowSharpEstimate.Variational.OptimalValue",
+    "RicciFlowSharpEstimate.Variational.PairRigidity",
+    "RicciFlowSharpEstimate.Variational.ContactRegularity",
+    "RicciFlowSharpEstimate.Variational.OptimizerRigidity",
 ]
 OPTIONS = [
     "-j2", "-M4096", "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -50,11 +54,21 @@ SELECTOR = r"""
       `RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_low,
       `RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_free,
       `RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_high,
-      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_le] do
+      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_le,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_eq,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_one,
+      `RicciFlowSharpEstimate.Variational.pairRemainder_eq_zero_iff,
+      `RicciFlowSharpEstimate.Variational.not_differentiableAt_obstacleLogProfile_lowerContact,
+      `RicciFlowSharpEstimate.Variational.not_differentiableAt_obstacleLogProfile_upperContact,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_eq_obstacleLogProfile_iff,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_ge_closedForm,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_eq_closedForm_iff,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_lt_of_differentiableOn
+    ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
-  if decls.size < 100 then
-    throwError "Expected at least one hundred project declarations"
+  if decls.size < 150 then
+    throwError "Expected at least one hundred fifty project declarations"
 """.lstrip("\n")
 LINT_DRIVER = "import RicciFlowSharpEstimate\n\nopen Lean Elab Command in\nrun_cmd do\n" + SELECTOR + r"""
   for declName in decls do
@@ -133,6 +147,19 @@ SIGNATURE_DRIVER = """import RicciFlowSharpEstimate
 #check RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_free
 #check RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_high
 #check RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_le
+#check RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_eq
+#check RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_one
+#check RicciFlowSharpEstimate.Variational.pairRemainder_eq_zero_iff
+#check RicciFlowSharpEstimate.Variational.hasDerivWithinAt_obstacleLogProfile_lowerContact_Iic
+#check RicciFlowSharpEstimate.Variational.hasDerivWithinAt_obstacleLogProfile_lowerContact_Ici
+#check RicciFlowSharpEstimate.Variational.hasDerivWithinAt_obstacleLogProfile_upperContact_Iic
+#check RicciFlowSharpEstimate.Variational.hasDerivWithinAt_obstacleLogProfile_upperContact_Ici
+#check RicciFlowSharpEstimate.Variational.not_differentiableAt_obstacleLogProfile_lowerContact
+#check RicciFlowSharpEstimate.Variational.not_differentiableAt_obstacleLogProfile_upperContact
+#check RicciFlowSharpEstimate.Variational.pairFunctional_eq_obstacleLogProfile_iff
+#check RicciFlowSharpEstimate.Variational.pairFunctional_ge_closedForm
+#check RicciFlowSharpEstimate.Variational.pairFunctional_eq_closedForm_iff
+#check RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_lt_of_differentiableOn
 """
 
 

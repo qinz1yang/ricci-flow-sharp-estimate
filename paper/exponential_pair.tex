@@ -1,0 +1,255 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\I}{\mathcal I}
+\newcommand{\R}{\mathbb R}
+\title{An explicit constrained exponential pair problem}
+\author{Ziyang Qin}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We determine the minimum of an exponential interaction over continuous
+functions with prescribed lower and upper obstacles. The minimizer consists
+of two constant pieces joined by an explicit free arc. Its value is given
+for every cap, and an exact convex deficit identity proves uniqueness.
+At every nondegenerate cap the minimizer has derivative jumps at both
+contacts; every admissible function differentiable in the interior has
+strictly larger value.
+\end{abstract}
+
+\section{The constrained problem}
+
+For $C\geq1$, consider real functions whose restrictions to the unit interval
+are continuous, and let
+\[
+ \mathcal A_C=\{k:\R\to\R:k|_{[0,1]}\in C([0,1]),\quad
+      0\leq k(v)\leq\log C\text{ for }v\in[0,1]\},
+\]
+\[
+ \I(k)=\int_0^1\int_0^s 2s e^{k(v)-k(s)}\,dv\,ds.
+\]
+All functions and integrals in this paper are real-valued. The interval
+constraints include both endpoints. In particular $\mathcal A_1$ contains
+only functions vanishing on $[0,1]$. Values outside this interval do not
+affect the functional; uniqueness always means equality on $[0,1]$.
+
+\begin{theorem}\label{thm:minimum}
+For every $C\geq1$ there is a unique $q\geq1$ satisfying
+\begin{equation}\label{eq:cap}
+ \log q+\frac23(q^3-1)=\log C.
+\end{equation}
+Set
+\begin{equation}\label{eq:contacts}
+ \alpha=\frac1{\sqrt{q^4+2q}},\qquad \beta=\alpha q^2.
+\end{equation}
+Then $0<\alpha\leq\beta<1$, and the function $k_*=\log E_*$, where
+\begin{equation}\label{eq:candidate}
+ E_*(v)=
+ \begin{cases}
+ 1,&v\leq\alpha,\\
+ \displaystyle\sqrt{v/\alpha}\,
+  \exp\!\left(\frac23\bigl((v/\alpha)^{3/2}-1\bigr)\right),
+   &\alpha\leq v\leq\beta,\\
+ C,&v\geq\beta,
+ \end{cases}
+\end{equation}
+belongs to $\mathcal A_C$. For every $k\in\mathcal A_C$,
+\begin{equation}\label{eq:minimum}
+ \I(k)\geq\frac23-\beta+\frac1{3\beta},
+\end{equation}
+with equality if and only if $k=k_*$ on $[0,1]$.
+At $C=1$ the profile is identically zero and the minimum is $2/3$.
+\end{theorem}
+
+The degeneracy in the middle interval is essential at cap one. No derivative
+formula on a nonempty free interval is needed for that endpoint.
+
+\begin{lemma}\label{lem:parameter}
+The parameter in \eqref{eq:cap} exists uniquely and increases strictly with
+$C\geq1$. It equals one precisely when $C=1$. The contacts satisfy
+\begin{equation}\label{eq:matching}
+ \beta^2=\frac{q^3}{q^3+2},\qquad
+ 1-\beta^2=2\alpha^2q,\qquad
+ \frac\alpha q=\frac{1-\beta^2}{2\beta}.
+\end{equation}
+The contacts are distinct precisely when $C>1$.
+\end{lemma}
+
+\begin{proof}
+The function $F(q)=\log q+\frac23(q^3-1)$ is continuous and strictly
+increasing on $[1,\infty)$. It has $F(1)=0$ and $F(C)\geq\log C$
+for $C\geq1$, so the intermediate value theorem on $[1,C]$ gives the
+unique parameter. Strict increase of $F$ and of the logarithm gives the
+claimed dependence on $C$. Squaring \eqref{eq:contacts} gives
+\eqref{eq:matching}. In particular $\beta<1$, while $q\geq1$ gives
+$\alpha\leq\beta$, strictly when $q>1$.
+\end{proof}
+
+The free expression in \eqref{eq:candidate} equals one at $v=\alpha$
+and $q\exp(\frac23(q^3-1))=C$ at $v=\beta$. Both its square-root
+and exponential factors are nonnegative and increasing for positive $v$.
+It therefore joins the obstacles continuously and stays between their
+values. This proves the asserted admissibility.
+
+\section{Exact primitives and marginal}
+
+Write $\phi(v)=\frac23((v/\alpha)^{3/2}-1)$ on the free arc, and define
+the actual prefix and tail integrals
+\[
+ P(v)=\int_0^v E_*(t)\,dt,\qquad
+ Q(v)=\int_v^1\frac{2s}{E_*(s)}\,ds.
+\]
+\begin{lemma}\label{lem:primitives}
+The two integrals have the formulas
+\begin{equation}\label{eq:primitives}
+ P(v)=
+ \begin{cases}
+ v,&v\leq\alpha,\\
+ \alpha e^{\phi(v)},&\alpha\leq v\leq\beta,\\
+ C(v-\beta+\alpha/q),&v\geq\beta,
+ \end{cases}
+ \quad
+ Q(v)=
+ \begin{cases}
+ 3\alpha^2-v^2,&v\leq\alpha,\\
+ 2\alpha^2 e^{-\phi(v)},&\alpha\leq v\leq\beta,\\
+ (1-v^2)/C,&v\geq\beta,
+ \end{cases}
+\end{equation}
+for $v\in[0,1]$. Consequently the marginal density
+$A(v)=E_*(v)Q(v)-2vP(v)/E_*(v)$ is
+\begin{equation}\label{eq:marginal}
+ A(v)=
+ \begin{cases}
+ 3(\alpha^2-v^2),&0\leq v\leq\alpha,\\
+ 0,&\alpha\leq v\leq\beta,\\
+ -3(v-\beta)\bigl(v+1/(3\beta)\bigr),&\beta\leq v\leq1.
+ \end{cases}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Direct differentiation on the positive half-line gives
+\[
+ \frac{d}{dv}\bigl(\alpha e^{\phi(v)}\bigr)=E_*(v),\qquad
+ \frac{d}{dv}\bigl(-2\alpha^2 e^{-\phi(v)}\bigr)
+ =\frac{2v}{E_*(v)}
+\]
+on the free arc. At its upper endpoint the first primitive has value
+$C\alpha/q$, while the second has value $-(1-\beta^2)/C$ by
+\eqref{eq:matching}. Splitting the integrals at the contacts gives
+\eqref{eq:primitives}; the calculation also applies when the contacts
+coincide. Substitution into the definition of $A$ proves the first two
+pieces of \eqref{eq:marginal}. On the upper piece it gives
+$1-3v^2+2v\beta-2v\alpha/q$, which has the stated factorization by
+the last identity in \eqref{eq:matching}.
+\end{proof}
+
+\section{Convex calibration and rigidity}
+
+For continuous $k,g$ on $[0,1]$, put $\delta=k-g$ and
+\[
+ A_g(v)=e^{g(v)}\int_v^1 2s e^{-g(s)}\,ds
+       -2v e^{-g(v)}\int_0^v e^{g(t)}\,dt.
+\]
+\begin{lemma}\label{lem:deficit}
+The exact identity
+\begin{align}\label{eq:deficit}
+ \I(k)-\I(g)
+ &=\int_0^1 A_g(v)\delta(v)\,dv+\mathcal R(k,g),\\
+ \mathcal R(k,g)
+ &=\int_0^1\int_0^s 2s e^{g(v)-g(s)}
+ \left[e^{\delta(v)-\delta(s)}-1-\delta(v)+\delta(s)\right]dv\,ds
+ \nonumber
+\end{align}
+holds. The remainder is nonnegative, and it vanishes if and only if
+$\delta$ is constant on $[0,1]$.
+\end{lemma}
+
+\begin{proof}
+Apply the identity $e^{x+y}-e^x=e^xy+e^x(e^y-1-y)$ with
+$x=g(v)-g(s)$ and $y=\delta(v)-\delta(s)$. Fubini's theorem identifies
+the linear term with the stated marginal integral. All integrands are
+continuous on the compact square before restriction to the triangle, so
+these integrations are justified. The inequality $e^y\geq1+y$ proves
+nonnegativity. If the remainder vanishes, its nonnegative integrand is
+zero almost everywhere. Continuity makes it zero at every point of the
+open triangle $0<v<s<1$: otherwise it would be positive on an open set
+of positive measure. The prefactor is positive there, and strictness of
+$e^y>1+y$ for $y\ne0$ gives $\delta(v)=\delta(s)$. Any two interior
+points can be ordered, so $\delta$ is constant in the interior, and
+continuity extends that constant to the endpoints. The converse follows
+directly from the integrand.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:minimum}]
+Take $g=k_*$. On the lower obstacle $\delta=k\geq0$ and $A\geq0$;
+on the upper obstacle $\delta=k-\log C\leq0$ and $A\leq0$; on the
+free arc $A=0$. Thus both terms in \eqref{eq:deficit} are nonnegative,
+and $k_*$ is a minimizer. If equality holds, Lemma~\ref{lem:deficit}
+gives $k-k_*=c$ on the interval. At zero the lower constraint gives
+$c\geq0$, while at one the upper constraint gives $c\leq0$. Therefore
+$c=0$.
+
+It remains to evaluate the value. Fubini gives
+$\I(k_*)=\int_0^1 2vP(v)/E_*(v)\,dv$. The integrand on the three
+pieces is, respectively,
+\[
+ 2v^2,\qquad 2\alpha^2\sqrt{v/\alpha},\qquad
+ 2v(v-\beta+\alpha/q).
+\]
+Its integral is consequently
+\[
+ \frac23\alpha^3+\frac43\alpha^3(q^3-1)
+ +\frac23(1-\beta^3)-(\beta-\alpha/q)(1-\beta^2).
+\]
+The identities \eqref{eq:matching} reduce this expression to
+$\frac23-\beta+1/(3\beta)$. The integration of the middle term is
+valid also on a degenerate interval. Alternatively, at $C=1$ one
+directly has $\I(0)=\int_0^1 2s^2\,ds=2/3$.
+\end{proof}
+
+\begin{theorem}\label{thm:contacts}
+For $C>1$, the one-sided derivatives of the minimizer are
+\[
+ k'_{*,-}(\alpha)=0,\qquad k'_{*,+}(\alpha)=\frac3{2\alpha},
+ \qquad
+ k'_{*,-}(\beta)=\frac1{2\beta}+\frac q\alpha,
+ \qquad k'_{*,+}(\beta)=0.
+\]
+In particular, every $k\in\mathcal A_C$ differentiable on $(0,1)$
+satisfies strict inequality in \eqref{eq:minimum}.
+\end{theorem}
+
+\begin{proof}
+The obstacles are constant. In the free arc direct differentiation gives
+$k_*'(v)=1/(2v)+\sqrt{v/\alpha}/\alpha$. Since $\alpha<\beta$, its
+one-sided limits give the displayed positive derivatives. Both contacts
+are interior, so the jumps exclude differentiability there. Equality
+in \eqref{eq:minimum} would identify a differentiable competitor with
+$k_*$ throughout the interval, contradicting either jump.
+\end{proof}
+
+\section{A quantitative exponential estimate}
+
+\begin{lemma}\label{lem:quadratic}
+For real $m,x,y$ with $m\leq x,y$,
+\[
+ e^x-e^y-e^y(x-y)\geq\frac{e^m}{2}(x-y)^2.
+\]
+\end{lemma}
+\begin{proof}
+The function $t\mapsto e^t-e^mt^2/2$ has nonnegative second derivative
+on $[m,\infty)$. Its supporting-line inequality at $y$, applied to $x$,
+is exactly the stated bound after rearrangement. This applies in either
+order of $x$ and $y$, including the boundary value $m$.
+\end{proof}
+
+\end{document}
