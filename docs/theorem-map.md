@@ -3,8 +3,9 @@
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
 smooth balanced-profile metric construction, cylinder pullback, intrinsic curvature,
-volume/height identities, global forms, the canonical complete action and its exact zonal reduction.
-The Haar reduction, CK and separation
+volume/height identities, global forms, the canonical complete action, its exact zonal reduction,
+and the genuine smooth Haar projector and complete action split.
+Invariant-form classification, scalarization/nonzonal positivity, CK and separation
 sections remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
@@ -13,7 +14,8 @@ The analytic statements and current manuscript passed scoped independent Round 1
 review at `2302ad1`; the smooth metric producer passed Round 2 review at `76143bb`,
 the curvature/volume layer passed Round 3 review at `0a0b115`, and the
 section/derivative/action layer passed Round 4 review at `4cb46f6`.
-The new meridional/zonal reduction and symmetry layer require their own review.
+The meridional/zonal reduction and symmetry layer passed Round 5 review at `da1dd90`.
+The new Haar projection/split layer requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -70,7 +72,12 @@ The new meridional/zonal reduction and symmetry layer require their own review.
 | Exact-form rough commutation | `Geometry.roughLap0SField_duSec_apply`, `roughLap0SField_duSec_of_finrank_eq_two` in `Geometry/ExactOneFormRoughLaplacian.lean` | Native first/second derivatives, actual Hessian divergence and Ricci curvature; surface specialization uses scalar/2. |
 | Complete meridional action and round normalization | `Geometry.RotationalProfile.PoleData.oneFormDissipation_meridional`, `oneFormDissipation_constant_meridional_one` in `Geometry/RotationalMeridionalReduction.lean`; `meridionalAction_constant_one` in `Geometry/MeridionalAction.lean` | Natural globally smooth probe; all four terms, original metric/section, exact `2*pi` and `8*pi/3`; interval integrability proved internally. |
 | Full zonal action reduction | `Geometry.RotationalProfile.PoleData.oneFormDissipation_zonal`, `oneFormDissipation_azimuthal`, `hodgeRotation_meridionalOneForm` in `Geometry/RotationalZonalReduction.lean` | Actual smooth M/Z, produced metric and area tensor, canonical derivatives and exact `2*pi*(J[r]+J[s])`; no equatorial symmetry. |
-| Haar split, unconditional nonzonal positivity and zero-remainder equality | No native final declaration yet | Mandatory geometric dependencies. |
+| Genuine jointly smooth circle/angle rotations and metric invariance | `Geometry.axisRotation_apply`, `circleSphereDiffeo_mul`, `circleSphereDiffeo_dIncl_mfderiv`, `angleRotation_add`, `angleRotation_periodic`, `angleRotation_contMDiff`, `RotationalProfile.PoleData.pullbackMetric_angleRotation` in `Geometry/RotationalCircleAction.lean` | Literal ambient maps and derivatives, native Circle group, original D.metric, including poles. |
+| Smooth finite-interval tensor integration and canonical derivative interchange | `Analysis.contMDiffOn_intervalIntegral`, `mvfderiv_intervalIntegral_apply`; `Geometry.tensorIntervalIntegral_apply`, `tensorIntervalIntegral_eval`, `metricNabla0S_tensorIntervalIntegral` | Actual native fiber integrals and fixed-chart regularity; derivative and correction-term integrability proved internally. |
+| Actual smooth normalized Haar projector | `Geometry.rotationalAverage`, `rotationalAverage_apply`, `rotationalAverage_add`, `rotationalAverage_smul`, `diffeomorphTensorPullback_circle_rotationalAverage`, `rotationalAverage_eq_self_iff`, `rotationalAverage_idempotent` in `Geometry/RotationalAverage.lean` | Literal normalized derivative pullback, independent of profile; native smooth sections, invariant range and nonzero meridional fixed witness. |
+| Actual canonical first/second derivatives and contractions commute with Haar | `Geometry.RotationalProfile.PoleData.metricNabla0S_rotationalAverage`, `metricNabla0S_twice_rotationalAverage`, `roughLap0SField_rotationalAverage`, `ahlforsPart_metricNabla0S_rotationalAverage` in `Geometry/RotationalAverageDerivatives.lean` | Same metric, same constructed projector and actual native operators; no supplied jets. |
+| Complete four-term Haar pairing and action split | `Geometry.RotationalProfile.PoleData.oneFormDissipationPairing_rotationalAverage`, `oneFormDissipationPairing_rotationalAverage_selfAdjoint`, `oneFormDissipationPairing_average_sub_average`, `oneFormDissipation_haar_split` in `Geometry/RotationalHaarDissipation.lean` | Genuine product integrability/Fubini and isometry invariance; original action and all four terms, without pinching. |
+| Smooth invariant-form classification, scalarization, unconditional nonzonal positivity and zero-remainder equality | No native final declaration yet | Mandatory geometric dependencies; the pairing split alone gives no sign. |
 | Genuine smooth tensor pullback and canonical derivative/action naturality | `Geometry.diffeomorphTensorPullback_apply`, identity/composition/inverse laws, `metricNabla0S_diffeomorphTensorPullback`, `metricNabla0S_twice_diffeomorphTensorPullback`, `roughLap0SField_diffeomorphTensorPullback`, `oneFormDissipation_diffeomorphTensorPullback` in `Geometry/OneFormDissipationNaturality.lean` | The actual derivative acts in every slot; same-map metric/tensor transport, including orientation-reversing diffeomorphisms. |
 | Actual meridian-reflection orthogonality | `Geometry.meridianReflectionSphereDiffeo_coe`, `RotationalProfile.PoleData.pullbackMetric_meridianReflectionSphereDiffeo`, `oneFormDissipationPairing_meridional_azimuthal`, `oneFormDissipation_meridional_add_azimuthal` | Reflection preserves height, fixes M and reverses Z; full four-term pairing, without equatorial symmetry. |
 | Explicit smooth metric area form and canonical parallelness | `Geometry.roundSphereAreaForm_apply`; `RotationalProfile.PoleData.areaForm_apply`, `areaForm_unit_on_orthonormal`, `areaForm_normSq`, `metricNabla0S_areaForm` in `Geometry/RotationalAreaForm.lean` | Literal profile-scaled ambient determinant; native parallelness from alternation and constant norm, not a supplied jet. |
@@ -105,6 +112,11 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:zonal-orthogonality` | Actual maps and derivative sign laws in `Geometry/RotationalReflection.lean`; `Geometry.RotationalProfile.PoleData.oneFormDissipationPairing_meridional_azimuthal` and `oneFormDissipation_meridional_add_azimuthal` in `Geometry/RotationalZonalOrthogonality.lean` |
 | `lem:parallel-area` | Actual determinant/metric-area producers in `Geometry/RotationalAreaForm.lean`; `Geometry.metricNabla0S_eq_zero_of_alternating_const_normSq` and `normSq0S_eq_two_of_unit_alternating` in `Geometry/AlternatingSurfaceTensors.lean` |
 | `thm:zonal-reduction` | Actual smooth `Geometry.oneFormAreaContraction` and its first/second derivative and rough commutation laws in `Geometry/OneFormRotation.lean`; all three rotation-norm theorems in `Geometry/SurfaceRotationContractions.lean`; `oneFormDissipationDensity_oneFormAreaContraction`, `oneFormDissipation_oneFormAreaContraction`; the actual outward sign in `Geometry/RotationalHodgeRotation.lean`; `RotationalProfile.PoleData.hodgeRotation`, `hodgeRotation_meridionalOneForm`, `oneFormDissipation_azimuthal`, `oneFormDissipation_zonal` |
+| `lem:circle-action` | Actual ambient and sphere producers, group/period/inverse/derivative laws, joint angle smoothness and `RotationalProfile.PoleData.pullbackMetric_angleRotation` in `Geometry/RotationalCircleAction.lean` |
+| `lem:tensor-interval-integral` | `Analysis.contMDiffOn_intervalIntegral`, actual applied derivative and derivative-integrability theorems; `Geometry.tensorIntervalIntegral`, `_apply`, `_eval`, `metricNabla0S_tensorIntervalIntegral`; native metric inner/trace/Ahlfors commutation in `Geometry/TensorIntegralContractions.lean` |
+| `thm:haar-projection` | Actual family regularity in `Geometry/TensorPullbackFamily.lean`; literal `rotationalAverage_apply`, real linearity, angle/native-circle invariance, `rotationalAverage_eq_self_iff`, `rotationalAverage_idempotent`, `RotationalProfile.PoleData.rotationalAverage_meridionalOneForm`, `rotationalAverage_meridional_one_ne_zero` |
+| `thm:haar-derivatives` | All first/second/rough/Ahlfors intertwining laws in `Geometry/RotationalAverageDerivatives.lean`, derived from the actual integral and actual metric pullback |
+| `thm:haar-split` | `RotationalProfile.PoleData.oneFormDissipationPairingDensity_rotationalAverage`, `oneFormDissipationPairing_rotationalAverage`, full-pairing self-adjointness and orthogonality, `oneFormDissipation_haar_split`; actual product integrability and Fubini in `Geometry/RotationalPairingIntegral.lean` |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all thirty-nine current modules. Importing it is required
+The root aggregate is a real consumer of all sixty-five current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -78,16 +78,22 @@ the complete 50-module aggregate and 1004 defining-module declarations. It reuse
 the unchanged 34 source checks from the curvature receipt and freshly elaborates
 the remaining sixteen sources, including the comment-only section-extension
 attribution correction. The aggregate and all declaration, signature and actual
-transitive-axiom drivers run again. The new exact meridional action, genuine
-pullback naturality, reflection orthogonality and parallel area producer await
-independent review. The [final zonal receipt](evidence/round-5/receipt.json) extends
+transitive-axiom drivers run again. The [final zonal receipt](evidence/round-5/receipt.json) extends
 that checkpoint to 55 modules and 1083 defining-module declarations. It verifies
 the unchanged fifty-source reuse chain, freshly elaborates the final five sources,
 and reruns the aggregate and all declaration/signature/axiom drivers. The actual
 Hodge rotation, first/second derivative and rough-trace commutation, all four
 norm contractions and complete zonal `2*pi*(J[r]+J[s])` identity pass these gates.
 The final receipt binds 60 source/configuration/checker inputs and 61 command
-outputs. Both Round 5 layers remain subject to independent mathematical and
-manuscript review. Typesetting and the remaining whole-suite gates stay open.
+outputs. Both Round 5 layers passed independent mathematical and manuscript
+review at `da1dd90`. Typesetting and the remaining whole-suite gates stay open.
+The [Haar receipt](evidence/round-6/receipt.json) covers the complete 65-module
+aggregate and all 1279 defining-module declarations. Its 55 reused source checks
+are tied to unchanged accepted bytes; all ten new sources are freshly elaborated.
+The aggregate, declaration linters, 232 required selectors, 329 signature queries
+and actual transitive-axiom driver run at the new checkpoint. All source and
+declaration outputs are silent. The receipt binds 70 inputs and 71 command outputs.
+The five new conventional Haar claims and exact map await independent review;
+classification, scalarization/nonzonal positivity and all later gates remain open.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

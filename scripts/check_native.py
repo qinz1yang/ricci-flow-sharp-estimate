@@ -70,6 +70,16 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.OneFormRotation",
     "RicciFlowSharpEstimate.Geometry.OneFormRotationDissipation",
     "RicciFlowSharpEstimate.Geometry.RotationalZonalReduction",
+    "RicciFlowSharpEstimate.Analysis.ManifoldIntervalIntegral",
+    "RicciFlowSharpEstimate.Geometry.RotationalCircleAction",
+    "RicciFlowSharpEstimate.Geometry.TensorPullbackFamily",
+    "RicciFlowSharpEstimate.Geometry.RotationalTensorAction",
+    "RicciFlowSharpEstimate.Geometry.TensorIntervalIntegral",
+    "RicciFlowSharpEstimate.Geometry.RotationalPairingIntegral",
+    "RicciFlowSharpEstimate.Geometry.RotationalAverage",
+    "RicciFlowSharpEstimate.Geometry.TensorIntegralContractions",
+    "RicciFlowSharpEstimate.Geometry.RotationalAverageDerivatives",
+    "RicciFlowSharpEstimate.Geometry.RotationalHaarDissipation",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -80,6 +90,7 @@ SELECTOR = r"""
   let decls ← liftCoreM <|
     Batteries.Tactic.Lint.getDeclsInPackage `RicciFlowSharpEstimate
   let geo := `RicciFlowSharpEstimate.Geometry
+  let analysis := `RicciFlowSharpEstimate.Analysis
   let poleData := `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
@@ -255,7 +266,64 @@ SELECTOR = r"""
       poleData ++ `oneFormDissipation_hodgeRotation,
       poleData ++ `oneFormDissipation_azimuthal_eq_meridional,
       poleData ++ `oneFormDissipation_azimuthal,
-      poleData ++ `oneFormDissipation_zonal
+      poleData ++ `oneFormDissipation_zonal,
+      analysis ++ `contMDiffOn_intervalIntegral,
+      analysis ++ `contMDiff_intervalIntegral,
+      analysis ++ `mvfderiv_intervalIntegral_apply_of_contMDiffOn,
+      analysis ++ `mvfderiv_intervalIntegral_apply,
+      analysis ++ `continuousOn_mvfderiv_apply_of_contMDiffOn,
+      analysis ++ `continuous_mvfderiv_apply,
+      analysis ++ `intervalIntegrable_mvfderiv_apply_of_contMDiffOn,
+      analysis ++ `intervalIntegrable_mvfderiv_apply,
+      geo ++ `axisRotation_apply,
+      geo ++ `axisRotationRepresentation,
+      geo ++ `circleSphereDiffeo_coe,
+      geo ++ `circleSphereDiffeo_mul,
+      geo ++ `circleSphereDiffeo_inv,
+      geo ++ `circleSphereDiffeo_dIncl_mfderiv,
+      geo ++ `angleRotation_add,
+      geo ++ `angleRotation_periodic,
+      geo ++ `angleRotation_contMDiff,
+      geo ++ `mfderiv_family_zero_parameter,
+      geo ++ `contMDiff_diffeomorphTensorPullback_family,
+      geo ++ `contMDiff_diffeomorphTensorPullback_family_apply_sections,
+      geo ++ `continuous_diffeomorphTensorPullback_family_at,
+      geo ++ `diffeomorphTensorPullback_angleRotation_add,
+      geo ++ `contMDiff_diffeomorphTensorPullback_angleRotation,
+      geo ++ `tensorIntervalIntegral_apply,
+      geo ++ `tensorIntervalIntegral_eval,
+      geo ++ `intervalIntegrable_tensorFamily_at,
+      geo ++ `metricNabla0S_tensorIntervalIntegral,
+      geo ++ `inner0S_tensorIntervalIntegral_left,
+      geo ++ `intervalIntegrable_inner0S_tensorFamily_left,
+      geo ++ `metricTracePair0SAt_tensorIntervalIntegral,
+      geo ++ `roughLap0STensor_tensorIntervalIntegral_apply,
+      geo ++ `ahlforsPart_tensorIntervalIntegral_apply,
+      geo ++ `rotationalAverage_apply,
+      geo ++ `rotationalAverage_add,
+      geo ++ `rotationalAverage_smul,
+      geo ++ `diffeomorphTensorPullback_circle_rotationalAverage,
+      geo ++ `rotationalAverage_eq_self_iff,
+      geo ++ `rotationalAverage_idempotent,
+      geo ++ `rotationalAverage_sub_average,
+      poleData ++ `pullbackMetric_angleRotation,
+      poleData ++ `metricNabla0S_angleRotation,
+      poleData ++ `continuous_oneFormDissipationPairingDensity_angleRotation,
+      poleData ++ `integrable_oneFormDissipationPairingDensity_angleRotation,
+      poleData ++ `intervalIntegrable_oneFormDissipationPairing_angleRotation,
+      poleData ++ `integral_intervalIntegral_oneFormDissipationPairingDensity_angleRotation,
+      poleData ++ `rotationalAverage_meridionalOneForm,
+      poleData ++ `rotationalAverage_meridional_one_ne_zero,
+      poleData ++ `metricNabla0S_rotationalAverage,
+      poleData ++ `metricNabla0S_twice_rotationalAverage,
+      poleData ++ `roughLap0SField_rotationalAverage,
+      poleData ++ `ahlforsPart_rotationalAverage,
+      poleData ++ `ahlforsPart_metricNabla0S_rotationalAverage,
+      poleData ++ `oneFormDissipationPairingDensity_rotationalAverage,
+      poleData ++ `oneFormDissipationPairing_rotationalAverage,
+      poleData ++ `oneFormDissipationPairing_rotationalAverage_selfAdjoint,
+      poleData ++ `oneFormDissipationPairing_average_sub_average,
+      poleData ++ `oneFormDissipation_haar_split
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -640,6 +708,130 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormDissipation_azimuthal
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormDissipation_zonal
+open RicciFlowSharpEstimate.Analysis in
+#check contMDiffOn_intervalIntegral
+open RicciFlowSharpEstimate.Analysis in
+#check contMDiff_intervalIntegral
+open RicciFlowSharpEstimate.Analysis in
+#check mvfderiv_intervalIntegral_apply_of_contMDiffOn
+open RicciFlowSharpEstimate.Analysis in
+#check mvfderiv_intervalIntegral_apply
+open RicciFlowSharpEstimate.Analysis in
+#check continuousOn_mvfderiv_apply_of_contMDiffOn
+open RicciFlowSharpEstimate.Analysis in
+#check continuous_mvfderiv_apply
+open RicciFlowSharpEstimate.Analysis in
+#check intervalIntegrable_mvfderiv_apply_of_contMDiffOn
+open RicciFlowSharpEstimate.Analysis in
+#check intervalIntegrable_mvfderiv_apply
+open RicciFlowSharpEstimate.Geometry in
+#check axisRotation_apply
+open RicciFlowSharpEstimate.Geometry in
+#check axisRotationRepresentation
+open RicciFlowSharpEstimate.Geometry in
+#check circleSphereDiffeo_coe
+open RicciFlowSharpEstimate.Geometry in
+#check circleSphereDiffeo_mul
+open RicciFlowSharpEstimate.Geometry in
+#check circleSphereDiffeo_inv
+open RicciFlowSharpEstimate.Geometry in
+#check circleSphereDiffeo_dIncl_mfderiv
+open RicciFlowSharpEstimate.Geometry in
+#check angleRotation_add
+open RicciFlowSharpEstimate.Geometry in
+#check angleRotation_periodic
+open RicciFlowSharpEstimate.Geometry in
+#check angleRotation_contMDiff
+open RicciFlowSharpEstimate.Geometry in
+#check mfderiv_family_zero_parameter
+open RicciFlowSharpEstimate.Geometry in
+#check contMDiff_diffeomorphTensorPullback_family
+open RicciFlowSharpEstimate.Geometry in
+#check contMDiff_diffeomorphTensorPullback_family_apply_sections
+open RicciFlowSharpEstimate.Geometry in
+#check continuous_diffeomorphTensorPullback_family_at
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_angleRotation_add
+open RicciFlowSharpEstimate.Geometry in
+#check contMDiff_diffeomorphTensorPullback_angleRotation
+open RicciFlowSharpEstimate.Geometry in
+#check tensorIntervalIntegral_apply
+open RicciFlowSharpEstimate.Geometry in
+#check tensorIntervalIntegral_eval
+open RicciFlowSharpEstimate.Geometry in
+#check intervalIntegrable_tensorFamily_at
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_tensorIntervalIntegral
+open RicciFlowSharpEstimate.Geometry in
+#check inner0S_tensorIntervalIntegral_left
+open RicciFlowSharpEstimate.Geometry in
+#check intervalIntegrable_inner0S_tensorFamily_left
+open RicciFlowSharpEstimate.Geometry in
+#check metricTracePair0SAt_tensorIntervalIntegral
+open RicciFlowSharpEstimate.Geometry in
+#check roughLap0STensor_tensorIntervalIntegral_apply
+open RicciFlowSharpEstimate.Geometry in
+#check ahlforsPart_tensorIntervalIntegral_apply
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalAverage_apply
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalAverage_add
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalAverage_smul
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_circle_rotationalAverage
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalAverage_eq_self_iff
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalAverage_idempotent
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalAverage_sub_average
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check pullbackMetric_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricNabla0S_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check continuous_oneFormDissipationPairingDensity_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check integrable_oneFormDissipationPairingDensity_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check intervalIntegrable_oneFormDissipationPairing_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check integral_intervalIntegral_oneFormDissipationPairingDensity_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check rotationalAverage_meridionalOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check rotationalAverage_meridional_one_ne_zero
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricNabla0S_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricNabla0S_twice_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check roughLap0SField_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check ahlforsPart_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check ahlforsPart_metricNabla0S_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipationPairingDensity_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipationPairing_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipationPairing_rotationalAverage_selfAdjoint
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipationPairing_average_sub_average
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_haar_split
+open RicciFlowSharpEstimate.Geometry in
+#print axisRotation
+open RicciFlowSharpEstimate.Geometry in
+#print circleSphereDiffeo
+open RicciFlowSharpEstimate.Geometry in
+#print angleRotation
+open RicciFlowSharpEstimate.Geometry in
+#print tensorIntervalIntegral
+open RicciFlowSharpEstimate.Geometry in
+#print rotationalAverage
 """
 
 

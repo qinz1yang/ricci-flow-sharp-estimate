@@ -1009,4 +1009,161 @@ Lemma~\ref{lem:zonal-orthogonality} to obtain
 \eqref{eq:full-zonal-reduction}.
 \end{proof}
 
+\section{The smooth Haar projection and complete action split}
+
+\begin{lemma}\label{lem:circle-action}
+For a unit complex number $\zeta$, the ambient map
+\[
+ (x,y,z)\longmapsto
+ \bigl((\operatorname{Re}\zeta)x-(\operatorname{Im}\zeta)y,
+       (\operatorname{Im}\zeta)x+(\operatorname{Re}\zeta)y,z\bigr)
+\]
+restricts to a smooth diffeomorphism of the actual unit sphere and preserves
+every produced metric $g$. Write $R_\theta$ for $\zeta=e^{i\theta}$.
+Then $R_0=\mathrm{id}$, $R_{\theta+\phi}=R_\theta\circ R_\phi$,
+$R_{-\theta}=R_\theta^{-1}$, and $R_{\theta+2\pi}=R_\theta$.
+The map $(\theta,x)\mapsto R_\theta x$ is jointly smooth, including at
+the poles, and its derivative in a sphere tangent direction is the
+restriction of the same ambient orthogonal map.
+\end{lemma}
+
+\begin{proof}
+The identity $(\operatorname{Re}\zeta)^2+(\operatorname{Im}\zeta)^2=1$
+proves orthogonality; complex multiplication gives the group law.
+Restriction to the sphere preserves the literal map and its derivative.
+It fixes height and its differential and preserves the round metric,
+so it preserves the produced tensor
+$b(z)g_0+(c(z)/b(z))dz\otimes dz$.
+The real-angle formula consists of sines, cosines and ambient linear
+coordinates, hence is jointly smooth before restriction. The sphere
+restriction remains smooth everywhere and has no pole singularity.
+\end{proof}
+
+\begin{lemma}\label{lem:tensor-interval-integral}
+Let $g$ be a fixed smooth Riemannian metric on a finite-dimensional smooth
+manifold without boundary. A jointly smooth real-parameter family $T_t$
+of smooth covariant tensors has a smooth fiberwise integral over every
+finite oriented interval $[a,b]$. Evaluation and the actual covariant
+derivative commute with that integral:
+\[
+ \left(\int_a^b T_t\,dt\right)_x(V_1,\ldots,V_s)
+ =\int_a^b(T_t)_x(V_1,\ldots,V_s)\,dt,
+ \qquad
+ \nabla\int_a^bT_t\,dt=\int_a^b\nabla T_t\,dt.
+\]
+Pairing with a fixed tensor, metric traces and the trace-free symmetric
+projection also commute with this integral.
+\end{lemma}
+
+\begin{proof}
+Each fiber is finite dimensional, so its continuous parameter curve
+has a genuine Bochner integral on a compact interval. Fix a bundle
+trivialization near a base point. Its fiber map is continuous linear
+and therefore commutes with integration. In these fixed coordinates,
+smooth parameter integration proves smoothness of the integral section.
+For each derivative order, compactness of the parameter interval and
+joint regularity provide the local bounds needed to differentiate under
+the integral; no single bound for all orders is required.
+
+Evaluate the covariant derivative on smooth vector fields. Its scalar
+derivative term passes through the integral by the parameter derivative
+formula. Each connection correction is evaluation of $T_t$ on fixed
+tangent vectors at the point under consideration, so evaluation and the
+finite sum of corrections pass through the same integral. This proves
+the claimed identity for the genuine covariant derivative. Finally,
+metric pairing and each stated contraction are continuous linear maps
+on the fixed tensor fiber, which proves their integral identities.
+\end{proof}
+
+For a covariant tensor $T$, the pullback $R_\theta^*T$ includes
+$dR_\theta$ in every covariant slot. This family is jointly smooth:
+the tangent map of the joint action on a vector with zero angle component
+is exactly the fixed-angle derivative, and smooth tensor evaluation
+preserves joint smoothness. We may consequently define $P$ on all smooth
+covariant tensors by normalized fiberwise integration. For a one-form its
+literal evaluation is
+\begin{equation}\label{eq:haar-covector-average}
+ (Ph)_x(V)=\frac1{2\pi}\int_0^{2\pi}
+ h_{R_\theta x}((dR_\theta)_xV)\,d\theta.
+\end{equation}
+
+\begin{theorem}\label{thm:haar-projection}
+The operator $P$ produces smooth global tensors, is real-linear and
+idempotent, and satisfies $R_\phi^*PT=PT$ for every circle rotation.
+Moreover $PT=T$ if and only if $T$ is invariant under that actual circle
+action. In particular $PM(r)=M(r)$ for every globally smooth probe;
+the meridional unit form is a nonzero element of the image for every
+produced metric.
+\end{theorem}
+
+\begin{proof}
+Smoothness and evaluation follow from Lemma~\ref{lem:tensor-interval-integral}.
+The tensor integrals are genuinely integrable, so linearity follows from
+ordinary integral linearity. The group law changes the integrand of
+$P(R_\phi^*T)$ or $R_\phi^*PT$ by an angular translation. Every evaluated
+orbit is $2\pi$-periodic; its integral over one period is unchanged by
+that translation. Thus both expressions equal $PT$.
+An invariant tensor has a constant orbit, whose normalized integral
+equals the original tensor. Apply this fact to the already invariant
+$PT$ to obtain $P^2T=PT$ and the stated characterization of its range.
+Every unit complex number is $e^{i\phi}$ for some real $\phi$, so these
+identities apply to the whole circle group. The actual rotations preserve
+$z$ and $dz$, hence fix $a(z)r(z)dz$. Its unit-probe member is nonzero
+by Lemma~\ref{lem:global-forms}.
+\end{proof}
+
+\begin{theorem}\label{thm:haar-derivatives}
+For the same produced metric, the actual first and second covariant
+derivatives commute with $P$ in every tensor rank. For smooth one-forms,
+\[
+ \Delta^\nabla Ph=P\Delta^\nabla h,\qquad A_g(Ph)=P(A_gh).
+\]
+All these statements are global and include the poles.
+\end{theorem}
+
+\begin{proof}
+Every $R_\theta$ preserves $g$. Lemma~\ref{lem:pullback-dissipation}
+therefore gives $\nabla R_\theta^*T=R_\theta^*\nabla T$ for the same
+connection. Pass this identity through the actual integral using
+Lemma~\ref{lem:tensor-interval-integral}. Apply the result again to
+$\nabla T$ for the second derivative. Metric trace commutes with this
+integral and with isometric pullback, giving the rough-Laplacian identity.
+The same argument for the trace-free symmetric projection, after the
+first derivative, proves the Ahlfors identity.
+\end{proof}
+
+\begin{theorem}\label{thm:haar-split}
+For every produced metric and smooth one-forms $h,k$, the actual Haar
+projection is self-adjoint for the complete four-term polarization:
+\[
+ B_g(Ph,k)=B_g(h,Pk),\qquad B_g(Ph,k-Pk)=0.
+\]
+The original complete action has the exact decomposition
+\begin{equation}\label{eq:haar-action-split}
+ Q_g(h)=Q_g(Ph)+Q_g(h-Ph).
+\end{equation}
+No curvature pinching assumption is required for these identities.
+\end{theorem}
+
+\begin{proof}
+Theorem~\ref{thm:haar-derivatives} and the linear contraction identities
+apply to each term of the original polarized density: the rough pairing,
+the $K^2$-weighted form pairing, the negative $K$-weighted derivative
+pairing, and the positive $2K$-weighted Ahlfors pairing. The resulting
+rotated density is jointly continuous on the angle interval times the
+compact sphere. Its product integral is finite, so Fubini gives exactly
+\begin{equation}\label{eq:haar-pairing-average}
+ B_g(Ph,k)=\frac1{2\pi}\int_0^{2\pi}B_g(R_\theta^*h,k)\,d\theta.
+\end{equation}
+Isometry invariance of the full pairing gives
+$B_g(R_\theta^*h,k)=B_g(h,R_{-\theta}^*k)$.
+Inversion of the angle preserves integration over a full period;
+symmetry of $B_g$ and \eqref{eq:haar-pairing-average} then give
+$B_g(Ph,k)=B_g(h,Pk)$.
+Since $P(k-Pk)=0$ by idempotence, self-adjointness implies
+$B_g(Ph,k-Pk)=0$. Expand the original quadratic action on
+$h=Ph+(h-Ph)$ and use this zero mixed term to obtain
+\eqref{eq:haar-action-split}.
+\end{proof}
+
 \end{document}

@@ -13,8 +13,10 @@ Global meridional/azimuthal forms, unique canonical covariant derivatives, and t
 complete four-term action with integrability and polarization passed Round 4 review.
 The actual meridional derivatives and complete zonal `2*pi*(J[r]+J[s])` reduction
 now have native proofs, including the round value `8*pi/3`, genuine reflection
-orthogonality and parallel Hodge rotation. Haar decomposition, nonzonal positivity,
-geometric sharpness and separation remain open.
+orthogonality and parallel Hodge rotation. The genuine smooth Haar projector,
+canonical-derivative intertwining and complete action split are also native.
+Invariant-form classification, nonzonal positivity/equality, geometric sharpness
+and separation remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

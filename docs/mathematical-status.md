@@ -19,13 +19,16 @@ The actual meridional Hessian, rough Laplacian and all four density contractions
 now give `Q(M_D(r))=2*pi*J_a[r]`, including the actual round value `8*pi/3`.
 Genuine reflection orthogonality and parallel Hodge rotation now give the full
 zonal sum `Q(M_D(r)+Z_D(s))=2*pi*(J_a[r]+J_a[s])`.
-Haar decomposition, nonzonal positivity/equality, CK and separation remain open.
+The actual normalized smooth Haar projection and complete four-term pairing/action
+split are now native. Smooth invariant-form classification, scalarization,
+nonzonal positivity/equality, CK and separation remain open.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
 review at `76143bb`; the coordinate, curvature and volume layer and its manuscript
 claims passed Round 3 review at `0a0b115`. The section/derivative/action layer
-passed Round 4 review at `4cb46f6`. The new meridional/zonal reduction awaits review.
+passed Round 4 review at `4cb46f6`; the meridional/zonal layer passed Round 5
+review at `da1dd90`. The new Haar projection/split layer awaits review.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -48,7 +51,7 @@ isometry used for the two zonal components.
 
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
-| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Partial: exact full zonal reduction, round normalization, same-map action naturality, reflection orthogonality and actual parallel Hodge rotation are native. Haar projection, nonzonal positivity and equality remain required. |
+| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Partial: exact zonal reduction and actual smooth Haar projection/complete split are native. Global smooth invariant-form classification, scalarization, nonzonal positivity and equality remain required. |
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
@@ -62,8 +65,11 @@ The formulas and additional exact calculations appear in
 not by themselves established paper results. The new working manuscript includes
 only claims mapped to native proofs. Its first geometric section proves smooth
 balanced-profile pole factors, actual smooth positive sphere metric, cylinder pullback,
-area, intrinsic curvature, global forms and canonical dissipation;
-the later geometric reductions and headlines remain absent as established claims.
+area, intrinsic curvature, global forms and canonical dissipation. Its exact
+meridional/zonal reduction and intrinsic symmetry proofs are also present.
+The smooth Haar projector and complete split are also present. The remaining
+invariant-classification, scalarization/nonzonal, CK, approximation and separation
+sections are still absent as established claims.
 
 ## Shared dependency graph
 
@@ -79,7 +85,7 @@ flowchart TD
   A[Obstacle anchoring: native] --> S
   C --> S
   S --> N[Two-hemisphere near-symmetry: native]
-  G[Smooth metric and pole producers: native] --> H[Genuine Haar projection]
+  G[Smooth metric and pole producers: native] --> H[Genuine Haar projection: native]
   G --> SEC[Global meridional and azimuthal sections: native]
   G --> CJ[Canonical metric covariant derivatives: native]
   CJ --> ACT[Complete action and polarization: native]
@@ -101,12 +107,19 @@ flowchart TD
   ORTH --> J
   SEC --> J
   ACT --> J
-  H --> Q[Haar split and nonnegative remainder]
+  H --> HS[Full Haar pairing/action split: native]
+  H --> IC[Global smooth invariant-form classification]
+  HS --> Q[Nonnegative Haar remainder]
+  ACT --> SC[Constructive trace/curl scalarization]
+  AREA --> SC
+  SC --> Q
   ACT --> Q
   W[Positive scalar Haar gap] --> Z[Zero remainder iff zero form]
+  W --> Q
   Q --> Z
   R --> CK[Sharp CK threshold and smooth equality]
   Z --> CK
+  IC --> CK
   J --> CK
   C --> B[Box and balance preserving smooth approximation]
   B --> X[Smooth supercritical geometric witnesses]
@@ -122,9 +135,10 @@ Each box has one mathematical role; shared nodes are not reimplemented per
 headline. The analytic stability layer now uses actual interval means and primitives,
 the full normalized lower-obstacle weight, and the true calibrated deficit. Its
 general anchoring lemma derives every product's integrability from compact-interval
-continuity. The next native frontier is genuine normalized covector-pullback
-Haar projection, smooth invariant-form classification, the complete polarized
-split, constructive scalarization and remainder positivity/equality. Geometry proceeds through
+continuity. The next native frontier is global smooth invariant-form classification,
+constructive scalarization and unconditional remainder positivity/equality.
+The actual normalized projector, canonical derivatives and full polarized split
+are already available. Geometry proceeds through
 real producers, not by moving the historical aggregate into the new project.
 
 ## Corrected conventions and load-bearing risks
@@ -134,7 +148,8 @@ real producers, not by moving the historical aggregate into the new project.
   Using `log a` reverses the pair ratio. The southern identity uses balance.
 - The constant-probe normalization is
   `J_a[c]=[2(I(k₊)+I(k₋))−4/3]c²`, and geometric half-dissipation is `2πJ`.
-  The metric and section-jet bridges remain native obligations.
+  The remaining native obligation here is the actual northern/southern
+  hemisphere pair-functional substitution, including the southern balance identity.
 - With area measured from the south pole,
   `f_K(x)=2x−2∫₀ˣ(x−s)K(s)ds`, hence `f_K''=−2K`, `f_K(0)=0`, `f_K'(0)=2`.
   On `[0,L]` the north-pole conditions require `∫K=2` and `∫sK=L`.

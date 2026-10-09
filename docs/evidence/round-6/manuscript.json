@@ -1,0 +1,12 @@
+{
+  "source_sha256": "8445543a43121e9fa25ee48be4710a56b07fd36b210b8b0b3eea87ed920405fd",
+  "theorem_map_sha256": "ab664075eb3c2638cecebf787fec95fc7c7a849328fa5a4192b9977e2897c861",
+  "labels": 64,
+  "references": 67,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round5 accepted; new genuine Haar projector/complete split claims pending outer review"
+}
