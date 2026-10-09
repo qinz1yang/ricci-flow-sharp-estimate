@@ -25,7 +25,10 @@ Haar/zonal action consumer are also native. Constructive trace/curl scalarizatio
 of the same complete action is now native. Actual trace/curl scalar Haar
 compatibility, zero angular means and pole vanishing for the original remainder
 are native. The genuine polar endpoint/integrability and positive scalar Haar
-estimate are now native as well. Nonzonal positivity/equality, CK and separation remain open.
+estimate are now native as well. The original Haar remainder has native
+nonnegativity and equality exactly at zero remainder, with strict Haar and
+same-probe zonal action comparisons. CK sharpness, full class transport and
+structural separation remain open.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
@@ -36,7 +39,8 @@ review at `da1dd90`. The Haar projection/split layer passed Round 6 review
 at `43111f9`.
 The global invariant-form classification layer passed Round 7 review at `8765255`.
 The scalarization and scalar Haar layers passed Round 8 independent review at `659006b`.
-The new positive scalar estimate layer awaits independent review.
+The positive scalar estimate passed Round 9 independent review at `da47567`.
+The new original-remainder sign/equality layer awaits independent review.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -59,7 +63,7 @@ isometry used for the two zonal components.
 
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
-| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Partial: exact zonal reduction, actual Haar projection/split, invariant classification, original-action scalarization, scalar Haar compatibility and positive scalar energy estimate are native. Unconditional nonzonal positivity and zero-remainder equality remain required. |
+| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | The produced-metric suite, including unconditional remainder nonnegativity and zero-remainder equality, is native. The new remainder consumer awaits review; complete same-map class transport remains in T07. |
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
@@ -78,7 +82,8 @@ meridional/zonal reduction and intrinsic symmetry proofs are also present.
 The smooth Haar projector, complete split and global smooth invariant-form
 classification, constructive scalarization and scalar Haar compatibility are also
 present, together with the positive scalar estimate and its endpoint/integrability proofs.
-The remaining nonzonal sign/equality, CK, approximation and separation sections are still absent
+The original-remainder nonnegativity/equality and strict Haar/zonal comparisons
+are also present. The remaining CK, approximation and separation sections are still absent
 as established claims.
 
 ## Shared dependency graph
@@ -119,7 +124,7 @@ flowchart TD
   ACT --> J
   H --> HS[Full Haar pairing/action split: native]
   H --> IC[Global smooth invariant-form classification: native]
-  HS --> Q[Nonnegative Haar remainder]
+  HS --> Q[Nonnegative original Haar remainder: native]
   ACT --> SC[Constructive trace/curl scalarization: native]
   AREA --> SC
   CJ --> GREEN[Canonical tensor integration by parts: native]
@@ -131,7 +136,7 @@ flowchart TD
   AREA --> SH
   SH --> Q
   ACT --> Q
-  W[Positive scalar Haar gap with endpoint bounds: native] --> Z[Zero remainder iff zero form]
+  W[Positive scalar Haar gap with endpoint bounds: native] --> Z[Zero remainder iff zero form: native]
   W --> Q
   Q --> Z
   R --> CK[Sharp CK threshold and smooth equality]
@@ -152,12 +157,14 @@ Each box has one mathematical role; shared nodes are not reimplemented per
 headline. The analytic stability layer now uses actual interval means and primitives,
 the full normalized lower-obstacle weight, and the true calibrated deficit. Its
 general anchoring lemma derives every product's integrability from compact-interval
-continuity. The next native frontier is unconditional remainder positivity/equality.
+continuity. The next native frontier is the actual constant-zonal hemisphere
+substitution and invariant CK classification, followed by exact CK sharpness,
+full equality and smooth recovery.
 The actual normalized projector, canonical
 derivatives, full polarized split, global invariant classification and literal
 original-action scalarization, scalar Haar compatibility, scalar pole values and
-the positive scalar estimate with its weighted integrability laws are already
-available. Geometry proceeds through
+the positive scalar estimate with its weighted integrability laws, and original
+remainder nonnegativity/equality are already available. Geometry proceeds through
 real producers, not by moving the historical aggregate into the new project.
 
 ## Corrected conventions and load-bearing risks
@@ -180,10 +187,11 @@ real producers, not by moving the historical aggregate into the new project.
 - The optimizer has derivative jumps at both contacts for `C>1`; the free arc
   collapses at `C=1`. Smooth nonattainment for constant probes alone cannot
   establish the full CK equality statement.
-- A new positive scalar remainder is needed to prove
-  `Q(h−Ph)=0 ↔ h−Ph=0`. The explicit polar square completion and proposed
-  estimate with weight `1/b(z)` are recorded in the geometric audit, unproved
-  in Lean. This is a genuine additional dependency, not an assumed equality law.
+- The polar square completion and positive scalar estimate with weight `1/b(z)`
+  are native and passed Round 9 review. Their application to the original
+  remainder now proves `Q(h−Ph)≥0` and `Q(h−Ph)=0 ↔ h−Ph=0`, using actual
+  derivative vanishing and full-support Riemannian volume. This new consumer
+  awaits review; full CK equality still requires the remaining zonal CK argument.
 - General-probe action involves `a'`. Uniform approximation of `a` alone is
   insufficient for its convergence. Reconstruct the area-coordinate exact
   moment recovery and actual meridional action continuity instead.

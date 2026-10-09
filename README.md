@@ -19,10 +19,13 @@ Global smooth invariant-form classification and its actual Haar/zonal action
 consumer are now native, including both poles. Constructive trace/curl
 scalarization of that same complete action and actual scalar Haar compatibility
 passed Round 8 independent review at `659006b`.
-The positive scalar Haar estimate is now native, with actual polar coordinates,
-uniform endpoint bounds and internally proved weighted integrability. Its new
-layer awaits independent review. Nonzonal positivity/equality, geometric
-CK sharpness and structural separation remain open.
+The positive scalar Haar estimate, including polar endpoints and weighted
+integrability, passed Round 9 independent review at `da47567`.
+The original nonzonal remainder now has native nonnegativity and equality
+exactly at zero remainder. Haar averaging decreases the action, with equality
+exactly for invariant forms; the same smooth zonal probes give the corresponding
+lower bound and equality case. This new layer awaits independent review.
+Geometric CK sharpness, full class transport and structural separation remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

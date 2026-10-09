@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all ninety-four current modules. Importing it is required
+The root aggregate is a real consumer of all ninety-eight current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -126,10 +126,23 @@ signature and transitive-axiom drivers run. All 1748 declarations, including
 705 private declarations, have only permitted foundational axioms. All 363
 required selectors and 462 signature queries are covered; 99 input hashes,
 100 output hashes and three driver hashes bind the evidence. Source and
-declaration-linter outputs are silent. Six new conventional claims and their
-exact mappings await independent review. The positive estimate retains the
+declaration-linter outputs are silent. The six conventional claims and their
+exact mappings passed Round 9 independent review at `da47567`. The positive estimate retains the
 original metric/differential/volume and derives every weighted integrability
-condition internally. Unconditional remainder sign/equality, the later
-CK/separation suite and actual typesetting remain open.
+condition internally.
+
+The [original-remainder receipt](evidence/round-10/receipt.json),
+[axiom closure](evidence/round-10/axioms.txt), and
+[exact signatures](evidence/round-10/signatures.txt) cover all 98 modules.
+It reuses 94 unchanged accepted source elaborations and freshly checks four new
+sources, then reruns the aggregate and all declaration/signature/axiom drivers.
+All 1777 declarations, including 716 private declarations, have permitted
+transitive axioms only. All 378 required selectors and 477 signature queries
+execute. The receipt binds 103 inputs, 104 outputs and three generated drivers;
+source and declaration outputs are silent. The original remainder's unconditional
+nonnegativity, equality exactly at zero remainder, and strict Haar/zonal consumers
+are native. The four new conventional claims await independent review.
+The CK/separation suite, full same-map class transport and actual typesetting
+remain open. Historical receipts are unchanged.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

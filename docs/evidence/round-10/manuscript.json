@@ -1,0 +1,14 @@
+{
+  "source_sha256": "a5c110adecf67374ae2557bfb5a6be3f41effe9d1c24675962efc77975ad339a",
+  "theorem_map_sha256": "9b56d9e08a680c1cdfc732b3d015f6b8a4639a4388ced1437cda8bb6b62c04db",
+  "labels": 104,
+  "references": 120,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round9 accepted; four new original-remainder/strict Haar-zonal claims pending configured outer review"
+}

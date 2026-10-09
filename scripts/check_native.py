@@ -109,6 +109,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalPolarDifferential",
     "RicciFlowSharpEstimate.Geometry.RotationalPolarIntegration",
     "RicciFlowSharpEstimate.Geometry.RotationalScalarGap",
+    "RicciFlowSharpEstimate.Geometry.WeightedIntegralRigidity",
+    "RicciFlowSharpEstimate.Geometry.OneFormDerivativeRigidity",
+    "RicciFlowSharpEstimate.Geometry.RotationalRemainderBounds",
+    "RicciFlowSharpEstimate.Geometry.RotationalRemainder",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -483,7 +487,22 @@ SELECTOR = r"""
       poleData ++ `normSq0S_polar_covector,
       poleData ++ `normSq0S_differential1FormFun_polar,
       poleData ++ `integral_polar_metric,
-      poleData ++ `integral_scalar_energy_ge_of_rotationalScalarAverage_eq_zero
+      poleData ++ `integral_scalar_energy_ge_of_rotationalScalarAverage_eq_zero,
+      geo ++ `integral_weight_mul_normSq_eq_zero_iff,
+      geo ++ `integral_weight_mul_sq_eq_zero_iff,
+      geo ++ `metricNabla0S_zero,
+      geo ++ `metricNabla0S_second_eq_zero_of_first_eq_zero,
+      geo ++ `roughLap0SField_eq_zero_of_metricNabla0S_eq_zero,
+      geo ++ `metricNabla0S_eq_zero_of_ahlfors_trace_curl_eq_zero,
+      geo ++ `oneFormDissipation_eq_curvature_energy_of_metricNabla0S_eq_zero,
+      poleData ++ `oneFormDissipation_remainder_lower_bound,
+      poleData ++ `oneFormDissipation_remainder_nonneg,
+      poleData ++ `oneFormDissipation_remainder_eq_zero_iff,
+      poleData ++ `oneFormDissipation_remainder_pos_iff,
+      poleData ++ `oneFormDissipation_rotationalAverage_le,
+      poleData ++ `oneFormDissipation_eq_rotationalAverage_iff,
+      poleData ++ `oneFormDissipation_eq_rotationalAverage_iff_invariant,
+      poleData ++ `exists_haar_zonal_lower_bound
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -1254,6 +1273,36 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check integral_polar_metric
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check integral_scalar_energy_ge_of_rotationalScalarAverage_eq_zero
+open RicciFlowSharpEstimate.Geometry in
+#check integral_weight_mul_normSq_eq_zero_iff
+open RicciFlowSharpEstimate.Geometry in
+#check integral_weight_mul_sq_eq_zero_iff
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_zero
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_second_eq_zero_of_first_eq_zero
+open RicciFlowSharpEstimate.Geometry in
+#check roughLap0SField_eq_zero_of_metricNabla0S_eq_zero
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_eq_zero_of_ahlfors_trace_curl_eq_zero
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipation_eq_curvature_energy_of_metricNabla0S_eq_zero
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_remainder_lower_bound
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_remainder_nonneg
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_remainder_eq_zero_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_remainder_pos_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_rotationalAverage_le
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_rotationalAverage_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_rotationalAverage_iff_invariant
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_haar_zonal_lower_bound
 """
 
 

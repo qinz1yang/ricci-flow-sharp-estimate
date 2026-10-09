@@ -1904,6 +1904,121 @@ the compact sphere, and the polar densities are integrable by the established
 endpoint estimates. No expression is evaluated by division at a geometric pole.
 \end{proof}
 
+\section{Strict positivity of the nonzonal remainder}
+
+\begin{lemma}\label{lem:weighted-energy-rigidity}
+Let $(M,g)$ be a compact smooth Riemannian manifold, let $w:M\to\R$ be
+continuous and strictly positive, and let $T$ be a smooth covariant tensor.
+Then
+\[
+ \int_M w|T|_g^2\,d\mu_g=0\quad\Longleftrightarrow\quad T=0.
+\]
+Likewise, for every continuous real scalar $v$,
+$\int_M wv^2\,d\mu_g=0$ if and only if $v=0$.
+\end{lemma}
+
+\begin{proof}
+The Riemannian density is positive in every coordinate neighborhood, so every
+nonempty open set has positive volume. The displayed integrands are continuous,
+nonnegative and integrable by compactness. A zero integral makes the integrand
+zero almost everywhere. Continuity and positivity of the measure on open sets
+then make it zero everywhere: a positive value would persist on a nonempty
+open neighborhood and contradict almost-everywhere vanishing. Strict positivity
+of $w$ and positive definiteness of the tensor norm give $T=0$. The scalar case
+uses the same argument with $v^2$. Both converse implications are immediate.
+\end{proof}
+
+\begin{theorem}\label{thm:nonzonal-positivity-rigidity}
+For every produced rotational metric $g_D$ and smooth one-form $h$, put
+$k=h-Ph$, $A=A_{g_D}k$, $\tau=\operatorname{tr}_{g_D}(\nabla k)$ and
+$\omega=\langle\Omega_D,\nabla k\rangle_{g_D}$. The original complete action satisfies
+\begin{equation}\label{eq:nonzonal-positive-budget}
+ Q_{g_D}(k)\geq
+ 3\int K_{g_D}|A|_{g_D}^2\,d\mu_{g_D}
+ +\frac12\left(\int\frac{\tau^2}{b(z)}\,d\mu_{g_D}
+                 +\int\frac{\omega^2}{b(z)}\,d\mu_{g_D}\right)\geq0.
+\end{equation}
+Moreover,
+\begin{equation}\label{eq:nonzonal-zero-rigidity}
+ Q_{g_D}(h-Ph)=0\quad\Longleftrightarrow\quad h-Ph=0.
+\end{equation}
+Thus every nonzero Haar remainder has strictly positive action, with no
+curvature pinching assumption.
+\end{theorem}
+
+\begin{proof}
+The actual scalars $\tau,\omega$ are smooth and have zero angular mean by
+Theorem~\ref{thm:scalar-haar-compatibility}. Apply
+Theorem~\ref{thm:positive-scalar-haar-gap} to each. The literal scalarization
+in Corollary~\ref{cor:rotational-scalarization} gives
+\[
+ Q_{g_D}(k)=\int|\nabla A|_{g_D}^2\,d\mu_{g_D}
+        +3\int K_{g_D}|A|_{g_D}^2\,d\mu_{g_D}
+        +\frac12\left(E(\tau)+E(\omega)\right),
+\]
+where $E(v)=\int(|dv|_{g_D}^2-K_{g_D}v^2)\,d\mu_{g_D}$ denotes the scalar
+energy appearing in that identity. The two proved scalar bounds and the
+nonnegative first integral prove \eqref{eq:nonzonal-positive-budget}.
+Here $K_{g_D}=1/a(z)>0$ and $b(z)>0$ on the entire sphere.
+
+Suppose $Q_{g_D}(k)=0$. All three weighted integrals in the lower bound must
+vanish. Apply Lemma~\ref{lem:weighted-energy-rigidity} with weights $K_{g_D}$
+and $1/b(z)$ to obtain $A=0$, $\tau=0$ and $\omega=0$ everywhere.
+The actual tensor decomposition from Lemma~\ref{lem:surface-tensor-splitting}
+then gives
+\[
+ \nabla k=A+\frac{\tau}{2}g_D+\frac{\omega}{2}\Omega_D=0.
+\]
+This is an equality of the original smooth tensor sections. Differentiating it
+gives $\nabla^2k=0$, and tracing gives $\Delta^\nabla k=0$.
+Substitution in the original four-term action \eqref{eq:complete-dissipation},
+not merely its scalar lower bound, leaves
+\[
+ 0=Q_{g_D}(k)=\int K_{g_D}^2|k|_{g_D}^2\,d\mu_{g_D}.
+\]
+The weight $K_{g_D}^2$ is continuous and strictly positive. A final application
+of Lemma~\ref{lem:weighted-energy-rigidity} gives $k=0$.
+Conversely the canonical derivatives of the zero section and all four original
+density terms vanish, so its action is zero. Nonnegativity and the zero
+classification give strict positivity when $k\ne0$.
+\end{proof}
+
+\begin{corollary}\label{cor:haar-action-comparison}
+For every smooth one-form on the same produced metric,
+\[
+ Q_{g_D}(Ph)\leq Q_{g_D}(h).
+\]
+Equality holds exactly when $h=Ph$, equivalently when $h$ is invariant under
+every rotation of the actual circle action.
+\end{corollary}
+
+\begin{proof}
+The complete Haar split of Theorem~\ref{thm:haar-split} gives
+$Q_{g_D}(h)-Q_{g_D}(Ph)=Q_{g_D}(h-Ph)$.
+Apply Theorem~\ref{thm:nonzonal-positivity-rigidity}. The fixed points of the
+actual projector are precisely the invariant forms, by
+Theorem~\ref{thm:haar-projection}.
+\end{proof}
+
+\begin{corollary}\label{cor:strict-zonal-bound}
+For every smooth $h$ there are globally smooth real probes $r,s$ such that
+\[
+ Ph=M_D(r)+Z_D(s),\qquad
+ Q_{g_D}(h)\geq2\pi\bigl(J_a[r]+J_a[s]\bigr).
+\]
+For these same probes, equality holds if and only if
+$h=M_D(r)+Z_D(s)$.
+\end{corollary}
+
+\begin{proof}
+Use the original invariant-form classification to represent the actual $Ph$.
+The exact zonal identity gives
+$Q_{g_D}(Ph)=2\pi(J_a[r]+J_a[s])$ for those probes. Both the bound and its
+equality case follow from Corollary~\ref{cor:haar-action-comparison}.
+The global smoothness and the section equality retain their validity at both
+poles; no equatorial symmetry is assumed.
+\end{proof}
+
 \begin{thebibliography}{1}
 \bibitem{jerison-fourier}
 D.~Jerison, \emph{Fourier Series, Part 1}, MIT 18.103 Fourier Analysis,
