@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all ninety-eight current modules. Importing it is required
+The root aggregate is a real consumer of all 107 current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -141,8 +141,34 @@ transitive axioms only. All 378 required selectors and 477 signature queries
 execute. The receipt binds 103 inputs, 104 outputs and three generated drivers;
 source and declaration outputs are silent. The original remainder's unconditional
 nonnegativity, equality exactly at zero remainder, and strict Haar/zonal consumers
-are native. The four new conventional claims await independent review.
-The CK/separation suite, full same-map class transport and actual typesetting
-remain open. Historical receipts are unchanged.
+are native. The four conventional claims and native evidence passed
+Round 10 independent review at `0473a6a`.
+
+The [produced CK safety receipt](evidence/round-11/receipt.json),
+[axiom closure](evidence/round-11/axioms.txt), and
+[exact signatures](evidence/round-11/signatures.txt) cover all 107 modules.
+The 98 preceding mathematical sources are unchanged and their successful
+elaborations are reused with the recorded provenance; nine new sources are
+freshly elaborated. The root and declaration/signature/axiom drivers run again.
+All 1867 defining-module declarations, including 730 private declarations,
+have permitted transitive axioms only. All 435 required selectors and 534
+signature queries execute. The receipt binds 112 inputs, 113 outputs and three
+generated drivers. Source and declaration-linter outputs are silent.
+The first gate stopped on three long lines in generated selector expressions;
+splitting those lines and rerunning the gate resolved the diagnostics without
+changing any theorem or disabling a linter.
+
+The actual north/south hemisphere identities, invariant CK classification,
+critical variational cap and produced-metric CK safety/equality are now native.
+The public consumers use both profile bounds and actual Gauss-curvature bounds,
+include zero Haar average and cap one, and prove positivity of the fixed unit
+meridional probe. Seven conventional claims and their exact map are present
+and await independent review. The [manuscript receipt](evidence/round-11/manuscript.json)
+records 115 unique labels, 143 resolved references and one resolved citation;
+its structural checks do not claim typesetting.
+Smooth negative witnesses and fixed-probe critical action convergence,
+geometric stability normalization, full same-map conjugated class transport,
+structural separation and actual typesetting remain open. Historical receipts
+are unchanged.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

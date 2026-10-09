@@ -1,0 +1,14 @@
+{
+  "source_sha256": "ae7bf23bc0f621901b11a21efcdc7bc9eb064c8b3faa00e17c10fd49076e1f13",
+  "theorem_map_sha256": "11a11a77cc4998d9c87ca993dd1dd9f23796ecb99744b3778a0223c4606046a2",
+  "labels": 115,
+  "references": 143,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round10 accepted; seven new hemisphere/critical-cap/produced-CK claims pending configured outer review"
+}

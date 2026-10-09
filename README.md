@@ -24,8 +24,14 @@ integrability, passed Round 9 independent review at `da47567`.
 The original nonzonal remainder now has native nonnegativity and equality
 exactly at zero remainder. Haar averaging decreases the action, with equality
 exactly for invariant forms; the same smooth zonal probes give the corresponding
-lower bound and equality case. This new layer awaits independent review.
-Geometric CK sharpness, full class transport and structural separation remain open.
+lower bound and equality case. That layer passed Round 10 review at `0473a6a`.
+The actual northern/southern pair-functional substitutions, invariant CK
+classification, exact variational critical cap and produced-metric CK safety
+with equality only at the zero form now have native proofs. They include
+actual curvature bounds and strict positivity of the fixed unit meridional
+probe, and await independent review. Smooth sharpness and fixed-probe endpoint
+recovery, geometric stability normalization, full class transport and
+structural separation remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

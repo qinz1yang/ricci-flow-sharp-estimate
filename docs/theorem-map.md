@@ -10,8 +10,10 @@ trace/curl scalarization of the original complete action, and scalar Haar
 compatibility with zero angular means and pole values for the actual remainder.
 The positive scalar estimate and its polar endpoint/integrability proofs are now
 included, together with unconditional original-remainder nonnegativity/equality
-and the resulting strict Haar/zonal action comparison. CK and separation
-sections remain unwritten. This map does
+and the resulting strict Haar/zonal action comparison. The actual hemisphere
+substitution, variational critical cap, invariant CK classification and
+produced-metric safety/equality are now included. Smooth CK sharpness/recovery,
+geometric stability, full class transport and separation remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The prefixes `Geometry` and `Analysis` below are relative to `RicciFlowSharpEstimate`.
@@ -24,7 +26,8 @@ The Haar projection/split layer passed Round 6 review at `43111f9`.
 The global invariant-form classification layer passed Round 7 review at `8765255`.
 The constructive scalarization and scalar Haar layers passed Round 8 review at `659006b`.
 The positive scalar estimate passed Round 9 review at `da47567`.
-The new original-remainder sign/equality layer requires its own review.
+The original-remainder sign/equality layer passed Round 10 review at `0473a6a`.
+The new hemisphere/critical-cap/produced-CK layer requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -110,7 +113,15 @@ The new original-remainder sign/equality layer requires its own review.
 | Genuine smooth tensor pullback and canonical derivative/action naturality | `Geometry.diffeomorphTensorPullback_apply`, identity/composition/inverse laws, `metricNabla0S_diffeomorphTensorPullback`, `metricNabla0S_twice_diffeomorphTensorPullback`, `roughLap0SField_diffeomorphTensorPullback`, `oneFormDissipation_diffeomorphTensorPullback` in `Geometry/OneFormDissipationNaturality.lean` | The actual derivative acts in every slot; same-map metric/tensor transport, including orientation-reversing diffeomorphisms. |
 | Actual meridian-reflection orthogonality | `Geometry.meridianReflectionSphereDiffeo_coe`, `RotationalProfile.PoleData.pullbackMetric_meridianReflectionSphereDiffeo`, `oneFormDissipationPairing_meridional_azimuthal`, `oneFormDissipation_meridional_add_azimuthal` | Reflection preserves height, fixes M and reverses Z; full four-term pairing, without equatorial symmetry. |
 | Explicit smooth metric area form and canonical parallelness | `Geometry.roundSphereAreaForm_apply`; `RotationalProfile.PoleData.areaForm_apply`, `areaForm_unit_on_orthonormal`, `areaForm_normSq`, `metricNabla0S_areaForm` in `Geometry/RotationalAreaForm.lean` | Literal profile-scaled ambient determinant; native parallelness from alternation and constant norm, not a supplied jet. |
-| Exact CK threshold, full smooth equality, smooth supercritical witnesses | No native declaration yet | Mandatory. |
+| Literal reciprocal logarithm regularity and forward pair integration | `Analysis.continuousOn_log_reciprocal`, `hasDerivAt_log_reciprocal`, `log_reciprocal_bounds` in `Analysis/ReciprocalLogarithm.lean`; `pairFunctional_eq_forward_intervalIntegral`, `pairFunctional_log_reciprocal` in `Variational/ReciprocalProfile.lean` | Natural interval-local positivity; actual triangle Fubini and internally derived integrability. |
+| Actual north/south admissibility and pair-functional substitution | `Geometry.RotationalProfile.PoleData.northLogProfile_admissible`, `southLogProfile_admissible`, both continuous/derivative/differentiable laws, `warp_reflected`, `pairFunctional_northLogProfile`, `pairFunctional_southLogProfile`, `integral_meridionalWeight_eq_pairFunctional_sum` in `Geometry/HemispherePairFunctional.lean` | Literal log(M/a(±v)), southern balance, same original profile; no equatorial symmetry or exterior positivity. |
+| Exact constant-zonal complete action | `Geometry.RotationalProfile.PoleData.meridionalDensity_const`, `meridionalAction_const`, `oneFormDissipation_constant_zonal`, `oneFormDissipation_constant_zonal_eq_pair_sum` in `Geometry/ConstantZonalAction.lean` | Same metric/M/Z/Q; coefficient 2*pi*(2*(Iplus+Iminus)-4/3)*(c²+d²). |
+| Structurally derived critical cap of the actual optimal functional | `criticalCap`, `one_lt_criticalCap`, `capParameter_criticalCap`, `capParameter_criticalCap_cube`, `upperContact_capParameter_criticalCap`, `pairFunctional_obstacleLogProfile_criticalCap`, `pairFunctional_obstacleLogProfile_ge_one_third_iff`, `pairFunctional_gt_one_third_of_differentiableOn` in `Variational/CriticalCap.lean` | Exact radical/exponential number, actual canonical parameter and optimal value; direct cap-one branch. No geometric sharpness claim without witnesses. |
+| Genuine CK equation, linearity and same-map naturality | `Geometry.IsConformalKillingOneForm`, pointwise/norm equivalences and its add/smul/neg/sub/pullback laws in `Geometry/ConformalKillingOneForms.lean` | Existing Ahlfors part of actual metricNabla0S; no free derivative or supplied classification. |
+| Constant-probe CK classification and preservation by the actual Haar projector | `Geometry.RotationalProfile.PoleData.exists_constant_zonal_decomposition_of_rotationInvariant_of_isConformalKillingOneForm`, its iff, `isConformalKillingOneForm_rotationalAverage`, `exists_constant_zonal_decomposition_rotationalAverage_of_isConformalKillingOneForm`, `meridional_one_nonzero_conformalKilling` in `Geometry/RotationalConformalKilling.lean` | Original invariant form/average, actual reflection and Hodge derivative laws; probe constancy only on [-1,1], and a genuine nonzero CK section. |
+| Actual curvature/profile box equivalence | `Geometry.RotationalProfile.PoleData.curvature_bounds_iff_profile_bounds` in `Geometry/RotationalCurvatureBounds.lean` | Actual scalar/2 on every sphere point, including poles; positive reciprocal bounds on the physical height interval. |
+| Produced-metric CK safety and full smooth equality at/below the critical cap | `Geometry.RotationalProfile.PoleData.oneFormDissipation_nonneg_of_conformalKilling_profile_bounds`, `oneFormDissipation_eq_zero_iff_of_conformalKilling_profile_bounds`, corresponding `_curvature_bounds` theorems, `oneFormDissipation_meridional_one_pos_of_profile_bounds` in `Geometry/ConformalKillingSafety.lean` | Actual CK h, original Q≥0 and Q=0 iff h=0, including zero Haar average; fixed M_D(1) has positive action. Native pending independent review. |
+| Full-class sharp CK threshold, smooth supercritical witnesses and fixed-probe critical recovery | No final native declaration yet | Mandatory, together with geometric stability normalization and conjugated action/projector transport. Produced-metric safety alone does not finish this headline. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
 
 The manuscript's current statements are tied to native proofs as follows:
@@ -169,6 +180,13 @@ The manuscript's current statements are tied to native proofs as follows:
 | `thm:nonzonal-positivity-rigidity` | `RotationalProfile.PoleData.oneFormDissipation_remainder_lower_bound`, `oneFormDissipation_remainder_nonneg`, `oneFormDissipation_remainder_eq_zero_iff`, `oneFormDissipation_remainder_pos_iff`; actual first/second derivative and original-action reduction in `Geometry/OneFormDerivativeRigidity.lean` |
 | `cor:haar-action-comparison` | `RotationalProfile.PoleData.oneFormDissipation_rotationalAverage_le`, `oneFormDissipation_eq_rotationalAverage_iff`, `oneFormDissipation_eq_rotationalAverage_iff_invariant`, reusing the actual complete Haar split |
 | `cor:strict-zonal-bound` | `RotationalProfile.PoleData.exists_haar_zonal_lower_bound`, using the accepted global classification and original exact zonal action for the same returned probes |
+| `lem:hemisphere-pair-substitution` | Actual log continuity, both derivative/admissibility theorems, `warp_reflected`, both pair-functional substitutions and full weight-integral sum in `Geometry/HemispherePairFunctional.lean`; genuine forward Fubini in `Variational/ReciprocalProfile.lean` |
+| `lem:constant-zonal-coefficient` | `RotationalProfile.PoleData.oneFormDissipation_constant_zonal_eq_pair_sum`, using actual constant density/action and the accepted zonal theorem |
+| `thm:critical-pair-cap` | All eight public declarations of `Variational/CriticalCap.lean`, including actual parameter/contact identities, optimal-value comparison and strict differentiable competitor bound with direct cap one |
+| `thm:invariant-ck-classification` | Actual CK predicate/linearity/isometry naturality; constant M/Z laws, physical-interval constancy, actual invariant classification, Haar preservation/classification and nonzero unit witness in `Geometry/RotationalConformalKilling.lean` |
+| `lem:curvature-profile-box` | `RotationalProfile.PoleData.curvature_bounds_iff_profile_bounds`, using actual intrinsic curvature and polar height coverage |
+| `thm:produced-ck-safety` | Four public profile/curvature nonnegativity and zero-iff theorems in `Geometry/ConformalKillingSafety.lean`, with proved positive coefficient, full Haar split and accepted original remainder equality |
+| `cor:fixed-unit-probe-positive` | `RotationalProfile.PoleData.oneFormDissipation_meridional_one_pos_of_profile_bounds`, using the original nonzero unit CK section and full produced-metric equality |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

@@ -2019,6 +2019,246 @@ The global smoothness and the section equality retain their validity at both
 poles; no equatorial symmetry is assumed.
 \end{proof}
 
+\section{Hemisphere substitution and conformal-Killing safety}
+
+Write $K_{g_D}=\operatorname{Scal}_{g_D}/2$ and retain the original
+$H=f/a$, sections $M_D,Z_D$, projector $P$ and complete action $Q_{g_D}$.
+A smooth one-form is conformal Killing, abbreviated CK, when its actual
+Ahlfors derivative vanishes:
+$A_{g_D}h=\operatorname{sym}(\nabla h)
+-\tfrac12\operatorname{tr}_{g_D}(\nabla h)g_D=0$.
+
+\begin{lemma}\label{lem:hemisphere-pair-substitution}
+Suppose $0<m\leq a(v)\leq M$ on $[-1,1]$ and put $C=M/m$. The functions
+\[
+ k_+(v)=\log\frac{M}{a(v)},\qquad
+ k_-(v)=\log\frac{M}{a(-v)}
+\]
+are continuous on $[0,1]$, differentiable on $(0,1)$ and admissible at cap $C$.
+Their derivatives are $-a'(v)/a(v)$ and $a'(-v)/a(-v)$, respectively.
+Moreover,
+\begin{equation}\label{eq:hemisphere-pair-substitution}
+ \I(k_+)=\int_0^1 H(v)\,dv,\qquad
+ \I(k_-)=\int_0^1 H(-v)\,dv,\qquad
+ \I(k_+)+\I(k_-)=\int_{-1}^1H(v)\,dv.
+\end{equation}
+No equatorial symmetry is assumed.
+\end{lemma}
+
+\begin{proof}
+The bounds imply $M>0$, $C\geq1$ and $1\leq M/a(\pm v)\leq C$.
+Monotonicity of the logarithm gives both obstacle bounds. Positivity on the
+physical interval, smoothness of $a$ and the chain rule give the stated
+regularity and derivatives; global positivity outside that interval is unnecessary.
+Fubini on the triangular domain in the definition of $\I$ gives, for every
+continuous $k$ on $[0,1]$,
+\[
+ \I(k)=\int_0^1 e^{k(v)}
+                  \left(\int_v^1 2s e^{-k(s)}\,ds\right)dv .
+\]
+The integrand is bounded on the compact square, which supplies genuine
+integrability before interchanging integrals. For $k_+$ its inner expression
+becomes $2\int_v^1s a(s)\,ds/a(v)=H(v)$.
+
+For the south, let $\widetilde a(s)=a(-s)$. Changing variables and using
+the original balance condition gives
+\[
+ 2\int_v^1s\widetilde a(s)\,ds
+ =-2\int_{-1}^{-v}t a(t)\,dt
+ =2\int_{-v}^1t a(t)\,dt=f(-v).
+\]
+Thus its quotient is $H(-v)$. Splitting the full height integral at zero
+and reflecting the negative interval proves the last identity.
+All quotients are continuous on their compact integration intervals.
+\end{proof}
+
+\begin{lemma}\label{lem:constant-zonal-coefficient}
+For every $M>0$ and real constants $c,d$,
+\begin{equation}\label{eq:constant-zonal-pair-coefficient}
+ Q_{g_D}\bigl(M_D(c)+Z_D(d)\bigr)
+ =2\pi\left(2\bigl(\I(k_+)+\I(k_-)\bigr)-\frac43\right)(c^2+d^2),
+\end{equation}
+where $k_\pm(v)=\log(M/a(\pm v))$. Here constant real numbers denote
+the corresponding globally constant smooth probes.
+\end{lemma}
+
+\begin{proof}
+For a constant probe, the actual operator in
+\eqref{eq:meridional-operator} is $L_a c=-c$. Its action density in
+\eqref{eq:meridional-action} is therefore $(2H(v)-2v^2)c^2$.
+The compact-interval continuity of $H$ supplies integrability, and
+$\int_{-1}^1v^2\,dv=2/3$ yields
+\[
+ J_a[c]=\left(2\int_{-1}^1H(v)\,dv-\frac43\right)c^2.
+\]
+Apply the exact zonal formula of Theorem~\ref{thm:zonal-reduction} and the
+hemisphere identities proved above. Those identities only need $M>0$;
+the additional $m,M$ bounds in Lemma~\ref{lem:hemisphere-pair-substitution}
+are used for admissibility, not this equality.
+\end{proof}
+
+\begin{theorem}\label{thm:critical-pair-cap}
+Define
+\begin{equation}\label{eq:critical-pair-cap}
+ C_{\mathrm{CK}}
+ =\left(\frac{5+\sqrt{13}}3\right)^{1/3}
+       \exp\left(\frac{4+2\sqrt{13}}9\right)>1.
+\end{equation}
+For the actual optimal value
+$m(C)=\I(k_{*,C})=2/3-\beta(C)+1/(3\beta(C))$ from
+Theorem~\ref{thm:minimum}, one has
+\[
+ m(C_{\mathrm{CK}})=\frac13,\qquad
+ m(C)\geq\frac13\quad\Longleftrightarrow\quad C\leq C_{\mathrm{CK}}
+ \quad(C\geq1).
+\]
+Every admissible profile continuous on $[0,1]$ and differentiable on $(0,1)$
+at a cap $1\leq C\leq C_{\mathrm{CK}}$ satisfies $\I(k)>1/3$.
+\end{theorem}
+
+\begin{proof}
+Since $\beta>0$, the equation $m(C)=1/3$ is equivalent to
+$3\beta^2-\beta-1=0$. Its positive root is
+$\beta_*=(1+\sqrt{13})/6$. The identity
+$\beta^2=q^3/(q^3+2)$ from \eqref{eq:matching} gives
+$q_*^3=(5+\sqrt{13})/3$. Substitution in the actual cap equation
+\eqref{eq:cap} yields \eqref{eq:critical-pair-cap}.
+Conversely this positive $q_*>1$ satisfies the cap equation for that
+displayed number. Uniqueness of the canonical cap parameter therefore
+identifies it with $q_*$ and proves the claimed critical value.
+
+The canonical parameter increases strictly with $C$.
+The function $q\mapsto q^3/(q^3+2)$ increases strictly for $q>0$, so the
+positive upper contact also increases strictly. Both terms
+$-\beta$ and $1/(3\beta)$ decrease strictly. Thus the actual $m(C)$ is
+strictly decreasing, proving the equivalence around its critical value.
+For $C>1$, the contact derivative jumps in Theorem~\ref{thm:contacts}
+and optimizer uniqueness exclude equality for a differentiable competitor;
+hence $\I(k)>m(C)\geq1/3$.
+For $C=1$, the obstacle box forces $k=0$ on $[0,1]$ and the directly
+computed value is $2/3>1/3$. This branch does not use a contact jump.
+\end{proof}
+
+\begin{theorem}\label{thm:invariant-ck-classification}
+For $g_D$, every constant zonal form $M_D(c)+Z_D(d)$ is CK.
+A smooth invariant one-form is CK if and only if it has this representation
+for real constants $c,d$. The actual projector preserves CK, and therefore
+every smooth CK form $h$ satisfies
+\[
+ Ph=M_D(c)+Z_D(d)
+\]
+for some real constants. The original unit meridional form $M_D(1)$ is
+nonzero and CK.
+\end{theorem}
+
+\begin{proof}
+The CK equation is linear. The actual first derivative, metric trace and
+Ahlfors projection commute with derivative pullback through an isometry,
+by Lemma~\ref{lem:pullback-dissipation}.
+The meridional derivative formula in Lemma~\ref{lem:meridional-derivatives}
+gives
+\[
+ |A_{g_D}M_D(r)|^2=\frac12(Hr')^2.
+\]
+Parallel Hodge rotation preserves the actual Ahlfors norm, so the same
+formula holds for $Z_D(r)$. Constant probes thus give CK forms.
+
+Apply Theorem~\ref{thm:invariant-one-form-classification} to an invariant
+smooth $h$, obtaining $h=M_D(r)+Z_D(s)$ with globally smooth probes.
+Meridian reflection is an actual isometry fixing $M_D(r)$ and negating
+$Z_D(s)$. Half the sum and half the difference of $h$ and its reflected
+pullback are therefore CK, so each summand is CK.
+At every height $v\in(-1,1)$, use a genuine cylinder point in the norm
+formula above. Since $H(v)>0$, it forces $r'(v)=s'(v)=0$.
+The mean-value theorem makes both probes constant on the open interval,
+and continuity includes its endpoints. Their values outside $[-1,1]$
+are irrelevant to the section, so this gives exactly
+$h=M_D(r(0))+Z_D(s(0))$, without claiming global constancy of the extensions.
+Conversely these constant sums are invariant by the actual rotation laws
+and CK by the first part.
+
+The actual derivative and Ahlfors intertwining in
+Theorem~\ref{thm:haar-derivatives} sends $A_{g_D}h=0$ to
+$A_{g_D}(Ph)=0$. The average is invariant, so its classification applies.
+The previously proved equatorial evaluation of $M_D(1)$ is nonzero;
+the constant-probe calculation proves its CK equation.
+\end{proof}
+
+\begin{lemma}\label{lem:curvature-profile-box}
+For positive real numbers $\kappa,\Lambda$, the actual curvature bounds
+$\kappa\leq K_{g_D}(x)\leq\Lambda$ for every sphere point $x$ are equivalent to
+\[
+ \frac1\Lambda\leq a(v)\leq\frac1\kappa
+ \qquad(-1\leq v\leq1).
+\]
+\end{lemma}
+
+\begin{proof}
+Theorem~\ref{thm:curvature-profile} gives $K_{g_D}=1/a(z)$ at every point,
+including both poles. Each height $v\in[-1,1]$ is realized by the actual
+polar point $\Phi(\arccos v,0)$. The result follows in both directions
+by taking reciprocals of positive quantities. No coordinate restriction
+removes a pole.
+\end{proof}
+
+\begin{theorem}\label{thm:produced-ck-safety}
+Let $g_D$ be an original produced metric and $h$ any smooth CK one-form.
+If $0<m\leq a\leq M$ on $[-1,1]$ and $M/m\leq C_{\mathrm{CK}}$, then
+\begin{equation}\label{eq:produced-ck-safety}
+ Q_{g_D}(h)\geq0,\qquad Q_{g_D}(h)=0\quad\Longleftrightarrow\quad h=0.
+\end{equation}
+The same conclusions hold if $\kappa>0$,
+$\kappa\leq K_{g_D}\leq\Lambda$ everywhere and
+$\Lambda/\kappa\leq C_{\mathrm{CK}}$.
+\end{theorem}
+
+\begin{proof}
+Use Lemma~\ref{lem:hemisphere-pair-substitution} at $C=M/m$.
+Both actual hemisphere logarithms are differentiable admissible competitors.
+Theorem~\ref{thm:critical-pair-cap} gives
+$\I(k_+)>1/3$ and $\I(k_-)>1/3$, including when $C=1$.
+Consequently the exact coefficient
+$2(\I(k_+)+\I(k_-))-4/3$ in
+\eqref{eq:constant-zonal-pair-coefficient} is strictly positive.
+Every constant zonal sum therefore has nonnegative action; if its action
+is zero, then $c^2+d^2=0$, hence $c=d=0$ and the section is zero.
+
+By Theorem~\ref{thm:invariant-ck-classification}, the actual $Ph$ is such
+a constant sum. The full split and the original remainder theorem give
+\[
+ Q_{g_D}(h)=Q_{g_D}(Ph)+Q_{g_D}(h-Ph)\geq0.
+\]
+If the sum vanishes, both terms vanish. The preceding strict coefficient
+makes $Ph=0$, while Theorem~\ref{thm:nonzonal-positivity-rigidity}
+makes $h-Ph=0$. Thus $h=0$. This argument also covers forms whose
+Haar average was zero from the outset. Conversely the zero section
+has zero original action.
+
+For the curvature formulation, evaluating the nonempty sphere gives
+$\Lambda\geq\kappa>0$. Lemma~\ref{lem:curvature-profile-box} supplies
+$m=1/\Lambda$, $M=1/\kappa$, and $M/m=\Lambda/\kappa$.
+Apply the profile conclusion to these actual bounds.
+\end{proof}
+
+\begin{corollary}\label{cor:fixed-unit-probe-positive}
+Under the profile bounds of Theorem~\ref{thm:produced-ck-safety},
+$Q_{g_D}(M_D(1))>0$, including at the critical cap.
+\end{corollary}
+
+\begin{proof}
+The unit meridional section is nonzero and CK by
+Theorem~\ref{thm:invariant-ck-classification}. Nonnegativity and the zero
+classification in Theorem~\ref{thm:produced-ck-safety} imply strict positivity.
+\end{proof}
+
+These conclusions concern the produced metrics. Smooth supercritical negative
+witnesses, convergence to zero action at the critical cap with this same fixed
+probe, the geometric stability normalization, and the full conjugated
+circle/projector transport to the advertised diffeomorphic-pullback class
+remain to be proved. The displayed number has been derived from the actual
+variational value; identifying it as the sharp geometric safe-cap threshold
+also requires those witness and class results.
+
 \begin{thebibliography}{1}
 \bibitem{jerison-fourier}
 D.~Jerison, \emph{Fourier Series, Part 1}, MIT 18.103 Fourier Analysis,

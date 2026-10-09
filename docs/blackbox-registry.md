@@ -2,14 +2,17 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All ninety-eight currently checked analytic, variational and geometric modules depend transitively only on
+All 107 currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-10/axioms.txt) covers 1777 declarations.
+The [current native report](evidence/round-11/axioms.txt) covers 1867 declarations,
+including 730 private declarations and relevant generated constants.
+The [accepted original-remainder report](evidence/round-10/axioms.txt) covers
+the preceding 98-module, 1777-declaration layer at `0473a6a`.
 The [accepted positive-scalar report](evidence/round-9/axioms.txt) covers the
 preceding 94-module, 1748-declaration layer at `da47567`.
 The [accepted Round 8 continuation](evidence/round-8-haar-scalars/axioms.txt)
@@ -59,6 +62,19 @@ decomposition, differentiates the genuine zero section, and substitutes into
 the original four-term action to obtain the positive curvature energy. The
 final Haar-remainder equality and same-probe zonal bound accept no supplied
 derivative vanishing, sign law, equality law or replacement measure.
+
+The new CK layer checks actual triangular Fubini and reciprocal-log calculus,
+the southern balance substitution, the canonical cap parameter and optimal-value
+comparison, and the exact constant-zonal action. The CK predicate is the zero
+Ahlfors part of the actual metric derivative. Its native linearity/naturality,
+actual meridian reflection and parallel Hodge norm laws yield interval-only
+probe constancy and genuine invariant CK classification. Haar preservation,
+the accepted full split and original remainder equality give safety and full
+zero equality for produced metrics at the derived cap. The curvature consumer
+uses the same intrinsic curvature and actual height coverage. No equation,
+classification or sign conclusion is supplied as an extra hypothesis.
+This source-bound evidence does not certify the still-missing smooth sharpness,
+fixed-probe recovery, conjugated class projector or structural separation.
 
 The manuscript cites David Jerison's MIT 18.103 Fall 2013 notes,
 [*Fourier Series, Part 1*, Corollary 2, p. 5](https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/1c196caa6307e0be46456cf6dc76b543_MIT18_103F13_fseries1.pdf),

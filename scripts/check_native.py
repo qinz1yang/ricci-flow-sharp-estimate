@@ -113,6 +113,15 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.OneFormDerivativeRigidity",
     "RicciFlowSharpEstimate.Geometry.RotationalRemainderBounds",
     "RicciFlowSharpEstimate.Geometry.RotationalRemainder",
+    "RicciFlowSharpEstimate.Analysis.ReciprocalLogarithm",
+    "RicciFlowSharpEstimate.Variational.ReciprocalProfile",
+    "RicciFlowSharpEstimate.Variational.CriticalCap",
+    "RicciFlowSharpEstimate.Geometry.HemispherePairFunctional",
+    "RicciFlowSharpEstimate.Geometry.ConstantZonalAction",
+    "RicciFlowSharpEstimate.Geometry.ConformalKillingOneForms",
+    "RicciFlowSharpEstimate.Geometry.RotationalConformalKilling",
+    "RicciFlowSharpEstimate.Geometry.RotationalCurvatureBounds",
+    "RicciFlowSharpEstimate.Geometry.ConformalKillingSafety",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -502,7 +511,67 @@ SELECTOR = r"""
       poleData ++ `oneFormDissipation_rotationalAverage_le,
       poleData ++ `oneFormDissipation_eq_rotationalAverage_iff,
       poleData ++ `oneFormDissipation_eq_rotationalAverage_iff_invariant,
-      poleData ++ `exists_haar_zonal_lower_bound
+      poleData ++ `exists_haar_zonal_lower_bound,
+      analysis ++ `continuousOn_log_reciprocal,
+      analysis ++ `hasDerivAt_log_reciprocal,
+      analysis ++ `log_reciprocal_bounds,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_eq_forward_intervalIntegral,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_log_reciprocal,
+      `RicciFlowSharpEstimate.Variational.criticalCap,
+      `RicciFlowSharpEstimate.Variational.one_lt_criticalCap,
+      `RicciFlowSharpEstimate.Variational.capParameter_criticalCap,
+      `RicciFlowSharpEstimate.Variational.capParameter_criticalCap_cube,
+      `RicciFlowSharpEstimate.Variational.upperContact_capParameter_criticalCap,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_criticalCap,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_ge_one_third_iff,
+      `RicciFlowSharpEstimate.Variational.pairFunctional_gt_one_third_of_differentiableOn,
+      geo ++ `IsConformalKillingOneForm,
+      geo ++ `isConformalKillingOneForm_iff,
+      geo ++ `isConformalKillingOneForm_iff_normSq_eq_zero,
+      geo ++ `IsConformalKillingOneForm.add,
+      geo ++ `IsConformalKillingOneForm.smul,
+      geo ++ `IsConformalKillingOneForm.neg,
+      geo ++ `IsConformalKillingOneForm.sub,
+      geo ++ `IsConformalKillingOneForm.diffeomorphTensorPullback,
+      geo ++ `IsConformalKillingOneForm.diffeomorphTensorPullback_of_isometry,
+      poleData ++ `northLogProfile_continuousOn,
+      poleData ++ `southLogProfile_continuousOn,
+      poleData ++ `northLogProfile_hasDerivAt,
+      poleData ++ `southLogProfile_hasDerivAt,
+      poleData ++ `northLogProfile_differentiableOn,
+      poleData ++ `southLogProfile_differentiableOn,
+      poleData ++ `reciprocalCap_parameters,
+      poleData ++ `northLogProfile_admissible,
+      poleData ++ `southLogProfile_admissible,
+      poleData ++ `warp_reflected,
+      poleData ++ `pairFunctional_northLogProfile,
+      poleData ++ `pairFunctional_southLogProfile,
+      poleData ++ `integral_meridionalWeight_eq_pairFunctional_sum,
+      poleData ++ `meridionalDensity_const,
+      poleData ++ `meridionalAction_const,
+      poleData ++ `oneFormDissipation_constant_zonal,
+      poleData ++ `oneFormDissipation_constant_zonal_eq_pair_sum,
+      poleData ++ `isConformalKillingOneForm_meridional_const,
+      poleData ++ `azimuthalOneForm_ahlfors_normSq,
+      poleData ++ `isConformalKillingOneForm_azimuthal_const,
+      poleData ++ `isConformalKillingOneForm_constant_zonal_sum,
+      poleData ++ `meridional_probe_eq_const_of_isConformalKillingOneForm,
+      poleData ++ `azimuthal_probe_eq_const_of_isConformalKillingOneForm,
+      poleData ++
+        `exists_constant_zonal_decomposition_of_rotationInvariant_of_isConformalKillingOneForm,
+      poleData ++
+        `rotationInvariant_isConformalKillingOneForm_iff_exists_constant_zonal_decomposition,
+      poleData ++ `isConformalKillingOneForm_rotationalAverage,
+      poleData ++
+        `exists_constant_zonal_decomposition_rotationalAverage_of_isConformalKillingOneForm,
+      poleData ++ `meridional_one_nonzero_conformalKilling,
+      poleData ++ `curvature_bounds_iff_profile_bounds,
+      poleData ++ `constant_zonal_coefficient_pos,
+      poleData ++ `oneFormDissipation_nonneg_of_conformalKilling_profile_bounds,
+      poleData ++ `oneFormDissipation_eq_zero_iff_of_conformalKilling_profile_bounds,
+      poleData ++ `oneFormDissipation_meridional_one_pos_of_profile_bounds,
+      poleData ++ `oneFormDissipation_nonneg_of_conformalKilling_curvature_bounds,
+      poleData ++ `oneFormDissipation_eq_zero_iff_of_conformalKilling_curvature_bounds
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -1303,6 +1372,120 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormDissipation_eq_rotationalAverage_iff_invariant
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check exists_haar_zonal_lower_bound
+open RicciFlowSharpEstimate.Analysis in
+#check continuousOn_log_reciprocal
+open RicciFlowSharpEstimate.Analysis in
+#check hasDerivAt_log_reciprocal
+open RicciFlowSharpEstimate.Analysis in
+#check log_reciprocal_bounds
+open RicciFlowSharpEstimate.Variational in
+#check pairFunctional_eq_forward_intervalIntegral
+open RicciFlowSharpEstimate.Variational in
+#check pairFunctional_log_reciprocal
+open RicciFlowSharpEstimate.Variational in
+#check criticalCap
+open RicciFlowSharpEstimate.Variational in
+#check one_lt_criticalCap
+open RicciFlowSharpEstimate.Variational in
+#check capParameter_criticalCap
+open RicciFlowSharpEstimate.Variational in
+#check capParameter_criticalCap_cube
+open RicciFlowSharpEstimate.Variational in
+#check upperContact_capParameter_criticalCap
+open RicciFlowSharpEstimate.Variational in
+#check pairFunctional_obstacleLogProfile_criticalCap
+open RicciFlowSharpEstimate.Variational in
+#check pairFunctional_obstacleLogProfile_ge_one_third_iff
+open RicciFlowSharpEstimate.Variational in
+#check pairFunctional_gt_one_third_of_differentiableOn
+open RicciFlowSharpEstimate.Geometry in
+#check IsConformalKillingOneForm
+open RicciFlowSharpEstimate.Geometry in
+#check isConformalKillingOneForm_iff
+open RicciFlowSharpEstimate.Geometry in
+#check isConformalKillingOneForm_iff_normSq_eq_zero
+open RicciFlowSharpEstimate.Geometry in
+#check IsConformalKillingOneForm.add
+open RicciFlowSharpEstimate.Geometry in
+#check IsConformalKillingOneForm.smul
+open RicciFlowSharpEstimate.Geometry in
+#check IsConformalKillingOneForm.neg
+open RicciFlowSharpEstimate.Geometry in
+#check IsConformalKillingOneForm.sub
+open RicciFlowSharpEstimate.Geometry in
+#check IsConformalKillingOneForm.diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check IsConformalKillingOneForm.diffeomorphTensorPullback_of_isometry
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check northLogProfile_continuousOn
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check southLogProfile_continuousOn
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check northLogProfile_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check southLogProfile_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check northLogProfile_differentiableOn
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check southLogProfile_differentiableOn
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check reciprocalCap_parameters
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check northLogProfile_admissible
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check southLogProfile_admissible
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check warp_reflected
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check pairFunctional_northLogProfile
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check pairFunctional_southLogProfile
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check integral_meridionalWeight_eq_pairFunctional_sum
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalDensity_const
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalAction_const
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_constant_zonal
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_constant_zonal_eq_pair_sum
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check isConformalKillingOneForm_meridional_const
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check azimuthalOneForm_ahlfors_normSq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check isConformalKillingOneForm_azimuthal_const
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check isConformalKillingOneForm_constant_zonal_sum
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridional_probe_eq_const_of_isConformalKillingOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check azimuthal_probe_eq_const_of_isConformalKillingOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_constant_zonal_decomposition_of_rotationInvariant_of_isConformalKillingOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check rotationInvariant_isConformalKillingOneForm_iff_exists_constant_zonal_decomposition
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check isConformalKillingOneForm_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_constant_zonal_decomposition_rotationalAverage_of_isConformalKillingOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridional_one_nonzero_conformalKilling
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check curvature_bounds_iff_profile_bounds
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check constant_zonal_coefficient_pos
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_nonneg_of_conformalKilling_profile_bounds
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_zero_iff_of_conformalKilling_profile_bounds
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_meridional_one_pos_of_profile_bounds
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_nonneg_of_conformalKilling_curvature_bounds
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_zero_iff_of_conformalKilling_curvature_bounds
 """
 
 

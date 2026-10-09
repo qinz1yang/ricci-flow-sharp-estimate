@@ -1,0 +1,2387 @@
+{
+  "source_hashes": {
+    "RicciFlowSharpEstimate.lean": "33ae253248f694c2b71bd2768511fc11d404702b827b408123c9e268837c1b24",
+    "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9",
+    "scripts/check_native.py": "8b02a74e3a702cabb6d6b1919d9d0ab4a74e60ca8fcad1d01156ca9e694f5f8b",
+    "RicciFlowSharpEstimate/Variational/Parameters.lean": "b3cb1d39baa68fbee6d50a0dcd1c690729ea78175f63220044cc0b75dbb17a38",
+    "RicciFlowSharpEstimate/Variational/PairFunctional.lean": "1db9dac3c287473242f14139d5629de0d20228879feedfe9e4d92f3db4f3b200",
+    "RicciFlowSharpEstimate/Variational/Contacts.lean": "5cb3aa476a9b5705474bae7e5546752028b31c7c6c8149e297b4dee68a2df026",
+    "RicciFlowSharpEstimate/Variational/FreeArc.lean": "755a38247bd9c53766a32117a8f75521101603f0a1afb6bc2cc39a46b1488b69",
+    "RicciFlowSharpEstimate/Variational/ObstacleProfile.lean": "605004376f21c4f4807f96f7efef87272c1e89b247afa7084f218870e0e50601",
+    "RicciFlowSharpEstimate/Analysis/ExponentialRemainder.lean": "21229bc066fa3d02250c2e657c3ae689e0e361a4f92e9b0c14db6206445b2145",
+    "RicciFlowSharpEstimate/Variational/ObstaclePrimitives.lean": "a29b64a8db408246797e3283f3cc2417b870b981502db1acb8f9d19fe99dcf1a",
+    "RicciFlowSharpEstimate/Variational/PairIteration.lean": "4ba3f800d8e4bc8d7be3389fcb5e22773c1aabe76a39da96c15a8bf4ff0e6d38",
+    "RicciFlowSharpEstimate/Variational/Calibration.lean": "6b1fc4d1855e4feb7efc0695669899db68a8c29a737dc7fab33c8a401d26d38c",
+    "RicciFlowSharpEstimate/Variational/OptimalValue.lean": "199465cb4a38116e72e6e159c769e3fc2ac1aa53c82e690b3f44f2b1fff5dcdf",
+    "RicciFlowSharpEstimate/Variational/PairRigidity.lean": "3d81116e6e28466e83bdd32628e6dda87e42a864ad53aaf8364fbf6cb5eb19e9",
+    "RicciFlowSharpEstimate/Variational/ContactRegularity.lean": "cca018fe32c0838d8d0b3bcf2d1619433e9ccc1927191a58a3130212322a3056",
+    "RicciFlowSharpEstimate/Variational/OptimizerRigidity.lean": "dceee044d69643dcd177486d11f0fec15c0938ce5cae1da0b97e3da37ba9d9ca",
+    "RicciFlowSharpEstimate/Variational/ObstacleWeight.lean": "db6366e40a7aad991e2a3e6aeff9bafbcd3de212308d682515da4368519421d6",
+    "RicciFlowSharpEstimate/Variational/ObstacleAnchoring.lean": "98196a071c91d211674221feb672b1b58a1622f17d594b64bc2fda04c7ad5a4d",
+    "RicciFlowSharpEstimate/Variational/RemainderCoercivity.lean": "e2e374c1a8917c79547c7fc6f4254c1e2cb7c7b3a119c2d73f38b63e5776c847",
+    "RicciFlowSharpEstimate/Variational/WeightedVariance.lean": "1808782da97c03787a3bd0e987c04a3bf2d34703dd336166dc8f54b7b21bca39",
+    "RicciFlowSharpEstimate/Analysis/WeightedAnchor.lean": "285ded9a5a403623f6c6b2f22f0d1b962012727ab73677772d5f50b9dcc21d9c",
+    "RicciFlowSharpEstimate/Analysis/ReflectionEnergy.lean": "3c61f6bf906593fe906dfa1f373a9bb16dcfe3fcf28a05c0b27e1803ac261212",
+    "RicciFlowSharpEstimate/Variational/Stability.lean": "e3f1e46871ee856065bae7278cfadd9d92b02fdba4a2f8666b368c2206d6f9c8",
+    "RicciFlowSharpEstimate/Variational/HemisphereStability.lean": "2464de180dba088426b1aec93e9551522e342361528074694ff87a6627820a80",
+    "RicciFlowSharpEstimate/Analysis/SmoothFactor.lean": "007f1f428b4df2a8b4328ade508cbc30b4a4b36e97156f16430bd85752e5a3fb",
+    "RicciFlowSharpEstimate/Geometry/RotationalProfile.lean": "5bf99e7dee9b9ac6fe1700147dd4e33234ececea531e22f9712889f7a1f6a540",
+    "RicciFlowSharpEstimate/Geometry/RotationalPoleData.lean": "29a7c0d04e82d0a73c057e5164f20764b6cf1046445039b53d85070010d1dc3f",
+    "RicciFlowSharpEstimate/Geometry/RotationalSphereMetric.lean": "5d778f356fe1ecd816ac88e6efb6a6617e369df3c82f8f30af171ea7e19094bd",
+    "RicciFlowSharpEstimate/Geometry/BalancedSphereMetric.lean": "a11e08a1c9ea7d73930eaebfd1ea771239fc2844c37146e1a7ce2f605a176b99",
+    "RicciFlowSharpEstimate/LinearAlgebra/RankOneDeterminant.lean": "d2660a36a6c3229a01eff541b77dd21739a4835287660bf5c15a71c2474deac4",
+    "RicciFlowSharpEstimate/Geometry/SphereHeightIntegral.lean": "7f265ff2ce5d4315f3f5412bd0e40b183a0b28f3c88083776a2a7bd1e43a0803",
+    "RicciFlowSharpEstimate/Geometry/RotationalVolume.lean": "221baca1038c93e233fb07a67f63a4d5ffe86f5789f7fcde39cdbd0c11a21b60",
+    "RicciFlowSharpEstimate/Geometry/RotationalDiagonalCurvature.lean": "3b6d3e949d07e545483390ba38a05603c8eea10555d748611e2df778357dadbd",
+    "RicciFlowSharpEstimate/Geometry/RotationalCurvatureProfile.lean": "7339674afa02c722d6f89ecc5a7af9448d6f4075c97451dab2e76088ffcd5459",
+    "RicciFlowSharpEstimate/Geometry/RotationalCoordinates.lean": "7e7b3a6730fdb0bb854c34d8337e45158ddb33f02078b35bb90042d44e00b3c2",
+    "RicciFlowSharpEstimate/Geometry/RotationalCoordinateRange.lean": "0ff61223667ec32788cb005eb6009ca4afd80059c1cdeb7a367ee063b91edf4d",
+    "RicciFlowSharpEstimate/Geometry/RotationalCurvature.lean": "5acab7a3dbc7d3f7afda18484a622846136cfca0119fbb297d1d50d9d350a49f",
+    "RicciFlowSharpEstimate/Geometry/CanonicalDerivatives.lean": "74b9f6646e32765086801771a1322e76a9357b573301b1863a5868a7d214f1fe",
+    "RicciFlowSharpEstimate/Geometry/TraceFreeSymmetric.lean": "854cbd0affd9d20362e7cca207286e3630fd1ed1512852b4a3c510529b22ca54",
+    "RicciFlowSharpEstimate/Geometry/RotationalOneForms.lean": "260012a2c6d8a01ed4b8d78afdc517dbf59dc9419cd6d5d10c53fd0fa3414a2c",
+    "RicciFlowSharpEstimate/Geometry/OneFormDissipation.lean": "05103ff8625f2ab14e782e814c32685dadba9ad364f7cc2760f7959526ddefd3",
+    "RicciFlowSharpEstimate/Geometry/RotationalDissipation.lean": "581d3d6d266e4207a2761b66b1e79b6826291f9a8477e0189847d63433696ad0",
+    "RicciFlowSharpEstimate/Geometry/ExactOneFormRoughLaplacian.lean": "eeeebbb76c574df7a31247beb5219a41d5545a93880913948f8fd57160f9ce44",
+    "RicciFlowSharpEstimate/Geometry/SymmetricTensorContractions.lean": "af33681fc17cc022c2117c4f8defce4ac7809f56c8ee6a19ed0b16f8da610c0c",
+    "RicciFlowSharpEstimate/Geometry/RotationalCometric.lean": "93b6449a9de4d2124bfda51ea801eaa63013e71c7f6fdff08696750a9abd5454",
+    "RicciFlowSharpEstimate/Geometry/MeridionalAction.lean": "0b637ea1fb59e7ea1eb8247a1eb2e4ed645b6b9901964335fd377cabaee45ea3",
+    "RicciFlowSharpEstimate/Geometry/RotationalMeridionalHessian.lean": "223264d3b0a86cea30520b79905f410a858ad79bfe9f988a2415eb373110356e",
+    "RicciFlowSharpEstimate/Geometry/RotationalMeridionalReduction.lean": "d98538ffc0152a9b1d10fb1f376e89d970c453f23977077df84b1606498e7fc6",
+    "RicciFlowSharpEstimate/Geometry/OneFormDissipationNaturality.lean": "5eb5125dbbf87f8edb79b3bf74379c6cc11475d7e90ccf801104f45bf6908958",
+    "RicciFlowSharpEstimate/Geometry/RotationalReflection.lean": "748e7cc5f590ba40fd38aff08f0c75b005c17605fc198be99007ea22524d2a2e",
+    "RicciFlowSharpEstimate/Geometry/RotationalZonalOrthogonality.lean": "62e18649211bc2ef05321c61e656886ab72572b18b700e1e21a5f8e8a65b8195",
+    "RicciFlowSharpEstimate/Geometry/AlternatingSurfaceTensors.lean": "b396b0ebcf3afdcbf152c7fda5038f94f8900b87a78e1b7cb2e839f2fd897e9d",
+    "RicciFlowSharpEstimate/Geometry/RotationalAreaForm.lean": "a0e0b136f6eed2a011046fb49ed475848b8a8534034100c59b4ea138e51febf8",
+    "RicciFlowSharpEstimate/Geometry/RotationalHodgeRotation.lean": "e3d0c7cdda05c05c0ac4b544be55509c9a8ffd48e6a97e94002887892f391210",
+    "RicciFlowSharpEstimate/Geometry/SurfaceRotationContractions.lean": "f075c68dccd61f7ab433cfbb3f7580888def283425f0f7d83d9a91e39048d7e2",
+    "RicciFlowSharpEstimate/Geometry/OneFormRotation.lean": "39088a0544c60c4c7218c4850a3a832a8c8ee5af46df165805c00f37d906497b",
+    "RicciFlowSharpEstimate/Geometry/OneFormRotationDissipation.lean": "79c1a6f84d1ecb00f04e20ec229b1403782c64cf1f8e23bd76767bc1891bf7a6",
+    "RicciFlowSharpEstimate/Geometry/RotationalZonalReduction.lean": "7c1ddd33052f374c38e76a4b64e39dcadf87248d99e50152683ca0bb6e7638a9",
+    "RicciFlowSharpEstimate/Analysis/ManifoldIntervalIntegral.lean": "2c03d7b9beb668f17f2afa3493ab1e8e8ae859ff2f67ebdd398079f47db1f5f0",
+    "RicciFlowSharpEstimate/Geometry/RotationalCircleAction.lean": "be35a97c9284cc1fdc82ecb7ef1ac70d4c8be041719c7ae00b53c40cd0220c7a",
+    "RicciFlowSharpEstimate/Geometry/TensorPullbackFamily.lean": "bfef11b7ccabfa58a9421ea1b4cbcdaabbdcd5318010761a138d177c4bac086e",
+    "RicciFlowSharpEstimate/Geometry/RotationalTensorAction.lean": "59a0e0f947c2409f787b2f4a17f52d18354b5b9a2e96d39e270edb7f907a567a",
+    "RicciFlowSharpEstimate/Geometry/TensorIntervalIntegral.lean": "85a6886732c126bf582fc4cf251d88a944b95b1f26ace67832dd1ec7f42ace8b",
+    "RicciFlowSharpEstimate/Geometry/RotationalPairingIntegral.lean": "351f2b72abc98196853a0d9ac161a6dbb64e320ec7bff423c6ee71e4b1311da4",
+    "RicciFlowSharpEstimate/Geometry/RotationalAverage.lean": "101777c64a139e04024155258b35017f314447c9c0eb9abd841be6b0eaa0b8f6",
+    "RicciFlowSharpEstimate/Geometry/TensorIntegralContractions.lean": "22ac8f5b6a344b2af6c8b78d326b1c6072f6cd3390009615edf6f4c3365e80d4",
+    "RicciFlowSharpEstimate/Geometry/RotationalAverageDerivatives.lean": "b5988dabf26b2191b389c5c179b4d5210cea4a0d7abc4e3f27977c443cac001a",
+    "RicciFlowSharpEstimate/Geometry/RotationalHaarDissipation.lean": "45bf9012e7564ae1e80b26f90dcaa0ecda743bc99fdac4f168308821ca14019a",
+    "RicciFlowSharpEstimate/Analysis/SmoothQuotient.lean": "44a3cf3c8da1d71e33d1e68ac4dff52bbf2fc961a2359b8a7607988029d17b76",
+    "RicciFlowSharpEstimate/Analysis/SmoothParity.lean": "e42455ff9c1a4e261fce90bf6e4cc1e4dfd390ae4f27bd45fc07ef8d6522194e",
+    "RicciFlowSharpEstimate/Analysis/RotationCovectorPlane.lean": "c314b9fb6f81a1be6e5824980ba8025f47e960c7f01a8c9b50179034b8b77870",
+    "RicciFlowSharpEstimate/Geometry/RotationalStereographic.lean": "6c42b091f6fcc213b8531eaf24a968a0739544d6739f6cd475225aede59c76b7",
+    "RicciFlowSharpEstimate/Geometry/RotationalInvariantPoleForms.lean": "30c5b3154723f0a44dd69d3b0a8830f31a2560db496d425f32df205f288eba1f",
+    "RicciFlowSharpEstimate/Geometry/RotationalInvariantProfiles.lean": "44817cd3c7858ab5f945fff6f2454330144ec220d697b6563a1ec13ae858309f",
+    "RicciFlowSharpEstimate/Geometry/RotationalInvariantClassification.lean": "9309a6417dcfb9d04af2bfc39ca4092d65d860009dacf0824f4b53c729e0b77e",
+    "RicciFlowSharpEstimate/Geometry/OneFormScalars.lean": "b1bfcff6c8846fd7e8ae2d7d4d6cb011401c206e2b094f16b1d02a2cff3be167",
+    "RicciFlowSharpEstimate/Geometry/TensorOrthonormalContractions.lean": "cb4c073226b9e5d0c362a2a6ba3fd5cb14a567ff350858eff44bcae50c80547b",
+    "RicciFlowSharpEstimate/Geometry/SurfaceTensorDecomposition.lean": "3371b7138d74a9a68eae451cea788d5858e115eb16f0c76c254f59ac48ea3c3a",
+    "RicciFlowSharpEstimate/Geometry/CanonicalTensorIntegration.lean": "6ebdb819086e4e0abd59c6f53fd955c2e51a9449e4a47ac5bbf756a6367882c1",
+    "RicciFlowSharpEstimate/Geometry/SurfaceCovariantCommutator.lean": "6926f19aa7f93a95510b85e52a80662a4686cbc989e1765f5bf0a4d70261d864",
+    "RicciFlowSharpEstimate/Geometry/OneFormSecondDerivativeNorm.lean": "d9b5683b656fa9b7f165eafbcf72ca74c17a2cd4a07a045528a34510ec8a577f",
+    "RicciFlowSharpEstimate/Geometry/SurfaceTensorDerivativeDecomposition.lean": "92fd9b3c96d61c203838abf2d15bc7c5864b5374eb292ebdd7e40421e64f516f",
+    "RicciFlowSharpEstimate/Geometry/SurfaceTensorIntegration.lean": "45a082b8f8d9677d80ad5873f2d43c0cb80a455a7d309cdb444ac37fd57c6418",
+    "RicciFlowSharpEstimate/Geometry/OneFormScalarization.lean": "77b57b69e4e73b9939514dff839200159f03dbcb6f3d79dd5641d8ede2161011",
+    "RicciFlowSharpEstimate/Geometry/RotationalScalarization.lean": "58e438cd4bc3d1cea6a189e52187be9c7bace8bbdc18392be18d08f8e70e4f53",
+    "RicciFlowSharpEstimate/Geometry/OneFormScalarNaturality.lean": "c70d1c03edf042b8a3e20d586b72fcdc44f2c6016235b483db1d69140816a1d0",
+    "RicciFlowSharpEstimate/Geometry/RotationalAreaInvariance.lean": "560a449d13e20715dad4965d1f54c4719dc9c9c8fea843e2b0a823312dcf37b6",
+    "RicciFlowSharpEstimate/Geometry/RotationalScalarAverage.lean": "57c3975e56c8567730a26c6567a2b0d8eff1cdf375ad57e3395dd953d6af739a",
+    "RicciFlowSharpEstimate/Geometry/RotationalScalarCompatibility.lean": "6410d8a5a8cb88f215e8e5cb8807a63d23d50930bb2b0b2863de8229ea120924",
+    "RicciFlowSharpEstimate/Analysis/CircleWirtinger.lean": "344f2525a132b17bec6875653db93158380807fb96712cf262b763959942de5e",
+    "RicciFlowSharpEstimate/Analysis/PolarEndpointBounds.lean": "86fa69a634f85b558159ce75edf4dd75af40e5d2c14030004e6c5617a25dee4a",
+    "RicciFlowSharpEstimate/Analysis/PolarSquareCompletion.lean": "fac76ed7ef4ca8265341ee3e2a0f932de994c6c15df6f00ea63c04261f37c652",
+    "RicciFlowSharpEstimate/Analysis/PolarScalarGap.lean": "46fafe6d11e877d3f41759a3b30c8ec66fe80b1bb30fb54a95029cf5caaf7f32",
+    "RicciFlowSharpEstimate/Geometry/RotationalPolarCoordinates.lean": "eaa1f2f9a1e956f38031ed6663471b2e08355b4fef9f16c497791a023681168a",
+    "RicciFlowSharpEstimate/Geometry/RotationalPolarDifferential.lean": "8965693e802b4b7a7de18de2abfdaf233a96c9e37f25f90042b3695853e1a73f",
+    "RicciFlowSharpEstimate/Geometry/RotationalPolarIntegration.lean": "a15791007d363abd809910084710c1b99722fe3326449bf89c7354474bedfd81",
+    "RicciFlowSharpEstimate/Geometry/RotationalScalarGap.lean": "5f9c099f987e749ffd54880e3c0cf2d24e487c92b59970389041ab86ef35c89d",
+    "RicciFlowSharpEstimate/Geometry/WeightedIntegralRigidity.lean": "04dc0c0953698cc0b491fc66b30ebf7aabbabd1a04c5eb0c526c49b1a3c2f367",
+    "RicciFlowSharpEstimate/Geometry/OneFormDerivativeRigidity.lean": "85a0811f96379ecf57fd72a041ffc594d87e2dd1a050c474d0f3dbbb697c625b",
+    "RicciFlowSharpEstimate/Geometry/RotationalRemainderBounds.lean": "1562923402accb845dec09a484fbf1d1a9e5ba2c4a99ec45816f2008864b357a",
+    "RicciFlowSharpEstimate/Geometry/RotationalRemainder.lean": "ee13bfe8d3bc63d1bf6da0747597b5a4788c8fe98a88c86c9b88e301f8844271",
+    "RicciFlowSharpEstimate/Analysis/ReciprocalLogarithm.lean": "7be4bcdcccacff885197e27309af392b28a5deee902cccad0da47f7125f85eb7",
+    "RicciFlowSharpEstimate/Variational/ReciprocalProfile.lean": "94fc83a0deca1fe5e93e3ab9b2a2110d3546186f9a74e6fe86926abdcb0acfc8",
+    "RicciFlowSharpEstimate/Variational/CriticalCap.lean": "5ffa0499f4cbe6f20a43c06a4d7c443ab39f0a9b5be5f7a614e55bfe21d88147",
+    "RicciFlowSharpEstimate/Geometry/HemispherePairFunctional.lean": "120c6a73c3ebe652d65335300bf5394cbe83502c2b33b95cb785fcc9feae1d98",
+    "RicciFlowSharpEstimate/Geometry/ConstantZonalAction.lean": "2d0a31c557fd49875efe82cc5e0d3bfc72d680ac2afb74dc464c55d0fbbc3463",
+    "RicciFlowSharpEstimate/Geometry/ConformalKillingOneForms.lean": "d83f47b11b685a9b7f7904257b8d1b04c5a34bd8dafab0ce36347a8259dc2b44",
+    "RicciFlowSharpEstimate/Geometry/RotationalConformalKilling.lean": "c3860e9d671f7be560e309d329bbd568d0a6c2f1b47b6b8682adb75209acbfd6",
+    "RicciFlowSharpEstimate/Geometry/RotationalCurvatureBounds.lean": "49aab16a20c7f8c8b2eea04207a05a6a11b831e7a3186837f329e9bd276247ee",
+    "RicciFlowSharpEstimate/Geometry/ConformalKillingSafety.lean": "9ee4fbfa56b80b7d90cce121e9147b467bdc14a7a0ef248fe4b12a8ef8f8941a"
+  },
+  "platform": "Linux-6.8.0-1069-gcp-x86_64-with-glibc2.35",
+  "lean_version": "Lean (version 4.35.0-rc3, x86_64-unknown-linux-gnu, commit 470d5ce1400764999581fd26d5d72b00d990b0f4, Release)",
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "dependencies": {
+    "DifferentialGeometry": {
+      "revision": "788efe97894474c032de6dfb1289d515f613d15a",
+      "tracked_sources_clean": true
+    },
+    "mathlib": {
+      "revision": "c55e6e786f49471c72fbddbec5415808896aec1e",
+      "tracked_sources_clean": true
+    },
+    "plausible": {
+      "revision": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+      "tracked_sources_clean": true
+    },
+    "LeanSearchClient": {
+      "revision": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+      "tracked_sources_clean": true
+    },
+    "importGraph": {
+      "revision": "7e81a29bda33a6b257bd37557a6aa6aebe175d96",
+      "tracked_sources_clean": true
+    },
+    "proofwidgets": {
+      "revision": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+      "tracked_sources_clean": true
+    },
+    "aesop": {
+      "revision": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+      "tracked_sources_clean": true
+    },
+    "Qq": {
+      "revision": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "tracked_sources_clean": true
+    },
+    "batteries": {
+      "revision": "3b7c8101932390d60e92a3f3d917901d5b5a773b",
+      "tracked_sources_clean": true
+    },
+    "Cli": {
+      "revision": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "tracked_sources_clean": true
+    }
+  },
+  "commands": [
+    {
+      "label": "root-build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "output_sha256": "47d90de98b33752c5098fa4f85a88f0ff7b5f77c30f35f2344e1fac8b1aa482d"
+    },
+    {
+      "label": "lean-version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output_sha256": "948624fc4eacf0eb148f98d864af4814b3e60174b0a53f6817afc937e41279d3"
+    },
+    {
+      "label": "lean-path",
+      "command": [
+        "lake",
+        "env",
+        "which",
+        "lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "1d78fba986221c369ff109d824029f996919cbe065b3549105b4db6f5fcf1182"
+    },
+    {
+      "label": "parameters",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/Parameters.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "pairfunctional",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/PairFunctional.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "contacts",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/Contacts.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "freearc",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/FreeArc.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "obstacleprofile",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/ObstacleProfile.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "exponentialremainder",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/ExponentialRemainder.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "obstacleprimitives",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/ObstaclePrimitives.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "pairiteration",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/PairIteration.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "calibration",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/Calibration.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "optimalvalue",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/OptimalValue.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "pairrigidity",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/PairRigidity.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "contactregularity",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/ContactRegularity.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "optimizerrigidity",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/OptimizerRigidity.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "obstacleweight",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/ObstacleWeight.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "obstacleanchoring",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/ObstacleAnchoring.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "remaindercoercivity",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/RemainderCoercivity.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "weightedvariance",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/WeightedVariance.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "weightedanchor",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/WeightedAnchor.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "reflectionenergy",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/ReflectionEnergy.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "stability",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/Stability.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "hemispherestability",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/HemisphereStability.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "smoothfactor",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/SmoothFactor.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalprofile",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalProfile.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalpoledata",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalPoleData.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalspheremetric",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalSphereMetric.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "balancedspheremetric",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-M4096",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/BalancedSphereMetric.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rankonedeterminant",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/LinearAlgebra/RankOneDeterminant.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "sphereheightintegral",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/SphereHeightIntegral.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalvolume",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalVolume.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationaldiagonalcurvature",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalDiagonalCurvature.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalcurvatureprofile",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalCurvatureProfile.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalcoordinates",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalCoordinates.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalcoordinaterange",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalCoordinateRange.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalcurvature",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalCurvature.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "canonicalderivatives",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/CanonicalDerivatives.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "tracefreesymmetric",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/TraceFreeSymmetric.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationaloneforms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalOneForms.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformdissipation",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormDissipation.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationaldissipation",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalDissipation.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "exactoneformroughlaplacian",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/ExactOneFormRoughLaplacian.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "symmetrictensorcontractions",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/SymmetricTensorContractions.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalcometric",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalCometric.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "meridionalaction",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/MeridionalAction.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalmeridionalhessian",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalMeridionalHessian.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalmeridionalreduction",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalMeridionalReduction.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformdissipationnaturality",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormDissipationNaturality.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalreflection",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalReflection.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalzonalorthogonality",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalZonalOrthogonality.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "alternatingsurfacetensors",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/AlternatingSurfaceTensors.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalareaform",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalAreaForm.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalhodgerotation",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalHodgeRotation.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "surfacerotationcontractions",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/SurfaceRotationContractions.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformrotation",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormRotation.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformrotationdissipation",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormRotationDissipation.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalzonalreduction",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalZonalReduction.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "manifoldintervalintegral",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/ManifoldIntervalIntegral.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalcircleaction",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalCircleAction.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "tensorpullbackfamily",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/TensorPullbackFamily.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationaltensoraction",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalTensorAction.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "tensorintervalintegral",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/TensorIntervalIntegral.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalpairingintegral",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalPairingIntegral.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalaverage",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalAverage.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "tensorintegralcontractions",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/TensorIntegralContractions.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalaveragederivatives",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalAverageDerivatives.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalhaardissipation",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalHaarDissipation.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "smoothquotient",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/SmoothQuotient.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "smoothparity",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/SmoothParity.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationcovectorplane",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/RotationCovectorPlane.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalstereographic",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalStereographic.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalinvariantpoleforms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalInvariantPoleForms.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalinvariantprofiles",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalInvariantProfiles.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalinvariantclassification",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalInvariantClassification.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformscalars",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormScalars.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "tensororthonormalcontractions",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/TensorOrthonormalContractions.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "surfacetensordecomposition",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/SurfaceTensorDecomposition.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "canonicaltensorintegration",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/CanonicalTensorIntegration.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "surfacecovariantcommutator",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/SurfaceCovariantCommutator.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformsecondderivativenorm",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormSecondDerivativeNorm.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "surfacetensorderivativedecomposition",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/SurfaceTensorDerivativeDecomposition.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "surfacetensorintegration",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/SurfaceTensorIntegration.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformscalarization",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormScalarization.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalscalarization",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalScalarization.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformscalarnaturality",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormScalarNaturality.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalareainvariance",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalAreaInvariance.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalscalaraverage",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalScalarAverage.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalscalarcompatibility",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalScalarCompatibility.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "circlewirtinger",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/CircleWirtinger.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "polarendpointbounds",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/PolarEndpointBounds.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "polarsquarecompletion",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/PolarSquareCompletion.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "polarscalargap",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/PolarScalarGap.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalpolarcoordinates",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalPolarCoordinates.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalpolardifferential",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalPolarDifferential.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalpolarintegration",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalPolarIntegration.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalscalargap",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalScalarGap.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "weightedintegralrigidity",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/WeightedIntegralRigidity.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "oneformderivativerigidity",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/OneFormDerivativeRigidity.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalremainderbounds",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalRemainderBounds.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "rotationalremainder",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalRemainder.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused_from": {
+        "receipt": "docs/evidence/round-10/receipt.json",
+        "sha256": "ca25ca03a3d1a10fe0c05b34e24ccab9a468f24720e0d0f488ccd68cae096ad9"
+      }
+    },
+    {
+      "label": "reciprocallogarithm",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Analysis/ReciprocalLogarithm.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "reciprocalprofile",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/ReciprocalProfile.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "criticalcap",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Variational/CriticalCap.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "hemispherepairfunctional",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/HemispherePairFunctional.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "constantzonalaction",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/ConstantZonalAction.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "conformalkillingoneforms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/ConformalKillingOneForms.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "rotationalconformalkilling",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalConformalKilling.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "rotationalcurvaturebounds",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalCurvatureBounds.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "conformalkillingsafety",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/ConformalKillingSafety.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "linters",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-syyc3uky/math-target-n2omv5hb/Linters.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "driver_sha256": "c83531f13ff084d12d9b4926e5395291b2665a4072045dbe19e7b811ad1abfc1"
+    },
+    {
+      "label": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-syyc3uky/math-target-n2omv5hb/Axioms.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2d98c760e4b0cb2ef05d14bbec14e78adb91bde58c80f27771cf75ca3c648558",
+      "driver_sha256": "0964467be29ffc8764006432947a547fe29cfc84e671bf5590e7c3b388741f47"
+    },
+    {
+      "label": "signatures",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-syyc3uky/math-target-n2omv5hb/Signatures.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "4f1eb1c3fced67c2af646f8e56772b0329ece161e6e7888a8d3124902915472b",
+      "driver_sha256": "a8e310e08f68721fbc896f356298ba56f437d157cf9635d9c6c74bbbb64112e8"
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declaration_linters": [
+    "unusedArguments",
+    "simpNF",
+    "synTaut"
+  ],
+  "defLemma_replacement": "Native getConstInfo/Meta.isProp inspection of declaration kinds",
+  "independent_review": "pending outer review; native evidence alone is not suite acceptance"
+}
