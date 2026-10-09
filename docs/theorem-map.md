@@ -12,8 +12,10 @@ The positive scalar estimate and its polar endpoint/integrability proofs are now
 included, together with unconditional original-remainder nonnegativity/equality
 and the resulting strict Haar/zonal action comparison. The actual hemisphere
 substitution, variational critical cap, invariant CK classification and
-produced-metric safety/equality are now included. Smooth CK sharpness/recovery,
-geometric stability, full class transport and separation remain unwritten. This map does
+produced-metric safety/equality are now included. Smooth even reciprocal recovery,
+constant-probe continuity, actual supercritical witnesses, fixed-probe critical
+recovery and geometric stability are also included. Full class transport,
+safe-cap characterization and separation remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The prefixes `Geometry` and `Analysis` below are relative to `RicciFlowSharpEstimate`.
@@ -27,7 +29,8 @@ The global invariant-form classification layer passed Round 7 review at `8765255
 The constructive scalarization and scalar Haar layers passed Round 8 review at `659006b`.
 The positive scalar estimate passed Round 9 review at `da47567`.
 The original-remainder sign/equality layer passed Round 10 review at `0473a6a`.
-The new hemisphere/critical-cap/produced-CK layer requires its own review.
+The hemisphere/critical-cap/produced-CK layer passed Round 11 review at `ae5dc91`.
+The new smooth recovery/sharpness/geometric-stability layer requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -120,8 +123,15 @@ The new hemisphere/critical-cap/produced-CK layer requires its own review.
 | Genuine CK equation, linearity and same-map naturality | `Geometry.IsConformalKillingOneForm`, pointwise/norm equivalences and its add/smul/neg/sub/pullback laws in `Geometry/ConformalKillingOneForms.lean` | Existing Ahlfors part of actual metricNabla0S; no free derivative or supplied classification. |
 | Constant-probe CK classification and preservation by the actual Haar projector | `Geometry.RotationalProfile.PoleData.exists_constant_zonal_decomposition_of_rotationInvariant_of_isConformalKillingOneForm`, its iff, `isConformalKillingOneForm_rotationalAverage`, `exists_constant_zonal_decomposition_rotationalAverage_of_isConformalKillingOneForm`, `meridional_one_nonzero_conformalKilling` in `Geometry/RotationalConformalKilling.lean` | Original invariant form/average, actual reflection and Hodge derivative laws; probe constancy only on [-1,1], and a genuine nonzero CK section. |
 | Actual curvature/profile box equivalence | `Geometry.RotationalProfile.PoleData.curvature_bounds_iff_profile_bounds` in `Geometry/RotationalCurvatureBounds.lean` | Actual scalar/2 on every sphere point, including poles; positive reciprocal bounds on the physical height interval. |
-| Produced-metric CK safety and full smooth equality at/below the critical cap | `Geometry.RotationalProfile.PoleData.oneFormDissipation_nonneg_of_conformalKilling_profile_bounds`, `oneFormDissipation_eq_zero_iff_of_conformalKilling_profile_bounds`, corresponding `_curvature_bounds` theorems, `oneFormDissipation_meridional_one_pos_of_profile_bounds` in `Geometry/ConformalKillingSafety.lean` | Actual CK h, original Q≥0 and Q=0 iff h=0, including zero Haar average; fixed M_D(1) has positive action. Native pending independent review. |
-| Full-class sharp CK threshold, smooth supercritical witnesses and fixed-probe critical recovery | No final native declaration yet | Mandatory, together with geometric stability normalization and conjugated action/projector transport. Produced-metric safety alone does not finish this headline. |
+| Produced-metric CK safety and full smooth equality at/below the critical cap | `Geometry.RotationalProfile.PoleData.oneFormDissipation_nonneg_of_conformalKilling_profile_bounds`, `oneFormDissipation_eq_zero_iff_of_conformalKilling_profile_bounds`, corresponding `_curvature_bounds` theorems, `oneFormDissipation_meridional_one_pos_of_profile_bounds` in `Geometry/ConformalKillingSafety.lean` | Actual CK h, original Q≥0 and Q=0 iff h=0, including zero Haar average; fixed M_D(1) has positive action. Passed Round 11 independent review at ae5dc91. |
+| Smooth even approximation in the exact global box | `Analysis.exists_contDiff_even_sequence_Icc` in `Analysis/EvenSmoothApproximation.lean` | Uniformly continuous even input; normalized smooth convolution with derived mass/integrability and reflection averaging. Degenerate and negative boxes allowed. |
+| Actual extended reciprocal optimizer and continuous-profile limit identity | `evenReciprocalProfile`, its physical-interval/even/uniform-continuity/box laws in `Variational/EvenReciprocalProfile.lean`; `Geometry.RotationalProfile.integral_warp_div_eq_pairFunctional_sum`, `integral_warp_div_evenReciprocalProfile`, `constantProbeIntegral_evenReciprocalProfile` in `Geometry/ReciprocalProfileAction.lean` | Native interval clamp, same obstacle optimizer, explicit southern balance and actual scalar integral limit. No smooth metric assigned to the nonsmooth limit. |
+| Uniform continuity of the constant-probe integral | `Geometry.RotationalProfile.continuousOn_warp`, `intervalIntegrable_warp_div`, `tendsto_integral_warp_div_of_tendstoUniformlyOn`, `abs_integral_warp_div_sub_le` in `Geometry/ConstantProbeContinuity.lean` | Common positive box, actual warp-ratio integrals, derived integrability and Lipschitz coefficient 8*(1/lo+hi/lo²). No derivative convergence. |
+| Actual smooth metric/section recovery and complete unit-probe action convergence | `Geometry.RotationalProfile.exists_smooth_even_reciprocal_profiles`, `exists_poleData_unit_probe_recovery` and `PoleData.oneFormDissipation_meridional_one_eq_integral` in `Geometry/SmoothReciprocalRecovery.lean` | Exact global box, smoothness/evenness/balance, D_n.a=a_n, uniform convergence and original Q_Dn(M_Dn(1)) tending to 8*pi*(m(C)-1/3). |
+| Genuine negative smooth CK witnesses below every larger cap | `Geometry.RotationalProfile.exists_negative_unit_meridional_of_criticalCap_lt` in `Geometry/ConformalKillingSharpness.lean` | Uses exactly C0=(C+criticalCap)/2; returns a, D, tying equation, smoothness/evenness/balance, original nonzero CK unit form, actual 1≤K≤C0<C and negative complete action. Native pending review. |
+| Critical recovery with the fixed nonzero unit probe | `Geometry.RotationalProfile.exists_critical_unit_probe_recovery` in `Geometry/ConformalKillingSharpness.lean` | The same profile/metric sequences, exact critical box, uniform profile convergence, nonzero CK unit sections, actual curvature bounds and positive actions tending to zero. No scaling shortcut. Native pending review. |
+| Exact geometric hemisphere stability | `Geometry.RotationalProfile.PoleData.hemisphereDeficit_logProfile_eq_normalized_constant_zonal`, `oneFormDissipation_constant_zonal_controls_evenExtension`, `oneFormDissipation_constant_zonal_controls_reflection`, `oneFormDissipation_constant_zonal_controls_symmetrization` and `constant_zonal_zero_of_sq_sum_eq_zero` in `Geometry/ConformalKillingStability.lean` | Literal full logarithm, internally derived interval box/continuity, exact Q/(4*pi*S)+2/3-2*m(C), factor four, and separate zero-coefficient law. Native pending review. |
+| Full-class sharp CK safe-cap characterization and threshold | No final native declaration yet | Mandatory, including conjugated circle/projector transport, represented metric class, universal safe-cap set equality [1,criticalCap] and supremum conclusion. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
 
 The manuscript's current statements are tied to native proofs as follows:
@@ -187,14 +197,22 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:curvature-profile-box` | `RotationalProfile.PoleData.curvature_bounds_iff_profile_bounds`, using actual intrinsic curvature and polar height coverage |
 | `thm:produced-ck-safety` | Four public profile/curvature nonnegativity and zero-iff theorems in `Geometry/ConformalKillingSafety.lean`, with proved positive coefficient, full Haar split and accepted original remainder equality |
 | `cor:fixed-unit-probe-positive` | `RotationalProfile.PoleData.oneFormDissipation_meridional_one_pos_of_profile_bounds`, using the original nonzero unit CK section and full produced-metric equality |
+| `lem:even-smooth-box-approximation` | `Analysis.exists_contDiff_even_sequence_Icc`, with its actual normalized convolution, convex integral and uniform approximation dependencies |
+| `lem:constant-probe-continuity` | All four public continuity/integrability/convergence/quantitative estimates in `Geometry/ConstantProbeContinuity.lean` |
+| `lem:continuous-reciprocal-limit` | `Variational.evenReciprocalProfile` and all its laws; `RotationalProfile.balance_eq_zero_of_even`, `warp_reflected_of_balance`, `integral_warp_div_eq_pairFunctional_sum` and both exact relaxed-profile integral identities |
+| `thm:smooth-unit-probe-recovery` | `RotationalProfile.exists_smooth_even_reciprocal_profiles`, `exists_poleData_unit_probe_recovery` and the literal actual unit-probe action identity in `Geometry/SmoothReciprocalRecovery.lean` |
+| `thm:smooth-supercritical-ck-witness` | `RotationalProfile.exists_negative_unit_meridional_of_criticalCap_lt` with explicit midpoint cap, producer equation, actual curvature and original nonzero CK section/action |
+| `cor:critical-fixed-probe-recovery` | `RotationalProfile.exists_critical_unit_probe_recovery`, using the accepted actual critical variational value and fixed-unit-probe positivity theorem |
+| `thm:geometric-hemisphere-stability` | All five public normalized-action/stability/zero-coefficient laws in `Geometry/ConformalKillingStability.lean` |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints
 and equality, matching the native quantifiers. The metric construction requires
-globally smooth profiles positive on `[-1,1]`, exactly as in the native producer. It does
-not claim that the infimum over a smooth class is the same value without a smooth
-approximation theorem. No TeX engine was available in the working environment, so
-typesetting has not been validated.
+globally smooth profiles positive on `[-1,1]`, exactly as in the native producer.
+Smooth reciprocal recovery now retains the same approximating profiles, actual
+metric producers and fixed-unit-probe action limit. Full represented-class
+safe-cap characterization and structural separation remain open. No TeX engine
+was available in the working environment, so typesetting has not been validated.
 
 Independent statement/manuscript acceptance of later geometric claims remains required. The conditional
 first-order criterion is now specialized through the actual calibration, rather

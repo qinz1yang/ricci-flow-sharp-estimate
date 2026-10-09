@@ -1,0 +1,14 @@
+{
+  "source_sha256": "d505a0f3abd4675ddb5d9e8e2ff43d2f4f1804bc936ad10e86479479064f2333",
+  "theorem_map_sha256": "5029574d6c6dfb0263cbe3228c4d0a4badc28d18f4bb17337100272bca3db87b",
+  "labels": 127,
+  "references": 160,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round11 accepted; seven new smooth recovery/sharpness/geometric-stability claims pending configured outer review"
+}

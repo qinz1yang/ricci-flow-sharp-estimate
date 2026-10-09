@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all 107 current modules. Importing it is required
+The root aggregate is a real consumer of all 114 current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -162,13 +162,37 @@ The actual north/south hemisphere identities, invariant CK classification,
 critical variational cap and produced-metric CK safety/equality are now native.
 The public consumers use both profile bounds and actual Gauss-curvature bounds,
 include zero Haar average and cap one, and prove positivity of the fixed unit
-meridional probe. Seven conventional claims and their exact map are present
-and await independent review. The [manuscript receipt](evidence/round-11/manuscript.json)
+meridional probe. Seven conventional claims and their exact map passed
+Round 11 independent review at `ae5dc91`. The [manuscript receipt](evidence/round-11/manuscript.json)
 records 115 unique labels, 143 resolved references and one resolved citation;
 its structural checks do not claim typesetting.
-Smooth negative witnesses and fixed-probe critical action convergence,
-geometric stability normalization, full same-map conjugated class transport,
-structural separation and actual typesetting remain open. Historical receipts
-are unchanged.
+
+The [smooth recovery receipt](evidence/round-12/receipt.json),
+[axiom closure](evidence/round-12/axioms.txt), and
+[exact signatures](evidence/round-12/signatures.txt) cover all 114 modules.
+All 107 preceding mathematical sources remain unchanged; their successful
+elaborations are reused with verified provenance, and seven new sources receive
+fresh elaborations. The root and declaration/signature/axiom drivers run again.
+All 1904 defining-module declarations, including 735 private declarations,
+have only the permitted foundational axioms. All 460 required selectors and
+559 signature queries execute; 119 inputs, 120 outputs and three generated
+drivers bind the final evidence. Source and declaration-linter logs are silent.
+
+The layer proves normalized convolution with exact even box preservation,
+quantitative uniform continuity of the actual warp-ratio integral, the exact
+relaxed-profile value, genuine smooth metric recovery with D_n.a=a_n, and
+convergence of the original complete unit-probe action. It produces smooth
+negative CK witnesses below each prescribed larger cap and a critical sequence
+of positive actions tending to zero with the fixed scalar probe r=1.
+The geometric stability consumers preserve the exact action denominator,
+reflection factor four and a separate zero-coefficient law.
+Seven conventional claims and their mappings await configured independent
+review. The [current manuscript receipt](evidence/round-12/manuscript.json)
+records 127 unique labels, 160 resolved references and one resolved citation;
+balanced structure is not a typesetting certificate.
+
+Complete same-map conjugated class transport, its natural safe-cap set and
+threshold characterization, structural separation and actual typesetting
+remain open. Historical receipts are unchanged.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

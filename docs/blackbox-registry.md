@@ -2,15 +2,17 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All 107 currently checked analytic, variational and geometric modules depend transitively only on
+All 114 currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-11/axioms.txt) covers 1867 declarations,
-including 730 private declarations and relevant generated constants.
+The [current native report](evidence/round-12/axioms.txt) covers 1904 declarations,
+including 735 private declarations and relevant generated constants.
+The [accepted CK safety report](evidence/round-11/axioms.txt) covers the preceding
+107-module, 1867-declaration layer at `ae5dc91`.
 The [accepted original-remainder report](evidence/round-10/axioms.txt) covers
 the preceding 98-module, 1777-declaration layer at `0473a6a`.
 The [accepted positive-scalar report](evidence/round-9/axioms.txt) covers the
@@ -73,8 +75,23 @@ the accepted full split and original remainder equality give safety and full
 zero equality for produced metrics at the derived cap. The curvature consumer
 uses the same intrinsic curvature and actual height coverage. No equation,
 classification or sign conclusion is supplied as an extra hypothesis.
-This source-bound evidence does not certify the still-missing smooth sharpness,
-fixed-probe recovery, conjugated class projector or structural separation.
+That CK safety layer passed Round 11 independent review.
+
+The new recovery layer checks the released normalized smooth convolution,
+actual mass-one/convex-range and uniform-approximation proofs, and reflection
+symmetrization. The interval clamp retains the original reciprocal optimizer,
+with exact box/evenness and continuous balanced-profile integral identities.
+The warp-ratio integral has genuine integrability, a common positive-box
+domination proof and an explicit uniform Lipschitz estimate; no derivative
+convergence is assumed. Each smooth approximant is tied to the existing
+PoleData producer by D_n.a=a_n. Actual meridional action identities give the
+limit, and the original critical comparison and CK safety give the negative
+supercritical witness and positive fixed-probe critical sequence.
+The stability layer is an exact consumer of the actual zonal action and all
+three accepted hemisphere estimates, including factor four and zero coefficients.
+No smooth metric is assigned to the nonsmooth limit. This source-bound evidence
+still does not certify the missing conjugated class projector, full-class
+safe-cap characterization or derivative-sensitive structural separation.
 
 The manuscript cites David Jerison's MIT 18.103 Fall 2013 notes,
 [*Fourier Series, Part 1*, Corollary 2, p. 5](https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/1c196caa6307e0be46456cf6dc76b543_MIT18_103F13_fseries1.pdf),

@@ -122,6 +122,13 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalConformalKilling",
     "RicciFlowSharpEstimate.Geometry.RotationalCurvatureBounds",
     "RicciFlowSharpEstimate.Geometry.ConformalKillingSafety",
+    "RicciFlowSharpEstimate.Analysis.EvenSmoothApproximation",
+    "RicciFlowSharpEstimate.Variational.EvenReciprocalProfile",
+    "RicciFlowSharpEstimate.Geometry.ReciprocalProfileAction",
+    "RicciFlowSharpEstimate.Geometry.ConstantProbeContinuity",
+    "RicciFlowSharpEstimate.Geometry.ConformalKillingStability",
+    "RicciFlowSharpEstimate.Geometry.SmoothReciprocalRecovery",
+    "RicciFlowSharpEstimate.Geometry.ConformalKillingSharpness",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -133,6 +140,8 @@ SELECTOR = r"""
     Batteries.Tactic.Lint.getDeclsInPackage `RicciFlowSharpEstimate
   let geo := `RicciFlowSharpEstimate.Geometry
   let analysis := `RicciFlowSharpEstimate.Analysis
+  let variational := `RicciFlowSharpEstimate.Variational
+  let profile := `RicciFlowSharpEstimate.Geometry.RotationalProfile
   let poleData := `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
@@ -571,7 +580,32 @@ SELECTOR = r"""
       poleData ++ `oneFormDissipation_eq_zero_iff_of_conformalKilling_profile_bounds,
       poleData ++ `oneFormDissipation_meridional_one_pos_of_profile_bounds,
       poleData ++ `oneFormDissipation_nonneg_of_conformalKilling_curvature_bounds,
-      poleData ++ `oneFormDissipation_eq_zero_iff_of_conformalKilling_curvature_bounds
+      poleData ++ `oneFormDissipation_eq_zero_iff_of_conformalKilling_curvature_bounds,
+      analysis ++ `exists_contDiff_even_sequence_Icc,
+      variational ++ `evenReciprocalProfile,
+      variational ++ `evenReciprocalProfile_eq,
+      variational ++ `even_evenReciprocalProfile,
+      variational ++ `uniformContinuous_evenReciprocalProfile,
+      variational ++ `evenReciprocalProfile_bounds,
+      profile ++ `balance_eq_zero_of_even,
+      profile ++ `warp_reflected_of_balance,
+      profile ++ `integral_warp_div_eq_pairFunctional_sum,
+      profile ++ `integral_warp_div_evenReciprocalProfile,
+      profile ++ `constantProbeIntegral_evenReciprocalProfile,
+      profile ++ `continuousOn_warp,
+      profile ++ `intervalIntegrable_warp_div,
+      profile ++ `tendsto_integral_warp_div_of_tendstoUniformlyOn,
+      profile ++ `abs_integral_warp_div_sub_le,
+      poleData ++ `hemisphereDeficit_logProfile_eq_normalized_constant_zonal,
+      poleData ++ `oneFormDissipation_constant_zonal_controls_evenExtension,
+      poleData ++ `oneFormDissipation_constant_zonal_controls_reflection,
+      poleData ++ `oneFormDissipation_constant_zonal_controls_symmetrization,
+      poleData ++ `constant_zonal_zero_of_sq_sum_eq_zero,
+      profile ++ `exists_smooth_even_reciprocal_profiles,
+      poleData ++ `oneFormDissipation_meridional_one_eq_integral,
+      profile ++ `exists_poleData_unit_probe_recovery,
+      profile ++ `exists_negative_unit_meridional_of_criticalCap_lt,
+      profile ++ `exists_critical_unit_probe_recovery
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -1486,6 +1520,56 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormDissipation_nonneg_of_conformalKilling_curvature_bounds
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormDissipation_eq_zero_iff_of_conformalKilling_curvature_bounds
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_even_sequence_Icc
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_eq
+open RicciFlowSharpEstimate.Variational in
+#check even_evenReciprocalProfile
+open RicciFlowSharpEstimate.Variational in
+#check uniformContinuous_evenReciprocalProfile
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_bounds
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check balance_eq_zero_of_even
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check warp_reflected_of_balance
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check integral_warp_div_eq_pairFunctional_sum
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check integral_warp_div_evenReciprocalProfile
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check constantProbeIntegral_evenReciprocalProfile
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check continuousOn_warp
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check intervalIntegrable_warp_div
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check tendsto_integral_warp_div_of_tendstoUniformlyOn
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check abs_integral_warp_div_sub_le
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check hemisphereDeficit_logProfile_eq_normalized_constant_zonal
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_constant_zonal_controls_evenExtension
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_constant_zonal_controls_reflection
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_constant_zonal_controls_symmetrization
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check constant_zonal_zero_of_sq_sum_eq_zero
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check exists_smooth_even_reciprocal_profiles
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_meridional_one_eq_integral
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check exists_poleData_unit_probe_recovery
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check exists_negative_unit_meridional_of_criticalCap_lt
+open RicciFlowSharpEstimate.Geometry.RotationalProfile in
+#check exists_critical_unit_probe_recovery
 """
 
 

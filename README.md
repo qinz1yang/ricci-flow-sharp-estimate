@@ -29,9 +29,13 @@ The actual northern/southern pair-functional substitutions, invariant CK
 classification, exact variational critical cap and produced-metric CK safety
 with equality only at the zero form now have native proofs. They include
 actual curvature bounds and strict positivity of the fixed unit meridional
-probe, and await independent review. Smooth sharpness and fixed-probe endpoint
-recovery, geometric stability normalization, full class transport and
-structural separation remain open.
+probe, and passed Round 11 review at `ae5dc91`.
+Smooth even box-preserving recovery now produces genuine negative CK witnesses
+below every larger cap and a critical sequence whose fixed unit-probe actions
+are positive and tend to zero. The exact geometric hemisphere-stability
+consumers are also native. This new layer awaits independent review.
+Full class transport and its safe-cap characterization, structural separation,
+actual typesetting and final whole-suite acceptance remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

@@ -31,8 +31,11 @@ same-probe zonal action comparisons. The actual hemisphere substitutions,
 constant-zonal coefficient, invariant CK classification and exact variational
 critical cap now give produced-metric CK safety and equality only at the zero
 form, including actual curvature bounds and positivity of the fixed unit probe.
-Smooth CK sharpness/recovery, geometric stability normalization, full class
-transport and structural separation remain open.
+Smooth even box/balance-preserving recovery and original unit-probe action
+convergence now produce negative CK witnesses below every larger cap, and a
+critical fixed-probe sequence with positive actions tending to zero.
+The exact geometric hemisphere-stability consumers are also native.
+Full class transport, its safe-cap characterization and structural separation remain open.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
@@ -45,7 +48,8 @@ The global invariant-form classification layer passed Round 7 review at `8765255
 The scalarization and scalar Haar layers passed Round 8 independent review at `659006b`.
 The positive scalar estimate passed Round 9 independent review at `da47567`.
 The original-remainder sign/equality layer passed Round 10 review at `0473a6a`.
-The new hemisphere/critical-cap/produced-CK layer awaits independent review.
+The hemisphere/critical-cap/produced-CK layer passed Round 11 review at `ae5dc91`.
+The new smooth recovery/sharpness/geometric-stability layer awaits independent review.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -72,7 +76,7 @@ isometry used for the two zonal components.
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
-| Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form. | Produced-metric safety and full smooth equality are native pending review, via actual hemisphere substitution, invariant CK classification and the accepted remainder equality. Smooth supercritical witnesses, fixed-probe critical recovery, geometric stability normalization and full class transport/threshold characterization remain open. |
+| Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form. | Produced-metric safety/full equality passed Round 11 review. Smooth supercritical witnesses, fixed-unit-probe critical recovery and exact geometric stability are now native pending review. Full same-map class transport and the natural safe-cap set/threshold characterization remain open. |
 | Structural separation | Plateau instability and valid geometric recovery give `C_rot<C_CK` for all one-forms in the same metric class, without a chosen rational intermediate cap. | Open. Exact unrestricted value is not claimed. |
 
 The formulas and additional exact calculations appear in
@@ -90,8 +94,10 @@ present, together with the positive scalar estimate and its endpoint/integrabili
 The original-remainder nonnegativity/equality and strict Haar/zonal comparisons
 are also present. The hemisphere substitution, variational critical cap, invariant CK
 classification and produced-metric safety/equality proofs are now present.
-Smooth sharpness/endpoint approximation, full class transport, geometric stability
-and separation sections remain absent as established claims.
+Smooth approximation, quantitative constant-probe continuity, produced-metric
+supercritical witnesses, fixed-probe endpoint recovery and geometric stability
+proofs are now present. Full class transport, safe-cap characterization and
+separation sections remain absent as established claims.
 
 ## Shared dependency graph
 
@@ -156,14 +162,17 @@ flowchart TD
   KS --> CK[Full-class sharp CK threshold]
   ISO --> CT[Conjugated action and projector class transport]
   CT --> CK
-  C --> B[Box and balance preserving smooth approximation]
-  B --> X[Smooth supercritical geometric witnesses]
+  C --> B[Box and balance preserving smooth approximation: native]
+  B --> X[Smooth supercritical geometric witnesses: native]
   J --> X
   X --> CK
-  B --> ER[Fixed-unit-probe critical action recovery]
+  B --> ER[Fixed-unit-probe critical action recovery: native]
   KS --> ER
-  HP --> GS[Geometric hemisphere stability normalization]
+  HP --> GS[Geometric hemisphere stability normalization: native]
   N --> GS
+  B --> CC[Constant-probe integral continuity: native]
+  CC --> X
+  CC --> ER
   T[Plateau instability] --> TC[Moment-preserving curvature contraction]
   TC --> F[Area-coordinate exact-moment recovery in a strictly subcritical box]
   F --> SEP[Structural strict separation]
@@ -177,9 +186,9 @@ the full normalized lower-obstacle weight, and the true calibrated deficit. Its
 general anchoring lemma derives every product's integrability from compact-interval
 continuity. The actual hemisphere substitution, invariant CK classification,
 exact variational cap and produced-metric safety/equality are now native.
-The next frontier is smooth supercritical and fixed-probe critical recovery,
-geometric stability normalization and complete same-map class transport,
-followed by the safe-cap characterization and structural separation.
+Smooth supercritical and fixed-probe critical recovery and geometric stability
+normalization are now native. The next frontier is complete same-map class
+transport and the sharp safe-cap characterization, followed by structural separation.
 The actual normalized projector, canonical
 derivatives, full polarized split, global invariant classification and literal
 original-action scalarization, scalar Haar compatibility, scalar pole values and
@@ -196,8 +205,9 @@ real producers, not by moving the historical aggregate into the new project.
   `J_a[c]=[2(I(k₊)+I(k₋))−4/3]c²`, and geometric half-dissipation is `2πJ`.
   The northern/southern pair-functional substitution, including the southern
   balance identity, is now native in HemispherePairFunctional and ConstantZonalAction.
-  The geometric stability consumer must still use the exact factor
-  `Q/(4*pi*(c²+d²)) + 2/3 - 2*m(C)` when `c²+d²>0`.
+  The native geometric stability consumers use the exact factor
+  `Q/(4*pi*(c²+d²)) + 2/3 - 2*m(C)` when `c²+d²>0`, preserve the reflection
+  factor four, and handle zero coefficients without division or profile rigidity.
 - With area measured from the south pole,
   `f_K(x)=2x−2∫₀ˣ(x−s)K(s)ds`, hence `f_K''=−2K`, `f_K(0)=0`, `f_K'(0)=2`.
   On `[0,L]` the north-pole conditions require `∫K=2` and `∫sK=L`.
@@ -215,11 +225,14 @@ real producers, not by moving the historical aggregate into the new project.
   are native and passed Round 9 review. Their application to the original
   remainder now proves `Q(h−Ph)≥0` and `Q(h−Ph)=0 ↔ h−Ph=0`, using actual
   derivative vanishing and full-support Riemannian volume, accepted in Round 10.
-  The new produced-metric CK consumer uses this equality without re-proving it;
-  its own independent review and the broader class transport remain open.
-- General-probe action involves `a'`. Uniform approximation of `a` alone is
-  insufficient for its convergence. Reconstruct the area-coordinate exact
-  moment recovery and actual meridional action continuity instead.
+  The produced-metric CK consumer uses this equality without re-proving it and
+  passed Round 11 review. The broader class transport remains open.
+- The new constant-probe continuity theorem controls the literal integral
+  `integral warp(a)/a` on a common positive box, with Lipschitz coefficient
+  `8*(1/lo+hi/lo²)`, and proves actual unit-probe action convergence.
+  General-probe action still involves `a'`; uniform approximation of `a` alone
+  is insufficient for that action. Reconstruct the area-coordinate exact-moment
+  recovery and complete meridional action continuity for structural separation.
 - Critical-box recovery alone only gives a ratio at most `C_CK`. After proving
   negative action for a fixed smooth plateau probe, first contract the normalized
   curvature by `K_t=(1−t)K_*+2t`. Both exact moments are preserved. For `0<t<1`,

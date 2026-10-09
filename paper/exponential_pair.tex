@@ -2251,13 +2251,235 @@ Theorem~\ref{thm:invariant-ck-classification}. Nonnegativity and the zero
 classification in Theorem~\ref{thm:produced-ck-safety} imply strict positivity.
 \end{proof}
 
-These conclusions concern the produced metrics. Smooth supercritical negative
-witnesses, convergence to zero action at the critical cap with this same fixed
-probe, the geometric stability normalization, and the full conjugated
-circle/projector transport to the advertised diffeomorphic-pullback class
-remain to be proved. The displayed number has been derived from the actual
-variational value; identifying it as the sharp geometric safe-cap threshold
-also requires those witness and class results.
+\section{Smooth sharpness and fixed-probe recovery}
+
+\begin{lemma}\label{lem:even-smooth-box-approximation}
+Let $a:\R\to\R$ be uniformly continuous and even, with
+$\ell\leq a\leq u$ everywhere. There exist globally smooth even functions
+$a_n:\R\to\R$ with the same bounds $\ell\leq a_n\leq u$ and
+$a_n\to a$ uniformly on $\R$. The endpoints $\ell,u$ may coincide and need
+not be positive.
+\end{lemma}
+
+\begin{proof}
+Choose nonnegative normalized smooth bump kernels $\rho_n$, supported within
+distance $r_n=1/(n+1)$ of zero, with $\int\rho_n=1$. Put
+$b_n=\rho_n*a$. Each convolution is smooth: locally in its argument, every
+derivative of the compactly supported kernel is integrated against the
+continuous, hence locally integrable, function $a$ on a fixed compact set.
+The nonnegative mass-one kernel makes $b_n(x)$ an average of numbers in the
+closed convex interval $[\ell,u]$, so that interval is preserved exactly.
+Uniform continuity and support shrinking to zero give
+\[
+ |b_n(x)-a(x)|
+ \leq\sup_{|y|\leq r_n}|a(x-y)-a(x)|\longrightarrow0
+\]
+uniformly in $x$. Finally set $a_n(x)=(b_n(x)+b_n(-x))/2$.
+This preserves smoothness and the interval, gives evenness, and still
+converges uniformly because $a(-x)=a(x)$.
+\end{proof}
+
+For a continuous profile positive on $[-1,1]$, write
+\[
+ T(a)=\int_{-1}^1\frac{f_a(v)}{a(v)}\,dv,\qquad
+ f_a(v)=2\int_v^1s a(s)\,ds .
+\]
+This is a scalar integral, not a smooth-metric construction for arbitrary
+continuous $a$.
+
+\begin{lemma}\label{lem:constant-probe-continuity}
+Suppose $a,b$ are continuous on $[-1,1]$ and belong to a common positive box
+$0<\ell\leq a,b\leq u$. If $|a-b|\leq\varepsilon$ there, then
+\begin{equation}\label{eq:warp-ratio-lipschitz}
+ |T(a)-T(b)|\leq
+ 8\left(\frac1\ell+\frac{u}{\ell^2}\right)\varepsilon .
+\end{equation}
+In particular, uniform convergence $a_n\to a$ on that interval with the same
+positive box and continuous $a_n$ implies $T(a_n)\to T(a)$.
+No derivative convergence or balance is required.
+\end{lemma}
+
+\begin{proof}
+The primitives defining $f_a,f_b$ are continuous, and positive denominators
+make their quotients continuous and integrable on the closed interval.
+For $v\in[-1,1]$ the elementary integral estimates give
+$|f_b(v)|\leq4u$ and $|f_a(v)-f_b(v)|\leq4\varepsilon$.
+Here $\varepsilon\geq0$ follows from the assumed error bound at any point.
+The exact quotient identity
+\[
+ \frac{f_a}{a}-\frac{f_b}{b}
+ =\frac{f_a-f_b}{a}+\frac{f_b(b-a)}{ab}
+\]
+therefore bounds the pointwise absolute difference by
+$4\varepsilon/\ell+4u\varepsilon/\ell^2$.
+Integrating on an interval of length two proves
+\eqref{eq:warp-ratio-lipschitz}.
+
+For the limit assertion, uniform convergence gives continuity of $a$ and
+passes the closed box to $a$, so the quantitative bound applies.
+There is also a direct dominated-convergence proof: first pass to the limit
+in the defining warp integrals, dominated by $u$, then in their quotients,
+dominated by $4u/\ell$. These bounds establish actual integrability before
+either passage to the limit.
+\end{proof}
+
+\begin{lemma}\label{lem:continuous-reciprocal-limit}
+For $C\geq1$, let $p(t)=\max(0,\min(1,t))$ and define the actual extended
+reciprocal optimizer by
+\begin{equation}\label{eq:even-reciprocal-limit}
+ a_{0,C}(v)=\exp\bigl(-k_{*,C}(p(|v|))\bigr).
+\end{equation}
+It is uniformly continuous and even on $\R$, belongs to $[1/C,1]$ everywhere,
+and equals $\exp(-k_{*,C}(|v|))$ on $[-1,1]$.
+It is balanced and satisfies
+\begin{equation}\label{eq:reciprocal-limit-integral}
+ T(a_{0,C})=2m(C),\qquad
+ 2\pi\left(2T(a_{0,C})-\frac43\right)
+       =8\pi\left(m(C)-\frac13\right).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The interval projection $p$ and the absolute-value map are Lipschitz.
+The continuous function $t\mapsto\exp(-k_{*,C}(t))$ on the compact
+interval $[0,1]$ is uniformly continuous. Their composition has the asserted
+regularity; its formula is even and the optimizer's obstacle bounds give
+the exact reciprocal box. On the physical interval the projection is the
+identity. Beyond its endpoints it gives a constant extension.
+The function $v a_{0,C}(v)$ is odd and continuous, so its integral on
+$[-1,1]$ is zero.
+
+For any globally continuous, physically positive, balanced $a$, the proof of
+Lemma~\ref{lem:hemisphere-pair-substitution} uses no derivatives or smooth metric.
+In particular the reflected-tail law follows from balance, all warp quotients
+are integrable, and
+\[
+ T(a)=\I\!\left(\log\frac{M}{a(v)}\right)
+      +\I\!\left(\log\frac{M}{a(-v)}\right)\qquad(M>0).
+\]
+Apply this with $a=a_{0,C}$ and $M=1$. On $[0,1]$, its northern logarithm
+is exactly $k_{*,C}$; evenness identifies the southern logarithm with it.
+The functional depends only on this interval, proving $T(a_{0,C})=2m(C)$.
+The second identity in \eqref{eq:reciprocal-limit-integral} is algebra.
+No smooth metric is assigned to the nonsmooth limiting optimizer.
+\end{proof}
+
+\begin{theorem}\label{thm:smooth-unit-probe-recovery}
+For every $C\geq1$ there are globally smooth even profiles $a_n$ and
+genuine produced pole data $D_n$ such that
+\[
+ D_n.a=a_n,\qquad
+ \frac1C\leq a_n(v)\leq1\quad(v\in\R),\qquad
+ \int_{-1}^1v a_n(v)\,dv=0,\qquad
+ a_n\longrightarrow a_{0,C}\ \hbox{uniformly on }\R .
+\]
+For their original metrics and the fixed scalar probe $r=1$,
+\begin{equation}\label{eq:smooth-unit-probe-action-limit}
+ Q_{g_{D_n}}(M_{D_n}(1))
+       \longrightarrow8\pi\left(m(C)-\frac13\right).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Apply Lemma~\ref{lem:even-smooth-box-approximation} to
+$a_{0,C}$ with box $[1/C,1]$. Each approximant is even, so the exact
+balance integral vanishes by oddness. Its positive lower bound permits the
+existing smooth pole-factor and metric construction, yielding $D_n$ with
+the explicit equation $D_n.a=a_n$.
+
+For each of these actual smooth metrics, the accepted meridional reduction
+and constant-probe calculation give
+\[
+ Q_{g_{D_n}}(M_{D_n}(1))
+       =2\pi\left(2T(a_n)-\frac43\right).
+\]
+Lemma~\ref{lem:constant-probe-continuity} passes to the limit using the
+common positive box. Equation~\eqref{eq:reciprocal-limit-integral} identifies
+that limit and proves \eqref{eq:smooth-unit-probe-action-limit}.
+Only the scalar probe is kept fixed; the actual metric and its canonical
+meridional section are both produced from $a_n$.
+\end{proof}
+
+\begin{theorem}\label{thm:smooth-supercritical-ck-witness}
+For every prescribed $C>C_{\mathrm{CK}}$, set
+$C_0=(C+C_{\mathrm{CK}})/2$. There are a globally smooth even balanced
+profile $a$ and actual produced data $D$ with $D.a=a$,
+$1/C_0\leq a\leq1$ on $\R$, and
+\[
+ 1\leq K_{g_D}\leq C_0<C
+\]
+on the sphere. The original section $M_D(1)$ is nonzero, is CK, and has
+$Q_{g_D}(M_D(1))<0$.
+\end{theorem}
+
+\begin{proof}
+The chosen cap satisfies $1<C_{\mathrm{CK}}<C_0<C$.
+Theorem~\ref{thm:critical-pair-cap} gives $m(C_0)<1/3$.
+Apply Theorem~\ref{thm:smooth-unit-probe-recovery} at $C_0$.
+Its limit is negative, so an actual smooth member has negative action.
+Retain that member's profile and producer equation $D.a=a$.
+Lemma~\ref{lem:curvature-profile-box} converts its exact reciprocal box
+to the displayed curvature bounds, including both poles.
+The actual unit meridional section is nonzero and CK by
+Theorem~\ref{thm:invariant-ck-classification}.
+\end{proof}
+
+\begin{corollary}\label{cor:critical-fixed-probe-recovery}
+There is a sequence as in Theorem~\ref{thm:smooth-unit-probe-recovery} at
+$C=C_{\mathrm{CK}}$ with $1\leq K_{g_{D_n}}\leq C_{\mathrm{CK}}$,
+each $M_{D_n}(1)$ nonzero and CK, and
+\[
+ 0<Q_{g_{D_n}}(M_{D_n}(1))\longrightarrow0.
+\]
+The profiles converge uniformly to the same $a_{0,C_{\mathrm{CK}}}$ and
+retain their exact box, evenness, balance and producer equations.
+\end{corollary}
+
+\begin{proof}
+The critical value is $m(C_{\mathrm{CK}})=1/3$, so the action limit in
+\eqref{eq:smooth-unit-probe-action-limit} is zero.
+Each member's curvature bounds follow from its reciprocal box, and its
+nonzero CK property follows from the actual constant-probe theorem.
+Corollary~\ref{cor:fixed-unit-probe-positive} proves that every smooth
+action is strictly positive. No scaling of the scalar probe is used.
+\end{proof}
+
+\begin{theorem}\label{thm:geometric-hemisphere-stability}
+For an original produced metric with $0<m\leq a\leq M$ on $[-1,1]$, set
+$C=M/m$, $k(v)=\log(M/a(v))$ and $S=c^2+d^2>0$. Define
+\begin{equation}\label{eq:geometric-stability-budget}
+ B=\frac{Q_{g_D}(M_D(c)+Z_D(d))}{4\pi S}+\frac23-2m(C).
+\end{equation}
+Then $B=\I(k(v))+\I(k(-v))-2m(C)$ exactly, and
+\begin{align*}
+ \int_{-1}^1\bigl(k(v)-k_{*,C}(|v|)\bigr)^2\,dv&\leq B/c(C),\\
+ \int_{-1}^1\bigl(k(v)-k(-v)\bigr)^2\,dv&\leq4B/c(C),\\
+ \int_{-1}^1\left(k(v)-\frac{k(v)+k(-v)}2\right)^2\,dv&\leq B/c(C).
+\end{align*}
+Here $c(C)>0$ is the explicit stability constant from
+Theorem~\ref{thm:stability}. If $S=0$, then $c=d=0$, the actual zonal
+section and its action are zero; no normalized profile conclusion is asserted.
+\end{theorem}
+
+\begin{proof}
+The profile bounds imply $M>0$, $C\geq1$, and continuity and the exact
+obstacle bounds $0\leq k\leq\log C$ on the full interval.
+Divide \eqref{eq:constant-zonal-pair-coefficient} by the nonzero quantity
+$4\pi S$ and rearrange to obtain the stated identity for $B$.
+Apply all three estimates of Corollary~\ref{cor:hemispheres} to this
+literal full logarithm. This preserves their factor four for reflection
+error and requires no equatorial symmetry.
+For $S=0$, nonnegativity of squares forces both coefficients to vanish.
+The actual section is then zero and the exact constant-zonal formula gives
+zero action, without any division by $S$.
+\end{proof}
+
+The produced-metric safety, smooth witnesses and fixed-probe recovery are now
+established. The advertised diffeomorphic-pullback class still requires the
+complete same-map conjugated circle/projector transport and its class-level
+safe-cap characterization. Structural strict separation and its
+derivative-sensitive general-probe recovery remain separate obligations;
+the constant-probe continuity lemma above supplies no derivative convergence.
 
 \begin{thebibliography}{1}
 \bibitem{jerison-fourier}
