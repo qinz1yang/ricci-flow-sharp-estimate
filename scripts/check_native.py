@@ -138,6 +138,14 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RepresentedHaarGeometry",
     "RicciFlowSharpEstimate.Geometry.ConjugatedStability",
     "RicciFlowSharpEstimate.Geometry.ConformalKillingThreshold",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile",
+    "RicciFlowSharpEstimate.Analysis.SecondPrimitive",
+    "RicciFlowSharpEstimate.Geometry.AreaProfileCalculus",
+    "RicciFlowSharpEstimate.Analysis.SmoothIntervalExtension",
+    "RicciFlowSharpEstimate.Analysis.SmoothIntervalInverse",
+    "RicciFlowSharpEstimate.Geometry.AreaAction",
+    "RicciFlowSharpEstimate.Geometry.AreaActionBridge",
+    "RicciFlowSharpEstimate.Geometry.AreaGeometricRealization",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -152,6 +160,7 @@ SELECTOR = r"""
   let variational := `RicciFlowSharpEstimate.Variational
   let profile := `RicciFlowSharpEstimate.Geometry.RotationalProfile
   let represented := `RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric
+  let area := `RicciFlowSharpEstimate.Geometry.AreaProfile
   let poleData := `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
@@ -709,7 +718,60 @@ SELECTOR = r"""
       geo ++ `conformalKillingThreshold_closedForm,
       represented ++ `oneFormDissipation_pos_of_conformalKilling,
       geo ++ `exists_represented_negative_unit_meridional,
-      geo ++ `exists_represented_critical_unit_probe_recovery
+      geo ++ `exists_represented_critical_unit_probe_recovery,
+      area ++ `heightCoordinate,
+      area ++ `warp,
+      area ++ `warpSlope,
+      area ++ `meridionalActionDensity,
+      area ++ `meridionalAction,
+      area ++ `heightCoordinate_hasDerivAt,
+      area ++ `deriv_heightCoordinate,
+      area ++ `heightCoordinate_contDiff,
+      area ++ `heightCoordinate_zero,
+      area ++ `heightCoordinate_one,
+      area ++ `warp_zero,
+      area ++ `warpSlope_zero,
+      area ++ `warpSlope_eq_neg_two_height,
+      analysis ++ `SecondPrimitive.integral_kernel_eq,
+      analysis ++ `SecondPrimitive.integral_kernel_hasDerivAt,
+      analysis ++ `SecondPrimitive.integral_contDiff,
+      analysis ++ `SecondPrimitive.integral_kernel_contDiff,
+      area ++ `warp_hasDerivAt,
+      area ++ `warpSlope_hasDerivAt,
+      area ++ `deriv_warp,
+      area ++ `deriv_warpSlope,
+      area ++ `deriv_deriv_warp,
+      area ++ `warp_contDiff,
+      area ++ `warpSlope_contDiff,
+      area ++ `warp_one,
+      area ++ `warpSlope_one,
+      area ++ `heightCoordinate_continuous,
+      area ++ `warp_continuous,
+      area ++ `warpSlope_continuous,
+      area ++ `heightCoordinate_strictMonoOn,
+      area ++ `heightCoordinate_mapsTo,
+      area ++ `heightCoordinate_bijOn,
+      area ++ `warp_strictConcaveOn,
+      area ++ `warp_pos_of_moments,
+      area ++ `integral_heightCoordinate,
+      analysis ++ `exists_contDiff_extension_Icc,
+      analysis ++ `exists_contDiff_inverse_on_Icc,
+      area ++ `meridionalAction_integrand_continuous,
+      area ++ `meridionalAction_integrand_intervalIntegrable,
+      area ++ `warp_two,
+      area ++ `warpSlope_two,
+      area ++ `meridionalAction_two_one,
+      area ++ `profile_warp_heightCoordinate,
+      area ++ `deriv_profile_heightCoordinate,
+      area ++ `deriv_probe_heightCoordinate,
+      area ++ `deriv_deriv_probe_heightCoordinate,
+      area ++ `meridionalWeight_heightCoordinate,
+      area ++ `deriv_meridionalWeight_heightCoordinate,
+      area ++ `meridionalOperator_heightCoordinate,
+      area ++ `meridionalDensity_heightCoordinate_mul_curvature,
+      area ++ `oneFormDissipation_eq_areaAction_of_profile_probe,
+      area ++ `exists_smooth_geometric_realization,
+      area ++ `round_unit_probe_normalization
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -1862,6 +1924,112 @@ open RicciFlowSharpEstimate.Geometry in
 #check exists_represented_negative_unit_meridional
 open RicciFlowSharpEstimate.Geometry in
 #check exists_represented_critical_unit_probe_recovery
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalActionDensity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check deriv_heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate_contDiff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate_zero
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate_one
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_zero
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_zero
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_eq_neg_two_height
+open RicciFlowSharpEstimate.Analysis.SecondPrimitive in
+#check integral_kernel_eq
+open RicciFlowSharpEstimate.Analysis.SecondPrimitive in
+#check integral_kernel_hasDerivAt
+open RicciFlowSharpEstimate.Analysis.SecondPrimitive in
+#check integral_contDiff
+open RicciFlowSharpEstimate.Analysis.SecondPrimitive in
+#check integral_kernel_contDiff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check deriv_warp
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check deriv_warpSlope
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check deriv_deriv_warp
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_contDiff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_contDiff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_one
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_one
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate_strictMonoOn
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate_mapsTo
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check heightCoordinate_bijOn
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_strictConcaveOn
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_pos_of_moments
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integral_heightCoordinate
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_extension_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_inverse_on_Icc
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_integrand_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_integrand_intervalIntegrable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_two_one
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check profile_warp_heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check deriv_profile_heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check deriv_probe_heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check deriv_deriv_probe_heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalWeight_heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check deriv_meridionalWeight_heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalOperator_heightCoordinate
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalDensity_heightCoordinate_mul_curvature
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check oneFormDissipation_eq_areaAction_of_profile_probe
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_geometric_realization
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check round_unit_probe_normalization
 """
 
 

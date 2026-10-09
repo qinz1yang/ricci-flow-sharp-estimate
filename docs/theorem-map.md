@@ -16,7 +16,9 @@ produced-metric safety/equality are now included. Smooth even reciprocal recover
 constant-probe continuity, actual supercritical witnesses, fixed-probe critical
 recovery and geometric stability are also included. Full represented-class
 Haar/CK transport and the universal safe-cap characterization are now included.
-Structural separation remains unwritten. This map does
+Normalized positive area geometry, smooth physical inversion and complete
+original-action realization are now included. Critical area zero action,
+plateau/recovery and structural separation remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The prefixes `Geometry` and `Analysis` below are relative to `RicciFlowSharpEstimate`.
@@ -32,7 +34,8 @@ The positive scalar estimate passed Round 9 review at `da47567`.
 The original-remainder sign/equality layer passed Round 10 review at `0473a6a`.
 The hemisphere/critical-cap/produced-CK layer passed Round 11 review at `ae5dc91`.
 The smooth recovery/sharpness/geometric-stability layer passed Round 12 review at `58d5dbc`.
-The new represented-class Haar and universal CK threshold layer requires its own review.
+The represented-class Haar and universal CK threshold layer passed Round 13 review at `70f0557`.
+The new normalized-area realization layer requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -138,11 +141,19 @@ The new represented-class Haar and universal CK threshold layer requires its own
 | Canonical operators and full four-term pairing/action under conjugation | `Geometry.RotationalProfile.PoleData.metricNabla0S_conjugatedRotationalAverage`, repeated derivative/rough/Ahlfors laws, full-pairing self-adjointness/orthogonality, `oneFormDissipation_conjugated_split`, `oneFormDissipation_conjugated_remainder_nonneg`, `oneFormDissipation_conjugated_remainder_eq_zero_iff` in `Geometry/ConjugatedHaarDissipation.lean` | Arbitrary original forms on F*D.metric; actual inverse pullback of those forms, complete action and no pinching. |
 | Exact transported zonal generators and strict Haar comparison | `Geometry.RotationalProfile.PoleData.oneFormDissipation_pullback_zonal`, `exists_smooth_zonal_decomposition_conjugatedRotationalAverage`, `exists_conjugated_haar_zonal_dissipation`, comparison/equality/invariance laws and `exists_conjugated_haar_zonal_lower_bound` in `Geometry/ConjugatedZonalGeometry.lean` | Same global probes and literal F*M_D(r), F*Z_D(s), original Q and exact 2*pi factor. |
 | Actual represented metric class, curvature/volume/area and CK safety/equality | `Geometry.IsRepresentedRotationalMetric`, produced/pullback inclusion and further pullback closure, `RotationalProfile.PoleData.metricScalarAt_pullback`, curvature-box iff, volume pushforward/measure preservation, area evaluation/norm/parallelness/curl laws, direct and class-level CK safety/zero iff in `Geometry/RepresentedRotationalMetric.lean` | Exact g=F*D.metric witness; original arbitrary h, natural curvature boxes and transported area; orientation reversal allowed. |
-| Full-class Haar/zonal consumers and conjugated CK preservation | `Geometry.IsRepresentedRotationalMetric.exists_haar_representation`, `exists_haar_zonal_decomposition`, `RotationalProfile.PoleData.isConformalKillingOneForm_conjugatedRotationalAverage`, `exists_conjugated_constant_zonal_of_conformalKilling` in `Geometry/RepresentedHaarGeometry.lean` | One actual representation for all forms and probes, with metric and section tying equations. Native pending independent review. |
-| Full-class geometric stability | Four exact action-budget/error laws and zero-coefficient law in `Geometry/ConjugatedStability.lean`; `Geometry.IsRepresentedRotationalMetric.exists_stability_representation` | Same original g and pulled-back sections, one D,F before all box/coefficient quantifiers, exact factor and reflection constant four. Native pending review. |
-| Actual universal CK safe-cap set and supremum | `Geometry.conformalKillingSafeCaps`, `conformalKillingSafeCaps_eq`, nonempty/bddAbove, `conformalKillingThreshold`, `conformalKillingThreshold_eq_criticalCap`, `conformalKillingThreshold_closedForm` in `Geometry/ConformalKillingThreshold.lean` | Universal quantifiers over every represented metric, every positive actual curvature box and every smooth CK form; set equals Icc 1 criticalCap, proved using safety and existing negative witnesses. Native pending review. |
+| Full-class Haar/zonal consumers and conjugated CK preservation | `Geometry.IsRepresentedRotationalMetric.exists_haar_representation`, `exists_haar_zonal_decomposition`, `RotationalProfile.PoleData.isConformalKillingOneForm_conjugatedRotationalAverage`, `exists_conjugated_constant_zonal_of_conformalKilling` in `Geometry/RepresentedHaarGeometry.lean` | One actual representation for all forms and probes, with metric and section tying equations. Passed Round 13 independent review at 70f0557. |
+| Full-class geometric stability | Four exact action-budget/error laws and zero-coefficient law in `Geometry/ConjugatedStability.lean`; `Geometry.IsRepresentedRotationalMetric.exists_stability_representation` | Same original g and pulled-back sections, one D,F before all box/coefficient quantifiers, exact factor and reflection constant four. Passed Round 13 independent review at 70f0557. |
+| Actual universal CK safe-cap set and supremum | `Geometry.conformalKillingSafeCaps`, `conformalKillingSafeCaps_eq`, nonempty/bddAbove, `conformalKillingThreshold`, `conformalKillingThreshold_eq_criticalCap`, `conformalKillingThreshold_closedForm` in `Geometry/ConformalKillingThreshold.lean` | Universal quantifiers over every represented metric, every positive actual curvature box and every smooth CK form; set equals Icc 1 criticalCap, proved using safety and existing negative witnesses. Passed Round 13 independent review at 70f0557. |
 | Full-class endpoint and same-witness sharpness/recovery | `Geometry.IsRepresentedRotationalMetric.oneFormDissipation_pos_of_conformalKilling`, `exists_represented_negative_unit_meridional`, `exists_represented_critical_unit_probe_recovery` in `Geometry/ConformalKillingThreshold.lean` | Smooth nonzero safe CK forms have positive action; the same fixed-probe recovery and midpoint witnesses are embedded through identity representations, retaining producer/curvature equations. |
-| Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
+| Actual triangular primitive calculus | `Analysis.SecondPrimitive.integral_kernel_eq`, `integral_kernel_hasDerivAt`, `integral_contDiff`, `integral_kernel_contDiff` in `Analysis/SecondPrimitive.lean` | Literal integrals with real first derivatives and global smoothness when the coefficient is smooth. |
+| Positive normalized area geometry and exact moments | `Geometry.AreaProfile.heightCoordinate`, `warp`, `warpSlope` and actual height laws in `Geometry/AreaProfile.lean`; derivative, endpoint, continuity/smoothness, strict monotonicity/BijOn, strict concavity, `warp_pos_of_moments` and `integral_heightCoordinate` in `Geometry/AreaProfileCalculus.lean` | Original positive curvature and both exact moments; corrected affine term/sign; no positivity inferred from moments alone. |
+| Global smooth extension and physical interval inverse | `Analysis.exists_contDiff_extension_Icc` in `Analysis/SmoothIntervalExtension.lean`; `exists_contDiff_inverse_on_Icc` in `Analysis/SmoothIntervalInverse.lean` | Nondegenerate real intervals; actual local inverse comparison and native Borel extension; both inverse laws/endpoints and reciprocal derivative on the closed interval. No exterior inverse claim. |
+| Complete normalized area density and actual integrability | `Geometry.AreaProfile.meridionalActionDensity`, `meridionalAction` in `Geometry/AreaProfile.lean`; `meridionalAction_integrand_continuous`, `meridionalAction_integrand_intervalIntegrable` in `Geometry/AreaAction.lean` | All six coefficient/jet entries, actual primitives and actual r derivatives. Continuous K and smooth r give genuine integrability. |
+| Actual closed-endpoint profile/probe jets and curvature-derivative cancellation | `Geometry.AreaProfile.profile_warp_heightCoordinate`, `deriv_profile_heightCoordinate`, `deriv_probe_heightCoordinate`, `deriv_deriv_probe_heightCoordinate`, both weight laws and `meridionalOperator_heightCoordinate` in `Geometry/AreaActionBridge.lean` | Physical coefficient/probe tying, actual V_K derivative and unique closed-interval derivatives; no independently supplied jets. |
+| Original complete action equals the full area action | `Geometry.AreaProfile.meridionalDensity_heightCoordinate_mul_curvature`, `oneFormDissipation_eq_areaAction_of_profile_probe` in `Geometry/AreaActionBridge.lean` | Every original density term, actual Jacobian K, restricted-domain substitution and canonical 2*pi factor. Honest lower coordinate engine; final producer below derives its tying premises. |
+| Fully tied smooth geometric realization | `Geometry.AreaProfile.exists_smooth_geometric_realization` in `Geometry/AreaGeometricRealization.lean` | Only smooth K,r, physical positivity and both moments as inputs. Returns X,D,R with all endpoints/maps/inverses, derivative inverse law, R=r∘X, D.a(V)=1/K, R(V)=r, warp identity, actual closed-endpoint jets, actual curvature composition and original Q=2*pi*A. Native pending review. |
+| Genuine round normalization | `Geometry.AreaProfile.warp_two`, `warpSlope_two`, `meridionalAction_two_one` in `Geometry/AreaAction.lean`; `round_unit_probe_normalization` in `Geometry/AreaGeometricRealization.lean` | Literal K=2 primitive and full scalar action 4/3, actual constant-profile D.a=1/2, nonzero native unit section and original Q=8*pi/3. |
+| Critical area profile, plateau instability, exact-moment recovery and strict separation | No final native declaration yet | Mandatory, with contraction before recovery, complete derivative-sensitive convergence and all-form cap-one safety/supremum comparison. The new smooth realization is a prerequisite, not the final negative witness. |
 
 The manuscript's current statements are tied to native proofs as follows:
 
@@ -221,6 +232,13 @@ The manuscript's current statements are tied to native proofs as follows:
 | `thm:represented-ck-safety` | Actual direct/class CK safety and equality in `Geometry/RepresentedRotationalMetric.lean`; CK preservation/constant-average classification in `Geometry/RepresentedHaarGeometry.lean`; `IsRepresentedRotationalMetric.oneFormDissipation_pos_of_conformalKilling` |
 | `thm:represented-geometric-stability` | All six public exact-budget/three-error/zero-case/class-representation laws in `Geometry/ConjugatedStability.lean` |
 | `thm:universal-ck-threshold` | All ten public declarations in `Geometry/ConformalKillingThreshold.lean`: literal safe set, equality, nonempty/boundedness, supremum/closed form, universal smooth strict positivity and identity embedding of the same witness/recovery sequences |
+| `lem:area-second-primitive` | All four actual triangular/ordinary primitive calculus theorems in `Analysis/SecondPrimitive.lean` |
+| `thm:positive-normalized-area-geometry` | Literal primitive definitions/height laws in `Geometry/AreaProfile.lean` and all 18 calculus/endpoints/positivity/height-bijection/zero-height-integral results in `Geometry/AreaProfileCalculus.lean` |
+| `lem:smooth-closed-interval-inverse` | `Analysis.exists_contDiff_inverse_on_Icc`, its actual compact homeomorphism/local inverse proof, and `Analysis.exists_contDiff_extension_Icc` from the released constructive Borel interval extension |
+| `lem:actual-area-probe-jets` | Seven actual closed-interval warp/profile/probe/weight/operator equations in `Geometry/AreaActionBridge.lean`; uniqueness of genuine derivatives within Icc handles both endpoints |
+| `thm:complete-area-action-bridge` | `Geometry.AreaProfile.meridionalDensity_heightCoordinate_mul_curvature` and `oneFormDissipation_eq_areaAction_of_profile_probe` with actual integrability and restricted-image substitution |
+| `thm:fully-tied-area-realization` | `Geometry.AreaProfile.exists_smooth_geometric_realization`, using the actual height inverse, smooth reciprocal quotient, derived balance, existing PoleData producer and original-action bridge; every stated tying equation is public |
+| `cor:area-round-normalization` | `Geometry.AreaProfile.warp_two`, `warpSlope_two`, `meridionalAction_two_one` and `round_unit_probe_normalization` for the actual positive constant metric/nonzero unit section |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints
@@ -228,8 +246,11 @@ and equality, matching the native quantifiers. The metric construction requires
 globally smooth profiles positive on `[-1,1]`, exactly as in the native producer.
 Smooth reciprocal recovery now retains the same approximating profiles, actual
 metric producers and fixed-unit-probe action limit. Represented-class Haar
-transport and safe-cap characterization are now native; structural separation
-remains open. No TeX engine
+transport and safe-cap characterization passed independent review. The new
+area realization takes globally smooth K,r, positivity only on [0,1] and both
+exact moments; its continuous primitive calculus is separate from the future
+bounded-measurable recovery. Critical area/plateau/recovery and separation
+remain open. No TeX engine
 was available in the working environment, so typesetting has not been validated.
 
 Independent statement/manuscript acceptance of later geometric claims remains required. The conditional

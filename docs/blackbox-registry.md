@@ -2,15 +2,17 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All 123 currently checked analytic, variational and geometric modules depend transitively only on
+All 131 currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-13/axioms.txt) covers 2031 declarations,
-including 739 private declarations and relevant generated constants.
+The [current native report](evidence/round-14/axioms.txt) covers 2140 declarations,
+including 747 private declarations and relevant generated constants.
+The [accepted represented-class report](evidence/round-13/axioms.txt) covers
+the preceding 123-module, 2031-declaration layer at `70f0557`.
 The [accepted smooth recovery report](evidence/round-12/axioms.txt) covers the
 preceding 114-module, 1904-declaration layer at `58d5dbc`.
 The [accepted CK safety report](evidence/round-11/axioms.txt) covers the preceding
@@ -109,8 +111,25 @@ Finally, the literal universally quantified CK safe-cap set is proved equal to
 the closed critical interval using safety and the already constructed negative
 witnesses; real supremum laws give the numerical formula. Existing critical
 recovery data are retained, not replaced by scaling forms. No sign/equality
-conclusion is supplied as an input. Derivative-sensitive structural separation
-and the final whole-suite gates remain unproved.
+conclusion is supplied as an input. That represented-class layer passed Round 13
+independent review.
+
+The new normalized-area layer checks literal triangular primitive calculus,
+actual first/second derivative equations, exact endpoint moments and strict
+concavity from positive curvature. The inverse is constructed from the actual
+compact-interval bijection and local smooth inverse, then extended using the
+released constructive Borel interval theorem. Both inverse laws and reciprocal
+derivatives hold at the closed endpoints. The complete six-entry action uses
+the actual probe derivatives. Unique interval derivatives give every profile
+and probe jet; the curvature-derivative terms cancel inside the original
+meridional operator. Genuine restricted-image change of variables then proves
+the full original-action identity without exterior positivity assumptions.
+The final smooth realization derives the reciprocal profile, balance and probe
+from K,r and the moments, uses the existing PoleData producer, and retains all
+endpoint/inverse/profile/probe/curvature/action equations publicly. Its lower
+coordinate bridge is not mistaken for the final producer. No nonsmooth critical
+profile is assigned a smooth metric. The remaining critical/plateau/contraction/
+exact-moment convergence and strict comparison are still mandatory unproved work.
 
 The manuscript cites David Jerison's MIT 18.103 Fall 2013 notes,
 [*Fourier Series, Part 1*, Corollary 2, p. 5](https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/1c196caa6307e0be46456cf6dc76b543_MIT18_103F13_fseries1.pdf),

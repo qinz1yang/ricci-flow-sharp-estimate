@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all 123 current modules. Importing it is required
+The root aggregate is a real consumer of all 131 current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -210,13 +210,42 @@ actual positive curvature box and original smooth CK form, is exactly
 `[1,criticalCap]`; its actual supremum has the radical/exponential value.
 The same existing supercritical witnesses and critical fixed-probe sequence are
 embedded in the represented class through identity maps.
-Seven conventional claims and their exact mappings await configured independent
-review. The [current manuscript receipt](evidence/round-13/manuscript.json)
+Seven conventional claims and their exact mappings passed Round 13 independent
+review at `70f0557`, closing AC4 and AC5. The [Round 13 manuscript receipt](evidence/round-13/manuscript.json)
 records 140 unique labels, 181 resolved references and one resolved citation.
 Actual typesetting is not claimed.
 
-Structural strict separation and its general-probe area-coordinate recovery,
-the remaining manuscript/typesetting and final whole-suite independent/native
-gates remain open. Historical receipts are unchanged.
+The [normalized-area realization receipt](evidence/round-14/receipt.json),
+[axiom closure](evidence/round-14/axioms.txt), and
+[exact signatures](evidence/round-14/signatures.txt) cover all 131 modules.
+All 123 preceding mathematical sources are unchanged and their successful
+elaborations are reused with matching provenance. Eight new sources are
+freshly elaborated; the root and declaration/signature/axiom drivers run again.
+All 2140 defining-module declarations, including 747 private declarations,
+have only the permitted foundational axioms. All 607 required selectors and
+706 signature queries execute. The receipt binds 136 inputs, 137 outputs and
+three generated drivers. Source and declaration-linter outputs are silent.
+
+This layer proves actual normalized curvature primitives and their
+positive-curvature moment geometry; a smooth physical interval inverse with
+closed-endpoint derivative laws; the complete six-entry area action with real
+integrability; actual profile/probe jets and curvature-derivative cancellation;
+and a fully tied smooth realization with all coordinates, endpoints, inverse
+laws, curvature and original Q=2*pi*A equations. The round K=2/unit-probe
+consumer gives the actual value 8*pi/3.
+The source simplifier's single wording suggestion was applied: the smooth
+extension agrees on the closed interval, with no exterior germ claim.
+The final source-bound gate was rerun after that comment-only edit; the earlier
+candidate receipt is preserved in ignored Root scratch and is not final evidence.
+Seven conventional claims and their exact mappings await configured review.
+The [current manuscript receipt](evidence/round-14/manuscript.json) records
+152 unique labels, 197 resolved references and one resolved citation.
+Actual typesetting is not claimed.
+
+Critical area zero action, plateau variation, strict contraction, exact-moment
+L1/ae recovery with complete-action convergence, all-form cap-one safety and the
+strict supremum comparison remain open. Remaining manuscript/typesetting and
+final whole-suite independent/native gates also remain open. Historical
+delivered receipts are unchanged.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

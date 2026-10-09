@@ -1,0 +1,5 @@
+✔ [9773/9777] Built RicciFlowSharpEstimate.Analysis.SmoothIntervalExtension (5.7s)
+✔ [9774/9777] Built RicciFlowSharpEstimate.Analysis.SmoothIntervalInverse (5.9s)
+✔ [9775/9777] Built RicciFlowSharpEstimate.Geometry.AreaGeometricRealization (7.6s)
+✔ [9776/9777] Built RicciFlowSharpEstimate (9.4s)
+Build completed successfully (9777 jobs).

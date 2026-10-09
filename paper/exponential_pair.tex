@@ -2750,10 +2750,294 @@ a second sequence nor changes their action limit. The same identity
 embedding retains the original supercritical witness equations.
 \end{proof}
 
-The unrestricted comparison still requires positive normalized area geometry,
-plateau instability and complete derivative-sensitive general-probe recovery.
-The CK endpoint statement above does not assert an unrestricted endpoint
-attainment result, and constant-probe continuity supplies no derivative convergence.
+\section{Normalized area geometry and complete action realization}
+
+\begin{lemma}\label{lem:area-second-primitive}
+For a continuous real function $u$ on $\R$ and a fixed $a\in\R$, put
+$S(x)=\int_a^x(x-t)u(t)\,dt$. Then
+\[
+ S(x)=x\int_a^x u(t)\,dt-\int_a^x t u(t)\,dt,\qquad
+ S'(x)=\int_a^x u(t)\,dt .
+\]
+If $u$ is globally smooth, both its first primitive and $S$ are globally smooth.
+\end{lemma}
+
+\begin{proof}
+All integrands are continuous on every compact integration interval, so
+linearity gives the first identity for either orientation of the interval.
+Differentiate its two ordinary primitives using the fundamental theorem of
+calculus. The two terms $xu(x)$ cancel, leaving the stated derivative.
+For smooth $u$, the first primitive is differentiable with smooth derivative
+$u$, and $S$ is differentiable with that smooth first primitive as derivative.
+Induction on the derivative order proves global smoothness.
+\end{proof}
+
+For a curvature coefficient $K:\R\to\R$, define the actual normalized primitives
+\begin{equation}\label{eq:normalized-area-primitives}
+ V_K(x)=-1+\int_0^xK(t)\,dt,\qquad
+ f_K(x)=2x-2\int_0^x(x-t)K(t)\,dt,\qquad
+ f_{1,K}(x)=2-2\int_0^xK(t)\,dt .
+\end{equation}
+
+\begin{theorem}\label{thm:positive-normalized-area-geometry}
+Suppose $K$ is continuous on $\R$, strictly positive on $[0,1]$, and satisfies
+the two exact normalized moments
+\[
+ \int_0^1K(x)\,dx=2,\qquad \int_0^1xK(x)\,dx=1.
+\]
+The actual derivative identities are
+\[
+ V_K'=K,\qquad f_K'=f_{1,K}=-2V_K,\qquad
+ f_{1,K}'=f_K''=-2K .
+\]
+They hold on $\R$. Moreover,
+\[
+ V_K(0)=-1,\quad V_K(1)=1,\quad
+ f_K(0)=f_K(1)=0,\quad f_{1,K}(0)=2,\quad f_{1,K}(1)=-2.
+\]
+The map $V_K$ is a strictly increasing bijection from $[0,1]$ onto $[-1,1]$,
+and $\int_0^1V_K=0$. The warp $f_K$ is strictly concave on $[0,1]$ and
+strictly positive on $(0,1)$. If $K$ is globally smooth, all three primitives
+are globally smooth.
+\end{theorem}
+
+\begin{proof}
+Apply Lemma~\ref{lem:area-second-primitive} and the fundamental theorem to
+the literal definitions \eqref{eq:normalized-area-primitives}. These also
+give $f_{1,K}=-2V_K$ by algebra. The left endpoints follow directly.
+The zeroth moment gives the right height and slope, while
+\[
+ f_K(1)=2-2\left(\int_0^1K(t)\,dt-\int_0^1tK(t)\,dt\right)=0 .
+\]
+Positive $V_K'=K$ gives strict monotonicity. Continuity, the endpoint values
+and the intermediate value theorem give the asserted bijection.
+Integrating $V_K=-f_K'/2$ between the two zero warp endpoints gives its
+zero integral, with integrability supplied by continuity.
+
+The actual second derivative is strictly negative on $[0,1]$, so $f_K$
+is strictly concave there. For $0<x<1$, strict concavity between its two
+zero endpoint values gives $f_K(x)>0$. This step uses positive curvature;
+the two moment equations alone do not imply it.
+Smoothness follows from the last part of Lemma~\ref{lem:area-second-primitive}.
+\end{proof}
+
+\begin{lemma}\label{lem:smooth-closed-interval-inverse}
+Let $a<b$ and let $V:\R\to\R$ be globally smooth with $V'>0$ on $[a,b]$.
+There exists a globally smooth real function $X$ such that
+\[
+ X([V(a),V(b)])\subset[a,b],\qquad
+ X(V(x))=x\ (a\leq x\leq b),\qquad
+ V(X(v))=v\ (V(a)\leq v\leq V(b)).
+\]
+It has $X(V(a))=a$, $X(V(b))=b$, and
+$X'(v)V'(X(v))=1$ on the entire closed target interval, including both endpoints.
+The conclusion does not require $X$ to invert $V$ outside those intervals.
+\end{lemma}
+
+\begin{proof}
+Strict monotonicity and the intermediate value theorem produce the actual
+closed-interval bijection. Its continuous inverse follows from compactness
+of the source and the Hausdorff property of the target. Extend this inverse
+continuously to the line by clamping its input to the target interval.
+
+At a target point $v$, including an endpoint, put $x=V^{-1}(v)$.
+Since $V'(x)>0$, the local smooth inverse theorem gives a smooth inverse
+branch near $v$. Continuity of the clamped inverse and the original inverse
+equation show that it agrees with this branch within the target interval
+near $v$. Thus the actual inverse is smooth on that closed interval,
+with its one-sided endpoint jets.
+
+A smooth function on a nondegenerate closed real interval has a global
+smooth extension agreeing on the interval. One construction realizes each
+endpoint jet $(c_j)$ by a cutoff series
+$\sum_j c_j(t-t_0)^j\chi((t-t_0)/\varepsilon_j)/j!$,
+where $\chi$ is smooth, compactly supported and equal to one near zero.
+Choose $\varepsilon_j>0$ small enough that the $C^k$ norm of its $j$th term
+is at most $2^{-j}$ for every $k<j$. Every derivative series then converges
+uniformly after finitely many initial terms and has exactly the prescribed
+jet at $t_0$. Glue these left and right realizations to the given function;
+matching all one-sided derivatives makes the result globally smooth.
+Apply this extension construction to the actual interval inverse.
+
+The extension retains both inverse equations and endpoints. Differentiate
+$V(X(v))=v$ within the nondegenerate closed target interval. Uniqueness of
+the derivative within that interval, also at its endpoints, gives
+$V'(X(v))X'(v)=1$. This identifies the ambient derivative of the global
+extension without imposing any exterior inverse law.
+\end{proof}
+
+For actual primitives $f=f_K$, $f_1=f_{1,K}$ and a smooth real probe $r$, define
+the complete normalized area action by
+\begin{equation}\label{eq:complete-area-action}
+ A_K(r)=\int_0^1
+ \left[
+ f(fr''+2f_1r'-Kr)^2
+ -Kf_1r\left(fr'+\frac{f_1r}{2}\right)
+ +K^2fr^2
+ \right]dx .
+\end{equation}
+For continuous $K$ and smooth $r$, every factor in this density is continuous,
+so the integral is genuine.
+
+\begin{lemma}\label{lem:actual-area-probe-jets}
+Let $K,r$ be globally smooth, with $K>0$ on $[0,1]$ and $\int_0^1K=2$.
+Suppose $D$ is original produced data and $R$ is globally smooth, with the
+physical equations
+\[
+ D.a(V_K(x))=1/K(x),\qquad R(V_K(x))=r(x)\qquad(0\leq x\leq1).
+\]
+Write $a=D.a$ and $H=\operatorname{warp}(a)/a$ for the original height-profile
+quantities. On the entire closed area interval,
+\begin{align*}
+ \operatorname{warp}(a)(V_K(x))&=f_K(x),&
+ a'(V_K(x))&=-K'(x)/K(x)^3,\\
+ R'(V_K(x))&=r'(x)/K(x),&
+ R''(V_K(x))&=r''(x)/K(x)^2-r'(x)K'(x)/K(x)^3,\\
+ H(V_K(x))&=f_K(x)K(x),&
+ H'(V_K(x))&=f_{1,K}(x)+f_K(x)K'(x)/K(x).
+\end{align*}
+Consequently the actual operator from \eqref{eq:meridional-operator} satisfies
+\begin{equation}\label{eq:area-operator-chain}
+ L_aR(V_K(x))
+   =\frac{f_K(x)r''(x)+2f_{1,K}(x)r'(x)-K(x)r(x)}{K(x)} .
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The actual height derivative is $V_K'=K$.
+The derivative of $\operatorname{warp}(a)(V_K(x))$ is
+$-2V_K(x)a(V_K(x))K(x)=-2V_K(x)=f_K'(x)$.
+Both functions vanish at $x=0$, using $V_K(0)=-1$ and the original
+balance equation of $D$. Equality of these actual derivatives and continuity
+give the warp identity on the full interval.
+
+Differentiate the coefficient and probe equations within $[0,1]$.
+Since both sides have actual ambient derivatives at every point, uniqueness
+within the nondegenerate interval gives the displayed first derivatives,
+including the endpoints. Differentiate the first probe derivative equation
+once more to obtain the stated second derivative. Each division is justified
+by $K(x)>0$.
+
+The value of $H$ follows from the coefficient and warp equations.
+Substitution in the accepted formula
+$H'(v)=-2v-H(v)a'(v)/a(v)$ gives its displayed derivative, since
+$f_{1,K}=-2V_K$. Finally substitute these actual jets into $L_aR$.
+The two terms involving $f_Kr'K'/K^2$ cancel and the remaining terms give
+\eqref{eq:area-operator-chain}. No independent first or second jet is supplied.
+\end{proof}
+
+\begin{theorem}\label{thm:complete-area-action-bridge}
+Under the hypotheses of Lemma~\ref{lem:actual-area-probe-jets}, the original
+smooth metric and section satisfy
+\[
+ Q_{g_D}(M_D(R))=2\pi A_K(r).
+\]
+The identity retains every term of the original complete action.
+\end{theorem}
+
+\begin{proof}
+Let $j_a[R]$ denote the original meridional density in
+\eqref{eq:meridional-action}. Multiply its value at $V_K(x)$ by the actual
+Jacobian $V_K'(x)=K(x)$. Lemma~\ref{lem:actual-area-probe-jets} and
+$-2V_K=f_{1,K}$ give the literal identity
+\[
+ j_a[R](V_K(x))K(x)
+ =f_K(f_Kr''+2f_{1,K}r'-Kr)^2
+  -Kf_{1,K}r\left(f_Kr'+\frac{f_{1,K}r}{2}\right)
+  +K^2f_Kr^2 .
+\]
+It holds at both endpoints as well. In particular no endpoint term is discarded.
+Positive curvature and the zeroth moment map $V_K([0,1])$ into $[-1,1]$,
+with endpoints $-1,1$. The original density is continuous on that physical
+height interval. The interval change-of-variables theorem therefore applies
+with continuity only on the actual image; no exterior positivity of $D.a$
+is needed. It identifies $\int_{-1}^1j_a[R]$ with
+\eqref{eq:complete-area-action}. The original meridional reduction then
+supplies the unchanged factor $2\pi$.
+\end{proof}
+
+\begin{theorem}\label{thm:fully-tied-area-realization}
+Let $K,r:\R\to\R$ be globally smooth, suppose $K>0$ on $[0,1]$, and impose
+the two moments $\int_0^1K=2$, $\int_0^1xK=1$.
+There exist a globally smooth $X$, original produced data $D$, and a
+globally smooth $R$ with
+\[
+ V_K(0)=-1,\quad V_K(1)=1,\quad X(-1)=0,\quad X(1)=1,
+\]
+both physical interval mapping laws, both inverse laws
+$X(V_K(x))=x$ on $[0,1]$ and $V_K(X(v))=v$ on $[-1,1]$, and
+$X'(v)K(X(v))=1$ on the closed height interval. They satisfy
+\begin{equation}\label{eq:area-realization-tying}
+ R=r\circ X,\qquad
+ D.a(V_K(x))=\frac1{K(x)},\qquad
+ R(V_K(x))=r(x),\qquad
+ \operatorname{warp}(D.a)(V_K(x))=f_K(x).
+\end{equation}
+All coefficient/probe derivative equations in
+Lemma~\ref{lem:actual-area-probe-jets} hold, including the endpoints.
+For every actual sphere point $p$,
+\begin{equation}\label{eq:area-realization-curvature-action}
+ K_{g_D}(p)=K(X(z(p))),\qquad
+ Q_{g_D}(M_D(R))=2\pi A_K(r).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Apply Lemma~\ref{lem:smooth-closed-interval-inverse} to the actual globally
+smooth primitive $V_K$ on $[0,1]$. Its derivative is $K>0$ and its endpoints
+are $-1,1$, so the resulting $X$ has all the stated coordinate laws.
+The smooth coefficient $K\circ X$ is nonzero on $[-1,1]$.
+The smooth quotient extension used in
+Theorem~\ref{thm:invariant-one-form-classification} supplies a globally
+smooth $a$ with $(K\circ X)a=1$ there. Thus $a>0$ on the physical interval
+and $a(V_K(x))=1/K(x)$. Put $R=r\circ X$.
+
+The actual change of variables and the physical reciprocal equation yield
+\[
+ \int_{-1}^1v a(v)\,dv
+ =\int_0^1 V_K(x)a(V_K(x))K(x)\,dx
+ =\int_0^1 V_K(x)\,dx=0 .
+\]
+Continuity establishes every integral and the last equality follows from
+the two moments by Theorem~\ref{thm:positive-normalized-area-geometry}.
+The existing smooth positive balanced-profile construction therefore produces
+$D$ with the exact equation $D.a=a$.
+Both input compatibility equations for
+Lemma~\ref{lem:actual-area-probe-jets} have now been constructed, not assumed.
+That lemma and Theorem~\ref{thm:complete-area-action-bridge} supply the warp,
+actual derivative and original-action identities.
+
+Finally $z(p)\in[-1,1]$, so $x=X(z(p))$ belongs to $[0,1]$ and
+$V_K(x)=z(p)$. The original intrinsic curvature law gives
+$K_{g_D}(p)=1/D.a(z(p))=K(x)$, including both poles.
+The chosen maps, profile and probe remain tied in all these equations.
+\end{proof}
+
+\begin{corollary}\label{cor:area-round-normalization}
+For $K=2$, $r=1$, one has
+$f_K(x)=2x-2x^2$, $f_{1,K}(x)=2-4x$ and $A_K(1)=4/3$.
+The original constant-profile metric with $D.a=1/2$ has a nonzero
+unit meridional section and
+\[
+ Q_{g_D}(M_D(1))=2\pi A_2(1)=8\pi/3.
+\]
+\end{corollary}
+
+\begin{proof}
+Evaluate the literal primitives at the constant curvature two.
+The complete area density becomes $32x-32x^2-4$, whose integral from zero
+to one is $4/3$. For the actual constant produced data $D$ with profile
+$1/2$, the physical equations are $D.a(V_2(x))=1/2$ and $1=1$.
+Theorem~\ref{thm:complete-area-action-bridge} gives the exact geometric
+identity, and the accepted equatorial evaluation makes its unit meridional
+form nonzero.
+\end{proof}
+
+The critical area profile and its zero action, plateau variation, strict
+contraction before exact-moment recovery, full general-probe action convergence
+and universal all-form threshold comparison remain to be proved. The smooth
+realization above supplies their geometric consumer; it does not itself supply
+the required negative area profile or a strict-separation witness.
 
 \begin{thebibliography}{1}
 \bibitem{jerison-fourier}

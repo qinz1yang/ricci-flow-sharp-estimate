@@ -1,0 +1,14 @@
+{
+  "source_sha256": "a89ad8526822600a212211b0c072f08a93da1656eec25f4a0552d47f0727a9b6",
+  "theorem_map_sha256": "857e361c5dfa4c4ec09c3ae2ea44ee9276ddaaab8493601b73fb9881ef992d66",
+  "labels": 152,
+  "references": 197,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round13 accepted; seven new normalized-area/smooth-inverse/complete-realization claims pending configured outer review"
+}
