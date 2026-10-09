@@ -2,15 +2,17 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All 139 currently checked analytic, variational and geometric modules depend transitively only on
+All 149 currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-15/axioms.txt) covers 2281 declarations,
-including 754 private declarations and relevant generated constants.
+The [current native report](evidence/round-16/axioms.txt) covers 2420 declarations,
+including 800 private declarations and relevant generated constants.
+The [accepted critical-plateau report](evidence/round-15/axioms.txt) covers
+the preceding 139-module, 2281-declaration native layer at `40c661e`.
 The [accepted area-realization report](evidence/round-14/axioms.txt) covers
 the preceding 131-module, 2140-declaration native layer at `a6843ea`.
 The [accepted represented-class report](evidence/round-13/axioms.txt) covers
@@ -141,8 +143,29 @@ plateau; a genuine compact smooth bump, actual flux derivative and endpoint
 cancellation give the full first variation. The explicit step A/(abs B+1)
 produces a fixed negative smooth probe of this actual continuous curvature.
 No negative-variation or zero-action premise enters the critical application.
-Strict contraction, exact-moment complete-action convergence, the negative smooth
-geometric witness and the all-form safety/strict comparison remain mandatory.
+That native critical/plateau layer passed Round15 review.
+
+The final separation layer proves the actual affine curvature contraction and
+its exact positive ratio deficit. Sampled Bernstein polynomials preserve the
+physical box and hemisphere order; bounded-data convergence at continuity
+points, countable discontinuities and actual domination give L1 convergence.
+Mixing toward the prescribed mean reserves a positive margin before the actual
+constant moment correction. Every recovered member retains both exact moments
+and the identical contracted box; native L1 convergence gives an ae subsequence.
+The actual warp and slope have uniform 2*L1 bounds. All six entries of the full
+density have one common bound for the same fixed probe and its derivatives,
+so dominated convergence selects an actually negative smooth member.
+
+The existing realizer constructs the same X,D,R and preserves every required
+physical map, coefficient, derivative and original-action equation. The global
+curvature composition transports the unchanged box, and negative original Q
+proves the actual form is nonzero. Canonical Green integration independently
+gives the completed-square identity for every smooth form at constant curvature,
+without CK or invariance hypotheses. This supplies universal cap-one safety.
+The natural unrestricted safe set is nonempty, downward closed and bounded by
+the genuine negative witness; real supremum laws give the strict comparison.
+No negative witness, sign, convergence or supremum conclusion is assumed in
+the unconditional application theorems.
 
 The manuscript cites David Jerison's MIT 18.103 Fall 2013 notes,
 [*Fourier Series, Part 1*, Corollary 2, p. 5](https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/1c196caa6307e0be46456cf6dc76b543_MIT18_103F13_fseries1.pdf),
@@ -151,9 +174,10 @@ a literature citation, not a new formal blackbox: the native dependency is
 Mathlib's proved `hasSum_sq_fourierCoeffOn`, with its actual transitive closure
 included in the report.
 
-The unformalized derivations and historical reference statements are not
-blackboxes and are not imported assumptions. Their native proof obligations
-remain open. If a sourced blackbox becomes necessary, a separate registry entry
+Historical references and optional evolution/exact-unrestricted-value leads are
+not blackboxes and are not imported assumptions. Every mandatory mathematical
+headline now has native evidence; final independent acceptance remains pending.
+If a sourced blackbox becomes necessary in future work, a separate registry entry
 must preserve the exact source statement and citation, literal translation,
 binder dictionary and explicit theorem dependencies; equivalences and
 specializations require their own proofs.

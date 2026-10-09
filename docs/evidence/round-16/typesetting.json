@@ -1,0 +1,38 @@
+{
+  "source": "paper/exponential_pair.tex",
+  "source_sha256": "52eb18d45f24ad855b3918c7f7a5c4a205e5ac600f65fb1d5d069708d0241fda",
+  "pdf": "paper/exponential_pair.pdf",
+  "pdf_sha256": "06e446de5f460eb8f9aa704d3e4f8b0ef1d70ccb45f50f6d5f7ec1d994b75d5c",
+  "pages": 47,
+  "engine": {
+    "release": "tectonic@0.17.0",
+    "release_url": "https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.17.0",
+    "asset_url": "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-unknown-linux-musl.tar.gz",
+    "archive_sha256": "8533d07f9ccbd7a65824b9e0459041bca34af1eb33daba48f59215593753a3b7",
+    "binary_sha256": "a98aa59ad5c1df39a6c9e56cbfc5088f2b11d6c179c0130b97998e4bd46a46da",
+    "version": "Tectonic 0.17.0"
+  },
+  "command": [
+    "/tmp/hmz-fence-dcbst2h7/math-target-ki_s6z1x/tex-engine/tectonic",
+    "--keep-logs",
+    "--keep-intermediates",
+    "--outdir",
+    "/tmp/hmz-fence-dcbst2h7/math-target-ki_s6z1x/typeset-complete",
+    "/home/ubuntu/projects/rfse/paper/exponential_pair.tex"
+  ],
+  "environment": {
+    "XDG_CACHE_HOME": "/tmp/hmz-fence-dcbst2h7/math-target-ki_s6z1x/tex-cache"
+  },
+  "exit_code": 0,
+  "engine_output": "docs/evidence/round-16/tex-output.txt",
+  "engine_output_sha256": "defa4f5ce9bf83986ecc8db17a8048a5778ed7919db3719f6a7010e78147c587",
+  "tex_log": "docs/evidence/round-16/tex-log.txt.gz",
+  "tex_log_sha256": "b2abcb7e337a53bdc6d5f1b242e446bd9e04fac2957251b2415aac811cc664ca",
+  "warnings": 0,
+  "overfull_boxes": 0,
+  "underfull_boxes": 0,
+  "unresolved_references": 0,
+  "independent_mathematical_review": "pending configured outer review; typesetting is not mathematical acceptance",
+  "tex_log_encoding": "gzip",
+  "tex_log_uncompressed_sha256": "893bcac61f6365e94d85461c99bf02fef031353a47ac7c8904ee3b95439838c1"
+}

@@ -154,6 +154,16 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaPlateauInstability",
     "RicciFlowSharpEstimate.Geometry.CriticalAreaProfile",
     "RicciFlowSharpEstimate.Geometry.CriticalPlateauInstability",
+    "RicciFlowSharpEstimate.Analysis.SampledBernstein",
+    "RicciFlowSharpEstimate.Analysis.SymmetricBernstein",
+    "RicciFlowSharpEstimate.Analysis.L1Subsequence",
+    "RicciFlowSharpEstimate.Analysis.SymmetricMomentRecovery",
+    "RicciFlowSharpEstimate.Geometry.AreaActionContinuity",
+    "RicciFlowSharpEstimate.Geometry.ConstantCurvatureDissipation",
+    "RicciFlowSharpEstimate.Geometry.CriticalCurvatureContraction",
+    "RicciFlowSharpEstimate.Geometry.SmoothNegativeAreaRecovery",
+    "RicciFlowSharpEstimate.Geometry.StrictRotationalWitness",
+    "RicciFlowSharpEstimate.Geometry.RotationalThreshold",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -171,6 +181,8 @@ SELECTOR = r"""
   let area := `RicciFlowSharpEstimate.Geometry.AreaProfile
   let recipArea := `RicciFlowSharpEstimate.Geometry.ReciprocalArea
   let criticalArea := `RicciFlowSharpEstimate.Geometry.CriticalAreaProfile
+  let l1Subseq := `RicciFlowSharpEstimate.Analysis.L1Subsequence
+  let momentRecovery := `RicciFlowSharpEstimate.Analysis.SymmetricMomentRecovery
   let poleData := `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
@@ -881,7 +893,75 @@ SELECTOR = r"""
       criticalArea ++ `exists_positive_constant_plateau,
       criticalArea ++ `meridionalAction_one_eq_zero,
       criticalArea ++ `exists_smooth_negative_probe_data,
-      criticalArea ++ `exists_smooth_negative_probe
+      criticalArea ++ `exists_smooth_negative_probe,
+      analysis ++ `bernsteinPolynomialOfCoefficients,
+      analysis ++ `eval_bernsteinPolynomialOfCoefficients,
+      analysis ++ `eval_bernsteinPolynomialOfCoefficients_unitInterval,
+      analysis ++ `derivative_bernsteinPolynomialOfCoefficients_succ,
+      analysis ++ `sampledBernsteinPolynomial,
+      analysis ++ `eval_sampledBernsteinPolynomial,
+      analysis ++ `bernsteinPolynomialOfCoefficients_mem_Icc,
+      analysis ++ `monotoneOn_sampledBernsteinPolynomial,
+      analysis ++ `tendsto_sampledBernsteinPolynomial,
+      analysis ++ `squaredMidpointRadius,
+      analysis ++ `squaredMidpointRadius_mem_Icc,
+      analysis ++ `upperRadialProfile,
+      analysis ++ `upperRadialArgument_mem_Icc,
+      analysis ++ `monotoneOn_upperRadialProfile,
+      analysis ++ `symmetricBernsteinApproximation,
+      analysis ++ `symmetricBernsteinPolynomial,
+      analysis ++ `eval_symmetricBernsteinPolynomial,
+      analysis ++ `contDiff_symmetricBernsteinApproximation,
+      analysis ++ `symmetric_symmetricBernsteinApproximation,
+      analysis ++ `monotoneOn_symmetricBernsteinApproximation,
+      analysis ++ `antitoneOn_symmetricBernsteinApproximation,
+      analysis ++ `symmetricBernsteinApproximation_mem_Icc,
+      analysis ++ `upperRadialProfile_squaredMidpointRadius_eq,
+      l1Subseq ++ `exists_strictMono_ae_tendsto_of_integral_norm_tendsto_zero,
+      momentRecovery ++ `firstMoment_eq_half_integral_of_reflection,
+      momentRecovery ++ `exists_smooth_exactMoments_mem_box_l1_ae,
+      area ++ `abs_warp_sub_le_integral_abs,
+      area ++ `abs_warpSlope_sub_le_integral_abs,
+      area ++ `tendsto_warp_of_l1,
+      area ++ `tendsto_warpSlope_of_l1,
+      area ++ `tendstoUniformlyOn_warp_of_l1,
+      area ++ `tendstoUniformlyOn_warpSlope_of_l1,
+      area ++ `tendsto_meridionalAction_of_l1_of_ae,
+      area ++ `warp_affine_two,
+      area ++ `warpSlope_affine_two,
+      area ++ `continuous_meridionalAction_affine,
+      geo ++ `oneFormDissipation_squares_integrable,
+      geo ++ `oneFormDissipation_eq_integral_squares_of_constant_curvature,
+      geo ++ `oneFormDissipation_nonneg_of_constant_curvature,
+      criticalArea ++ `contractedCurvature,
+      criticalArea ++ `contractedLower,
+      criticalArea ++ `contractedUpper,
+      criticalArea ++ `contractedCurvature_continuous,
+      criticalArea ++ `contractedCurvature_moments,
+      criticalArea ++ `contractedCurvature_reflection,
+      criticalArea ++ `contractedCurvature_antitoneOn_left,
+      criticalArea ++ `contractedCurvature_monotoneOn_right,
+      criticalArea ++ `contractedCurvature_bounds,
+      criticalArea ++ `contracted_strict_bounds,
+      criticalArea ++ `contracted_ratio_deficit,
+      criticalArea ++ `contracted_ratio_deficit_pos,
+      criticalArea ++ `contracted_ratio_lt_criticalCap,
+      criticalArea ++ `exists_negative_contraction_parameter_of_negative_action,
+      criticalArea ++ `exists_smooth_negative_contraction,
+      area ++ `exists_smooth_negative_action_of_symmetric_box,
+      criticalArea ++ `exists_smooth_negative_area_data,
+      geo ++ `exists_smooth_negative_geometric_realization,
+      geo ++ `exists_negative_rotational_below_conformalKillingThreshold,
+      geo ++ `rotationalSafeCaps,
+      geo ++ `one_mem_rotationalSafeCaps,
+      geo ++ `rotationalSafeCaps_nonempty,
+      geo ++ `rotationalSafeCaps_downward,
+      geo ++ `exists_contracted_bound_for_rotationalSafeCaps,
+      geo ++ `rotationalSafeCaps_bddAbove,
+      geo ++ `rotationalThreshold,
+      geo ++ `one_le_rotationalThreshold,
+      geo ++ `exists_contracted_ratio_above_rotationalThreshold,
+      geo ++ `rotationalThreshold_lt_conformalKillingThreshold
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -2340,6 +2420,142 @@ open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
 #check exists_smooth_negative_probe_data
 open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
 #check exists_smooth_negative_probe
+open RicciFlowSharpEstimate.Analysis in
+#print bernsteinPolynomialOfCoefficients
+open RicciFlowSharpEstimate.Analysis in
+#check eval_bernsteinPolynomialOfCoefficients
+open RicciFlowSharpEstimate.Analysis in
+#check eval_bernsteinPolynomialOfCoefficients_unitInterval
+open RicciFlowSharpEstimate.Analysis in
+#check derivative_bernsteinPolynomialOfCoefficients_succ
+open RicciFlowSharpEstimate.Analysis in
+#print sampledBernsteinPolynomial
+open RicciFlowSharpEstimate.Analysis in
+#check eval_sampledBernsteinPolynomial
+open RicciFlowSharpEstimate.Analysis in
+#check bernsteinPolynomialOfCoefficients_mem_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check monotoneOn_sampledBernsteinPolynomial
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_sampledBernsteinPolynomial
+open RicciFlowSharpEstimate.Analysis in
+#print squaredMidpointRadius
+open RicciFlowSharpEstimate.Analysis in
+#check squaredMidpointRadius_mem_Icc
+open RicciFlowSharpEstimate.Analysis in
+#print upperRadialProfile
+open RicciFlowSharpEstimate.Analysis in
+#check upperRadialArgument_mem_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check monotoneOn_upperRadialProfile
+open RicciFlowSharpEstimate.Analysis in
+#print symmetricBernsteinApproximation
+open RicciFlowSharpEstimate.Analysis in
+#print symmetricBernsteinPolynomial
+open RicciFlowSharpEstimate.Analysis in
+#check eval_symmetricBernsteinPolynomial
+open RicciFlowSharpEstimate.Analysis in
+#check contDiff_symmetricBernsteinApproximation
+open RicciFlowSharpEstimate.Analysis in
+#check symmetric_symmetricBernsteinApproximation
+open RicciFlowSharpEstimate.Analysis in
+#check monotoneOn_symmetricBernsteinApproximation
+open RicciFlowSharpEstimate.Analysis in
+#check antitoneOn_symmetricBernsteinApproximation
+open RicciFlowSharpEstimate.Analysis in
+#check symmetricBernsteinApproximation_mem_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check upperRadialProfile_squaredMidpointRadius_eq
+open RicciFlowSharpEstimate.Analysis.L1Subsequence in
+#check exists_strictMono_ae_tendsto_of_integral_norm_tendsto_zero
+open RicciFlowSharpEstimate.Analysis.SymmetricMomentRecovery in
+#check firstMoment_eq_half_integral_of_reflection
+open RicciFlowSharpEstimate.Analysis.SymmetricMomentRecovery in
+#check exists_smooth_exactMoments_mem_box_l1_ae
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check abs_warp_sub_le_integral_abs
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check abs_warpSlope_sub_le_integral_abs
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendsto_warp_of_l1
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendsto_warpSlope_of_l1
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendstoUniformlyOn_warp_of_l1
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendstoUniformlyOn_warpSlope_of_l1
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendsto_meridionalAction_of_l1_of_ae
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_affine_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_affine_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check continuous_meridionalAction_affine
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipation_squares_integrable
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipation_eq_integral_squares_of_constant_curvature
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipation_nonneg_of_constant_curvature
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#print contractedCurvature
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#print contractedLower
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#print contractedUpper
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contractedCurvature_continuous
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contractedCurvature_moments
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contractedCurvature_reflection
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contractedCurvature_antitoneOn_left
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contractedCurvature_monotoneOn_right
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contractedCurvature_bounds
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contracted_strict_bounds
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contracted_ratio_deficit
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contracted_ratio_deficit_pos
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check contracted_ratio_lt_criticalCap
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check exists_negative_contraction_parameter_of_negative_action
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check exists_smooth_negative_contraction
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_negative_action_of_symmetric_box
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check exists_smooth_negative_area_data
+open RicciFlowSharpEstimate.Geometry in
+#check exists_smooth_negative_geometric_realization
+open RicciFlowSharpEstimate.Geometry in
+#check exists_negative_rotational_below_conformalKillingThreshold
+open RicciFlowSharpEstimate.Geometry in
+#print rotationalSafeCaps
+open RicciFlowSharpEstimate.Geometry in
+#check one_mem_rotationalSafeCaps
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalSafeCaps_nonempty
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalSafeCaps_downward
+open RicciFlowSharpEstimate.Geometry in
+#check exists_contracted_bound_for_rotationalSafeCaps
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalSafeCaps_bddAbove
+open RicciFlowSharpEstimate.Geometry in
+#print rotationalThreshold
+open RicciFlowSharpEstimate.Geometry in
+#check one_le_rotationalThreshold
+open RicciFlowSharpEstimate.Geometry in
+#check exists_contracted_ratio_above_rotationalThreshold
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalThreshold_lt_conformalKillingThreshold
 """
 
 

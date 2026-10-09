@@ -19,8 +19,10 @@ Haar/CK transport and the universal safe-cap characterization are now included.
 Normalized positive area geometry, smooth physical inversion and complete
 original-action realization are included. The actual critical area curvature,
 its zero unit-probe action and fixed smooth negative plateau variation now have
-conventional proofs. Strict contraction, complete recovery and structural
-separation remain open. This map does not certify the full suite.
+conventional proofs. Strict contraction, identical-box exact-moment recovery,
+complete-action convergence, the tied smooth negative witness, all-form safety
+and structural strict separation now have native proofs and matching manuscript
+claims. Independent acceptance of this final layer remains pending.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The prefixes `Geometry` and `Analysis` below are relative to `RicciFlowSharpEstimate`.
 The analytic statements and current manuscript passed scoped independent Round 1
@@ -36,9 +38,12 @@ The original-remainder sign/equality layer passed Round 10 review at `0473a6a`.
 The hemisphere/critical-cap/produced-CK layer passed Round 11 review at `ae5dc91`.
 The smooth recovery/sharpness/geometric-stability layer passed Round 12 review at `58d5dbc`.
 The represented-class Haar and universal CK threshold layer passed Round 13 review at `70f0557`.
-The normalized-area native layer and six new manuscript claims passed Round 14
-review at `a6843ea`. The seventh claim's physical-domain correction is included
-here for delta review. The new critical-area/plateau layer awaits its own review.
+The normalized-area native layer passed Round 14 review at `a6843ea`; its paper
+domain correction passed Round 15 review. The critical-area/plateau native layer
+and three new paper claims passed Round15 review at `40c661e`. QS8 now explicitly
+qualifies global continuity in the fourth claim and awaits delta review. The
+full separation layer and its seven new conventional claims await configured
+independent acceptance. The complete manuscript is actually typeset.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -154,7 +159,7 @@ here for delta review. The new critical-area/plateau layer awaits its own review
 | Complete normalized area density and actual integrability | `Geometry.AreaProfile.meridionalActionDensity`, `meridionalAction` in `Geometry/AreaProfile.lean`; `meridionalAction_integrand_continuous`, `meridionalAction_integrand_intervalIntegrable` in `Geometry/AreaAction.lean` | All six coefficient/jet entries, actual primitives and actual r derivatives. Continuous K and smooth r give genuine integrability. |
 | Actual closed-endpoint profile/probe jets and curvature-derivative cancellation | `Geometry.AreaProfile.profile_warp_heightCoordinate`, `deriv_profile_heightCoordinate`, `deriv_probe_heightCoordinate`, `deriv_deriv_probe_heightCoordinate`, both weight laws and `meridionalOperator_heightCoordinate` in `Geometry/AreaActionBridge.lean` | Physical coefficient/probe tying, actual V_K derivative and unique closed-interval derivatives; no independently supplied jets. |
 | Original complete action equals the full area action | `Geometry.AreaProfile.meridionalDensity_heightCoordinate_mul_curvature`, `oneFormDissipation_eq_areaAction_of_profile_probe` in `Geometry/AreaActionBridge.lean` | Every original density term, actual Jacobian K, restricted-domain substitution and canonical 2*pi factor. Honest lower coordinate engine; final producer below derives its tying premises. |
-| Fully tied smooth geometric realization | `Geometry.AreaProfile.exists_smooth_geometric_realization` in `Geometry/AreaGeometricRealization.lean` | Only smooth K,r, physical positivity and both moments as inputs. Returns X,D,R with all endpoints/maps/inverses, derivative inverse law, global R=r∘X, physical D.a(V)=1/K, R(V)=r and warp identity, actual closed-endpoint jets, global curvature composition and original Q=2*pi*A. Native accepted in Round 14; paper domain correction pending delta review. |
+| Fully tied smooth geometric realization | `Geometry.AreaProfile.exists_smooth_geometric_realization` in `Geometry/AreaGeometricRealization.lean` | Only smooth K,r, physical positivity and both moments as inputs. Returns X,D,R with all endpoints/maps/inverses, derivative inverse law, global R=r∘X, physical D.a(V)=1/K, R(V)=r and warp identity, actual closed-endpoint jets, global curvature composition and original Q=2*pi*A. Native accepted in Round14; paper correction accepted in Round15. |
 | Genuine round normalization | `Geometry.AreaProfile.warp_two`, `warpSlope_two`, `meridionalAction_two_one` in `Geometry/AreaAction.lean`; `round_unit_probe_normalization` in `Geometry/AreaGeometricRealization.lean` | Literal K=2 primitive and full scalar action 4/3, actual constant-profile D.a=1/2, nonzero native unit section and original Q=8*pi/3. |
 | Actual reciprocal optimizer shape and strict average | Eleven contact, monotonicity, cap-one, central-plateau and `evenReciprocalProfile_strict_average_bounds` declarations in `Variational/ReciprocalProfileShape.lean` | Actual clamped optimizer; for C>1 its literal integral L satisfies L<2<L*C. |
 | Continuous physical inversion | `Analysis.clampedIntervalInverse`, range, both inverse laws and continuity in `Analysis/ContinuousIntervalInverse.lean` | Proof-independent invFunOn of the actual function after interval projection; compact continuous strictly increasing input, no smoothness or exterior inverse claim. |
@@ -163,8 +168,16 @@ here for delta review. The new critical-area/plateau layer awaits its own review
 | Actual critical area curvature and zero action | Definitions and 29 public laws in `Geometry/CriticalAreaProfile.lean`, including `strict_average_bounds`, `curvature_moments`, `curvature_bounds`, `exists_positive_constant_plateau`, `meridionalAction_one_eq_zero` | Uses exactly evenReciprocalProfile criticalCap and the actual normalized coordinate/inverse. Derives zero action from the accepted critical value, with no zero premise; no smooth metric is assigned. |
 | Genuine positive smooth bump | `Analysis.exists_contDiff_nonneg_tsupport_subset_integral_mul_pos` in `Analysis/PositiveSmoothBump.lean` | Compact smooth support inside the chosen open subinterval, nonnegative bounded bump and strictly positive weighted integral. |
 | Complete plateau first variation and negative-probe engine | `Geometry.AreaProfile.plateauFlux_hasDerivAt`, `plateauFlux_endpoints`, `constantProbeVariation_integral_eq_plateau_pairing`, `meridionalAction_one_sub_mul_of_plateau`, `exists_smooth_plateau_probe`, `exists_smooth_probe_action_neg_of_constant_curvature_plateau` in `Geometry/AreaPlateauInstability.lean` | Actual full density, actual primitive/probe derivatives, explicit A/(abs B+1), actual bump action B and one fixed smooth negative probe. The generic plateau engine honestly assumes unit zero action; the critical application derives it. |
-| Plateau instability of the actual critical profile | `Geometry.CriticalAreaProfile.exists_smooth_negative_probe_data`, `exists_smooth_negative_probe` in `Geometry/CriticalPlateauInstability.lean` | Unconditional actual critical application. Retains the same bump/step/probe jets, initial data, endpoint constancy, physical nonconstancy and negative complete area action. Native pending review. |
-| Contracted exact-moment recovery and strict separation | No final native declaration yet | Mandatory contraction before symmetric monotone recovery, complete derivative-sensitive convergence, negative smooth original-metric witness and all-form cap-one safety/supremum comparison. The continuous critical negative probe is not yet the smooth geometric witness. |
+| Plateau instability of the actual critical profile | `Geometry.CriticalAreaProfile.exists_smooth_negative_probe_data`, `exists_smooth_negative_probe` in `Geometry/CriticalPlateauInstability.lean` | Unconditional actual critical application. Retains the same bump/step/probe jets, initial data, endpoint constancy, physical nonconstancy and negative complete area action. Accepted in Round15. |
+| Actual sampled Bernstein polynomials | `Analysis.bernsteinPolynomialOfCoefficients`, `sampledBernsteinPolynomial`, evaluation/derivative/box/monotonicity laws and `tendsto_sampledBernsteinPolynomial` in `Analysis/SampledBernstein.lean` | Literal coefficient polynomial; no continuity needed for box/order; bounded samples converge at relative continuity points, including endpoints. |
+| Symmetric radial Bernstein construction | `Analysis.squaredMidpointRadius`, `upperRadialProfile`, `symmetricBernsteinApproximation`, `symmetricBernsteinPolynomial`, evaluation/smoothness/reflection/hemisphere/box/reconstruction laws in `Analysis/SymmetricBernstein.lean` | Actual polynomial composition with (2x−1)^2; global smoothness, explicitly physical bounds/order/reconstruction. |
+| Exact-moment identical-box recovery | `Analysis.SymmetricMomentRecovery.firstMoment_eq_half_integral_of_reflection`, `exists_smooth_exactMoments_mem_box_l1_ae` in `Analysis/SymmetricMomentRecovery.lean`; generic `Analysis.L1Subsequence.exists_strictMono_ae_tendsto_of_integral_norm_tendsto_zero` | Bounded strongly measurable physical target, strict interior mean, reflection and upper monotonicity. Reserved-margin mixing plus actual constant correction yields global smoothness, both physical orders, both exact moments, unchanged box, L1 convergence and a strictMono ae subsequence. |
+| Complete fixed-probe action convergence | `Geometry.AreaProfile.abs_warp_sub_le_integral_abs`, slope analogue, pointwise and `tendstoUniformlyOn` primitive laws, `tendsto_meridionalAction_of_l1_of_ae` in `Geometry/AreaActionContinuity.lean` | Actual 2*L1 bounds and all six entries with the identical smooth r and its actual derivatives. Full polynomial domination and actual restricted-volume DCT; not a unit-probe surrogate. |
+| Strict contraction before smoothing | `Geometry.AreaProfile.warp_affine_two`, slope law and `continuous_meridionalAction_affine`; literal definitions and 12 laws in `Geometry/CriticalCurvatureContraction.lean` | Same actual K*, r and t; exact moments/shape/box, 0<lo_t<2<hi_t and exact positive ratio deficit. The unconditional consumer selects the accepted probe once and retains its endpoint data. |
+| Negative smooth member of actual recovery | `Geometry.AreaProfile.exists_smooth_negative_action_of_symmetric_box`, `Geometry.CriticalAreaProfile.exists_smooth_negative_area_data` in `Geometry/SmoothNegativeAreaRecovery.lean` | Reindexes the actual exact-moment sequence, proves complete-action convergence for fixed r and selects an actually negative smooth member. Its same contracted box and probe data survive. |
+| Tied strictly subcritical original-metric witness | `Geometry.exists_smooth_negative_geometric_realization`, `exists_negative_rotational_below_conformalKillingThreshold` in `Geometry/StrictRotationalWitness.lean` | No mathematical inputs. Same K,r,X,D,R with all physical/endpoint/inverse/coefficient/jet laws, global curvature composition, original Q=2*pi*A, identity class membership, actual positive box, nonzero form and negative original Q. |
+| Universal all-form constant-curvature safety | `Geometry.oneFormDissipation_squares_integrable`, `oneFormDissipation_eq_integral_squares_of_constant_curvature`, `oneFormDissipation_nonneg_of_constant_curvature` in `Geometry/ConstantCurvatureDissipation.lean` | Every original smooth one-form on a compact smooth surface; actual scalar/2=κ, original operators/measure and canonical Green identity. No CK or invariance premise; nonnegativity for κ≥0. |
+| Actual unrestricted safe caps and strict threshold separation | `Geometry.rotationalSafeCaps`, `one_mem_rotationalSafeCaps`, nonempty/downward/bddAbove laws, `rotationalThreshold`, `one_le_rotationalThreshold`, `exists_contracted_ratio_above_rotationalThreshold`, `rotationalThreshold_lt_conformalKillingThreshold` in `Geometry/RotationalThreshold.lean` | Same represented class, all positive actual boxes and all original smooth forms. Genuine universal cap-one safety and the tied negative witness imply 1≤sSup safeCaps≤b_t<the actual CK threshold. Native complete, pending independent review; no exact unrestricted value or endpoint attainment claim. |
 
 The manuscript's current statements are tied to native proofs as follows:
 
@@ -254,6 +267,13 @@ The manuscript's current statements are tied to native proofs as follows:
 | `thm:critical-area-curvature` | Definitions and physical coordinate/box/moment/shape/plateau/zero-action laws in `Geometry/CriticalAreaProfile.lean`; actual reciprocal shape in `Variational/ReciprocalProfileShape.lean` and same-map symmetry in `Geometry/ReciprocalAreaSymmetry.lean` |
 | `lem:plateau-first-variation` | `Geometry.AreaProfile.meridionalAction_one_sub_mul_of_plateau`, with literal polynomial expansion, `plateauFlux_hasDerivAt`, endpoint flux vanishing and the integrated positive pairing |
 | `thm:critical-plateau-instability` | `Geometry.CriticalAreaProfile.exists_smooth_negative_probe_data` and `exists_smooth_negative_probe`, deriving every premise of the generic plateau engine from the actual critical profile |
+| `lem:sampled-symmetric-bernstein` | All nine polynomial/evaluation/derivative/box/order/relative-convergence declarations in `Analysis/SampledBernstein.lean` and all 14 radial polynomial/shape/reconstruction declarations in `Analysis/SymmetricBernstein.lean` |
+| `thm:symmetric-exact-moment-recovery` | `Analysis.SymmetricMomentRecovery.exists_smooth_exactMoments_mem_box_l1_ae`, actual private margin/correction/ae/L1 construction and the public reflection moment lemma; genuine generic L1 subsequence extraction |
+| `lem:complete-area-action-convergence` | All actual primitive bounds, pointwise/uniform primitive convergence and `Geometry.AreaProfile.tendsto_meridionalAction_of_l1_of_ae` with internal six-entry domination |
+| `lem:strict-critical-contraction` | Literal contraction definitions, exact moments/shape/box/deficit and fixed-probe selection in `Geometry/CriticalCurvatureContraction.lean`; actual affine primitive identities and full-action continuity |
+| `thm:smooth-subcritical-negative-witness` | `Geometry.CriticalAreaProfile.exists_smooth_negative_area_data` and `Geometry.exists_smooth_negative_geometric_realization`; same original metric, fixed area probe, height probe, maps/jets/curvature/action and contracted box |
+| `lem:constant-curvature-square-identity` | The three natural integrability/square-identity/nonnegativity declarations in `Geometry/ConstantCurvatureDissipation.lean`, using genuine canonical Green integration for the same metric and form |
+| `thm:structural-strict-separation` | All universal safe-set/supremum laws in `Geometry/RotationalThreshold.lean`, ending in `rotationalThreshold_lt_conformalKillingThreshold`; the cap-one square identity and actual negative original-metric witness discharge both nonvacuity and strict boundedness |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints
@@ -266,8 +286,12 @@ area realization takes globally smooth K,r, positivity only on [0,1] and both
 exact moments; its continuous primitive calculus is separate from the future
 bounded-measurable recovery. The new critical-area and plateau proofs retain
 continuous curvature, actual coordinate maps and one fixed smooth probe.
-Contraction, exact-moment complete-action recovery and separation remain open. No TeX engine
-was available in the working environment, so typesetting has not been validated.
+Contraction, identical-box exact-moment complete-action recovery, the original-metric
+negative witness and the actual strict comparison are now natively proved.
+The [47-page PDF](../paper/exponential_pair.pdf) was typeset with Tectonic 0.17.0;
+[source-bound typesetting evidence](evidence/round-16/typesetting.json) records no
+warnings, box diagnostics or unresolved references. No manuscript regularity
+claim is inferred merely from typesetting.
 
 Independent statement/manuscript acceptance of later geometric claims remains required. The conditional
 first-order criterion is now specialized through the actual calibration, rather

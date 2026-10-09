@@ -1,0 +1,16 @@
+{
+  "source_sha256": "52eb18d45f24ad855b3918c7f7a5c4a205e5ac600f65fb1d5d069708d0241fda",
+  "theorem_map_sha256": "c322ce77a3d660258cce856192f63df1eb9dd6cf9e16a86d2c338d8f7b82deda",
+  "labels": 174,
+  "references": 222,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "passed with Tectonic 0.17.0; 47-page PDF, zero warnings or box diagnostics",
+  "typesetting_receipt": "docs/evidence/round-16/typesetting.json",
+  "pdf_sha256": "06e446de5f460eb8f9aa704d3e4f8b0ef1d70ccb45f50f6d5f7ec1d994b75d5c",
+  "independent_review": "Previous claims accepted except corrected QS8; seven new separation/recovery/safety claims and full-manuscript final acceptance pending configured outer review"
+}

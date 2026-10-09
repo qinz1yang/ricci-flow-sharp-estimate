@@ -3,12 +3,13 @@
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage[margin=1.1in]{geometry}
 \usepackage{hyperref}
+\setlength{\emergencystretch}{2em}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
 \newcommand{\I}{\mathcal I}
 \newcommand{\R}{\mathbb R}
-\title{An explicit constrained exponential pair problem}
+\title{An explicit exponential pair problem\\and sharp rotational conformal-Killing pinching}
 \author{Ziyang Qin}
 \date{}
 \begin{document}
@@ -26,6 +27,14 @@ The deficit also controls the squared $L^2$ distance to the minimizer with
 an explicit positive cap-dependent constant. Applying this estimate to two
 hemispheres gives quantitative reflection symmetry without imposing symmetry
 as a constraint.
+For smooth sphere metrics obtained from positive balanced rotational profiles
+and their diffeomorphic pullbacks, a complete Haar decomposition gives
+nonnegativity and zero-remainder rigidity without pinching.
+The variational solution determines the exact conformal-Killing curvature
+threshold, with smooth sharpness and full equality classification at the safe threshold.
+A local plateau variation, strict curvature contraction and exact-moment
+smooth recovery give a genuine negative one-form below that threshold.
+Consequently the unrestricted rotational threshold is strictly smaller.
 \end{abstract}
 
 \section{The constrained problem}
@@ -1500,7 +1509,9 @@ For any three-tensor in an orthonormal two-frame, expansion gives
        =(B_{010}-B_{100})^2+(B_{011}-B_{101})^2.
 \]
 For the genuine second derivative, the covector Ricci identity is
-$(\nabla_X\nabla h)(Y,Z)-(\nabla_Y\nabla h)(X,Z)=-h(R(X,Y)Z)$.
+\[
+ (\nabla_X\nabla h)(Y,Z)-(\nabla_Y\nabla h)(X,Z)=-h(R(X,Y)Z).
+\]
 The two differences above are respectively $K_gh(e_1)$ and $-K_gh(e_0)$,
 so their squared sum is exactly $K_g^2|h|_g^2$.
 \end{proof}
@@ -2329,8 +2340,13 @@ reciprocal optimizer by
 \begin{equation}\label{eq:even-reciprocal-limit}
  a_{0,C}(v)=\exp\bigl(-k_{*,C}(p(|v|))\bigr).
 \end{equation}
-It is uniformly continuous and even on $\R$, belongs to $[1/C,1]$ everywhere,
-and equals $\exp(-k_{*,C}(|v|))$ on $[-1,1]$.
+It is uniformly continuous and even on $\R$. Its bounds and physical formula are
+\[
+ \begin{aligned}
+ \frac1C&\leq a_{0,C}(v)\leq1&&(v\in\R),\\
+ a_{0,C}(v)&=\exp(-k_{*,C}(|v|))&&(-1\leq v\leq1).
+ \end{aligned}
+\]
 It is balanced and satisfies
 \begin{equation}\label{eq:reciprocal-limit-integral}
  T(a_{0,C})=2m(C),\qquad
@@ -2368,10 +2384,12 @@ No smooth metric is assigned to the nonsmooth limiting optimizer.
 For every $C\geq1$ there are globally smooth even profiles $a_n$ and
 genuine produced pole data $D_n$ such that
 \[
+ \begin{gathered}
  D_n.a=a_n,\qquad
  \frac1C\leq a_n(v)\leq1\quad(v\in\R),\qquad
- \int_{-1}^1v a_n(v)\,dv=0,\qquad
+ \int_{-1}^1v a_n(v)\,dv=0,\\
  a_n\longrightarrow a_{0,C}\ \hbox{uniformly on }\R .
+ \end{gathered}
 \]
 For their original metrics and the fixed scalar probe $r=1$,
 \begin{equation}\label{eq:smooth-unit-probe-action-limit}
@@ -2494,8 +2512,10 @@ For a fixed representation $g=F^*g_D$, put $\Omega_F=F^*\Omega_D$. Then
 \end{equation}
 The same positive curvature box holds for $g$ and $g_D$. The transported
 curl satisfies
-$\operatorname{curl}_{g,\Omega_F}(F^*h)
-=\operatorname{curl}_{g_D,\Omega_D}(h)\circ F$.
+\[
+ \operatorname{curl}_{g,\Omega_F}(F^*h)
+ =\operatorname{curl}_{g_D,\Omega_D}(h)\circ F.
+\]
 \end{lemma}
 
 \begin{proof}
@@ -2906,7 +2926,9 @@ Consequently the actual operator from \eqref{eq:meridional-operator} satisfies
 \begin{proof}
 The actual height derivative is $V_K'=K$.
 The derivative of $\operatorname{warp}(a)(V_K(x))$ is
-$-2V_K(x)a(V_K(x))K(x)=-2V_K(x)=f_K'(x)$.
+\[
+ -2V_K(x)a(V_K(x))K(x)=-2V_K(x)=f_K'(x).
+\]
 Both functions vanish at $x=0$, using $V_K(0)=-1$ and the original
 balance equation of $D$. Equality of these actual derivatives and continuity
 give the warp identity on the full interval.
@@ -3036,7 +3058,7 @@ form nonzero.
 \subsection{The critical curvature in normalized area coordinates}
 
 \begin{lemma}\label{lem:reciprocal-area-coordinate}
-Let $a:\R\to\R$ be continuous and positive on $[-1,1]$. Set
+Let $a:\R\to\R$ be continuous on $\R$ and strictly positive on $[-1,1]$. Set
 \[
  L_a=\int_{-1}^1a(v)\,dv,\qquad
  X_a(v)=\frac1{L_a}\int_{-1}^v a(s)\,ds.
@@ -3047,15 +3069,19 @@ Let $V_a$ be the physical inverse, extended constantly to $-1$ and $1$
 outside $[0,1]$, and put $K_a(x)=L_a/a(V_a(x))$.
 The functions $V_a,K_a$ are continuous on $\R$, $K_a>0$, and
 \[
- V_a(X_a(v))=v\quad(-1\le v\le1),\qquad
- X_a(V_a(x))=x\quad(0\le x\le1),\qquad
- K_a(X_a(v))=\frac{L_a}{a(v)}\quad(-1\le v\le1).
+ \begin{aligned}
+ V_a(X_a(v))&=v&&(-1\le v\le1),\\
+ X_a(V_a(x))&=x&&(0\le x\le1),\\
+ K_a(X_a(v))&=\frac{L_a}{a(v)}&&(-1\le v\le1).
+ \end{aligned}
 \]
 If $\int_{-1}^1va(v)\,dv=0$, then
 \begin{equation}\label{eq:reciprocal-area-moments-warp}
- \int_0^1K_a=2,\qquad \int_0^1xK_a(x)\,dx=1,\qquad
+ \begin{gathered}
+ \int_0^1K_a=2,\qquad \int_0^1xK_a(x)\,dx=1,\\
  f_{K_a}(X_a(v))=\frac{\operatorname{warp}(a)(v)}{L_a},\qquad
  f_{K_a}'(X_a(v))=-2v\quad(-1\le v\le1).
+ \end{gathered}
 \end{equation}
 Under the same balance hypothesis, the complete area action satisfies
 \begin{equation}\label{eq:reciprocal-area-unit-action}
@@ -3180,11 +3206,344 @@ physical nonconstancy. Only continuity of the curvature has been used;
 smooth geometric recovery is a subsequent step.
 \end{proof}
 
-Strict contraction before exact-moment smooth recovery, convergence of the full
-general-probe action, the smooth negative geometric witness and the universal
-all-form threshold comparison remain to be proved. The smooth realization above
-will apply after that recovery; the continuous critical curvature itself is not
-assigned a smooth sphere metric.
+\section{Smooth recovery and strict threshold separation}
+
+\begin{lemma}\label{lem:sampled-symmetric-bernstein}
+For $n\geq1$ and a real function $q$, set
+\[
+ B_nq(y)=\sum_{j=0}^n\binom nj y^j(1-y)^{n-j}q(j/n).
+\]
+This is a polynomial on $\R$. On $[0,1]$ it preserves every closed box
+containing the sampled values, and it is nondecreasing if $q$ is
+nondecreasing there. If $q$ is bounded on $[0,1]$, then
+$B_nq(y)\to q(y)$ at each point where the restriction of $q$ to $[0,1]$
+is continuous, including either endpoint with relative continuity.
+
+For a real function $K$, define
+\[
+ \rho(x)=(2x-1)^2,\qquad q_K(y)=K\left(\frac{1+\sqrt y}{2}\right),
+ \qquad S_nK(x)=B_nq_K(\rho(x)).
+\]
+The function $S_nK$ is globally smooth and satisfies
+$S_nK(1-x)=S_nK(x)$ for every real $x$.
+If $K$ is nondecreasing on $[1/2,1]$, then $S_nK$ is nondecreasing there
+and nonincreasing on $[0,1/2]$. A box for $K$ on $[0,1]$ is preserved by
+$S_nK$ on $[0,1]$.
+If also $K(1-x)=K(x)$ for $x\in[0,1]$, then
+$q_K(\rho(x))=K(x)$ on that interval.
+\end{lemma}
+
+\begin{proof}
+The Bernstein basis is nonnegative and sums to one on $[0,1]$, proving
+box preservation. The exact adjacent-difference derivative formula is
+\[
+ (B_{n+1}q)'(y)=(n+1)\sum_{j=0}^{n}\binom nj y^j(1-y)^{n-j}
+ \left(q\left(\frac{j+1}{n+1}\right)-q\left(\frac j{n+1}\right)\right).
+\]
+Thus monotone sampled values give a nonnegative derivative.
+For convergence at a relative continuity point $y$, subtract $q(y)$
+inside the convex sum. Split the nodes into those within distance $\delta$
+of $y$ and their complement. The first part is bounded by the local
+oscillation. If $|q(z)-q(y)|\leq D$ on the interval, the complementary
+part is at most
+\[
+ \frac{D}{\delta^2}\sum_{j=0}^n
+   (j/n-y)^2\binom nj y^j(1-y)^{n-j}
+ =\frac{D\,y(1-y)}{n\delta^2}\longrightarrow0.
+\]
+This proves the asserted pointwise convergence without assuming global
+continuity of $q$.
+
+The radial argument lies in $[1/2,1]$ when $y\in[0,1]$.
+Both it and $\rho$ on $[1/2,1]$ are nondecreasing, giving the right-hand
+order law. Since $\rho(1-x)=\rho(x)$, reflection gives the other order law.
+The polynomial composition gives global smoothness. Finally
+$\sqrt{(2x-1)^2}=|2x-1|$; the radial argument is $x$ on the right half
+and $1-x$ on the left, proving the reconstruction identity.
+\end{proof}
+
+\begin{theorem}\label{thm:symmetric-exact-moment-recovery}
+Let $\ell<m<u$. Suppose $K:\R\to\R$ has a strongly measurable
+restriction to $[0,1]$ and satisfies
+\[
+ \ell\leq K(x)\leq u,\quad K(1-x)=K(x)\quad(0\leq x\leq1),
+ \qquad \int_0^1K=m,
+\]
+and is nondecreasing on $[1/2,1]$.
+There are functions $G_n:\R\to\R$, each smooth on $\R$, such that for
+every $n$ their physical restrictions are symmetric, nonincreasing on
+$[0,1/2]$, nondecreasing on $[1/2,1]$, and obey
+\begin{equation}\label{eq:exact-moment-recovery}
+ \ell\leq G_n(x)\leq u\quad(0\leq x\leq1),\qquad
+ \int_0^1G_n=m,\qquad \int_0^1xG_n(x)\,dx=\frac m2.
+\end{equation}
+Moreover $\int_0^1|G_n-K|\to0$, and there is a strictly increasing
+subsequence index $\nu$ with $G_{\nu(n)}(x)\to K(x)$ for almost every
+$x\in[0,1]$.
+\end{theorem}
+
+\begin{proof}
+We first construct an approximant with any prescribed $L^1$ error
+$\varepsilon>0$. Choose
+\[
+ 0<\eta<\min\left(1,\frac{\varepsilon}{u-\ell}\right),\qquad
+ K_\eta=(1-\eta)K+\eta m,\qquad
+ \delta=\eta\min(m-\ell,u-m)>0.
+\]
+This preserves symmetry, hemisphere order and mean $m$, and gives the
+strict box $\ell+\delta\leq K_\eta\leq u-\delta$ on $[0,1]$.
+Also $\int_0^1|K_\eta-K|\leq\eta(u-\ell)<\varepsilon$.
+
+Apply Lemma~\ref{lem:sampled-symmetric-bernstein} to $K_\eta$.
+The radial profile $q_{K_\eta}$ is monotone on $[0,1]$, so its relative
+discontinuity set is countable. The inverse image of this set under
+$\rho$ is countable: $\rho$ is injective separately on each closed
+hemisphere. Hence $S_nK_\eta\to K_\eta$ almost everywhere on $[0,1]$.
+The unchanged strict box bounds the absolute difference by its width;
+dominated convergence gives $L^1$ convergence and convergence of the means.
+
+Put
+\[
+ c_n=m-\int_0^1S_nK_\eta,\qquad H_n=S_nK_\eta+c_n.
+\]
+Then $c_n\to0$ and $\int_0^1H_n=m$ exactly.
+For large $n$, $|c_n|<\delta$, so $H_n$ stays in the original box
+$[\ell,u]$ on the physical interval. Adding the constant changes neither
+smoothness nor reflection nor either hemisphere order law.
+Furthermore
+\[
+ \int_0^1|H_n-K|
+ \leq\int_0^1|S_nK_\eta-K_\eta|+|c_n|+\eta(u-\ell).
+\]
+Choose the degree after fixing $\eta$ and $\delta$, making the right side
+less than $\varepsilon$. Reflection gives the other exact moment:
+substitution $x\mapsto1-x$ implies
+$2\int_0^1xH_n(x)\,dx=\int_0^1H_n=m$.
+All integral operations are justified by measurability and the fixed
+finite physical box.
+
+Choose such approximants for errors $1/(n+1)$. Their errors tend to zero,
+proving the sequence assertion. Finally choose strictly increasing indices
+whose $L^1$ errors have finite sum. Tonelli's theorem makes the sum of the
+pointwise absolute errors finite almost everywhere, and therefore those
+errors tend to zero. Every selected member retains \eqref{eq:exact-moment-recovery}.
+\end{proof}
+
+\begin{lemma}\label{lem:complete-area-action-convergence}
+Let $K_n,K:\R\to\R$ be continuous on $\R$, and fix one globally smooth
+$r:\R\to\R$. Suppose that $|K_n(x)|\leq B$ for every $n$ and
+$x\in[0,1]$, that $\int_0^1|K_n-K|\to0$, and that $K_n\to K$ almost
+everywhere on $[0,1]$. Then
+\begin{equation}\label{eq:area-primitive-lone-bounds}
+ \begin{aligned}
+ |f_{K_n}(x)-f_K(x)|&\leq2\int_0^1|K_n-K|,\\
+ |f_{1,K_n}(x)-f_{1,K}(x)|&\leq2\int_0^1|K_n-K|
+ \qquad(0\leq x\leq1).
+ \end{aligned}
+\end{equation}
+Thus both primitives converge uniformly on $[0,1]$, and the complete
+actions of this same probe satisfy $A_{K_n}(r)\to A_K(r)$.
+\end{lemma}
+
+\begin{proof}
+Subtract the actual primitive formulas
+\eqref{eq:normalized-area-primitives}. On $0\leq s\leq x\leq1$,
+the kernel $|x-s|$ is at most one. The integral triangle inequality and
+monotonicity of the integral of $|K_n-K|$ give
+\eqref{eq:area-primitive-lone-bounds}; the right sides do not depend on $x$.
+
+The same estimates against zero give
+$|f_{K_n}|,|f_{1,K_n}|\leq2+2B$ on the physical interval.
+The three fixed functions $r,r',r''$ are bounded there by compactness.
+Choose a common nonnegative bound $M$ for all six entries
+$f_{K_n},f_{1,K_n},K_n,r,r',r''$.
+For the full density
+\[
+ D(f,f_1,K,r,r_1,r_2)
+ =f(fr_2+2f_1r_1-Kr)^2-Kf_1r(fr_1+f_1r/2)+K^2fr^2,
+\]
+the triangle and product inequalities give
+\[
+ |D|\leq M(M^2+2M^2+M^2)^2
+       +M^3(M^2+M^2/2)+M^2MM^2.
+\]
+This constant is integrable on $[0,1]$. Every approximating integrand is
+continuous and measurable. At almost every point the two primitives and
+curvature converge, while the original probe and its derivatives remain
+fixed. Polynomial continuity therefore gives convergence of the entire
+density, and dominated convergence gives the stated action limit.
+No derivative convergence of the curvature has been used.
+\end{proof}
+
+\begin{lemma}\label{lem:strict-critical-contraction}
+Fix the smooth negative area probe $r$ from
+Theorem~\ref{thm:critical-plateau-instability}, and set
+\begin{equation}\label{eq:critical-curvature-contraction}
+ \begin{aligned}
+ K_t(x)&=(1-t)K_*(x)+2t,\\
+ \kappa_t&=(1-t)L_*+2t,\qquad
+ \Lambda_t=(1-t)L_*C_{\mathrm{CK}}+2t.
+ \end{aligned}
+\end{equation}
+There is $0<t<1$ such that $A_{K_t}(r)<0$.
+For this same $t$, the curvature is continuous on $\R$, has both exact
+normalized moments, is symmetric on $[0,1]$ and has the same two hemisphere
+order laws. Its box and its ratio satisfy
+\begin{equation}\label{eq:strict-contracted-box}
+ \begin{gathered}
+ 0<\kappa_t<2<\Lambda_t,\qquad
+ \kappa_t\leq K_t(x)\leq\Lambda_t\quad(x\in\R),\\
+ C_{\mathrm{CK}}-\frac{\Lambda_t}{\kappa_t}
+ =\frac{2t(C_{\mathrm{CK}}-1)}{\kappa_t}>0.
+ \end{gathered}
+\end{equation}
+The probe $r$, including its derivatives and endpoint data, is unchanged.
+\end{lemma}
+
+\begin{proof}
+Both moments are affine in curvature; the constant curvature two has
+moments two and one. A nonnegative coefficient $1-t$ preserves the
+physical reflection and order laws and the original global box.
+The strict bounds follow from $L_*<2<L_*C_{\mathrm{CK}}$.
+Multiplying the ratio difference by the positive denominator $\kappa_t$
+cancels the two copies of $(1-t)L_*C_{\mathrm{CK}}$, giving exactly
+\eqref{eq:strict-contracted-box}.
+
+For the actual primitives, linearity of the integral gives
+\[
+ f_{K_t}=(1-t)f_{K_*}+t f_2,\qquad
+ f_{1,K_t}=(1-t)f_{1,K_*}+t f_{1,2}.
+\]
+Substitute these into the complete density with the fixed $r,r',r''$.
+The resulting function of $(t,x)$ is continuous, so its integral over the
+compact physical interval is continuous in $t$. Its value at zero is
+strictly negative. A sufficiently small positive $t<1$ therefore retains
+negative action. The ratio deficit is obtained before any smoothing.
+\end{proof}
+
+\begin{theorem}\label{thm:smooth-subcritical-negative-witness}
+There are $0<t<1$, functions $K,r:\R\to\R$ smooth on $\R$, produced
+sphere data $D$, and globally smooth maps $X,R:\R\to\R$ with the following
+properties. The same area probe $r$ equals one near both endpoints, has
+$r(0)=1$, $r'(0)=0$, and is nonconstant on $[0,1]$.
+On $[0,1]$, the recovered $K$ is symmetric with the two hemisphere order
+laws and satisfies
+\[
+ \kappa_t\leq K\leq\Lambda_t,\qquad
+ \int_0^1K=2,\qquad \int_0^1xK(x)\,dx=1,\qquad A_K(r)<0,
+\]
+where the identical contracted box obeys \eqref{eq:strict-contracted-box}.
+All endpoint, interval-mapping, inverse and actual probe-jet laws of
+Theorem~\ref{thm:fully-tied-area-realization} hold for these same $K,r,X,D,R$.
+In particular $R=r\circ X$ globally, and for every $x\in[0,1]$,
+\[
+ D.a(V_K(x))=\frac1{K(x)},\qquad R(V_K(x))=r(x).
+\]
+For every sphere point $p$ one has $K_{g_D}(p)=K(X(z(p)))$.
+The original smooth one-form $h=M_D(R)$ is nonzero and satisfies
+\begin{equation}\label{eq:strict-negative-geometric-witness}
+ \begin{gathered}
+ g_D\in\mathcal G_{\mathrm{rot}},\qquad
+ \kappa_t\leq K_{g_D}\leq\Lambda_t,\qquad
+ \frac{\Lambda_t}{\kappa_t}<C_{\mathrm{CK}},\\
+ Q_{g_D}(h)=2\pi A_K(r)<0.
+ \end{gathered}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Choose the fixed probe and a positive contraction parameter from
+Lemma~\ref{lem:strict-critical-contraction}.
+Apply Theorem~\ref{thm:symmetric-exact-moment-recovery} with target mean two
+and exactly the box $[\kappa_t,\Lambda_t]$.
+Reindex by its almost-everywhere convergent subsequence. The strictly
+increasing index tends to infinity, so the reindexed sequence still
+converges in $L^1$ and retains every moment, shape and box condition.
+Lemma~\ref{lem:complete-area-action-convergence}, applied to the same $r$,
+gives convergence of the complete actions to the already negative
+contracted action. Choose an actual negative member and call it $K$.
+
+This $K$ is smooth on $\R$, positive on $[0,1]$ and has both exact moments.
+Theorem~\ref{thm:fully-tied-area-realization} therefore constructs the
+stated $X,D,R$ and retains all of their equations for the same $K,r$.
+The original action identity and $2\pi>0$ give strict negativity.
+Since the zero form has zero action, the original form is nonzero.
+The physical range of $X$ places $X(z(p))$ in $[0,1]$ for every sphere point,
+so the global curvature composition transports the identical box.
+The identity diffeomorphism places $g_D$ in the represented class.
+The strict ratio is the one already proved before recovery.
+\end{proof}
+
+\begin{lemma}\label{lem:constant-curvature-square-identity}
+Let $(\Sigma,g)$ be a compact smooth Riemannian surface without boundary
+whose actual Gauss curvature is the constant $\kappa\in\R$.
+For every smooth one-form $h$,
+\begin{equation}\label{eq:constant-curvature-squares}
+ Q_g(h)=\int_\Sigma
+ \left(|\Delta^\nabla h+\kappa h|_g^2
+       +\kappa|\nabla h|_g^2+2\kappa|A_g h|_g^2\right)\,d\mu_g.
+\end{equation}
+Every term is integrable. If $\kappa\geq0$, then $Q_g(h)\geq0$ for every
+smooth one-form, with no conformal-Killing or invariance condition.
+\end{lemma}
+
+\begin{proof}
+The actual smooth tensors and their inner products have integrable norms
+on the compact surface. Canonical Green integration gives
+\[
+ \int_\Sigma\langle h,\Delta^\nabla h\rangle_g\,d\mu_g
+ =-\int_\Sigma|\nabla h|_g^2\,d\mu_g.
+\]
+Expanding the first square in \eqref{eq:constant-curvature-squares}, its
+cross term contributes $-2\kappa\int|\nabla h|^2$.
+Combining the displayed positive derivative term leaves exactly the
+$-\kappa|\nabla h|^2$ term in the original four-term definition
+\eqref{eq:complete-dissipation}. The other two terms are unchanged.
+This proves the identity; when $\kappa\geq0$ its right-hand density is
+nonnegative pointwise.
+\end{proof}
+
+Define $\mathcal S_{\mathrm{rot}}$ to consist of all real $C\geq1$ such
+that $Q_g(h)\geq0$ for every $g\in\mathcal G_{\mathrm{rot}}$, every
+positive actual curvature box
+$\kappa>0$, $\kappa\leq K_g\leq\Lambda$ with $\Lambda/\kappa\leq C$,
+and every original smooth one-form $h$. Put
+$C_{\mathrm{rot}}=\sup\mathcal S_{\mathrm{rot}}$.
+
+\begin{theorem}\label{thm:structural-strict-separation}
+The unrestricted safe-cap set contains one, is downward closed among
+caps at least one, and is bounded above. For a contraction parameter
+$0<t<1$ supplied by the smooth negative witness,
+\begin{equation}\label{eq:structural-strict-separation}
+ 1\leq C_{\mathrm{rot}}\leq\frac{\Lambda_t}{\kappa_t}
+ <C_{\mathrm{CK}}=\sup\mathcal S_{\mathrm{CK}}.
+\end{equation}
+Thus the unrestricted rotational threshold is strictly smaller than the
+actual universal conformal-Killing threshold.
+\end{theorem}
+
+\begin{proof}
+A positive curvature box with ratio at most one satisfies
+$\Lambda\leq\kappa$. Its pointwise bounds therefore force $K_g=\kappa$.
+Lemma~\ref{lem:constant-curvature-square-identity} proves safety for every
+smooth form, so $1\in\mathcal S_{\mathrm{rot}}$.
+Downward closure follows directly from the universal box quantifier.
+
+Use the actual smooth witness of
+Theorem~\ref{thm:smooth-subcritical-negative-witness} and put
+$b=\Lambda_t/\kappa_t$. If a safe cap $C$ were at least $b$, its universal
+safety assertion would apply to that same metric, positive box and
+nonzero original form, contradicting its negative action.
+Consequently every safe cap is strictly below $b$.
+The safe set is nonempty and bounded above; the real supremum laws give
+$1\leq C_{\mathrm{rot}}\leq b$.
+Its strict separation from the actual CK supremum now follows from
+\eqref{eq:strict-contracted-box} and Theorem~\ref{thm:universal-ck-threshold}.
+\end{proof}
+
+The exact value of $C_{\mathrm{rot}}$ and smooth attainment at its
+unrestricted endpoint are not determined here.
+
 
 \begin{thebibliography}{1}
 \bibitem{jerison-fourier}

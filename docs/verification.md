@@ -33,10 +33,15 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all 139 current modules. Importing it is required
+The root aggregate is a real consumer of all 149 current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
+
+The earlier checkpoint entries below retain their historical scope and evidence.
+The final native and actual typesetting results are recorded in the Round16
+entry at the end; earlier statements that typesetting had not run refer to
+those preceding checkpoints.
 
 The first canonical build exposed missing file headers that scratch compilation
 had not reported: the release's header linter tests membership in the flat root
@@ -237,11 +242,10 @@ The source simplifier's single wording suggestion was applied: the smooth
 extension agrees on the closed interval, with no exterior germ claim.
 The final source-bound gate was rerun after that comment-only edit; the earlier
 candidate receipt is preserved in ignored Root scratch and is not final evidence.
-Round 14 independently accepts this native layer and six of its seven new
-conventional claims. The seventh paper statement now explicitly restricts its
-three x-dependent tying equations to [0,1], retaining R=r∘X globally; that short
-QS7 delta is submitted with the current checkpoint. No Lean change was required
-for the correction. The [historical manuscript receipt](evidence/round-14/manuscript.json) records
+Round14 independently accepts this native layer and six of its seven new
+conventional claims. Round15 accepts QS7's correction of the seventh: its three
+x-dependent tying equations are restricted to [0,1], while R=r∘X remains global.
+No Lean change was needed. The [historical manuscript receipt](evidence/round-14/manuscript.json) records
 152 unique labels, 197 resolved references and one resolved citation.
 Actual typesetting is not claimed.
 
@@ -257,11 +261,13 @@ The receipt binds 144 inputs, 145 command outputs and three generated drivers;
 source and declaration-linter outputs are empty. Execution, reuse guards and
 validation semantics of the checker are unchanged.
 
-The [current manuscript receipt](evidence/round-15/manuscript.json) records
+The [Round15 manuscript receipt](evidence/round-15/manuscript.json) records
 160 unique labels, 204 resolved references and one resolved citation, with
-balanced braces and environments. Four new conventional claims and QS7's
-physical-domain correction await configured independent review. No typesetting
-or whole-suite acceptance is claimed.
+balanced braces and environments. Round15 independently accepts that native
+layer, three new conventional claims and QS7. QS8's explicit global-continuity
+qualification of the generic reciprocal lemma is corrected in the current
+manuscript and awaits review of that short delta. No typesetting was recorded
+at the Round15 checkpoint.
 
 The new critical-area layer uses a proof-independent clamped physical inverse
 of the actual normalized reciprocal integral. Both moments, slope and warp
@@ -273,10 +279,44 @@ with explicit step size, actual derivatives, initial data and endpoint constancy
 The source simplifier requested no changes; its delta check also covers the
 midpoint simp-normal-form repair found by the unsuppressed native gate.
 
-Strict contraction, symmetric monotone exact-moment L1/ae recovery with convergence
-of every complete-action term, the resulting negative smooth geometric witness,
-all-form cap-one safety and strict supremum comparison remain open. Remaining
-manuscript/typesetting and final whole-suite independent/native gates also remain
-open. Historical delivered receipts are unchanged.
-All mandatory open mathematics is recorded
-in [the suite status](mathematical-status.md).
+The [final separation receipt](evidence/round-16/receipt.json),
+[actual axiom closures](evidence/round-16/axioms.txt) and
+[exact signatures](evidence/round-16/signatures.txt) cover 149 modules.
+All 139 accepted preceding mathematical sources are unchanged and reuse matching
+source evidence; ten new sources have fresh silent elaborations. The final root,
+available unsuppressed declaration linters, native declaration-kind inspection,
+signature and actual transitive-axiom drivers pass. All 2420 defining-module
+declarations, including 800 private declarations, have only permitted foundational
+axioms. All 775 required selectors and 874 signature queries execute. The receipt
+binds 154 inputs, 155 command outputs and three generated drivers. Checker
+execution/reuse/validation semantics are unchanged.
+
+This layer closes strict contraction, symmetric monotone exact-moment recovery
+in the identical box, L1/ae convergence of the entire fixed-probe action, the
+tied smooth negative original-metric witness, all-form cap-one safety and the
+actual unrestricted-supremum strict comparison. The source simplifier reviewed
+all ten final modules and recommended no source changes. No mandatory native
+mathematical headline remains unproved. Independent acceptance of this final
+layer and its seven new conventional claims remains required.
+
+Actual typesetting passes with [Tectonic 0.17.0](https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.17.0).
+The [47-page PDF](../paper/exponential_pair.pdf),
+[typesetting receipt](evidence/round-16/typesetting.json),
+[engine output](evidence/round-16/tex-output.txt) and
+[losslessly compressed TeX log](evidence/round-16/tex-log.txt.gz) bind the exact manuscript, engine binary,
+command and PDF hashes. The final run has no warnings, overfull/underfull boxes
+or unresolved references. Long displays were broken at mathematical boundaries;
+paragraph line breaking was improved without suppressing diagnostics. The raw
+TeX log's original bytes are retained in gzip, including whitespace emitted by
+the engine; the receipt records both compressed and uncompressed hashes. Reproduce
+with the recorded release binary:
+
+```sh
+rfse_tex_output="$(mktemp -d)"
+tectonic --keep-logs --keep-intermediates --outdir "$rfse_tex_output" paper/exponential_pair.tex
+```
+
+The engine and its caches were installed only in Root's temporary task directory;
+no Lean dependency or historical delivered receipt changed. Typesetting is not
+mathematical acceptance. The final independent review and private delivery are
+recorded separately in the round summary and [suite status](mathematical-status.md).

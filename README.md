@@ -1,7 +1,8 @@
 # Ricci flow sharp estimates
 
 A new pure mathematics and Lean project on sharp rotational curvature pinching
-for one-form Hodge dissipation. The complete theorem suite is still open.
+for one-form Hodge dissipation. The finite mathematical suite is natively proved;
+independent acceptance of the final separation layer and manuscript is pending.
 
 The native variational development proves the explicit minimum for every
 cap `C≥1`, uniqueness on `[0,1]`, the degenerate endpoint, exact contact
@@ -43,14 +44,20 @@ Positive normalized area geometry, its complete action, and a fully tied smooth
 geometric realization passed Round 14 native review at `a6843ea`.
 The realization exposes
 both inverse-coordinate laws, actual probe jets, curvature and the original
-`2*pi` action identity. Its manuscript's physical-domain qualification is corrected.
+`2*pi` action identity. Its manuscript's physical-domain qualification passed Round 15 review.
 The actual critical area curvature now has its exact moments, scaled box,
 hemisphere shape, positive plateau and zero unit-probe action. A fixed smooth
 probe supported as a variation inside that plateau gives negative complete area
-action and equals one near both endpoints. This new layer awaits review.
-Strict contraction and exact-moment recovery to a smooth negative geometric
-witness, all-form safety and the strict supremum comparison, actual typesetting
-and final acceptance remain open.
+action and equals one near both endpoints. That native layer passed Round 15 review.
+Strict contraction, symmetric monotone exact-moment recovery and convergence of
+the complete action now give a genuine smooth negative original-metric witness
+below the CK threshold. Universal all-form cap-one safety and real supremum laws
+prove `rotationalThreshold < conformalKillingThreshold` for the same represented
+class. This final layer awaits independent review.
+The complete manuscript is typeset in a [47-page PDF](paper/exponential_pair.pdf),
+with no remaining TeX diagnostics. Its new proofs and the global-continuity
+qualification of the reciprocal-coordinate lemma await review. No whole-suite
+acceptance is claimed yet.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.
@@ -58,6 +65,7 @@ resolved revision pinned in `lake-manifest.json`.
 - [Mathematical scope, dependencies and exact frontier](docs/mathematical-status.md)
 - [Theorem-to-paper map](docs/theorem-map.md)
 - [Working manuscript](paper/exponential_pair.tex)
+- [Typeset manuscript](paper/exponential_pair.pdf)
 - [Native verification and reproduction](docs/verification.md)
 - [Blackbox and axiom registry](docs/blackbox-registry.md)
 
