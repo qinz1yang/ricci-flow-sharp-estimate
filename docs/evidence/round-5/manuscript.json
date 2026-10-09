@@ -1,0 +1,12 @@
+{
+  "source_sha256": "a3432b16a161eb0db88cb09317e13b6f803ee49c49718440bc80c6e4334e0e4f",
+  "theorem_map_sha256": "499548f0f7048e2c2dc4686d8f28cc040a6736eb730114d9891d979d5c43f663",
+  "labels": 56,
+  "references": 60,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round4 accepted; complete new zonal/symmetry claims pending outer review"
+}

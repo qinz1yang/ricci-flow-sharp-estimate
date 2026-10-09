@@ -1,0 +1,5 @@
+✔ [4395/4399] Built RicciFlowSharpEstimate.Geometry.SurfaceRotationContractions (8.3s)
+✔ [4396/4399] Built RicciFlowSharpEstimate.Geometry.OneFormRotationDissipation (6.9s)
+✔ [4397/4399] Built RicciFlowSharpEstimate.Geometry.RotationalZonalReduction (8.0s)
+✔ [4398/4399] Built RicciFlowSharpEstimate (5.9s)
+Build completed successfully (4399 jobs).

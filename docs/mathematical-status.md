@@ -17,13 +17,15 @@ canonical first/second derivatives, smooth trace-free symmetric part and complet
 four-term action are now native, with internal integrability and full polarization.
 The actual meridional Hessian, rough Laplacian and all four density contractions
 now give `Q(M_D(r))=2*pi*J_a[r]`, including the actual round value `8*pi/3`.
-The full zonal sum, Hodge/Haar, CK and separation remain open.
+Genuine reflection orthogonality and parallel Hodge rotation now give the full
+zonal sum `Q(M_D(r)+Z_D(s))=2*pi*(J_a[r]+J_a[s])`.
+Haar decomposition, nonzonal positivity/equality, CK and separation remain open.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
 review at `76143bb`; the coordinate, curvature and volume layer and its manuscript
 claims passed Round 3 review at `0a0b115`. The section/derivative/action layer
-passed Round 4 review at `4cb46f6`. The new meridional reduction awaits review.
+passed Round 4 review at `4cb46f6`. The new meridional/zonal reduction awaits review.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -46,7 +48,7 @@ isometry used for the two zonal components.
 
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
-| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Open; exact meridional reduction, round normalization, same-map action naturality, reflection orthogonality and the parallel area producer are native. Hodge rotation/full zonal sum, Haar projection, nonzonal positivity and equality remain required. |
+| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Partial: exact full zonal reduction, round normalization, same-map action naturality, reflection orthogonality and actual parallel Hodge rotation are native. Haar projection, nonzonal positivity and equality remain required. |
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
@@ -89,12 +91,12 @@ flowchart TD
   CV --> MR
   SEC --> MR
   ACT --> MR
-  MR --> J[Full zonal reduction]
+  MR --> J[Full zonal reduction: native]
   ACT --> ISO[Diffeomorphism naturality: native]
   ISO --> ORTH[Meridian-reflection orthogonality: native]
   SEC --> ORTH
   G --> AREA[Actual parallel area form: native]
-  AREA --> ROT[Hodge rotation commutation]
+  AREA --> ROT[Hodge rotation commutation: native]
   ROT --> J
   ORTH --> J
   SEC --> J
@@ -120,9 +122,9 @@ Each box has one mathematical role; shared nodes are not reimplemented per
 headline. The analytic stability layer now uses actual interval means and primitives,
 the full normalized lower-obstacle weight, and the true calibrated deficit. Its
 general anchoring lemma derives every product's integrability from compact-interval
-continuity. The next native frontier is meridian-reflection orthogonality and
-parallel Hodge rotation completing the full zonal sum, followed by Haar projection,
-scalarization and remainder positivity/equality. Geometry proceeds through
+continuity. The next native frontier is genuine normalized covector-pullback
+Haar projection, smooth invariant-form classification, the complete polarized
+split, constructive scalarization and remainder positivity/equality. Geometry proceeds through
 real producers, not by moving the historical aggregate into the new project.
 
 ## Corrected conventions and load-bearing risks

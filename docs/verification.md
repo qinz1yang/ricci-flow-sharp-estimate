@@ -80,6 +80,14 @@ the remaining sixteen sources, including the comment-only section-extension
 attribution correction. The aggregate and all declaration, signature and actual
 transitive-axiom drivers run again. The new exact meridional action, genuine
 pullback naturality, reflection orthogonality and parallel area producer await
-independent review. Full Hodge rotation and the zonal sum remain in progress.
+independent review. The [final zonal receipt](evidence/round-5/receipt.json) extends
+that checkpoint to 55 modules and 1083 defining-module declarations. It verifies
+the unchanged fifty-source reuse chain, freshly elaborates the final five sources,
+and reruns the aggregate and all declaration/signature/axiom drivers. The actual
+Hodge rotation, first/second derivative and rough-trace commutation, all four
+norm contractions and complete zonal `2*pi*(J[r]+J[s])` identity pass these gates.
+The final receipt binds 60 source/configuration/checker inputs and 61 command
+outputs. Both Round 5 layers remain subject to independent mathematical and
+manuscript review. Typesetting and the remaining whole-suite gates stay open.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

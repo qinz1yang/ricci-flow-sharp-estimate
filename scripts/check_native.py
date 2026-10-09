@@ -65,6 +65,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalZonalOrthogonality",
     "RicciFlowSharpEstimate.Geometry.AlternatingSurfaceTensors",
     "RicciFlowSharpEstimate.Geometry.RotationalAreaForm",
+    "RicciFlowSharpEstimate.Geometry.RotationalHodgeRotation",
+    "RicciFlowSharpEstimate.Geometry.SurfaceRotationContractions",
+    "RicciFlowSharpEstimate.Geometry.OneFormRotation",
+    "RicciFlowSharpEstimate.Geometry.OneFormRotationDissipation",
+    "RicciFlowSharpEstimate.Geometry.RotationalZonalReduction",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -227,7 +232,30 @@ SELECTOR = r"""
       poleData ++ `oneFormDissipation_meridional_add_azimuthal,
       poleData ++ `areaForm_apply,
       poleData ++ `areaForm_normSq,
-      poleData ++ `metricNabla0S_areaForm
+      poleData ++ `metricNabla0S_areaForm,
+      geo ++ `dIncl_round_grad_sphereHeight,
+      geo ++ `roundSphereAreaForm_round_grad_sphereHeight,
+      geo ++ `normSq0S_one_eq_of_rotation,
+      geo ++ `normSq0S_two_eq_of_rotation,
+      geo ++ `normSq0S_ahlforsPart_eq_of_rotation,
+      geo ++ `oneFormAreaContraction,
+      geo ++ `oneFormAreaContraction_apply,
+      geo ++ `oneFormAreaContraction_add,
+      geo ++ `oneFormAreaContraction_smul,
+      geo ++ `metricNabla0S_oneFormAreaContraction,
+      geo ++ `metricNabla0S_twice_oneFormAreaContraction,
+      geo ++ `roughLap0SField_oneFormAreaContraction,
+      geo ++ `oneFormDissipationDensity_oneFormAreaContraction,
+      geo ++ `oneFormDissipation_oneFormAreaContraction,
+      poleData ++ `inverseMetricSharpFib_meridionalOneForm,
+      poleData ++ `areaForm_inverseMetricSharpFib_meridionalOneForm,
+      poleData ++ `hodgeRotation,
+      poleData ++ `hodgeRotation_apply,
+      poleData ++ `hodgeRotation_meridionalOneForm,
+      poleData ++ `oneFormDissipation_hodgeRotation,
+      poleData ++ `oneFormDissipation_azimuthal_eq_meridional,
+      poleData ++ `oneFormDissipation_azimuthal,
+      poleData ++ `oneFormDissipation_zonal
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -566,6 +594,52 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check areaForm_normSq
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check metricNabla0S_areaForm
+open RicciFlowSharpEstimate.Geometry in
+#check dIncl_round_grad_sphereHeight
+open RicciFlowSharpEstimate.Geometry in
+#check roundSphereAreaForm_round_grad_sphereHeight
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_one_eq_of_rotation
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_two_eq_of_rotation
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_ahlforsPart_eq_of_rotation
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormAreaContraction
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormAreaContraction_apply
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormAreaContraction_add
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormAreaContraction_smul
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_oneFormAreaContraction
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_twice_oneFormAreaContraction
+open RicciFlowSharpEstimate.Geometry in
+#check roughLap0SField_oneFormAreaContraction
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipationDensity_oneFormAreaContraction
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipation_oneFormAreaContraction
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check inverseMetricSharpFib_meridionalOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check areaForm_inverseMetricSharpFib_meridionalOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check hodgeRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check hodgeRotation_apply
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check hodgeRotation_meridionalOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_hodgeRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_azimuthal_eq_meridional
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_azimuthal
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_zonal
 """
 
 

@@ -755,7 +755,7 @@ The weighted density is continuous on the compact sphere, which proves
 its integrability against round area.
 \end{proof}
 
-\section{The exact meridional action}
+\section{The exact zonal action}
 
 Continue with a globally smooth positive balanced profile $a$ and the same
 produced metric $g$. Write $f(v)=2\int_v^1\xi a(\xi)\,d\xi$ and
@@ -813,8 +813,8 @@ formulas. Equivalently, away from the poles its two eigenvalues are
 $Hr'-vr$ and $-vr$; subtracting half the trace leaves eigenvalues
 $Hr'/2$ and $-Hr'/2$. Continuity again includes both poles.
 
-For completeness, the exact-form commutation formula with our positive
-rough-trace convention is
+For completeness, the exact-form commutation formula with the convention
+$\Delta^\nabla=\operatorname{tr}_g\nabla^2$ is
 \[
  \Delta^\nabla dF=d(\Delta_g F)+\operatorname{Ric}_g(\nabla F,\cdot).
 \]
@@ -944,6 +944,69 @@ nonzero tensor $\Omega$. Metric compatibility and differentiation of
 its constant squared norm give
 $\langle\nabla_X\Omega,\Omega\rangle_g=0$ for every tangent vector $X$.
 That multiple must vanish, proving $\nabla\Omega=0$.
+\end{proof}
+
+\begin{theorem}\label{thm:zonal-reduction}
+For the produced metric and its area form from Lemma~\ref{lem:parallel-area},
+define the actual smooth Hodge rotation by
+\[
+ (\mathcal Rh)_x(Y)=\Omega_x(h_x^\sharp,Y).
+\]
+It acts on the final covector slot of both canonical covariant derivatives
+and commutes with the rough Laplacian. It preserves the complete density
+and action of every smooth one-form. With the outward determinant convention,
+\[
+ \mathcal R M(r)=-Z(r),\qquad Q_g(Z(r))=2\pi J_a[r].
+\]
+Consequently, for every pair of globally smooth real probes $r,s$,
+\begin{equation}\label{eq:full-zonal-reduction}
+ Q_g(M(r)+Z(s))=2\pi\bigl(J_a[r]+J_a[s]\bigr).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The metric sharp map and contraction of smooth tensors produce a smooth
+global one-form. Metric compatibility and $\nabla\Omega=0$ give
+\[
+ (\nabla\mathcal Rh)(X,Y)=\Omega((\nabla_Xh)^\sharp,Y).
+\]
+To differentiate once more, extend $Y$ to a smooth vector field and
+differentiate the first-slot contraction of $\nabla h$. The derivative
+of that vector field occurs on both sides; subtracting the connection
+correction in the second derivative cancels it. The correction in the
+final covector slot is already part of the first-derivative formula.
+Thus
+\[
+ (\nabla^2\mathcal Rh)(X,Y,Z)
+   =\Omega((\nabla^2h)(X,Y,\cdot)^\sharp,Z).
+\]
+Taking the actual metric trace in $X,Y$ proves
+$\Delta^\nabla\mathcal Rh=\mathcal R\Delta^\nabla h$.
+
+In an orthonormal frame put $\varepsilon=\Omega(e_1,e_2)$, so
+$\varepsilon^2=1$. The covector components $(u,v)$ rotate to
+$(-\varepsilon v,\varepsilon u)$. This preserves their norm and the
+norm of every row of the first derivative. If a two-tensor has matrix
+$\left(\begin{smallmatrix}A&B\\C&D\end{smallmatrix}\right)$, its
+trace-free symmetric part has squared norm
+$((A-D)^2+(B+C)^2)/2$. Rotating its final slot replaces its rows by
+$(-\varepsilon B,\varepsilon A)$ and
+$(-\varepsilon D,\varepsilon C)$, which preserves this expression.
+The rough, zeroth-order, first-order and Ahlfors norms in the complete
+density therefore all agree before and after rotation. Integrating
+proves $Q_g(\mathcal Rh)=Q_g(h)$ without a curvature-sign assumption.
+
+For the actual sphere, the included round height gradient is
+$e_3-zx$. Direct determinant expansion gives
+$\Omega_0(\operatorname{grad}_{g_0}z,Y)=-\kappa(Y)$.
+The metric-dual formula used in Lemma~\ref{lem:meridional-derivatives}
+gives $M(r)^\sharp=(b/a)r\operatorname{grad}_{g_0}z$.
+Since $\Omega=a\Omega_0$, it follows globally that
+$\mathcal RM(r)=-br\kappa=-Z(r)$. The quadratic action is unchanged
+by a minus sign, so the azimuthal action equals the meridional action.
+Combine Theorem~\ref{thm:meridional-reduction} with
+Lemma~\ref{lem:zonal-orthogonality} to obtain
+\eqref{eq:full-zonal-reduction}.
 \end{proof}
 
 \end{document}

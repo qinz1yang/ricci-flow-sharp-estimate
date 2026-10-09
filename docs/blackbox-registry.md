@@ -2,14 +2,14 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All fifty currently checked analytic, variational and geometric modules depend transitively only on
+All fifty-five currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-5-meridional/axioms.txt) covers 1004 declarations.
+The [current native report](evidence/round-5/axioms.txt) covers 1083 declarations.
 This includes the released Hadamard factorization and smooth metric construction
 as actual transitive dependencies of the pole and sphere-metric producers. It
 also checks the actual curvature, local pullback, coordinate and measure dependencies.
@@ -19,6 +19,10 @@ The current closure additionally covers the actual meridional Hessian and rough
 Laplacian, exact action reduction, smooth derivative pullback and volume naturality,
 meridian reflection, and the constructed parallel area form. No historical
 scalarization axiom is imported.
+The final rotation layer additionally checks the actual smooth metric sharp,
+both covariant-derivative commutation laws, rough trace, rotation contractions
+and the full zonal identity. Parallelness is proved from the actual area tensor,
+and no free first or second jet is accepted by these headlines.
 
 The unformalized derivations and historical reference statements are not
 blackboxes and are not imported assumptions. Their native proof obligations
