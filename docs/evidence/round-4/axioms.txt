@@ -1,0 +1,1184 @@
+Selected 691 project declarations, including private/generated declarations
+RicciFlowSharpEstimate.Geometry.cylinderMap_mfderiv_injective: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact_sq_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart_smul: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives._proof_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivWithinAt_obstacleLogProfile_lowerContact_Ici: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metric: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.stabilityConstant_pos: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.candidate_value_contact_algebra._simp_1_7: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.pullMetric.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.coefficients._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.cylinderDomain: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairWeight._proof_1: [propext]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.candidate_value_contact_algebra._simp_1_1: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.coefficients: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Analysis.integral_symmetrization_error_sq_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.roughLap0SField_smul: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients._sizeOf_inst: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_two_mul_shift: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedLocalDiffeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.diagonal_d1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_contDiff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant_metric_inner: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.integral_radial_graph: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.pullMetric_inner: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives._proof_5: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.denseRange_cylinderMap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.heightOneForm._proof_2: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity_integrable: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align_basis: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbientDerivative._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives._proof_3: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.continuousOn_pairDifference: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_eq_low: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.radial_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange.0.RicciFlowSharpEstimate.Geometry.sphere_coord_sq_sum._simp_1_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.centeredPrimitive: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_injOn: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm_coeff: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_eq_piecewise: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity_smooth: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.diagonal: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_symm: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.round_grad_sphereHeight_inner_self: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_deriv_div_momentCoordinate_deriv._simp_1_1: [propext]
+RicciFlowSharpEstimate.Variational.lowerObstacleWeight._proof_2: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_9: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.heightOneForm._proof_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.not_differentiableAt_obstacleLogProfile_upperContact: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.pullMetric._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.continuousOn_unitCentered: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereHeight_contMDiff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerObstacleWeight._proof_1: [propext]
+_private.RicciFlowSharpEstimate.Geometry.OneFormDissipation.0.RicciFlowSharpEstimate.Geometry._aux_RicciFlowSharpEstimate_Geometry_OneFormDissipation___macroRules__private_RicciFlowSharpEstimate_Geometry_OneFormDissipation_0_RicciFlowSharpEstimate_Geometry_term𝓡₂_1: []
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedToCylinder_smooth: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2OneFormRealizesAt: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.integral_from_eq_neg_integral_to_of_balance: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_eq_zero_of_not_mem: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential._proof_1: [propext]
+RicciFlowSharpEstimate.Geometry.oneFormDissipation: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.RemainderCoercivity.0.RicciFlowSharpEstimate.Variational.continuousOn_profilePairDifference: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstacleWeight.0.RicciFlowSharpEstimate.Variational.integral_obstacle_polynomial: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.instFactEqNatFinrankRealEuclideanSpaceFinOfNatHAdd_ricciFlowSharpEstimate_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.hemisphereDeficit._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_high: [propext, Classical.choice, Quot.sound]
+DifferentialGeometry.PDE.RicciFlow.metricNabla0S.congr_simp: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.instBorelSpaceElemEuclideanSpaceRealFinOfNatNatRotationalSphere: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.balance_const: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeLeftPrimitive_self: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.instCompactSpaceElemEuclideanSpaceRealFinOfNatNatRotationalSphere: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.OneFormDissipation.0.RicciFlowSharpEstimate.Geometry.term𝓡₂: []
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbient: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.exp_obstacleLogProfile: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalDiagonalCurvature.0.RicciFlowSharpEstimate.Geometry.instNeZeroNatFinrankRealEuclideanSpaceFinOfNat_ricciFlowSharpEstimate: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.unitMean.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbientDerivative._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry._aux_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral___macroRules__private_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral_0_RicciFlowSharpEstimate_Geometry_termE2_1: []
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_one_ne_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.index_cases: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm._proof_2: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.sphereFrame._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.a_contDiff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.mk: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_obstacle_backward: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipation_smul: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.c_contDiff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.integral_round_height._simp_1_2: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant._proof_2: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_eq_obstacleLogProfile_iff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.exists_poleData: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_add_left: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_evenExtension: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Analysis.integral_sq_le_of_variance_anchor: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.integrable_pairMarginal: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.noConfusionType: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.heightOneForm_eq_zero_at_pole: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.coefficients._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalDiagonalCurvature.0.RicciFlowSharpEstimate.Geometry.inverse_of_radialDiagonal: [propext,
+ Classical.choice,
+ Quot.sound]
+DifferentialGeometry.Integral.Measure.riemannianMeasure.congr_simp: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuousOn_centeredPrimitive: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.coefficients._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.modelReindex._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant._proof_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.index_cases._proof_1_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairWeight: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacle_marginal_mul_sub_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_eq_intervalIntegrals: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_sq_eq: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.heightCLM: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.mk._flat_ctor: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.candidate_value_contact_algebra._simp_1_3: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange.0.RicciFlowSharpEstimate.Geometry.norm_planarCoordinate: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.centeredPrimitive_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.cylinderDomain._proof_2: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbient_norm: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Analysis.integral_evenExtension_error_sq_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nablaA: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_le_of_firstVariation_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart_apply_of_finrank_eq_two: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry._aux_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral___unexpand_EuclideanSpace_1: []
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_9: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity_integrable: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_ge_closedForm: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipation_sub: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.pullMetric: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.candidate_value_contact_algebra._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.FreeArc.0.RicciFlowSharpEstimate.Variational.sqrt_mul_sq_div: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange.0.RicciFlowSharpEstimate.Geometry.planarCoordinate: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbientDerivative._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.roughLap0SField_add: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.instBorelSpaceEuclideanSpaceRealFinOfNatNat_ricciFlowSharpEstimate: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedToCylinder_deriv: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.instFactEqNatFinrankRealEuclideanSpaceFinOfNatHAdd_ricciFlowSharpEstimate_3: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_northPole_slope: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange.0.RicciFlowSharpEstimate.Geometry.sphere_coord_sq_sum: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radialCoefficient_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric._simp_1_1: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.integral_volume_metric: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.sq_sub_le_budget._simp_1_2: [propext]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives._proof_2: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.modelReindex: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric._simp_1_3: [propext]
+_private.RicciFlowSharpEstimate.Variational.WeightedVariance.0.RicciFlowSharpEstimate.Variational.pairQuadratic_eq_iterated: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.measurableSet_orderedTriangle: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.integral_freeExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2A_smul: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalDiagonalCurvature.0.RicciFlowSharpEstimate.Geometry.jetRicci_zero_zero_of_radialDiagonal: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.pairWeight_eq_zero_of_second_not_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.heightOneForm_sq_le: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_deriv_div_momentCoordinate_deriv._simp_1_4: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.c: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.continuous_weightedReciprocal: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.freeLeftPrimitive.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.obstacleExponential_bounds: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_obstacle_backward._simp_1_1: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedToCylinder._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.casesOn: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData._sizeOf_inst: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.volume_eq_graph_smul_modelHaar: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.heightCLM.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align_basis_coord: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.volumeReal_disk: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbient_hasFDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.orderedTriangle: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.mk.injEq: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.scalar_pullMetric: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivAt_log_freeExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipation._proof_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.heightOneForm_apply: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart_add: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.Plane: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.oneFormDissipation_eq_weightedRoundIntegral: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.WeightedVariance.0.RicciFlowSharpEstimate.Variational.hasDerivAt_prefix: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_2: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalVolume.0.RicciFlowSharpEstimate.Geometry.instMeasurableSpaceElemEuclideanSpaceRealFinOfNatNatRotationalSphere: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2A_add: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairRigidity.0.RicciFlowSharpEstimate.Variational.continuousOn_profileDifference: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm._proof_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstaclePrefix.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.diagonal.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_eq_low: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.OneFormDissipation.0.RicciFlowSharpEstimate.Geometry.instBorelSpace_ricciFlowSharpEstimate: []
+RicciFlowSharpEstimate.Variational.obstacleLogProfile.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_eq_intervalIntegral: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.cylinderDomain._proof_1: [propext]
+_private.RicciFlowSharpEstimate.Variational.ObstacleAnchoring.0.RicciFlowSharpEstimate.Variational.continuousOn_obstacleMarginal: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_self: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_contDiff: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.pullMetric._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.strictMonoOn_logCap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_apply_dIncl: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.mk.noConfusion: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_apply_dIncl: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.TraceFreeSymmetric.0.RicciFlowSharpEstimate.Geometry.inner_swap_left: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_southPole_slope: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.heightCLM_eq_inner: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.metric._proof_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.instNeZeroNatFinrankRealPlane: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivWithinAt_obstacleLogProfile_upperContact_Ici: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipation_add: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.mk.noConfusion: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereHeight: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.sq_sub_le_budget._simp_1_4: [propext]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.sq_sub_le_budget._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.b_pos: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.integral_height_metric: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.continuous_obstacleExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalDiagonalCurvature.0.RicciFlowSharpEstimate.Geometry.jetRicci_zero_zero_of_radialDiagonal_of_eq_two: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.a: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedToCylinder: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.cylinderMap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.candidate_value_contact_algebra._simp_1_4: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalPoleData.0.RicciFlowSharpEstimate.Geometry.RotationalProfile.deriv_one_sub_sq_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.integral_two_mul_div_freeExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_one: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_10: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.diagonal_d2: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation_eq_intervalIntegral_marginal: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.integral_round_height._simp_1_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm._proof_6: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder.eq_1: [propext, Classical.choice, Quot.sound]
+DifferentialGeometry.Tensor0SBundle.CanonicalSpatialDerivs0S.unique: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.Contacts.0.RicciFlowSharpEstimate.Variational.lowerContact_sq_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart_symmetric: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_3: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives.congr_simp: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.candidate_value_contact_algebra: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.measurable_graph: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity_smooth: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.pullMetric._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.cylinderLocalDiffeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_free: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbient_contDiffAt: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_add_right: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_spec: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuousOn_logCap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.heightOneForm: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.instMeasurableSpaceElemEuclideanSpaceRealFinOfNatNatRotationalSphere: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_obstacle_backward._simp_1_3: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.q: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.stabilityConstant._proof_1: [propext]
+RicciFlowSharpEstimate.Geometry.metricScalarAt_eq_radialDiagonalJet: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.unitMean: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_cylinderMap_mfderiv: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.round: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_pos: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.integral_mul_sq_sub_const: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.balance: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.candidate_value_contact_algebra._simp_1_2: [propext]
+DifferentialGeometry.PDE.RicciFlow.roughLap0SField.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives_second: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.gram_eventuallyEq: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_2: [propext]
+RicciFlowSharpEstimate.Geometry.cylinderMap._proof_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerObstacleWeight: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedDomain._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity.congr_simp: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap._proof_2: [propext]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients._sizeOf_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.b_contDiff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereHeight_cylinderMap: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange.0.RicciFlowSharpEstimate.Geometry.sphere_punctured_nhds_neBot._simp_1_1: [propext]
+RicciFlowSharpEstimate.Geometry.ahlforsPart: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry._aux_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral___unexpand_EuclideanSpace_2: []
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.integral_two_mul_div_const: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm._proof_3: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_low: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.metric: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbientDerivative._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.termμround: []
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.mk.sizeOf_spec: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerObstacleWeight.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_smul_right: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalVolume.0.RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.measurable_profileDensity: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_8: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.heightOneForm.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.TraceFreeSymmetric.0.RicciFlowSharpEstimate.Geometry.swap_apply_basis: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.freeRightPrimitive_mul_sq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_const: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.integrable_pairWeight_of_continuousOn: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.heightOneForm_cylinderMap_mfderiv: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight_sq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.b: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.heightOneForm_apply_dIncl: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metric_inner: [propext, Classical.choice, Quot.sound]
+finCongr.eq_1: []
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry._aux_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral___macroRules__private_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral_0_RicciFlowSharpEstimate_Geometry_termE3_1: []
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_eq_upperContact_iff: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry._aux_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral___unexpand_DifferentialGeometry_Integral_Measure_riemannianVolumeMeasure_1: []
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_obstacle_backward._simp_1_4: [propext]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.sphereFrame._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.exists_metric_of_smooth_positive_balanced_profile: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.exp_logCap: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.WeightedVariance.0.RicciFlowSharpEstimate.Variational.pairQuadratic_eq_zeroMean_integrals: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.OneFormDissipation.0.RicciFlowSharpEstimate.Geometry.innerField_smooth: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_metric: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_hasDerivAt: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.volume_metric_eq_withDensity: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radial_identity: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_deriv_div_momentCoordinate_deriv._simp_1_2: [propext]
+RicciFlowSharpEstimate.Variational.stabilityConstant: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_remainder: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.instFactEqNatFinrankRealEuclideanSpaceFinOfNatHAdd_ricciFlowSharpEstimate_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity._proof_4: [propext]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives._proof_4: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.sq_sub_le_budget: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_le: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_metric_inner: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_deriv_div_momentCoordinate_deriv._simp_1_5: [propext]
+RicciFlowSharpEstimate.Geometry.oneFormDissipation_parallelogram: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.scalar_smooth: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential_pos: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.radial_basis: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_lt_upperContact: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.casesOn: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.radialLift_fderiv: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_obstacle_backward._simp_1_7: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_deriv_div_momentCoordinate_deriv._simp_1_3: [propext]
+RicciFlowSharpEstimate.Variational.pairQuadratic._proof_1: [propext]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.sq_sub_le_budget._simp_1_3: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_eq_zero_at_pole: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairRigidity.0.RicciFlowSharpEstimate.Variational.difference_eq_on_openTriangle: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange.0.RicciFlowSharpEstimate.Geometry.height_endpoint_fiber_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.cylinderMap_dIncl_mfderiv: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm_eq_zero_at_pole: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Analysis.integral_reflection_error_sq_le: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_6: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.TraceFreeSymmetric.0.RicciFlowSharpEstimate.Geometry.metricTensorField_eq_metricTensor0S: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.cylinderMap_contMDiff: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_obstacle_backward._simp_1_2: [propext]
+RicciFlowSharpEstimate.Geometry.sphereHeight_mem_Icc: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinder_radius_sq_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ContactRegularity.0.RicciFlowSharpEstimate.Variational.not_differentiableAt_of_halfline_derivatives: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.mk.sizeOf_spec: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.stabilityConstant._proof_2: [propext]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.integral_openHemisphere: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalVolume.0.RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.riemannianMeasure_metric_eq_withDensity: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_triangle_of_continuousOn: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerObstacleWeight_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm._proof_2: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_strictMonoOn: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.integral_pairWeight_backward: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivWithinAt_obstacleLogProfile_upperContact_Iic: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.modelReindex.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm._proof_5: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.centeredPrimitive.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_12: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric._simp_1_4: [propext]
+RicciFlowSharpEstimate.Variational.upperContact: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.strictMonoOn_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap._proof_1: [propext]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.integral_radial_graph._simp_1_1: [propext]
+RicciFlowSharpEstimate.Variational.pairQuadratic: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeRightPrimitive.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.Calibration.0.RicciFlowSharpEstimate.Variational.free_marginal_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.noConfusion: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.radial._proof_1: [propext]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_obstacle_backward._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.noConfusion: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalDissipation.0.RicciFlowSharpEstimate.Geometry.instMeasurableSpaceElemEuclideanSpaceRealFinOfNatNatRotationalSphere: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity._proof_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_add_const: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.modelReindex._proof_1: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.a_pos: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radial_factor: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.chartDensity_metric: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail_eq_low: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.b_contMDiff: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_scaled_sqrt: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Analysis.exp_tangent_quadratic_lower: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric._simp_1_2: [propext]
+DifferentialGeometry.PDE.RicciFlow.roughLap0SField.congr_simp: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric._simp_1_7: [propext]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.integral_obstacle_backward._simp_1_5: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm_two: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm._proof_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm._proof_3: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_cylinderMap_mfderiv: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.instFactEqNatFinrankRealEuclideanSpaceFinOfNatHAdd_ricciFlowSharpEstimate_2: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.ctorIdx: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.centeredPrimitive_zero: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm_apply: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalSphere: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.WeightedVariance.0.RicciFlowSharpEstimate.Variational.integral_triangle_eq_iterated: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_metric: [propext,
+ Classical.choice,
+ Quot.sound]
+LinearMap.det_smul_add_rankOne_gram_fin_two: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.exists_smooth_positive_warp_factor: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives_first: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_pos_of_balance: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_eq_zero_at_pole: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.heightOneForm_frame_contMDiffAt: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight_error_sq_le: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.TraceFreeSymmetric.0.RicciFlowSharpEstimate.Geometry.swap_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipation.congr_simp: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereHeight._proof_1: [propext]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.free_backward_integrand: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.unitCentered: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder_eq_zero_iff: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_1: [propext]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.q_contMDiff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalDissipation.0.RicciFlowSharpEstimate.Geometry.instBorelSpaceElemEuclideanSpaceRealFinOfNatNatRotationalSphere: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_bounds: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_4: [propext]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_low: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_eq_high: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact_pos: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrable_pairWeight_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.momentCoordinate_const: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalVolume.0.RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.chartIndexEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.deriv_warp_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.cylinderDomain._proof_3: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_11: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.graphDensity_measurable: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.OneFormDissipation.0.RicciFlowSharpEstimate.Geometry.pairingDensity_add_left: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_7: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_5: [propext]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.metric_inner_apply: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_7: [propext]
+RicciFlowSharpEstimate.Variational.stabilityConstant._proof_3: [propext]
+RicciFlowSharpEstimate.Variational.pairWeight.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivAt_freeRightPrimitive: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereHeight.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_pairKernel: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_3: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.det_chartGramMatrix_metric._simp_1_5: [propext]
+RicciFlowSharpEstimate.Variational.capParameter_eq_one_iff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerObstacleWeight_eq_low: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.mk.injEq: [propext, Classical.choice, Quot.sound]
+Matrix.reindex.eq_1: [propext, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.OneFormDissipation.0.RicciFlowSharpEstimate.Geometry.instMeasurableSpace_ricciFlowSharpEstimate: []
+RicciFlowSharpEstimate.Geometry.denseRange_cylinderMap._simp_1_1: [propext]
+RicciFlowSharpEstimate.Variational.obstacleTail: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_lt_of_differentiableOn: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.upperContact_lt_one: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry._aux_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral___macroRules__private_RicciFlowSharpEstimate_Geometry_SphereHeightIntegral_0_RicciFlowSharpEstimate_Geometry_termμround_1: []
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeRightPrimitive_at_upperContact._simp_1_1: [propext]
+RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_reflection: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_3: [propext]
+RicciFlowSharpEstimate.Geometry.sphereHeight_apply: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant._proof_3: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2A: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbientDerivative: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.ReflectionEnergy.0.RicciFlowSharpEstimate.Analysis.integral_split_reflection: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder_ge_quadratic_integral: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeLeftPrimitive: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.instMeasurableSpaceEuclideanSpaceRealFinOfNatNat_ricciFlowSharpEstimate: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.warp_factor: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbient.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.sphereFrame._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.mk._flat_ctor: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential._proof_2: [propext]
+_private.RicciFlowSharpEstimate.Variational.Contacts.0.RicciFlowSharpEstimate.Variational.contactDenominator_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.freeRightPrimitive: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuous_obstacleLogProfile: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.sphere_norm._simp_1_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_6: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.hemisphereDeficit: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.integral_sq_sub_const: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.sq_sub_le_budget._simp_1_7: [propext]
+RicciFlowSharpEstimate.Variational.integral_unitCentered_sq_le_pairQuadratic: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.existsUnique_capParameter: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedMap: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivAt_log_freeExponential._simp_1_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.WeightedVariance.0.RicciFlowSharpEstimate.Variational.continuousOn_prefix: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radialCoefficient_contDiffOn: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.mk.inj: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_eq_closedForm_iff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_congr: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity._proof_2: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.termE3: []
+_private.RicciFlowSharpEstimate.Geometry.TraceFreeSymmetric.0.RicciFlowSharpEstimate.Geometry.swap_metric: [propext,
+ Classical.choice,
+ Quot.sound]
+DifferentialGeometry.Tensor0SBundle.TotalNabla0SRealizes.unique: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.one_le_capParameter: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.chartBasis_open: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal_obstacleLogProfile_free: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairMarginal.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.integrableOn_firstVariation: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.cylinderMap_coe: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.noConfusionType: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.b_pos: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeRightPrimitive_self: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm._proof_4: [propext]
+_private.RicciFlowSharpEstimate.Variational.WeightedVariance.0.RicciFlowSharpEstimate.Variational.inner_square_expansion: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.diagonal_smooth: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.HemisphereStability.0.RicciFlowSharpEstimate.Variational.hemisphere_error_budget: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.gram_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_5: [propext]
+RicciFlowSharpEstimate.Variational.pairQuadratic_eq_centered_integrals: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.continuous_lowerObstacleWeight: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail_eq_high: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.b: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalDiagonalCurvature.0.RicciFlowSharpEstimate.Geometry.jetRicci_zero_zero_of_radialDiagonal': [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.OneFormDissipation.0.RicciFlowSharpEstimate.Geometry.pairingDensity_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.integral_lowerObstacleWeight: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_8: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.mk.inj: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.RemainderCoercivity.0.RicciFlowSharpEstimate.Variational.weighted_exp_remainder_ge_square: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_7: [propext]
+RicciFlowSharpEstimate.Geometry.cylinderMap_round_inner: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_eq_of_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation_eq_integral_marginal: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential_self: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.mk.congr_simp: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radial_curvature_identity: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart_apply: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.instFactEqNatFinrankRealEuclideanSpaceFinOfNatHAdd_ricciFlowSharpEstimate: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstacleWeight.0.RicciFlowSharpEstimate.Variational.integral_obstacle_polynomial_sq: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_eq_high: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData._sizeOf_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.TraceFreeSymmetric.0.RicciFlowSharpEstimate.Geometry.trace_swap: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.FreeArc.0.RicciFlowSharpEstimate.Variational.hasDerivAt_freePhase: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_pos: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.rec: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleTail_eq_free: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange.0.RicciFlowSharpEstimate.Geometry.planarCoordinate._proof_1: [propext]
+RicciFlowSharpEstimate.Geometry.oneFormDissipation_zero: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.coefficients._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalOneForms.0.RicciFlowSharpEstimate.Geometry.horizontal_coordinates_eq_zero_of_height_sq_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.not_differentiableAt_obstacleLogProfile_lowerContact: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Analysis.exists_contDiff_one_sub_sq_factor_of_roots: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation_obstacleLogProfile_nonneg: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm_apply: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.ctorIdx: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_one_ne_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_deriv_div_momentCoordinate_deriv._simp_1_6: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstacleProfile.0.RicciFlowSharpEstimate.Variational.freeExponential_mono: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.denseRange_cylinderMap._simp_1_2: [propext]
+_private.RicciFlowSharpEstimate.Variational.PairFunctional.0.RicciFlowSharpEstimate.Variational.orderedTriangle_subset_square: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart_trace_eq_zero: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleExponential_eq_free: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.inverseChart: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq_integral_marginal: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.align._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp._proof_1: [propext]
+RicciFlowSharpEstimate.Variational.integral_unitCentered: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivWithinAt_obstacleLogProfile_lowerContact_Iic: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.OneFormDissipation.0.RicciFlowSharpEstimate.Geometry.pairingDensity_smul_left: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_deficit_controls_L2: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.integral_round_height: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.sphere_norm: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.freeExponential_mul_sq: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.integral_pairWeight_forward: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange.0.RicciFlowSharpEstimate.Geometry.sphere_punctured_nhds_neBot: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCoordinates.0.RicciFlowSharpEstimate.Geometry.cylinderAmbientDerivative.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFirstVariation: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.instFactEqNatFinrankRealEuclideanSpaceFinOfNatHAdd_ricciFlowSharpEstimate_4: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.continuous_freeExponential: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstaclePrefix: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalVolume.0.RicciFlowSharpEstimate.Geometry.instBorelSpaceElemEuclideanSpaceRealFinOfNatNatRotationalSphere: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact.eq_1: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.PairIteration.0.RicciFlowSharpEstimate.Variational.pairWeight_eq_zero_of_first_not_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalVolume.0.RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.chartIndexEquiv._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.termE2: []
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.sq_sub_le_budget._simp_1_1: [propext]
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_5: [propext]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.map_graphDensity: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.ObstaclePrimitives.0.RicciFlowSharpEstimate.Variational.freeLeftPrimitive_at_upperContact._simp_1_4: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.constant._proof_4: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.deriv_momentCoordinate_eq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_2: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.integral_graphDensity_height: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.instFactEqNatFinrankRealEuclideanSpaceFinOfNatHAdd_ricciFlowSharpEstimate_5: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.contact_separation_iff: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.recOn: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_smul_left: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radialCoefficient: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairRemainder: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_div_parameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity._proof_3: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.bilinearForm._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.OptimalValue.0.RicciFlowSharpEstimate.Variational.candidate_value_contact_algebra._simp_1_5: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_neg_one_eq_zero_of_balance: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.hasDerivAt_freeLeftPrimitive: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.alignedMap_localDiffeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.balance_eq: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.radial: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.one_lt_capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.orderedTriangle.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_deriv_div_momentCoordinate_deriv: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.capParameter_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.sectionalCurvature_metric: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.radialCoefficient.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.hemisphereDeficit_controls_symmetrization: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.rec: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.integral_mul_sq_le: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.radial_pos: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.graphDensity: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm_cylinderMap_mfderiv: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.range_cylinderMap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstaclePrefix_eq_high: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_hasDerivAt: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.SphereHeightIntegral.0.RicciFlowSharpEstimate.Geometry.sphereFrame: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.cylinderMap_warp_pos: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Variational.FreeArc.0.RicciFlowSharpEstimate.Variational.two_mul_div_freeExponential: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives_unique: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing.eq_1: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerObstacleWeight_eq_zero: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_4: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Analysis.WeightedAnchor.0.RicciFlowSharpEstimate.Analysis.sq_sub_le_budget._simp_1_5: [propext]
+RicciFlowSharpEstimate.Variational.one_sub_upperContact_sq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.recOn: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.warp_deriv_div_momentCoordinate_deriv._simp_1_7: [propext]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.weighted_dissipationDensity_integrable: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.HeightMetricCoefficients.mk: [propext, Classical.choice, Quot.sound]
+_private.RicciFlowSharpEstimate.Geometry.RotationalCurvature.0.RicciFlowSharpEstimate.Geometry.pullMetric._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.canonicalDerivatives: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.deriv_warp_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Geometry.ahlforsPart._proof_7: [propext]
+_private.RicciFlowSharpEstimate.Geometry.RotationalSphereMetric.0.RicciFlowSharpEstimate.Geometry.heightCLM_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+RicciFlowSharpEstimate.Variational.contact_bounds: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.freeLeftPrimitive_mul_sq: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.logCap: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.lowerContact_le_upperContact: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.pairFunctional_obstacleLogProfile_one: [propext, Classical.choice, Quot.sound]
+RicciFlowSharpEstimate.Variational.obstacleLogProfile_admissible: [propext, Classical.choice, Quot.sound]
+DifferentialGeometry.Geometry.innerCoordFun.eq_1: [propext, Classical.choice, Quot.sound]

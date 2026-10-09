@@ -3,15 +3,16 @@
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
 smooth balanced-profile metric construction, cylinder pullback, intrinsic curvature
-and volume/height identities.
-The Hodge/Haar, CK and separation
+volume/height identities, global forms and the canonical complete action.
+The exact zonal/Haar reduction, CK and separation
 sections remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The prefixes `Geometry` and `Analysis` below are relative to `RicciFlowSharpEstimate`.
 The analytic statements and current manuscript passed scoped independent Round 1
-review at `2302ad1`; the smooth metric producer passed Round 2 review at `76143bb`.
-Subsequent geometric development requires its own review.
+review at `2302ad1`; the smooth metric producer passed Round 2 review at `76143bb`,
+and the curvature/volume layer passed Round 3 review at `0a0b115`.
+Subsequent section/derivative/action development requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -58,7 +59,12 @@ Subsequent geometric development requires its own review.
 | Actual height-profile derivative substitution | `Geometry.RotationalProfile.PoleData.radial_curvature_identity` in `Geometry/RotationalCurvatureProfile.lean` | Actual derivatives of `warp a` and `a^2/warp a`, used in the intrinsic computation. |
 | Exact cylinder range and density in the sphere | `Geometry.range_cylinderMap`, `denseRange_cylinderMap` in `Geometry/RotationalCoordinateRange.lean` | The same actual coordinate map; no global angle injectivity assertion. |
 | Actual scalar and sectional curvature everywhere, including poles | `Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap`, `metricScalarAt_metric`, `sectionalCurvature_metric` in `Geometry/RotationalCurvature.lean` | Actual `D.metric`, original `D.a`, true Levi–Civita curvature; no jet or curvature hypothesis. |
-| Canonical section jets, Haar split and equality | No native final declaration yet | Mandatory geometric dependencies. |
+| Global smooth meridional and azimuthal sections with pole and nonzero-witness laws | `Geometry.RotationalProfile.PoleData.meridionalOneForm`, `azimuthalOneForm`, their `_apply_dIncl`, `_cylinderMap_mfderiv`, `_eq_zero_at_pole` and `_one_ne_zero` laws in `Geometry/RotationalOneForms.lean` | Actual coordinate differentials and original profile; no singular global angular coordinate. |
+| Unique canonical first/second derivatives and their realization laws | `Geometry.canonicalDerivatives`, `canonicalDerivatives_first`, `canonicalDerivatives_second`, `canonicalDerivatives_unique`, `canonicalDerivatives_nabla2OneFormRealizesAt` in `Geometry/CanonicalDerivatives.lean` | Instantiates the released smooth-connection producer with `metricCov g`; fields equal native `metricNabla0S` and its iterate. Generic realization/package uniqueness is in `DifferentialGeometry.Tensor0SBundle`. |
+| Actual smooth trace-free symmetric tensor and its linearity | `Geometry.ahlforsPart`, `ahlforsPart_apply`, `ahlforsPart_symmetric`, `ahlforsPart_trace_eq_zero`, `ahlforsPart_add`, `ahlforsPart_smul` in `Geometry/TraceFreeSymmetric.lean` | Generic finite-dimensional tensor projection, specialized to half trace in dimension two. |
+| Complete canonical action, internal integrability and four-term polarization | `Geometry.oneFormDissipation`, `oneFormDissipationPairing`, density smoothness/integrability and pairing/quadratic laws in `Geometry/OneFormDissipation.lean` | Every smooth form on a compact smooth surface; curvature is actual scalar/2 and derivatives are the native metric operators. No positivity theorem is claimed. |
+| Actual profile/metric consumer of the full action | `Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_metric`, `oneFormDissipation_eq_weightedRoundIntegral`, `weighted_dissipationDensity_integrable` in `Geometry/RotationalDissipation.lean` | Same `D.metric`, original `D.a`, actual curvature/volume and unchanged canonical derivatives. |
+| Exact zonal action reduction, Haar split and equality | No native final declaration yet | Mandatory geometric dependencies. |
 | Exact CK threshold, full smooth equality, smooth supercritical witnesses | No native declaration yet | Mandatory. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
 
@@ -80,6 +86,10 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:cylinder-metric` | `Geometry.cylinderMap_contMDiff`, `sphereHeight_cylinderMap`, `cylinderMap_dIncl_mfderiv`, `cylinderMap_round_inner`, `cylinderMap_mfderiv_injective`, `RotationalProfile.PoleData.cylinderMap_metric_inner` |
 | `thm:volume-height` | `Geometry.round_grad_sphereHeight_inner_self`; `RotationalProfile.PoleData.volume_metric_eq_withDensity`; `Geometry.integral_round_height`; `RotationalProfile.PoleData.integral_height_metric` |
 | `thm:curvature-profile` | `Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap`, `metricScalarAt_metric`, `sectionalCurvature_metric`; actual derived chart jets; `range_cylinderMap`, `denseRange_cylinderMap`; continuity of the same metric's scalar curvature |
+| `lem:global-forms` | Actual section producers and ambient/cylinder/pole/nonzero laws in `Geometry/RotationalOneForms.lean` |
+| `lem:canonical-derivatives` | Native `CanonicalSpatialDerivs0S.ofSmoothConnection` through `Geometry.canonicalDerivatives`; both realization laws and one-form second-derivative bridge; generic `TotalNabla0SRealizes.unique` and `CanonicalSpatialDerivs0S.unique`; native first-derivative linearity and proved second-iterate linearity |
+| `thm:dissipation-quadratic` | `Geometry.ahlforsPart_symmetric`, `ahlforsPart_trace_eq_zero`; actual `oneFormDissipationDensity` and `oneFormDissipationPairingDensity`, their smoothness/integrability; all pairing and quadratic identities in `Geometry/OneFormDissipation.lean` |
+| `cor:profile-dissipation` | `Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_metric`, `oneFormDissipation_eq_weightedRoundIntegral`, `weighted_dissipationDensity_integrable` |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

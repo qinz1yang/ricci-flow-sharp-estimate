@@ -49,6 +49,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalCoordinates",
     "RicciFlowSharpEstimate.Geometry.RotationalCoordinateRange",
     "RicciFlowSharpEstimate.Geometry.RotationalCurvature",
+    "RicciFlowSharpEstimate.Geometry.CanonicalDerivatives",
+    "RicciFlowSharpEstimate.Geometry.TraceFreeSymmetric",
+    "RicciFlowSharpEstimate.Geometry.RotationalOneForms",
+    "RicciFlowSharpEstimate.Geometry.OneFormDissipation",
+    "RicciFlowSharpEstimate.Geometry.RotationalDissipation",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -58,6 +63,7 @@ OPTIONS = [
 SELECTOR = r"""
   let decls ← liftCoreM <|
     Batteries.Tactic.Lint.getDeclsInPackage `RicciFlowSharpEstimate
+  let poleData := `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
       `RicciFlowSharpEstimate.Variational.pairFunctional_sub_eq_integral_marginal,
@@ -137,7 +143,34 @@ SELECTOR = r"""
       `RicciFlowSharpEstimate.Geometry.denseRange_cylinderMap,
       `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap,
       `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_metric,
-      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.sectionalCurvature_metric
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.sectionalCurvature_metric,
+      `DifferentialGeometry.Tensor0SBundle.TotalNabla0SRealizes.unique,
+      `DifferentialGeometry.Tensor0SBundle.CanonicalSpatialDerivs0S.unique,
+      `RicciFlowSharpEstimate.Geometry.canonicalDerivatives,
+      `RicciFlowSharpEstimate.Geometry.canonicalDerivatives_first,
+      `RicciFlowSharpEstimate.Geometry.canonicalDerivatives_second,
+      `RicciFlowSharpEstimate.Geometry.canonicalDerivatives_unique,
+      `RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2OneFormRealizesAt,
+      `RicciFlowSharpEstimate.Geometry.ahlforsPart_apply,
+      `RicciFlowSharpEstimate.Geometry.ahlforsPart_symmetric,
+      `RicciFlowSharpEstimate.Geometry.ahlforsPart_trace_eq_zero,
+      `RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm_apply,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_apply,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_apply,
+      poleData ++ `meridionalOneForm_cylinderMap_mfderiv,
+      poleData ++ `azimuthalOneForm_cylinderMap_mfderiv,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_one_ne_zero,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_one_ne_zero,
+      `RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity_smooth,
+      `RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity_integrable,
+      `RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity_integrable,
+      `RicciFlowSharpEstimate.Geometry.oneFormDissipation,
+      `RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_add_left,
+      `RicciFlowSharpEstimate.Geometry.oneFormDissipation_smul,
+      `RicciFlowSharpEstimate.Geometry.oneFormDissipation_parallelogram,
+      `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_metric,
+      poleData ++ `oneFormDissipation_eq_weightedRoundIntegral,
+      poleData ++ `weighted_dissipationDensity_integrable
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -317,6 +350,67 @@ SIGNATURE_DRIVER = """import RicciFlowSharpEstimate
 #check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_cylinderMap
 #check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.metricScalarAt_metric
 #check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.sectionalCurvature_metric
+#check DifferentialGeometry.Tensor0SBundle.TotalNabla0SRealizes.unique
+#check DifferentialGeometry.Tensor0SBundle.CanonicalSpatialDerivs0S.unique
+#print RicciFlowSharpEstimate.Geometry.canonicalDerivatives
+#check RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nablaA
+#check RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2A
+#check RicciFlowSharpEstimate.Geometry.canonicalDerivatives_first
+#check RicciFlowSharpEstimate.Geometry.canonicalDerivatives_second
+#check RicciFlowSharpEstimate.Geometry.canonicalDerivatives_unique
+#check RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2A_add
+#check RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2A_smul
+#check RicciFlowSharpEstimate.Geometry.canonicalDerivatives_nabla2OneFormRealizesAt
+#check RicciFlowSharpEstimate.Geometry.roughLap0SField_add
+#check RicciFlowSharpEstimate.Geometry.roughLap0SField_smul
+#print RicciFlowSharpEstimate.Geometry.ahlforsPart
+#check RicciFlowSharpEstimate.Geometry.ahlforsPart_apply
+#check RicciFlowSharpEstimate.Geometry.ahlforsPart_apply_of_finrank_eq_two
+#check RicciFlowSharpEstimate.Geometry.ahlforsPart_symmetric
+#check RicciFlowSharpEstimate.Geometry.ahlforsPart_trace_eq_zero
+#check RicciFlowSharpEstimate.Geometry.ahlforsPart_add
+#check RicciFlowSharpEstimate.Geometry.ahlforsPart_smul
+#check RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm_apply
+#check RicciFlowSharpEstimate.Geometry.sphereCoordinateOneForm_two
+#check RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm_apply
+#check RicciFlowSharpEstimate.Geometry.heightOneForm_eq_zero_at_pole
+#check RicciFlowSharpEstimate.Geometry.sphereAzimuthalOneForm_eq_zero_at_pole
+#print RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm
+#print RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_apply_dIncl
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_apply_dIncl
+#check
+  RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_cylinderMap_mfderiv
+#check
+  RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_cylinderMap_mfderiv
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_eq_zero_at_pole
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_eq_zero_at_pole
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.meridionalOneForm_one_ne_zero
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.azimuthalOneForm_one_ne_zero
+#print RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity
+#print RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity_smooth
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationDensity_integrable
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity_smooth
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationPairingDensity_integrable
+#print RicciFlowSharpEstimate.Geometry.oneFormDissipation
+#print RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_self
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_symm
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_add_left
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_add_right
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_smul_left
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipationPairing_smul_right
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipation_zero
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipation_smul
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipation_add
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipation_sub
+#check RicciFlowSharpEstimate.Geometry.oneFormDissipation_parallelogram
+#check RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_metric
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_weightedRoundIntegral
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check weighted_dissipationDensity_integrable
 """
 
 

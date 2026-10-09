@@ -12,12 +12,16 @@ The native smooth metric producer now retains the original balanced profile,
 globally removable pole factors and actual sphere tensor law, with a scaled-round
 constant-profile witness. The actual cylinder pullback, global volume density and
 height disintegration are now native. The intrinsic scalar/sectional curvature
-formulas also hold on the entire sphere, including the poles. Canonical section
-jets, Hodge/Haar, CK and separation remain open.
+formulas also hold on the entire sphere, including the poles. The global sections,
+canonical first/second derivatives, smooth trace-free symmetric part and complete
+four-term action are now native, with internal integrability and full polarization.
+Exact zonal reduction, Hodge/Haar, CK and separation remain open.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
-review at `76143bb`; subsequent coordinate, curvature and volume claims await review.
+review at `76143bb`; the coordinate, curvature and volume layer and its manuscript
+claims passed Round 3 review at `0a0b115`. The new section/derivative/action layer
+awaits its independent review.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -40,7 +44,7 @@ isometry used for the two zonal components.
 
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
-| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Open; smooth metric/poles, actual cylinder coefficients, intrinsic curvature, volume and height integral are native. Section jets and Haar/reduction remain required. |
+| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Open; actual global sections, unique canonical derivatives and the complete action are native. Their explicit zonal contractions/reduction, Haar projection, nonzonal positivity and equality remain required. |
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
@@ -54,7 +58,7 @@ The formulas and additional exact calculations appear in
 not by themselves established paper results. The new working manuscript includes
 only claims mapped to native proofs. Its first geometric section proves smooth
 balanced-profile pole factors, actual smooth positive sphere metric, cylinder pullback,
-area and intrinsic curvature;
+area, intrinsic curvature, global forms and canonical dissipation;
 the later geometric reductions and headlines remain absent as established claims.
 
 ## Shared dependency graph
@@ -67,16 +71,23 @@ flowchart TD
   O --> C
   C --> R[Optimizer rigidity and contact regularity: native]
   E[Exponential quadratic remainder: native] --> S[Positive L2 stability: native]
-  V[Weighted pair variance: native] --> S
+  VAR[Weighted pair variance: native] --> S
   A[Obstacle anchoring: native] --> S
   C --> S
   S --> N[Two-hemisphere near-symmetry: native]
-  G[Smooth metric and pole producers: native] --> H[Genuine Haar projection and canonical jets]
-  G --> V[Actual curvature, volume and cylinder coefficients: native]
-  V --> H
-  V --> J
+  G[Smooth metric and pole producers: native] --> H[Genuine Haar projection]
+  G --> SEC[Global meridional and azimuthal sections: native]
+  G --> CJ[Canonical metric covariant derivatives: native]
+  CJ --> ACT[Complete action and polarization: native]
+  CJ --> H
+  G --> CV[Actual curvature, volume and cylinder coefficients: native]
+  CV --> ACT
+  CV --> J
   G --> J[Exact zonal reduction]
+  SEC --> J
+  ACT --> J
   H --> Q[Haar split and nonnegative remainder]
+  ACT --> Q
   W[Positive scalar Haar gap] --> Z[Zero remainder iff zero form]
   Q --> Z
   R --> CK[Sharp CK threshold and smooth equality]
@@ -96,8 +107,9 @@ Each box has one mathematical role; shared nodes are not reimplemented per
 headline. The analytic stability layer now uses actual interval means and primitives,
 the full normalized lower-obstacle weight, and the true calibrated deficit. Its
 general anchoring lemma derives every product's integrability from compact-interval
-continuity. The next native frontier is the actual section and covariant-jet construction
-of the produced metric, followed by the Haar and dissipation bridges. Geometry proceeds through
+continuity. The next native frontier is the explicit first/second derivative contractions
+of the actual sections and their exact zonal action reduction, followed by Haar projection,
+scalarization and remainder positivity/equality. Geometry proceeds through
 real producers, not by moving the historical aggregate into the new project.
 
 ## Corrected conventions and load-bearing risks

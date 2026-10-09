@@ -611,4 +611,148 @@ extends over the poles. The two-dimensional scalar/sectional curvature
 identity proves the equivalent assertions.
 \end{proof}
 
+\section{Smooth one-forms and the complete dissipation}
+
+Retain the metric constructed from $a,b,c$, and write $D=(a,b,c)$ for these data.
+Let $x,y,z$ be the ambient coordinate functions restricted to the unit sphere. Put
+$\kappa=-y\,dx+x\,dy$.
+
+\begin{lemma}\label{lem:global-forms}
+For globally smooth $r,s:\R\to\R$, the formulas
+\[
+ M_D(r)=a(z)r(z)\,dz,\qquad Z_D(s)=b(z)s(z)\,\kappa
+\]
+define smooth one-forms on the entire sphere. Both vanish at the poles,
+and their pullbacks by the actual cylinder map are
+\begin{equation}\label{eq:forms-cylinder}
+ \Phi^*M_D(r)=a(v)r(v)\,dv,\qquad
+ \Phi^*Z_D(s)=f(v)s(v)\,d\theta.
+\end{equation}
+The constant unit probes $M_D(1)$ and $Z_D(1)$ are nonzero.
+\end{lemma}
+
+\begin{proof}
+Every factor is globally smooth on the sphere: the one-forms $dx,dy,dz$
+are the actual differentials of its smooth coordinate functions. At a pole
+$x=y=0$, hence $\kappa=0$; also $dz=0$ on the tangent plane there. This proves
+the pole statements directly from the global definitions.
+The derivative formulas in Lemma~\ref{lem:cylinder-metric} give
+$\Phi^*dz=dv$ and $\Phi^*\kappa=(1-v^2)d\theta$.
+Using $f=(1-v^2)b$ proves \eqref{eq:forms-cylinder}.
+At $v=0$, evaluation on the respective cylinder coordinate directions
+gives $a(0)>0$ and $f(0)>0$ for the unit probes, proving nonvanishing.
+\end{proof}
+
+\begin{lemma}\label{lem:canonical-derivatives}
+For a smooth Riemannian metric $g$ and a smooth covariant tensor $T$ on a
+smooth Hausdorff manifold, its first and second total covariant derivatives
+are smooth and uniquely determined by their covariant-derivative realization
+laws. Both assignments are real-linear in $T$.
+For a one-form $h$, writing $N=\nabla h$ and $H=\nabla N$, these laws imply
+\[
+ N(X,Y)=X(h(Y))-h(\nabla_XY),
+\]
+\[
+ H(X,Y,Z)=X(N(Y,Z))-N(\nabla_XY,Z)-N(Y,\nabla_XZ)
+\]
+for smooth vector fields $X,Y,Z$.
+\end{lemma}
+
+\begin{proof}
+Use the Levi--Civita connection of the given metric. In local coordinates
+the covariant derivative of $T$ is its ordinary derivative minus one
+Christoffel term for each covariant slot. These expressions are smooth
+and transform tensorially, producing the first total derivative as a
+global smooth tensor. Repeating the construction produces the second.
+The displayed formulas are its one-form and two-tensor product rules.
+To prove uniqueness, extend any prescribed tangent vector at a point to
+a global smooth vector field using a coordinate neighborhood and a smooth
+cutoff. The realization laws then determine every component in a tangent
+basis at that point. Applying the same argument first to $N$ and then to
+$H$ gives uniqueness of the pair. Real-linearity follows from the
+connection's linearity in its tensor argument and iteration.
+\end{proof}
+
+On a compact smooth Riemannian surface $(\Sigma,g)$ without boundary, write
+$K_g=\operatorname{Scal}_g/2$ and use the trace convention
+\[
+ \Delta^\nabla h=\operatorname{tr}_{g,12}(\nabla^2h),\qquad
+ A_g h=\frac12\bigl(\nabla h+(\nabla h)^{\mathsf T}\bigr)
+       -\frac12\operatorname{tr}_g(\nabla h)\,g.
+\]
+Here the first two slots of the total second derivative are traced.
+Thus $A_g h$ is the actual trace-free symmetric first derivative.
+Define the normalized complete dissipation by
+\begin{equation}\label{eq:complete-dissipation}
+ Q_g(h)=\int_\Sigma
+ \left(
+ |\Delta^\nabla h|_g^2+K_g^2|h|_g^2
+ -K_g|\nabla h|_g^2+2K_g|A_g h|_g^2
+ \right)\,d\mu_g .
+\end{equation}
+
+\begin{theorem}\label{thm:dissipation-quadratic}
+For every smooth one-form, the density in \eqref{eq:complete-dissipation}
+is smooth and integrable. Its polarization
+\[
+ B_g(h,k)=\int_\Sigma
+ \left(
+ \langle\Delta^\nabla h,\Delta^\nabla k\rangle_g
+ +K_g^2\langle h,k\rangle_g
+ -K_g\langle\nabla h,\nabla k\rangle_g
+ +2K_g\langle A_g h,A_g k\rangle_g
+ \right)\,d\mu_g
+\]
+is a well-defined symmetric real bilinear form, with $Q_g(h)=B_g(h,h)$.
+In particular, for $c\in\R$,
+\[
+ Q_g(ch)=c^2Q_g(h),\qquad
+ Q_g(h\pm k)=Q_g(h)\pm2B_g(h,k)+Q_g(k),
+\]
+and
+\[
+ Q_g(h+k)+Q_g(h-k)=2Q_g(h)+2Q_g(k).
+\]
+\end{theorem}
+
+\begin{proof}
+Lemma~\ref{lem:canonical-derivatives} supplies the actual smooth first and
+second derivatives. Metric contraction and permutation of covariant slots
+preserve smoothness. The symmetric part has the same metric trace as the
+original tensor; subtracting half this trace times $g$ gives zero trace in
+dimension two. This proves the asserted smooth trace-free symmetric
+construction and its real-linearity.
+
+The curvature and all metric inner products of smooth tensor fields are
+smooth. Hence each displayed density is smooth. Compactness and finiteness
+of Riemannian volume make these densities integrable. The derivative,
+rough-trace and trace-free symmetric operators are real-linear.
+The metric inner product is symmetric bilinear, so each of the four
+terms in $B_g$ is symmetric bilinear in $(h,k)$. Their integrability
+justifies integration of the linearity identities. Evaluation at $h=k$
+gives \eqref{eq:complete-dissipation}; expansion and scalar multiplication
+then give the stated quadratic identities.
+\end{proof}
+
+\begin{corollary}\label{cor:profile-dissipation}
+For the produced rotational metric and every smooth one-form $h$,
+\[
+ Q_g(h)=\int_{S^2}a(z)
+ \left(
+ |\Delta^\nabla h|_g^2+\frac{|h|_g^2}{a(z)^2}
+ -\frac{|\nabla h|_g^2}{a(z)}
+ +\frac{2|A_g h|_g^2}{a(z)}
+ \right)\,d\mu_0.
+\]
+The displayed round-measure integrand is integrable. All operators and
+norms in this formula belong to the same metric $g$.
+\end{corollary}
+
+\begin{proof}
+Substitute $K_g=1/a(z)$ from Theorem~\ref{thm:curvature-profile} and
+$d\mu_g=a(z)\,d\mu_0$ from Theorem~\ref{thm:volume-height}.
+The weighted density is continuous on the compact sphere, which proves
+its integrability against round area.
+\end{proof}
+
 \end{document}
