@@ -1683,8 +1683,232 @@ that form; the covariant derivative of the zero section is zero, so both scalar
 averages vanish. Finally apply Lemma~\ref{lem:scalar-haar-projector} at the poles.
 \end{proof}
 
-The pole values in this section are only the first endpoint facts needed for
-the scalar energy estimate. They do not yet establish integrability of terms
-divided by the vanishing polar weight, nor a sign for the remainder action.
+The pole values in this section are the first endpoint facts needed for
+the scalar energy estimate. We now establish the additional bounds that justify
+division by the vanishing polar weight.
+
+\section{The positive scalar Haar estimate}
+
+\begin{lemma}\label{lem:polar-scalar-geometry}
+The actual map
+\[
+ \Phi(s,\theta)=(\sin s\cos\theta,\sin s\sin\theta,\cos s)
+\]
+is smooth on $\R^2$ with values in the unit sphere, including at $s=0,\pi$.
+Its derivatives $V_s=\partial_s\Phi$ and $V_\theta=\partial_\theta\Phi$ satisfy
+\[
+ g_D(V_s,V_s)=\frac{a(\cos s)^2}{b(\cos s)},\qquad
+ g_D(V_\theta,V_\theta)=b(\cos s)\sin^2s,\qquad
+ g_D(V_s,V_\theta)=0.
+\]
+They form a tangent basis when $\sin s\ne0$. For every smooth scalar $u$, writing
+$y(s,\theta)=u(\Phi(s,\theta))$, its actual differential therefore obeys
+\begin{equation}\label{eq:polar-scalar-norm}
+ |du|_{g_D}^2(\Phi(s,\theta))
+ =\frac{b(\cos s)}{a(\cos s)^2}y_s^2
+       +\frac{y_\theta^2}{b(\cos s)\sin^2s}
+ \qquad(\sin s\ne0).
+\end{equation}
+For every continuous scalar $F$ on the sphere,
+\begin{equation}\label{eq:polar-metric-integration}
+ \int F\,d\mu_{g_D}
+   =\int_0^\pi\int_0^{2\pi}
+       a(\cos s)\sin s\,F(\Phi(s,\theta))\,d\theta\,ds.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The displayed ambient map has norm one and is smooth, so its restriction to
+the sphere is a genuine smooth map. Direct differentiation gives
+\[
+ V_s=(\cos s\cos\theta,\cos s\sin\theta,-\sin s),\quad
+ V_\theta=(-\sin s\sin\theta,\sin s\cos\theta,0).
+\]
+Their round Gram matrix is $\operatorname{diag}(1,\sin^2s)$, while
+$dz(V_s)=-\sin s$ and $dz(V_\theta)=0$. Substitute these into the original
+tensor $b(z)g_{\rm round}+(c(z)/b(z))dz\otimes dz$ and use
+$a^2-b^2=(1-z^2)c$. This proves the three metric evaluations even at the poles.
+Away from the poles, the round Gram matrix proves independence, and dimension
+two gives spanning. Inverting the resulting metric Gram matrix and applying
+the chain rule to $du(V_s)$ and $du(V_\theta)$ proves
+\eqref{eq:polar-scalar-norm}.
+
+For completeness, the volume formula follows without treating the polar map
+as a global one-to-one chart. Rotations preserve $g_D$ and its volume. Fubini,
+justified by continuity on the compact angle interval times the compact sphere,
+therefore gives $\int P_0F\,d\mu_{g_D}=\int F\,d\mu_{g_D}$.
+Every point $x$ lies on the orbit of $\Phi(\arccos z(x),0)$: choose the argument
+of its horizontal complex coordinate. The same assertion holds at the poles
+because their horizontal coordinate is zero. Thus the invariant average is
+the continuous height function
+$H(v)=P_0F(\Phi(\arccos v,0))$ evaluated at $v=z(x)$.
+The established height disintegration gives $2\pi\int_{-1}^1 a(v)H(v)\,dv$.
+Substituting $v=\cos s$ and using the literal normalization of $P_0$ proves
+\eqref{eq:polar-metric-integration}. All integrands used in this argument are
+continuous on their compact domains.
+\end{proof}
+
+\begin{lemma}\label{lem:angular-wirtinger}
+If $f\in C^1(\R)$, $f(2\pi)=f(0)$ and $\int_0^{2\pi}f=0$, then
+\[
+ \int_0^{2\pi}f^2\,d\theta\leq\int_0^{2\pi}(f')^2\,d\theta.
+\]
+\end{lemma}
+
+\begin{proof}
+With normalized Fourier coefficients
+$\widehat f(n)=(2\pi)^{-1}\int_0^{2\pi}f(\theta)e^{-in\theta}\,d\theta$,
+integration by parts and the matching endpoint values give
+$\widehat{f'}(n)=in\widehat f(n)$. The zero mean removes $n=0$.
+Parseval's identity for $L^2$ functions on the circle
+\cite[Corollary 2, p.~5]{jerison-fourier} gives
+\[
+ \frac1{2\pi}\int f^2
+   =\sum_{n\ne0}|\widehat f(n)|^2
+   \leq\sum_{n\in\mathbb Z}|\widehat{f'}(n)|^2
+   =\frac1{2\pi}\int(f')^2.
+\]
+Both functions are in $L^2$ because they are continuous on the compact interval.
+Only the endpoint values of $f$ need agree; no endpoint condition on $f'$ is
+required. The Fourier identities concern the interval representatives of the
+corresponding $L^2$ functions on the circle.
+\end{proof}
+
+\begin{lemma}\label{lem:polar-endpoint-energies}
+Let $y\in C^2(\R^2)$ satisfy $y(0,\theta)=y(\pi,\theta)=0$ for every $\theta$.
+On each compact angular interval there is $C>0$ such that, for $0\leq s\leq\pi$,
+\[
+ |y|\leq C\sin s,\qquad |y_s|\leq C,\qquad |y_\theta|\leq C\sin s.
+\]
+If $w:\R\to\R$ is continuous and positive on $[0,\pi]$ and $W(s)=\sin s\,w(s)$, the
+following functions are integrable on every such polar rectangle:
+\[
+ Wy_s^2,\quad \frac{y^2}{W},\quad \frac{y_\theta^2}{W},\quad
+ \frac{(Wy_s-\cos s\,y)^2}{W},\quad
+ -\sin s\,y^2+2\cos s\,yy_s,\quad
+ \frac{\sin^2s\,y^2}{W},\quad \sin s\,y^2,\quad \cos s\,y^2.
+\]
+The quotients are considered on the open radial interval; their assigned
+endpoint values do not affect the integrals. The boundary primitive
+$\cos s\,y(s,\theta)^2$ tends to zero at both ends.
+\end{lemma}
+
+\begin{proof}
+The first radial derivative and the mixed radial-angular derivative are
+bounded on the compact rectangle. The angular derivative vanishes at both
+radial endpoints because the two boundary slices are identically zero.
+Apply the mean value estimate from the nearer endpoint to $y$ and to
+$y_\theta$. On the northern half, $s\leq(\pi/2)\sin s$; on the southern half,
+$\pi-s\leq(\pi/2)\sin s$. Enlarging one positive constant proves all three
+uniform bounds.
+
+Let $m=\min_{[0,\pi]}w>0$. For either $v=y$ or $v=y_\theta$, the bound
+$|v|\leq C\sin s$ gives
+\[
+ 0\leq\frac{v^2}{\sin s\,w(s)}\leq\frac{C^2}{m}
+ \qquad(0<s<\pi).
+\]
+These measurable quotients are therefore integrable on the finite rectangle.
+The radial, potential and boundary terms are continuous and integrable.
+Multiplication of $y^2/W$ by the bounded factors $\sin^2s$ and $\cos^2s$
+preserves integrability. Finally,
+\[
+ \frac{(Wy_s-\cos s\,y)^2}{W}
+     =Wy_s^2+\cos^2s\,\frac{y^2}{W}-2\cos s\,yy_s
+\]
+proves integrability of the completed square. Continuity and the zero boundary
+values give the stated limits; the uniform bound also controls the boundary
+primitive by $C^2\sin^2s$.
+\end{proof}
+
+\begin{lemma}\label{lem:polar-square-completion}
+Let $y\in C^1(\R)$ vanish at $0$ and $\pi$. Suppose $W>0$ on $(0,\pi)$ and
+both $Wy'^2$ and $y^2/W$ are integrable there. Then the square term below is
+integrable and
+\begin{equation}\label{eq:polar-square-completion}
+ \int_0^\pi\left(Wy'^2+\frac{y^2}{W}-\sin s\,y^2\right)ds
+ =\int_0^\pi\frac{(Wy'-\cos s\,y)^2}{W}\,ds
+   +\int_0^\pi\frac{\sin^2s\,y^2}{W}\,ds.
+\end{equation}
+No derivative or endpoint positivity of $W$ is required.
+\end{lemma}
+
+\begin{proof}
+Expansion of the square and $\sin^2s+\cos^2s=1$ give the pointwise identity
+\[
+ Wy'^2+\frac{y^2}{W}-\sin s\,y^2
+ =\frac{(Wy'-\cos s\,y)^2}{W}
+   +\frac{\sin^2s\,y^2}{W}+(\cos s\,y^2)'.
+\]
+The expanded square is integrable by the two finite-energy hypotheses and
+continuity of $y,y'$. The last derivative is
+$-\sin s\,y^2+2\cos s\,yy'$, a continuous integrable function.
+Its integral is zero by the fundamental theorem of calculus and the two zero
+boundary values. This proves the identity and its positive lower bound after
+dropping the square.
+\end{proof}
+
+\begin{theorem}\label{thm:positive-polar-gap}
+Under the hypotheses of Lemma~\ref{lem:polar-endpoint-energies}, suppose also
+that $y(s,2\pi)=y(s,0)$ and $\int_0^{2\pi}y(s,\theta)\,d\theta=0$ for every $s$.
+Then
+\[
+ \int_0^\pi\int_0^{2\pi}\frac{\sin^2s\,y^2}{W}\,d\theta\,ds
+ \leq\int_0^\pi\int_0^{2\pi}
+    \left(Wy_s^2+\frac{y_\theta^2}{W}-\sin s\,y^2\right)d\theta\,ds.
+\]
+\end{theorem}
+
+\begin{proof}
+All terms are product integrable by Lemma~\ref{lem:polar-endpoint-energies}.
+Consequently almost every radial slice has the finite energies needed for
+Lemma~\ref{lem:polar-square-completion}. Integrate its lower bound in $\theta$
+and apply Fubini. For every interior radial point, Lemma~\ref{lem:angular-wirtinger}
+and $W(s)>0$ give $\int y^2/W\leq\int y_\theta^2/W$ in the angular variable.
+Integrating this comparison in $s$ and adding the common radial and potential
+terms proves the claim. All slice and integral exchanges use the previously
+proved product integrability.
+\end{proof}
+
+\begin{theorem}\label{thm:positive-scalar-haar-gap}
+For the original produced metric $g_D$, every smooth scalar $u$ with $P_0u=0$
+satisfies the positive estimate
+\begin{equation}\label{eq:positive-scalar-haar-gap}
+ \int\left(|du|_{g_D}^2-K_{g_D}u^2\right)d\mu_{g_D}
+       \geq\int\frac{u^2}{b(z)}\,d\mu_{g_D}.
+\end{equation}
+All polar endpoint and integrability conditions follow from these hypotheses.
+No curvature pinching is assumed.
+\end{theorem}
+
+\begin{proof}
+Set $y=u\circ\Phi$ and $w(s)=b(\cos s)/a(\cos s)$.
+The actual global polar map makes $y$ smooth on $\R^2$.
+The condition $P_0u=0$ gives both zero pole values by
+Lemma~\ref{lem:scalar-haar-projector}; hence $y$ has zero radial boundary slices.
+Rotation compatibility of $\Phi$ gives the angular period and zero angular
+integrals directly from the literal definition of $P_0$.
+Positivity and continuity of $a,b$ on the physical height interval make $w$
+continuous and positive, with a positive minimum on $[0,\pi]$.
+Thus every hypothesis, bound and integrability conclusion of
+Theorem~\ref{thm:positive-polar-gap} applies.
+
+By Lemma~\ref{lem:polar-scalar-geometry}, the Dirichlet density times the volume
+Jacobian is $Wy_s^2+y_\theta^2/W$, where $W=\sin s\,b(\cos s)/a(\cos s)$.
+The actual curvature identity $K_{g_D}=1/a(z)$ changes its potential density
+into $\sin s\,y^2$. The right side of \eqref{eq:positive-scalar-haar-gap} has
+polar density $a(\cos s)\sin s\,y^2/b(\cos s)=\sin^2s\,y^2/W$.
+The exact volume formula and Theorem~\ref{thm:positive-polar-gap} therefore give
+\eqref{eq:positive-scalar-haar-gap}. The intrinsic densities are continuous on
+the compact sphere, and the polar densities are integrable by the established
+endpoint estimates. No expression is evaluated by division at a geometric pole.
+\end{proof}
+
+\begin{thebibliography}{1}
+\bibitem{jerison-fourier}
+D.~Jerison, \emph{Fourier Series, Part 1}, MIT 18.103 Fourier Analysis,
+Fall 2013, Corollary~2, p.~5. MIT OpenCourseWare.
+\href{https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/1c196caa6307e0be46456cf6dc76b543_MIT18_103F13_fseries1.pdf}{Lecture notes}.
+\end{thebibliography}
 
 \end{document}

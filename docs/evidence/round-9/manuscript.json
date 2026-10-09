@@ -1,0 +1,15 @@
+{
+  "source_sha256": "29e8917191a99d1297a99d45d2fda64cb30143644bfa7f5a07dcb9277d5599f1",
+  "theorem_map_sha256": "fcf2c99c6436cf3caa5b3ae947497eb55c6cece6323d3ef9f61f49936224a642",
+  "labels": 98,
+  "references": 108,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round8 accepted; six new positive scalar estimate claims pending configured outer review",
+  "citation_verification": "MIT OCW 18.103 Fall2013 Fourier Series Part1, Corollary2 page5 inspected at official PDF; native Parseval proof remains axiom-free beyond ordinary foundations"
+}

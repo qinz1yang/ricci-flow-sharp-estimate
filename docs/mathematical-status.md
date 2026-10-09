@@ -24,8 +24,8 @@ split are now native. Global smooth invariant-form classification and its exact
 Haar/zonal action consumer are also native. Constructive trace/curl scalarization
 of the same complete action is now native. Actual trace/curl scalar Haar
 compatibility, zero angular means and pole vanishing for the original remainder
-are native. The weighted endpoint/integrability and positive scalar estimate,
-nonzonal positivity/equality, CK and separation remain open.
+are native. The genuine polar endpoint/integrability and positive scalar Haar
+estimate are now native as well. Nonzonal positivity/equality, CK and separation remain open.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
@@ -35,7 +35,8 @@ passed Round 4 review at `4cb46f6`; the meridional/zonal layer passed Round 5
 review at `da1dd90`. The Haar projection/split layer passed Round 6 review
 at `43111f9`.
 The global invariant-form classification layer passed Round 7 review at `8765255`.
-The new constructive scalarization and scalar Haar layers await independent review.
+The scalarization and scalar Haar layers passed Round 8 independent review at `659006b`.
+The new positive scalar estimate layer awaits independent review.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -58,7 +59,7 @@ isometry used for the two zonal components.
 
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
-| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Partial: exact zonal reduction, actual smooth Haar projection/complete split, global invariant classification, constructive original-action scalarization and actual trace/curl scalar Haar compatibility are native. The weighted endpoint/integrability and positive scalar estimate, nonzonal positivity and equality remain required. |
+| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Partial: exact zonal reduction, actual Haar projection/split, invariant classification, original-action scalarization, scalar Haar compatibility and positive scalar energy estimate are native. Unconditional nonzonal positivity and zero-remainder equality remain required. |
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
@@ -76,7 +77,8 @@ area, intrinsic curvature, global forms and canonical dissipation. Its exact
 meridional/zonal reduction and intrinsic symmetry proofs are also present.
 The smooth Haar projector, complete split and global smooth invariant-form
 classification, constructive scalarization and scalar Haar compatibility are also
-present. The remaining positive scalar estimate/nonzonal, CK, approximation and separation sections are still absent
+present, together with the positive scalar estimate and its endpoint/integrability proofs.
+The remaining nonzonal sign/equality, CK, approximation and separation sections are still absent
 as established claims.
 
 ## Shared dependency graph
@@ -129,7 +131,7 @@ flowchart TD
   AREA --> SH
   SH --> Q
   ACT --> Q
-  W[Positive scalar Haar gap] --> Z[Zero remainder iff zero form]
+  W[Positive scalar Haar gap with endpoint bounds: native] --> Z[Zero remainder iff zero form]
   W --> Q
   Q --> Z
   R --> CK[Sharp CK threshold and smooth equality]
@@ -150,12 +152,12 @@ Each box has one mathematical role; shared nodes are not reimplemented per
 headline. The analytic stability layer now uses actual interval means and primitives,
 the full normalized lower-obstacle weight, and the true calibrated deficit. Its
 general anchoring lemma derives every product's integrability from compact-interval
-continuity. The next native frontier is the polar/angular positive estimate with
-its weighted endpoint and integrability laws, and unconditional
-remainder positivity/equality. The actual normalized projector, canonical
+continuity. The next native frontier is unconditional remainder positivity/equality.
+The actual normalized projector, canonical
 derivatives, full polarized split, global invariant classification and literal
-original-action scalarization, scalar Haar compatibility and scalar pole values
-are already available. Geometry proceeds through
+original-action scalarization, scalar Haar compatibility, scalar pole values and
+the positive scalar estimate with its weighted integrability laws are already
+available. Geometry proceeds through
 real producers, not by moving the historical aggregate into the new project.
 
 ## Corrected conventions and load-bearing risks

@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all eighty-two current modules. Importing it is required
+The root aggregate is a real consumer of all ninety-four current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -107,11 +107,29 @@ reusing 72 unchanged accepted source elaborations and freshly checking ten new
 sources. The root and all declaration/signature/axiom drivers run again. The
 1543 defining-module declarations include 620 private declarations; every
 transitive closure has only permitted foundational axioms. All 291 required
-selectors and 388 signature queries are covered. The receipt binds 87 inputs,
+selectors and 390 signature queries are covered. The receipt binds 87 inputs,
 88 command outputs and three generated drivers; source and declaration outputs
-are silent. Six conventional scalarization claims and their mapping await
-independent review. Scalar Haar compatibility and its positive estimate,
-unconditional remainder sign/equality, the later CK/separation suite and final
-typesetting remain open.
+are silent. The [scalar Haar receipt](evidence/round-8-haar-scalars/receipt.json)
+extends this to 86 modules and 1609 declarations, including 626 private declarations,
+with 323 required selectors and 422 signature queries. It reuses 82 unchanged
+source elaborations and freshly checks four new modules; 91 inputs, 92 outputs
+and three drivers are fingerprinted. Both layers and their nine conventional
+claims passed Round 8 independent review at `659006b`. Historical receipts remain
+unchanged; the earlier 388-query prose omitted two multiline signature commands.
+
+The [positive scalar estimate receipt](evidence/round-9/receipt.json),
+[axiom closure](evidence/round-9/axioms.txt), and
+[exact signatures](evidence/round-9/signatures.txt) cover all 94 modules.
+The 86 accepted source elaborations are reused with verified provenance, and
+eight new sources are freshly elaborated. The aggregate and all declaration,
+signature and transitive-axiom drivers run. All 1748 declarations, including
+705 private declarations, have only permitted foundational axioms. All 363
+required selectors and 462 signature queries are covered; 99 input hashes,
+100 output hashes and three driver hashes bind the evidence. Source and
+declaration-linter outputs are silent. Six new conventional claims and their
+exact mappings await independent review. The positive estimate retains the
+original metric/differential/volume and derives every weighted integrability
+condition internally. Unconditional remainder sign/equality, the later
+CK/separation suite and actual typesetting remain open.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

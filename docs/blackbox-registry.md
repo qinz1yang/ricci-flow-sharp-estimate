@@ -2,14 +2,16 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All eighty-two currently checked analytic, variational and geometric modules depend transitively only on
+All ninety-four currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-8/axioms.txt) covers 1543 declarations.
+The [current native report](evidence/round-9/axioms.txt) covers 1748 declarations.
+The [accepted Round 8 continuation](evidence/round-8-haar-scalars/axioms.txt)
+covers the preceding 86-module, 1609-declaration layer at `659006b`.
 This includes the released Hadamard factorization and smooth metric construction
 as actual transitive dependencies of the pole and sphere-metric producers. It
 also checks the actual curvature, local pullback, coordinate and measure dependencies.
@@ -40,6 +42,21 @@ Ricci identity, surface contractions, and the derivative norm splitting. These
 prove the literal original-action identity; no scalarization datum or substitute
 scalar action is assumed. The historical convenience scalarization axiom is not
 imported or used. The rotational consumer derives its area and curvature from D.
+The accepted scalar Haar layer additionally checks same-map trace/curl naturality,
+actual circle preservation of area, and literal scalar averaging, including
+zero means and pole values of the original remainder.
+The new positive scalar layer checks the native Fourier/Parseval dependency,
+genuine polar maps and derivatives, metric inverse Gram matrix, actual volume
+conversion, uniform C2 endpoint bounds, bounded-quotient integrability, the
+weighted square completion and Fubini. The final scalar headline supplies no
+coordinate, finite-energy or equivalent inequality premise.
+
+The manuscript cites David Jerison's MIT 18.103 Fall 2013 notes,
+[*Fourier Series, Part 1*, Corollary 2, p. 5](https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/1c196caa6307e0be46456cf6dc76b543_MIT18_103F13_fseries1.pdf),
+for the conventional Parseval formula. The exact source was inspected. This is
+a literature citation, not a new formal blackbox: the native dependency is
+Mathlib's proved `hasSum_sq_fourierCoeffOn`, with its actual transitive closure
+included in the report.
 
 The unformalized derivations and historical reference statements are not
 blackboxes and are not imported assumptions. Their native proof obligations

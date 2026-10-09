@@ -101,6 +101,14 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalAreaInvariance",
     "RicciFlowSharpEstimate.Geometry.RotationalScalarAverage",
     "RicciFlowSharpEstimate.Geometry.RotationalScalarCompatibility",
+    "RicciFlowSharpEstimate.Analysis.CircleWirtinger",
+    "RicciFlowSharpEstimate.Analysis.PolarEndpointBounds",
+    "RicciFlowSharpEstimate.Analysis.PolarSquareCompletion",
+    "RicciFlowSharpEstimate.Analysis.PolarScalarGap",
+    "RicciFlowSharpEstimate.Geometry.RotationalPolarCoordinates",
+    "RicciFlowSharpEstimate.Geometry.RotationalPolarDifferential",
+    "RicciFlowSharpEstimate.Geometry.RotationalPolarIntegration",
+    "RicciFlowSharpEstimate.Geometry.RotationalScalarGap",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -435,7 +443,47 @@ SELECTOR = r"""
       poleData ++ `rotationalScalarAverage_oneFormTrace_remainder,
       poleData ++ `rotationalScalarAverage_oneFormCurl_remainder,
       poleData ++ `oneFormTrace_remainder_eq_zero_at_pole,
-      poleData ++ `oneFormCurl_remainder_eq_zero_at_pole
+      poleData ++ `oneFormCurl_remainder_eq_zero_at_pole,
+      analysis ++ `integral_sq_le_deriv_sq_of_periodic_mean_zero,
+      analysis ++ `contDiff_deriv_fst,
+      analysis ++ `contDiff_deriv_snd,
+      analysis ++ `exists_pos_polar_endpoint_bounds,
+      analysis ++ `intervalIntegrable_polar_square,
+      analysis ++ `integral_polar_square_completion,
+      analysis ++ `integral_weighted_sin_sq_le_polar_energy,
+      analysis ++ `integrable_polar_energy_terms,
+      analysis ++ `integral_polar_energy_ge_of_angular_mean_zero,
+      analysis ++ `tendsto_polar_boundary_at_endpoints,
+      geo ++ `polarSpherePoint,
+      geo ++ `polarSpherePoint_coe,
+      geo ++ `sphereHeight_polarSpherePoint,
+      geo ++ `polarSpherePoint_contMDiff,
+      geo ++ `polarSpherePoint_periodic,
+      geo ++ `angleRotation_polarSpherePoint,
+      geo ++ `polarSpherePoint_zero,
+      geo ++ `polarSpherePoint_pi,
+      geo ++ `polarRadialVelocity,
+      geo ++ `polarAngularVelocity,
+      geo ++ `polarRadialVelocity_dIncl,
+      geo ++ `polarAngularVelocity_dIncl,
+      geo ++ `polarVelocities_linearIndependent,
+      geo ++ `polarVelocities_span,
+      geo ++ `polarTangentBasis,
+      geo ++ `polarTangentBasis_zero,
+      geo ++ `polarTangentBasis_one,
+      geo ++ `exists_polarSpherePoint_arccos,
+      geo ++ `contDiff_scalar_polar,
+      geo ++ `differential1FormFun_polarRadialVelocity,
+      geo ++ `differential1FormFun_polarAngularVelocity,
+      geo ++ `scalar_polar_endpoint_bounds,
+      geo ++ `scalar_polar_boundary_limits,
+      poleData ++ `metric_inner_polarRadialVelocity,
+      poleData ++ `metric_inner_polarAngularVelocity,
+      poleData ++ `metric_inner_polarRadialAngular,
+      poleData ++ `normSq0S_polar_covector,
+      poleData ++ `normSq0S_differential1FormFun_polar,
+      poleData ++ `integral_polar_metric,
+      poleData ++ `integral_scalar_energy_ge_of_rotationalScalarAverage_eq_zero
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -1126,6 +1174,86 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormTrace_remainder_eq_zero_at_pole
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormCurl_remainder_eq_zero_at_pole
+open RicciFlowSharpEstimate.Analysis in
+#check integral_sq_le_deriv_sq_of_periodic_mean_zero
+open RicciFlowSharpEstimate.Analysis in
+#check contDiff_deriv_fst
+open RicciFlowSharpEstimate.Analysis in
+#check contDiff_deriv_snd
+open RicciFlowSharpEstimate.Analysis in
+#check exists_pos_polar_endpoint_bounds
+open RicciFlowSharpEstimate.Analysis in
+#check intervalIntegrable_polar_square
+open RicciFlowSharpEstimate.Analysis in
+#check integral_polar_square_completion
+open RicciFlowSharpEstimate.Analysis in
+#check integral_weighted_sin_sq_le_polar_energy
+open RicciFlowSharpEstimate.Analysis in
+#check integrable_polar_energy_terms
+open RicciFlowSharpEstimate.Analysis in
+#check integral_polar_energy_ge_of_angular_mean_zero
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_polar_boundary_at_endpoints
+open RicciFlowSharpEstimate.Geometry in
+#check polarSpherePoint
+open RicciFlowSharpEstimate.Geometry in
+#check polarSpherePoint_coe
+open RicciFlowSharpEstimate.Geometry in
+#check sphereHeight_polarSpherePoint
+open RicciFlowSharpEstimate.Geometry in
+#check polarSpherePoint_contMDiff
+open RicciFlowSharpEstimate.Geometry in
+#check polarSpherePoint_periodic
+open RicciFlowSharpEstimate.Geometry in
+#check angleRotation_polarSpherePoint
+open RicciFlowSharpEstimate.Geometry in
+#check polarSpherePoint_zero
+open RicciFlowSharpEstimate.Geometry in
+#check polarSpherePoint_pi
+open RicciFlowSharpEstimate.Geometry in
+#check polarRadialVelocity
+open RicciFlowSharpEstimate.Geometry in
+#check polarAngularVelocity
+open RicciFlowSharpEstimate.Geometry in
+#check polarRadialVelocity_dIncl
+open RicciFlowSharpEstimate.Geometry in
+#check polarAngularVelocity_dIncl
+open RicciFlowSharpEstimate.Geometry in
+#check polarVelocities_linearIndependent
+open RicciFlowSharpEstimate.Geometry in
+#check polarVelocities_span
+open RicciFlowSharpEstimate.Geometry in
+#check polarTangentBasis
+open RicciFlowSharpEstimate.Geometry in
+#check polarTangentBasis_zero
+open RicciFlowSharpEstimate.Geometry in
+#check polarTangentBasis_one
+open RicciFlowSharpEstimate.Geometry in
+#check exists_polarSpherePoint_arccos
+open RicciFlowSharpEstimate.Geometry in
+#check contDiff_scalar_polar
+open RicciFlowSharpEstimate.Geometry in
+#check differential1FormFun_polarRadialVelocity
+open RicciFlowSharpEstimate.Geometry in
+#check differential1FormFun_polarAngularVelocity
+open RicciFlowSharpEstimate.Geometry in
+#check scalar_polar_endpoint_bounds
+open RicciFlowSharpEstimate.Geometry in
+#check scalar_polar_boundary_limits
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metric_inner_polarRadialVelocity
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metric_inner_polarAngularVelocity
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metric_inner_polarRadialAngular
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check normSq0S_polar_covector
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check normSq0S_differential1FormFun_polar
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check integral_polar_metric
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check integral_scalar_energy_ge_of_rotationalScalarAverage_eq_zero
 """
 
 

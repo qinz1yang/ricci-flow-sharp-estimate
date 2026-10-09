@@ -8,7 +8,8 @@ the genuine smooth Haar projector and complete action split, and global smooth
 invariant-form classification with its Haar/zonal action consumer, and constructive
 trace/curl scalarization of the original complete action, and scalar Haar
 compatibility with zero angular means and pole values for the actual remainder.
-The positive scalar estimate, nonzonal sign/equality, CK and separation
+The positive scalar estimate and its polar endpoint/integrability proofs are now
+included. Nonzonal sign/equality, CK and separation
 sections remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
@@ -20,7 +21,8 @@ section/derivative/action layer passed Round 4 review at `4cb46f6`.
 The meridional/zonal reduction and symmetry layer passed Round 5 review at `da1dd90`.
 The Haar projection/split layer passed Round 6 review at `43111f9`.
 The global invariant-form classification layer passed Round 7 review at `8765255`.
-The new constructive scalarization and scalar Haar layers require their own review.
+The constructive scalarization and scalar Haar layers passed Round 8 review at `659006b`.
+The new positive scalar estimate layer requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -94,7 +96,12 @@ The new constructive scalarization and scalar Haar layers require their own revi
 | Same-map trace/curl naturality and actual rotation preservation of area | `Geometry.oneFormTrace_diffeomorphTensorPullback`, `oneFormCurl_diffeomorphTensorPullback` in `Geometry/OneFormScalarNaturality.lean`; `RotationalProfile.PoleData.diffeomorphTensorPullback_areaForm_circleSphereDiffeo` in `Geometry/RotationalAreaInvariance.lean` | Metric, area and one-form use the same derivative pullback. The circle preserves the literal produced area tensor, including the poles. |
 | Actual normalized scalar Haar projection and pole evaluation | `Geometry.rotationalScalarAverage`, `rotationalScalarAverage_contMDiff`, `rotationalScalarAverage_idempotent`, `rotationalScalarAverage_eq_at_pole`, `rotationalScalarAverage_eq_zero_at_pole` in `Geometry/RotationalScalarAverage.lean` | Literal normalized angle integral for the same action; actual integrability for add/sub, smoothness, invariance and constants. The pole condition is height squared equal to one. |
 | Actual trace/curl averaging and zero scalar means of the original remainder | `Geometry.RotationalProfile.PoleData.oneFormTrace_rotationalAverage`, `oneFormCurl_rotationalAverage`, `rotationalScalarAverage_oneFormTrace_remainder`, `rotationalScalarAverage_oneFormCurl_remainder`, `oneFormTrace_remainder_eq_zero_at_pole`, `oneFormCurl_remainder_eq_zero_at_pole` in `Geometry/RotationalScalarCompatibility.lean` | Only D and the original smooth h; canonical derivative contractions commute with the existing Haar producer. No supplied zero-mean or pinching premise. |
-| Positive scalar estimate, unconditional nonzonal positivity and zero-remainder equality | No native final declaration yet | Mandatory geometric dependencies; zero angular means and pole values alone do not supply weighted endpoint integrability or a remainder sign. |
+| Actual polar map, tangent basis and metric/differential conversion | `Geometry.polarSpherePoint_coe`, `polarSpherePoint_contMDiff`, both included-velocity laws, `polarTangentBasis`, `exists_polarSpherePoint_arccos` in `Geometry/RotationalPolarCoordinates.lean`; `RotationalProfile.PoleData.normSq0S_differential1FormFun_polar` in `Geometry/RotationalPolarDifferential.lean` | The same actual sphere map, genuine first derivatives and existing D.metric; all-s metric coefficients, basis only where sin is nonzero, and orbit coverage including both poles. |
+| Polar integration of the original metric volume | `Geometry.RotationalProfile.PoleData.integral_polar_metric` in `Geometry/RotationalPolarIntegration.lean` | Every continuous scalar; actual rotation invariance, compact Fubini, height disintegration and cosine substitution derive the Jacobian a(cos s) sin s. |
+| Sharp angular comparison, uniform endpoint bounds and weighted square completion | `Analysis.integral_sq_le_deriv_sq_of_periodic_mean_zero`, `exists_pos_polar_endpoint_bounds`, `intervalIntegrable_polar_square`, `integral_polar_square_completion` in the corresponding `Analysis/CircleWirtinger.lean`, `PolarEndpointBounds.lean`, `PolarSquareCompletion.lean` | Natural C1/C2 inputs. All Fourier L2 conditions are derived; positivity of W is only interior and the square's integrability is derived from its two finite energies. |
+| Product integrability and positive polar comparison | `Analysis.integrable_polar_energy_terms`, `integral_polar_energy_ge_of_angular_mean_zero`, `tendsto_polar_boundary_at_endpoints` in `Analysis/PolarScalarGap.lean` | Eight actual product-integrability conclusions derived from C2 and zero endpoints; sharp comparison with no supplied finite-energy premise. |
+| Positive scalar Haar estimate for the produced metric | `Geometry.scalar_polar_endpoint_bounds`, `scalar_polar_boundary_limits`; `Geometry.RotationalProfile.PoleData.integral_scalar_energy_ge_of_rotationalScalarAverage_eq_zero` in `Geometry/RotationalScalarGap.lean` | Only D, the original smooth u and its literal scalar-average-zero condition. Same metric/differential/volume, positive right side integral u²/b(height), no pinching or supplied coordinate/integrability conclusions. |
+| Unconditional nonzonal positivity and zero-remainder equality | No native final declaration yet | Next mandatory consumers of the actual scalarization and positive scalar estimate. |
 | Genuine smooth tensor pullback and canonical derivative/action naturality | `Geometry.diffeomorphTensorPullback_apply`, identity/composition/inverse laws, `metricNabla0S_diffeomorphTensorPullback`, `metricNabla0S_twice_diffeomorphTensorPullback`, `roughLap0SField_diffeomorphTensorPullback`, `oneFormDissipation_diffeomorphTensorPullback` in `Geometry/OneFormDissipationNaturality.lean` | The actual derivative acts in every slot; same-map metric/tensor transport, including orientation-reversing diffeomorphisms. |
 | Actual meridian-reflection orthogonality | `Geometry.meridianReflectionSphereDiffeo_coe`, `RotationalProfile.PoleData.pullbackMetric_meridianReflectionSphereDiffeo`, `oneFormDissipationPairing_meridional_azimuthal`, `oneFormDissipation_meridional_add_azimuthal` | Reflection preserves height, fixes M and reverses Z; full four-term pairing, without equatorial symmetry. |
 | Explicit smooth metric area form and canonical parallelness | `Geometry.roundSphereAreaForm_apply`; `RotationalProfile.PoleData.areaForm_apply`, `areaForm_unit_on_orthonormal`, `areaForm_normSq`, `metricNabla0S_areaForm` in `Geometry/RotationalAreaForm.lean` | Literal profile-scaled ambient determinant; native parallelness from alternation and constant norm, not a supplied jet. |
@@ -147,6 +154,12 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:rotation-area-invariance` | Both round and D-bound native circle/angle area pullback theorems in `Geometry/RotationalAreaInvariance.lean` |
 | `lem:scalar-haar-projector` | Literal `Geometry.rotationalScalarAverage`, its smoothness, conditional add/sub, scaling/constant, two angle invariance, fixed-point/idempotence and pole-evaluation laws in `Geometry/RotationalScalarAverage.lean` |
 | `thm:scalar-haar-compatibility` | Same-map metric pairing, trace and actual trace/curl naturality in `Geometry/OneFormScalarNaturality.lean`; all contraction/average, scalar rotation, zero-mean remainder and pole-zero theorems in `Geometry/RotationalScalarCompatibility.lean` |
+| `lem:polar-scalar-geometry` | Actual producer, derivatives, metric Gram, basis and orbit-coverage laws in `Geometry/RotationalPolarCoordinates.lean`; actual differential/norm laws in `Geometry/RotationalPolarDifferential.lean`; `RotationalProfile.PoleData.integral_polar_metric` |
+| `lem:angular-wirtinger` | `Analysis.integral_sq_le_deriv_sq_of_periodic_mean_zero`, using the native Fourier derivative multiplier and Parseval theorem with derived L2 hypotheses |
+| `lem:polar-endpoint-energies` | `Analysis.exists_pos_polar_endpoint_bounds`, both joint partial-regularity helpers, `integrable_polar_energy_terms`, `tendsto_polar_boundary_at_endpoints` |
+| `lem:polar-square-completion` | `Analysis.intervalIntegrable_polar_square`, `integral_polar_square_completion`, `integral_weighted_sin_sq_le_polar_energy`; actual boundary derivative and FTC in the proof |
+| `thm:positive-polar-gap` | `Analysis.integral_polar_energy_ge_of_angular_mean_zero`, deriving all finite energies and Fubini prerequisites internally |
+| `thm:positive-scalar-haar-gap` | `Geometry.RotationalProfile.PoleData.integral_scalar_energy_ge_of_rotationalScalarAverage_eq_zero`, with actual coordinate/metric/measure conversion and native endpoint/mean derivations; K=1/a from the accepted curvature theorem |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

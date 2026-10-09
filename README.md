@@ -17,9 +17,12 @@ orthogonality and parallel Hodge rotation. The genuine smooth Haar projector,
 canonical-derivative intertwining and complete action split are also native.
 Global smooth invariant-form classification and its actual Haar/zonal action
 consumer are now native, including both poles. Constructive trace/curl
-scalarization of that same complete action is now native as well. Scalar Haar
-compatibility and its positive gap, nonzonal positivity/equality, geometric
-sharpness and separation remain open.
+scalarization of that same complete action and actual scalar Haar compatibility
+passed Round 8 independent review at `659006b`.
+The positive scalar Haar estimate is now native, with actual polar coordinates,
+uniform endpoint bounds and internally proved weighted integrability. Its new
+layer awaits independent review. Nonzonal positivity/equality, geometric
+CK sharpness and structural separation remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.
