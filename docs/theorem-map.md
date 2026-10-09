@@ -5,8 +5,9 @@ It contains the variational solution, explicit L² stability, hemisphere symmetr
 smooth balanced-profile metric construction, cylinder pullback, intrinsic curvature,
 volume/height identities, global forms, the canonical complete action, its exact zonal reduction,
 the genuine smooth Haar projector and complete action split, and global smooth
-invariant-form classification with its Haar/zonal action consumer.
-Scalarization/nonzonal positivity, CK and separation
+invariant-form classification with its Haar/zonal action consumer, and constructive
+trace/curl scalarization of the original complete action.
+Scalar Haar compatibility/positivity, CK and separation
 sections remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
@@ -17,7 +18,8 @@ the curvature/volume layer passed Round 3 review at `0a0b115`, and the
 section/derivative/action layer passed Round 4 review at `4cb46f6`.
 The meridional/zonal reduction and symmetry layer passed Round 5 review at `da1dd90`.
 The Haar projection/split layer passed Round 6 review at `43111f9`.
-The new global invariant-form classification layer requires its own review.
+The global invariant-form classification layer passed Round 7 review at `8765255`.
+The new constructive scalarization layer requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -83,7 +85,12 @@ The new global invariant-form classification layer requires its own review.
 | Actual signed pole charts and invariant pullback coefficients | `Geometry.stereoPoint`, `stereoPoint_planeRotate`, both inverse laws, `stereoPoint_dIncl_mfderiv`, `stereoPoint_mfderiv_surjective`, height/azimuthal pullback laws in `Geometry/RotationalStereographic.lean`; `exists_smooth_stereographic_coefficients` in `Geometry/RotationalInvariantPoleForms.lean` | Same sphere/action/form, actual map derivatives, both poles, and globally smooth radial coefficient producers. |
 | Global invariant height profiles and original zonal section equality | `Geometry.exists_smooth_height_azimuthal_profiles` in `Geometry/RotationalInvariantProfiles.lean`; `RotationalProfile.PoleData.exists_smooth_zonal_decomposition_of_rotationInvariant` in `Geometry/RotationalInvariantClassification.lean`; `Analysis.exists_contDiff_mul_eq_on_Icc` in `Analysis/SmoothQuotient.lean` | Only original smooth h and actual circle invariance; global smooth probes and literal original M/Z section equality. Positivity outside the physical interval is not assumed. |
 | Classification of the actual average and its complete zonal action | `Geometry.RotationalProfile.PoleData.exists_smooth_zonal_decomposition_rotationalAverage`, `exists_haar_zonal_dissipation` in `Geometry/RotationalInvariantClassification.lean` | Returned probes are explicitly tied to the same Haar average; original Q equals exact zonal action plus the original remainder action. |
-| Scalarization, unconditional nonzonal positivity and zero-remainder equality | No native final declaration yet | Mandatory geometric dependencies; classification and the pairing split alone give no sign. |
+| Actual trace/curl and surface tensor splitting | `Geometry.oneFormTrace`, `oneFormCurl` and smoothness in `Geometry/OneFormScalars.lean`; `twoTensor_eq_ahlforsPart_add_trace_add_curl`, `normSq0S_twoTensor_eq_ahlforsPart_trace_curl`, `inner0S_ahlforsPart_self` in `Geometry/SurfaceTensorDecomposition.lean` | Actual first metric derivative and supplied unit alternating area tensor; the concrete producer supplies the latter. The existing Ahlfors operator is retained. |
+| Canonical tensor Green identity | `Geometry.integral_inner0S_metricNabla0S_eq_neg_covDiv0SField`, `integral_inner0S_metricNabla0S_eq_neg_roughLap0SField`, `integral_inner0S_roughLap0SField_left_eq_right` in `Geometry/CanonicalTensorIntegration.lean` | Genuine native derivative/divergence/metric pairing and Riemannian volume, via explicit smooth compact tensor bridges; no free jets or supplied integration-by-parts law. |
+| Actual curvature commutator and integrated slot pairing | `Geometry.metricNabla0S_commutator`, `covDiv0SField_gradSlotSwap_commutator_of_finrank_eq_two` in `Geometry/SurfaceCovariantCommutator.lean`; `integral_inner0S_gradSlotSwap` in `Geometry/SurfaceTensorIntegration.lean` | Canonical total realizations, actual Riemann curvature, arbitrary two-tensors and derived integrability; no symmetry or trace-free premise on the input. |
+| Actual derivative norm and skew identities | `Geometry.normSq0S_metricNabla0S_twoTensor_split`, its trace/curl/Ahlfors differential helpers in `Geometry/SurfaceTensorDerivativeDecomposition.lean`; `oneForm_secondDerivative_skew_pairing` in `Geometry/OneFormSecondDerivativeNorm.lean`; general orthonormal contraction laws in `Geometry/TensorOrthonormalContractions.lean` | Same original smooth fields and actual derivatives; area parallelness is derived from unit alternation; the curvature coefficient is exactly `(scalar/2)^2`. |
+| Literal complete-action scalarization | `Geometry.oneFormDissipation_scalarization` in `Geometry/OneFormScalarization.lean`; `Geometry.RotationalProfile.PoleData.oneFormDissipation_scalarization` in `Geometry/RotationalScalarization.lean` | Original Q, existing Ahlfors part, actual trace/curl, coefficients 3 and 1/2, and internally proved integrability. The D-only consumer supplies its actual area and K=1/a. |
+| Scalar Haar compatibility, positive scalar estimate, unconditional nonzonal positivity and zero-remainder equality | No native final declaration yet | Mandatory geometric dependencies; scalarization by itself supplies no remainder sign. |
 | Genuine smooth tensor pullback and canonical derivative/action naturality | `Geometry.diffeomorphTensorPullback_apply`, identity/composition/inverse laws, `metricNabla0S_diffeomorphTensorPullback`, `metricNabla0S_twice_diffeomorphTensorPullback`, `roughLap0SField_diffeomorphTensorPullback`, `oneFormDissipation_diffeomorphTensorPullback` in `Geometry/OneFormDissipationNaturality.lean` | The actual derivative acts in every slot; same-map metric/tensor transport, including orientation-reversing diffeomorphisms. |
 | Actual meridian-reflection orthogonality | `Geometry.meridianReflectionSphereDiffeo_coe`, `RotationalProfile.PoleData.pullbackMetric_meridianReflectionSphereDiffeo`, `oneFormDissipationPairing_meridional_azimuthal`, `oneFormDissipation_meridional_add_azimuthal` | Reflection preserves height, fixes M and reverses Z; full four-term pairing, without equatorial symmetry. |
 | Explicit smooth metric area form and canonical parallelness | `Geometry.roundSphereAreaForm_apply`; `RotationalProfile.PoleData.areaForm_apply`, `areaForm_unit_on_orthonormal`, `areaForm_normSq`, `metricNabla0S_areaForm` in `Geometry/RotationalAreaForm.lean` | Literal profile-scaled ambient determinant; native parallelness from alternation and constant norm, not a supplied jet. |
@@ -127,6 +134,12 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:stereographic-invariant-form` | Actual producers, both inverse laws, derivative/bijectivity and covector evaluations in `Geometry/RotationalStereographic.lean`; `Geometry.exists_smooth_stereographic_coefficients` |
 | `thm:invariant-one-form-classification` | `Geometry.exists_smooth_height_azimuthal_profiles`; `Analysis.exists_contDiff_mul_eq_on_Icc`; `Geometry.RotationalProfile.PoleData.exists_smooth_zonal_decomposition_of_rotationInvariant` |
 | `cor:haar-zonal-action` | `Geometry.RotationalProfile.PoleData.exists_smooth_zonal_decomposition_rotationalAverage`, `exists_haar_zonal_dissipation`, reusing the accepted actual Haar split and exact zonal action |
+| `lem:surface-tensor-splitting` | The three surface tensor decomposition theorems and `normSq0S_metricNabla0S_twoTensor_split`; actual differential trace/pairing and Ahlfors derivative laws; generic parallelness in `AlternatingSurfaceTensors.lean` |
+| `lem:canonical-tensor-green` | The actual compact tensor/derivative/divergence/inner bridges and all three integral headlines in `Geometry/CanonicalTensorIntegration.lean` |
+| `lem:surface-contracted-commutator` | `Geometry.metricNabla0S_commutator`, `covDiv0SField_gradSlotSwap_commutator_of_finrank_eq_two`, `integral_inner0S_gradSlotSwap` |
+| `lem:one-form-skew-pairing` | `Geometry.oneForm_secondDerivative_skew_pairing`, using actual rank-one Ricci commutation and general orthonormal contraction theorems |
+| `thm:complete-scalarization` | `Geometry.oneFormDissipation_scalarization`; the intermediate second-derivative energy identity is its native skew-pairing/integration-by-parts combination |
+| `cor:rotational-scalarization` | `Geometry.RotationalProfile.PoleData.oneFormDissipation_scalarization`, reusing the actual area producer and global curvature law for the same metric |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

@@ -87,6 +87,16 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalInvariantPoleForms",
     "RicciFlowSharpEstimate.Geometry.RotationalInvariantProfiles",
     "RicciFlowSharpEstimate.Geometry.RotationalInvariantClassification",
+    "RicciFlowSharpEstimate.Geometry.OneFormScalars",
+    "RicciFlowSharpEstimate.Geometry.TensorOrthonormalContractions",
+    "RicciFlowSharpEstimate.Geometry.SurfaceTensorDecomposition",
+    "RicciFlowSharpEstimate.Geometry.CanonicalTensorIntegration",
+    "RicciFlowSharpEstimate.Geometry.SurfaceCovariantCommutator",
+    "RicciFlowSharpEstimate.Geometry.OneFormSecondDerivativeNorm",
+    "RicciFlowSharpEstimate.Geometry.SurfaceTensorDerivativeDecomposition",
+    "RicciFlowSharpEstimate.Geometry.SurfaceTensorIntegration",
+    "RicciFlowSharpEstimate.Geometry.OneFormScalarization",
+    "RicciFlowSharpEstimate.Geometry.RotationalScalarization",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -358,7 +368,38 @@ SELECTOR = r"""
       geo ++ `exists_smooth_height_azimuthal_profiles,
       poleData ++ `exists_smooth_zonal_decomposition_of_rotationInvariant,
       poleData ++ `exists_smooth_zonal_decomposition_rotationalAverage,
-      poleData ++ `exists_haar_zonal_dissipation
+      poleData ++ `exists_haar_zonal_dissipation,
+      geo ++ `oneFormTrace,
+      geo ++ `oneFormCurl,
+      geo ++ `oneFormTrace_contMDiff,
+      geo ++ `oneFormCurl_contMDiff,
+      geo ++ `inner0S_eq_sum_orthonormal,
+      geo ++ `normSq0S_eq_sum_sq_orthonormal,
+      geo ++ `twoTensor_eq_ahlforsPart_add_trace_add_curl,
+      geo ++ `normSq0S_twoTensor_eq_ahlforsPart_trace_curl,
+      geo ++ `inner0S_ahlforsPart_self,
+      geo ++ `compactTensor0S,
+      geo ++ `compactTensor0S_toSection,
+      geo ++ `compactTensor0S_toFun,
+      geo ++ `metricNabla0S_apply_section,
+      geo ++ `metricNabla0S_apply_cons,
+      geo ++ `covariantDerivative_compactTensor0S,
+      geo ++ `covGrad_compactTensor0S_toSection,
+      geo ++ `covDivergence_compactTensor0S_toSection,
+      geo ++ `tensorInnerPointwise_toRS0_eq_inner0S,
+      geo ++ `integral_inner0S_metricNabla0S_eq_neg_covDiv0SField,
+      geo ++ `integral_inner0S_metricNabla0S_eq_neg_roughLap0SField,
+      geo ++ `integral_inner0S_roughLap0SField_left_eq_right,
+      geo ++ `metricNabla0S_commutator,
+      geo ++ `covDiv0SField_gradSlotSwap_commutator_of_finrank_eq_two,
+      geo ++ `oneForm_secondDerivative_skew_pairing,
+      geo ++ `differential1FormFun_metricTrace_apply,
+      geo ++ `differential1FormFun_inner0S_two_apply,
+      geo ++ `metricNabla0S_ahlforsPart_apply,
+      geo ++ `normSq0S_metricNabla0S_twoTensor_split,
+      geo ++ `integral_inner0S_gradSlotSwap,
+      geo ++ `oneFormDissipation_scalarization,
+      poleData ++ `oneFormDissipation_scalarization
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -923,6 +964,68 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check exists_smooth_zonal_decomposition_rotationalAverage
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check exists_haar_zonal_dissipation
+open RicciFlowSharpEstimate.Geometry in
+#print oneFormTrace
+open RicciFlowSharpEstimate.Geometry in
+#print oneFormCurl
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormTrace_contMDiff
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormCurl_contMDiff
+open RicciFlowSharpEstimate.Geometry in
+#check inner0S_eq_sum_orthonormal
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_eq_sum_sq_orthonormal
+open RicciFlowSharpEstimate.Geometry in
+#check twoTensor_eq_ahlforsPart_add_trace_add_curl
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_twoTensor_eq_ahlforsPart_trace_curl
+open RicciFlowSharpEstimate.Geometry in
+#check inner0S_ahlforsPart_self
+open RicciFlowSharpEstimate.Geometry in
+#print compactTensor0S
+open RicciFlowSharpEstimate.Geometry in
+#check compactTensor0S_toSection
+open RicciFlowSharpEstimate.Geometry in
+#check compactTensor0S_toFun
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_apply_section
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_apply_cons
+open RicciFlowSharpEstimate.Geometry in
+#check covariantDerivative_compactTensor0S
+open RicciFlowSharpEstimate.Geometry in
+#check covGrad_compactTensor0S_toSection
+open RicciFlowSharpEstimate.Geometry in
+#check covDivergence_compactTensor0S_toSection
+open RicciFlowSharpEstimate.Geometry in
+#check tensorInnerPointwise_toRS0_eq_inner0S
+open RicciFlowSharpEstimate.Geometry in
+#check integral_inner0S_metricNabla0S_eq_neg_covDiv0SField
+open RicciFlowSharpEstimate.Geometry in
+#check integral_inner0S_metricNabla0S_eq_neg_roughLap0SField
+open RicciFlowSharpEstimate.Geometry in
+#check integral_inner0S_roughLap0SField_left_eq_right
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_commutator
+open RicciFlowSharpEstimate.Geometry in
+#check covDiv0SField_gradSlotSwap_commutator_of_finrank_eq_two
+open RicciFlowSharpEstimate.Geometry in
+#check oneForm_secondDerivative_skew_pairing
+open RicciFlowSharpEstimate.Geometry in
+#check differential1FormFun_metricTrace_apply
+open RicciFlowSharpEstimate.Geometry in
+#check differential1FormFun_inner0S_two_apply
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_ahlforsPart_apply
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_metricNabla0S_twoTensor_split
+open RicciFlowSharpEstimate.Geometry in
+#check integral_inner0S_gradSlotSwap
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipation_scalarization
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_scalarization
 """
 
 

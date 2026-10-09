@@ -2,14 +2,14 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All seventy-two currently checked analytic, variational and geometric modules depend transitively only on
+All eighty-two currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-7/axioms.txt) covers 1433 declarations.
+The [current native report](evidence/round-8/axioms.txt) covers 1543 declarations.
 This includes the released Hadamard factorization and smooth metric construction
 as actual transitive dependencies of the pole and sphere-metric producers. It
 also checks the actual curvature, local pullback, coordinate and measure dependencies.
@@ -34,6 +34,12 @@ smooth radial/tangential factorization, both-pole height gluing and the final
 original-section equality. The quotient extension requires nonvanishing only
 on the physical interval. No pole regularity or representation is assumed in
 the classification headline, and the Haar/zonal action retains the same probes.
+The scalarization layer checks the actual canonical-to-tensor-connection and
+metric-pairing bridges, closed-manifold integration by parts, the full covariant
+Ricci identity, surface contractions, and the derivative norm splitting. These
+prove the literal original-action identity; no scalarization datum or substitute
+scalar action is assumed. The historical convenience scalarization axiom is not
+imported or used. The rotational consumer derives its area and curvature from D.
 
 The unformalized derivations and historical reference statements are not
 blackboxes and are not imported assumptions. Their native proof obligations

@@ -16,8 +16,10 @@ now have native proofs, including the round value `8*pi/3`, genuine reflection
 orthogonality and parallel Hodge rotation. The genuine smooth Haar projector,
 canonical-derivative intertwining and complete action split are also native.
 Global smooth invariant-form classification and its actual Haar/zonal action
-consumer are now native, including both poles. Scalarization, nonzonal
-positivity/equality, geometric sharpness and separation remain open.
+consumer are now native, including both poles. Constructive trace/curl
+scalarization of that same complete action is now native as well. Scalar Haar
+compatibility and its positive gap, nonzonal positivity/equality, geometric
+sharpness and separation remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

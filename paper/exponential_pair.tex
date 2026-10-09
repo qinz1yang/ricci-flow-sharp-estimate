@@ -1348,4 +1348,230 @@ Theorem~\ref{thm:haar-split}. No sign assertion about the remainder is
 needed for this identity.
 \end{proof}
 
+\section{Scalarization of the complete action}
+
+For a covariant two-tensor $T$, write
+\[
+ \mathsf A_gT=\frac{T+T^{\mathsf T}}2-\frac{\operatorname{tr}_gT}{2}g.
+\]
+Thus the already defined one-form operator is $A_gh=\mathsf A_g(\nabla h)$.
+On an oriented Riemannian surface let $\Omega$ be its smooth unit area tensor,
+normalized by $|\Omega|_g^2=2$. The actual scalar contractions associated with $h$ are
+\[
+ \tau=\operatorname{tr}_g(\nabla h),\qquad
+ \omega=\langle\Omega,\nabla h\rangle_g.
+\]
+In a positively oriented orthonormal frame, $\omega=\nabla_0h_1-\nabla_1h_0$.
+Both functions are smooth, being contractions of the canonical first derivative.
+
+\begin{lemma}\label{lem:surface-tensor-splitting}
+For every smooth covariant two-tensor $T$ on an oriented Riemannian surface,
+put $t=\operatorname{tr}_gT$ and $w=\langle\Omega,T\rangle_g$. Then
+\begin{equation}\label{eq:surface-tensor-split}
+ T=\mathsf A_gT+\frac{t}{2}g+\frac{w}{2}\Omega,\qquad
+ |T|_g^2=|\mathsf A_gT|_g^2+\frac{t^2+w^2}{2},\qquad
+ \langle\mathsf A_gT,T\rangle_g=|\mathsf A_gT|_g^2.
+\end{equation}
+The genuine covariant derivatives satisfy
+\begin{equation}\label{eq:surface-derivative-split}
+ |\nabla T|_g^2=|\nabla(\mathsf A_gT)|_g^2+
+                 \frac{|dt|_g^2+|dw|_g^2}{2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+At a point choose a positively oriented orthonormal basis and write
+$T=\left(\begin{smallmatrix}p&q\\r&s\end{smallmatrix}\right)$.
+Then $t=p+s$, $w=q-r$ and
+\[
+ \mathsf A_gT=\frac12
+ \begin{pmatrix}p-s&q+r\\q+r&s-p\end{pmatrix}.
+\]
+The symmetric trace-free, scalar metric and alternating summands are mutually
+orthogonal, with $|g|^2=|\Omega|^2=2$. This proves
+\eqref{eq:surface-tensor-split} by direct matrix calculation.
+
+The area tensor is parallel: its derivative remains alternating, hence is
+pointwise proportional to $\Omega$; differentiation of its constant squared
+norm makes that proportionality coefficient zero, as in the argument of
+Lemma~\ref{lem:parallel-area}. Metric compatibility and parallelness therefore give
+\[
+ dt(X)=\operatorname{tr}_g(\nabla_XT),\qquad
+ dw(X)=\langle\Omega,\nabla_XT\rangle_g,
+\]
+\[
+ \nabla_X(\mathsf A_gT)(Y,Z)=
+ \frac{(\nabla_XT)(Y,Z)+(\nabla_XT)(Z,Y)}2
+       -\frac{dt(X)}2g(Y,Z).
+\]
+These are the actual tensor derivative rules, including the connection
+correction in each covariant slot. Applying the same orthogonal matrix
+calculation to $\nabla_XT$ and summing over an orthonormal basis for $X$
+proves \eqref{eq:surface-derivative-split}.
+\end{proof}
+
+\begin{lemma}\label{lem:canonical-tensor-green}
+On a closed Riemannian manifold of positive dimension, let $T$ and $V$ be
+smooth covariant tensors of ranks $s$ and $s+1$. Define $\operatorname{div}_gV$
+by tracing the first two slots of $\nabla V$. Then
+\[
+ \int\langle\nabla T,V\rangle_g\,d\mu_g
+       =-\int\langle T,\operatorname{div}_gV\rangle_g\,d\mu_g.
+\]
+Consequently
+\[
+ \int\langle\nabla T,\nabla U\rangle_g\,d\mu_g
+       =-\int\langle T,\Delta^\nabla U\rangle_g\,d\mu_g,
+\]
+and the actual rough Laplacian is formally self-adjoint.
+\end{lemma}
+
+\begin{proof}
+Let $X$ be the metric dual of the smooth covector
+$Y\mapsto\langle T,V(Y,\cdot)\rangle_g$.
+The metric product rule gives
+\[
+ \operatorname{div}_gX=
+       \langle\nabla T,V\rangle_g+
+       \langle T,\operatorname{div}_gV\rangle_g.
+\]
+Every term is smooth and integrable on the compact manifold. Integrate and
+use the divergence theorem on the manifold without boundary.
+Taking $V=\nabla U$ gives the rough-Laplacian formula. Symmetry of the
+metric pairing then gives formal self-adjointness.
+\end{proof}
+
+Write $\mathsf S$ for transposition of the first two slots of a covariant
+three-tensor: $(\mathsf S B)(X,Y,Z)=B(Y,X,Z)$. This slot permutation is
+distinct from the circle-average projector $P$.
+
+\begin{lemma}\label{lem:surface-contracted-commutator}
+On a Riemannian surface, every smooth covariant two-tensor $T$ satisfies
+\begin{equation}\label{eq:surface-contracted-commutator}
+ \operatorname{div}_g(\mathsf S\nabla T)
+    =\nabla(\operatorname{div}_gT)+2K_g\mathsf A_gT.
+\end{equation}
+If the surface is closed, then
+\begin{equation}\label{eq:integrated-slot-pairing}
+ \int\langle\mathsf S\nabla T,\nabla T\rangle_g\,d\mu_g
+   =\int|\operatorname{div}_gT|_g^2\,d\mu_g
+       -2\int K_g|\mathsf A_gT|_g^2\,d\mu_g.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The curvature convention is
+$R(X,Y)Z=K_g(\langle Y,Z\rangle_gX-\langle X,Z\rangle_gY)$.
+In an orthonormal frame normal at the point of calculation, the difference
+of the two differential operators in \eqref{eq:surface-contracted-commutator} is
+\[
+ \sum_i([\nabla_i,\nabla_j]T)_{ik}
+ =-\sum_i T(R(e_i,e_j)e_i,e_k)-\sum_i T(e_i,R(e_i,e_j)e_k).
+\]
+The surface curvature formula reduces this to
+\[
+ K_g\bigl(T_{jk}+T_{kj}-(\operatorname{tr}_gT)g_{jk}\bigr)
+       =2K_g(\mathsf A_gT)_{jk}.
+\]
+Tensoriality makes the result independent of the chosen frame. No symmetry
+or trace-free assumption on $T$ was used.
+
+Apply Lemma~\ref{lem:canonical-tensor-green} first with $V=\mathsf S\nabla T$,
+then with the lower-rank tensor $\operatorname{div}_gT$ and the tensor $T$.
+Substitute \eqref{eq:surface-contracted-commutator}. The first term becomes
+$\int|\operatorname{div}_gT|^2$, while
+$\langle T,\mathsf A_gT\rangle_g=|\mathsf A_gT|^2$ by
+\eqref{eq:surface-tensor-split}. This gives \eqref{eq:integrated-slot-pairing}.
+Smoothness and compactness justify splitting the integrals.
+\end{proof}
+
+\begin{lemma}\label{lem:one-form-skew-pairing}
+For a smooth one-form on a Riemannian surface, its actual second covariant
+derivative $B=\nabla^2h$ obeys
+\[
+ |B|_g^2-\langle\mathsf S B,B\rangle_g=K_g^2|h|_g^2.
+\]
+\end{lemma}
+
+\begin{proof}
+For any three-tensor in an orthonormal two-frame, expansion gives
+\[
+ \sum_{i,j,k}B_{ijk}^2-\sum_{i,j,k}B_{jik}B_{ijk}
+       =(B_{010}-B_{100})^2+(B_{011}-B_{101})^2.
+\]
+For the genuine second derivative, the covector Ricci identity is
+$(\nabla_X\nabla h)(Y,Z)-(\nabla_Y\nabla h)(X,Z)=-h(R(X,Y)Z)$.
+The two differences above are respectively $K_gh(e_1)$ and $-K_gh(e_0)$,
+so their squared sum is exactly $K_g^2|h|_g^2$.
+\end{proof}
+
+\begin{theorem}\label{thm:complete-scalarization}
+On a closed oriented Riemannian surface, every smooth one-form satisfies
+the following identity for the original complete action:
+\begin{equation}\label{eq:complete-scalarization}
+ \begin{split}
+ Q_g(h)={}&\int|\nabla(A_gh)|_g^2\,d\mu_g
+       +3\int K_g|A_gh|_g^2\,d\mu_g\\
+ &+\frac12\left(
+       \int\bigl(|d\tau|_g^2-K_g\tau^2\bigr)\,d\mu_g
+       +\int\bigl(|d\omega|_g^2-K_g\omega^2\bigr)\,d\mu_g
+             \right),
+ \end{split}
+\end{equation}
+where $\tau=\operatorname{tr}_g(\nabla h)$ and
+$\omega=\langle\Omega,\nabla h\rangle_g$ are the actual contractions.
+All terms are integrable. No curvature-sign or pinching hypothesis is required.
+\end{theorem}
+
+\begin{proof}
+Set $N=\nabla h$ and $B=\nabla N$. The divergence of $N$ is the actual
+rough Laplacian $\Delta^\nabla h$. Combining
+Lemmas~\ref{lem:surface-contracted-commutator} and
+\ref{lem:one-form-skew-pairing} gives
+\begin{equation}\label{eq:second-derivative-energy}
+ \int\bigl(|\Delta^\nabla h|_g^2+K_g^2|h|_g^2\bigr)\,d\mu_g
+     =\int|B|_g^2\,d\mu_g+2\int K_g|A_gh|_g^2\,d\mu_g.
+\end{equation}
+Substitution into \eqref{eq:complete-dissipation} yields
+\[
+ Q_g(h)=\int|B|_g^2\,d\mu_g
+           -\int K_g|N|_g^2\,d\mu_g
+           +4\int K_g|A_gh|_g^2\,d\mu_g.
+\]
+The two pointwise identities from Lemma~\ref{lem:surface-tensor-splitting} are
+\[
+ |N|_g^2=|A_gh|_g^2+\frac{\tau^2+\omega^2}{2},\qquad
+ |B|_g^2=|\nabla(A_gh)|_g^2+\frac{|d\tau|_g^2+|d\omega|_g^2}{2}.
+\]
+Inserting them proves \eqref{eq:complete-scalarization}.
+The original fields, their canonical derivatives, the curvature and the
+scalar contractions are smooth. Thus every displayed integrand is continuous
+and integrable on the compact surface, justifying all additions and subtractions.
+\end{proof}
+
+\begin{corollary}\label{cor:rotational-scalarization}
+For the produced metric $g_D$, use the actual area tensor $\Omega_D$ from
+Lemma~\ref{lem:parallel-area}, and define
+$\tau_D=\operatorname{tr}_{g_D}(\nabla h)$ and
+$\omega_D=\langle\Omega_D,\nabla h\rangle_{g_D}$. Every smooth one-form obeys
+\[
+ \begin{split}
+ Q_{g_D}(h)={}&\int|\nabla(A_{g_D}h)|_{g_D}^2\,d\mu_{g_D}
+        +3\int\frac{|A_{g_D}h|_{g_D}^2}{a(z)}\,d\mu_{g_D}\\
+ &+\frac12\left(
+    \int\left(|d\tau_D|_{g_D}^2-\frac{\tau_D^2}{a(z)}\right)\,d\mu_{g_D}
+   +\int\left(|d\omega_D|_{g_D}^2-\frac{\omega_D^2}{a(z)}\right)\,d\mu_{g_D}
+              \right).
+ \end{split}
+\]
+\end{corollary}
+
+\begin{proof}
+The constructed $\Omega_D$ is smooth, alternating and of squared norm two.
+Theorem~\ref{thm:curvature-profile} gives the same metric's curvature
+$K_{g_D}=1/a(z)$ everywhere, including both poles. Apply
+Theorem~\ref{thm:complete-scalarization} to that metric, that area tensor,
+and the original form $h$.
+\end{proof}
+
 \end{document}

@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all seventy-two current modules. Importing it is required
+The root aggregate is a real consumer of all eighty-two current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -100,8 +100,18 @@ seven new sources. The root and all declaration/signature/axiom drivers run agai
 All 1433 defining-module declarations, including 553 private declarations, have
 permitted transitive axioms only. All 260 required selectors and 357 signature
 queries are covered; 77 inputs and 78 command outputs are fingerprinted.
-Source and declaration-linter outputs are silent. Four new conventional claims
-and their exact mapping await independent review. Scalarization, unconditional
-nonzonal sign/equality, the later CK/separation suite and final typesetting remain open.
+Source and declaration-linter outputs are silent. Those four conventional claims
+and their exact mapping passed Round 7 independent review at `8765255`.
+The [scalarization receipt](evidence/round-8/receipt.json) covers 82 modules,
+reusing 72 unchanged accepted source elaborations and freshly checking ten new
+sources. The root and all declaration/signature/axiom drivers run again. The
+1543 defining-module declarations include 620 private declarations; every
+transitive closure has only permitted foundational axioms. All 291 required
+selectors and 388 signature queries are covered. The receipt binds 87 inputs,
+88 command outputs and three generated drivers; source and declaration outputs
+are silent. Six conventional scalarization claims and their mapping await
+independent review. Scalar Haar compatibility and its positive estimate,
+unconditional remainder sign/equality, the later CK/separation suite and final
+typesetting remain open.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

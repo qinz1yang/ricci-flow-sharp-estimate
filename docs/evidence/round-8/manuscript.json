@@ -1,0 +1,12 @@
+{
+  "source_sha256": "04e0a88e43203a475988eccde518bc3ff7dc126da883ca38c9861a80bfa18889",
+  "theorem_map_sha256": "10121bd8142fd27e8a20ea67ec1345b4a57fe8b5e7670626284cdce56303013b",
+  "labels": 83,
+  "references": 93,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round7 accepted; new constructive scalarization claims pending outer review"
+}
