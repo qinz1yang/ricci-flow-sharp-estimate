@@ -6,8 +6,9 @@ smooth balanced-profile metric construction, cylinder pullback, intrinsic curvat
 volume/height identities, global forms, the canonical complete action, its exact zonal reduction,
 the genuine smooth Haar projector and complete action split, and global smooth
 invariant-form classification with its Haar/zonal action consumer, and constructive
-trace/curl scalarization of the original complete action.
-Scalar Haar compatibility/positivity, CK and separation
+trace/curl scalarization of the original complete action, and scalar Haar
+compatibility with zero angular means and pole values for the actual remainder.
+The positive scalar estimate, nonzonal sign/equality, CK and separation
 sections remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
@@ -19,7 +20,7 @@ section/derivative/action layer passed Round 4 review at `4cb46f6`.
 The meridional/zonal reduction and symmetry layer passed Round 5 review at `da1dd90`.
 The Haar projection/split layer passed Round 6 review at `43111f9`.
 The global invariant-form classification layer passed Round 7 review at `8765255`.
-The new constructive scalarization layer requires its own review.
+The new constructive scalarization and scalar Haar layers require their own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -90,7 +91,10 @@ The new constructive scalarization layer requires its own review.
 | Actual curvature commutator and integrated slot pairing | `Geometry.metricNabla0S_commutator`, `covDiv0SField_gradSlotSwap_commutator_of_finrank_eq_two` in `Geometry/SurfaceCovariantCommutator.lean`; `integral_inner0S_gradSlotSwap` in `Geometry/SurfaceTensorIntegration.lean` | Canonical total realizations, actual Riemann curvature, arbitrary two-tensors and derived integrability; no symmetry or trace-free premise on the input. |
 | Actual derivative norm and skew identities | `Geometry.normSq0S_metricNabla0S_twoTensor_split`, its trace/curl/Ahlfors differential helpers in `Geometry/SurfaceTensorDerivativeDecomposition.lean`; `oneForm_secondDerivative_skew_pairing` in `Geometry/OneFormSecondDerivativeNorm.lean`; general orthonormal contraction laws in `Geometry/TensorOrthonormalContractions.lean` | Same original smooth fields and actual derivatives; area parallelness is derived from unit alternation; the curvature coefficient is exactly `(scalar/2)^2`. |
 | Literal complete-action scalarization | `Geometry.oneFormDissipation_scalarization` in `Geometry/OneFormScalarization.lean`; `Geometry.RotationalProfile.PoleData.oneFormDissipation_scalarization` in `Geometry/RotationalScalarization.lean` | Original Q, existing Ahlfors part, actual trace/curl, coefficients 3 and 1/2, and internally proved integrability. The D-only consumer supplies its actual area and K=1/a. |
-| Scalar Haar compatibility, positive scalar estimate, unconditional nonzonal positivity and zero-remainder equality | No native final declaration yet | Mandatory geometric dependencies; scalarization by itself supplies no remainder sign. |
+| Same-map trace/curl naturality and actual rotation preservation of area | `Geometry.oneFormTrace_diffeomorphTensorPullback`, `oneFormCurl_diffeomorphTensorPullback` in `Geometry/OneFormScalarNaturality.lean`; `RotationalProfile.PoleData.diffeomorphTensorPullback_areaForm_circleSphereDiffeo` in `Geometry/RotationalAreaInvariance.lean` | Metric, area and one-form use the same derivative pullback. The circle preserves the literal produced area tensor, including the poles. |
+| Actual normalized scalar Haar projection and pole evaluation | `Geometry.rotationalScalarAverage`, `rotationalScalarAverage_contMDiff`, `rotationalScalarAverage_idempotent`, `rotationalScalarAverage_eq_at_pole`, `rotationalScalarAverage_eq_zero_at_pole` in `Geometry/RotationalScalarAverage.lean` | Literal normalized angle integral for the same action; actual integrability for add/sub, smoothness, invariance and constants. The pole condition is height squared equal to one. |
+| Actual trace/curl averaging and zero scalar means of the original remainder | `Geometry.RotationalProfile.PoleData.oneFormTrace_rotationalAverage`, `oneFormCurl_rotationalAverage`, `rotationalScalarAverage_oneFormTrace_remainder`, `rotationalScalarAverage_oneFormCurl_remainder`, `oneFormTrace_remainder_eq_zero_at_pole`, `oneFormCurl_remainder_eq_zero_at_pole` in `Geometry/RotationalScalarCompatibility.lean` | Only D and the original smooth h; canonical derivative contractions commute with the existing Haar producer. No supplied zero-mean or pinching premise. |
+| Positive scalar estimate, unconditional nonzonal positivity and zero-remainder equality | No native final declaration yet | Mandatory geometric dependencies; zero angular means and pole values alone do not supply weighted endpoint integrability or a remainder sign. |
 | Genuine smooth tensor pullback and canonical derivative/action naturality | `Geometry.diffeomorphTensorPullback_apply`, identity/composition/inverse laws, `metricNabla0S_diffeomorphTensorPullback`, `metricNabla0S_twice_diffeomorphTensorPullback`, `roughLap0SField_diffeomorphTensorPullback`, `oneFormDissipation_diffeomorphTensorPullback` in `Geometry/OneFormDissipationNaturality.lean` | The actual derivative acts in every slot; same-map metric/tensor transport, including orientation-reversing diffeomorphisms. |
 | Actual meridian-reflection orthogonality | `Geometry.meridianReflectionSphereDiffeo_coe`, `RotationalProfile.PoleData.pullbackMetric_meridianReflectionSphereDiffeo`, `oneFormDissipationPairing_meridional_azimuthal`, `oneFormDissipation_meridional_add_azimuthal` | Reflection preserves height, fixes M and reverses Z; full four-term pairing, without equatorial symmetry. |
 | Explicit smooth metric area form and canonical parallelness | `Geometry.roundSphereAreaForm_apply`; `RotationalProfile.PoleData.areaForm_apply`, `areaForm_unit_on_orthonormal`, `areaForm_normSq`, `metricNabla0S_areaForm` in `Geometry/RotationalAreaForm.lean` | Literal profile-scaled ambient determinant; native parallelness from alternation and constant norm, not a supplied jet. |
@@ -140,6 +144,9 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:one-form-skew-pairing` | `Geometry.oneForm_secondDerivative_skew_pairing`, using actual rank-one Ricci commutation and general orthonormal contraction theorems |
 | `thm:complete-scalarization` | `Geometry.oneFormDissipation_scalarization`; the intermediate second-derivative energy identity is its native skew-pairing/integration-by-parts combination |
 | `cor:rotational-scalarization` | `Geometry.RotationalProfile.PoleData.oneFormDissipation_scalarization`, reusing the actual area producer and global curvature law for the same metric |
+| `lem:rotation-area-invariance` | Both round and D-bound native circle/angle area pullback theorems in `Geometry/RotationalAreaInvariance.lean` |
+| `lem:scalar-haar-projector` | Literal `Geometry.rotationalScalarAverage`, its smoothness, conditional add/sub, scaling/constant, two angle invariance, fixed-point/idempotence and pole-evaluation laws in `Geometry/RotationalScalarAverage.lean` |
+| `thm:scalar-haar-compatibility` | Same-map metric pairing, trace and actual trace/curl naturality in `Geometry/OneFormScalarNaturality.lean`; all contraction/average, scalar rotation, zero-mean remainder and pole-zero theorems in `Geometry/RotationalScalarCompatibility.lean` |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

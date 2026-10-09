@@ -1,0 +1,12 @@
+{
+  "source_sha256": "130dd073451257a050de36c5352d5a0d952e6c886ea29b4bf260fd7fac37a445",
+  "theorem_map_sha256": "1632825299d5bb216c6e4b4a74af72fa6b8e2ece9fb8c5e3ffb2fb5db60ffb05",
+  "labels": 88,
+  "references": 96,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round7 accepted; constructive scalarization and new scalar Haar compatibility claims pending outer review"
+}

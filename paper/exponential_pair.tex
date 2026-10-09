@@ -1574,4 +1574,117 @@ Theorem~\ref{thm:complete-scalarization} to that metric, that area tensor,
 and the original form $h$.
 \end{proof}
 
+\section{Scalar Haar compatibility}
+
+We use the same rotations $R_\theta$, metric $g_D$ and area tensor $\Omega_D$
+as above. For a scalar function $u$ on the sphere, put
+\begin{equation}\label{eq:scalar-haar-average}
+ P_0u(x)=\frac{1}{2\pi}\int_0^{2\pi}u(R_\theta x)\,d\theta.
+\end{equation}
+This scalar operator is distinguished from the covector pullback average $P$.
+
+\begin{lemma}\label{lem:rotation-area-invariance}
+Every rotation of the actual circle action preserves the constructed area tensor:
+$R_\theta^*\Omega_D=\Omega_D$ on the whole sphere.
+\end{lemma}
+
+\begin{proof}
+Write $L_\theta$ for the ambient orthogonal rotation fixing the third coordinate.
+Its matrix has determinant one: its horizontal block has determinant
+$\cos^2\theta+\sin^2\theta=1$ and its vertical entry is one.
+The derivative of $R_\theta$ is the restriction of $L_\theta$ to tangent vectors.
+The defining ambient formula therefore gives
+\[
+ \begin{split}
+ (R_\theta^*\Omega_D)_x(V,W)
+ &=a(z(R_\theta x))
+       \det(L_\theta x,L_\theta V,L_\theta W)\\
+ &=a(z(x))\det(x,V,W)=(\Omega_D)_x(V,W).
+ \end{split}
+\]
+Here tangent vectors are identified with their actual ambient inclusion.
+The computation also holds at either pole, and equally for every unit complex
+number representing a circle rotation.
+\end{proof}
+
+\begin{lemma}\label{lem:scalar-haar-projector}
+The operator $P_0$ maps smooth scalars to smooth scalars, is real linear on
+continuous scalars, fixes constants, and satisfies
+\[
+ P_0u(R_\phi x)=P_0u(x),\qquad
+ P_0(u\circ R_\phi)=P_0u,\qquad P_0(P_0u)=P_0u.
+\]
+At either pole $p$, $P_0u(p)=u(p)$. Consequently a scalar with zero angular
+average vanishes at both poles.
+\end{lemma}
+
+\begin{proof}
+Joint smoothness of $(\theta,x)\mapsto R_\theta x$ makes
+$(\theta,x)\mapsto u(R_\theta x)$ smooth when $u$ is smooth. In any relatively
+compact coordinate neighborhood, every derivative with respect to $x$ is
+bounded on the product with the compact angle interval. Differentiation under
+the integral thus proves smoothness of every order. For continuous inputs the
+angle integrands are genuinely integrable, giving linearity. The normalization
+makes the average of a constant equal to that constant.
+
+The group law changes either rotation of the input or rotation of the base
+point into a shift of the angle variable. Periodicity makes the integral over
+one full period unchanged. The resulting averaged function is invariant,
+so averaging it again integrates a constant angle orbit and proves idempotence.
+Every rotation fixes either pole, whence its scalar orbit there is the constant
+$u(p)$. This proves the last assertion without division by a polar weight.
+\end{proof}
+
+\begin{theorem}\label{thm:scalar-haar-compatibility}
+For the original smooth one-form $h$, let
+$\tau(h)=\operatorname{tr}_{g_D}(\nabla h)$ and
+$\omega(h)=\langle\Omega_D,\nabla h\rangle_{g_D}$. Then
+\[
+ \tau(Ph)=P_0\tau(h),\qquad \omega(Ph)=P_0\omega(h).
+\]
+In particular, for $h_\perp=h-Ph$,
+\begin{equation}\label{eq:remainder-scalar-means}
+ P_0\tau(h_\perp)=0,\qquad P_0\omega(h_\perp)=0.
+\end{equation}
+Both actual scalars $\tau(h_\perp)$ and $\omega(h_\perp)$ vanish at both poles.
+No curvature pinching or invariance hypothesis on $h$ is imposed.
+\end{theorem}
+
+\begin{proof}
+First recall why the scalar contractions have the required naturality. If $F$
+is a diffeomorphism, an orthonormal frame for $F^*g$ is taken by $dF$ to an
+orthonormal frame for $g$. Computing contractions in these two frames proves
+\[
+ \operatorname{tr}_{F^*g}(F^*T)=(\operatorname{tr}_gT)\circ F,
+ \qquad
+ \langle F^*S,F^*T\rangle_{F^*g}=\langle S,T\rangle_g\circ F.
+\]
+The already established canonical derivative naturality identifies
+$\nabla^{F^*g}(F^*h)$ with $F^*(\nabla^g h)$, including the derivative of $F$
+in both slots. These statements hold with no orientation restriction when the
+area tensor is also pulled back. For the present rotations, both $g_D$ and
+$\Omega_D$ are preserved, the latter by Lemma~\ref{lem:rotation-area-invariance}.
+It follows that
+\[
+ \tau(R_\theta^*h)=\tau(h)\circ R_\theta,
+ \qquad \omega(R_\theta^*h)=\omega(h)\circ R_\theta.
+\]
+
+The tensor average commutes with the actual covariant derivative. At each
+fixed base point, trace and contraction against the fixed area tensor are
+continuous linear maps on a finite-dimensional tensor fiber. They commute
+with its integral. All angle integrands are continuous on a compact interval,
+so this interchange is justified by genuine integrability. Taking those two
+contractions of $\nabla(Ph)=P(\nabla h)$ proves the displayed compatibility
+identities with exactly the normalization in \eqref{eq:scalar-haar-average}.
+
+The actual complementary form satisfies $P(h-Ph)=0$. Apply compatibility to
+that form; the covariant derivative of the zero section is zero, so both scalar
+averages vanish. Finally apply Lemma~\ref{lem:scalar-haar-projector} at the poles.
+\end{proof}
+
+The pole values in this section are only the first endpoint facts needed for
+the scalar energy estimate. They do not yet establish integrability of terms
+divided by the vanishing polar weight, nor a sign for the remainder action.
+
 \end{document}

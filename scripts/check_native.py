@@ -97,6 +97,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.SurfaceTensorIntegration",
     "RicciFlowSharpEstimate.Geometry.OneFormScalarization",
     "RicciFlowSharpEstimate.Geometry.RotationalScalarization",
+    "RicciFlowSharpEstimate.Geometry.OneFormScalarNaturality",
+    "RicciFlowSharpEstimate.Geometry.RotationalAreaInvariance",
+    "RicciFlowSharpEstimate.Geometry.RotationalScalarAverage",
+    "RicciFlowSharpEstimate.Geometry.RotationalScalarCompatibility",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -399,7 +403,39 @@ SELECTOR = r"""
       geo ++ `normSq0S_metricNabla0S_twoTensor_split,
       geo ++ `integral_inner0S_gradSlotSwap,
       geo ++ `oneFormDissipation_scalarization,
-      poleData ++ `oneFormDissipation_scalarization
+      poleData ++ `oneFormDissipation_scalarization,
+      geo ++ `inner0S_diffeomorphTensorPullback,
+      geo ++ `metricTracePair0SAt_diffeomorphTensorPullback,
+      geo ++ `oneFormTrace_diffeomorphTensorPullback,
+      geo ++ `oneFormCurl_diffeomorphTensorPullback,
+      geo ++ `diffeomorphTensorPullback_roundSphereAreaForm_circleSphereDiffeo,
+      geo ++ `diffeomorphTensorPullback_roundSphereAreaForm_angleRotation,
+      geo ++ `rotationalScalarAverage,
+      geo ++ `rotationalScalarAverage_contMDiff,
+      geo ++ `rotationalScalarAverage_add,
+      geo ++ `rotationalScalarAverage_sub,
+      geo ++ `rotationalScalarAverage_smul,
+      geo ++ `rotationalScalarAverage_const,
+      geo ++ `rotationalScalarAverage_zero,
+      geo ++ `rotationalScalarAverage_one,
+      geo ++ `rotationalScalarAverage_angleRotation,
+      geo ++ `rotationalScalarAverage_comp_angleRotation,
+      geo ++ `rotationalScalarAverage_eq_self_of_invariant,
+      geo ++ `rotationalScalarAverage_idempotent,
+      geo ++ `rotationalScalarAverage_eq_at_pole,
+      geo ++ `rotationalScalarAverage_eq_zero_at_pole,
+      poleData ++ `diffeomorphTensorPullback_areaForm_circleSphereDiffeo,
+      poleData ++ `diffeomorphTensorPullback_areaForm_angleRotation,
+      poleData ++ `metricTracePair0SAt_rotationalAverage,
+      poleData ++ `inner0S_areaForm_rotationalAverage,
+      poleData ++ `oneFormTrace_angleRotation,
+      poleData ++ `oneFormCurl_angleRotation,
+      poleData ++ `oneFormTrace_rotationalAverage,
+      poleData ++ `oneFormCurl_rotationalAverage,
+      poleData ++ `rotationalScalarAverage_oneFormTrace_remainder,
+      poleData ++ `rotationalScalarAverage_oneFormCurl_remainder,
+      poleData ++ `oneFormTrace_remainder_eq_zero_at_pole,
+      poleData ++ `oneFormCurl_remainder_eq_zero_at_pole
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -1026,6 +1062,70 @@ open RicciFlowSharpEstimate.Geometry in
 #check oneFormDissipation_scalarization
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormDissipation_scalarization
+open RicciFlowSharpEstimate.Geometry in
+#check inner0S_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check metricTracePair0SAt_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormTrace_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormCurl_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_roundSphereAreaForm_circleSphereDiffeo
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_roundSphereAreaForm_angleRotation
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_contMDiff
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_add
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_sub
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_smul
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_const
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_zero
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_one
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_angleRotation
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_comp_angleRotation
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_eq_self_of_invariant
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_idempotent
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_eq_at_pole
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalScalarAverage_eq_zero_at_pole
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check diffeomorphTensorPullback_areaForm_circleSphereDiffeo
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check diffeomorphTensorPullback_areaForm_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricTracePair0SAt_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check inner0S_areaForm_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormTrace_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormCurl_angleRotation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormTrace_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormCurl_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check rotationalScalarAverage_oneFormTrace_remainder
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check rotationalScalarAverage_oneFormCurl_remainder
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormTrace_remainder_eq_zero_at_pole
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormCurl_remainder_eq_zero_at_pole
 """
 
 
