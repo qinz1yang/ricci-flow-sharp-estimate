@@ -1,0 +1,17 @@
+{
+  "source_sha256": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+  "theorem_map_sha256": "141e9aae7469129fb5f6bd9cd51fe3763460cf486d8ad7c7ac0195f7331237f7",
+  "labels": 174,
+  "references": 222,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "passed with Tectonic 0.17.0; 47-page PDF, zero warnings or box diagnostics",
+  "typesetting_receipt": "docs/evidence/round-16-manuscript-final/typesetting.json",
+  "pdf_sha256": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace",
+  "independent_review": "Previous claims accepted except corrected QS8; seven new separation/recovery/safety claims and full-manuscript final acceptance pending configured outer review",
+  "scope_clarification": "The opening scalar-valued sentence refers to competitors and variational functional, not later maps or tensor integrals."
+}

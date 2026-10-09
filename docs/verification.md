@@ -301,9 +301,9 @@ layer and its seven new conventional claims remains required.
 
 Actual typesetting passes with [Tectonic 0.17.0](https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.17.0).
 The [47-page PDF](../paper/exponential_pair.pdf),
-[typesetting receipt](evidence/round-16/typesetting.json),
-[engine output](evidence/round-16/tex-output.txt) and
-[losslessly compressed TeX log](evidence/round-16/tex-log.txt.gz) bind the exact manuscript, engine binary,
+[typesetting receipt](evidence/round-16-manuscript-final/typesetting.json),
+[engine output](evidence/round-16-manuscript-final/tex-output.txt) and
+[losslessly compressed TeX log](evidence/round-16-manuscript-final/tex-log.txt.gz) bind the exact manuscript, engine binary,
 command and PDF hashes. The final run has no warnings, overfull/underfull boxes
 or unresolved references. Long displays were broken at mathematical boundaries;
 paragraph line breaking was improved without suppressing diagnostics. The raw
@@ -320,3 +320,8 @@ The engine and its caches were installed only in Root's temporary task directory
 no Lean dependency or historical delivered receipt changed. Typesetting is not
 mathematical acceptance. The final independent review and private delivery are
 recorded separately in the round summary and [suite status](mathematical-status.md).
+The final manuscript receipt is [here](evidence/round-16-manuscript-final/manuscript.json).
+It also includes the opening clarification that the competitors and variational
+functional are real-valued; the paper makes no such restriction on its later
+maps or tensor integrals. The earlier Round16 native and manuscript receipts
+remain unchanged at their original delivered revision.

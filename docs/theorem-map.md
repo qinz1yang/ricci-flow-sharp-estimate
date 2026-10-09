@@ -289,7 +289,7 @@ continuous curvature, actual coordinate maps and one fixed smooth probe.
 Contraction, identical-box exact-moment complete-action recovery, the original-metric
 negative witness and the actual strict comparison are now natively proved.
 The [47-page PDF](../paper/exponential_pair.pdf) was typeset with Tectonic 0.17.0;
-[source-bound typesetting evidence](evidence/round-16/typesetting.json) records no
+[source-bound typesetting evidence](evidence/round-16-manuscript-final/typesetting.json) records no
 warnings, box diagnostics or unresolved references. No manuscript regularity
 claim is inferred merely from typesetting.
 
