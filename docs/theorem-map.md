@@ -2,7 +2,7 @@
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
-smooth balanced-profile metric construction, cylinder pullback, intrinsic curvature
+smooth balanced-profile metric construction, cylinder pullback, intrinsic curvature,
 volume/height identities, global forms and the canonical complete action.
 The exact zonal/Haar reduction, CK and separation
 sections remain unwritten. This map does
