@@ -2,15 +2,17 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All 114 currently checked analytic, variational and geometric modules depend transitively only on
+All 123 currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-12/axioms.txt) covers 1904 declarations,
-including 735 private declarations and relevant generated constants.
+The [current native report](evidence/round-13/axioms.txt) covers 2031 declarations,
+including 739 private declarations and relevant generated constants.
+The [accepted smooth recovery report](evidence/round-12/axioms.txt) covers the
+preceding 114-module, 1904-declaration layer at `58d5dbc`.
 The [accepted CK safety report](evidence/round-11/axioms.txt) covers the preceding
 107-module, 1867-declaration layer at `ae5dc91`.
 The [accepted original-remainder report](evidence/round-10/axioms.txt) covers
@@ -89,9 +91,26 @@ limit, and the original critical comparison and CK safety give the negative
 supercritical witness and positive fixed-probe critical sequence.
 The stability layer is an exact consumer of the actual zonal action and all
 three accepted hemisphere estimates, including factor four and zero coefficients.
-No smooth metric is assigned to the nonsmooth limit. This source-bound evidence
-still does not certify the missing conjugated class projector, full-class
-safe-cap characterization or derivative-sensitive structural separation.
+No smooth metric is assigned to the nonsmooth limit. This recovery layer passed
+Round 12 independent review.
+
+The new represented-class layer checks actual tensor/metric inverse pullbacks,
+the conjugated native circle family, joint smoothness and the literal normalized
+all-slot derivative integral with genuine integrability. Canonical first/second
+derivatives, rough trace, Ahlfors projection and the entire four-term pairing
+and action are transported through the same map. Class membership is an actual
+equation g=F*D.metric, with produced metrics included by identity and further
+pullbacks represented by real composition. Curvature, Riemannian volume and
+the chosen area/curl use this identical map without an orientation restriction.
+The arbitrary original form is pulled back through F inverse before applying
+the accepted produced theorems. The same transported generators and profile
+equations remain in Haar/zonal and stability conclusions.
+Finally, the literal universally quantified CK safe-cap set is proved equal to
+the closed critical interval using safety and the already constructed negative
+witnesses; real supremum laws give the numerical formula. Existing critical
+recovery data are retained, not replaced by scaling forms. No sign/equality
+conclusion is supplied as an input. Derivative-sensitive structural separation
+and the final whole-suite gates remain unproved.
 
 The manuscript cites David Jerison's MIT 18.103 Fall 2013 notes,
 [*Fourier Series, Part 1*, Corollary 2, p. 5](https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/1c196caa6307e0be46456cf6dc76b543_MIT18_103F13_fseries1.pdf),

@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all 114 current modules. Importing it is required
+The root aggregate is a real consumer of all 123 current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -186,13 +186,37 @@ negative CK witnesses below each prescribed larger cap and a critical sequence
 of positive actions tending to zero with the fixed scalar probe r=1.
 The geometric stability consumers preserve the exact action denominator,
 reflection factor four and a separate zero-coefficient law.
-Seven conventional claims and their mappings await configured independent
-review. The [current manuscript receipt](evidence/round-12/manuscript.json)
+Seven conventional claims and their mappings passed Round 12 independent
+review at `58d5dbc`. The [Round 12 manuscript receipt](evidence/round-12/manuscript.json)
 records 127 unique labels, 160 resolved references and one resolved citation;
 balanced structure is not a typesetting certificate.
 
-Complete same-map conjugated class transport, its natural safe-cap set and
-threshold characterization, structural separation and actual typesetting
-remain open. Historical receipts are unchanged.
+The [represented-class receipt](evidence/round-13/receipt.json),
+[axiom closure](evidence/round-13/axioms.txt), and
+[exact signatures](evidence/round-13/signatures.txt) cover all 123 modules.
+All 114 preceding mathematical sources are unchanged; their successful source
+elaborations are reused with matching provenance, and nine new sources are
+freshly elaborated. The root and native declaration/signature/axiom drivers run
+again. All 2031 defining-module declarations, including 739 private declarations,
+have permitted foundational axioms only. All 554 required selectors and 653
+signature queries execute. The receipt binds 128 inputs, 129 outputs and three
+generated drivers; source and declaration-linter logs are silent.
+
+The new layer constructs the actual conjugated circle and its literal normalized
+all-slot derivative integral, transports canonical operators and the complete
+pairing/action, and supplies full-class Haar/zonal/CK safety/equality/stability
+consumers. The universal safe-cap set, quantified over every represented metric,
+actual positive curvature box and original smooth CK form, is exactly
+`[1,criticalCap]`; its actual supremum has the radical/exponential value.
+The same existing supercritical witnesses and critical fixed-probe sequence are
+embedded in the represented class through identity maps.
+Seven conventional claims and their exact mappings await configured independent
+review. The [current manuscript receipt](evidence/round-13/manuscript.json)
+records 140 unique labels, 181 resolved references and one resolved citation.
+Actual typesetting is not claimed.
+
+Structural strict separation and its general-probe area-coordinate recovery,
+the remaining manuscript/typesetting and final whole-suite independent/native
+gates remain open. Historical receipts are unchanged.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

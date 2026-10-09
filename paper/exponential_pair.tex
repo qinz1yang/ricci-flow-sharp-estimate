@@ -2474,12 +2474,286 @@ The actual section is then zero and the exact constant-zonal formula gives
 zero action, without any division by $S$.
 \end{proof}
 
-The produced-metric safety, smooth witnesses and fixed-probe recovery are now
-established. The advertised diffeomorphic-pullback class still requires the
-complete same-map conjugated circle/projector transport and its class-level
-safe-cap characterization. Structural strict separation and its
-derivative-sensitive general-probe recovery remain separate obligations;
-the constant-probe continuity lemma above supplies no derivative convergence.
+\section{The represented metric class and the sharp CK threshold}
+
+Let $\mathcal G_{\mathrm{rot}}$ be the class of actual smooth metrics $g$ on
+$S^2$ for which there are produced data $D$ and a smooth diffeomorphism
+$F:S^2\to S^2$ with $g=F^*g_D$. All tensor pullbacks below use the actual
+derivative of this same map. No orientation condition is imposed on $F$.
+This definition does not assume a representation theorem for arbitrary
+abstract effective circle actions.
+
+\begin{lemma}\label{lem:represented-metric-naturality}
+Every produced metric belongs to $\mathcal G_{\mathrm{rot}}$, and this
+class is closed under further smooth diffeomorphic pullback.
+For a fixed representation $g=F^*g_D$, put $\Omega_F=F^*\Omega_D$. Then
+\begin{equation}\label{eq:represented-curvature-volume}
+ K_g(x)=K_{g_D}(F(x)),\qquad
+ F_*\mu_g=\mu_{g_D},\qquad
+ |\Omega_F|_g^2=2,\qquad \nabla^g\Omega_F=0 .
+\end{equation}
+The same positive curvature box holds for $g$ and $g_D$. The transported
+curl satisfies
+$\operatorname{curl}_{g,\Omega_F}(F^*h)
+=\operatorname{curl}_{g_D,\Omega_D}(h)\circ F$.
+\end{lemma}
+
+\begin{proof}
+The identity diffeomorphism represents $g_D$. If $g=G^*g_D$, then
+$F^*g=(G\circ F)^*g_D$, proving closure with an actual representing map.
+The actual derivative pullback has the two inverse laws
+$(F^{-1})^*F^*=\operatorname{id}$ and
+$F^*(F^{-1})^*=\operatorname{id}$ for tensors and metrics.
+The curvature naturality and metric-volume change of variables used in
+Lemma~\ref{lem:pullback-dissipation} give the first two identities in
+\eqref{eq:represented-curvature-volume}. Surjectivity of $F$ gives both
+directions of the curvature-box equivalence.
+
+The area tensor evaluates by
+$\Omega_F(x)(v,w)=\Omega_D(F(x))(dF_xv,dF_xw)$.
+Actual tensor-norm and covariant-derivative naturality therefore transport
+its squared norm and parallelness. Contracting the actual first derivative
+against this same transported area gives the stated curl law.
+For an orientation-reversing map we still use $\Omega_F$, rather than
+asserting that a separately fixed area orientation was preserved.
+Metric volume is the positive Riemannian measure, so its change of variables
+requires no orientation-preserving premise.
+\end{proof}
+
+Fix $g=F^*g_D$. Write $\rho$ for the native circle rotations and define
+\begin{equation}\label{eq:conjugated-action-projector}
+ \rho_F(z)=F^{-1}\circ\rho(z)\circ F,\qquad
+ P_F A=F^*P\bigl((F^{-1})^*A\bigr).
+\end{equation}
+The second expression is a smooth covariant tensor of the same rank as $A$.
+
+\begin{theorem}\label{thm:conjugated-haar-projector}
+The maps $\rho_F$ form a genuine circle action by isometries of $g$.
+Its angle parametrization is jointly smooth on $\R\times S^2$ and has period
+$2\pi$. For every smooth covariant tensor $A$ of rank $s$, including $s=0$,
+every $x\in S^2$ and tuple $v_1,\ldots,v_s\in T_xS^2$,
+\begin{equation}\label{eq:conjugated-haar-integral}
+ (P_FA)_x(v_1,\ldots,v_s)=\frac1{2\pi}\int_0^{2\pi}
+ A_{\rho_F(e^{i\theta})x}
+ \bigl(d\rho_F(e^{i\theta})_xv_1,\ldots,
+       d\rho_F(e^{i\theta})_xv_s\bigr)\,d\theta .
+\end{equation}
+The integrand is genuinely integrable. The projector is real-linear,
+idempotent and invariant under $\rho_F$, and
+$P_FA=A$ if and only if $A$ is invariant under every element of $\rho_F$.
+It intertwines the original projector by $P_F(F^*A)=F^*(PA)$.
+\end{theorem}
+
+\begin{proof}
+The identity, multiplication and inverse laws follow by canceling the
+adjacent $F\circ F^{-1}$ in the explicit compositions.
+The same cancellation and $\rho(z)^*g_D=g_D$ give
+$\rho_F(z)^*g=g$. Joint smoothness follows by composing the jointly smooth
+original angle action with $(\theta,x)\mapsto(\theta,F(x))$ and $F^{-1}$;
+its period is unchanged. The actual tangent maps consequently preserve
+the inner product of this same pulled-back metric.
+
+Tensor pullback reverses composition, so for every tensor rank
+\[
+ \rho_F(z)^*A=F^*\rho(z)^*(F^{-1})^*A.
+\]
+Evaluate the definition of $P_FA$ at $x$ on the prescribed slot tuple,
+then apply the original integral formula \eqref{eq:haar-covector-average}
+at $F(x)$ on $(dF_xv_i)_i$. The displayed pullback identity identifies
+each integrand with the derivative of the actual map $\rho_F(z)$, giving
+\eqref{eq:conjugated-haar-integral}. Joint smoothness of the tensor orbit,
+proved from the genuine family derivative, gives continuity at each fixed
+fiber and slot tuple, hence integrability on the compact angle interval.
+
+Linearity and the two inverse pullback laws give the asserted intertwining
+and idempotence. Pulling the original invariant average through $F$ gives
+$\rho_F(z)^*P_FA=P_FA$. Conversely invariance of $A$ becomes invariance
+of $(F^{-1})^*A$ under $\rho$; the original fixed-point theorem then gives
+$P_FA=A$. All these equations retain the same map and original tensor.
+\end{proof}
+
+\begin{theorem}\label{thm:represented-haar-rigidity}
+For a fixed representation $g=F^*g_D$, $P_F$ commutes with the actual
+first and second covariant derivatives, rough Laplacian and Ahlfors projection
+in their respective tensor ranks. It is self-adjoint for the complete
+four-term pairing of $g$. For every original smooth one-form $\eta$,
+\begin{equation}\label{eq:represented-haar-split}
+ Q_g(\eta)=Q_g(P_F\eta)+Q_g(\eta-P_F\eta),\qquad
+ Q_g(\eta-P_F\eta)\geq0,
+\end{equation}
+and $Q_g(\eta-P_F\eta)=0$ if and only if $\eta-P_F\eta=0$.
+Thus $Q_g(P_F\eta)\leq Q_g(\eta)$, with equality precisely for forms
+invariant under $\rho_F$. No pinching assumption is required.
+For every $g\in\mathcal G_{\mathrm{rot}}$, one actual representation supplies
+these conclusions simultaneously for every $\eta$.
+\end{theorem}
+
+\begin{proof}
+Put $h=(F^{-1})^*\eta$, so $\eta=F^*h$ by the actual inverse law.
+The canonical naturality from Lemma~\ref{lem:pullback-dissipation},
+followed by Theorem~\ref{thm:haar-derivatives}, gives, for example,
+\[
+ \nabla^g(P_F A)
+ =F^*\nabla^{g_D}P((F^{-1})^*A)
+ =F^*P\nabla^{g_D}((F^{-1})^*A)
+ =P_F(\nabla^g A).
+\]
+Iterating this equality gives the actual second derivative. The accepted
+rough-trace and Ahlfors naturality give the other commutations with all
+covariant slots retained.
+
+Complete-action and complete-pairing naturality transport the self-adjoint
+identity and full Haar split from $g_D$. In particular
+\[
+ (F^{-1})^*(\eta-P_F\eta)=h-Ph,\qquad
+ Q_g(\eta-P_F\eta)=Q_{g_D}(h-Ph).
+\]
+Theorem~\ref{thm:nonzonal-positivity-rigidity} supplies nonnegativity and
+zero exactly when $h-Ph=0$. Injectivity of derivative pullback makes this
+equivalent to the original remainder being zero. The split then gives the
+comparison and its fixed-point equality, and
+Theorem~\ref{thm:conjugated-haar-projector} identifies those fixed points.
+Choosing a representation from the definition of the class, before choosing
+$\eta$, proves the final full-class assertion.
+\end{proof}
+
+\begin{corollary}\label{cor:represented-zonal-geometry}
+Fix any representation $g=F^*g_D$ and put
+$M_F(r)=F^*M_D(r)$, $Z_F(s)=F^*Z_D(s)$. For globally smooth real probes,
+\[
+ Q_g(M_F(r)+Z_F(s))=2\pi(J_a[r]+J_a[s]).
+\]
+For every original smooth $\eta$, there are globally smooth $r,s$ with
+$P_F\eta=M_F(r)+Z_F(s)$ and
+\[
+ Q_g(\eta)=2\pi(J_a[r]+J_a[s])+Q_g(\eta-P_F\eta)
+          \geq2\pi(J_a[r]+J_a[s]).
+\]
+For these same probes, equality holds if and only if
+$\eta=M_F(r)+Z_F(s)$. These statements hold for every represented metric,
+with its actual representation retained.
+\end{corollary}
+
+\begin{proof}
+Apply complete-action naturality to the actual sum $M_D(r)+Z_D(s)$
+and use Theorem~\ref{thm:zonal-reduction}.
+Classify $P((F^{-1})^*\eta)$ by
+Theorem~\ref{thm:invariant-one-form-classification}, then pull that exact
+section equality through $F$. This gives the globally smooth probes and
+their stated original-section equation, including both transported poles.
+The full split and zero-remainder theorem prove the remaining conclusions,
+always using those same probes. No uniqueness of their extensions outside
+the physical interval is claimed.
+\end{proof}
+
+\begin{theorem}\label{thm:represented-ck-safety}
+Let $g\in\mathcal G_{\mathrm{rot}}$ and let $\eta$ be any original smooth
+CK one-form. If $\kappa>0$, $\kappa\leq K_g\leq\Lambda$ everywhere and
+$\Lambda/\kappa\leq C_{\mathrm{CK}}$, then
+\[
+ Q_g(\eta)\geq0,\qquad Q_g(\eta)=0\ \Longleftrightarrow\ \eta=0.
+\]
+In particular every nonzero such form has strictly positive action, including
+at the critical cap. For any representing $D,F$, the actual $P_F$ preserves
+the CK equation, and $P_F\eta=M_F(c)+Z_F(d)$ for some real constants $c,d$.
+\end{theorem}
+
+\begin{proof}
+Choose $g=F^*g_D$ and put $h=(F^{-1})^*\eta$.
+The actual derivative/Ahlfors pullback law makes $h$ CK for $g_D$.
+Lemma~\ref{lem:represented-metric-naturality} supplies the same curvature
+box on $g_D$, so Theorem~\ref{thm:produced-ck-safety} applies.
+Complete-action naturality gives $Q_g(\eta)=Q_{g_D}(h)$, and inverse
+pullback makes $h=0$ equivalent to $\eta=0$. This proves the full
+arbitrary-form conclusion, with no nonzero-average hypothesis.
+
+The Ahlfors-derivative commutation in
+Theorem~\ref{thm:represented-haar-rigidity} sends its zero equation to the
+zero equation of $P_F\eta$. Alternatively transport the original CK Haar
+preservation theorem. The original constant-probe classification of $Ph$,
+pulled back through $F$, gives the last section equality.
+\end{proof}
+
+\begin{theorem}\label{thm:represented-geometric-stability}
+Fix $g=F^*g_D$, use its profile height $z_F=z\circ F$, and suppose
+$0<m\leq a\leq M$ on $[-1,1]$. Set $C=M/m$, $k(v)=\log(M/a(v))$ and
+$S=c^2+d^2>0$. Then
+\begin{equation}\label{eq:represented-stability-budget}
+ B_F=\frac{Q_g(M_F(c)+Z_F(d))}{4\pi S}+\frac23-2m(C)
+     =\I(k(v))+\I(k(-v))-2m(C),
+\end{equation}
+and all three inequalities in Theorem~\ref{thm:geometric-hemisphere-stability}
+hold with $B_F$ in place of $B$. The reflection factor is four.
+For $S=0$, both coefficients, the pulled-back section and its action vanish,
+without a normalized profile conclusion.
+Every represented metric has one representation supporting these conclusions
+for all profile bounds and coefficient pairs simultaneously.
+\end{theorem}
+
+\begin{proof}
+The section is literally $F^*(M_D(c)+Z_D(d))$. Pullback naturality identifies
+its complete action with the original constant-zonal action on $g_D$.
+Substitute that equality into the exact budget identity and all three
+inequalities of Theorem~\ref{thm:geometric-hemisphere-stability}.
+The profile logarithm is the same generating function in height parameter
+$v$; on the represented sphere it is evaluated at $z_F$.
+For zero coefficient sum use the original zero-coefficient law and the
+linearity and zero preservation of derivative pullback.
+Fixing the representation before the parameters proves the final assertion.
+\end{proof}
+
+Define $\mathcal S_{\mathrm{CK}}$ to consist of the real numbers $C\geq1$
+such that $Q_g(\eta)\geq0$ for every $g\in\mathcal G_{\mathrm{rot}}$,
+every actual curvature box $\kappa>0$, $\kappa\leq K_g\leq\Lambda$ with
+$\Lambda/\kappa\leq C$, and every original smooth CK one-form $\eta$.
+Define the universal CK threshold as $\sup\mathcal S_{\mathrm{CK}}$.
+
+\begin{theorem}\label{thm:universal-ck-threshold}
+The actual universal safe-cap set is
+\begin{equation}\label{eq:universal-ck-safe-set}
+ \mathcal S_{\mathrm{CK}}=[1,C_{\mathrm{CK}}],
+ \qquad
+ \sup\mathcal S_{\mathrm{CK}}
+ =\left(\frac{5+\sqrt{13}}3\right)^{1/3}
+       \exp\left(\frac{4+2\sqrt{13}}9\right).
+\end{equation}
+It is nonempty and bounded above. Every smooth nonzero CK form in a
+represented critical safe box has positive action, while the same fixed
+unit probes of Corollary~\ref{cor:critical-fixed-probe-recovery} lie in this
+class and have positive actions tending to zero. The supercritical witnesses
+of Theorem~\ref{thm:smooth-supercritical-ck-witness} also lie in this class
+with their exact producer and curvature equations.
+\end{theorem}
+
+\begin{proof}
+If $1\leq C\leq C_{\mathrm{CK}}$, every curvature-box ratio at most $C$
+is at most $C_{\mathrm{CK}}$. Theorem~\ref{thm:represented-ck-safety}
+therefore proves $C\in\mathcal S_{\mathrm{CK}}$ with all the stated
+universal quantifiers.
+Conversely let $C>C_{\mathrm{CK}}$ and choose exactly
+$C_0=(C+C_{\mathrm{CK}})/2$. The already constructed smooth witness has
+$1\leq K_{g_D}\leq C_0<C$, a nonzero CK unit meridional section, and negative
+original action. Its metric belongs to $\mathcal G_{\mathrm{rot}}$ through
+the identity diffeomorphism. Applying the proposed safety property with
+$\kappa=1$ and $\Lambda=C_0$ is a contradiction.
+Caps below one are excluded by definition, proving the set equality.
+
+Since $C_{\mathrm{CK}}>1$, the interval is nonempty and bounded above by its
+included right endpoint. The real supremum laws and
+\eqref{eq:critical-pair-cap} give the second equality in
+\eqref{eq:universal-ck-safe-set}.
+The universal strict positivity follows from
+Theorem~\ref{thm:represented-ck-safety}. For recovery, retain exactly the
+profiles, produced metrics and fixed probes from the earlier critical
+sequence and add their identity representations. This neither constructs
+a second sequence nor changes their action limit. The same identity
+embedding retains the original supercritical witness equations.
+\end{proof}
+
+The unrestricted comparison still requires positive normalized area geometry,
+plateau instability and complete derivative-sensitive general-probe recovery.
+The CK endpoint statement above does not assert an unrestricted endpoint
+attainment result, and constant-probe continuity supplies no derivative convergence.
 
 \begin{thebibliography}{1}
 \bibitem{jerison-fourier}

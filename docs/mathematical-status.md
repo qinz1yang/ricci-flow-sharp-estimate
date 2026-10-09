@@ -35,7 +35,11 @@ Smooth even box/balance-preserving recovery and original unit-probe action
 convergence now produce negative CK witnesses below every larger cap, and a
 critical fixed-probe sequence with positive actions tending to zero.
 The exact geometric hemisphere-stability consumers are also native.
-Full class transport, its safe-cap characterization and structural separation remain open.
+Full same-map represented-class Haar, CK safety/equality and stability are now
+native, including orientation-reversing maps and the literal conjugated
+derivative-pullback integral. The universal CK safe-cap set is exactly
+`[1,criticalCap]`, with the actual supremum equal to the derived value.
+Structural separation remains the mathematical frontier.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
@@ -49,7 +53,8 @@ The scalarization and scalar Haar layers passed Round 8 independent review at `6
 The positive scalar estimate passed Round 9 independent review at `da47567`.
 The original-remainder sign/equality layer passed Round 10 review at `0473a6a`.
 The hemisphere/critical-cap/produced-CK layer passed Round 11 review at `ae5dc91`.
-The new smooth recovery/sharpness/geometric-stability layer awaits independent review.
+The smooth recovery/sharpness/geometric-stability layer passed Round 12 review at `58d5dbc`.
+The new represented-class Haar and universal CK threshold layer awaits independent review.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -72,11 +77,11 @@ isometry used for the two zonal components.
 
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
-| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | The produced-metric suite, including unconditional remainder nonnegativity and zero-remainder equality, passed Round 10 review. Complete same-map conjugated-action/projector class transport remains in T07 and still blocks AC4. |
+| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Produced-metric results are independently accepted. The full represented-class quantifier is now native: actual conjugated action/integral projector, canonical operator transport, full split/remainder zero iff, and same-map zonal classification/action/equality. New class-level consumers await review. |
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
-| Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form. | Produced-metric safety/full equality passed Round 11 review. Smooth supercritical witnesses, fixed-unit-probe critical recovery and exact geometric stability are now native pending review. Full same-map class transport and the natural safe-cap set/threshold characterization remain open. |
+| Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form. | Produced safety/equality, witnesses, fixed-probe recovery and stability passed Rounds 11–12 review. Represented-class safety/equality/stability, identity embedding of the same witnesses/recovery, universal safe-set equality `[1,criticalCap]` and actual supremum/closed form are now native pending review. |
 | Structural separation | Plateau instability and valid geometric recovery give `C_rot<C_CK` for all one-forms in the same metric class, without a chosen rational intermediate cap. | Open. Exact unrestricted value is not claimed. |
 
 The formulas and additional exact calculations appear in
@@ -96,8 +101,9 @@ are also present. The hemisphere substitution, variational critical cap, invaria
 classification and produced-metric safety/equality proofs are now present.
 Smooth approximation, quantitative constant-probe continuity, produced-metric
 supercritical witnesses, fixed-probe endpoint recovery and geometric stability
-proofs are now present. Full class transport, safe-cap characterization and
-separation sections remain absent as established claims.
+proofs are now present. The same-map represented-class Haar/CK transport and
+universal safe-cap characterization now have conventional proofs and exact
+native mappings. The structural separation section remains unproved.
 
 ## Shared dependency graph
 
@@ -159,9 +165,11 @@ flowchart TD
   HP --> KS
   KC --> KS
   Z --> KS
-  KS --> CK[Full-class sharp CK threshold]
-  ISO --> CT[Conjugated action and projector class transport]
+  KS --> CK[Full-class sharp CK threshold: native]
+  ISO --> CT[Conjugated action and projector class transport: native]
   CT --> CK
+  CT --> HC[Full-class Haar and zonal geometry: native]
+  Z --> HC
   C --> B[Box and balance preserving smooth approximation: native]
   B --> X[Smooth supercritical geometric witnesses: native]
   J --> X
@@ -187,8 +195,10 @@ general anchoring lemma derives every product's integrability from compact-inter
 continuity. The actual hemisphere substitution, invariant CK classification,
 exact variational cap and produced-metric safety/equality are now native.
 Smooth supercritical and fixed-probe critical recovery and geometric stability
-normalization are now native. The next frontier is complete same-map class
-transport and the sharp safe-cap characterization, followed by structural separation.
+normalization passed Round 12 review. Complete same-map class transport and
+the sharp universal CK safe-cap characterization are now native pending review.
+The next frontier is structural separation through the actual critical area
+coordinate, plateau variation, strict contraction and complete exact-moment recovery.
 The actual normalized projector, canonical
 derivatives, full polarized split, global invariant classification and literal
 original-action scalarization, scalar Haar compatibility, scalar pole values and
@@ -220,13 +230,14 @@ real producers, not by moving the historical aggregate into the new project.
   collapses at `C=1`. Produced-metric full CK equality now combines
   differentiable-competitor strictness, the direct cap-one value, actual invariant
   CK classification and remainder equality, including zero Haar average.
-  Full-class equality still needs the conjugated action/projector transport.
+  The full-class equality now follows natively through the same inverse
+  pullback, including zero Haar average and orientation reversal.
 - The polar square completion and positive scalar estimate with weight `1/b(z)`
   are native and passed Round 9 review. Their application to the original
   remainder now proves `Q(h−Ph)≥0` and `Q(h−Ph)=0 ↔ h−Ph=0`, using actual
   derivative vanishing and full-support Riemannian volume, accepted in Round 10.
   The produced-metric CK consumer uses this equality without re-proving it and
-  passed Round 11 review. The broader class transport remains open.
+  passed Round 11 review. The broader class transport is now native pending review.
 - The new constant-probe continuity theorem controls the literal integral
   `integral warp(a)/a` on a common positive box, with Lipschitz coefficient
   `8*(1/lo+hi/lo²)`, and proves actual unit-probe action convergence.

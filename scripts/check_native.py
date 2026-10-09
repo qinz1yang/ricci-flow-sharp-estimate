@@ -129,6 +129,15 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.ConformalKillingStability",
     "RicciFlowSharpEstimate.Geometry.SmoothReciprocalRecovery",
     "RicciFlowSharpEstimate.Geometry.ConformalKillingSharpness",
+    "RicciFlowSharpEstimate.Geometry.PullbackAlgebra",
+    "RicciFlowSharpEstimate.Geometry.ConjugatedRotationalAverage",
+    "RicciFlowSharpEstimate.Geometry.ConjugatedCircleAction",
+    "RicciFlowSharpEstimate.Geometry.ConjugatedHaarDissipation",
+    "RicciFlowSharpEstimate.Geometry.RepresentedRotationalMetric",
+    "RicciFlowSharpEstimate.Geometry.ConjugatedZonalGeometry",
+    "RicciFlowSharpEstimate.Geometry.RepresentedHaarGeometry",
+    "RicciFlowSharpEstimate.Geometry.ConjugatedStability",
+    "RicciFlowSharpEstimate.Geometry.ConformalKillingThreshold",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -142,6 +151,7 @@ SELECTOR = r"""
   let analysis := `RicciFlowSharpEstimate.Analysis
   let variational := `RicciFlowSharpEstimate.Variational
   let profile := `RicciFlowSharpEstimate.Geometry.RotationalProfile
+  let represented := `RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric
   let poleData := `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
@@ -605,7 +615,101 @@ SELECTOR = r"""
       poleData ++ `oneFormDissipation_meridional_one_eq_integral,
       profile ++ `exists_poleData_unit_probe_recovery,
       profile ++ `exists_negative_unit_meridional_of_criticalCap_lt,
-      profile ++ `exists_critical_unit_probe_recovery
+      profile ++ `exists_critical_unit_probe_recovery,
+      geo ++ `diffeomorphTensorPullback_zero,
+      geo ++ `diffeomorphTensorPullback_neg,
+      geo ++ `diffeomorphTensorPullback_sub,
+      geo ++ `diffeomorphTensorPullback_injective,
+      geo ++ `diffeomorphTensorPullback_eq_zero_iff,
+      geo ++ `pullbackMetric_symm_apply,
+      geo ++ `pullbackMetric_apply_symm,
+      geo ++ `conjugatedRotationalAverage,
+      geo ++ `conjugatedRotationalAverage_refl,
+      geo ++ `conjugatedRotationalAverage_diffeomorphTensorPullback,
+      geo ++ `diffeomorphTensorPullback_symm_conjugatedRotationalAverage,
+      geo ++ `conjugatedRotationalAverage_zero,
+      geo ++ `conjugatedRotationalAverage_add,
+      geo ++ `conjugatedRotationalAverage_smul,
+      geo ++ `conjugatedRotationalAverage_sub,
+      geo ++ `conjugatedRotationalAverage_idempotent,
+      geo ++ `conjugatedRotationalAverage_sub_average,
+      geo ++ `conjugatedRotationalAverage_eq_self_iff_pullback,
+      geo ++ `conjugatedCircleSphereDiffeo,
+      geo ++ `conjugatedCircleSphereDiffeo_apply,
+      geo ++ `conjugatedCircleSphereDiffeo_one,
+      geo ++ `conjugatedCircleSphereDiffeo_mul,
+      geo ++ `conjugatedCircleSphereAction,
+      geo ++ `conjugatedCircleSphereDiffeo_inv,
+      geo ++ `conjugatedAngleRotation,
+      geo ++ `conjugatedAngleRotation_apply,
+      geo ++ `conjugatedAngleRotation_zero,
+      geo ++ `conjugatedAngleRotation_add,
+      geo ++ `conjugatedAngleRotation_neg,
+      geo ++ `conjugatedAngleRotation_periodic,
+      geo ++ `conjugatedAngleRotation_contMDiff,
+      poleData ++ `pullbackMetric_conjugatedCircleSphereDiffeo,
+      poleData ++ `metric_inner_conjugatedCircleSphereDiffeo,
+      poleData ++ `pullbackMetric_conjugatedAngleRotation,
+      geo ++ `diffeomorphTensorPullback_conjugatedCircleSphereDiffeo,
+      geo ++ `contMDiff_diffeomorphTensorPullback_conjugatedAngleRotation,
+      geo ++ `intervalIntegrable_conjugatedAngleRotation_apply,
+      geo ++ `conjugatedRotationalAverage_eval,
+      geo ++ `conjugatedRotationalAverage_apply,
+      geo ++ `diffeomorphTensorPullback_conjugatedCircle_conjugatedRotationalAverage,
+      geo ++ `conjugatedRotationalAverage_eq_self_iff,
+      poleData ++ `metricNabla0S_conjugatedRotationalAverage,
+      poleData ++ `metricNabla0S_twice_conjugatedRotationalAverage,
+      poleData ++ `roughLap0SField_conjugatedRotationalAverage,
+      poleData ++ `ahlforsPart_conjugatedRotationalAverage,
+      poleData ++ `ahlforsPart_metricNabla0S_conjugatedRotationalAverage,
+      poleData ++ `oneFormDissipationPairing_conjugatedRotationalAverage_selfAdjoint,
+      poleData ++ `oneFormDissipationPairing_conjugated_average_sub_average,
+      poleData ++ `oneFormDissipation_conjugated_split,
+      poleData ++ `oneFormDissipation_conjugated_remainder_nonneg,
+      poleData ++ `oneFormDissipation_conjugated_remainder_eq_zero_iff,
+      geo ++ `IsRepresentedRotationalMetric,
+      poleData ++ `isRepresentedRotationalMetric,
+      poleData ++ `isRepresentedRotationalMetric_pullback,
+      poleData ++ `metricScalarAt_pullback,
+      poleData ++ `curvature_bounds_pullback_iff,
+      poleData ++ `riemannianVolume_measurePreserving_pullback,
+      poleData ++ `riemannianVolume_map_pullback,
+      poleData ++ `areaForm_pullback_apply,
+      poleData ++ `areaForm_pullback_normSq,
+      poleData ++ `metricNabla0S_areaForm_pullback,
+      poleData ++ `oneFormCurl_areaForm_pullback,
+      poleData ++ `oneFormDissipation_nonneg_pullback_of_conformalKilling_curvature_bounds,
+      poleData ++ `oneFormDissipation_eq_zero_iff_pullback_of_conformalKilling_curvature_bounds,
+      represented ++ `pullback,
+      represented ++ `oneFormDissipation_nonneg_of_conformalKilling_curvature_bounds,
+      represented ++ `oneFormDissipation_eq_zero_iff_of_conformalKilling_curvature_bounds,
+      poleData ++ `oneFormDissipation_pullback_zonal,
+      poleData ++ `exists_smooth_zonal_decomposition_conjugatedRotationalAverage,
+      poleData ++ `exists_conjugated_haar_zonal_dissipation,
+      poleData ++ `oneFormDissipation_conjugatedRotationalAverage_le,
+      poleData ++ `oneFormDissipation_eq_conjugatedRotationalAverage_iff,
+      poleData ++ `oneFormDissipation_eq_conjugatedRotationalAverage_iff_invariant,
+      poleData ++ `exists_conjugated_haar_zonal_lower_bound,
+      poleData ++ `isConformalKillingOneForm_conjugatedRotationalAverage,
+      poleData ++ `exists_conjugated_constant_zonal_of_conformalKilling,
+      represented ++ `exists_haar_representation,
+      represented ++ `exists_haar_zonal_decomposition,
+      poleData ++ `hemisphereDeficit_logProfile_eq_normalized_pullback_constant_zonal,
+      poleData ++ `oneFormDissipation_pullback_constant_zonal_controls_evenExtension,
+      poleData ++ `oneFormDissipation_pullback_constant_zonal_controls_reflection,
+      poleData ++ `oneFormDissipation_pullback_constant_zonal_controls_symmetrization,
+      poleData ++ `pullback_constant_zonal_zero_of_sq_sum_eq_zero,
+      represented ++ `exists_stability_representation,
+      geo ++ `conformalKillingSafeCaps,
+      geo ++ `conformalKillingSafeCaps_eq,
+      geo ++ `conformalKillingSafeCaps_nonempty,
+      geo ++ `conformalKillingSafeCaps_bddAbove,
+      geo ++ `conformalKillingThreshold,
+      geo ++ `conformalKillingThreshold_eq_criticalCap,
+      geo ++ `conformalKillingThreshold_closedForm,
+      represented ++ `oneFormDissipation_pos_of_conformalKilling,
+      geo ++ `exists_represented_negative_unit_meridional,
+      geo ++ `exists_represented_critical_unit_probe_recovery
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -1570,6 +1674,194 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile in
 #check exists_negative_unit_meridional_of_criticalCap_lt
 open RicciFlowSharpEstimate.Geometry.RotationalProfile in
 #check exists_critical_unit_probe_recovery
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_zero
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_neg
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_sub
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_injective
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_eq_zero_iff
+open RicciFlowSharpEstimate.Geometry in
+#check pullbackMetric_symm_apply
+open RicciFlowSharpEstimate.Geometry in
+#check pullbackMetric_apply_symm
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_refl
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_symm_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_zero
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_add
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_smul
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_sub
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_idempotent
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_sub_average
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_eq_self_iff_pullback
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedCircleSphereDiffeo
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedCircleSphereDiffeo_apply
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedCircleSphereDiffeo_one
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedCircleSphereDiffeo_mul
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedCircleSphereAction
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedCircleSphereDiffeo_inv
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedAngleRotation
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedAngleRotation_apply
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedAngleRotation_zero
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedAngleRotation_add
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedAngleRotation_neg
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedAngleRotation_periodic
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedAngleRotation_contMDiff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check pullbackMetric_conjugatedCircleSphereDiffeo
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metric_inner_conjugatedCircleSphereDiffeo
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check pullbackMetric_conjugatedAngleRotation
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_conjugatedCircleSphereDiffeo
+open RicciFlowSharpEstimate.Geometry in
+#check contMDiff_diffeomorphTensorPullback_conjugatedAngleRotation
+open RicciFlowSharpEstimate.Geometry in
+#check intervalIntegrable_conjugatedAngleRotation_apply
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_eval
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_apply
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_conjugatedCircle_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry in
+#check conjugatedRotationalAverage_eq_self_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricNabla0S_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricNabla0S_twice_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check roughLap0SField_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check ahlforsPart_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check ahlforsPart_metricNabla0S_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipationPairing_conjugatedRotationalAverage_selfAdjoint
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipationPairing_conjugated_average_sub_average
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_conjugated_split
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_conjugated_remainder_nonneg
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_conjugated_remainder_eq_zero_iff
+open RicciFlowSharpEstimate.Geometry in
+#check IsRepresentedRotationalMetric
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check isRepresentedRotationalMetric
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check isRepresentedRotationalMetric_pullback
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricScalarAt_pullback
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check curvature_bounds_pullback_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check riemannianVolume_measurePreserving_pullback
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check riemannianVolume_map_pullback
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check areaForm_pullback_apply
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check areaForm_pullback_normSq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricNabla0S_areaForm_pullback
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormCurl_areaForm_pullback
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_nonneg_pullback_of_conformalKilling_curvature_bounds
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_zero_iff_pullback_of_conformalKilling_curvature_bounds
+open RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric in
+#check pullback
+open RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric in
+#check oneFormDissipation_nonneg_of_conformalKilling_curvature_bounds
+open RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric in
+#check oneFormDissipation_eq_zero_iff_of_conformalKilling_curvature_bounds
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_pullback_zonal
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_smooth_zonal_decomposition_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_conjugated_haar_zonal_dissipation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_conjugatedRotationalAverage_le
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_conjugatedRotationalAverage_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_conjugatedRotationalAverage_iff_invariant
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_conjugated_haar_zonal_lower_bound
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check isConformalKillingOneForm_conjugatedRotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_conjugated_constant_zonal_of_conformalKilling
+open RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric in
+#check exists_haar_representation
+open RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric in
+#check exists_haar_zonal_decomposition
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check hemisphereDeficit_logProfile_eq_normalized_pullback_constant_zonal
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_pullback_constant_zonal_controls_evenExtension
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_pullback_constant_zonal_controls_reflection
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_pullback_constant_zonal_controls_symmetrization
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check pullback_constant_zonal_zero_of_sq_sum_eq_zero
+open RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric in
+#check exists_stability_representation
+open RicciFlowSharpEstimate.Geometry in
+#check conformalKillingSafeCaps
+open RicciFlowSharpEstimate.Geometry in
+#check conformalKillingSafeCaps_eq
+open RicciFlowSharpEstimate.Geometry in
+#check conformalKillingSafeCaps_nonempty
+open RicciFlowSharpEstimate.Geometry in
+#check conformalKillingSafeCaps_bddAbove
+open RicciFlowSharpEstimate.Geometry in
+#check conformalKillingThreshold
+open RicciFlowSharpEstimate.Geometry in
+#check conformalKillingThreshold_eq_criticalCap
+open RicciFlowSharpEstimate.Geometry in
+#check conformalKillingThreshold_closedForm
+open RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric in
+#check oneFormDissipation_pos_of_conformalKilling
+open RicciFlowSharpEstimate.Geometry in
+#check exists_represented_negative_unit_meridional
+open RicciFlowSharpEstimate.Geometry in
+#check exists_represented_critical_unit_probe_recovery
 """
 
 

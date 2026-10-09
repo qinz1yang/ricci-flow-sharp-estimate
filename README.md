@@ -33,9 +33,13 @@ probe, and passed Round 11 review at `ae5dc91`.
 Smooth even box-preserving recovery now produces genuine negative CK witnesses
 below every larger cap and a critical sequence whose fixed unit-probe actions
 are positive and tend to zero. The exact geometric hemisphere-stability
-consumers are also native. This new layer awaits independent review.
-Full class transport and its safe-cap characterization, structural separation,
-actual typesetting and final whole-suite acceptance remain open.
+consumers passed Round 12 review at `58d5dbc`.
+The same-map conjugated circle/projector, full Haar geometry, CK safety/equality
+and stability now extend to the advertised diffeomorphic-pullback class.
+The universal CK safe-cap set is natively exactly `[1,criticalCap]`, and its
+supremum has the derived radical/exponential value. This new layer awaits
+independent review. Structural separation, actual typesetting and final
+whole-suite acceptance remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

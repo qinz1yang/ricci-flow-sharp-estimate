@@ -1,0 +1,14 @@
+{
+  "source_sha256": "43d2e931527b7609d0b7f2186468ea8e091d6c41a463e4eae260e0ee8ff783e8",
+  "theorem_map_sha256": "97161142a4d5af53eab4b66bbb7a509850b8d5bbfb58e89ddd9331e192810b50",
+  "labels": 140,
+  "references": 181,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round12 accepted; seven new represented-class Haar/CK/threshold claims pending configured outer review"
+}
