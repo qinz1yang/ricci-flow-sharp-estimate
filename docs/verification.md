@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all 131 current modules. Importing it is required
+The root aggregate is a real consumer of all 139 current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -237,15 +237,46 @@ The source simplifier's single wording suggestion was applied: the smooth
 extension agrees on the closed interval, with no exterior germ claim.
 The final source-bound gate was rerun after that comment-only edit; the earlier
 candidate receipt is preserved in ignored Root scratch and is not final evidence.
-Seven conventional claims and their exact mappings await configured review.
-The [current manuscript receipt](evidence/round-14/manuscript.json) records
+Round 14 independently accepts this native layer and six of its seven new
+conventional claims. The seventh paper statement now explicitly restricts its
+three x-dependent tying equations to [0,1], retaining R=r∘X globally; that short
+QS7 delta is submitted with the current checkpoint. No Lean change was required
+for the correction. The [historical manuscript receipt](evidence/round-14/manuscript.json) records
 152 unique labels, 197 resolved references and one resolved citation.
 Actual typesetting is not claimed.
 
-Critical area zero action, plateau variation, strict contraction, exact-moment
-L1/ae recovery with complete-action convergence, all-form cap-one safety and the
-strict supremum comparison remain open. Remaining manuscript/typesetting and
-final whole-suite independent/native gates also remain open. Historical
-delivered receipts are unchanged.
+The [critical-area/plateau receipt](evidence/round-15/receipt.json),
+[axiom closure](evidence/round-15/axioms.txt) and
+[exact signatures](evidence/round-15/signatures.txt) cover 139 modules.
+The eight new sources are freshly elaborated; all 131 preceding mathematical
+sources are unchanged and reuse matching accepted source evidence. The root
+and full declaration/signature/axiom drivers pass. All 2281 defining-module
+declarations, including 754 private declarations, have only the permitted
+foundational axioms. All 707 required selectors and 806 signature queries execute.
+The receipt binds 144 inputs, 145 command outputs and three generated drivers;
+source and declaration-linter outputs are empty. Execution, reuse guards and
+validation semantics of the checker are unchanged.
+
+The [current manuscript receipt](evidence/round-15/manuscript.json) records
+160 unique labels, 204 resolved references and one resolved citation, with
+balanced braces and environments. Four new conventional claims and QS7's
+physical-domain correction await configured independent review. No typesetting
+or whole-suite acceptance is claimed.
+
+The new critical-area layer uses a proof-independent clamped physical inverse
+of the actual normalized reciprocal integral. Both moments, slope and warp
+pullbacks and the complete unit-probe action follow from genuine calculus and
+forward substitution. The actual critical optimizer has a positive plateau,
+strict average bounds, hemisphere shape and derived zero action. Its full
+plateau flux and first variation produce one fixed smooth negative area probe,
+with explicit step size, actual derivatives, initial data and endpoint constancy.
+The source simplifier requested no changes; its delta check also covers the
+midpoint simp-normal-form repair found by the unsuppressed native gate.
+
+Strict contraction, symmetric monotone exact-moment L1/ae recovery with convergence
+of every complete-action term, the resulting negative smooth geometric witness,
+all-form cap-one safety and strict supremum comparison remain open. Remaining
+manuscript/typesetting and final whole-suite independent/native gates also remain
+open. Historical delivered receipts are unchanged.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

@@ -2966,9 +2966,9 @@ globally smooth $R$ with
 \]
 both physical interval mapping laws, both inverse laws
 $X(V_K(x))=x$ on $[0,1]$ and $V_K(X(v))=v$ on $[-1,1]$, and
-$X'(v)K(X(v))=1$ on the closed height interval. They satisfy
+$X'(v)K(X(v))=1$ on the closed height interval. They satisfy $R=r\circ X$
+globally and, for every $x\in[0,1]$,
 \begin{equation}\label{eq:area-realization-tying}
- R=r\circ X,\qquad
  D.a(V_K(x))=\frac1{K(x)},\qquad
  R(V_K(x))=r(x),\qquad
  \operatorname{warp}(D.a)(V_K(x))=f_K(x).
@@ -3033,11 +3033,158 @@ identity, and the accepted equatorial evaluation makes its unit meridional
 form nonzero.
 \end{proof}
 
-The critical area profile and its zero action, plateau variation, strict
-contraction before exact-moment recovery, full general-probe action convergence
-and universal all-form threshold comparison remain to be proved. The smooth
-realization above supplies their geometric consumer; it does not itself supply
-the required negative area profile or a strict-separation witness.
+\subsection{The critical curvature in normalized area coordinates}
+
+\begin{lemma}\label{lem:reciprocal-area-coordinate}
+Let $a:\R\to\R$ be continuous and positive on $[-1,1]$. Set
+\[
+ L_a=\int_{-1}^1a(v)\,dv,\qquad
+ X_a(v)=\frac1{L_a}\int_{-1}^v a(s)\,ds.
+\]
+Then $L_a>0$ and $X_a$ maps $[-1,1]$ continuously and strictly increasingly
+onto $[0,1]$, with $X_a(-1)=0$, $X_a(1)=1$ and $X_a'=a/L_a$.
+Let $V_a$ be the physical inverse, extended constantly to $-1$ and $1$
+outside $[0,1]$, and put $K_a(x)=L_a/a(V_a(x))$.
+The functions $V_a,K_a$ are continuous on $\R$, $K_a>0$, and
+\[
+ V_a(X_a(v))=v\quad(-1\le v\le1),\qquad
+ X_a(V_a(x))=x\quad(0\le x\le1),\qquad
+ K_a(X_a(v))=\frac{L_a}{a(v)}\quad(-1\le v\le1).
+\]
+If $\int_{-1}^1va(v)\,dv=0$, then
+\begin{equation}\label{eq:reciprocal-area-moments-warp}
+ \int_0^1K_a=2,\qquad \int_0^1xK_a(x)\,dx=1,\qquad
+ f_{K_a}(X_a(v))=\frac{\operatorname{warp}(a)(v)}{L_a},\qquad
+ f_{K_a}'(X_a(v))=-2v\quad(-1\le v\le1).
+\end{equation}
+Under the same balance hypothesis, the complete area action satisfies
+\begin{equation}\label{eq:reciprocal-area-unit-action}
+ A_{K_a}(1)=2\int_{-1}^1\frac{\operatorname{warp}(a)(v)}{a(v)}\,dv-\frac43.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Positivity gives $L_a>0$ and $X_a'>0$ on the physical interval. Compactness
+and strict monotonicity give the homeomorphism onto its endpoint interval;
+clamping the inverse gives the stated continuous extension. In particular its
+range remains in $[-1,1]$, so its curvature is continuous and positive on the
+whole line. All inverse identities above concern the indicated physical
+intervals.
+
+The chain rule and the curvature tying equation give
+$(V_{K_a}\circ X_a)'=K_a(X_a)a/L_a=1$.
+Both sides agree at $v=-1$, hence $V_{K_a}(X_a(v))=v$.
+Thus $f_{K_a}'(X_a(v))=-2v$ and the zeroth moment is two.
+The derivative of $f_{K_a}\circ X_a$ is $-2va/L_a$, which equals the
+derivative of $\operatorname{warp}(a)/L_a$.
+Balance makes both functions zero at $-1$, proving the warp equation.
+At $v=1$ the warp vanishes; the corrected triangular primitive, together with
+the zeroth moment, then gives the first moment.
+
+For the unit probe the full density reduces to
+$2K_a^2f_{K_a}-K_a(f_{K_a}')^2/2$.
+After multiplication by the actual Jacobian $X_a'=a/L_a$, it becomes
+$2\operatorname{warp}(a)/a-2v^2$ on $[-1,1]$.
+Continuity gives integrability, and ordinary interval substitution gives
+\eqref{eq:reciprocal-area-unit-action}. This calculation requires no derivative
+of $a$ or $K_a$ and assigns no smooth metric to these continuous data.
+\end{proof}
+
+\begin{theorem}\label{thm:critical-area-curvature}
+Take $a_*=a_{0,C_{\mathrm{CK}}}$ from \eqref{eq:even-reciprocal-limit} and use the
+preceding construction to define $L_*,X_*,V_*,K_*$.
+Then $K_*$ has both normalized moments, is continuous and positive, and obeys
+\[
+ L_*\le K_*(x)\le L_*C_{\mathrm{CK}},\qquad
+ L_*<2<L_*C_{\mathrm{CK}}.
+\]
+On $[0,1]$ it is symmetric about $1/2$, nonincreasing on $[0,1/2]$ and
+nondecreasing on $[1/2,1]$.
+There are $0<l<u<1$ such that $K_*=L_*$ on $[l,u]$,
+and $f_{K_*}>0$ throughout $(0,1)$.
+The actual complete unit-probe area action is zero:
+\begin{equation}\label{eq:critical-area-zero-action}
+ A_{K_*}(1)=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The actual reciprocal optimizer is even, continuous, lies in $[1/C_{\mathrm{CK}},1]$,
+equals one on its positive central contact interval and equals $1/C_{\mathrm{CK}}$
+at the outer contacts. Its logarithmic profile is nondecreasing on the northern
+half, so the reciprocal is nonincreasing there. The strict inequalities for
+$L_*$ follow by integrating the two box bounds: each is strict on a nonempty
+interval because $C_{\mathrm{CK}}>1$ and both contact regions are nonempty.
+Evenness gives balance and $X_*(-v)=1-X_*(v)$, whence $X_*(0)=1/2$ and
+$V_*(1-x)=-V_*(x)$ on $[0,1]$.
+These identities prove the symmetry of $K_*$, and the increasing inverse
+transports the two hemisphere monotonicity laws. A closed subinterval of the
+central contact region maps to an interior constant-curvature plateau.
+Positive curvature and the two moments give strict interior warping positivity
+by Theorem~\ref{thm:positive-normalized-area-geometry}.
+Finally the critical variational value is $m(C_{\mathrm{CK}})=1/3$,
+and the reciprocal warp-ratio integral is twice that value. Substitution in
+\eqref{eq:reciprocal-area-unit-action} gives $2(2/3)-4/3=0$.
+\end{proof}
+
+\begin{lemma}\label{lem:plateau-first-variation}
+Let $K:\R\to\R$ be continuous, and fix $0<l<u<1$ with $K=\kappa$ on $(l,u)$.
+Write $f=f_K$, and let $\chi$ be globally smooth with support compactly
+contained in $(l,u)$. The complete action has the exact variation
+\begin{equation}\label{eq:plateau-exact-variation}
+ A_K(1-\varepsilon\chi)=A_K(1)
+ -2\varepsilon\kappa^2\int_0^1 f\chi
+ +\varepsilon^2 A_K(\chi).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Expansion of the full six-entry density gives the coefficient of $-\varepsilon$
+\[
+ -2Kf^2\chi''-5Kff'\chi'+(4K^2f-K(f')^2)\chi.
+\]
+On the support of $\chi$, use $f''=-2\kappa$ to write this as
+\[
+ 2\kappa^2 f\chi+
+ \bigl(-2\kappa f^2\chi'-\kappa ff'\chi\bigr)'.
+\]
+Off that support, $\chi$ and both derivatives vanish, so the equality remains
+valid. The flux vanishes at both endpoints. All terms are continuous, and
+integrating the identity proves \eqref{eq:plateau-exact-variation}, with its
+quadratic term equal to the actual action of the same bump.
+\end{proof}
+
+\begin{theorem}\label{thm:critical-plateau-instability}
+The actual critical curvature $K_*$ admits a globally smooth probe $r$ which
+equals one near both endpoints, is nonconstant on $[0,1]$, has
+$r(0)=1$, $r'(0)=0$, and satisfies $A_{K_*}(r)<0$.
+\end{theorem}
+
+\begin{proof}
+Choose a nonnegative, nonzero smooth bump $\chi$ supported strictly inside the
+positive plateau. Since $f_{K_*}>0$ there, its weighted pairing is positive.
+Set
+\[
+ A=L_*^2\int_0^1 f_{K_*}\chi>0,\qquad
+ B=A_{K_*}(\chi),\qquad
+ \varepsilon=\frac{A}{|B|+1}>0,\qquad r=1-\varepsilon\chi.
+\]
+Then $\varepsilon|B|<A$, and therefore
+$-2\varepsilon A+\varepsilon^2B<0$.
+Equations~\eqref{eq:critical-area-zero-action} and
+\eqref{eq:plateau-exact-variation} give the negative action.
+The same probe has the actual derivatives $r'=-\varepsilon\chi'$ and
+$r''=-\varepsilon\chi''$. Its support condition gives constancy near both
+endpoints and the stated initial data; positivity of the pairing ensures
+physical nonconstancy. Only continuity of the curvature has been used;
+smooth geometric recovery is a subsequent step.
+\end{proof}
+
+Strict contraction before exact-moment smooth recovery, convergence of the full
+general-probe action, the smooth negative geometric witness and the universal
+all-form threshold comparison remain to be proved. The smooth realization above
+will apply after that recovery; the continuous critical curvature itself is not
+assigned a smooth sphere metric.
 
 \begin{thebibliography}{1}
 \bibitem{jerison-fourier}

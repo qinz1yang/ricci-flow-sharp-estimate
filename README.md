@@ -40,10 +40,17 @@ The universal CK safe-cap set is natively exactly `[1,criticalCap]`, and its
 supremum has the derived radical/exponential value. This layer passed Round 13
 review at `70f0557`, closing AC4 and AC5.
 Positive normalized area geometry, its complete action, and a fully tied smooth
-geometric realization are now native pending review. The realization exposes
+geometric realization passed Round 14 native review at `a6843ea`.
+The realization exposes
 both inverse-coordinate laws, actual probe jets, curvature and the original
-`2*pi` action identity. The critical area profile/plateau/contraction/recovery
-argument for strict separation, actual typesetting and final acceptance remain open.
+`2*pi` action identity. Its manuscript's physical-domain qualification is corrected.
+The actual critical area curvature now has its exact moments, scaled box,
+hemisphere shape, positive plateau and zero unit-probe action. A fixed smooth
+probe supported as a variation inside that plateau gives negative complete area
+action and equals one near both endpoints. This new layer awaits review.
+Strict contraction and exact-moment recovery to a smooth negative geometric
+witness, all-form safety and the strict supremum comparison, actual typesetting
+and final acceptance remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

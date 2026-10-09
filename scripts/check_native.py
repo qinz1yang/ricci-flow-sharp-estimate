@@ -146,6 +146,14 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaAction",
     "RicciFlowSharpEstimate.Geometry.AreaActionBridge",
     "RicciFlowSharpEstimate.Geometry.AreaGeometricRealization",
+    "RicciFlowSharpEstimate.Variational.ReciprocalProfileShape",
+    "RicciFlowSharpEstimate.Analysis.ContinuousIntervalInverse",
+    "RicciFlowSharpEstimate.Geometry.ReciprocalAreaGeometry",
+    "RicciFlowSharpEstimate.Geometry.ReciprocalAreaSymmetry",
+    "RicciFlowSharpEstimate.Analysis.PositiveSmoothBump",
+    "RicciFlowSharpEstimate.Geometry.AreaPlateauInstability",
+    "RicciFlowSharpEstimate.Geometry.CriticalAreaProfile",
+    "RicciFlowSharpEstimate.Geometry.CriticalPlateauInstability",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -161,6 +169,8 @@ SELECTOR = r"""
   let profile := `RicciFlowSharpEstimate.Geometry.RotationalProfile
   let represented := `RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric
   let area := `RicciFlowSharpEstimate.Geometry.AreaProfile
+  let recipArea := `RicciFlowSharpEstimate.Geometry.ReciprocalArea
+  let criticalArea := `RicciFlowSharpEstimate.Geometry.CriticalAreaProfile
   let poleData := `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
@@ -771,7 +781,107 @@ SELECTOR = r"""
       area ++ `meridionalDensity_heightCoordinate_mul_curvature,
       area ++ `oneFormDissipation_eq_areaAction_of_profile_probe,
       area ++ `exists_smooth_geometric_realization,
-      area ++ `round_unit_probe_normalization
+      area ++ `round_unit_probe_normalization,
+      variational ++ `monotone_obstacleExponential,
+      variational ++ `monotone_obstacleLogProfile,
+      variational ++ `evenReciprocalProfile_eq_low,
+      variational ++ `evenReciprocalProfile_eq_high,
+      variational ++ `evenReciprocalProfile_at_zero,
+      variational ++ `evenReciprocalProfile_at_one,
+      variational ++ `evenReciprocalProfile_one,
+      variational ++ `antitoneOn_evenReciprocalProfile,
+      variational ++ `monotoneOn_evenReciprocalProfile,
+      variational ++ `evenReciprocalProfile_central_plateau,
+      variational ++ `evenReciprocalProfile_strict_average_bounds,
+      analysis ++ `clampedIntervalInverse,
+      analysis ++ `clampedIntervalInverse_mem,
+      analysis ++ `clampedIntervalInverse_apply,
+      analysis ++ `apply_clampedIntervalInverse,
+      analysis ++ `clampedIntervalInverse_continuous,
+      recipArea ++ `length,
+      recipArea ++ `coordinate,
+      recipArea ++ `inverse,
+      recipArea ++ `curvature,
+      recipArea ++ `length_pos,
+      recipArea ++ `coordinate_hasDerivAt,
+      recipArea ++ `coordinate_continuous,
+      recipArea ++ `coordinate_neg_one,
+      recipArea ++ `coordinate_one,
+      recipArea ++ `coordinate_strictMonoOn,
+      recipArea ++ `coordinate_mapsTo,
+      recipArea ++ `coordinate_bijOn,
+      recipArea ++ `inverse_mem,
+      recipArea ++ `inverse_continuous,
+      recipArea ++ `inverse_coordinate,
+      recipArea ++ `coordinate_inverse,
+      recipArea ++ `inverse_zero,
+      recipArea ++ `inverse_one,
+      recipArea ++ `inverse_strictMonoOn,
+      recipArea ++ `curvature_continuous,
+      recipArea ++ `curvature_pos,
+      recipArea ++ `curvature_coordinate,
+      recipArea ++ `integral_comp_coordinate,
+      recipArea ++ `warpSlope_coordinate,
+      recipArea ++ `heightCoordinate_coordinate,
+      recipArea ++ `integral_curvature,
+      recipArea ++ `warp_coordinate,
+      recipArea ++ `integral_mul_curvature,
+      recipArea ++ `curvature_mem_Icc,
+      recipArea ++ `meridionalAction_one_eq_integral,
+      recipArea ++ `meridionalAction_one,
+      recipArea ++ `coordinate_reflection,
+      recipArea ++ `coordinate_zero,
+      recipArea ++ `inverse_half,
+      recipArea ++ `inverse_reflection,
+      recipArea ++ `curvature_reflection,
+      recipArea ++ `curvature_antitoneOn_left,
+      recipArea ++ `curvature_monotoneOn_right,
+      analysis ++ `exists_contDiff_nonneg_tsupport_subset_integral_mul_pos,
+      area ++ `constantProbeVariationDensity,
+      area ++ `meridionalActionDensity_one_sub_mul,
+      area ++ `plateauFlux,
+      area ++ `plateauFlux_hasDerivAt,
+      area ++ `plateauFlux_endpoints,
+      area ++ `constantProbeVariation_integral_eq_plateau_pairing,
+      area ++ `meridionalAction_one_sub_mul_of_plateau,
+      area ++ `exists_smooth_plateau_probe,
+      area ++ `exists_smooth_probe_action_neg_of_constant_curvature_plateau,
+      criticalArea ++ `reciprocal,
+      criticalArea ++ `length,
+      criticalArea ++ `coordinate,
+      criticalArea ++ `inverse,
+      criticalArea ++ `curvature,
+      criticalArea ++ `length_pos,
+      criticalArea ++ `strict_average_bounds,
+      criticalArea ++ `coordinate_hasDerivAt,
+      criticalArea ++ `coordinate_neg_one,
+      criticalArea ++ `coordinate_one,
+      criticalArea ++ `inverse_zero,
+      criticalArea ++ `inverse_one,
+      criticalArea ++ `coordinate_bijOn,
+      criticalArea ++ `inverse_mem,
+      criticalArea ++ `inverse_coordinate,
+      criticalArea ++ `coordinate_inverse,
+      criticalArea ++ `inverse_continuous,
+      criticalArea ++ `curvature_continuous,
+      criticalArea ++ `curvature_pos,
+      criticalArea ++ `curvature_coordinate,
+      criticalArea ++ `curvature_bounds,
+      criticalArea ++ `curvature_moments,
+      criticalArea ++ `warp_coordinate,
+      criticalArea ++ `warpSlope_coordinate,
+      criticalArea ++ `heightCoordinate_eq_inverse,
+      criticalArea ++ `coordinate_reflection,
+      criticalArea ++ `coordinate_zero,
+      criticalArea ++ `inverse_half,
+      criticalArea ++ `curvature_reflection,
+      criticalArea ++ `curvature_antitoneOn_left,
+      criticalArea ++ `curvature_monotoneOn_right,
+      criticalArea ++ `warp_pos,
+      criticalArea ++ `exists_positive_constant_plateau,
+      criticalArea ++ `meridionalAction_one_eq_zero,
+      criticalArea ++ `exists_smooth_negative_probe_data,
+      criticalArea ++ `exists_smooth_negative_probe
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -2030,6 +2140,206 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_smooth_geometric_realization
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check round_unit_probe_normalization
+open RicciFlowSharpEstimate.Variational in
+#check monotone_obstacleExponential
+open RicciFlowSharpEstimate.Variational in
+#check monotone_obstacleLogProfile
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_eq_low
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_eq_high
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_at_zero
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_at_one
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_one
+open RicciFlowSharpEstimate.Variational in
+#check antitoneOn_evenReciprocalProfile
+open RicciFlowSharpEstimate.Variational in
+#check monotoneOn_evenReciprocalProfile
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_central_plateau
+open RicciFlowSharpEstimate.Variational in
+#check evenReciprocalProfile_strict_average_bounds
+open RicciFlowSharpEstimate.Analysis in
+#print clampedIntervalInverse
+open RicciFlowSharpEstimate.Analysis in
+#check clampedIntervalInverse_mem
+open RicciFlowSharpEstimate.Analysis in
+#check clampedIntervalInverse_apply
+open RicciFlowSharpEstimate.Analysis in
+#check apply_clampedIntervalInverse
+open RicciFlowSharpEstimate.Analysis in
+#check clampedIntervalInverse_continuous
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#print length
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#print coordinate
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#print inverse
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#print curvature
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check length_pos
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_continuous
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_neg_one
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_one
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_strictMonoOn
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_mapsTo
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_bijOn
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check inverse_mem
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check inverse_continuous
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check inverse_coordinate
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_inverse
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check inverse_zero
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check inverse_one
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check inverse_strictMonoOn
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check curvature_continuous
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check curvature_pos
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check curvature_coordinate
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check integral_comp_coordinate
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check warpSlope_coordinate
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check heightCoordinate_coordinate
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check integral_curvature
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check warp_coordinate
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check integral_mul_curvature
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check curvature_mem_Icc
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check meridionalAction_one_eq_integral
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check meridionalAction_one
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_reflection
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_zero
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check inverse_half
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check inverse_reflection
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check curvature_reflection
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check curvature_antitoneOn_left
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check curvature_monotoneOn_right
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_nonneg_tsupport_subset_integral_mul_pos
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#print constantProbeVariationDensity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalActionDensity_one_sub_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#print plateauFlux
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check plateauFlux_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check plateauFlux_endpoints
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check constantProbeVariation_integral_eq_plateau_pairing
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_one_sub_mul_of_plateau
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_plateau_probe
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_probe_action_neg_of_constant_curvature_plateau
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#print reciprocal
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#print length
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#print coordinate
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#print inverse
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#print curvature
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check length_pos
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check strict_average_bounds
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check coordinate_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check coordinate_neg_one
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check coordinate_one
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check inverse_zero
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check inverse_one
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check coordinate_bijOn
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check inverse_mem
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check inverse_coordinate
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check coordinate_inverse
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check inverse_continuous
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check curvature_continuous
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check curvature_pos
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check curvature_coordinate
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check curvature_bounds
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check curvature_moments
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check warp_coordinate
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check warpSlope_coordinate
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check heightCoordinate_eq_inverse
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check coordinate_reflection
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check coordinate_zero
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check inverse_half
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check curvature_reflection
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check curvature_antitoneOn_left
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check curvature_monotoneOn_right
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check warp_pos
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check exists_positive_constant_plateau
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check meridionalAction_one_eq_zero
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check exists_smooth_negative_probe_data
+open RicciFlowSharpEstimate.Geometry.CriticalAreaProfile in
+#check exists_smooth_negative_probe
 """
 
 

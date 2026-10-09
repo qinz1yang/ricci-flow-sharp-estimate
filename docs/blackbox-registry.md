@@ -2,15 +2,17 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All 131 currently checked analytic, variational and geometric modules depend transitively only on
+All 139 currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-14/axioms.txt) covers 2140 declarations,
-including 747 private declarations and relevant generated constants.
+The [current native report](evidence/round-15/axioms.txt) covers 2281 declarations,
+including 754 private declarations and relevant generated constants.
+The [accepted area-realization report](evidence/round-14/axioms.txt) covers
+the preceding 131-module, 2140-declaration native layer at `a6843ea`.
 The [accepted represented-class report](evidence/round-13/axioms.txt) covers
 the preceding 123-module, 2031-declaration layer at `70f0557`.
 The [accepted smooth recovery report](evidence/round-12/axioms.txt) covers the
@@ -127,9 +129,20 @@ the full original-action identity without exterior positivity assumptions.
 The final smooth realization derives the reciprocal profile, balance and probe
 from K,r and the moments, uses the existing PoleData producer, and retains all
 endpoint/inverse/profile/probe/curvature/action equations publicly. Its lower
-coordinate bridge is not mistaken for the final producer. No nonsmooth critical
-profile is assigned a smooth metric. The remaining critical/plateau/contraction/
-exact-moment convergence and strict comparison are still mandatory unproved work.
+coordinate bridge is not mistaken for the final producer. This native layer
+passed Round 14 review. No nonsmooth critical profile is assigned a smooth metric.
+
+The new critical-area layer constructs a genuine clamped physical inverse from
+the normalized reciprocal primitive. Actual derivative uniqueness and forward
+substitution give both moments, the scaled warp and every term of the complete
+unit-probe action. The critical zero action is derived from the accepted critical
+variational value. Hemisphere shape and contact values give an interior positive
+plateau; a genuine compact smooth bump, actual flux derivative and endpoint
+cancellation give the full first variation. The explicit step A/(abs B+1)
+produces a fixed negative smooth probe of this actual continuous curvature.
+No negative-variation or zero-action premise enters the critical application.
+Strict contraction, exact-moment complete-action convergence, the negative smooth
+geometric witness and the all-form safety/strict comparison remain mandatory.
 
 The manuscript cites David Jerison's MIT 18.103 Fall 2013 notes,
 [*Fourier Series, Part 1*, Corollary 2, p. 5](https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/1c196caa6307e0be46456cf6dc76b543_MIT18_103F13_fseries1.pdf),

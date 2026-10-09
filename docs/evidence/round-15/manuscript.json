@@ -1,0 +1,14 @@
+{
+  "source_sha256": "8560d7573fb35982a9b3b7086fddc92b7d90de2c69ae94d2f61f9879b73cdf1b",
+  "theorem_map_sha256": "ad0bc2402ac42e5a947b54e01579d41b258841c1957f43935f86f78cfb044fb1",
+  "labels": 160,
+  "references": 204,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "citations": 1,
+  "citations_resolved": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "Claims through Round13 and six Round14 claims accepted; QS7 physical-domain correction and four new critical-area/plateau claims pending configured outer review"
+}
