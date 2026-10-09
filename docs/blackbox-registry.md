@@ -176,7 +176,7 @@ included in the report.
 
 Historical references and optional evolution/exact-unrestricted-value leads are
 not blackboxes and are not imported assumptions. Every mandatory mathematical
-headline now has native evidence; final independent acceptance remains pending.
+headline has native evidence and passed final independent acceptance in Round 16 at `2bda267`.
 If a sourced blackbox becomes necessary in future work, a separate registry entry
 must preserve the exact source statement and citation, literal translation,
 binder dictionary and explicit theorem dependencies; equivalences and

@@ -1,0 +1,149 @@
+{
+  "reviewed_revision": "2bda267ca0a4bd965411af36b2c89dde4c78f7c7",
+  "independent_mathematical_acceptance": "Accepted; all seven mandatory criteria met in the completed Round16 review",
+  "generic_code_review_hook": "Skipped because no base_branch was configured; this does not remove the completed independent mathematical review",
+  "scope": "Documentation-only finalization; Lean sources, native configuration, manuscript source and PDF unchanged",
+  "accepted_native_receipt": {
+    "path": "docs/evidence/round-16/receipt.json",
+    "sha256": "941d56f010a1ffdb9d71ba5be0cdd44f4ca5deffdf82accbb69323ead66f3575"
+  },
+  "fresh_native_regression": {
+    "command": [
+      "python3",
+      "scripts/check_native.py",
+      "--output-dir",
+      "/tmp/hmz-fence-dcbst2h7/math-target-i1f8zf9p/native",
+      "--reuse-receipt",
+      "docs/evidence/round-16/receipt.json"
+    ],
+    "exit_code": 0,
+    "local_full_receipt_sha256": "21f49ffb381ceb15421b3fd3cd816ab54506eca722354963e826e18e2b9296fc",
+    "native_inputs_unchanged": 154,
+    "source_elaborations_reused": 149,
+    "fresh_source_elaborations": 0,
+    "fresh_commands": [
+      {
+        "label": "root-build",
+        "command": [
+          "lake",
+          "build"
+        ],
+        "exit_code": 0,
+        "output_sha256": "a1730d43a5b783e5b516046d8cc5afbe16f6b689dcc8cf59fad6fd987e2502f8",
+        "output": "docs/evidence/finalize/root-build.txt"
+      },
+      {
+        "label": "lean-version",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "--version"
+        ],
+        "exit_code": 0,
+        "output_sha256": "948624fc4eacf0eb148f98d864af4814b3e60174b0a53f6817afc937e41279d3",
+        "output": "docs/evidence/round-16/lean-version.txt"
+      },
+      {
+        "label": "lean-path",
+        "command": [
+          "lake",
+          "env",
+          "which",
+          "lean"
+        ],
+        "exit_code": 0,
+        "output_sha256": "1d78fba986221c369ff109d824029f996919cbe065b3549105b4db6f5fcf1182",
+        "output": "docs/evidence/round-16/lean-path.txt"
+      },
+      {
+        "label": "linters",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-DautoImplicit=false",
+          "-Dpp.unicode.fun=true",
+          "-DmaxSynthPendingDepth=3",
+          "-Dweak.linter.mathlibStandardSet=true",
+          "-Dlinter.style.header.license=No license is granted by this file.",
+          "/tmp/hmz-fence-dcbst2h7/math-target-2m5cylit/Linters.lean"
+        ],
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "driver_sha256": "b60ec0e18d5f39168941190300663468c926284fe8fb05fe155a710cd8a4c5f2",
+        "output": "docs/evidence/round-16/linters.txt"
+      },
+      {
+        "label": "axioms",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-DautoImplicit=false",
+          "-Dpp.unicode.fun=true",
+          "-DmaxSynthPendingDepth=3",
+          "-Dweak.linter.mathlibStandardSet=true",
+          "-Dlinter.style.header.license=No license is granted by this file.",
+          "/tmp/hmz-fence-dcbst2h7/math-target-2m5cylit/Axioms.lean"
+        ],
+        "exit_code": 0,
+        "output_sha256": "70178d793eb17b47996406639d9d6561addf29b5e393631391945e418b2a9cac",
+        "driver_sha256": "34f8709f2573e3585208b1f413dae9a612cd7a1303f3ba17acfa26a94bc30178",
+        "output": "docs/evidence/round-16/axioms.txt"
+      },
+      {
+        "label": "signatures",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-DautoImplicit=false",
+          "-Dpp.unicode.fun=true",
+          "-DmaxSynthPendingDepth=3",
+          "-Dweak.linter.mathlibStandardSet=true",
+          "-Dlinter.style.header.license=No license is granted by this file.",
+          "/tmp/hmz-fence-dcbst2h7/math-target-2m5cylit/Signatures.lean"
+        ],
+        "exit_code": 0,
+        "output_sha256": "2d632e31f5265e6c557033824de561a2e361fc875a8353c233c975ebdab4bbc8",
+        "driver_sha256": "02a1053dbf001e2693c866798e3b1dc5134ebdbb2dab6d49a59283730fe209b0",
+        "output": "docs/evidence/round-16/signatures.txt"
+      }
+    ],
+    "declarations": 2420,
+    "private_declarations": 800,
+    "required_selectors": 775,
+    "signature_queries": 874,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "driver_outputs_identical_to_accepted": [
+      "linters",
+      "axioms",
+      "signatures"
+    ]
+  },
+  "documentation_hashes": {
+    "README.md": "8e8453e3801fcefd08c3d2e9d63ea885f09bc3c969cfc265d259f6b0b3dbc0d7",
+    "docs/mathematical-status.md": "90e09d21dcb427e2e158fb87aa0334f7bcefb93cd4a6eb01654c6d804513785c",
+    "docs/theorem-map.md": "c4bbaabf3962f6853cc1dc2c8470cbb9d7513f55efb3c5d5cb88194bfb773126",
+    "docs/verification.md": "6b6534e4e66fa0b6a56bd8160abe02f138d2528749e50a595631f5e2414e1ab7",
+    "docs/blackbox-registry.md": "38862612bafe7454a094c3cba5dbc3a042b6b2fa02d93033c95edd813e15b45b"
+  },
+  "manuscript_receipt": {
+    "path": "docs/evidence/finalize/manuscript.json",
+    "sha256": "fa670b872e99c69fcd25ba1bdf3f3cee952b8035a5a9ff106de816c9c00e82f4"
+  },
+  "manual_checks": [
+    "Full Round16 independent acceptance and scope read",
+    "Final safe-cap quantifiers and tied negative-witness proof bodies inspected",
+    "All current/committed native input hashes and accepted output bindings checked",
+    "Final TeX/PDF and compressed/uncompressed raw-log bindings checked",
+    "All 91 theorem-type labels remain mapped",
+    "Documentation replacements inspected and exact input hashes verified",
+    "No Lean/configuration/manuscript functionality changes"
+  ]
+}

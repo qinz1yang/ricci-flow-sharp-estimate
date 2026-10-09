@@ -265,8 +265,8 @@ The [Round15 manuscript receipt](evidence/round-15/manuscript.json) records
 160 unique labels, 204 resolved references and one resolved citation, with
 balanced braces and environments. Round15 independently accepts that native
 layer, three new conventional claims and QS7. QS8's explicit global-continuity
-qualification of the generic reciprocal lemma is corrected in the current
-manuscript and awaits review of that short delta. No typesetting was recorded
+qualification of the generic reciprocal lemma was corrected after that checkpoint
+and accepted in Round 16 at `2bda267`. No typesetting was recorded
 at the Round15 checkpoint.
 
 The new critical-area layer uses a proof-independent clamped physical inverse
@@ -296,8 +296,10 @@ in the identical box, L1/ae convergence of the entire fixed-probe action, the
 tied smooth negative original-metric witness, all-form cap-one safety and the
 actual unrestricted-supremum strict comparison. The source simplifier reviewed
 all ten final modules and recommended no source changes. No mandatory native
-mathematical headline remains unproved. Independent acceptance of this final
-layer and its seven new conventional claims remains required.
+mathematical headline remains unproved. Round 16 independently accepted this final
+layer, its seven new conventional claims, QS8, exact mappings, final native evidence,
+actual typesetting and private delivery at `2bda267`; all seven acceptance criteria
+are met.
 
 Actual typesetting passes with [Tectonic 0.17.0](https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.17.0).
 The [47-page PDF](../paper/exponential_pair.pdf),
@@ -320,8 +322,20 @@ The engine and its caches were installed only in Root's temporary task directory
 no Lean dependency or historical delivered receipt changed. Typesetting is not
 mathematical acceptance. The final independent review and private delivery are
 recorded separately in the round summary and [suite status](mathematical-status.md).
-The final manuscript receipt is [here](evidence/round-16-manuscript-final/manuscript.json).
+The accepted manuscript receipt is [here](evidence/round-16-manuscript-final/manuscript.json).
 It also includes the opening clarification that the competitors and variational
 functional are real-valued; the paper makes no such restriction on its later
 maps or tensor integrals. The earlier Round16 native and manuscript receipts
 remain unchanged at their original delivered revision.
+
+Finalization synchronized acceptance-status prose without changing any Lean
+source, native configuration, manuscript source or PDF. The requested regression
+gate passed again, reusing all 149 unchanged source elaborations and freshly
+running the root build, declaration linters, signatures and transitive-axiom
+drivers. The latter three outputs are byte-identical to the accepted Round16
+outputs. The [finalization record](evidence/finalize/verification.json) binds
+these checks; the [updated manuscript/map receipt](evidence/finalize/manuscript.json)
+binds the unchanged accepted manuscript and PDF to the documentation-only map
+update. Historical receipts are preserved. The separate generic code-review
+hook had no configured base branch; the completed Round16 independent
+mathematical acceptance remains valid for the unchanged sources.

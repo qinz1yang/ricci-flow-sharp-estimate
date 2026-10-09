@@ -1,7 +1,7 @@
 # Mathematical scope and dependency graph
 
-The complete finite mathematical suite is natively proved. Independent acceptance
-of the final separation layer and exact manuscript claims remains pending.
+The complete finite mathematical suite is natively proved and passed independent
+whole-suite acceptance in Round 16 at `2bda267`.
 Native layers prove the all-cap parameter, the generic
 exact deficit, the actual continuous admissible obstacle candidate, its contacts
 and actual prefix/tail primitives, its explicit marginal calibration and minimization,
@@ -56,7 +56,7 @@ actual density entries for the same fixed probe, producing a negative smooth
 member. The tied realizer gives a nonzero original smooth form with negative Q.
 Constant-curvature Green squares give all-form cap-one safety; the natural
 unrestricted safe set is nonempty and bounded, and its actual supremum is
-strictly below the CK threshold. This final layer awaits independent review.
+strictly below the CK threshold. This final layer passed independent Round 16 review at `2bda267`.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
@@ -74,10 +74,10 @@ The smooth recovery/sharpness/geometric-stability layer passed Round 12 review a
 The represented-class Haar and universal CK threshold layer passed Round 13 review at `70f0557`;
 AC1–AC5 are independently met. Round15 accepts the actual critical/plateau native
 layer, three of its four paper claims, and the preceding physical-domain correction.
-QS8's explicit global-continuity qualification is now corrected for delta review.
-AC6 is natively complete but retains its reviewed PARTIAL status until the final
-separation layer is independently accepted. The manuscript is actually typeset,
-with no TeX diagnostics; AC7 still requires final independent acceptance.
+Round 16 at `2bda267` accepts QS8's explicit global-continuity qualification,
+the final separation layer, the completed manuscript, source-bound final evidence
+and private delivery. All seven acceptance criteria, including AC6 and AC7, are met.
+The manuscript is actually typeset, with no TeX diagnostics.
 Only coupled evolution and the exact unrestricted threshold value remain outside
 the mandatory mathematical suite.
 
@@ -104,7 +104,7 @@ isometry used for the two zonal components.
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
 | Sharp CK geometry | `C_CK=((5+√13)/3)^(1/3) exp((4+2√13)/9)` is safe for every CK form in the stated metric class; every larger cap contains a genuine smooth negative witness with strictly smaller curvature ratio. At the safe endpoint, equality for smooth CK forms is precisely the zero form. | Full represented-class safety/equality/stability, the same smooth witnesses/recovery, universal safe-set equality `[1,criticalCap]` and real supremum/closed form passed Round 13 review. AC5 is met. |
-| Structural separation | Plateau instability and valid geometric recovery give `C_rot<C_CK` for all one-forms in the same metric class, without a chosen rational intermediate cap. | Native complete, pending final independent review. Accepted actual critical instability feeds strict contraction, identical-box symmetric monotone exact-moment recovery, full six-entry L1/ae action convergence and a tied nonzero smooth negative original-metric witness. All-form Green squares prove cap-one safety; the genuine safe-set supremum has the strict comparison. No exact unrestricted value or endpoint attainment is asserted. |
+| Structural separation | Plateau instability and valid geometric recovery give `C_rot<C_CK` for all one-forms in the same metric class, without a chosen rational intermediate cap. | Native complete and independently accepted in Round 16 at `2bda267`. Accepted actual critical instability feeds strict contraction, identical-box symmetric monotone exact-moment recovery, full six-entry L1/ae action convergence and a tied nonzero smooth negative original-metric witness. All-form Green squares prove cap-one safety; the genuine safe-set supremum has the strict comparison. No exact unrestricted value or endpoint attainment is asserted. |
 
 The formulas and additional exact calculations appear in
 [the calibration derivation](research/variational-calibration.md),
@@ -245,8 +245,9 @@ passed Round 14 native review. The actual critical area coordinate, zero action
 and fixed smooth negative plateau probe passed Round15 review. Contraction,
 exact-moment complete-action recovery, the tied smooth geometric witness and
 all-form safety/strict supremum comparison are now natively complete.
-The remaining gate is independent acceptance of the final layer, the corrected
-and completed manuscript, and its source-bound final evidence and delivery.
+Round 16 at `2bda267` independently accepts the final layer, the corrected
+and completed manuscript, its source-bound final evidence and private delivery.
+No mandatory acceptance gate remains open.
 The actual normalized projector, canonical
 derivatives, full polarized split, global invariant classification and literal
 original-action scalarization, scalar Haar compatibility, scalar pole values and

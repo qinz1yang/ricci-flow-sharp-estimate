@@ -22,7 +22,7 @@ its zero unit-probe action and fixed smooth negative plateau variation now have
 conventional proofs. Strict contraction, identical-box exact-moment recovery,
 complete-action convergence, the tied smooth negative witness, all-form safety
 and structural strict separation now have native proofs and matching manuscript
-claims. Independent acceptance of this final layer remains pending.
+claims. This final layer passed independent Round 16 review at `2bda267`.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The prefixes `Geometry` and `Analysis` below are relative to `RicciFlowSharpEstimate`.
 The analytic statements and current manuscript passed scoped independent Round 1
@@ -40,10 +40,10 @@ The smooth recovery/sharpness/geometric-stability layer passed Round 12 review a
 The represented-class Haar and universal CK threshold layer passed Round 13 review at `70f0557`.
 The normalized-area native layer passed Round 14 review at `a6843ea`; its paper
 domain correction passed Round 15 review. The critical-area/plateau native layer
-and three new paper claims passed Round15 review at `40c661e`. QS8 now explicitly
-qualifies global continuity in the fourth claim and awaits delta review. The
-full separation layer and its seven new conventional claims await configured
-independent acceptance. The complete manuscript is actually typeset.
+and three new paper claims passed Round15 review at `40c661e`. QS8's explicit
+global-continuity qualification of the fourth claim, the full separation layer
+and its seven new conventional claims passed Round 16 review at `2bda267`.
+The complete manuscript is actually typeset and independently accepted.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -177,7 +177,7 @@ independent acceptance. The complete manuscript is actually typeset.
 | Negative smooth member of actual recovery | `Geometry.AreaProfile.exists_smooth_negative_action_of_symmetric_box`, `Geometry.CriticalAreaProfile.exists_smooth_negative_area_data` in `Geometry/SmoothNegativeAreaRecovery.lean` | Reindexes the actual exact-moment sequence, proves complete-action convergence for fixed r and selects an actually negative smooth member. Its same contracted box and probe data survive. |
 | Tied strictly subcritical original-metric witness | `Geometry.exists_smooth_negative_geometric_realization`, `exists_negative_rotational_below_conformalKillingThreshold` in `Geometry/StrictRotationalWitness.lean` | No mathematical inputs. Same K,r,X,D,R with all physical/endpoint/inverse/coefficient/jet laws, global curvature composition, original Q=2*pi*A, identity class membership, actual positive box, nonzero form and negative original Q. |
 | Universal all-form constant-curvature safety | `Geometry.oneFormDissipation_squares_integrable`, `oneFormDissipation_eq_integral_squares_of_constant_curvature`, `oneFormDissipation_nonneg_of_constant_curvature` in `Geometry/ConstantCurvatureDissipation.lean` | Every original smooth one-form on a compact smooth surface; actual scalar/2=κ, original operators/measure and canonical Green identity. No CK or invariance premise; nonnegativity for κ≥0. |
-| Actual unrestricted safe caps and strict threshold separation | `Geometry.rotationalSafeCaps`, `one_mem_rotationalSafeCaps`, nonempty/downward/bddAbove laws, `rotationalThreshold`, `one_le_rotationalThreshold`, `exists_contracted_ratio_above_rotationalThreshold`, `rotationalThreshold_lt_conformalKillingThreshold` in `Geometry/RotationalThreshold.lean` | Same represented class, all positive actual boxes and all original smooth forms. Genuine universal cap-one safety and the tied negative witness imply 1≤sSup safeCaps≤b_t<the actual CK threshold. Native complete, pending independent review; no exact unrestricted value or endpoint attainment claim. |
+| Actual unrestricted safe caps and strict threshold separation | `Geometry.rotationalSafeCaps`, `one_mem_rotationalSafeCaps`, nonempty/downward/bddAbove laws, `rotationalThreshold`, `one_le_rotationalThreshold`, `exists_contracted_ratio_above_rotationalThreshold`, `rotationalThreshold_lt_conformalKillingThreshold` in `Geometry/RotationalThreshold.lean` | Same represented class, all positive actual boxes and all original smooth forms. Genuine universal cap-one safety and the tied negative witness imply 1≤sSup safeCaps≤b_t<the actual CK threshold. Native complete and accepted in Round 16 at `2bda267`; no exact unrestricted value or endpoint attainment claim. |
 
 The manuscript's current statements are tied to native proofs as follows:
 
@@ -283,7 +283,7 @@ Smooth reciprocal recovery now retains the same approximating profiles, actual
 metric producers and fixed-unit-probe action limit. Represented-class Haar
 transport and safe-cap characterization passed independent review. The new
 area realization takes globally smooth K,r, positivity only on [0,1] and both
-exact moments; its continuous primitive calculus is separate from the future
+exact moments; its continuous primitive calculus is separate from the
 bounded-measurable recovery. The new critical-area and plateau proofs retain
 continuous curvature, actual coordinate maps and one fixed smooth probe.
 Contraction, identical-box exact-moment complete-action recovery, the original-metric
@@ -293,7 +293,8 @@ The [47-page PDF](../paper/exponential_pair.pdf) was typeset with Tectonic 0.17.
 warnings, box diagnostics or unresolved references. No manuscript regularity
 claim is inferred merely from typesetting.
 
-Independent statement/manuscript acceptance of later geometric claims remains required. The conditional
+Independent statement/manuscript acceptance of the complete finite suite passed
+Round 16 review at `2bda267`. The conditional
 first-order criterion is now specialized through the actual calibration, rather
 than being presented alone as the minimum. Geometric claims must retain the same metric,
 section producers, pullback maps, curvature bounds and quantifiers.

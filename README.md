@@ -1,8 +1,8 @@
 # Ricci flow sharp estimates
 
 A new pure mathematics and Lean project on sharp rotational curvature pinching
-for one-form Hodge dissipation. The finite mathematical suite is natively proved;
-independent acceptance of the final separation layer and manuscript is pending.
+for one-form Hodge dissipation. The finite mathematical suite is natively proved
+and passed independent whole-suite acceptance in Round 16 at `2bda267`.
 
 The native variational development proves the explicit minimum for every
 cap `C≥1`, uniqueness on `[0,1]`, the degenerate endpoint, exact contact
@@ -53,11 +53,11 @@ Strict contraction, symmetric monotone exact-moment recovery and convergence of
 the complete action now give a genuine smooth negative original-metric witness
 below the CK threshold. Universal all-form cap-one safety and real supremum laws
 prove `rotationalThreshold < conformalKillingThreshold` for the same represented
-class. This final layer awaits independent review.
+class. This final layer passed independent Round 16 review at `2bda267`.
 The complete manuscript is typeset in a [47-page PDF](paper/exponential_pair.pdf),
 with no remaining TeX diagnostics. Its new proofs and the global-continuity
-qualification of the reciprocal-coordinate lemma await review. No whole-suite
-acceptance is claimed yet.
+qualification of the reciprocal-coordinate lemma passed Round 16 review,
+completing independent acceptance of all seven mandatory criteria.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.
