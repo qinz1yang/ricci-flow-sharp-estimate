@@ -71,6 +71,15 @@ Those coordinate/curvature/volume layers passed scoped Round 3 independent revie
 at `0a0b115`. The [section/action receipt](evidence/round-4/receipt.json) reuses
 the unchanged 34 source elaborations and freshly checks five new modules. The root,
 declaration/signature drivers and all 691 transitive axiom closures are checked
-for the complete 39-module aggregate. Independent review of the new section,
-derivative and action layer is pending. All mandatory open mathematics is recorded
+for the complete 39-module aggregate. That section, derivative and action layer
+passed Round 4 independent review at `4cb46f6`.
+The [meridional/symmetry receipt](evidence/round-5-meridional/receipt.json) checks
+the complete 50-module aggregate and 1004 defining-module declarations. It reuses
+the unchanged 34 source checks from the curvature receipt and freshly elaborates
+the remaining sixteen sources, including the comment-only section-extension
+attribution correction. The aggregate and all declaration, signature and actual
+transitive-axiom drivers run again. The new exact meridional action, genuine
+pullback naturality, reflection orthogonality and parallel area producer await
+independent review. Full Hodge rotation and the zonal sum remain in progress.
+All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

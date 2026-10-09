@@ -755,4 +755,195 @@ The weighted density is continuous on the compact sphere, which proves
 its integrability against round area.
 \end{proof}
 
+\section{The exact meridional action}
+
+Continue with a globally smooth positive balanced profile $a$ and the same
+produced metric $g$. Write $f(v)=2\int_v^1\xi a(\xi)\,d\xi$ and
+$H(v)=f(v)/a(v)$. Since $a$ is positive on the compact interval,
+$H$ is smooth on a neighborhood of $[-1,1]$. For a globally smooth
+real probe $r$, set
+\begin{align}
+ L_a r(v)&=H(v)r''(v)+(H'(v)-2v)r'(v)-r(v),\label{eq:meridional-operator}\\
+ J_a[r]&=\int_{-1}^1\left\{
+ H(L_a r)^2+(H-2v^2)r^2+2vHrr'\right\}\,dv.
+ \label{eq:meridional-action}
+\end{align}
+These are ordinary integrals of continuous functions on the closed interval.
+
+\begin{lemma}\label{lem:meridional-derivatives}
+Let $U(v)=\int_0^v a(t)r(t)\,dt$. The global meridional form is
+$M(r)=d(U\circ z)$, and its canonical derivatives satisfy
+\begin{align}
+ \nabla M(r)&=a(z)r'(z)\,dz\otimes dz-zr(z)g,
+ \label{eq:meridional-first}\\
+ \Delta^\nabla M(r)&=(L_a r)(z)\,dz.
+ \label{eq:meridional-rough}
+\end{align}
+In particular, everywhere on the sphere,
+\begin{align*}
+ |dz|_g^2&=f(z)/a(z)^2, & |M(r)|_g^2&=f(z)r(z)^2,\\
+ \operatorname{tr}_g\nabla M(r)&=H(z)r'(z)-2zr(z),\\
+ |\nabla M(r)|_g^2&=(H(z)r'(z)-zr(z))^2+(zr(z))^2,\\
+ |A_gM(r)|_g^2&=\tfrac12(H(z)r'(z))^2.
+\end{align*}
+No equatorial symmetry of $a$ or $r$ is assumed.
+\end{lemma}
+
+\begin{proof}
+The fundamental theorem of calculus and the chain rule give
+$d(U\circ z)=a(z)r(z)dz$, including at the poles. On the genuine open
+cylinder of Lemma~\ref{lem:cylinder-metric}, the metric is
+$E\,dv^2+f\,d\theta^2$, where $E=a^2/f$ and $f'=-2va$.
+The Levi--Civita formula therefore gives
+\[
+ \Gamma^v_{vv}=\frac{a'}a+\frac{va}{f},\qquad
+ \Gamma^v_{\theta\theta}=\frac{vf}{a},\qquad
+ \Gamma^v_{v\theta}=0.
+\]
+The covariant derivative of the actual covector $ar\,dv$ has components
+$ar'-va^2r/f$, $-vfr$, and zero mixed components. This is exactly
+\eqref{eq:meridional-first}. Both sides are smooth global tensors;
+the cylinder has dense image, so the identity holds at the poles as well.
+
+The round height gradient has squared length $1-z^2$. The metric tensor
+and the pole-factor identity show that the $g$-dual of $dz$ is
+$(b/a^2)\operatorname{grad}_{g_0}z$. Thus $|dz|_g^2=f/a^2$ globally.
+Contracting \eqref{eq:meridional-first} gives the displayed trace and norm
+formulas. Equivalently, away from the poles its two eigenvalues are
+$Hr'-vr$ and $-vr$; subtracting half the trace leaves eigenvalues
+$Hr'/2$ and $-Hr'/2$. Continuity again includes both poles.
+
+For completeness, the exact-form commutation formula with our positive
+rough-trace convention is
+\[
+ \Delta^\nabla dF=d(\Delta_g F)+\operatorname{Ric}_g(\nabla F,\cdot).
+\]
+It follows by commuting the first two covariant derivatives of $dF$
+and contracting their curvature term. All derivatives here are those
+of the same Levi--Civita connection. On a surface
+$\operatorname{Ric}_g=K_g g$, and Theorem~\ref{thm:curvature-profile}
+gives $K_g=1/a(z)$. Since
+$\Delta_g(U\circ z)=(Hr'-2vr)(z)$, differentiating this scalar identity
+gives
+\[
+ \Delta^\nabla M(r)
+ =\bigl(Hr''+(H'-2v)r'-2r+r\bigr)(z)\,dz.
+\]
+This is \eqref{eq:meridional-rough}.
+\end{proof}
+
+\begin{theorem}\label{thm:meridional-reduction}
+For every globally smooth real probe $r$, the complete action of the
+original global meridional section is
+\[
+ Q_g(M(r))=2\pi J_a[r].
+\]
+For every constant positive profile $a\equiv c$, the fixed unit probe
+satisfies $J_a[1]=4/3$ and $Q_g(M(1))=8\pi/3$.
+\end{theorem}
+
+\begin{proof}
+Insert Lemma~\ref{lem:meridional-derivatives} into the four terms of
+\eqref{eq:complete-dissipation} and multiply the density by $a$.
+The rough term becomes $H(L_a r)^2$, and the curvature-square term
+becomes $Hr^2$. The two first-derivative terms together are
+\[
+ -\bigl((Hr'-vr)^2+(vr)^2\bigr)+(Hr')^2
+ =2vHrr'-2v^2r^2.
+\]
+Their sum is precisely the integrand in \eqref{eq:meridional-action}.
+The volume and height identities in Theorem~\ref{thm:volume-height}
+then give the factor $2\pi$. This calculation retains all four terms
+and requires no endpoint integration by parts. The continuous interval
+density and the smooth sphere density are genuinely integrable.
+
+If $a\equiv c>0$, then $f=c(1-v^2)$ and $H=1-v^2$.
+For $r\equiv1$, $L_a r=-1$ and the density is $2-4v^2$.
+Its integral is $4/3$, giving the stated geometric normalization for
+the same metric and section at every positive scale $c$.
+\end{proof}
+
+\begin{lemma}\label{lem:pullback-dissipation}
+Let $g$ be a smooth metric on a compact smooth surface and $\phi$ a smooth
+self-diffeomorphism. Pull back a smooth covariant tensor by its actual
+derivative in every slot. Then
+\[
+ \nabla^{\phi^*g}(\phi^*T)=\phi^*(\nabla^g T),\qquad
+ (\nabla^{\phi^*g})^2(\phi^*T)=\phi^*((\nabla^g)^2T).
+\]
+The rough Laplacian, tensor norms and trace-free symmetric projection
+transform under the same pullback. In particular,
+\[
+ Q_{\phi^*g}(\phi^*h)=Q_g(h),\qquad
+ B_{\phi^*g}(\phi^*h,\phi^*k)=B_g(h,k).
+\]
+These statements require no orientation-preserving hypothesis.
+\end{lemma}
+
+\begin{proof}
+The pulled-back connection is metric compatible and torsion free for
+$\phi^*g$, so uniqueness identifies it with that metric's Levi--Civita
+connection. Evaluating a covariant derivative on smooth vector fields,
+the scalar chain rule and the connection identity transform its derivative
+term and every slot correction. This proves the first identity; apply it
+again for the second. Contraction by the inverse pulled-back metric
+commutes with pullback, proving the rough-trace, norm and trace-free
+symmetric identities. Curvature and its scalar contraction transform
+through this same connection. Thus each of the four density terms pulls
+back by composition with $\phi$. Riemannian volume transforms with the
+absolute Jacobian, so change of variables proves the action identity
+for both orientations. Polarization proves the pairing identity.
+The tensor pullback itself satisfies the identity and contravariant
+composition laws by the ordinary derivative chain rule, hence also both
+inverse-cancellation laws.
+\end{proof}
+
+\begin{lemma}\label{lem:zonal-orthogonality}
+For the produced rotational metric and globally smooth probes $r,s$,
+\[
+ B_g(M(r),Z(s))=0,\qquad
+ Q_g(M(r)+Z(s))=Q_g(M(r))+Q_g(Z(s)).
+\]
+\end{lemma}
+
+\begin{proof}
+The actual sphere reflection $\rho(x,y,z)=(x,-y,z)$ preserves the round
+metric, height and its differential. It therefore preserves the produced
+metric tensor as well. Its covector pullback fixes $dz$ and sends
+$\kappa=-y\,dx+x\,dy$ to $-\kappa$. Consequently $\rho^*M(r)=M(r)$
+and $\rho^*Z(s)=-Z(s)$, with the derivative of $\rho$ included in both
+pullbacks. Lemma~\ref{lem:pullback-dissipation} and bilinearity give
+$B_g(M(r),Z(s))=-B_g(M(r),Z(s))$, hence the pairing vanishes.
+The quadratic expansion then gives the sum identity. Reflection fixes
+height rather than reversing it, so no equatorial symmetry is needed.
+\end{proof}
+
+\begin{lemma}\label{lem:parallel-area}
+For the same produced metric, define the smooth tensor
+\[
+ \Omega_x(V,W)=a(z(x))\det(x,d\iota_xV,d\iota_xW),
+\]
+where $\iota:S^2\hookrightarrow\mathbb R^3$ is the actual inclusion.
+It is alternating, has squared tensor norm $2$, and is parallel for
+the metric's Levi--Civita connection.
+\end{lemma}
+
+\begin{proof}
+The determinant is a finite sum of products of ambient coordinate
+functions and their differentials, so the tensor is smooth globally.
+For tangent vectors $V,W$, the square of the round determinant form is
+$g_0(V,V)g_0(W,W)-g_0(V,W)^2$: expand the scalar triple product using
+$|x|=1$ and $x\perp d\iota V,d\iota W$. The metric determinant identity
+from Theorem~\ref{thm:volume-height} multiplies this Gram determinant
+by $a(z)^2$. Therefore $\Omega(e_1,e_2)^2=1$ in every $g$-orthonormal
+basis. Alternation then gives $|\Omega|_g^2=2$.
+
+Covariant differentiation preserves alternation. On a two-dimensional
+tangent space, every alternating two-tensor is a multiple of the
+nonzero tensor $\Omega$. Metric compatibility and differentiation of
+its constant squared norm give
+$\langle\nabla_X\Omega,\Omega\rangle_g=0$ for every tangent vector $X$.
+That multiple must vanish, proving $\nabla\Omega=0$.
+\end{proof}
+
 \end{document}

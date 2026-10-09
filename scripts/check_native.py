@@ -54,6 +54,17 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RotationalOneForms",
     "RicciFlowSharpEstimate.Geometry.OneFormDissipation",
     "RicciFlowSharpEstimate.Geometry.RotationalDissipation",
+    "RicciFlowSharpEstimate.Geometry.ExactOneFormRoughLaplacian",
+    "RicciFlowSharpEstimate.Geometry.SymmetricTensorContractions",
+    "RicciFlowSharpEstimate.Geometry.RotationalCometric",
+    "RicciFlowSharpEstimate.Geometry.MeridionalAction",
+    "RicciFlowSharpEstimate.Geometry.RotationalMeridionalHessian",
+    "RicciFlowSharpEstimate.Geometry.RotationalMeridionalReduction",
+    "RicciFlowSharpEstimate.Geometry.OneFormDissipationNaturality",
+    "RicciFlowSharpEstimate.Geometry.RotationalReflection",
+    "RicciFlowSharpEstimate.Geometry.RotationalZonalOrthogonality",
+    "RicciFlowSharpEstimate.Geometry.AlternatingSurfaceTensors",
+    "RicciFlowSharpEstimate.Geometry.RotationalAreaForm",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -63,6 +74,7 @@ OPTIONS = [
 SELECTOR = r"""
   let decls ← liftCoreM <|
     Batteries.Tactic.Lint.getDeclsInPackage `RicciFlowSharpEstimate
+  let geo := `RicciFlowSharpEstimate.Geometry
   let poleData := `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData
   for required in #[`RicciFlowSharpEstimate.Variational.existsUnique_capParameter,
       `RicciFlowSharpEstimate.Variational.capParameter_spec,
@@ -170,7 +182,52 @@ SELECTOR = r"""
       `RicciFlowSharpEstimate.Geometry.oneFormDissipation_parallelogram,
       `RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_metric,
       poleData ++ `oneFormDissipation_eq_weightedRoundIntegral,
-      poleData ++ `weighted_dissipationDensity_integrable
+      poleData ++ `weighted_dissipationDensity_integrable,
+      geo ++ `roughLap0SField_duSec_apply,
+      geo ++ `roughLap0SField_duSec_of_finrank_eq_two,
+      geo ++ `metricTracePair0SAt_product_one,
+      geo ++ `inner0S_product_one,
+      geo ++ `normSq0S_of_apply_eq_rankOne_add_metric,
+      geo ++ `normSq0S_ahlforsPart_of_apply_eq_rankOne_add_metric,
+      poleData ++ `inverseMetricSharpFib_heightOneForm,
+      poleData ++ `heightOneForm_normSq,
+      poleData ++ `meridionalOneForm_normSq,
+      poleData ++ `meridionalWeight_hasDerivAt,
+      poleData ++ `meridionalDensity_intervalIntegrable,
+      poleData ++ `meridionalAction_constant_one,
+      poleData ++ `duSec_meridionalPotential,
+      poleData ++ `metricNabla0S_meridionalOneForm,
+      poleData ++ `meridionalOneForm_nabla_trace,
+      poleData ++ `meridionalOneForm_nabla_normSq,
+      poleData ++ `meridionalOneForm_ahlfors_normSq,
+      poleData ++ `laplacian_meridionalPotential,
+      poleData ++ `roughLap0SField_meridionalOneForm,
+      poleData ++ `oneFormDissipationDensity_meridional,
+      poleData ++ `oneFormDissipation_meridional,
+      poleData ++ `oneFormDissipation_constant_meridional_one,
+      geo ++ `diffeomorphTensorPullback,
+      geo ++ `diffeomorphTensorPullback_apply,
+      geo ++ `diffeomorphTensorPullback_refl,
+      geo ++ `diffeomorphTensorPullback_trans,
+      geo ++ `diffeomorphTensorPullback_symm_apply,
+      geo ++ `diffeomorphTensorPullback_apply_symm,
+      geo ++ `metricNabla0S_diffeomorphTensorPullback,
+      geo ++ `metricNabla0S_twice_diffeomorphTensorPullback,
+      geo ++ `roughLap0SField_diffeomorphTensorPullback,
+      geo ++ `ahlforsPart_diffeomorphTensorPullback,
+      geo ++ `oneFormDissipation_diffeomorphTensorPullback,
+      geo ++ `oneFormDissipationPairing_diffeomorphTensorPullback_of_isometry,
+      geo ++ `meridianReflectionSphereDiffeo_coe,
+      geo ++ `meridianReflectionSphereDiffeo_dIncl_mfderiv,
+      geo ++ `metricNabla0S_eq_zero_of_alternating_const_normSq,
+      geo ++ `normSq0S_eq_two_of_unit_alternating,
+      geo ++ `roundSphereAreaForm_apply,
+      poleData ++ `pullbackMetric_meridianReflectionSphereDiffeo,
+      poleData ++ `oneFormDissipationPairing_meridional_azimuthal,
+      poleData ++ `oneFormDissipation_meridional_add_azimuthal,
+      poleData ++ `areaForm_apply,
+      poleData ++ `areaForm_normSq,
+      poleData ++ `metricNabla0S_areaForm
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -411,6 +468,104 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check oneFormDissipation_eq_weightedRoundIntegral
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
 #check weighted_dissipationDensity_integrable
+open RicciFlowSharpEstimate.Geometry in
+#check roughLap0SField_duSec_apply
+open RicciFlowSharpEstimate.Geometry in
+#check roughLap0SField_duSec_of_finrank_eq_two
+open RicciFlowSharpEstimate.Geometry in
+#check metricTracePair0SAt_product_one
+open RicciFlowSharpEstimate.Geometry in
+#check inner0S_product_one
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_of_apply_eq_rankOne_add_metric
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_ahlforsPart_of_apply_eq_rankOne_add_metric
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check inverseMetricSharpFib_heightOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check heightOneForm_normSq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalOneForm_normSq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalWeight_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalDensity_intervalIntegrable
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalAction_constant_one
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check duSec_meridionalPotential
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricNabla0S_meridionalOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalOneForm_nabla_trace
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalOneForm_nabla_normSq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalOneForm_ahlfors_normSq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check laplacian_meridionalPotential
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check roughLap0SField_meridionalOneForm
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipationDensity_meridional
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_meridional
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_constant_meridional_one
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#print meridionalWeight
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#print meridionalOperator
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#print meridionalDensity
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#print meridionalAction
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_apply
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_refl
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_trans
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_symm_apply
+open RicciFlowSharpEstimate.Geometry in
+#check diffeomorphTensorPullback_apply_symm
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_twice_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check roughLap0SField_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check ahlforsPart_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipation_diffeomorphTensorPullback
+open RicciFlowSharpEstimate.Geometry in
+#check oneFormDissipationPairing_diffeomorphTensorPullback_of_isometry
+open RicciFlowSharpEstimate.Geometry in
+#check meridianReflectionSphereDiffeo_coe
+open RicciFlowSharpEstimate.Geometry in
+#check meridianReflectionSphereDiffeo_dIncl_mfderiv
+open RicciFlowSharpEstimate.Geometry in
+#check metricNabla0S_eq_zero_of_alternating_const_normSq
+open RicciFlowSharpEstimate.Geometry in
+#check normSq0S_eq_two_of_unit_alternating
+open RicciFlowSharpEstimate.Geometry in
+#check roundSphereAreaForm_apply
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check pullbackMetric_meridianReflectionSphereDiffeo
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipationPairing_meridional_azimuthal
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_meridional_add_azimuthal
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check areaForm_apply
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check areaForm_normSq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check metricNabla0S_areaForm
 """
 
 

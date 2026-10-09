@@ -10,7 +10,7 @@ import DifferentialGeometry.Geometry.Connection.RicciIdentity.OneForm.Realizatio
 # Canonical metric covariant derivatives
 
 This module uses the released DifferentialGeometry total covariant derivative and its
-smooth-connection package. The uniqueness proof uses Mathlib's smooth section extension.
+smooth-connection package. The uniqueness proof uses DG's released smooth section extension.
 -/
 
 noncomputable section

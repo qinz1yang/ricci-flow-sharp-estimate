@@ -10,8 +10,10 @@ It also proves explicit positive L² deficit coercivity, including constant-mode
 anchoring, and quantitative near-equatorial symmetry without assuming symmetry.
 The analytic, sphere-metric, curvature and volume layers passed independent review.
 Global meridional/azimuthal forms, unique canonical covariant derivatives, and the
-complete four-term action with integrability and polarization now have native proofs.
-Exact zonal and Hodge/Haar reductions, geometric sharpness and separation remain open.
+complete four-term action with integrability and polarization passed Round 4 review.
+The actual meridional derivatives and complete `2*pi*J` reduction now have native proofs,
+including the round value `8*pi/3`. Full zonal and Hodge/Haar reductions, geometric
+sharpness and separation remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

@@ -3,16 +3,17 @@
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
 smooth balanced-profile metric construction, cylinder pullback, intrinsic curvature,
-volume/height identities, global forms and the canonical complete action.
-The exact zonal/Haar reduction, CK and separation
+volume/height identities, global forms, the canonical complete action and its exact meridional reduction.
+The full zonal/Haar reduction, CK and separation
 sections remain unwritten. This map does
 not certify the full suite.
 Names use namespace `RicciFlowSharpEstimate.Variational` unless stated otherwise.
 The prefixes `Geometry` and `Analysis` below are relative to `RicciFlowSharpEstimate`.
 The analytic statements and current manuscript passed scoped independent Round 1
 review at `2302ad1`; the smooth metric producer passed Round 2 review at `76143bb`,
-and the curvature/volume layer passed Round 3 review at `0a0b115`.
-Subsequent section/derivative/action development requires its own review.
+the curvature/volume layer passed Round 3 review at `0a0b115`, and the
+section/derivative/action layer passed Round 4 review at `4cb46f6`.
+The new meridional reduction requires its own review.
 
 | Mathematical statement | Canonical Lean declaration | Role / acceptance |
 |---|---|---|
@@ -64,7 +65,14 @@ Subsequent section/derivative/action development requires its own review.
 | Actual smooth trace-free symmetric tensor and its linearity | `Geometry.ahlforsPart`, `ahlforsPart_apply`, `ahlforsPart_symmetric`, `ahlforsPart_trace_eq_zero`, `ahlforsPart_add`, `ahlforsPart_smul` in `Geometry/TraceFreeSymmetric.lean` | Generic finite-dimensional tensor projection, specialized to half trace in dimension two. |
 | Complete canonical action, internal integrability and four-term polarization | `Geometry.oneFormDissipation`, `oneFormDissipationPairing`, density smoothness/integrability and pairing/quadratic laws in `Geometry/OneFormDissipation.lean` | Every smooth form on a compact smooth surface; curvature is actual scalar/2 and derivatives are the native metric operators. No positivity theorem is claimed. |
 | Actual profile/metric consumer of the full action | `Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_metric`, `oneFormDissipation_eq_weightedRoundIntegral`, `weighted_dissipationDensity_integrable` in `Geometry/RotationalDissipation.lean` | Same `D.metric`, original `D.a`, actual curvature/volume and unchanged canonical derivatives. |
-| Exact zonal action reduction, Haar split and equality | No native final declaration yet | Mandatory geometric dependencies. |
+| Actual meridional potential and global canonical Hessian | `Geometry.RotationalProfile.PoleData.duSec_meridionalPotential`, `metricNabla0S_meridionalOneForm` in `Geometry/RotationalMeridionalHessian.lean` | Same smooth global section and actual connection; dense-cylinder continuation includes both poles. |
+| Actual cotangent norm and natural rank-one tensor contractions | `Geometry.RotationalProfile.PoleData.heightOneForm_normSq`, `meridionalOneForm_normSq`; `Geometry.metricTracePair0SAt_of_apply_eq_rankOne_add_metric`, `normSq0S_of_apply_eq_rankOne_add_metric`, `normSq0S_ahlforsPart_of_apply_eq_rankOne_add_metric` | Genuine metric contractions, not prescribed coordinate norms. |
+| Exact-form rough commutation | `Geometry.roughLap0SField_duSec_apply`, `roughLap0SField_duSec_of_finrank_eq_two` in `Geometry/ExactOneFormRoughLaplacian.lean` | Native first/second derivatives, actual Hessian divergence and Ricci curvature; surface specialization uses scalar/2. |
+| Complete meridional action and round normalization | `Geometry.RotationalProfile.PoleData.oneFormDissipation_meridional`, `oneFormDissipation_constant_meridional_one` in `Geometry/RotationalMeridionalReduction.lean`; `meridionalAction_constant_one` in `Geometry/MeridionalAction.lean` | Natural globally smooth probe; all four terms, original metric/section, exact `2*pi` and `8*pi/3`; interval integrability proved internally. |
+| Full zonal action reduction, Haar split and equality | No native final declaration yet | Mandatory geometric dependencies. |
+| Genuine smooth tensor pullback and canonical derivative/action naturality | `Geometry.diffeomorphTensorPullback_apply`, identity/composition/inverse laws, `metricNabla0S_diffeomorphTensorPullback`, `metricNabla0S_twice_diffeomorphTensorPullback`, `roughLap0SField_diffeomorphTensorPullback`, `oneFormDissipation_diffeomorphTensorPullback` in `Geometry/OneFormDissipationNaturality.lean` | The actual derivative acts in every slot; same-map metric/tensor transport, including orientation-reversing diffeomorphisms. |
+| Actual meridian-reflection orthogonality | `Geometry.meridianReflectionSphereDiffeo_coe`, `RotationalProfile.PoleData.pullbackMetric_meridianReflectionSphereDiffeo`, `oneFormDissipationPairing_meridional_azimuthal`, `oneFormDissipation_meridional_add_azimuthal` | Reflection preserves height, fixes M and reverses Z; full four-term pairing, without equatorial symmetry. |
+| Explicit smooth metric area form and canonical parallelness | `Geometry.roundSphereAreaForm_apply`; `RotationalProfile.PoleData.areaForm_apply`, `areaForm_unit_on_orthonormal`, `areaForm_normSq`, `metricNabla0S_areaForm` in `Geometry/RotationalAreaForm.lean` | Literal profile-scaled ambient determinant; native parallelness from alternation and constant norm, not a supplied jet. |
 | Exact CK threshold, full smooth equality, smooth supercritical witnesses | No native declaration yet | Mandatory. |
 | Plateau instability, correct recovery and strict threshold separation | No native declaration yet | Mandatory. |
 
@@ -90,6 +98,11 @@ The manuscript's current statements are tied to native proofs as follows:
 | `lem:canonical-derivatives` | Native `CanonicalSpatialDerivs0S.ofSmoothConnection` through `Geometry.canonicalDerivatives`; both realization laws and one-form second-derivative bridge; generic `TotalNabla0SRealizes.unique` and `CanonicalSpatialDerivs0S.unique`; native first-derivative linearity and proved second-iterate linearity |
 | `thm:dissipation-quadratic` | `Geometry.ahlforsPart_symmetric`, `ahlforsPart_trace_eq_zero`; actual `oneFormDissipationDensity` and `oneFormDissipationPairingDensity`, their smoothness/integrability; all pairing and quadratic identities in `Geometry/OneFormDissipation.lean` |
 | `cor:profile-dissipation` | `Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_metric`, `oneFormDissipation_eq_weightedRoundIntegral`, `weighted_dissipationDensity_integrable` |
+| `lem:meridional-derivatives` | `Geometry.RotationalProfile.PoleData.duSec_meridionalPotential`, `metricNabla0S_meridionalOneForm`, `heightOneForm_normSq`, `meridionalOneForm_normSq`, `meridionalOneForm_nabla_trace`, `meridionalOneForm_nabla_normSq`, `meridionalOneForm_ahlfors_normSq`, `laplacian_meridionalPotential`, `roughLap0SField_meridionalOneForm`; generic exact-form commutation in `Geometry/ExactOneFormRoughLaplacian.lean` |
+| `thm:meridional-reduction` | `Geometry.RotationalProfile.PoleData.oneFormDissipationDensity_meridional`, `oneFormDissipation_meridional`, `meridionalDensity_intervalIntegrable`, `meridionalAction_constant_one`, `oneFormDissipation_constant_meridional_one` |
+| `lem:pullback-dissipation` | Actual pullback, evaluation, composition/inverse, first/second derivative, rough trace, norm, Ahlfors, density, full-action and polarization laws in `Geometry/OneFormDissipationNaturality.lean` |
+| `lem:zonal-orthogonality` | Actual maps and derivative sign laws in `Geometry/RotationalReflection.lean`; `Geometry.RotationalProfile.PoleData.oneFormDissipationPairing_meridional_azimuthal` and `oneFormDissipation_meridional_add_azimuthal` in `Geometry/RotationalZonalOrthogonality.lean` |
+| `lem:parallel-area` | Actual determinant/metric-area producers in `Geometry/RotationalAreaForm.lean`; `Geometry.metricNabla0S_eq_zero_of_alternating_const_normSq` and `normSq0S_eq_two_of_unit_alternating` in `Geometry/AlternatingSurfaceTensors.lean` |
 
 The manuscript uses real functions continuous only on `[0,1]` for the one-sided
 problem and `[-1,1]` for the hemisphere consequences, with interval-local constraints

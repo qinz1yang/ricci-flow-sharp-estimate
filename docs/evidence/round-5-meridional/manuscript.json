@@ -1,0 +1,12 @@
+{
+  "source_sha256": "18b394bfdb889f1ff4c102b52de01dc21161c4d8222573f4eb264cee0fc1f130",
+  "theorem_map_sha256": "c170ebabdf7daa96b9b28a5cb7861ac5a67169fb192511de08ed1f6b5d6105d2",
+  "labels": 54,
+  "references": 55,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round4 accepted; new meridional, naturality, reflection and area claims pending outer review"
+}
