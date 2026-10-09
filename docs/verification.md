@@ -33,7 +33,7 @@ commands; they are not semantic Lean options. The aggregate, declaration linters
 signatures and transitive-axiom audit always run again. New or changed source must
 be elaborated afresh. Use a distinct output directory for each checkpoint.
 
-The root aggregate is a real consumer of all sixty-five current modules. Importing it is required
+The root aggregate is a real consumer of all seventy-two current modules. Importing it is required
 before the evidence drivers. A cached root build does not replace fresh leaf
 elaboration, and successful native validation does not replace independent
 mathematical review of the statements.
@@ -93,7 +93,15 @@ are tied to unchanged accepted bytes; all ten new sources are freshly elaborated
 The aggregate, declaration linters, 232 required selectors, 329 signature queries
 and actual transitive-axiom driver run at the new checkpoint. All source and
 declaration outputs are silent. The receipt binds 70 inputs and 71 command outputs.
-The five new conventional Haar claims and exact map await independent review;
-classification, scalarization/nonzonal positivity and all later gates remain open.
+The five conventional Haar claims and exact map passed Round 6 independent review at `43111f9`.
+The [invariant-classification receipt](evidence/round-7/receipt.json) extends this
+to 72 modules, reusing 65 unchanged accepted source checks and freshly elaborating
+seven new sources. The root and all declaration/signature/axiom drivers run again.
+All 1433 defining-module declarations, including 553 private declarations, have
+permitted transitive axioms only. All 260 required selectors and 357 signature
+queries are covered; 77 inputs and 78 command outputs are fingerprinted.
+Source and declaration-linter outputs are silent. Four new conventional claims
+and their exact mapping await independent review. Scalarization, unconditional
+nonzonal sign/equality, the later CK/separation suite and final typesetting remain open.
 All mandatory open mathematics is recorded
 in [the suite status](mathematical-status.md).

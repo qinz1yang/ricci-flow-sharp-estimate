@@ -15,8 +15,9 @@ The actual meridional derivatives and complete zonal `2*pi*(J[r]+J[s])` reductio
 now have native proofs, including the round value `8*pi/3`, genuine reflection
 orthogonality and parallel Hodge rotation. The genuine smooth Haar projector,
 canonical-derivative intertwining and complete action split are also native.
-Invariant-form classification, nonzonal positivity/equality, geometric sharpness
-and separation remain open.
+Global smooth invariant-form classification and its actual Haar/zonal action
+consumer are now native, including both poles. Scalarization, nonzonal
+positivity/equality, geometric sharpness and separation remain open.
 
 Lean/Mathlib: `v4.35.0-rc3`. DifferentialGeometry: released `v0.1.4`, with the
 resolved revision pinned in `lake-manifest.json`.

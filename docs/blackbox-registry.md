@@ -2,14 +2,14 @@
 
 No mathematical blackbox or project axiom has been introduced.
 
-All sixty-five currently checked analytic, variational and geometric modules depend transitively only on
+All seventy-two currently checked analytic, variational and geometric modules depend transitively only on
 `propext`, `Classical.choice`, and `Quot.sound`. The native report checks every
 project declaration selected by its defining module, including private/generated
 declarations, using Lean's `collectAxioms` (the engine used by `#print axioms`).
 It rejects any axiom outside that three-name allowlist. This evidence is bound to
 source and dependency-manifest hashes; it is not a textual search for `sorry`.
 
-The [current native report](evidence/round-6/axioms.txt) covers 1279 declarations.
+The [current native report](evidence/round-7/axioms.txt) covers 1433 declarations.
 This includes the released Hadamard factorization and smooth metric construction
 as actual transitive dependencies of the pole and sphere-metric producers. It
 also checks the actual curvature, local pullback, coordinate and measure dependencies.
@@ -28,6 +28,12 @@ integration, applied manifold derivative/interchange, all canonical operator
 intertwining, product integrability and the full four-term self-adjoint split.
 The average is tied to literal normalized derivative pullback, not supplied as
 an abstract projection. All earlier accepted theorem sources remain unchanged.
+The invariant-form layer additionally checks the native Hadamard and Borel
+half-line extension route, the actual stereographic maps and their derivatives,
+smooth radial/tangential factorization, both-pole height gluing and the final
+original-section equality. The quotient extension requires nonvanishing only
+on the physical interval. No pole regularity or representation is assumed in
+the classification headline, and the Haar/zonal action retains the same probes.
 
 The unformalized derivations and historical reference statements are not
 blackboxes and are not imported assumptions. Their native proof obligations

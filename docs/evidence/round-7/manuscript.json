@@ -1,0 +1,12 @@
+{
+  "source_sha256": "d2731e2b6ca82e64bc8a2a0114c2d48d178e74a763be039039b7a633f55ef1de",
+  "theorem_map_sha256": "74b3d1a6c2e91ee5fec7d3134aa43fc1666816079ac5d4d4cec931d5d064cfcd",
+  "labels": 71,
+  "references": 77,
+  "labels_unique": true,
+  "references_resolved": true,
+  "environments_balanced": true,
+  "braces_balanced": true,
+  "typesetting": "not run; mandatory final typesetting remains open",
+  "independent_review": "claims through Round6 accepted; new global invariant-form classification claims pending outer review"
+}

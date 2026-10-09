@@ -20,15 +20,18 @@ now give `Q(M_D(r))=2*pi*J_a[r]`, including the actual round value `8*pi/3`.
 Genuine reflection orthogonality and parallel Hodge rotation now give the full
 zonal sum `Q(M_D(r)+Z_D(s))=2*pi*(J_a[r]+J_a[s])`.
 The actual normalized smooth Haar projection and complete four-term pairing/action
-split are now native. Smooth invariant-form classification, scalarization,
-nonzonal positivity/equality, CK and separation remain open.
+split are now native. Global smooth invariant-form classification and its exact
+Haar/zonal action consumer are also native. Scalarization, nonzonal
+positivity/equality, CK and separation remain open.
 The complete analytic layer and current analytic manuscript passed scoped
 independent Round 1 review at `2302ad1`.
 The smooth profile/pole/metric producer and its manuscript claims passed Round 2
 review at `76143bb`; the coordinate, curvature and volume layer and its manuscript
 claims passed Round 3 review at `0a0b115`. The section/derivative/action layer
 passed Round 4 review at `4cb46f6`; the meridional/zonal layer passed Round 5
-review at `da1dd90`. The new Haar projection/split layer awaits review.
+review at `da1dd90`. The Haar projection/split layer passed Round 6 review
+at `43111f9`.
+The new global invariant-form classification layer awaits independent review.
 The full six-part suite below remains
 mandatory; only coupled evolution and the exact unrestricted threshold value are
 optional research frontiers.
@@ -51,7 +54,7 @@ isometry used for the two zonal components.
 
 | Mandatory headline | Exact intended conclusion | Native status |
 |---|---|---|
-| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Partial: exact zonal reduction and actual smooth Haar projection/complete split are native. Global smooth invariant-form classification, scalarization, nonzonal positivity and equality remain required. |
+| Haar decomposition and meridional reduction | For every metric in the stated class and smooth one-form, `Q(h)=Q(Ph)+Q(h−Ph)`, `Q(h−Ph)≥0` without pinching; actual smooth zonal forms satisfy `Q(M(r)+Z(s))=2π(J_a[r]+J_a[s])`. | Partial: exact zonal reduction, actual smooth Haar projection/complete split and global smooth invariant-form classification with its Haar/zonal consumer are native. Scalarization, nonzonal positivity and equality remain required. |
 | All-cap optimum | For each `C≥1`, the specified continuous obstacle profile is admissible and minimizes the actual functional with value `2/3−β+1/(3β)`, where `q≥1` solves `log q+(2/3)(q³−1)=log C`, `α=(q⁴+2q)^(−1/2)`, `β=αq²`. | Native theorem and independent review complete, including the actual `C=1` value. |
 | Rigidity | Equality in the optimal bound holds exactly for that profile on `[0,1]`; `C=1` is the constant zero logarithmic profile. | Native theorem and independent review complete, with both exact contact jumps and strictness for differentiable competitors at `C>1`. |
 | Stability and near-symmetry | A positive explicit cap-dependent constant controls the squared `L²` distance; the two hemisphere deficits control reflection asymmetry without assuming symmetry. | Native explicit constant, actual variance identity, constant-mode anchor and all three full-interval consequences. Independent review passed. |
@@ -67,9 +70,9 @@ only claims mapped to native proofs. Its first geometric section proves smooth
 balanced-profile pole factors, actual smooth positive sphere metric, cylinder pullback,
 area, intrinsic curvature, global forms and canonical dissipation. Its exact
 meridional/zonal reduction and intrinsic symmetry proofs are also present.
-The smooth Haar projector and complete split are also present. The remaining
-invariant-classification, scalarization/nonzonal, CK, approximation and separation
-sections are still absent as established claims.
+The smooth Haar projector, complete split and global smooth invariant-form
+classification are also present. The remaining scalarization/nonzonal, CK,
+approximation and separation sections are still absent as established claims.
 
 ## Shared dependency graph
 
@@ -108,7 +111,7 @@ flowchart TD
   SEC --> J
   ACT --> J
   H --> HS[Full Haar pairing/action split: native]
-  H --> IC[Global smooth invariant-form classification]
+  H --> IC[Global smooth invariant-form classification: native]
   HS --> Q[Nonnegative Haar remainder]
   ACT --> SC[Constructive trace/curl scalarization]
   AREA --> SC
@@ -135,10 +138,10 @@ Each box has one mathematical role; shared nodes are not reimplemented per
 headline. The analytic stability layer now uses actual interval means and primitives,
 the full normalized lower-obstacle weight, and the true calibrated deficit. Its
 general anchoring lemma derives every product's integrability from compact-interval
-continuity. The next native frontier is global smooth invariant-form classification,
-constructive scalarization and unconditional remainder positivity/equality.
-The actual normalized projector, canonical derivatives and full polarized split
-are already available. Geometry proceeds through
+continuity. The next native frontier is constructive scalarization and
+unconditional remainder positivity/equality. The actual normalized projector,
+canonical derivatives, full polarized split and global invariant classification
+with smooth height probes are already available. Geometry proceeds through
 real producers, not by moving the historical aggregate into the new project.
 
 ## Corrected conventions and load-bearing risks
@@ -153,6 +156,11 @@ real producers, not by moving the historical aggregate into the new project.
 - With area measured from the south pole,
   `f_K(x)=2x−2∫₀ˣ(x−s)K(s)ds`, hence `f_K''=−2K`, `f_K(0)=0`, `f_K'(0)=2`.
   On `[0,L]` the north-pole conditions require `∫K=2` and `∫sK=L`.
+  Interior positivity also requires positive curvature: retain a bound
+  `K≥kappa>0`, which makes the reconstructed warping strictly concave.
+  The two moments alone do not imply positivity. Symmetry of the critical
+  curvature profile is compatible with monotonicity on each hemisphere,
+  not with global monotonicity of a nonconstant symmetric profile.
 - The optimizer has derivative jumps at both contacts for `C>1`; the free arc
   collapses at `C=1`. Smooth nonattainment for constant probes alone cannot
   establish the full CK equality statement.

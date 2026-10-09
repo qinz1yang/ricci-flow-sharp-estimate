@@ -80,6 +80,13 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.TensorIntegralContractions",
     "RicciFlowSharpEstimate.Geometry.RotationalAverageDerivatives",
     "RicciFlowSharpEstimate.Geometry.RotationalHaarDissipation",
+    "RicciFlowSharpEstimate.Analysis.SmoothQuotient",
+    "RicciFlowSharpEstimate.Analysis.SmoothParity",
+    "RicciFlowSharpEstimate.Analysis.RotationCovectorPlane",
+    "RicciFlowSharpEstimate.Geometry.RotationalStereographic",
+    "RicciFlowSharpEstimate.Geometry.RotationalInvariantPoleForms",
+    "RicciFlowSharpEstimate.Geometry.RotationalInvariantProfiles",
+    "RicciFlowSharpEstimate.Geometry.RotationalInvariantClassification",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -323,7 +330,35 @@ SELECTOR = r"""
       poleData ++ `oneFormDissipationPairing_rotationalAverage,
       poleData ++ `oneFormDissipationPairing_rotationalAverage_selfAdjoint,
       poleData ++ `oneFormDissipationPairing_average_sub_average,
-      poleData ++ `oneFormDissipation_haar_split
+      poleData ++ `oneFormDissipation_haar_split,
+      analysis ++ `exists_contDiff_mul_eq_on_Icc,
+      analysis ++ `exists_contDiff_comp_sq_of_even,
+      analysis ++ `exists_contDiff_mul_comp_sq_of_odd,
+      analysis ++ `planeRotate,
+      analysis ++ `IsRotationCovectorPair,
+      analysis ++ `exists_smooth_radial_tangential_coefficients,
+      geo ++ `stereoDenominator,
+      geo ++ `stereoDenominator_pos,
+      geo ++ `stereoAmbient,
+      geo ++ `stereoPoint,
+      geo ++ `stereoPoint_contMDiff,
+      geo ++ `stereoPoint_coe,
+      geo ++ `sphereHeight_stereoPoint,
+      geo ++ `stereoPoint_height_denominator,
+      geo ++ `stereoPoint_planeRotate,
+      geo ++ `stereoInversePoint,
+      geo ++ `stereoInversePoint_stereoPoint,
+      geo ++ `stereoPoint_inverse,
+      geo ++ `stereoPoint_dIncl_mfderiv,
+      geo ++ `stereoPoint_mfderiv_injective,
+      geo ++ `stereoPoint_mfderiv_surjective,
+      geo ++ `heightOneForm_stereoPoint_mfderiv,
+      geo ++ `sphereAzimuthalOneForm_stereoPoint_mfderiv,
+      geo ++ `exists_smooth_stereographic_coefficients,
+      geo ++ `exists_smooth_height_azimuthal_profiles,
+      poleData ++ `exists_smooth_zonal_decomposition_of_rotationInvariant,
+      poleData ++ `exists_smooth_zonal_decomposition_rotationalAverage,
+      poleData ++ `exists_haar_zonal_dissipation
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -832,6 +867,62 @@ open RicciFlowSharpEstimate.Geometry in
 #print tensorIntervalIntegral
 open RicciFlowSharpEstimate.Geometry in
 #print rotationalAverage
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_mul_eq_on_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_comp_sq_of_even
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_mul_comp_sq_of_odd
+open RicciFlowSharpEstimate.Analysis in
+#print planeRotate
+open RicciFlowSharpEstimate.Analysis in
+#print IsRotationCovectorPair
+open RicciFlowSharpEstimate.Analysis in
+#check exists_smooth_radial_tangential_coefficients
+open RicciFlowSharpEstimate.Geometry in
+#print stereoDenominator
+open RicciFlowSharpEstimate.Geometry in
+#check stereoDenominator_pos
+open RicciFlowSharpEstimate.Geometry in
+#print stereoAmbient
+open RicciFlowSharpEstimate.Geometry in
+#print stereoPoint
+open RicciFlowSharpEstimate.Geometry in
+#check stereoPoint_contMDiff
+open RicciFlowSharpEstimate.Geometry in
+#check stereoPoint_coe
+open RicciFlowSharpEstimate.Geometry in
+#check sphereHeight_stereoPoint
+open RicciFlowSharpEstimate.Geometry in
+#check stereoPoint_height_denominator
+open RicciFlowSharpEstimate.Geometry in
+#check stereoPoint_planeRotate
+open RicciFlowSharpEstimate.Geometry in
+#print stereoInversePoint
+open RicciFlowSharpEstimate.Geometry in
+#check stereoInversePoint_stereoPoint
+open RicciFlowSharpEstimate.Geometry in
+#check stereoPoint_inverse
+open RicciFlowSharpEstimate.Geometry in
+#check stereoPoint_dIncl_mfderiv
+open RicciFlowSharpEstimate.Geometry in
+#check stereoPoint_mfderiv_injective
+open RicciFlowSharpEstimate.Geometry in
+#check stereoPoint_mfderiv_surjective
+open RicciFlowSharpEstimate.Geometry in
+#check heightOneForm_stereoPoint_mfderiv
+open RicciFlowSharpEstimate.Geometry in
+#check sphereAzimuthalOneForm_stereoPoint_mfderiv
+open RicciFlowSharpEstimate.Geometry in
+#check exists_smooth_stereographic_coefficients
+open RicciFlowSharpEstimate.Geometry in
+#check exists_smooth_height_azimuthal_profiles
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_smooth_zonal_decomposition_of_rotationInvariant
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_smooth_zonal_decomposition_rotationalAverage
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check exists_haar_zonal_dissipation
 """
 
 

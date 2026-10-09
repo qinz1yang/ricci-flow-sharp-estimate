@@ -1166,4 +1166,186 @@ $h=Ph+(h-Ph)$ and use this zero mixed term to obtain
 \eqref{eq:haar-action-split}.
 \end{proof}
 
+\section{Global classification of invariant one-forms}
+
+The smoothness of the height probes at the poles is essential. The cylinder
+coefficients alone do not provide it. We first record the smooth factorization
+that removes this difficulty without assuming analyticity.
+
+\begin{lemma}\label{lem:parity-plane-factorization}
+Every smooth even function $e:\R\to\R$ has the form $e(t)=E(t^2)$ for some
+globally smooth $E$. Every smooth odd function has the form $tF(t^2)$ for
+some globally smooth $F$. Consequently, if the smooth pair $(P,Q):\R^2\to\R^2$
+is rotation-equivariant, there are globally smooth $A,B:\R\to\R$ such that
+\begin{equation}\label{eq:plane-covector-factorization}
+ \begin{split}
+ P(u,v)&=uA(u^2+v^2)-vB(u^2+v^2),\\
+ Q(u,v)&=vA(u^2+v^2)+uB(u^2+v^2).
+ \end{split}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For a smooth odd function $p$, its Hadamard quotient
+$q(t)=\int_0^1p'(st)\,ds$ is smooth and satisfies $p(t)=tq(t)$.
+Cancellation for $t\ne0$, and continuity at zero, show that $q$ is even.
+For smooth even $e$, apply this observation to the odd function $e'$ and
+write $e'(t)=2t\,Te(t)$ with $Te$ smooth and even. On $s>0$,
+\[
+ \frac{d}{ds}e(\sqrt{s})=Te(\sqrt{s}).
+\]
+Both sides have continuous limits at zero. The one-sided fundamental theorem
+of calculus gives the same derivative identity at zero. Iteration with the
+smooth even functions $T^je$ proves that $s\mapsto e(\sqrt{s})$ is smooth
+on the closed half-line.
+
+For completeness, this closed-half-line function has a global smooth
+extension. If its right-hand jets at zero are $a_j$, choose a smooth compactly
+supported cutoff $\eta$ equal to one near zero and take
+\[
+ G(s)=\sum_{j=0}^\infty \frac{a_j}{j!}s^j\eta(\lambda_j s).
+\]
+Choose $\lambda_j\geq1$ successively large enough that every derivative
+of the $j$th summand of order $k<j$ has supremum norm at most $2^{-j}$.
+This is possible since those norms scale as $\lambda_j^{k-j}$.
+The series converges in every fixed derivative order and has jets $a_j$.
+Joining $G$ on the negative half-line to the given function on the
+nonnegative half-line gives a smooth function: at each order the two
+one-sided derivatives have the same limit at zero. Applying this construction
+to $e(\sqrt{s})$ proves the even factorization, and applying it to the even
+quotient $q$ proves the odd factorization.
+
+Restrict the equivariant pair to $(t,0)$. Rotation by $\pi$ makes both
+restrictions odd, hence they are $tA(t^2)$ and $tB(t^2)$. For
+$\rho=\sqrt{u^2+v^2}>0$, rotate $(\rho,0)$ to $(u,v)$ with cosine
+$u/\rho$ and sine $v/\rho$. Equivariance gives
+\eqref{eq:plane-covector-factorization}. At the origin, both components
+vanish by the same oddness, so the formula holds there as well.
+\end{proof}
+
+\begin{lemma}\label{lem:stereographic-invariant-form}
+For $\epsilon\in\{1,-1\}$, put $d=4+u^2+v^2$ and define the actual sphere map
+\[
+ \Psi_\epsilon(u,v)=
+ \left(\frac{4u}{d},\frac{4v}{d},
+             \frac{\epsilon(4-u^2-v^2)}{d}\right).
+\]
+It is smooth, intertwines plane rotation with the sphere rotation, and
+parametrizes the complement of the pole of height $-\epsilon$.
+Its inverse on that complement is
+\[
+ (x,y,z)\longmapsto
+ \left(\frac{2x}{1+\epsilon z},\frac{2y}{1+\epsilon z}\right).
+\]
+Its actual tangent map is bijective everywhere, and
+\begin{equation}\label{eq:stereo-covector-pullbacks}
+ \Psi_\epsilon^*dz=-\frac{16\epsilon}{d^2}(u\,du+v\,dv),\qquad
+ \Psi_\epsilon^*\kappa=\frac{16}{d^2}(u\,dv-v\,du).
+\end{equation}
+For every smooth rotation-invariant one-form $h$ on the sphere, there are
+globally smooth $A_\epsilon,B_\epsilon:\R\to\R$ for which
+\begin{equation}\label{eq:stereo-invariant-form}
+ \Psi_\epsilon^*h=
+ A_\epsilon(u^2+v^2)(u\,du+v\,dv)
+ +B_\epsilon(u^2+v^2)(u\,dv-v\,du).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The displayed vector has norm one. Its positive denominator makes it a
+smooth sphere-valued map, and direct substitution verifies equivariance
+and both inverse laws. Also $1+\epsilon z=8/d$ on its image.
+For a plane tangent $(U,V)$, its included derivative is
+\[
+ \left(\frac{4U}{d}-\frac{8u(uU+vV)}{d^2},
+       \frac{4V}{d}-\frac{8v(uU+vV)}{d^2},
+       -\frac{16\epsilon(uU+vV)}{d^2}\right).
+\]
+If this vector is zero, the last component first gives $uU+vV=0$,
+and the first two give $U=V=0$. Thus the actual tangent map is injective,
+and hence bijective between two-dimensional tangent spaces.
+Evaluating $dz$ and $\kappa=-y\,dx+x\,dy$ on it proves
+\eqref{eq:stereo-covector-pullbacks}, including at $(0,0)$.
+
+The two coefficients of $\Psi_\epsilon^*h$ are smooth because $h$ and
+the actual tangent map are smooth. The chain rule and rotation
+invariance of $h$ imply that their coefficient pair is rotation-equivariant:
+evaluation on a rotated tangent vector at the rotated point equals
+the original evaluation. Lemma~\ref{lem:parity-plane-factorization}
+then gives \eqref{eq:stereo-invariant-form} on the entire plane.
+\end{proof}
+
+\begin{theorem}\label{thm:invariant-one-form-classification}
+For the produced metric $g_D$, every smooth one-form invariant under its
+specified circle rotations can be written
+\[
+ h=M_D(r)+Z_D(s)
+\]
+with globally smooth real functions $r,s:\R\to\R$. The equality holds
+on the entire sphere, including both poles; no equatorial symmetry is assumed.
+\end{theorem}
+
+\begin{proof}
+First construct global smooth coefficients $P,Q$ with $h=P(z)\,dz+Q(z)\kappa$,
+independently of the metric. On the chart in
+Lemma~\ref{lem:stereographic-invariant-form}, write $t=u^2+v^2$.
+The exact identities
+\[
+ t=\frac{4(1-\epsilon z)}{1+\epsilon z},\qquad
+ \frac{d^2}{16}=\frac{4}{(1+\epsilon z)^2}
+\]
+convert \eqref{eq:stereo-invariant-form} into local height coefficients
+\[
+ P_\epsilon(z)=-\frac{4\epsilon}{(1+\epsilon z)^2}
+ A_\epsilon\!\left(\frac{4(1-\epsilon z)}{1+\epsilon z}\right),\quad
+ Q_\epsilon(z)=\frac{4}{(1+\epsilon z)^2}
+ B_\epsilon\!\left(\frac{4(1-\epsilon z)}{1+\epsilon z}\right).
+\]
+These evaluations determine the original one-form because the actual
+tangent map is surjective.
+
+Here is an explicit way to extend and glue these coefficients. Choose a smooth
+transition $S$ with $0\leq S\leq1$, $S=0$ on $(-\infty,0]$, $S>0$ on
+$(0,\infty)$ and $S=1$ on $[1,\infty)$. The denominator
+$\delta(w)=1+wS(4w+3)$ is strictly positive for every real $w$ and equals
+$1+w$ for $w\geq-1/2$: for $w\leq-3/4$ it is one, while for
+$-3/4<w<0$ it is at least $1+w>1/4$.
+Replace $1+\epsilon z$ in the preceding formulas by $\delta(\epsilon z)$.
+This produces globally smooth coefficients still representing $h$ on
+$\epsilon z\geq-1/2$, including the corresponding pole. Blend the north
+and south coefficients with $S(z+1/2)$ and $1-S(z+1/2)$.
+On the overlap both pairs represent the same original covector; outside
+the overlap the appropriate weight is one. Thus the global smooth $P,Q$
+satisfy $h=P(z)\,dz+Q(z)\kappa$ everywhere.
+
+It remains to divide by the metric coefficients without assuming their
+positivity outside $[-1,1]$. For any globally smooth $c$ nonzero on that
+interval, set
+\[
+ r_c(v)=\frac{P(v)c(v)}{c(v)^2+S(v^2-1)}.
+\]
+Its denominator is positive everywhere: on the physical interval $c^2>0$,
+and outside it $S(v^2-1)>0$. Hence $r_c$ is globally smooth and $c(v)r_c(v)=P(v)$
+on $[-1,1]$. Apply this construction to $(c,P)=(a,P)$ and $(b,Q)$.
+The resulting $r,s$ give precisely the already defined sections
+$M_D(r)$ and $Z_D(s)$.
+\end{proof}
+
+\begin{corollary}\label{cor:haar-zonal-action}
+For every smooth one-form $h$ there are globally smooth $r,s:\R\to\R$ with
+\[
+ Ph=M_D(r)+Z_D(s),\qquad
+ Q_{g_D}(h)=2\pi\bigl(J_a[r]+J_a[s]\bigr)+Q_{g_D}(h-Ph).
+\]
+\end{corollary}
+
+\begin{proof}
+The actual smooth average $Ph$ is invariant by
+Theorem~\ref{thm:haar-projection}. Apply
+Theorem~\ref{thm:invariant-one-form-classification} to that same section,
+then use Theorem~\ref{thm:zonal-reduction} and the complete split in
+Theorem~\ref{thm:haar-split}. No sign assertion about the remainder is
+needed for this identity.
+\end{proof}
+
 \end{document}
