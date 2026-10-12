@@ -1,0 +1,28 @@
+{
+  "phase1_baseline": "721fd81b76a3c841389761fbe55ce917e0926a44",
+  "phase2_status": "OPEN; smooth fixed-geometry packet only",
+  "native_receipt_sha256": "67dc95eb374257acd1800113930abee430e32333e01fa93ea91c0b38902e1ec6",
+  "native_input_hashes_verified": 157,
+  "native_output_hashes_verified": 158,
+  "research_document_hashes": {
+    "docs/research/phase2-unrestricted.md": "9f9924ac3b13febf151b54472bf08ed49fc292e918d2a02365d230a4000ef544",
+    "docs/mathematical-status.md": "a08af93538df093e66b92a39ce63e54ceeb370ec6e4aeb8304c4247a34bf58c5",
+    "docs/theorem-map.md": "2b598fe071c237c91a3f29b538078a7a352f8a3323eb3e30fdd937242a161025",
+    "docs/verification.md": "d488f9278192d62a9c5511c91dbcdddd9f94c09add317e487cf10e28e5a8cf91"
+  },
+  "independent_review": "Pending the configured fresh outer reviewer; no duplicate acceptance review was run.",
+  "source_simplifier": "No required changes; retained compiled explicit proof instead of an optional uncompiled shortening.",
+  "additional_native_probes": {
+    "scope": "round curvature K=2, unit-probe Euler expression equals 4; zero probe Euler expression equals zero",
+    "driver_sha256": "7fe212598dc15f90e90441332958d78b2d2f7d47996b59ce9aa5f919e0694079",
+    "options": [
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "exit_code": 0,
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

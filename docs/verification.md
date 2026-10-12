@@ -339,3 +339,38 @@ binds the unchanged accepted manuscript and PDF to the documentation-only map
 update. Historical receipts are preserved. The separate generic code-review
 hook had no configured base branch; the completed Round16 independent
 mathematical acceptance remains valid for the unchanged sources.
+
+
+## Phase II, Round 0: smooth complete-action variation
+
+Phase I remains COMPLETE at finalized revision `721fd81`; its accepted source,
+paper and historical evidence are unchanged. Phase II remains OPEN. The three
+new canonical modules are `AreaActionFactorization`, `AreaActionVariation` and
+`AreaVariationGeometry`. Their 19 public theorems establish full-action
+factorization, automatic pole flux, exact variation, the smooth zero-mode
+stationarity equivalence, positive weighted normalization and original-metric
+consumers. They do not determine the unrestricted sharp constant.
+
+The [final native receipt](evidence/phase2-round-0-final/receipt.json) covers
+152 modules, 157 source/configuration inputs and 158 command outputs. All 149
+unchanged phase-I source elaborations are reused from the accepted Round16
+receipt; the three new modules have fresh silent source elaborations. The root,
+unsuppressed declaration linters, declaration-kind inspection, exact signatures
+and actual transitive-axiom drivers pass. The audit covers 2,449 defining-module
+declarations, including 801 private declarations, with only permitted
+foundational axioms. There are 797 required selectors and 896 signature queries.
+
+An initial signature driver failed the line-length source linter on one new
+fully qualified query. Splitting that query, with no theorem-source change,
+resolved it. The final gate above was rerun on the final unchanged native input
+bytes. No diagnostic was suppressed. A source-only simplifier found no required
+changes; its optional uncompiled proof shortening was left out of this frozen
+packet. The configured independent outer review remains pending.
+
+The [preservation record](evidence/phase2-round-0-final/preservation.json)
+records unchanged phase-I paper hashes, all 149 original modules and 2,325
+historical workflow files, historical task, native receipt and dependency pins.
+The new [research notes and exact native map](research/phase2-unrestricted.md)
+state the fixed-geometry scope, original object bindings, historical-tool audit
+limitations and next joint-variation obligation. No new phase-II manuscript or
+phase-I typesetting run is claimed.

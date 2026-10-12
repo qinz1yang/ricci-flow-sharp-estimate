@@ -164,6 +164,9 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.SmoothNegativeAreaRecovery",
     "RicciFlowSharpEstimate.Geometry.StrictRotationalWitness",
     "RicciFlowSharpEstimate.Geometry.RotationalThreshold",
+    "RicciFlowSharpEstimate.Geometry.AreaActionFactorization",
+    "RicciFlowSharpEstimate.Geometry.AreaActionVariation",
+    "RicciFlowSharpEstimate.Geometry.AreaVariationGeometry",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -961,7 +964,29 @@ SELECTOR = r"""
       geo ++ `rotationalThreshold,
       geo ++ `one_le_rotationalThreshold,
       geo ++ `exists_contracted_ratio_above_rotationalThreshold,
-      geo ++ `rotationalThreshold_lt_conformalKillingThreshold
+      geo ++ `rotationalThreshold_lt_conformalKillingThreshold,
+      area ++ `meridionalOperator,
+      area ++ `meridionalOperator_contDiff,
+      area ++ `meridionalAction_eq_square_potential,
+      area ++ `meridionalGreenFlux,
+      area ++ `meridionalGreenFlux_hasDerivAt,
+      area ++ `meridionalGreenFlux_endpoints,
+      area ++ `integral_warp_mul_operator_mul,
+      area ++ `meridionalJacobiOperator,
+      area ++ `meridionalJacobiOperator_contDiff,
+      area ++ `integral_meridionalOperator_pair_eq_jacobi,
+      area ++ `meridionalOperator_add_mul,
+      area ++ `meridionalAction_add_mul,
+      area ++ `meridionalAction_hasDerivAt,
+      area ++ `integral_warp_mul_sq_pos,
+      area ++ `meridionalAction_stationary_iff,
+      area ++ `meridionalJacobiOperator_zero,
+      area ++ `meridionalJacobiOperator_one,
+      area ++ `meridionalAction_eq_integral_jacobi,
+      area ++ `meridionalAction_const_mul,
+      area ++ `exists_normalized_area_probe,
+      area ++ `oneFormDissipation_eq_integral_jacobi_of_profile_probe,
+      area ++ `oneFormDissipation_meridional_hasDerivAt
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -2556,6 +2581,29 @@ open RicciFlowSharpEstimate.Geometry in
 #check exists_contracted_ratio_above_rotationalThreshold
 open RicciFlowSharpEstimate.Geometry in
 #check rotationalThreshold_lt_conformalKillingThreshold
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalOperator
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalOperator_contDiff
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalAction_eq_square_potential
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalGreenFlux
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalGreenFlux_hasDerivAt
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalGreenFlux_endpoints
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.integral_warp_mul_operator_mul
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalJacobiOperator
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalJacobiOperator_contDiff
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.integral_meridionalOperator_pair_eq_jacobi
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalOperator_add_mul
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalAction_add_mul
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalAction_hasDerivAt
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.integral_warp_mul_sq_pos
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalAction_stationary_iff
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalJacobiOperator_zero
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalJacobiOperator_one
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalAction_eq_integral_jacobi
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalAction_const_mul
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.exists_normalized_area_probe
+#check
+  RicciFlowSharpEstimate.Geometry.AreaProfile.oneFormDissipation_eq_integral_jacobi_of_profile_probe
+#check RicciFlowSharpEstimate.Geometry.AreaProfile.oneFormDissipation_meridional_hasDerivAt
 """
 
 

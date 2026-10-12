@@ -1,5 +1,14 @@
 # Mathematical scope and dependency graph
 
+Phase I is **COMPLETE** at finalized revision
+`721fd81b76a3c841389761fbe55ce917e0926a44`, following accepted rounds 0–16.
+The historical completion statements below refer to that phase.
+Phase II is **OPEN**: determining the unrestricted rotational sharp constant is
+now the active research objective. Its separate [research status and native
+map](research/phase2-unrestricted.md) record the complete-action variation packet
+and the remaining global comparison, selection, recovery and endpoint gaps.
+The accepted phase-I TeX/PDF and historical evidence remain unchanged.
+
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.
 Native layers prove the all-cap parameter, the generic
