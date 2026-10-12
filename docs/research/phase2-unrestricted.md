@@ -6,8 +6,8 @@ Phase I is **COMPLETE**, accepted after rounds 0–16 at
 Phase II is **OPEN**. Its goal is to determine `C_rot` for all smooth one-forms
 on the original represented rotational metric class, with a determining
 characterization, justified selection, a universal lower bound, sharp smooth
-counterexamples above it, and the correct endpoint scope. The new results below
-are a fixed-geometry prerequisite, not a threshold characterization.
+counterexamples above it, and the correct endpoint scope. The results below
+are variational prerequisites, not a threshold characterization.
 
 ## Round 0: complete-action variation
 
@@ -156,7 +156,8 @@ declaration linters, exact signatures and actual transitive axiom closure passed
 for 152 modules and 2,449 defining-module declarations, including 801 private
 ones. Only `propext`, `Classical.choice` and `Quot.sound` occur in the checked
 closures. The new packet has 19 public theorems and three actual operator/flux
-definitions. Independent acceptance is pending the configured fresh outer reviewer. These notes are
+definitions. The Round 0 outer review accepted this bounded packet at `cea7baa`; full phase-II
+acceptance remains open. These notes are
 separate from the accepted phase-I manuscript; its TeX and PDF are unchanged.
 
 ## Historical tools: bounded audit outcome
@@ -174,7 +175,7 @@ remaining premises:
   universal nonnegativity of the original smooth meridional action in a curvature
   box. Its recovery consumer transports that supplied safety statement through
   genuine smooth geometric realization.
-- `ConnectionPhysicalFiniteMeridianAssembly.action_glue` proves additive action
+- `ConnectionPhysicalFiniteMeridianAssembly.CoordinatizedFiniteInterfaceTerminalPolarAssembly.action_glue` proves additive action
   from actual transported jets and interval telescoping. The final activity
   consumer still takes sphere safety, a coordinatized assembly for the relevant
   histories, an opposite completion and a zero-action pair. It does not produce
@@ -198,6 +199,168 @@ bytes unverified; current phase-I receipts are not compiler or transitive-axiom
 evidence for the historical tree. The new packet uses only current accepted
 native dependencies.
 
+## Round 1: actual curvature variation and normalized conditions
+
+The core curvature derivative needs continuous `K,ξ` and a globally smooth fixed
+probe `r`. For original smooth variations, take both `K` and `ξ` globally smooth.
+No derivative of the curvature is used in this calculation. Put
+
+\[
+ K_t=K+t\xi,\quad b=f_1,\quad p=r',\quad z=r'',\quad q=fr''+2br'-Kr.
+\]
+The actual affine primitive laws are
+
+\[
+ f_{K_t}=f+t\delta f,\quad b_{K_t}=b+t\delta b,\qquad
+ \delta f(x)=-2\int_0^x(x-u)\xi(u)\,du,\quad
+ \delta b(x)=-2\int_0^x\xi(u)\,du.
+\]
+The fixed affine term `2x` in the warp is retained. The new complete-density
+coefficients, evaluated at the original `K,r`, are
+
+\[
+ \begin{aligned}
+ \alpha&=q^2+2fqz-Kbrp+K^2r^2,\\
+ \beta&=4fqp-Kr(fp+br),\\
+ \gamma&=-2fqr-br(fp+br/2)+2Kfr^2.
+ \end{aligned}
+\]
+An exact cubic expansion in `t`, followed by integration of continuous
+coefficients, proves the actual parameter derivative
+
+\[
+ \frac{d}{dt}\bigg|_0 A_{K_t}(r)
+ =\int_0^1(\alpha\delta f+\beta\delta b+\gamma\xi). \tag{8}
+\]
+This is differentiation of the existing complete action, not an assumed
+first-variation field. The proof supplies every integrability condition.
+
+For continuous coefficients the new generic Volterra pairing theorems transfer
+prefix primitives to tail primitives. They are proved from actual FTC derivatives
+and integration by parts, including either orientation of the endpoints.
+Applying both kernel identities to (8) gives
+
+\[
+ \sigma(u)=\gamma(u)-2\int_u^1[(x-u)\alpha(x)+\beta(x)]\,dx,
+ \qquad \delta A=\int_0^1\sigma(u)\xi(u)\,du. \tag{9}
+\]
+The switching density is continuous. Equation (9) supplies neither an obstacle
+sign nor a count of contacts.
+
+The two constraints on the direction,
+`∫ξ=0` and `∫xξ=0`, preserve the original two curvature moments **exactly for
+every parameter**. Both warp/slope variations vanish at both endpoints under
+these constraints. Positivity of a continuous curvature on the compact physical
+interval persists for all sufficiently small parameters of either sign.
+A strict interior box has the same property. More generally, a direction whose
+closed support in the physical interval lies strictly between the obstacles is
+feasible for both signs, even if the original curvature touches an obstacle
+elsewhere. The use of closed support supplies a uniform margin. Weak signs only
+at contact points are not used as a substitute for a feasible neighborhood.
+A segment `K+t(G−K)`, `0≤t≤1`, between two curvatures in the same closed box and
+with the same normalized moments is genuinely one-sided feasible.
+
+The normalized functional must account for the geometry dependence of the mass:
+
+\[
+ m(K,r)=\int_0^1f_Kr^2,\qquad
+ \delta m=\int_0^1\delta f\,r^2.
+\]
+The new `normalizedProbe` is literally `r/√m`, and for `m>0` its mass is one.
+For smooth normalized-moment data its complete action is the actual quotient
+`\mathcal R(K,r)=A_K(r)/m(K,r)`.
+For any real `μ`, define the corrected switching density
+
+\[
+ \sigma_\mu(u)=\sigma(u)+2\mu\int_u^1(x-u)r(x)^2\,dx.
+\]
+Native differentiation proves
+
+\[
+ \delta\bigl(A-\mu(m-1)\bigr)=\int_0^1\sigma_\mu\xi,
+ \qquad
+ \delta\mathcal R=\frac1m\int_0^1\sigma_{\mathcal R}\xi. \tag{10}
+\]
+Thus the mass correction is equivalent to replacing `α` by `α−μr²` in the
+switching calculation. An arbitrary `μ` in the algebraic first identity is not
+a claim that a Lagrange multiplier has been extracted from an optimizer.
+The second identity fixes its coefficient to the actual Rayleigh quotient.
+
+For smooth zero-moment curvature directions and positive initial mass, the
+literal normalized curvature path has positive mass, unit normalized mass and
+complete action equal to the quotient throughout a neighborhood of zero.
+Consequently (10) is also the derivative of
+`A_{K_t}(normalizedProbe K_t r)`. Local minima of these two scalar parameter
+functions on any specified feasible parameter set are natively equivalent.
+This proves the normalization bridge for this variation; it is distinct from
+T6's exhaustive original-metric normalization.
+
+For probe variations the actual quotient derivative is
+
+\[
+ \frac{d}{dt}\bigg|_0\mathcal R(K,r+ts)
+ =\frac2m\int_0^1fs\,[E_Kr-\mathcal R(K,r)r]. \tag{11}
+\]
+With positive curvature, smooth data, both moments and positive mass, stationarity
+under every smooth probe direction is equivalent to
+
+\[
+ E_Kr=\mathcal R(K,r)r\quad\text{on }[0,1]. \tag{12}
+\]
+The proof tests with the actual smooth residual and uses positive weighted mass
+and endpoint continuity. At unit mass its eigenvalue is `A_K(r)`; a zero-mode
+conclusion additionally requires zero action. A local minimum of the **literal
+normalized-probe action** along every smooth probe direction implies (12).
+No nonzero eigenfunction or optimizing pair is constructed.
+
+The feasible parameter set used by the new curvature optimality consumers is
+explicit: the same affine curvature must satisfy the box and both exact moments.
+For a supplied `IsLocalMinOn` of the quotient on that set, a segment to any other
+admissible curvature `G` gives
+
+\[
+ \int_0^1\sigma_{\mathcal R}(G-K)\geq0. \tag{13}
+\]
+For a zero-moment direction with closed support in the free region, the pairing
+is zero, because both parameter signs are feasible. Strict interior box data
+are a separate immediate consumer. These are justified directional necessary
+conditions. They do not assert a joint minimizer, moment multipliers, global
+sufficiency, principal-sheet signs, symmetry or finite contact structure.
+
+### Round 1 native map
+
+Area names below have prefix `RicciFlowSharpEstimate.Geometry.AreaProfile`.
+Generic analysis names have the prefix indicated in the table.
+
+| Result | Canonical declarations |
+|---|---|
+| Oriented primitive pairing | `Analysis.VolterraPairing.integral_mul_primitive_eq`, `integral_mul_kernel_eq` in `Analysis/VolterraPairing.lean` |
+| Actual affine primitives and moments | `warp_add_mul`, `warpSlope_add_mul`, `warpVariation_hasDerivAt`, `warpSlopeVariation_hasDerivAt`, `curvature_moments_add_mul`, `curvature_variation_endpoints` in `Geometry/AreaCurvaturePrimitives.lean` |
+| Complete density derivative (8) | Actual coefficient definitions and `meridionalAction_curvature_hasDerivAt` in `Geometry/AreaCurvatureVariation.lean` |
+| Switching pairing (9) | `curvatureSwitchingDensity_continuous`, `curvatureFirstVariation_eq_integral_switching`, `meridionalAction_curvature_hasDerivAt_switching` in the same module |
+| Probe mass, quotient and eigen-equation (11)–(12) | `probeMass_add_mul`, `probeMass_hasDerivAt`, `rayleighQuotient_hasDerivAt`, `rayleighQuotient_stationary_iff`, its unit-mass/zero-action specializations in `Geometry/AreaProbeRayleigh.lean` |
+| Literal normalized probe | `probeMass_normalizedProbe`, `meridionalAction_normalizedProbe`, `normalized_probe_action_hasDerivAt`, `normalized_probe_euler_eq_of_isLocalMin` in the same module |
+| Curvature mass correction (10) | `probeMass_curvature_add_mul`, `probeMass_curvature_hasDerivAt`, `action_sub_mass_curvature_hasDerivAt`, `rayleighQuotient_curvature_hasDerivAt` in `Geometry/AreaCurvatureVariation.lean` |
+| Literal normalized curvature path | `normalized_curvature_action_hasDerivAt`, `eventually_normalized_curvature_variation`, `isLocalMinOn_normalized_curvature_iff` in the same module |
+| Actual feasible neighborhoods/segments | The four compact-set and scalar interval theorems in `Analysis/AffineIntervalVariation.lean` |
+| Constrained necessary conditions (13) | `Icc_subset_curvatureParameters_segment`, `curvatureParameters_mem_nhds_of_interior`, `curvatureParameters_mem_nhds_of_free_support`, `curvature_pairing_nonneg_of_isLocalMinOn_segment`, both zero-pairing consumers in `Geometry/AreaCurvatureOptimality.lean` |
+
+The [Round 1 native gate](../evidence/phase2-round-1/receipt.json) passes for all
+158 modules. It freshly elaborates the six new modules, reuses 152 unchanged
+accepted source elaborations, and checks the root, unsuppressed declaration
+linters, 956 signature queries and actual transitive axiom closures for 2,542
+declarations, including 812 private declarations. Only the three permitted
+foundational axioms occur. Its one fresh independent outer review is pending.
+The accepted Round 0 source bytes and Phase-I paper remain unchanged.
+
+The historical reconstructed first-variation declarations and their density and
+primitive reconstruction equations were inspected as research evidence. The new
+proof differentiates the current corrected primitives directly by exact cubic
+expansion; no historical theorem, continuous-map reconstruction package or old
+native certificate is imported. The available historical `C_FB` endpoint-safety
+results remain substantive source evidence, as the Round 0 review records, but
+still do not identify the unrestricted sharp number.
+
 ## Exact frontier and next target
 
 No value, uniquely selected branch, smooth optimizer, relaxed optimizer, or
@@ -206,20 +369,24 @@ In particular, (4) is necessary smooth fixed-geometry analysis; it does not prov
 that its stationary probes minimize the action or that stationary geometries
 are globally optimal. The possibility of polar concentration is still open.
 
-The next executable target is the **curvature first variation of the original
-six-entry action with a fixed smooth probe**, retaining both zero moment
-constraints on the curvature variation `ξ`. The actual primitive variations are
+The next executable target is **T6: exhaustive normalized-area reduction of
+arbitrary original competitors**. Start from the original `D` and arbitrary
+smooth height probe `R`, use the actual positive length and normalized area
+coordinate, construct a smooth physical inverse and smooth extensions, and
+retain every scale, curvature, probe and derivative equation on the closed
+physical interval. Prove the complete general-probe action identity, curvature
+ratio preservation and physical nonzero-form/mass bridge. Then apply the accepted
+represented Haar/zonal decomposition using the same representation before the
+probe quantifier. The existing normalized-data realizer has the opposite direction;
+the existing forward reciprocal-area action identity covers only the unit probe.
 
-\[
- \delta f(x)=-2\int_0^x(x-t)\xi(t)\,dt,\qquad
- \delta f_1(x)=-2\int_0^x\xi(t)\,dt.
-\]
-Derive its true moment-constrained switching density before assuming a sign or
-finite contact pattern. Then test whether the required optimizer-specific signs
-are consequences or additional unproved hypotheses. A nonsmooth route must
-work with the original derivative-free-in-curvature action or justify every
-interface term: formula (1) alone cannot be applied to a bounded measurable
-curvature by interpreting `K'` as zero at jumps.
+Round 1 supplies curvature and normalized directional calculus, but it does not
+construct a critical pair or settle a relaxed topology. T7 must still control
+varying normalized probes at both poles and prove the full limiting/recovery
+action. T8–T10 must still identify the constant and prove selection, global safety,
+sharp smooth counterexamples and the unrestricted endpoint statement. A nonsmooth
+route must retain the original action or justify interface terms; it cannot
+apply the smooth K′ factorization by discarding jump contributions.
 
 The full solution still requires truthful compactness/relaxation and nonzero
 normalization control, any selection/uniqueness property used in a determining

@@ -9,6 +9,12 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 1 adds the complete curvature derivative and switching pairing, including
+the varying mass, literal unit-mass normalization, the probe eigen-equation and
+feasible-direction necessary inequalities. Its native gate passes; new outer
+review is pending. The exhaustive reduction of arbitrary original competitors
+is the next executable task. No unrestricted sharp value is identified.
+
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
 smooth balanced-profile metric construction, cylinder pullback, intrinsic curvature,

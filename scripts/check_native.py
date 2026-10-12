@@ -167,6 +167,12 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaActionFactorization",
     "RicciFlowSharpEstimate.Geometry.AreaActionVariation",
     "RicciFlowSharpEstimate.Geometry.AreaVariationGeometry",
+    "RicciFlowSharpEstimate.Analysis.VolterraPairing",
+    "RicciFlowSharpEstimate.Analysis.AffineIntervalVariation",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvaturePrimitives",
+    "RicciFlowSharpEstimate.Geometry.AreaProbeRayleigh",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureVariation",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureOptimality",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -986,7 +992,67 @@ SELECTOR = r"""
       area ++ `meridionalAction_const_mul,
       area ++ `exists_normalized_area_probe,
       area ++ `oneFormDissipation_eq_integral_jacobi_of_profile_probe,
-      area ++ `oneFormDissipation_meridional_hasDerivAt
+      area ++ `oneFormDissipation_meridional_hasDerivAt,
+      analysis ++ `VolterraPairing.integral_mul_primitive_eq,
+      analysis ++ `VolterraPairing.integral_mul_kernel_eq,
+      analysis ++ `exists_pos_add_mul_pos_of_isCompact,
+      analysis ++ `exists_pos_add_mul_mem_Ioo_of_isCompact,
+      analysis ++ `add_mul_sub_mem_Icc,
+      analysis ++ `exists_pos_add_mul_mem_Icc_of_isCompact_of_free_support,
+      area ++ `warpVariation,
+      area ++ `warpSlopeVariation,
+      area ++ `warp_add_mul,
+      area ++ `warpSlope_add_mul,
+      area ++ `warpVariation_hasDerivAt,
+      area ++ `warpSlopeVariation_hasDerivAt,
+      area ++ `warpVariation_continuous,
+      area ++ `warpSlopeVariation_continuous,
+      area ++ `curvature_moments_add_mul,
+      area ++ `curvature_variation_endpoints,
+      area ++ `probeMass,
+      area ++ `rayleighQuotient,
+      area ++ `probeMass_add_mul,
+      area ++ `probeMass_hasDerivAt,
+      area ++ `rayleighQuotient_hasDerivAt,
+      area ++ `rayleighQuotient_stationary_iff,
+      area ++ `rayleighQuotient_eq_of_probeMass_eq_one,
+      area ++ `rayleighQuotient_stationary_iff_of_probeMass_eq_one,
+      area ++ `rayleighQuotient_stationary_iff_of_action_eq_zero,
+      area ++ `rayleighQuotient_euler_eq_of_isLocalMin,
+      area ++ `normalizedProbe,
+      area ++ `probeMass_normalizedProbe,
+      area ++ `meridionalAction_normalizedProbe,
+      area ++ `normalized_probe_action_hasDerivAt,
+      area ++ `normalized_probe_euler_eq_of_isLocalMin,
+      area ++ `curvatureWarpCoefficient,
+      area ++ `curvatureSlopeCoefficient,
+      area ++ `curvatureCoefficient,
+      area ++ `meridionalOperator_continuous,
+      area ++ `curvatureWarpCoefficient_continuous,
+      area ++ `curvatureSlopeCoefficient_continuous,
+      area ++ `curvatureCoefficient_continuous,
+      area ++ `curvatureFirstVariation,
+      area ++ `meridionalAction_curvature_hasDerivAt,
+      area ++ `curvatureSwitchingDensity,
+      area ++ `curvatureSwitchingDensity_continuous,
+      area ++ `curvatureFirstVariation_eq_integral_switching,
+      area ++ `meridionalAction_curvature_hasDerivAt_switching,
+      area ++ `probeMass_curvature_add_mul,
+      area ++ `probeMass_curvature_hasDerivAt,
+      area ++ `curvatureLagrangeDensity,
+      area ++ `action_sub_mass_curvature_hasDerivAt,
+      area ++ `rayleighQuotient_curvature_hasDerivAt,
+      area ++ `normalized_curvature_action_hasDerivAt,
+      area ++ `eventually_normalized_curvature_variation,
+      area ++ `isLocalMinOn_normalized_curvature_iff,
+      area ++ `curvatureParameters,
+      area ++ `mem_curvatureParameters_iff,
+      area ++ `Icc_subset_curvatureParameters_segment,
+      area ++ `curvatureParameters_mem_nhds_of_interior,
+      area ++ `curvature_pairing_nonneg_of_isLocalMinOn_segment,
+      area ++ `curvature_pairing_eq_zero_of_isLocalMinOn_interior,
+      area ++ `curvatureParameters_mem_nhds_of_free_support,
+      area ++ `curvature_pairing_eq_zero_of_isLocalMinOn_free_support
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -2604,6 +2670,126 @@ open RicciFlowSharpEstimate.Geometry in
 #check
   RicciFlowSharpEstimate.Geometry.AreaProfile.oneFormDissipation_eq_integral_jacobi_of_profile_probe
 #check RicciFlowSharpEstimate.Geometry.AreaProfile.oneFormDissipation_meridional_hasDerivAt
+open RicciFlowSharpEstimate.Analysis.VolterraPairing in
+#check integral_mul_primitive_eq
+open RicciFlowSharpEstimate.Analysis.VolterraPairing in
+#check integral_mul_kernel_eq
+open RicciFlowSharpEstimate.Analysis in
+#check exists_pos_add_mul_pos_of_isCompact
+open RicciFlowSharpEstimate.Analysis in
+#check exists_pos_add_mul_mem_Ioo_of_isCompact
+open RicciFlowSharpEstimate.Analysis in
+#check add_mul_sub_mem_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check exists_pos_add_mul_mem_Icc_of_isCompact_of_free_support
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpVariation
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlopeVariation
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_add_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_add_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpVariation_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlopeVariation_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpVariation_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlopeVariation_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvature_moments_add_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvature_variation_endpoints
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check rayleighQuotient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_add_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check rayleighQuotient_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check rayleighQuotient_stationary_iff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check rayleighQuotient_eq_of_probeMass_eq_one
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check rayleighQuotient_stationary_iff_of_probeMass_eq_one
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check rayleighQuotient_stationary_iff_of_action_eq_zero
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check rayleighQuotient_euler_eq_of_isLocalMin
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check normalizedProbe
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_normalizedProbe
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_normalizedProbe
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check normalized_probe_action_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check normalized_probe_euler_eq_of_isLocalMin
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureWarpCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureSlopeCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalOperator_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureWarpCoefficient_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureSlopeCoefficient_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureCoefficient_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureFirstVariation
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_curvature_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureSwitchingDensity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureSwitchingDensity_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureFirstVariation_eq_integral_switching
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_curvature_hasDerivAt_switching
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_curvature_add_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_curvature_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureLagrangeDensity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check action_sub_mass_curvature_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check rayleighQuotient_curvature_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check normalized_curvature_action_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check eventually_normalized_curvature_variation
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check isLocalMinOn_normalized_curvature_iff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureParameters
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check mem_curvatureParameters_iff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check Icc_subset_curvatureParameters_segment
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureParameters_mem_nhds_of_interior
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvature_pairing_nonneg_of_isLocalMinOn_segment
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvature_pairing_eq_zero_of_isLocalMinOn_interior
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvatureParameters_mem_nhds_of_free_support
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvature_pairing_eq_zero_of_isLocalMinOn_free_support
 """
 
 

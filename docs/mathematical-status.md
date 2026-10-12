@@ -9,6 +9,12 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 1 adds the complete curvature derivative and switching pairing, including
+the varying mass, literal unit-mass normalization, the probe eigen-equation and
+feasible-direction necessary inequalities. Its native gate passes; new outer
+review is pending. The exhaustive reduction of arbitrary original competitors
+is the next executable task. No unrestricted sharp value is identified.
+
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.
 Native layers prove the all-cap parameter, the generic

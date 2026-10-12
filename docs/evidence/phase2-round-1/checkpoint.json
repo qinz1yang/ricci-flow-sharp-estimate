@@ -1,0 +1,28 @@
+{
+  "phase2_status": "OPEN; curvature/normalized directional-calculus checkpoint only",
+  "parent_accepted_revision": "cea7baa211de684eaa1b6abc99018bd97fd8a8cd",
+  "native_receipt_sha256": "feb07235ba74195349f48cc61d94bc8436a3522c7310c3dc06d5b07473a4f826",
+  "native_inputs_verified": 163,
+  "native_outputs_verified": 164,
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "f5c87e8f44d51b21569137dc4656a496ee4a04f499e80a0556bf8f1390ce045f",
+    "docs/theorem-map.md": "1f0a954309a958dfbf9d8381a5a5d9f4e7ba384efb0eefeaeb3d096265184828",
+    "docs/research/phase2-unrestricted.md": "a57dbed537b5dc694cea75be7004cda044c953aef6c318c107e89a670c3ae276",
+    "docs/verification.md": "032e47038787861e61fd57f36bd069230e25d7e926b51e9c438e745c9a7b82fc"
+  },
+  "independent_review": "Pending configured fresh outer review. The unchanged Round 0 review is retained.",
+  "source_simplifier": "Six-module advisory found no required changes. Optional normalization-proof shortening was not applied to the frozen compiled packet.",
+  "additional_native_probes": {
+    "scope": "Nonzero polynomial direction 6x^2-6x+1 has both zero moments; actual mass derivative for K=2, r=1, curvature direction 1 equals -1/3.",
+    "driver_sha256": "c6495586ab61f5604b2946964f44bcc8f0bc633bc0bc1fa4579c70cebb215342",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "semantic_options": [
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "exit_code": 0
+  }
+}

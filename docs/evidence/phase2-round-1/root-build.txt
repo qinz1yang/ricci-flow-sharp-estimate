@@ -1,0 +1,4 @@
+✔ [9801/9804] Built RicciFlowSharpEstimate.Geometry.AreaCurvatureVariation (6.7s)
+✔ [9802/9804] Built RicciFlowSharpEstimate.Geometry.AreaCurvatureOptimality (5.1s)
+✔ [9803/9804] Built RicciFlowSharpEstimate (8.9s)
+Build completed successfully (9804 jobs).

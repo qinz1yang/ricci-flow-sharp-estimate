@@ -374,3 +374,41 @@ The new [research notes and exact native map](research/phase2-unrestricted.md)
 state the fixed-geometry scope, original object bindings, historical-tool audit
 limitations and next joint-variation obligation. No new phase-II manuscript or
 phase-I typesetting run is claimed.
+
+
+## Phase II, Round 1: curvature variation and normalized conditions
+
+The unchanged Round 0 packet passed its configured outer review at `cea7baa`.
+The full Phase-II goal remains OPEN. The new curvature packet proves actual
+affine primitives and exact moments, the complete-density derivative, justified
+Volterra switching pairing, curvature-dependent mass correction, actual unit-mass
+normalization and the probe eigen-equation. Explicit box-and-moment parameter
+sets give necessary one-sided and two-sided local-minimum conditions, with
+closed support used for free variations. No optimizer or determining threshold
+is asserted; exhaustive original-data normalization remains the next task.
+
+The [native receipt](evidence/phase2-round-1/receipt.json), SHA256
+`feb07235ba74195349f48cc61d94bc8436a3522c7310c3dc06d5b07473a4f826`, covers
+158 modules, 163 native inputs and 164 outputs. All 152 accepted prior source
+elaborations are reused with unchanged hashes; the six new modules have fresh
+silent elaborations. The root build, unsuppressed declaration linters and native
+declaration-kind inspection pass. There are 857 required selectors and 956
+signature queries. Actual transitive axiom checks cover 2,542 declarations,
+including 812 private declarations, with only subsets of `propext`,
+`Classical.choice`, and `Quot.sound`.
+
+An initial affected-leaf build reported one overlong proof line. It was wrapped
+before the final source-bound native run. No proof statement, proof logic or
+linter setting was changed for this repair. The source simplifier found no
+required changes; one optional shortening of the normalized-path derivative
+proof was not applied to the already frozen packet. The configured fresh outer
+review of this new packet remains pending, without repeating accepted reviews.
+
+The mathematical sources added are `Analysis/VolterraPairing`,
+`Analysis/AffineIntervalVariation`, `Geometry/AreaCurvaturePrimitives`,
+`Geometry/AreaProbeRayleigh`, `Geometry/AreaCurvatureVariation`, and
+`Geometry/AreaCurvatureOptimality`. The checker changes only extend module,
+selector and signature inventories. No verification infrastructure was redesigned.
+The [research notes and exact map](research/phase2-unrestricted.md) distinguish
+proved directional calculus from the open original-data, compactness, selection,
+global comparison, recovery and endpoint obligations. No paper bytes changed.
