@@ -12,9 +12,11 @@ The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 Round 1's curvature and normalized directional-calculus packet passed its outer
 review at `38bdb31`. Round 2 adds exhaustive smooth normalization from arbitrary
 original profiles and probes, including actual jets, complete action, physical
-nonzero mass and the fixed-representation Haar/safety transfer. Its native
-evidence is recorded separately; its fresh outer review is pending. Polar
-compactness, critical-object applications, global comparison, determining
+nonzero mass and the fixed-representation Haar/safety transfer. Its continuation
+also gives direct original-form derivatives, physical Rayleigh scaling and the
+fixed-geometry eigen-equation from actual original directional minima. Native
+evidence is recorded separately; the single fresh Round 2 outer review is pending.
+Polar compactness, critical-object applications, global comparison, determining
 selection, sharp recovery and endpoint scope remain open. No unrestricted sharp
 value is identified.
 

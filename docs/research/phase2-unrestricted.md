@@ -513,6 +513,74 @@ the corresponding original geometric dissipations are `8π/3` and `40π/3`.
 A separate consumer uses arbitrary `D,R` with no supplied coordinate equations.
 These are exact kernel checks, not numerical evidence for a sharp value.
 
+### Round 2 continuation: actual original-form variations
+
+The same smooth normalization transports actual original-form variations at
+arbitrary original scale. Two further native modules give direct geometric
+consumers of the complete action and quotient calculus.
+Fix the original `D` and its normalization **before** smooth probes `R,S`, and
+write `r=R∘V`, `s=S∘V`. The actual original-form variation satisfies
+
+\[
+ \frac{d}{dt}\bigg|_0 Q_{g_D}(M_D(R+tS))
+       =4\pi\int_0^1f_KsE_Kr. \tag{18}
+\]
+The same formula holds after the actual representing diffeomorphism, with the
+same pullback metric, varying pullback form and fixed normalization. No profile
+compatibility premise or new geometry is requested of the caller.
+
+Stationarity of this original dissipation along **every original smooth
+meridional direction** is equivalent to `E_Kr=0` on `[0,1]`. For the exhaustive
+implication, any smooth area direction `s` comes from the actual original
+`S=s∘X`; physical equality suffices inside the integral. The reverse implication
+uses the same complete pairing. No endpoint restriction, nonzero kernel or
+full joint optimizing pair is asserted.
+
+Let the physical quotient use the literal original norm and volume:
+
+\[
+ \mathcal Q_D(R)=
+ \frac{Q_{g_D}(M_D(R))}{\int_{S^2}|M_D(R)|_{g_D}^2\,d\mu_{g_D}}.
+\]
+The exact mass factor in (16) gives
+
+\[
+ \mathcal Q_D(R)=\ell^{-2}\mathcal R(K,r),\qquad
+ \frac{d}{dt}\bigg|_0\mathcal Q_D(R+tS)
+ =\frac{2}{\ell^2m(K,r)}\int_0^1 f_Ks
+       [E_Kr-\mathcal R(K,r)r]. \tag{19}
+\]
+The derivative assumes the actual original form is nonzero, which supplies
+positive physical mass. The algebraic quotient identity also handles zero mass
+using Lean's totalized real division; no unit normalization or spectral meaning
+is assigned to the zero form.
+
+A local minimum of the **literal original quotient** along every original smooth
+meridional direction therefore implies
+`E_Kr=𝓡(K,r)r` on the closed physical interval. Its proof transports all directions
+and reuses the accepted scalar stationarity equivalence. The coefficient is the
+actual scalar quotient, or `ℓ²𝒬_D(R)`; it is not silently replaced by zero. This
+is a fixed-geometry necessary-condition application. It still supplies no joint
+minimum, critical-object existence or moment multiplier. Since ℓ varies with the
+metric, the physical quotient itself is not invariant under metric scaling.
+A future joint-minimum application must retain the normalized geometry scale
+or the equivalent ℓ² correction; a minimum over unnormalized physical quotients
+cannot simply be substituted for the normalized scalar problem.
+
+| Result | Declaration, in `Geometry.RotationalProfile.PoleData.AreaNormalization` |
+|---|---|
+| Actual original dissipation derivative (18) | `oneFormDissipation_meridional_hasDerivAt` in `Geometry/NormalizedAreaVariation.lean` |
+| Exhaustive original-direction stationarity | `oneFormDissipation_meridional_stationary_iff` in the same module |
+| Same represented metric/form variation | `oneFormDissipation_pullback_meridional_hasDerivAt` in the same module |
+| Literal physical quotient and derivative (19) | `oneFormDissipation_div_normSq_eq`, `oneFormDissipation_div_normSq_hasDerivAt` in `Geometry/NormalizedAreaRayleigh.lean` |
+| Necessary condition from original directional minima | `oneFormDissipation_div_normSq_euler_eq_of_isLocalMin` in the same module |
+
+The [continuation native receipt](../evidence/phase2-round-2-continuation/receipt.json)
+reuses the unchanged initial Round 2 native inputs and records fresh checks of
+these two leaves and the affected root. The configured single outer review of
+the coherent Round 2 packet remains pending; no extra acceptance review or
+rebuild of unchanged mathematics is claimed.
+
 ## Exact frontier and next target
 
 Phase I remains COMPLETE and Phase II remains OPEN. Round 2 closes T6's smooth
@@ -531,9 +599,10 @@ The current fixed-probe continuity and symmetric monotone recovery do not meet
 these gates. A failed estimate must be recorded as a precise route obstruction,
 not hidden as a final theorem hypothesis.
 
-T5's necessary conditions still require an application from the actual original
-joint minimum or critical notion selected by the route. T6 supplies exhaustive
-smooth competitors; it does not construct a critical pair, a topological
+The fixed-geometry original-form application above advances T5's use of probe
+conditions. The joint geometry/probe conditions still require an application
+from the actual original joint minimum or critical notion selected by the route.
+T6 supplies exhaustive smooth competitors; it does not construct a critical pair, a topological
 minimum, continuous families of realizers or moment multipliers. The quotient's
 eigenvalue is its actual action-to-mass ratio; a zero-mode specialization still
 requires zero action. No symmetry, contact count or optimizer-specific sign is

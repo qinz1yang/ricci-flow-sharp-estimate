@@ -179,6 +179,8 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.NormalizedAreaAction",
     "RicciFlowSharpEstimate.Geometry.NormalizedAreaMass",
     "RicciFlowSharpEstimate.Geometry.NormalizedAreaHaar",
+    "RicciFlowSharpEstimate.Geometry.NormalizedAreaVariation",
+    "RicciFlowSharpEstimate.Geometry.NormalizedAreaRayleigh",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1120,7 +1122,13 @@ SELECTOR = r"""
       poleData ++ `oneFormDissipation_eq_normalizedAreaAction,
       geo ++ `IsRepresentedRotationalMetric.exists_normalized_area_representation,
       geo ++ `rotationalSafeCaps_of_normalized_area_safety,
-      geo ++ `areaAction_nonneg_of_rotationalSafeCap
+      geo ++ `areaAction_nonneg_of_rotationalSafeCap,
+      poleData ++ `AreaNormalization.oneFormDissipation_meridional_hasDerivAt,
+      poleData ++ `AreaNormalization.oneFormDissipation_meridional_stationary_iff,
+      poleData ++ `AreaNormalization.oneFormDissipation_pullback_meridional_hasDerivAt,
+      poleData ++ `AreaNormalization.oneFormDissipation_div_normSq_eq,
+      poleData ++ `AreaNormalization.oneFormDissipation_div_normSq_hasDerivAt,
+      poleData ++ `AreaNormalization.oneFormDissipation_div_normSq_euler_eq_of_isLocalMin
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -2982,6 +2990,18 @@ open RicciFlowSharpEstimate.Geometry in
 #check rotationalSafeCaps_of_normalized_area_safety
 open RicciFlowSharpEstimate.Geometry in
 #check areaAction_nonneg_of_rotationalSafeCap
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_meridional_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_meridional_stationary_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_pullback_meridional_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_div_normSq_eq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_div_normSq_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_div_normSq_euler_eq_of_isLocalMin
 """
 
 

@@ -163,3 +163,5 @@ import RicciFlowSharpEstimate.Geometry.PhysicalProbeNonzero
 import RicciFlowSharpEstimate.Geometry.NormalizedAreaAction
 import RicciFlowSharpEstimate.Geometry.NormalizedAreaMass
 import RicciFlowSharpEstimate.Geometry.NormalizedAreaHaar
+import RicciFlowSharpEstimate.Geometry.NormalizedAreaVariation
+import RicciFlowSharpEstimate.Geometry.NormalizedAreaRayleigh

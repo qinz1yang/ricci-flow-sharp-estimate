@@ -460,3 +460,41 @@ historical task, accepted TeX/PDF and dependency pins. No manuscript was edited
 or typeset. The [research notes](research/phase2-unrestricted.md) retain the exact
 remaining polar compactness, original critical-object application, full joint
 recovery, determining selection, global comparison and sharpness/endpoint gates.
+
+
+## Phase II, Round 2 continuation: direct original-form variational consumers
+
+The exhaustive normalization checkpoint at `ba9dade` remains unchanged. Two new
+leaves, `Geometry/NormalizedAreaVariation` and `Geometry/NormalizedAreaRayleigh`,
+add six theorems for original geometric action derivatives, full smooth-direction
+stationarity, represented pullback variation, and the literal physical quotient
+with its inverse squared length factor. Nonzero original forms supply the mass
+needed for quotient differentiation. Original fixed-geometry directional minima
+imply the scalar eigen-equation by the accepted stationarity theorem. No joint
+minimizer, compactness, new safe cap or determining value is asserted.
+
+The [continuation native receipt](evidence/phase2-round-2-continuation/receipt.json),
+SHA256 `4507a32fc5dc8028591cfc9cb954da2fcf2087c019c6e9b4bdf3a3f8b437922c`, passes for
+166 modules: two fresh silent source elaborations and 164 matching prior native
+elaborations reused. The latter include the six initial Round 2 leaves whose
+single outer review remains pending. Root build, unsuppressed declaration
+linters and native declaration-kind inspection pass. There are 925 selectors,
+1,024 signature/declaration queries and 2,694 actual transitive axiom rows,
+including 818 private declarations. Only subsets of `propext`, `Classical.choice`
+and `Quot.sound` occur. All 171 native input and 172 output hashes, three diagnostic
+driver hashes and the literal new signatures were checked against the final bytes.
+
+Supplemental native checks prove the actual unit-probe geometric quotient is
+1/c² for every positive constant profile c, and instantiate the derivative from
+arbitrary original D,R,S with no compatibility premises. They compile silently;
+the [checkpoint record](evidence/phase2-round-2-continuation/checkpoint.json) binds
+the driver and output. Root shortened the local-minimum proof to reuse the
+accepted scalar stationarity equivalence. The source simplifier found no required
+changes; an optional import narrowing was not applied during the final gate.
+No diagnostic suppression or new dependency pin was introduced.
+
+The [preservation record](evidence/phase2-round-2-continuation/preservation.json)
+verifies all 164 previous native sources, including the 158 previously accepted
+modules, the Phase-I paper, historical task/workflow and pins. Prior native
+receipts are unchanged. The same single configured Round 2 outer review remains
+pending for the combined packet. Phase I is COMPLETE and Phase II remains OPEN.

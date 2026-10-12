@@ -1,0 +1,51 @@
+{
+  "phase2_status": "OPEN; direct original-form variation checkpoint only",
+  "parent_accepted_revision": "38bdb3139c7b57581649f9500b6f6dfd032c4a59",
+  "parent_native_checkpoint_revision": "ba9dadec459713363d54d3719ae5dd6a0bf8995a",
+  "native_receipt_sha256": "4507a32fc5dc8028591cfc9cb954da2fcf2087c019c6e9b4bdf3a3f8b437922c",
+  "native_inputs_verified": 171,
+  "native_outputs_verified": 172,
+  "native_counts": {
+    "modules": 166,
+    "inputs": 171,
+    "outputs": 172,
+    "selectors": 925,
+    "signature_queries": 1024,
+    "axiom_rows": 2694,
+    "private_axiom_rows": 818,
+    "fresh_source_elaborations": 2,
+    "reused_source_elaborations": 164
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "459ac782d7b2b7976c4c90bac3c9fbbbba084b872daf8fcecf69e287cc35a07a",
+    "docs/theorem-map.md": "d961f7c56e01c9109143693d64579be41721e84a54389eda1f69ecc7b4c8ed30",
+    "docs/research/phase2-unrestricted.md": "19ff88fc7cfe974ed0d285b1297e2cbb8546db51c3fa7f512743ef6512096df2",
+    "docs/verification.md": "059749f798b9d825aeb16de0bc17756b1b117e397693ccc274ad4d72f0594b42"
+  },
+  "independent_review": "Pending single configured Round 2 outer review, including unchanged initial ba9dade packet. Prior accepted Phase-I/Round0/Round1 reviews retained.",
+  "source_simplifier": "No required changes; Root already reused scalar stationarity instead of duplicating the residual proof. Optional uncompiled import narrowing not applied. No acceptance verdict issued.",
+  "additional_native_probes": {
+    "scope": "For every c>0, actual original constant-profile unit-probe mass is 8*pi*c^2/3 and physical quotient is 1/c^2. Arbitrary original D,R,S derivative consumer uses only produced normalization.",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "/tmp/hmz-fence-4lzhkuwo/math-target-original-variation-29_yi9wd/OriginalVariationChecks.lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "driver_sha256": "7e0e2629d1e82445d14cd9bcc780e4e8644fcae1587fa30e846f840af320214e",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "semantic_options": [
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "exit_code": 0
+  }
+}
