@@ -99,9 +99,10 @@ If `r` is nonzero somewhere in `(0,1)`, the new positivity theorem gives
  \int_0^1f(cr)^2=1,\qquad A_K(cr)=c^2A_K(r). \tag{6}
 \]
 This establishes a legitimate scalar normalization and preserves action sign
-and zero action. It does not manufacture a nonzero critical probe. General
-metric-scale normalization and the completed operator domain are separate
-obligations before a universal threshold reduction.
+and zero action. It does not manufacture a nonzero critical probe. At this
+Round 0 checkpoint, metric-scale normalization and the completed
+operator domain were separate obligations. Round 2 below supplies the exhaustive
+smooth metric/probe normalization; a completed singular operator domain remains open.
 
 ## Original objects and pole scope
 
@@ -132,7 +133,8 @@ accepted tying equations, whose producer remains available; they do not rename
 a scalar action as a geometric object.
 The accepted Haar reduction and nonnegative nonzonal remainder remain unchanged.
 No new universal positivity claim, extension to all positively curved surfaces,
-or exhaustive normalized-area parametrization theorem is asserted here.
+or exhaustive normalized-area parametrization theorem is asserted by the Round 0
+packet. Round 2 below supplies the latter smooth reduction.
 
 ## Native declaration map and evidence
 
@@ -350,7 +352,8 @@ The [Round 1 native gate](../evidence/phase2-round-1/receipt.json) passes for al
 accepted source elaborations, and checks the root, unsuppressed declaration
 linters, 956 signature queries and actual transitive axiom closures for 2,542
 declarations, including 812 private declarations. Only the three permitted
-foundational axioms occur. Its one fresh independent outer review is pending.
+foundational axioms occur. Its one fresh independent outer review passed at
+`38bdb3139c7b57581649f9500b6f6dfd032c4a59`.
 The accepted Round 0 source bytes and Phase-I paper remain unchanged.
 
 The historical reconstructed first-variation declarations and their density and
@@ -361,35 +364,187 @@ native certificate is imported. The available historical `C_FB` endpoint-safety
 results remain substantive source evidence, as the Round 0 review records, but
 still do not identify the unrestricted sharp number.
 
+## Round 2: exhaustive normalization of original competitors
+
+Start with arbitrary original `D : RotationalProfile.PoleData`, not prescribed
+normalized curvature or a unit probe. Write `a=D.a`, let `f_a` be its original
+height warp, and use the actual length and coordinate
+
+\[
+ \ell=\int_{-1}^1a(v)\,dv>0,\qquad
+ X(v)=\ell^{-1}\int_{-1}^v a(s)\,ds.
+\]
+The accepted coordinate theorem gives `X(-1)=0`, `X(1)=1`, strict monotonicity
+on the physical interval and `X'=a/ℓ>0` there. Its new smoothness theorem and the
+native smooth interval inverse produce an auxiliary globally smooth extension
+of the physical inverse. The native smooth quotient extension then produces a
+globally smooth `K` agreeing with the accepted continuous transported curvature
+on `[0,1]`. This construction works for every original `D` without additional
+compatibility hypotheses.
+
+`D.AreaNormalization` stores only this smooth `K` and its physical agreement
+with the actual transported curvature. The package does not assume an action,
+probe, independent derivative or safety certificate. `D.areaNormalization`
+chooses it **before any probe**. Define the common smooth inverse by
+
+\[
+ V(x)=-1+\int_0^xK(t)\,dt.
+\]
+Physical integral congruence proves that this primitive is the physical inverse:
+`V(X(v))=v` for `v∈[-1,1]` and `X(V(x))=x` for `x∈[0,1]`. It has the correct
+endpoint values, `V'=K`, and sends interiors to interiors. The globally clamped
+inverse is only used through its established continuous laws and physical
+agreement; it is never declared globally smooth. Both moments and all
+coefficient laws are derived from the same original profile:
+
+\[
+ K(X(v))=\frac{\ell}{a(v)},\qquad
+ a(V(x))K(x)=\ell,\qquad
+ \int_0^1K=2,\quad\int_0^1xK=1,
+\]
+\[
+ f_K(X(v))=\frac{f_a(v)}\ell,\qquad
+ f_{1,K}(X(v))=-2v. \tag{14}
+\]
+These equations hold on the closed physical intervals, including both poles.
+
+For **every** smooth original height probe `R`, define `r=R∘V`. Its smoothness,
+physical values and actual derivatives follow from this same map:
+
+\[
+ r(X(v))=R(v),\qquad
+ r'=K(R'\circ V),\qquad
+ r''=K^2(R''\circ V)+K'(R'\circ V).
+\]
+Differentiating the actual curvature equation on the nondegenerate closed
+interval, including endpoints by derivative uniqueness, gives
+
+\[
+ K'(X(v))=-\frac{\ell^2a'(v)}{a(v)^3},\qquad
+ L_Kr(X(v))=\frac{\ell}{a(v)}L_aR(v).
+\]
+Substitution into **every term of the complete six-entry density**, followed
+by the actual Jacobian `dx=(a/ℓ)dv`, proves
+
+\[
+ A_K(R\circ V)=J_a(R),\qquad
+ Q_{g_D}(M_D(R))=2\pi A_K(R\circ V). \tag{15}
+\]
+No unit-probe specialization or scale guess is used. The natural original-data
+consumer requires only `D`, `R` and its smoothness. Conversely, any smooth area
+probe `r` pulls back by `X`, and `A_K(r)=J_a(r∘X)`. Thus the entire smooth probe
+class, including all smooth probe directions, is covered using fixed geometry.
+The new generic closed-interval C² equality theorem supplies actual first- and
+second-derivative agreement at both endpoints. The physical curvature, inverse,
+probe jets and complete action are independent of the off-interval extension
+choice. No Dirichlet or Neumann restriction has been added.
+
+The original meridional form is zero exactly when `R` vanishes everywhere in
+`(-1,1)`; the same holds for the azimuthal form. The proof uses the actual
+cylinder pullback and endpoint covector laws. Interior nonvanishing is preserved
+by `X,V`, so
+
+\[
+ M_D(R)\ne0
+ \quad\Longleftrightarrow\quad
+ m(K,R\circ V)>0.
+\]
+The same equivalence holds after the actual representing diffeomorphism.
+Nonzero values only outside the physical interval do not qualify. For a
+nonzero component, the existing literal probe `r/√m` has unit mass and
+`Q=2πm A_K(r/√m)`. Zero components are handled separately. The new mass theorem
+also retains the **actual original metric norm**, with its full scale:
+
+\[
+ \int_{S^2}|M_D(R)|_{g_D}^{2}\,d\mu_{g_D}
+       =2\pi\ell^2m(K,R\circ V). \tag{16}
+\]
+
+The represented-class theorem chooses one `D`, one diffeomorphism `F` and one
+normalization `N` before quantifying over all original forms and curvature boxes.
+It returns `g=F* g_D`, the actual conjugated Haar projector `P_F`, its literal
+meridional/azimuthal classification, and the complete original action split
+
+\[
+ Q_g(h)=2\pi\bigl[A_K(R\circ V)+A_K(S\circ V)\bigr]
+                  +Q_g(h-P_Fh),\qquad Q_g(h-P_Fh)\geq0. \tag{17}
+\]
+The accepted equality criterion for the same remainder is retained. Original
+positive curvature bounds `[κ,Λ]` give normalized bounds `[ℓκ,ℓΛ]`, with positive
+lower endpoint and exact ratio `(ℓΛ)/(ℓκ)=Λ/κ`. Thus any universal unit-mass scalar
+safety theorem for the stated smooth normalized moment/box class implies the
+existing `rotationalSafeCaps` predicate for all original smooth forms. The
+converse scalar-safety implication uses the accepted tied smooth realizer.
+These are exhaustive **reduction theorems**, not a proof of safety at a new cap,
+a determining characterization of the constant, or an existence theorem for an
+original or relaxed optimizer.
+
+### Round 2 native map
+
+`N` names below have prefix
+`Geometry.RotationalProfile.PoleData.AreaNormalization`; `D` names have prefix
+`Geometry.RotationalProfile.PoleData`. All prefixes are relative to
+`RicciFlowSharpEstimate`.
+
+| Result | Canonical declarations |
+|---|---|
+| Actual endpoint derivative agreement | `Analysis.eqOn_derivatives_Icc` in `Analysis/ClosedIntervalDerivatives.lean` |
+| Smooth coordinate and original-data producer | `Geometry.ReciprocalArea.coordinate_contDiff`, `D.AreaNormalization`, `D.nonempty_areaNormalization`, `D.areaNormalization` in `Geometry/SmoothAreaNormalization.lean` |
+| Common smooth inverse, moments and coefficients (14) | `N.inverse_contDiff`, `inverse_hasDerivAt`, `inverse_coordinate`, `coordinate_inverse`, `curvature_pos`, `integral_curvature`, `integral_mul_curvature`, `curvature_coordinate`, `warp_coordinate`, `warpSlope_coordinate` in the same module |
+| Original physical nonzero criteria | `D.meridionalOneForm_eq_zero_iff`, `meridionalOneForm_ne_zero_iff`, their azimuthal siblings in `Geometry/PhysicalProbeNonzero.lean` |
+| Actual probe jets and full density/action (15) | `N.deriv_probe`, `deriv_deriv_probe`, `curvature_deriv_coordinate`, `meridionalOperator_coordinate`, `meridionalDensity_coordinate`, `meridionalAction_eq`, `oneFormDissipation_meridional_eq` in `Geometry/NormalizedAreaAction.lean` |
+| Off-interval independence and reverse probe coverage | `N.curvature_deriv_eq_on`, `probe_derivatives_eq_on`, `meridionalAction_extension_independent`, `probe_comp_coordinate`, `meridionalAction_comp_coordinate`; `Geometry.AreaProfile.meridionalAction_congr` in the same module |
+| Physical mass, literal normalization and actual norm (16) | `N.probe_nonzero_iff`, `probeMass_pos_iff_meridional_ne_zero`, its azimuthal sibling, `normalized_probe_action`, `integral_normSq_eq_probeMass` in `Geometry/NormalizedAreaMass.lean` |
+| Scaled curvature and represented nonzero/action | `N.curvature_inverse`, `profile_mul_curvature`, `curvature_bounds_scaled`, the two `probeMass_pos_iff_pullback_*_ne_zero` theorems and `oneFormDissipation_pullback_meridional_eq` in `Geometry/NormalizedAreaHaar.lean` |
+| Fixed-representation full Haar split (17) | `N.exists_conjugated_haar_area_dissipation`, `Geometry.IsRepresentedRotationalMetric.exists_normalized_area_representation` in the same module |
+| Natural original-data and safety consumers | `D.oneFormDissipation_eq_normalizedAreaAction`, `N.oneFormDissipation_nonneg_of_normalized_safety`, `Geometry.rotationalSafeCaps_of_normalized_area_safety`, `Geometry.areaAction_nonneg_of_rotationalSafeCap` in the same module |
+
+The six new canonical leaves contain 58 public theorems, three definitions and
+one extension structure. Their evidence is recorded in the
+[Round 2 native receipt](../evidence/phase2-round-2/receipt.json) and
+[checkpoint record](../evidence/phase2-round-2/checkpoint.json). The configured
+fresh outer review remains pending. The unchanged Round 0 and Round 1 reviews
+remain accepted. Phase-I source, paper and evidence bytes remain preserved.
+
+Additional native regression checks use `D.a=c` for **arbitrary `c>0`**:
+`ℓ=2c`, `X(v)=(v+1)/2`, physical `K=2` and `V(x)=2x−1`.
+Both sides of (15) give `4/3` for `R=1` and `20/3` for the nonconstant `R(v)=v`;
+the corresponding original geometric dissipations are `8π/3` and `40π/3`.
+A separate consumer uses arbitrary `D,R` with no supplied coordinate equations.
+These are exact kernel checks, not numerical evidence for a sharp value.
+
 ## Exact frontier and next target
 
-No value, uniquely selected branch, smooth optimizer, relaxed optimizer, or
-endpoint-attainment statement for `C_rot` has been established by this round.
-In particular, (4) is necessary smooth fixed-geometry analysis; it does not prove
-that its stationary probes minimize the action or that stationary geometries
-are globally optimal. The possibility of polar concentration is still open.
+Phase I remains COMPLETE and Phase II remains OPEN. Round 2 closes T6's smooth
+original-competitor reduction, subject to its pending outer review. No value,
+selected branch, critical optimizer, universal new lower bound, exhaustive joint
+smooth recovery or unrestricted endpoint statement has been established.
 
-The next executable target is **T6: exhaustive normalized-area reduction of
-arbitrary original competitors**. Start from the original `D` and arbitrary
-smooth height probe `R`, use the actual positive length and normalized area
-coordinate, construct a smooth physical inverse and smooth extensions, and
-retain every scale, curvature, probe and derivative equation on the closed
-physical interval. Prove the complete general-probe action identity, curvature
-ratio preservation and physical nonzero-form/mass bridge. Then apply the accepted
-represented Haar/zonal decomposition using the same representation before the
-probe quantifier. The existing normalized-data realizer has the opposite direction;
-the existing forward reciprocal-area action identity covers only the unit probe.
+The next executable research target is **T7's polar compactness gate**, together
+with T5's remaining original critical-object application. Specify the actual
+relaxed competitor space and topology used by the proposed threshold route.
+First prove or refute the estimate needed to prevent loss of unit weighted mass
+at **both** poles for varying geometry and probes with controlled complete
+action. Then justify nonzero limits, the full limiting action and recovery with
+both exact moments, curvature box/ratio and every derivative-sensitive term.
+The current fixed-probe continuity and symmetric monotone recovery do not meet
+these gates. A failed estimate must be recorded as a precise route obstruction,
+not hidden as a final theorem hypothesis.
 
-Round 1 supplies curvature and normalized directional calculus, but it does not
-construct a critical pair or settle a relaxed topology. T7 must still control
-varying normalized probes at both poles and prove the full limiting/recovery
-action. T8–T10 must still identify the constant and prove selection, global safety,
-sharp smooth counterexamples and the unrestricted endpoint statement. A nonsmooth
-route must retain the original action or justify interface terms; it cannot
-apply the smooth K′ factorization by discarding jump contributions.
+T5's necessary conditions still require an application from the actual original
+joint minimum or critical notion selected by the route. T6 supplies exhaustive
+smooth competitors; it does not construct a critical pair, a topological
+minimum, continuous families of realizers or moment multipliers. The quotient's
+eigenvalue is its actual action-to-mass ratio; a zero-mode specialization still
+requires zero action. No symmetry, contact count or optimizer-specific sign is
+inferred. A nonsmooth route must retain the original action or prove the weak
+interface identity; it cannot discard curvature-jump contributions from the
+smooth K′ factorization.
 
-The full solution still requires truthful compactness/relaxation and nonzero
-normalization control, any selection/uniqueness property used in a determining
-characterization, global comparison over **all** original competitors, sharp
-smooth recovery above the threshold, the exact endpoint statement, and native
-and independent evidence for every claimed result.
+T8–T10 must identify the constant through a genuinely determining characterization
+with every selection/structural property it uses, prove comparison over **all**
+original competitors, construct smooth negative witnesses below **every** larger
+cap, and settle the exact endpoint safety and attainment scope. The safety-transfer
+theorems above do not discharge their universal scalar premise. Completing these
+reductions cannot replace the required global mathematics, native evidence,
+single independent review and traceable private delivery.

@@ -9,11 +9,14 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
-Round 1 adds the complete curvature derivative and switching pairing, including
-the varying mass, literal unit-mass normalization, the probe eigen-equation and
-feasible-direction necessary inequalities. Its native gate passes; new outer
-review is pending. The exhaustive reduction of arbitrary original competitors
-is the next executable task. No unrestricted sharp value is identified.
+Round 1's curvature and normalized directional-calculus packet passed its outer
+review at `38bdb31`. Round 2 adds exhaustive smooth normalization from arbitrary
+original profiles and probes, including actual jets, complete action, physical
+nonzero mass and the fixed-representation Haar/safety transfer. Its native
+evidence is recorded separately; its fresh outer review is pending. Polar
+compactness, critical-object applications, global comparison, determining
+selection, sharp recovery and endpoint scope remain open. No unrestricted sharp
+value is identified.
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,

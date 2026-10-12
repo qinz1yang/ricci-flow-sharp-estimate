@@ -173,6 +173,12 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaProbeRayleigh",
     "RicciFlowSharpEstimate.Geometry.AreaCurvatureVariation",
     "RicciFlowSharpEstimate.Geometry.AreaCurvatureOptimality",
+    "RicciFlowSharpEstimate.Analysis.ClosedIntervalDerivatives",
+    "RicciFlowSharpEstimate.Geometry.SmoothAreaNormalization",
+    "RicciFlowSharpEstimate.Geometry.PhysicalProbeNonzero",
+    "RicciFlowSharpEstimate.Geometry.NormalizedAreaAction",
+    "RicciFlowSharpEstimate.Geometry.NormalizedAreaMass",
+    "RicciFlowSharpEstimate.Geometry.NormalizedAreaHaar",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1052,7 +1058,69 @@ SELECTOR = r"""
       area ++ `curvature_pairing_nonneg_of_isLocalMinOn_segment,
       area ++ `curvature_pairing_eq_zero_of_isLocalMinOn_interior,
       area ++ `curvatureParameters_mem_nhds_of_free_support,
-      area ++ `curvature_pairing_eq_zero_of_isLocalMinOn_free_support
+      area ++ `curvature_pairing_eq_zero_of_isLocalMinOn_free_support,
+      analysis ++ `eqOn_derivatives_Icc,
+      geo ++ `ReciprocalArea.coordinate_contDiff,
+      poleData ++ `AreaNormalization,
+      poleData ++ `nonempty_areaNormalization,
+      poleData ++ `areaNormalization,
+      poleData ++ `AreaNormalization.inverse,
+      poleData ++ `AreaNormalization.probe,
+      poleData ++ `AreaNormalization.curvature_pos,
+      poleData ++ `AreaNormalization.integral_curvature,
+      poleData ++ `AreaNormalization.integral_mul_curvature,
+      poleData ++ `AreaNormalization.inverse_contDiff,
+      poleData ++ `AreaNormalization.inverse_hasDerivAt,
+      poleData ++ `AreaNormalization.inverse_coordinate,
+      poleData ++ `AreaNormalization.inverse_eq,
+      poleData ++ `AreaNormalization.inverse_mem,
+      poleData ++ `AreaNormalization.coordinate_inverse,
+      poleData ++ `AreaNormalization.inverse_zero,
+      poleData ++ `AreaNormalization.inverse_one,
+      poleData ++ `AreaNormalization.curvature_coordinate,
+      poleData ++ `AreaNormalization.warp_coordinate,
+      poleData ++ `AreaNormalization.warpSlope_coordinate,
+      poleData ++ `meridionalOneForm_eq_zero_iff,
+      poleData ++ `meridionalOneForm_ne_zero_iff,
+      poleData ++ `azimuthalOneForm_eq_zero_iff,
+      poleData ++ `azimuthalOneForm_ne_zero_iff,
+      area ++ `meridionalAction_congr,
+      poleData ++ `AreaNormalization.probe_contDiff,
+      poleData ++ `AreaNormalization.probe_coordinate,
+      poleData ++ `AreaNormalization.deriv_probe,
+      poleData ++ `AreaNormalization.deriv_deriv_probe,
+      poleData ++ `AreaNormalization.curvature_deriv_coordinate,
+      poleData ++ `AreaNormalization.meridionalOperator_coordinate,
+      poleData ++ `AreaNormalization.meridionalDensity_coordinate,
+      poleData ++ `AreaNormalization.meridionalAction_eq,
+      poleData ++ `AreaNormalization.oneFormDissipation_meridional_eq,
+      poleData ++ `AreaNormalization.curvature_eq_on,
+      poleData ++ `AreaNormalization.curvature_deriv_eq_on,
+      poleData ++ `AreaNormalization.inverse_eq_on,
+      poleData ++ `AreaNormalization.probe_eq_on,
+      poleData ++ `AreaNormalization.probe_derivatives_eq_on,
+      poleData ++ `AreaNormalization.meridionalAction_extension_independent,
+      poleData ++ `AreaNormalization.probe_comp_coordinate,
+      poleData ++ `AreaNormalization.meridionalAction_comp_coordinate,
+      poleData ++ `AreaNormalization.inverse_mem_Ioo,
+      poleData ++ `AreaNormalization.probe_nonzero_iff,
+      poleData ++ `AreaNormalization.probeMass_pos_iff_meridional_ne_zero,
+      poleData ++ `AreaNormalization.probeMass_pos_iff_azimuthal_ne_zero,
+      poleData ++ `AreaNormalization.normalized_probe_action,
+      poleData ++ `AreaNormalization.integral_normSq_eq_probeMass,
+      poleData ++ `AreaNormalization.curvature_inverse,
+      poleData ++ `AreaNormalization.profile_mul_curvature,
+      poleData ++ `AreaNormalization.curvature_bounds_scaled,
+      poleData ++ `AreaNormalization.probeMass_pos_iff_pullback_meridional_ne_zero,
+      poleData ++ `AreaNormalization.probeMass_pos_iff_pullback_azimuthal_ne_zero,
+      poleData ++ `AreaNormalization.oneFormDissipation_pullback_meridional_eq,
+      poleData ++ `AreaNormalization.meridionalAction_nonneg_of_normalized_safety,
+      poleData ++ `AreaNormalization.exists_conjugated_haar_area_dissipation,
+      poleData ++ `AreaNormalization.oneFormDissipation_nonneg_of_normalized_safety,
+      poleData ++ `oneFormDissipation_eq_normalizedAreaAction,
+      geo ++ `IsRepresentedRotationalMetric.exists_normalized_area_representation,
+      geo ++ `rotationalSafeCaps_of_normalized_area_safety,
+      geo ++ `areaAction_nonneg_of_rotationalSafeCap
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -2790,6 +2858,130 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check curvatureParameters_mem_nhds_of_free_support
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check curvature_pairing_eq_zero_of_isLocalMinOn_free_support
+open RicciFlowSharpEstimate.Analysis in
+#check eqOn_derivatives_Icc
+open RicciFlowSharpEstimate.Geometry.ReciprocalArea in
+#check coordinate_contDiff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check AreaNormalization
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check nonempty_areaNormalization
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check areaNormalization
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probe
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check curvature_pos
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check integral_curvature
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check integral_mul_curvature
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_contDiff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_eq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_mem
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check coordinate_inverse
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_zero
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_one
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check curvature_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check warp_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check warpSlope_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalOneForm_eq_zero_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check meridionalOneForm_ne_zero_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check azimuthalOneForm_eq_zero_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check azimuthalOneForm_ne_zero_iff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_congr
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probe_contDiff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probe_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check deriv_probe
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check deriv_deriv_probe
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check curvature_deriv_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check meridionalOperator_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check meridionalDensity_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check meridionalAction_eq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_meridional_eq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check curvature_eq_on
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check curvature_deriv_eq_on
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_eq_on
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probe_eq_on
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probe_derivatives_eq_on
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check meridionalAction_extension_independent
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probe_comp_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check meridionalAction_comp_coordinate
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check inverse_mem_Ioo
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probe_nonzero_iff
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probeMass_pos_iff_meridional_ne_zero
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probeMass_pos_iff_azimuthal_ne_zero
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check normalized_probe_action
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check integral_normSq_eq_probeMass
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check curvature_inverse
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check profile_mul_curvature
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check curvature_bounds_scaled
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probeMass_pos_iff_pullback_meridional_ne_zero
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check probeMass_pos_iff_pullback_azimuthal_ne_zero
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_pullback_meridional_eq
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check meridionalAction_nonneg_of_normalized_safety
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check exists_conjugated_haar_area_dissipation
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check oneFormDissipation_nonneg_of_normalized_safety
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData in
+#check oneFormDissipation_eq_normalizedAreaAction
+open RicciFlowSharpEstimate.Geometry.IsRepresentedRotationalMetric in
+#check exists_normalized_area_representation
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalSafeCaps_of_normalized_area_safety
+open RicciFlowSharpEstimate.Geometry in
+#check areaAction_nonneg_of_rotationalSafeCap
 """
 
 

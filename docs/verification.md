@@ -365,7 +365,7 @@ fully qualified query. Splitting that query, with no theorem-source change,
 resolved it. The final gate above was rerun on the final unchanged native input
 bytes. No diagnostic was suppressed. A source-only simplifier found no required
 changes; its optional uncompiled proof shortening was left out of this frozen
-packet. The configured independent outer review remains pending.
+packet. Its configured independent outer review subsequently passed at `cea7baa`.
 
 The [preservation record](evidence/phase2-round-0-final/preservation.json)
 records unchanged phase-I paper hashes, all 149 original modules and 2,325
@@ -402,7 +402,7 @@ before the final source-bound native run. No proof statement, proof logic or
 linter setting was changed for this repair. The source simplifier found no
 required changes; one optional shortening of the normalized-path derivative
 proof was not applied to the already frozen packet. The configured fresh outer
-review of this new packet remains pending, without repeating accepted reviews.
+review of this packet subsequently passed at `38bdb31`, without repeating accepted reviews.
 
 The mathematical sources added are `Analysis/VolterraPairing`,
 `Analysis/AffineIntervalVariation`, `Geometry/AreaCurvaturePrimitives`,
@@ -412,3 +412,51 @@ selector and signature inventories. No verification infrastructure was redesigne
 The [research notes and exact map](research/phase2-unrestricted.md) distinguish
 proved directional calculus from the open original-data, compactness, selection,
 global comparison, recovery and endpoint obligations. No paper bytes changed.
+
+
+## Phase II, Round 2: exhaustive original-competitor reduction
+
+Phase I remains COMPLETE. The accepted Round 0 and Round 1 packets retain their
+outer acceptance. Round 2 supplies smooth normalized geometry from arbitrary
+original pole data, every smooth probe's actual jets and complete action,
+physical nonzero/mass equivalences and the original metric L² scale. One
+representation and one normalization precede all form/curvature-box quantifiers
+in the represented Haar/action theorem. Both scalar-safety transfer directions
+retain the existing original safe-cap API. These reductions identify no new
+safe cap or unrestricted sharp value; Phase II remains OPEN.
+
+The [native receipt](evidence/phase2-round-2/receipt.json), SHA256
+`40d45c57bcc06c574e47ed6842e7c283a466a71808bdf616e1962f761f5b57bb`, covers
+164 modules, 169 native inputs and 170 command outputs. It reuses 158 unchanged
+accepted source elaborations and freshly elaborates all six new canonical
+modules silently. The root build, unsuppressed declaration linters and native
+declaration-kind inspection pass. All 919 required selectors are present;
+1,018 exact signature/declaration queries pass. Actual transitive axiom checks
+cover 2,670 defining-module declarations, including 816 private declarations,
+with only subsets of `propext`, `Classical.choice`, and `Quot.sound`.
+The receipt and all input/output hashes were rechecked after the gate.
+
+The six leaves are `Analysis/ClosedIntervalDerivatives`,
+`Geometry/SmoothAreaNormalization`, `Geometry/PhysicalProbeNonzero`,
+`Geometry/NormalizedAreaAction`, `Geometry/NormalizedAreaMass`, and
+`Geometry/NormalizedAreaHaar`. The flat aggregate imports each. The checker
+change only extends inventories; the validation process and pinned dependencies
+are unchanged. An initial module split omitted the `Manifold` notation scope in
+the mass module. Adding that scope repaired the integration error before the
+final successful gate, with no statement change or diagnostic suppression.
+
+Exact supplemental native checks cover arbitrary positive constant profiles,
+constant and nonconstant probes, physical inverse/curvature normalization and
+the public action consumer for arbitrary original data. Their command, source
+and silent-output hashes are bound in the
+[checkpoint record](evidence/phase2-round-2/checkpoint.json). The source simplifier
+found no required repairs; optional declaration relocation and proof compression
+were left out of the frozen native packet. This advisory is not independent
+acceptance. The configured fresh outer review of Round 2 remains pending.
+
+The [preservation record](evidence/phase2-round-2/preservation.json) verifies all
+158 accepted prior modules, all 2,325 historical Phase-I workflow files, the
+historical task, accepted TeX/PDF and dependency pins. No manuscript was edited
+or typeset. The [research notes](research/phase2-unrestricted.md) retain the exact
+remaining polar compactness, original critical-object application, full joint
+recovery, determining selection, global comparison and sharpness/endpoint gates.

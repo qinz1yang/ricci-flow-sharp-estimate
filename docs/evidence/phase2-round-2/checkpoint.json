@@ -1,0 +1,50 @@
+{
+  "phase2_status": "OPEN; exhaustive smooth original-competitor reduction checkpoint only",
+  "parent_accepted_revision": "38bdb3139c7b57581649f9500b6f6dfd032c4a59",
+  "native_receipt_sha256": "40d45c57bcc06c574e47ed6842e7c283a466a71808bdf616e1962f761f5b57bb",
+  "native_inputs_verified": 169,
+  "native_outputs_verified": 170,
+  "native_counts": {
+    "modules": 164,
+    "inputs": 169,
+    "outputs": 170,
+    "selectors": 919,
+    "signature_queries": 1018,
+    "axiom_rows": 2670,
+    "private_axiom_rows": 816,
+    "fresh_source_elaborations": 6,
+    "reused_source_elaborations": 158
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "33aeec76d0e3a0e6076d56a4d51b4dbdd0ec81fa00edca6c5002752982f3daac",
+    "docs/theorem-map.md": "cb2c880dcd5fca2e5733437f8961c797254746158a7461c00888bf06a9dc35ef",
+    "docs/research/phase2-unrestricted.md": "db5858786e047256f8138f2626daaf2ddf7da0807857afd5ca885d07f94f1dd8",
+    "docs/verification.md": "41df0fbb6ca33460b35ae4aafef2e41bfb4ef8fb0f7b41fc1df44801301c2a0b"
+  },
+  "independent_review": "Pending configured fresh outer review. Unchanged Phase-I, Round 0 and Round 1 acceptance is retained.",
+  "source_simplifier": "Six-module source advisory found no required repairs. Optional placement of two curvature equations and proof compression were not applied to the frozen packet. This is not an acceptance review.",
+  "additional_native_probes": {
+    "scope": "Arbitrary c>0 constant original profile: length 2c, coordinate (v+1)/2, normalized curvature 2, inverse 2x-1; unit action 4/3 and nonconstant identity action 20/3, original dissipations 8pi/3 and 40pi/3. Native consumer from arbitrary original D,R.",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "/tmp/hmz-fence-4lzhkuwo/math-target-full_probe_action-g0cvda_q/ScaleProbeRegression.lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "driver_sha256": "842a754e69d746127047a20ed570ed44c93a7a41057e0d607759303215e341f4",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "semantic_options": [
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "exit_code": 0
+  }
+}
