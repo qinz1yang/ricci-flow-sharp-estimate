@@ -2445,3 +2445,70 @@ original all-form safety theorem, sharp original smooth witness below every
 larger cap, unrestricted endpoint/attainment result, and final manuscript/native/
 independent-review/delivery gate remains mandatory. Phase I is COMPLETE; Phase II
 is OPEN. Accepted Phase-I paper bytes and all earlier source/evidence are preserved.
+
+## Round 6 continued route tests: no orientation conclusion
+
+The following investigations are **provisional source-level derivations**. Their
+analytic/domain steps have not been formalized or independently accepted. They
+are recorded to delimit unsuccessful approaches; none is used as a Lean theorem,
+a counterexample to joint-minimum orientation, or a determination of C_rot.
+
+A proposed fixed-geometry shortcut would write B=−L, G=B inverse and
+V=bK′/2, and demand a nonpositive off-diagonal kernel for G(V−lambda)G. A pole
+calculation instead proposes a leading term
+
+\[
+ H_\lambda(\varepsilon,2\varepsilon)
+ =\frac{K'(0)-\lambda}{8}\log(1/\varepsilon)+O(1).
+\]
+
+The argument uses the actual f=2x+O(x²) pole and a Green branch behaving as
+1/(4x)+O(|log x|). If established on the physical inverse domain, flat polar
+curvature and negative lambda would obstruct that uniform kernel sign. The
+investigation also outlines flattening a negative smooth witness's curvature
+near a pole and repairing both moments with two interior bumps, using strict
+ratio room to retain a cap below C_CK. The required Green construction/asymptotic
+and modification/domain bridges are not native results here. Even a proof of
+this obstruction would reject only the kernel-sign shortcut: a lowest nullvector
+can be one-sided without a nonpositive kernel. No orientation conclusion follows.
+
+A separate attempt changes geometry and probe simultaneously. For smooth inputs,
+choose a positive smooth t with integral of 1/t equal to one, set
+Y(s)=integral from zero to s of 1/t, and write eta=t′/t. The proposed tied fields are
+
+\[
+ B=b-f\eta,\quad H=K+(b\eta+f\eta')/2,\quad
+ F(Y(s))=f(s)/t(s),\quad K_{new}(Y(s))=t(s)H(s),\quad
+ R(Y(s))=\sqrt{t(s)}\,r(s).
+\]
+
+Direct differential algebra gives the proposed operator transform
+Q=q+(b eta/2−f eta²/4)r and q_new(Y(s))=t(s)^(3/2)Q(s). The physical pole slopes
+make both moments automatic for smooth data. The original positive ratio box,
+however, becomes a separate restriction on tH. The full transformed mass and
+action, including all lower-order terms, would be
+
+\[
+ M_t=\int_0^1 fr^2/t,\qquad
+ A_t=\int_0^1 t\{fQ^2+fH^2r^2-HBfrp-HBb r^2/2\}.
+\]
+
+To contradict a unit-mass minimum with value lambda, one must actually construct
+a feasible t with A_t−lambda M_t<0 and justify recovery in the same cap. Neither
+inequality nor recovery has been obtained from sign-changing q. Merely writing
+the transformed weak graph and box is insufficient. Positive multiplication and
+an increasing coordinate map also preserve any existing probe nodes.
+
+The complete-flattening specialization illustrates the problem. For a smooth
+strictly positive reference one can set t=(integral r²)/r², making R constant.
+If this specialization retains the original cap below C_CK, the accepted CK
+safety theorem would force its normalized action to be nonnegative, which is
+larger than the original negative value. Thus flattening does not supply the
+needed energy decrease even under extra favorable probe regularity. This is a
+limitation of that construction, not a refutation of the actual sign assertion.
+
+These bounded tests returned no sign producer and no joint-minimum counterexample.
+The round's mainline gate remains unresolved. A next attempt must supply a new
+global argument specific to the actual minimizing object, or a rigorous relevant
+minimum-level refutation. It must not silently promote any unproved kernel sign,
+transport feasibility, recovery or energy-lowering premise.

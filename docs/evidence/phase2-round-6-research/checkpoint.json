@@ -1,0 +1,14 @@
+{
+  "status": "Provisional research notes only; actual-minimum operator-orientation gate unresolved",
+  "parent_prerequisite_revision": "644a8b79a1cda4f2053738e0c2449800e1d410fd",
+  "native_receipt": "docs/evidence/phase2-round-6/receipt.json",
+  "native_receipt_sha256": "d33ba34d212e99d25e08a1e8c3bb2e0547e67cf81201438f8a36ecf738857a04",
+  "native_inputs_unchanged": true,
+  "new_native_execution": false,
+  "documentation_sha256": {
+    "docs/research/phase2-unrestricted.md": "d2a276289e3acfed0d1ebb5942795fa5cbb030964379c8b8a8d48ae81013884f",
+    "docs/verification.md": "0f1f034fb3e29d7c69e05940b84868f507fe65eaa66c1734b50a7e99c90f66d5"
+  },
+  "scope": "Preserve bounded kernel and joint-transport failure investigations with explicit missing analytic/domain/recovery/energy steps. No new formal theorem, actual-minimum counterexample, sourced axiom or threshold value is claimed.",
+  "independent_review": "Same single configured Round 6 outer review pending; unchanged Round 5 acceptance reused."
+}

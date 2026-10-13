@@ -1382,3 +1382,16 @@ pins, compiler/platform and all ten dependency revisions match. No typesetting
 was performed. Phase I is COMPLETE; Phase II and the Round 6 sign gate remain
 OPEN, with all original determining/global/sharpness/endpoint/final requirements
 still active.
+
+### Round 6 research-note continuation
+
+The additional bounded kernel and joint-transport investigations returned no
+actual-minimum orientation proof or counterexample. Their new calculations are
+explicitly provisional research notes, with no new theorem/native acceptance
+claim. All source-only research and simplifier leases are now released.
+
+No Lean source, native checker, pin or prior evidence was changed for this note
+continuation. Matching native evidence from the prerequisite checkpoint is reused;
+no extra compiler, linter, axiom or typesetting run is claimed. Final note bindings
+are in the [research-note record](evidence/phase2-round-6-research/checkpoint.json).
+The mainline gate and the full Phase-II suite remain open.
