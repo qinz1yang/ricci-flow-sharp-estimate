@@ -48,7 +48,8 @@ justifies multiplicative weak variations, giving a complete signed Picone identi
 at the actual minimum. A positive smooth Jacobi reference with nonpositive
 meridional operator supplies a conditional all-probe lower bound on the same
 geometry. Exact nodal and positive nonstationary round examples rule out dropping
-the coverage/sign obligations. The single Round 5 outer review remains pending.
+the coverage/sign obligations. The single Round 5 outer review at `9118e5a`
+verifies all four checkpoints and the two recovery repairs in their stated scopes.
 A Round 5 continuation now derives local weak primitives and actual C¹ probe
 regularity, with locally absolutely continuous probe derivative and canonical
 operator satisfying the coupled first-order equations. The smooth meridional
@@ -66,6 +67,15 @@ actual unit mass to exclude the zero probe. The minimum's operator sign,
 arbitrary-probe Picone coverage and a determining cap remain unproved. Further used
 closure/interface/path laws, determining selection, universal safety, smooth
 sharpness and endpoint scope remain open. C_rot is not identified.
+
+Round 6 supplies exact global sign symmetry for the recoverable probe, its jets,
+mass, action and recovery. For caps at least one, it also proves that the smooth
+joint value is nonnegative exactly at original safe caps, and is negative at every strictly
+superthreshold cap. Thus actual negative joint minima exist in a nonempty regime
+strictly between the unrestricted and CK thresholds. These are prerequisites for
+the operator-orientation question, which remains unresolved: neither a one-sided
+operator producer nor a counterexample to the precise joint-minimum claim has
+been obtained. No further assumed-sign comparison is promoted.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

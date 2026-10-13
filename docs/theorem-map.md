@@ -595,3 +595,18 @@ No raw endpoint value, global C² regularity or strict source is assumed. The ac
 minimum's operator sign, full weak Picone quotient coverage, determining global
 selection and original safety/sharpness/endpoint conclusions remain open. The
 single Round 5 outer review is pending.
+
+## Phase II Round 6: orientation prerequisites, sign gate unresolved
+
+| Result | Canonical source |
+|---|---|
+| Global probe negation preserves actual mass, complete action, the recoverable class and strong graph recovery, and negates the actual operator | `Geometry/RecoverableProbeSign.lean` |
+| Nonnegativity of the smooth joint value is equivalent to original all-form cap safety; strictly superthreshold caps have negative joint value | `Geometry/SmoothAreaSafety.lean` |
+
+Six public theorems in two new leaves retain the original curvature/ratio/moments
+and actual weak jets. The negative-cap theorem derives its cap-at-least-one
+premise from the original threshold. The public consumer produces actual negative
+joint minima below the CK threshold and preserves their minimizing property and
+recovery under negation. These statements do not select a one-sided operator,
+identify C_rot, or settle endpoint safety. T9e remains open. Round 5 acceptance
+is reused; the Round 6 outer review is pending for this prerequisite packet.

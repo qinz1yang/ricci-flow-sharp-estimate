@@ -2350,3 +2350,98 @@ proved. Determining C_rot, universal complete scalar safety and original all-for
 transfer, sharp original smooth witnesses below every larger cap, precise
 unrestricted endpoint/attainment and final research/manuscript/native/review gates
 remain required. Phase I is COMPLETE; Phase II is OPEN.
+
+## Round 6: precise negative regime and sign symmetry
+
+The Round 5 review at `9118e5a` accepts all four comparison checkpoints and both
+recovery repairs in their stated scopes. Its next gate is to produce a one-sided
+actual operator for an appropriately oriented joint minimum, or refute that
+precise minimizing-object assertion. **That gate is not resolved in this packet.**
+The new native results below establish two necessary inputs for the question;
+they are not a substitute for its answer.
+
+First, a global sign acts on the entire actual graph:
+
+\[
+ (r,p,z)\longmapsto(-r,-p,-z),\qquad
+ q\longmapsto-q,\qquad m\longmapsto m,\qquad A\longmapsto A.
+\]
+
+`IsRecoverableAreaCompetitor.neg_probe` preserves the same curvature, original
+box and ratio witnesses, both exact moments and unit mass. It uses the identical
+recovering curvature sequence and negates the smooth probes. The accepted scalar
+multiplication theorem passes all three strong weighted graph limits with their
+actual derivatives to −r,−p,−z. The operator and complete-action sign laws retain
+all density terms. By the unchanged action, actual global minimizing inequalities
+also hold for the negated object. The native public consumer recovers that exact
+negated graph, with all four strong limits and full-action convergence displayed.
+No absolute-value replacement or independent weak jet is introduced. This proves
+that orientation may be changed safely, not that either choice makes q one-sided.
+
+Second, for every C≥1,
+
+\[
+ 0\le\operatorname{smoothAreaInfimum}(C)
+ \quad\Longleftrightarrow\quad C\in\operatorname{rotationalSafeCaps}.
+\]
+
+For the forward implication, the actual infimum lower bound gives nonnegativity
+for each smooth unit-mass scalar competitor. The already accepted normalized Haar
+transfer supplies safety for every original smooth one-form and represented
+rotational metric. Conversely, original safe-cap membership controls every smooth
+scalar competitor through the tied geometric realizer; nonemptiness of the smooth
+class then gives the infimum bound. The hypothesis C≥1 is necessary for this
+argument and is retained. There is no new definition of a threshold.
+
+It follows that for every C strictly above the original rotationalThreshold,
+
+\[
+ \operatorname{smoothAreaInfimum}(C)<0.
+\]
+
+Indeed, a nonnegative value would put C in the original safe set and hence below
+its supremum. The actual cap-produced minimum therefore has strictly negative
+action, without assuming a zero eigenvalue or selecting a stationary branch.
+The accepted strict inequality rotationalThreshold<C_CK supplies a nonempty
+interval of such caps below C_CK. The native consumer returns a cap in that
+interval, its actual unit-mass recoverable minimum, equality of its action to the
+smooth infimum, and global minimality. It also checks the same minimum and its
+full recovery after negation. This makes the relevant negative regime concrete
+but still does not determine either its value or its operator sign.
+
+## Round 6 route tests and precise unresolved step
+
+The qualified curvature condition constrains the full corrected adjoint W−a−bx.
+The accepted coefficients contain q², qz, qp and qr, together with the varying-
+mass correction −lambda r² and Green pairings. Those inequalities cannot simply
+be read as an inequality for q. A source-only local differentiation investigation
+retains unsigned mixed terms and would require curvature smoothness/free-region
+hypotheses not produced for the actual measurable minimum. No such hypothesis
+has been added, and no new differentiated KKT theorem is claimed here. This
+failed extraction attempt is not proof that every global use of curvature
+optimality fails, and is not a counterexample to joint-minimum orientation.
+
+A separate fixed-curvature investigation considered smooth exact-moment
+K(x)=1/20+(663/20)(2x−1)^16, whose ratio is 664. It produced an auxiliary
+rational-polynomial/parity proposal aimed at separating even and odd least-mode
+values. That proposal has no native theorem, domain-closure proof or independent
+acceptance in this project and is not used by any consumer. Its ratio is also
+outside the needed cap interval below C_CK. It neither establishes nor refutes
+the bounded-cap fixed-geometry claim or the actual joint-minimum claim. Higher
+modes, arbitrary probes and numerical Ritz observations remain insufficient.
+No outside theorem or sourced axiom was imported into the formalization.
+
+The precise remaining question is whether actual globally minimizing pairs for
+sufficient caps approaching rotationalThreshold from above within this interval
+can be chosen with a one-sided q, after a single global sign change of all probe
+jets. A valid alternative is a rigorous minimum-level counterexample and an
+explicit change of global-comparison route. The sign-symmetry and negative-regime
+theorems establish neither outcome. T9e remains active; Round 6's mainline success
+condition is not met by these prerequisites alone.
+
+If orientation is obtained, weak all-smooth-probe quotient/endpoint coverage still
+requires its own proof. Every determining/cross-geometry/eigenvalue-sign argument,
+original all-form safety theorem, sharp original smooth witness below every
+larger cap, unrestricted endpoint/attainment result, and final manuscript/native/
+independent-review/delivery gate remains mandatory. Phase I is COMPLETE; Phase II
+is OPEN. Accepted Phase-I paper bytes and all earlier source/evidence are preserved.

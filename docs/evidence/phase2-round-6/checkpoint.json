@@ -1,0 +1,69 @@
+{
+  "phase2_status": "OPEN; Round 6 operator-orientation mainline gate unresolved; this is a native prerequisite checkpoint only",
+  "parent_native_revision": "9118e5a9e571c9cb494c11dc849215703d1f0dde",
+  "parent_outer_reviewed_revision": "9118e5a9e571c9cb494c11dc849215703d1f0dde",
+  "native_receipt_sha256": "d33ba34d212e99d25e08a1e8c3bb2e0547e67cf81201438f8a36ecf738857a04",
+  "native_counts": {
+    "modules": 264,
+    "inputs": 269,
+    "outputs": 270,
+    "selectors": 1238,
+    "signature_queries": 1339,
+    "axiom_rows": 3382,
+    "private_axiom_rows": 1105,
+    "fresh_source_elaborations": 2,
+    "reused_source_elaborations": 262
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 31,
+    "verified_source_provenance_records": 4343
+  },
+  "new_public_declarations": {
+    "modules": 2,
+    "theorems": 6,
+    "definitions": 0
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "41f307d091670fad09dc3318a2cf117d36763516b59fcad12098cb8a2dd49de2",
+    "docs/theorem-map.md": "c61d4bdb593ca40968f4bd3251951152ba9b5e4bda65d5866a4456a71eb79259",
+    "docs/research/phase2-unrestricted.md": "3b39682e8047a583897e38ce40a5a076ddf0a23b697bb18f054d2391620beb8f",
+    "docs/verification.md": "2706ec542f3530eb35c318cf87a9b193ea75befa1760080477da1ae750842f06"
+  },
+  "independent_review": "Pending single configured Round 6 outer review for new prerequisite packet. Accepted Round 5 proof/evidence reused; no duplicate acceptance review.",
+  "source_simplifier": {
+    "scope": "Six prerequisite theorems in two final leaves; source advice only, not acceptance review",
+    "finding": "Keep both leaves unchanged. Negation uses the same curvature sequence and negated smooth probes with all strong limits. Global algebraic laws need no extra integrability assumptions; physical integrability remains in the recovery API. C>=1 is necessary for the safety equivalence and derived for the strict-threshold corollary. No operator-orientation producer is supplied.",
+    "advisory_sha256": "a9169f38afac3f5e5cfcb125bf3bd7e47272aff9b89e2874666cc5193b36bfdd",
+    "source_hashes_match": true
+  },
+  "additional_native_probes": [
+    {
+      "name": "OrientationRegimeChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6-root-viptz2io/OrientationRegimeChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "a1bd58860bf9a21518dd94c1f6690eb80e0b72fd8c736bbf591828426173f39b",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_capture": "Exact empty stdout/stderr returned by completed exec session 45952 after the final source edit; no extra replay is claimed.",
+      "scope": "Actual negative joint minimum for a cap strictly between original threshold and CK threshold; negated same minimum and all four recovery limits to its negated graph; cap-one safety and both signs of a nonvacuous round competitor. No operator sign producer."
+    }
+  ],
+  "sign_symmetry_scope": "Global negation acts simultaneously on r,p,z; actual operator changes sign, physical mass and complete action are unchanged, original curvature/moments/box/ratio are retained, and the same smooth recovering probes are negated with all weighted graph limits. Actual minimality follows by the action equality. No one-sidedness is supplied.",
+  "regime_scope": "For C>=1 the actual smooth infimum is nonnegative iff the original all-form safe-cap predicate holds. C>rotationalThreshold therefore gives a strictly negative infimum and actual cap-produced negative minimum. Accepted strict CK separation supplies a nonempty relevant cap interval below the CK threshold. This is not a determining characterization of the threshold value.",
+  "research_scope": "Curvature-adjoint extraction did not supply q sign. A source-only large-ratio fixed-geometry parity proposal is outside the relevant bounded-cap regime and has no native/domain/outer acceptance; it is not a joint-minimum counterexample and is not a theorem dependency.",
+  "remaining_required_mathematics": [
+    "Resolve T9e: produce a one-sided actual operator up to a single global orientation for actual joint minima in a proved sufficient near-threshold regime, or rigorously refute that precise claim.",
+    "Only after the route gate, prove required weak all-smooth-probe quotient/endpoint coverage and any additional domain/interface/geometric-path bridge.",
+    "Derive a genuinely determining characterization and correct selection, cross-geometry/eigenvalue-sign lower bound, and original all-smooth-form safety.",
+    "Prove sharp original smooth witnesses below every larger cap, precise unrestricted endpoint/attainment and final native/review/research/manuscript closure."
+  ]
+}

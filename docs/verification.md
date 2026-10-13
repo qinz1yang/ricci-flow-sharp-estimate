@@ -1332,3 +1332,53 @@ bytes, both TASKs, dependency pins, compiler/platform and all ten dependency
 revisions match. No typesetting was performed. Phase I is COMPLETE; Phase II is
 OPEN. Operator-sign production, all-probe quotient/endpoint coverage and every
 determining/global/sharpness/attainment/final manuscript gate remain required.
+
+## Phase II, Round 6 prerequisite checkpoint — orientation remains open
+
+The two new leaves contain six public theorems about global sign symmetry and
+the actual negative-cap regime. **They do not resolve the Round 6 operator-
+orientation gate.** No joint-minimum counterexample or new one-sided operator
+producer is certified by this checkpoint.
+
+Under the Root writer lock, the final command was:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-6 \
+  --reuse-receipt docs/evidence/phase2-round-5-strict-interior/receipt.json
+```
+
+The [receipt](evidence/phase2-round-6/receipt.json), SHA256
+`d33ba34d212e99d25e08a1e8c3bb2e0547e67cf81201438f8a36ecf738857a04`, passes for
+264 modules, 269 inputs and 270 outputs. Two fresh source elaborations are silent;
+262 unchanged accepted elaborations are reused. Root build, required source and
+declaration linters and native declaration-kind inspection pass. All 1,238
+selectors, 1,339 exact signature/declaration queries and 3,382 actual transitive
+axiom rows, including 1,105 private rows, use only subsets of `propext`,
+`Classical.choice`, `Quot.sound`. Read-only reconstruction verifies source/output/
+driver hashes and 4,343 source-command records across 31 receipts. Checker policy
+is unchanged; only source inventories/selectors/queries are extended.
+
+The silent `OrientationRegimeChecks` driver produces an actual negative joint
+minimum for a cap between the original threshold and the CK threshold. It checks
+the negated same minimum, its global minimizing inequality and all four strong
+recovery limits to K,−r,−p,−z, together with complete-action convergence. It also
+checks cap-one safety and a nonvacuous negated round competitor with positive
+actual operator. None of these tests assumes or produces the missing one-sided
+orientation of an actual minimum. Exact command/source/output/capture bindings
+are in the [checkpoint](evidence/phase2-round-6/checkpoint.json).
+
+The source simplifier recommends no changes to either final leaf; its hashes
+match. This is source advice, not an acceptance review. The prerequisite-source
+advisory leases are released. A further bounded sign investigation continues
+on the fixed read-only snapshot. Source-only curvature and fixed-geometry investigations are explicitly
+unverified research, not native theorem dependencies. No sourced axiom is used.
+The single configured Round 6 outer review is pending for the new prerequisite
+packet; the accepted Round 5 packet is preserved without a duplicate review.
+
+The [preservation record](evidence/phase2-round-6/preservation.json) verifies all
+262 accepted parent leaves, all 149 Phase-I leaves, 2,325 historical workflow
+files and 6,170 prior evidence files unchanged. Accepted paper bytes, both TASKs,
+pins, compiler/platform and all ten dependency revisions match. No typesetting
+was performed. Phase I is COMPLETE; Phase II and the Round 6 sign gate remain
+OPEN, with all original determining/global/sharpness/endpoint/final requirements
+still active.

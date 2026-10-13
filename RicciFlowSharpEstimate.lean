@@ -261,3 +261,5 @@ import RicciFlowSharpEstimate.Geometry.WeakProbeDerivativeFlux
 import RicciFlowSharpEstimate.Geometry.WeakProbeMaximumPrinciple
 import RicciFlowSharpEstimate.Analysis.DivergenceStrongMaximum
 import RicciFlowSharpEstimate.Geometry.WeakProbeStrongMaximum
+import RicciFlowSharpEstimate.Geometry.RecoverableProbeSign
+import RicciFlowSharpEstimate.Geometry.SmoothAreaSafety

@@ -277,6 +277,8 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.WeakProbeMaximumPrinciple",
     "RicciFlowSharpEstimate.Analysis.DivergenceStrongMaximum",
     "RicciFlowSharpEstimate.Geometry.WeakProbeStrongMaximum",
+    "RicciFlowSharpEstimate.Geometry.RecoverableProbeSign",
+    "RicciFlowSharpEstimate.Geometry.SmoothAreaSafety",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1532,7 +1534,13 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.derivative_flux_absolutelyContinuous,
       area ++ `IsRecoverableAreaCompetitor.nonneg_of_weakMeridionalOperator_nonpos,
       analysis ++ `pos_of_divergence_inequality_of_nonneg,
-      area ++ `IsRecoverableAreaCompetitor.pos_of_weakMeridionalOperator_nonpos
+      area ++ `IsRecoverableAreaCompetitor.pos_of_weakMeridionalOperator_nonpos,
+      area ++ `probeMass_neg,
+      area ++ `weakMeridionalOperator_neg,
+      area ++ `weakMeridionalAction_neg,
+      area ++ `IsRecoverableAreaCompetitor.neg_probe,
+      area ++ `smoothAreaInfimum_nonneg_iff_rotationalSafeCap,
+      area ++ `smoothAreaInfimum_neg_of_rotationalThreshold_lt
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4024,6 +4032,18 @@ open RicciFlowSharpEstimate.Analysis in
 #check pos_of_divergence_inequality_of_nonneg
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.pos_of_weakMeridionalOperator_nonpos
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_neg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalOperator_neg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction_neg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.neg_probe
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaInfimum_nonneg_iff_rotationalSafeCap
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaInfimum_neg_of_rotationalThreshold_lt
 """
 
 
