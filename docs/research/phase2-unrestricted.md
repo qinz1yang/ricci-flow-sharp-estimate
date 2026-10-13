@@ -1148,30 +1148,151 @@ receipt remain unchanged. One configured outer review remains pending for the
 combined Round 4 packet. This closes the native limiting-action checkpoint;
 it does not establish unrestricted smooth recovery or identify C_rot.
 
+## Round 4 recovery: actual smooth approximants of produced joint limits
+
+The new native headline
+`AreaProfile.exists_joint_weak_limit_with_smooth_geometric_recovery` starts from
+an original **smooth** normalized sublevel sequence, with varying positive box
+witnesses and their actual ratio at most C. It produces the previous joint weak
+limit and original-sequence action liminf inequality, together with a constructed
+smooth recovery sequence. Both moments and the original ratio hold exactly at
+every recovery index. A positive normalization gives physical mass exactly one;
+the tied geometric producer returns actual smooth sphere metrics and physically
+nonzero original forms whose dissipations converge to `2π A(K₀,r₀)`.
+
+The source inputs are globally smooth K_n and r_n, as required for the original
+geometric class. The previous continuous-curvature/C² compactness and LSC APIs
+are unchanged. No symmetry, monotonicity, prescribed contact pattern, or new pole
+value/derivative condition enters this construction.
+
+### Global graph approximation and exact constraints
+
+We use a native Hilbert-space convex approximation theorem, proved from geometric
+separation and Riesz representation. A weakly converging Hilbert sequence admits
+finite convex combinations from each tail converging in norm. Applying this to
+a finite product gives **one common coefficient family** for
+
+\[
+  (K_n,\ r_n,\ \sqrt w\,r_n',\ w\sqrt w\,r_n''),\qquad w=x(1-x).
+\]
+
+The corresponding raw L² representative theorem ties each Hilbert combination to
+the literal sum of the original functions. Thus the approximating r has its actual
+first and second derivatives, with global convergence in both weighted derivative
+norms. This supplies endpoint approximation at both poles for these produced
+limits without cutting off the probes or introducing a permanent trace condition.
+The original sublevel bounds and local derivative convergence supply the weighted
+first-derivative weak pairing; the other three pairings come from the joint limit.
+
+For finite nonnegative coefficients a_i summing to one, define
+
+\[
+ K^a=\sum_i a_iK_i,\quad r^a=\sum_i a_ir_i,\quad
+ \kappa^a=\sum_i a_i\kappa_i,\quad \Lambda^a=\sum_i a_i\Lambda_i.
+\]
+
+Then κᵃ>0, κᵃ≤Kᵃ≤Λᵃ, and Λᵃ≤Cκᵃ follow from the original witnesses.
+Both moments remain 2 and 1 by linearity. Every approximant is smooth, including
+the degenerate constant-curvature box. No mass-one assertion is made for these
+unnormalized mixtures. Strong curvature L² convergence implies L¹ convergence;
+a further actual subsequence yields almost-everywhere curvature convergence.
+The same subsequence retains all graph convergences and exact constraints.
+
+This is an alternative to separate curvature mollification and moment correction
+for the displayed source sequences: finite convex mixtures already have smooth
+curvature and exact moments. It proves recovery for each limit constructed from
+these unrestricted original smooth sequences. It does **not** prove density for
+every arbitrary member of the maximal weak-derivative graph. Any later enlargement
+of the variational domain or variation class must justify the additional density
+or admissibility it uses; the distinction is not an assumption of the final theorem.
+
+### Relative warp control and the complete action
+
+For integrable K,L with equal zeroth and first moments, the actual primitive obeys
+
+\[
+ f_K(x)-f_L(x)=-2\int_x^1(s-x)(K(s)-L(s))\,ds,
+\]
+
+as well as its original left-pole formula. Combining the two gives
+
+\[
+ |f_K(x)-f_L(x)|\le4x(1-x)\int_0^1|K-L|,
+ \qquad |b_K(x)-b_L(x)|\le2\int_0^1|K-L|. \tag{39}
+\]
+
+These are native statements for integrable curvature, with both moment identities
+explicit. Relative control in (39), rather than absolute uniform warp convergence
+alone, controls the coefficient of the weighted second derivative.
+
+The strong-graph continuity theorem assumes a fixed positive box, both exact
+moments, curvature L¹ and almost-everywhere convergence, and strong convergence of
+the three probe graph coordinates. It assumes neither approximant unit mass nor
+an action sublevel. Bounded varying-multiplier convergence in L² handles the six
+coefficients of the literal operator, signed terms and mass. In particular,
+`f√f/(w√w)` and `2b√f/√w` are bounded by box-only constants; their pointwise limits
+follow from the actual primitives. Both positive factors converge strongly in L²,
+and genuine L² product convergence passes the signed integrals. Consequently the
+**entire** six-entry action and weighted physical mass converge, with integrability
+proved. No K′ potential or interface omission is used.
+
+This strong recovery topology differs from the weak topology of the initial
+oscillating sequence. The earlier curvature-oscillation diagnostic still prevents
+claiming full-action continuity for that original weak sequence. Convex approximation
+constructs a new sequence for which the stronger hypotheses are proved.
+
+Mass convergence to one supplies a late positive-mass tail. Multiplication by the
+literal `1 / sqrt(probeMass)` gives exact unit mass; the factors converge to one,
+and quadratic action scaling preserves the action limit. The accepted realizer
+is consumed with these same normalized probes and curvatures. Its actual coordinate
+and inverse, reciprocal profile, closed-interval jets, sphere curvature and
+same-metric dissipation equations are retained. Physical nonzero probe values
+produce nonzero original meridional forms. No continuous family of realizers in
+a variation parameter is asserted by this sequence construction.
+
+### Recovery native map and remaining scope
+
+| Role | Canonical source |
+|---|---|
+| Native Hilbert convex approximation, simultaneous finite family | `Analysis/HilbertConvexApproximation.lean` |
+| Actual raw L² convex mixtures | `Analysis/L2ConvexApproximation.lean` |
+| Strong varying multipliers and literal product integrals | `Analysis/L2StrongMultipliers.lean` |
+| Two-moment relative warp and slope bounds | `Geometry/AreaRelativeWarpContinuity.lean` |
+| Smooth finite mixtures, actual jets, exact moments and original ratio | `Geometry/AreaSmoothConvexity.lean` |
+| Constructed simultaneous smooth graph approximants | `Geometry/AreaConvexGraphRecovery.lean` |
+| Complete strong-graph action and mass convergence | `Geometry/AreaStrongGraphContinuity.lean` |
+| Actual scalar recovery from displayed weak graph pairings | `Geometry/AreaScalarGraphRecovery.lean` |
+| Literal normalization and tied nonzero original geometric recovery | `Geometry/SmoothAreaRecoveryNormalization.lean` |
+| Original smooth sublevels produce the weak limit and geometric recovery | `Geometry/AreaJointSmoothRecovery.lean` |
+
+The ten leaves add 14 public theorems. The source-bound native receipt is
+`docs/evidence/phase2-round-4-recovery/receipt.json`; all 202 prior native leaves and
+both earlier Round 4 receipts remain unchanged. The configured single Round 4
+outer review remains pending for the combined packet. No recovery sequence or
+limiting-action conclusion is assumed by the final original-sequence producer.
+
 ## Exact frontier and next target
 
-Phase I remains COMPLETE and Phase II remains OPEN. The accepted Round 3 estimates
-are preserved. Round 4 now constructs a joint normalized weak limit retaining the
-original ratio/moments and unit physical mass, identifies both positive-square
-weak factors, and proves full-action lower semicontinuity with comparison to the
-liminf of the original sequence. Its one configured outer review remains pending.
-No optimizer, determining value, selected threshold branch, new universally safe
-cap or unrestricted endpoint statement is claimed.
+Phase I remains COMPLETE and Phase II remains OPEN. Round 4 now has native joint
+compactness with unit physical mass, full-action LSC, and smooth geometric recovery
+for the limits produced from original smooth sublevels. T7 remains active until
+the relaxation used in the actual minimization/threshold argument is specified
+and all its required recovery and variation bridges are closed and reviewed.
+Maximal weak-graph density has not been proved and must not be inferred from the
+produced-limit recovery theorem. No original smooth competitor is excluded.
 
-T7 remains active for unrestricted derivative-sensitive smooth recovery. The next
-executable target is probe density in the actual weighted graph norm, including
-endpoint approximation without imposing a permanent pole condition, followed by
-nonsymmetric measurable-curvature recovery with exact moments, positivity and the
-original ratio. Control relative warp errors at both poles when passing the
-second-derivative square. Every term of the complete action and the physical mass
-must converge; then apply literal positive normalization and the tied original
-metric/form realizer. The older symmetric monotone fixed-probe recovery is not a
-substitute. No required bridge is deferred out of the original goal.
+The next mainline target is the normalized joint variational problem and a produced
+minimizing/critical object, using the actual smooth-class infimum, coercivity,
+compactness, LSC and the constructed recovery. Establish its exact relation to the
+original smooth competitors and prove admissibility of each variation used. If
+that route needs additional weak-domain density, regularity, or path transfer,
+prove it before applying the existing necessary-condition consumers. Preserve the
+varying-mass derivative and geometric scale correction; produce multipliers only
+after the corresponding qualification argument. No symmetry, finite switch count,
+probe sign, smooth attainment or zero eigenvalue is inferred.
 
-T5 still requires a produced joint minimizing/critical object and justified feasible
-variations, with the scale-correct normalized objective. No moment multipliers,
-symmetry, fixed switch count, probe sign, smooth attainment or zero eigenvalue is
-inferred. T8–T10 still require a genuinely determining characterization and justified
-selection, universal complete-action safety, original smooth negative witnesses
-below every larger cap, and the precise unrestricted endpoint scope. Final T11
-still depends on these mathematical, native, independent-review and delivery gates.
+T8–T10 still require a genuinely determining characterization and justified selection,
+universal complete-action safety, original smooth negative witnesses below every
+larger cap, and precise unrestricted endpoint safety/attainment. Final T11 depends
+on these mathematics, native evidence, independent review and delivery. C_rot is
+not identified, and no mandatory original-plan gate is deferred.

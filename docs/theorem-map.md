@@ -354,3 +354,22 @@ pairings, both square-integral LSC arguments and actual signed-term limits.
 The initial checkpoint remains unchanged; one outer review is pending for the
 combined Round 4 packet. Unrestricted smooth recovery and all joint-critical,
 determining/global/sharpness/endpoint gates remain active.
+
+### Phase-II Round 4 recovery: smooth original realizations of produced limits
+
+`Geometry.AreaProfile.exists_joint_weak_limit_with_smooth_geometric_recovery` in
+`Geometry/AreaJointSmoothRecovery.lean` starts from original smooth unit-mass
+sublevels and returns the actual joint weak limit, original-sequence full-action
+liminf bound, constructed smooth scalar approximants and positively normalized
+original geometric realizations. It retains both exact moments, actual box/ratio,
+physical nonzero forms and same-metric dissipation convergence. Native Mazur
+approximation uses common weights for curvature and all probe graph coordinates;
+relative warp control justifies every full-action term. The ten-leaf proof is
+mapped in the [research notes](research/phase2-unrestricted.md), with
+[native evidence](evidence/phase2-round-4-recovery/receipt.json).
+
+The theorem recovers produced original smooth-sequence limits. It is not a density
+theorem for every arbitrary element of the maximal weak graph. T7's chosen-domain
+and variation bridges, the actual joint critical object and all determining,
+global, sharpness and endpoint gates remain active. One outer Round 4 review is
+pending for the combined packet; Phase II remains OPEN.

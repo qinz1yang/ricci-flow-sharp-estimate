@@ -691,3 +691,54 @@ The single configured Round 4 outer review remains pending for the combined
 initial and continuation packet. Unrestricted derivative-sensitive recovery,
 joint critical-object production and every determining/global/sharpness/endpoint
 gate remain active. Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase-II Round 4 recovery: smooth original realizations
+
+The final recovery producer starts from original smooth unit-mass sublevels. It
+constructs their joint weak limit with the original-sequence full-action liminf
+bound and a smooth geometric recovery sequence. Common convex weights preserve
+both exact moments and the actual curvature ratio; all weighted probe derivatives
+converge strongly. Relative warp control at both poles passes the entire action.
+Literal positive normalization supplies unit mass and nonzero original forms.
+The theorem concerns produced original smooth-sequence limits, not density for
+arbitrary elements of the maximal weak graph.
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-recovery \
+  --reuse-receipt docs/evidence/phase2-round-4-continuation/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-recovery/receipt.json), SHA256
+`2efecd5b6db3153e13ea7ba219e2bb30f26c38f1e6723d3fcf34a371d534cf45`, passes for
+212 modules. Ten new source elaborations are silent; 202 matching prior elaborations
+are reused, including the 27 prior Round 4 leaves awaiting the same outer review.
+Root build, declaration-kind inspection and all available declaration linters pass.
+The 1,075 required selectors, 1,176 signature/declaration queries and 3,007 actual
+transitive axiom rows (937 private) pass. Every row uses only a subset of `propext`,
+`Classical.choice`, `Quot.sound`. All 217 input and 218 output hashes and all three
+reconstructed driver hashes match. Physical modules, checker inventory and flat
+root imports agree. Source-command provenance was followed through 3,050 records
+across 26 receipts. The checker delta only extends inventories and queries.
+
+The ten leaves add 14 public theorems. Final canonical source and linter outputs
+are silent without suppression or resource overrides. Root repaired candidate
+elaboration, explicit representative conversions and an ambiguous infinity notation
+before the successful gate. The bounded ten-leaf source simplifier found no needed
+change, and its frozen hashes match the final canonical bytes. This advisory is
+separate from the single configured Round 4 outer mathematical review.
+
+Supplemental native consumers exercise arbitrary varying original smooth sequences,
+returning the tied unit-mass weak graph and original nonzero metric/form sequence
+with full dissipation convergence. The exact round K=2, r=√3 sequence reaches this
+same producer with mass one and action four. A generic equal-moment consumer checks
+both endpoint warp equalities without symmetry. Driver, command and silent output
+hashes are bound by the [checkpoint record](evidence/phase2-round-4-recovery/checkpoint.json).
+The [preservation record](evidence/phase2-round-4-recovery/preservation.json) confirms
+all 202 prior native leaves, 175 accepted leaves, 149 Phase-I leaves, all 2,325
+historical workflow files, accepted paper, tasks, pins and prior evidence remain
+unchanged. No new typesetting was performed.
+
+The combined Round 4 packet still awaits its single outer review. The precise
+variational domain and all variation/recovery bridges used next, a produced joint
+critical object, determining selection, universal safety, smooth sharpness and
+endpoint scope remain required. Phase I is COMPLETE; Phase II is OPEN.

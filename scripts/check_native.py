@@ -217,6 +217,16 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaCurvatureProductLimits",
     "RicciFlowSharpEstimate.Geometry.AreaActionLowerSemicontinuity",
     "RicciFlowSharpEstimate.Geometry.AreaJointActionCompactness",
+    "RicciFlowSharpEstimate.Analysis.HilbertConvexApproximation",
+    "RicciFlowSharpEstimate.Analysis.L2StrongMultipliers",
+    "RicciFlowSharpEstimate.Geometry.AreaRelativeWarpContinuity",
+    "RicciFlowSharpEstimate.Geometry.AreaSmoothConvexity",
+    "RicciFlowSharpEstimate.Analysis.L2ConvexApproximation",
+    "RicciFlowSharpEstimate.Geometry.SmoothAreaRecoveryNormalization",
+    "RicciFlowSharpEstimate.Geometry.AreaConvexGraphRecovery",
+    "RicciFlowSharpEstimate.Geometry.AreaStrongGraphContinuity",
+    "RicciFlowSharpEstimate.Geometry.AreaScalarGraphRecovery",
+    "RicciFlowSharpEstimate.Geometry.AreaJointSmoothRecovery",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1300,7 +1310,21 @@ SELECTOR = r"""
       area ++ `weak_derivative_part_of_area_limits,
       area ++ `curvature_action_pairings_tendsto,
       area ++ `weak_factors_and_action_liminf_of_area_limits,
-      area ++ `exists_normalized_joint_weak_limit_le_liminf_action
+      area ++ `exists_normalized_joint_weak_limit_le_liminf_action,
+      analysis ++ `exists_tail_convexCombination_tendsto_of_tendsto_inner,
+      analysis ++ `exists_tail_convexCombination_tendsto_family,
+      analysis ++ `strong_L2_mul_of_ae_tendsto_of_ae_abs_le,
+      analysis ++ `tendsto_integral_mul_of_tendsto_eLpNorm_two,
+      area ++ `warp_sub_eq_integral_right_of_moments,
+      area ++ `abs_warp_sub_le_relative_integral_abs,
+      area ++ `abs_warpSlope_sub_le_integral_abs_of_integrableOn,
+      area ++ `smooth_area_pair_convexCombination,
+      analysis ++ `exists_tail_convexCombination_tendsto_eLpNorm_two,
+      area ++ `exists_smooth_geometric_recovery_of_scalar_limits,
+      area ++ `exists_smooth_convex_recovery_of_weak_graph_pairings,
+      area ++ `action_mass_tendsto_of_strong_area_graph,
+      area ++ `exists_smooth_scalar_recovery_of_weak_graph_pairings,
+      area ++ `exists_joint_weak_limit_with_smooth_geometric_recovery
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3450,6 +3474,34 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check weak_factors_and_action_liminf_of_area_limits
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_normalized_joint_weak_limit_le_liminf_action
+open RicciFlowSharpEstimate.Analysis in
+#check exists_tail_convexCombination_tendsto_of_tendsto_inner
+open RicciFlowSharpEstimate.Analysis in
+#check exists_tail_convexCombination_tendsto_family
+open RicciFlowSharpEstimate.Analysis in
+#check strong_L2_mul_of_ae_tendsto_of_ae_abs_le
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_integral_mul_of_tendsto_eLpNorm_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_sub_eq_integral_right_of_moments
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check abs_warp_sub_le_relative_integral_abs
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check abs_warpSlope_sub_le_integral_abs_of_integrableOn
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smooth_area_pair_convexCombination
+open RicciFlowSharpEstimate.Analysis in
+#check exists_tail_convexCombination_tendsto_eLpNorm_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_geometric_recovery_of_scalar_limits
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_convex_recovery_of_weak_graph_pairings
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check action_mass_tendsto_of_strong_area_graph
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_scalar_recovery_of_weak_graph_pairings
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_joint_weak_limit_with_smooth_geometric_recovery
 """
 
 

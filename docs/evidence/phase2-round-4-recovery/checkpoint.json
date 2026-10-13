@@ -1,0 +1,61 @@
+{
+  "phase2_status": "OPEN; constructed smooth geometric recovery for produced original smooth-sequence joint limits",
+  "parent_accepted_revision": "2778716def07872f759e551b74b1f4f25fb331e9",
+  "parent_native_revision": "9e0aa28b1253cf309d2a15294222c8ecd87104c4",
+  "native_receipt_sha256": "2efecd5b6db3153e13ea7ba219e2bb30f26c38f1e6723d3fcf34a371d534cf45",
+  "native_counts": {
+    "modules": 212,
+    "inputs": 217,
+    "outputs": 218,
+    "selectors": 1075,
+    "signature_queries": 1176,
+    "axiom_rows": 3007,
+    "private_axiom_rows": 937,
+    "fresh_source_elaborations": 10,
+    "reused_source_elaborations": 202
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 26,
+    "verified_source_provenance_records": 3050
+  },
+  "new_public_declarations": {
+    "theorems": 14,
+    "definitions": 0,
+    "modules": 10
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "e3c24ef892bfedc58ad25f315db80b993e5d1c3bb2fdb87a2bdfa213c4e9bca8",
+    "docs/theorem-map.md": "22a14576d4bd19779d2a1c31c0b47ecc4cd38f1f0e7e3a8c1542ab2450066c8a",
+    "docs/research/phase2-unrestricted.md": "b08d1d804af494a4417e3fef7061dfb3d96a4f144544980767a4ca488b1eb8be",
+    "docs/verification.md": "e9f3c178d976e3b359c15e3b05d1ed1a59b5a448f8c7ba85c7b9c711dc2a3162"
+  },
+  "independent_review": "Pending single configured Round 4 outer mathematical review for combined initial, limiting-action and recovery packets; no duplicate acceptance review. Phase I and rounds 0\u20133 acceptance reused.",
+  "source_simplifier": {
+    "scope": "Ten new recovery leaves only; no needed change. Prior 27 Round 4 source advisories apply to unchanged sources. Source-only advisory, not acceptance review.",
+    "advisory_sha256": "a86aafa00f62aefbd5ff84d3f0ab3114b56c6791bf94bc2851685cbaf539e1a9",
+    "final_source_hashes_match_advisory": true
+  },
+  "additional_native_probes": {
+    "scope": "Actual original smooth varying-sequence producer returns a tied weak graph of mass one and physically nonzero original metric/form sequence with full dissipation convergence. Exact round K=2,r=sqrt(3),mass1,action4 reaches the same producer. Generic integrable equal-moment curvatures have both pole warp equalities, without symmetry.",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file.",
+      "/tmp/hmz-fence-4lzhkuwo/math-target-round4r-root-1mjmfj9v/JointRecoveryChecks.lean"
+    ],
+    "driver_sha256": "396454641390758e8f4eb207b6035d6b8cbd72980ae7498f37b17b8ec14efa53",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit_code": 0
+  },
+  "recovery_scope": "Limits produced from displayed original smooth normalized sublevel sequences; simultaneous finite convex tail combinations of actual K,r and both weighted derivatives. No symmetry, monotonicity, contact pattern or extra endpoint condition. Not density of arbitrary maximal weak-graph elements.",
+  "remaining_required_mathematics": [
+    "Specify the actual normalized smooth-class joint variational problem and usable relaxation; produce its required minimizing/critical object and prove precise equivalence to original competitors.",
+    "Prove every additional weak-domain density, regularity, feasible variation, multiplier qualification or original geometric path-transfer bridge used by that argument; maximal weak-graph density is not claimed here.",
+    "Genuinely determining characterization and selection; universal complete-action safety; original smooth negative witnesses below every strictly larger cap; precise unrestricted endpoint safety/attainment and final native/review/manuscript closure."
+  ]
+}

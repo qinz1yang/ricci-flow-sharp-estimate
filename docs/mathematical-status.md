@@ -16,9 +16,14 @@ sublevels: both moments and the original curvature ratio are retained, weak deri
 are identified, probes converge strongly in L², and actual weighted mass remains one.
 The continuation identifies both positive-square weak factors and proves complete-action
 lower semicontinuity, returning a constrained joint limit whose action is at most the
-liminf of the original sequence. Native evidence is separate; the single Round 4 outer
-review is pending. Exhaustive smooth recovery, a produced joint critical object,
-determining selection, global safety and endpoint scope remain open. C_rot is not identified.
+liminf of the original sequence. A further continuation constructs smooth recovery
+of those limits from original smooth sequences, preserving the exact moments and
+actual ratio, with complete-action convergence, literal unit-mass normalization and
+tied nonzero original geometric realizations. This does not prove density for every
+arbitrary maximal weak-graph element. The single Round 4 outer review is pending.
+The chosen variational domain and its required variation/recovery bridges, a produced
+joint critical object, determining selection, global safety and endpoint scope remain
+open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.
