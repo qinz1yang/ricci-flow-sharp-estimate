@@ -37,10 +37,12 @@ bounded measurable curvature, including degenerate boxes. It extends the actual
 minimum’s adjoint inequality to every such comparison. The moment qualification
 and two actual multipliers are now proved, giving a.e. box complementarity for the
 full mass-corrected adjoint. Strict original ratio boxes are derived above cap one;
-cap one is treated by exact a.e. roundness. The single Round 4 outer review is
-pending. Required further weak-probe closure, regularity/interface/path transfer,
-determining selection, global safety and endpoint scope remain open. C_rot is not
-identified.
+cap one is treated by exact a.e. roundness. The full weak probe equation now
+produces actual absolutely continuous Euler fluxes with natural zero pole traces
+and a continuous interior representative of the weak operator. No endpoint condition
+is imposed on the probe itself. The single Round 4 outer review is pending.
+Further coupled regularity, weak-probe closure/interface/path transfer, determining
+selection, global safety and endpoint scope remain open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

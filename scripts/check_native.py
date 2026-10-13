@@ -258,6 +258,9 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaCurvatureBoxQualification",
     "RicciFlowSharpEstimate.Analysis.BoxMomentMultipliers",
     "RicciFlowSharpEstimate.Geometry.AreaMomentMultipliers",
+    "RicciFlowSharpEstimate.Analysis.SecondOrderWeakEuler",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeEulerCoefficients",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeEulerFlux",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1472,7 +1475,17 @@ SELECTOR = r"""
       area ++ `IsBoundedAreaCurvature.exists_strict_box,
       area ++ `IsBoundedAreaCurvature.ae_eq_round_of_cap_one,
       area ++ `IsRecoverableAreaCompetitor.exists_curvature_moment_multipliers,
-      area ++ `exists_recoverable_area_minimizer_with_moment_multipliers
+      area ++ `exists_recoverable_area_minimizer_with_moment_multipliers,
+      analysis ++ `second_order_weak_euler_flux,
+      area ++ `weakProbeSecondCoefficient,
+      area ++ `weakProbeFirstCoefficient,
+      area ++ `weakProbeZerothCoefficient,
+      area ++ `weakMeridionalPairingDensity_eq_probe_coefficients,
+      area ++ `IsRecoverableAreaCompetitor.weak_probe_euler_coefficients_integrable,
+      area ++ `weakProbeEulerFlux,
+      area ++ `weakProbeEulerMomentum,
+      area ++ `IsRecoverableAreaCompetitor.probe_euler_flux_of_minimum,
+      area ++ `exists_recoverable_area_minimizer_with_natural_flux
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3882,6 +3895,26 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_curvature_moment_multipliers
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_recoverable_area_minimizer_with_moment_multipliers
+open RicciFlowSharpEstimate.Analysis in
+#check second_order_weak_euler_flux
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakProbeSecondCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakProbeFirstCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakProbeZerothCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalPairingDensity_eq_probe_coefficients
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.weak_probe_euler_coefficients_integrable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakProbeEulerFlux
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakProbeEulerMomentum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_euler_flux_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_recoverable_area_minimizer_with_natural_flux
 """
 
 

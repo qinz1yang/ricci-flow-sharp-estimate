@@ -16,9 +16,11 @@ joint minimum in the recoverable class. Its complete probe equation and integrab
 mass-corrected curvature adjoint now include every bounded measurable admissible
 comparison, using nonsymmetric exact-moment recovery in the original box. The
 single outer Round 4 review is pending. Genuine moment multipliers and a.e. box
-complementarity are now derived. Required further regularity/closure/path laws
-and all determining, global safety and endpoint gates
-remain open. No unrestricted sharp value is identified.
+complementarity are now derived. The actual weak probe equation also produces
+absolutely continuous Euler fluxes with natural pole laws and a continuous interior
+operator representative. Further coupled regularity/closure/path laws and all
+determining, global safety and endpoint gates remain open. No unrestricted sharp
+value is identified.
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
@@ -506,3 +508,26 @@ symmetry, zero eigenvalue or global sufficiency follows from the current theorem
 Regularity/interface/boundary, any further weak-domain or original path bridges,
 and all determining/global/sharpness/endpoint gates remain active. The same outer
 Round 4 review remains pending.
+
+### Phase-II Round 4 actual Euler flux and natural pole domain
+
+`Geometry.AreaProfile.exists_recoverable_area_minimizer_with_natural_flux` in
+`Geometry/WeakProbeEulerFlux.lean` retains the cap-only physical minimum and its
+moment multipliers, adding actual absolutely continuous flux primitives, all four
+natural zero pole traces, a.e. derivative laws and the continuous interior
+representative of its literal weak operator. No probe endpoint value or derivative
+is constrained, and the mass multiplier remains its actual action/smooth infimum.
+
+`Geometry/WeakProbeEulerCoefficients.lean` proves the full coefficient identity
+U=f²q, V=2fbq−Kbfr/2 and the complete mass-corrected H, with genuine global L1
+integrability obtained from the smooth test jets 1,x,x². The general
+`Analysis/SecondOrderWeakEuler.lean` reconstructs P=−∫H and A=∫(V+P) from the
+unrestricted smooth-test identity on any a≤b interval, proves U=A a.e. and both
+endpoint laws, and returns actual a.e. derivatives and absolute continuity.
+See the [research derivation](research/phase2-unrestricted.md) and
+[native receipt](evidence/phase2-round-4-flux/receipt.json).
+
+This regularity and natural-domain result does not determine the threshold or
+supply a structural family/global certificate. Further coupled regularity, all
+weak-domain and original path bridges used, and determining/global/sharpness/
+endpoint gates remain active. The same outer Round 4 review remains pending.

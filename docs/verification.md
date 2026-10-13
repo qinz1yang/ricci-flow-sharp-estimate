@@ -1063,3 +1063,59 @@ Regularity and weak flux/interface/boundary laws, further weak-domain or origina
 path bridges actually used, and all determining, universal-safety, smooth-sharpness
 and endpoint gates remain active. The a.e. signs do not establish a structural
 family or global sufficiency. Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase-II Round 4 actual Euler-flux checkpoint
+
+Three new leaves derive global L1 coefficients for the complete weak probe
+Euler identity, reconstruct actual absolutely continuous flux primitives and
+all four natural endpoint traces, and apply the result to the cap-only physical
+joint minimum. The weighted operator is identified a.e. with the leading
+primitive, giving a continuous interior representative after division by f².
+No endpoint value of the probe or its first derivative is assumed.
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-flux \
+  --reuse-receipt docs/evidence/phase2-round-4-multipliers/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-flux/receipt.json), SHA256
+`4ab103adc7583565f403e93d26f64e4029c6830b71de285d2c7d8ac6984cc303`, passes for
+246 modules. Three fresh source elaborations are silent; 243 matching prior
+elaborations are reused. Root build, strict declaration-kind inspection and all
+available declaration linters pass. The 1,201 required selectors, 1,302 exact
+signature/declaration queries and 3,286 actual transitive axiom rows (1,055 private)
+contain only subsets of propext, Classical.choice and Quot.sound. All 251 input/
+252 output hashes and three reconstructed diagnostic-driver hashes match;
+physical/checker/root inventories agree. Provenance covers 4,680 source-command
+records through 33 receipts. Checker changes only extend inventories and queries.
+
+The three leaves add five public theorems and five definitions. The generic
+reconstruction source compiled unchanged from its source-only packet. Root
+repaired coordinate-function normalization, redundant simplifications and one
+long line in the physical layer before the final silent gate. No hypothesis,
+accepted source, trust, linter or resource policy was weakened. The bounded
+source simplifier recommended no change and recorded matching final hashes;
+this advisory is not a second acceptance review.
+
+The supplemental silent driver uses the actual round curvature K=2 and smooth
+linear probe r=x−1/2 with mass multiplier 100. It verifies the complete coefficient
+polynomials and the literal flux formulas
+P=−2x−30x²+64x³−32x⁴ and A=20x²−80x³+100x⁴−40x⁵. Both fluxes vanish at both
+poles although r has endpoint values −1/2,1/2 and derivative one at both poles.
+These are exact regression data, not a sharp-threshold or minimizing-eigenvalue
+claim. The driver also checks the generic singleton-interval case and consumes
+the actual cap-three minimum with absolute continuity, natural flux poles and
+continuous interior operator representative. Its exact source/command/output
+hashes appear in the [checkpoint record](evidence/phase2-round-4-flux/checkpoint.json).
+
+The [preservation record](evidence/phase2-round-4-flux/preservation.json) confirms
+all 243 prior native leaves, 175 accepted leaves, 149 Phase-I leaves, 2,325 historical
+workflow files, accepted paper, tasks, pins and 4,850 prior tracked evidence files
+remain unchanged. Compiler, platform and ten clean pinned dependencies match.
+No typesetting occurred; all leases are released. The single configured outer
+Round 4 review remains pending for 71 new leaves across ten checkpoints.
+
+Further coupled regularity, curvature/interface analysis, weak-domain and original
+path bridges actually used, and every determining/global/sharpness/endpoint gate
+remain active. The flux and representative conclusions do not identify C_rot.
+Phase I is COMPLETE; Phase II is OPEN.

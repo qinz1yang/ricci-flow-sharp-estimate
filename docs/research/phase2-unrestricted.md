@@ -1847,25 +1847,105 @@ leaves remain unchanged. Native evidence is recorded in
 `docs/evidence/phase2-round-4-multipliers/`. The same single outer Round 4 review
 remains pending.
 
+## Round 4 actual Euler fluxes and natural pole laws
+
+The actual joint minimum now has globally absolutely continuous flux
+representatives on the closed physical interval. The full smooth-test equation
+produces these representatives and their endpoint laws; no trace condition is
+added to the probe or its first weak derivative.
+
+For the original primitives f,b, the tied weak operator q=fz+2bp−Kr and the actual
+mass multiplier λ, the literal complete pairing gives the coefficients
+
+\[
+ U=f^2q,\qquad V=2fbq-\tfrac12 Kbfr,
+\]
+\[
+ H=-fKq-\tfrac12 Kbfp+(K^2f-\tfrac12 Kb^2)r-\lambda fr.
+\]
+
+All three are globally integrable. This is proved before splitting their
+integrals: the complete Lagrange pairing with the genuine smooth jets of 1, x and
+x² isolates H, V+xH and 2U+2xV+x²H. Bounded coordinate multiplication on (0,1)
+then gives separate integrability of H,V,U. The curvature may remain merely
+bounded measurable, and the probe derivatives remain the genuine weak ones.
+Every mixed and potential term and the mass correction are retained.
+
+The resulting equation is
+
+\[
+ \int_0^1(U s''+V s'+H s)=0
+ \quad\text{for every globally smooth }s.
+\]
+
+`Analysis.second_order_weak_euler_flux` proves a general L1 reconstruction on any
+ordered bounded interval a≤b, including a=b. Define the actual primitives
+
+\[
+ P(x)=-\int_a^x H(t)\,dt,\qquad
+ A(x)=\int_a^x(V(t)+P(t))\,dt.
+\]
+
+The constant test gives ∫H=0. Native integration by parts for absolutely
+continuous primitives then gives ∫H s=∫P s′. Smooth antiderivative tests reduce
+the equation to a first-order weak identity. Another primitive integration and
+the native smooth-test separation theorem identify U=A almost everywhere.
+The proof returns absolute continuity of both P and A, genuine a.e. derivative
+laws P′=−H and A′=V+P, and
+
+\[
+ P(a)=P(b)=A(a)=A(b)=0.
+\]
+
+No limiting flux, regularity, primitive relation or endpoint value is a premise.
+The unrestricted test class is essential here: compactly supported interior
+tests alone would not yield these endpoint conclusions.
+
+`weakProbeEulerFlux` and `weakProbeEulerMomentum` are the literal physical
+primitives P and A at a=0. The actual minimum satisfies U=f²q=A a.e. and all four
+zero pole traces. Since the original warp is continuous and strictly positive
+inside (0,1), A/f² is a continuous interior representative of the actual weak
+operator. The claim is an a.e. representative statement; no pointwise classical
+meaning is assigned to an arbitrary weak second-derivative representative.
+
+`exists_recoverable_area_minimizer_with_natural_flux C hC` takes C≥1 alone and
+retains the same unit-mass, physically nonzero joint minimum, its full probe
+equation, actual action and global recoverable minimality, original ratio/box,
+cap-one conclusion and derived moment multipliers/complementarity. It adds the
+actual flux primitives, absolute continuity, endpoint/derivative laws and
+continuous interior operator representative. The original λ remains the actual
+action/smooth infimum; zero action is not assumed.
+
+| Role | Canonical source |
+|---|---|
+| General L1 weak Euler reconstruction with actual primitives and natural traces | `Analysis/SecondOrderWeakEuler.lean` |
+| Complete physical coefficient formulas, literal pairing identity and integrability | `Geometry/WeakProbeEulerCoefficients.lean` |
+| Actual minimum flux primitives, pole laws and interior operator representative | `Geometry/WeakProbeEulerFlux.lean` |
+
+The three leaves add five public theorems and five definitions. All 243 previous
+leaves remain unchanged. Native evidence is recorded in
+`docs/evidence/phase2-round-4-flux/`. The same single outer Round 4 review remains
+pending.
+
 ## Exact frontier and next target
 
-Phase I is COMPLETE; Phase II is OPEN. The actual joint weak minimum now has its
-full weak probe equation and genuine moment multipliers for the complete
-mass-corrected curvature adjoint, with a.e. box complementarity derived from
-measurable comparisons. Qualification is proved in an actual original ratio box,
-including honest treatment of constant curvature and cap one.
+Phase I is COMPLETE; Phase II is OPEN. The actual joint weak minimum now has
+its full probe equation, derived moment multipliers with a.e. curvature box
+complementarity, and two actual absolutely continuous Euler fluxes with natural
+zero pole traces. The actual weak operator has a continuous representative on
+the open physical interval. No condition on the endpoint values of r or p is
+introduced.
 
-Next establish the regularity and weak flux/interface/boundary laws actually
-needed to analyze this coupled system, retaining the physical pole domain and
-tied weak derivatives. Any further weighted-probe density, normalized-pair closure
-or original geometric path transfer used must be proved. Test the decisive global
-comparison before expanding a proposed structural family. The current a.e. signs
-do not imply continuity, symmetry, a fixed switch count, smooth attainment or a
-zero eigenvalue, and no such conclusion is used.
+Next analyze the remaining local regularity and coupled first-order relations
+using these actual fluxes and the tied weak derivatives. Any curvature regularity,
+interface structure, further weighted-probe recovery/normalized-pair closure or
+original geometric path transfer used must be proved. Test the decisive global
+comparison before expanding a structural family. The current statements do not
+supply symmetry, a fixed switch count, smooth attainment or a zero eigenvalue.
 
 T8–T10 still require a genuinely determining characterization and justified
 selection, universal complete-action safety, original smooth negative witnesses
 below every strictly larger cap, and precise unrestricted endpoint safety and
-attainment scope. Necessary conditions do not identify C_rot. Final native,
-independent-review, research/manuscript and delivery gates remain mandatory;
-no required original-plan task is deferred.
+attainment scope. Necessary conditions and flux regularity do not identify C_rot.
+Final native, independent-review, research/manuscript and delivery gates remain
+mandatory; no required original-plan task is deferred.
