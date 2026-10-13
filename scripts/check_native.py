@@ -233,6 +233,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaJointMinimum",
     "RicciFlowSharpEstimate.Geometry.AreaMinimumGeometry",
     "RicciFlowSharpEstimate.Geometry.NormalizedAreaInfimum",
+    "RicciFlowSharpEstimate.Analysis.ParabolicWeakDerivativeAlgebra",
+    "RicciFlowSharpEstimate.Geometry.RecoverableAreaGeometry",
+    "RicciFlowSharpEstimate.Geometry.WeakAreaPolarization",
+    "RicciFlowSharpEstimate.Geometry.RecoverableProbeVariation",
+    "RicciFlowSharpEstimate.Geometry.RecoverableProbeStationarity",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1356,7 +1361,32 @@ SELECTOR = r"""
       area ++ `exists_area_minimizer_with_geometric_recovery,
       poleData ++ `AreaNormalization.isSmoothAreaCompetitor_normalizedProbe,
       poleData ++
-        `AreaNormalization.smoothAreaInfimum_le_length_sq_mul_oneFormDissipation_div_normSq
+        `AreaNormalization.smoothAreaInfimum_le_length_sq_mul_oneFormDissipation_div_normSq,
+      analysis ++ `HasWeakDerivOn.add,
+      analysis ++ `HasWeakDerivOn.const_mul,
+      analysis ++ `HasParabolicWeakDerivatives.add,
+      analysis ++ `HasParabolicWeakDerivatives.const_mul,
+      analysis ++ `parabolicGraph_tendsto_add_fixed_smooth,
+      area ++ `IsRecoverableAreaCompetitor.strong_curvature_subsequence,
+      area ++ `IsRecoverableAreaCompetitor.geometry_bounds,
+      area ++ `weakMeridionalPairingDensity,
+      area ++ `weakMeridionalPairing,
+      area ++ `weakMeridionalPairing_symm,
+      area ++ `weakMeridionalPairing_self,
+      area ++ `weakMeridionalAction_const_mul,
+      area ++ `integrable_weakMeridionalPairingDensity_of_warp_bounds,
+      area ++ `weakMeridionalPairing_intervalIntegrable_of_warp_bounds,
+      area ++ `weakMeridionalAction_add_mul,
+      area ++ `weakMeridionalAction_hasDerivAt,
+      area ++ `integrable_probeMassDensity_of_warp_bounds,
+      area ++ `probeMass_intervalIntegrable_of_warp_bounds,
+      area ++ `integrable_probeMassPairing_of_warp_bounds,
+      area ++ `probeMassPairing_intervalIntegrable_of_warp_bounds,
+      area ++ `probeMass_add_mul_of_warp_bounds,
+      area ++ `probeMass_hasDerivAt_of_warp_bounds,
+      area ++ `IsRecoverableAreaCompetitor.normalized_probe_add_mul,
+      area ++ `IsRecoverableAreaCompetitor.weak_probe_equation_of_minimum,
+      area ++ `exists_recoverable_area_minimizer_weak_probe_equation
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3584,6 +3614,56 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalizatio
 #check isSmoothAreaCompetitor_normalizedProbe
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
 #check smoothAreaInfimum_le_length_sq_mul_oneFormDissipation_div_normSq
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.add
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.const_mul
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.add
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.const_mul
+open RicciFlowSharpEstimate.Analysis in
+#check parabolicGraph_tendsto_add_fixed_smooth
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.strong_curvature_subsequence
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.geometry_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalPairingDensity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalPairing
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalPairing_symm
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalPairing_self
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction_const_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integrable_weakMeridionalPairingDensity_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalPairing_intervalIntegrable_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction_add_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integrable_probeMassDensity_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_intervalIntegrable_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integrable_probeMassPairing_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMassPairing_intervalIntegrable_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_add_mul_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_hasDerivAt_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.normalized_probe_add_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.weak_probe_equation_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_recoverable_area_minimizer_weak_probe_equation
 """
 
 

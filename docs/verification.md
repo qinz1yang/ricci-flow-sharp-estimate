@@ -791,3 +791,52 @@ minimum does not imply smooth attainment, zero action, feasible-direction equati
 threshold selection or universal safety. Those required mathematical gates remain
 active, and the combined Round 4 packet still awaits its single outer review.
 Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase-II Round 4 variation: actual-minimum weak probe equation
+
+The new five-leaf packet proves genuine weak graph linearity, actual geometry
+bounds from recoverability, full-density polarization/integrability and action/mass
+polynomials. Normalized smooth probe perturbations are proved feasible in the same
+class. The actual joint minimum therefore satisfies the complete weak equation for
+every smooth direction, with its actual action as eigenvalue and no extra pole
+condition. Curvature variations and threshold selection are not asserted.
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-variation \
+  --reuse-receipt docs/evidence/phase2-round-4-minimum/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-variation/receipt.json), SHA256
+`e102b147f60608766804336eb2383a26dea6c60709636f76e925f79e55f17e3a`, passes for
+223 modules: five fresh silent source elaborations and 218 matching prior ones
+reused, including the 43 previous Round 4 leaves awaiting the same outer review.
+Root build, native declaration-kind inspection and all available declaration linters
+pass. The 1,125 required selectors, 1,226 exact signature/declaration queries and
+3,090 actual transitive axiom rows (959 private) pass with only subsets of propext,
+Classical.choice, Quot.sound. All 228 input/229 output hashes, three reconstructed
+driver hashes and physical/checker/root inventories match. Reuse provenance covers
+3,491 source-command records across 28 receipts. Checker changes only extend
+inventories and queries; no validation rule or dependency pin changes.
+
+There are 23 new public theorems and two definitions. Root generalized the mass APIs
+to their natural L² hypotheses, removing irrelevant weak-jet inputs. Candidate
+function-representative elaboration, a local name shadow and zero-multiplication
+simplifications were repaired before final silent checks. No source diagnostic
+suppression or resource override was used. The five-source simplifier inspected
+all final source bytes and found no needed change; it supplied a source advisory,
+not an additional mathematical acceptance review.
+
+Supplemental native consumers check literal negative pairing density at both round
+poles, the need for the positive-mass guard, generic normalized perturbation closure,
+and cap-only production of a nonzero unit-mass minimum satisfying the constant and
+identity test-direction equations. These directions do not have compact support.
+The [checkpoint record](evidence/phase2-round-4-variation/checkpoint.json) binds their
+exact source, command and silent output. The [preservation record](evidence/phase2-round-4-variation/preservation.json)
+confirms all 218 prior native sources, accepted sources/paper, 2,325 historical
+workflow files, tasks, pins and prior receipts remain unchanged. No typesetting occurred.
+
+The same configured Round 4 outer review is pending. Feasible curvature variations,
+their mass derivative and multiplier qualification, determining selection, universal
+safety, sharp smooth witnesses and exact endpoint scope remain required. The weak
+probe equation is a necessary condition, not a sharp-value characterization.
+Phase I is COMPLETE; Phase II is OPEN.

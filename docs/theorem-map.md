@@ -392,3 +392,21 @@ and [native receipt](evidence/phase2-round-4-minimum/receipt.json).
 The infimum is a variational value, not a determining characterization of C_rot.
 Feasible variations of the produced minimizer, all determining/global/endpoint
 gates and the single outer Round 4 review remain open.
+
+### Phase-II Round 4 variation: justified weak probe stationarity
+
+`Geometry.AreaProfile.exists_recoverable_area_minimizer_weak_probe_equation`
+in `Geometry/RecoverableProbeStationarity.lean` produces a physically nonzero
+joint minimum satisfying the complete weak probe equation for every globally
+smooth direction. `RecoverableProbeVariation.lean` proves normalized perturbation
+membership in the actual recoverable class wherever physical mass is positive.
+`WeakAreaPolarization.lean` derives genuine integrability and exact full-action/mass
+polynomials without replacing measurable curvature by a K′ potential. The action
+value is the actual eigenvalue; zero action is not assumed. No endpoint or compact
+support restriction is imposed on smooth probe directions.
+
+The [research map](research/phase2-unrestricted.md) records the five-leaf proof and
+[native evidence](evidence/phase2-round-4-variation/receipt.json). Feasible curvature
+variations of the actual object, multiplier qualification and every determining,
+global, sharpness and endpoint gate remain active. The same outer Round 4 review
+is pending for the combined packet; Phase II remains OPEN.

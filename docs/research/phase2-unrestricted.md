@@ -1374,25 +1374,126 @@ The six leaves add 21 public theorems and four definitions. Native evidence is i
 `docs/evidence/phase2-round-4-minimum/`. All 212 prior native leaves and their
 receipts are preserved. The single configured outer Round 4 review remains pending.
 
+## Round 4 variation: the actual minimum satisfies the complete weak probe equation
+
+`exists_recoverable_area_minimizer_weak_probe_equation C hC` now produces the
+actual joint minimum together with its first justified necessary condition.
+For every globally smooth real probe direction s, with no compact-support or
+pole trace restriction, it proves
+
+\[
+ B_K(r,s)=\lambda\int_0^1 f_Krs,\qquad
+ \lambda=A_K(r)=\operatorname{smoothAreaInfimum}(C).
+\]
+
+Here r has genuine weak derivatives p,z and the pairing is the literal complete
+polarization
+
+\[
+ B_K(r,s)=\int_0^1\left[
+ f q_r q_s-\frac{Kbf}{2}(rs'+sp)
+ +\left(K^2f-\frac{Kb^2}{2}\right)rs\right],
+ \quad q_r=fz+2bp-Kr,\quad q_s=fs''+2bs'-Ks.
+\]
+
+The curvature and primitives are the same actual K,f,b of the produced object.
+Both potential terms and the mixed term are retained. No K′ potential is used
+for the merely measurable limiting curvature. The theorem asserts a weak equation,
+not a classical fourth-order pointwise equation or extra endpoint/interface laws.
+Its eigenvalue is the actual minimum value; it is not assumed to vanish.
+
+### Feasible variations in the actual class
+
+Weak first derivatives are proved closed under addition and real scalar
+multiplication by their integrable compact-test identities. Applying these laws
+to both derivatives and to the weighted L² graph gives the corresponding genuine
+second-order weak graph operations. For an actual smooth approximating probe,
+adding a fixed smooth direction changes its actual first and second derivatives
+by the derivatives of that same direction. All three strong graph differences
+are unchanged by the common affine perturbation.
+
+`IsRecoverableAreaCompetitor.normalized_probe_add_mul` proves that
+
+\[
+ \frac{r+ts}{\sqrt{m(K,r+ts)}}
+\]
+
+with the correspondingly scaled genuine weak derivatives belongs to the same
+recoverable normalized class whenever its actual mass is positive. The proof
+perturbs each original smooth recovery probe, extracts a common a.e. curvature
+subsequence while retaining all strong limits, and proves convergence of the
+perturbed physical masses. A late positive tail has literal positive normalization
+factors converging to the limiting factor; the established scalar graph convergence
+then supplies the required normalized smooth approximants. The curvature, both
+moments and the original ratio witnesses remain unchanged. This is a proved
+admissibility result, not a supplied feasible-path hypothesis.
+
+The actual recoverable geometry supplies continuity of both primitives on the
+closed interval, the common quadratic warp bounds, absolute slope bound, both
+pole values and common a.e. curvature bounds. These follow from the displayed
+smooth curvature approximation and the already proved primitive consumers.
+They are not independent coefficient assumptions of the final minimum theorem.
+
+### Integrability, mass correction and the minimum application
+
+Polarization of three genuinely integrable complete densities proves integrability
+of the pairing. Integral linearity then gives exact action and mass polynomials:
+
+\[
+ A(r+ts)=A(r)+2tB_K(r,s)+t^2A(s),\qquad
+ m(r+ts)=1+2t\int_0^1 frs+t^2m(s).
+\]
+
+The public mass lemmas require only L² probes and the actual warp bound, without
+irrelevant weak-jet premises. The action lemmas retain the tied weighted graph and
+the actual curvature/primitive bounds. Derivatives follow from these polynomials;
+there is no unjustified interchange of a derivative with a totalized integral.
+
+The mass polynomial proves positivity in a neighborhood of t=0. Feasibility and
+the actual joint minimum imply
+
+\[
+ A(r+ts)-A(r)m(r+ts)\ge0
+\]
+
+there, with equality at zero. Its derivative at zero is
+`2 B_K(r,s) − 2 A(r)∫frs`, which must vanish. This proves the displayed weak
+equation with the full probe-mass correction. The general minimum consumer is
+then applied to the cap-only minimum producer, so the final theorem has no
+assumed minimizing pair or directional local-minimum premise.
+
+| Role | Canonical source |
+|---|---|
+| Genuine weak linearity and actual affine graph convergence | `Analysis/ParabolicWeakDerivativeAlgebra.lean` |
+| Recoverable curvature subsequence and actual primitive bounds | `Geometry/RecoverableAreaGeometry.lean` |
+| Complete weak pairing, integrability, action and mass polynomials | `Geometry/WeakAreaPolarization.lean` |
+| Actual normalized smooth-direction feasibility in the weak class | `Geometry/RecoverableProbeVariation.lean` |
+| Weak equation and application to the produced joint minimum | `Geometry/RecoverableProbeStationarity.lean` |
+
+The five leaves add 23 public theorems and two definitions. Native evidence is in
+`docs/evidence/phase2-round-4-variation/`. All 218 prior source leaves and receipts
+are preserved. The single configured outer Round 4 review remains pending.
+
 ## Exact frontier and next target
 
-Phase I is COMPLETE; Phase II is OPEN. Round 4 now has native joint compactness,
-complete-action LSC, constructed smooth recovery, and an actual joint minimum on
-the stated recoverable weak class, equal to the original smooth meridional infimum.
-The original geometric scale and the full recovery producer bindings are verified
-by native consumers. The same outer review is pending for the combined packet.
+Phase I is COMPLETE; Phase II is OPEN. Round 4 now has an actual joint weak minimum,
+full-action recovery and a justified weak probe equation for every smooth direction.
+The normalized perturbations are proved feasible in the same class; no artificial
+pole condition, curvature smoothness, smooth attainment or zero action is assumed.
+The original geometric recovery and scale bindings remain available unchanged.
 
-The next mainline target is justified variations of this actual minimizing object.
-Prove membership of the particular varied/normalized weak pairs in the recoverable
-class and the regularity needed for each derivative or weak equation used. Derive
-the precise feasible minimum inequalities before invoking smooth necessary-condition
-consumers. Retain the curvature derivative of the mass, prove multiplier qualification,
-and establish any needed original geometric path transfer. Maximal weak-graph density
-remains unproved; any larger domain used must supply its own recovery/closure proof.
+The next mainline target is feasible curvature variations of this actual minimum.
+Prove that the particular moment- and ratio-preserving curvature paths, with their
+literal mass normalization, remain in the recoverable class. Derive the complete
+weak curvature action derivative and its varying-mass correction, then obtain the
+actual one-/two-sided necessary inequalities. Prove multiplier qualification before
+extracting moment multipliers. Establish any additional regularity or original
+geometric path transfer actually used; maximal weak-graph density is not asserted.
 
 T8–T10 still require a genuinely determining characterization and justified selection,
 universal complete-action safety, original smooth negative witnesses below every
-larger cap, and precise unrestricted endpoint safety/attainment. No symmetry,
-finite switch count, smooth attainment or zero action is inferred from minimality.
-Final T11 depends on these mathematics, native evidence, independent review and
-delivery. C_rot is not identified, and no mandatory original-plan gate is deferred.
+larger cap, and precise unrestricted endpoint safety/attainment. Neither the
+variational infimum nor the new weak equation identifies C_rot. No symmetry,
+finite switch count or selected structural branch follows from these necessary
+conditions. Final native, independent-review, research/manuscript and delivery
+gates remain mandatory; no required original-plan task is deferred.
