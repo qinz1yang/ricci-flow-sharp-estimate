@@ -1714,26 +1714,85 @@ leaves remain unchanged. Native evidence is recorded in
 `docs/evidence/phase2-round-4-adjoint/`. The same single configured outer Round 4
 review remains pending.
 
+## Round 4 nonsymmetric measurable-curvature recovery
+
+The new primary measurable curvature class records almost-everywhere measurability,
+an actual positive box κ≤K≤Λ with Λ/κ≤C, and the two exact physical moments.
+Square integrability follows from that box. No symmetry, monotonicity or prescribed
+contact pattern is part of this class.
+
+The Analysis construction first approximates an L2 function smoothly in an enlarged
+box. Clipping a native L2 approximation to the box decreases its error; native
+uniform smooth approximation then restores smoothness with controlled enlargement.
+Two nonnegative interior bumps supported in (1/8,3/8) and (5/8,7/8) have positive
+masses and separated first-moment ratios. Their actual moment matrix has positive
+determinant. Its explicitly inverted combinations ψ0,ψ1 have moment vectors
+(1,0) and (0,1), compact interior supports, and a common finite bound B.
+
+For an input with uniform margin δ and error tolerance ε, set
+τ=min(δ,ε)/(2B+1). Smooth approximation has moment errors of absolute size at most
+τ, by the probability-measure L2 bound. Adding the two corresponding multiples of
+ψ0,ψ1 corrects both moments exactly. The correction is bounded by 2Bτ everywhere
+and in L2. Thus the approximant stays in the original box and its total L2 error
+is at most ε. Genuine integrability accompanies all moment identities.
+
+For balanced moments (c,c/2), the mean lies in the original box. If c is either
+box boundary, equality in the integral bound proves that the function is constant
+almost everywhere, and exact constant recovery applies. Otherwise contraction
+(1−t)K+tc creates the positive margin t*min(c−κ,Λ−c), preserves both moments, and
+has explicitly controlled L2 error. The interior correction then gives arbitrary
+accuracy in the original box. Choosing shrinking errors produces a single strong
+L2 recovery sequence. This handles a degenerate box without division by its width.
+
+`IsBoundedAreaCurvature.exists_smooth_recovery` specializes c=2 and returns the
+same actual κ,Λ controlling the limit and every globally smooth approximant.
+Every member has both original moments and the original ratio bound. It is a
+nonsymmetric measurable-curvature density theorem, not maximal weighted-probe
+graph density or a new smooth-attainment claim.
+
+The actual joint minimum's adjoint is L1. Strong L2 recovery and a uniform essential
+bound give convergence of its pairings against this L1 density, using the native
+bounded-pairing theorem. Consequently
+`exists_recoverable_area_minimizer_with_bounded_curvature_adjoint C hC` takes C≥1
+alone and retains the physically nonzero unit-mass minimum, its full probe equation,
+actual action value, and global recoverable minimality, with the adjoint inequality
+now valid for **every bounded measurable admissible curvature**. This extends the
+already justified full mass-corrected inequality by pairing continuity. It does not
+assert continuity of the positive K² potential or the whole action under weak
+curvature convergence, nor does it assume a new normalized weak path closure.
+
+| Role | Canonical source |
+|---|---|
+| Smooth approximation with explicit box enlargement | `Analysis/SmoothBoxApproximation.lean` |
+| Two fixed interior functions with invertible actual moments | `Analysis/InteriorMomentBasis.lean` |
+| Quantitative exact-moment correction within a margin | `Analysis/InteriorMomentRecovery.lean` |
+| Same-box balanced-moment recovery, including boundary means | `Analysis/BalancedMomentRecovery.lean` |
+| Primary measurable physical curvature class and same-box recovery | `Geometry/BoundedAreaCurvature.lean` |
+| Actual minimum's inequality for all bounded measurable comparisons | `Geometry/BoundedCurvatureOptimality.lean` |
+
+These six leaves add 11 public theorems and one definition. All 233 prior leaves
+remain unchanged. Native evidence is recorded in
+`docs/evidence/phase2-round-4-nonsymmetric/`; the single configured outer Round 4
+review remains pending for the combined packet.
+
 ## Exact frontier and next target
 
-Phase I is COMPLETE; Phase II is OPEN. The produced joint weak minimum now has
-both a full weak probe equation and a complete mass-corrected curvature inequality
-represented by a genuine integrable adjoint. The comparison scope remains every
-original admissible smooth curvature, with the original two moments and ratio.
-No symmetry, probe sign, smooth attainment, zero eigenvalue or finite switch count
-is inferred from these necessary conditions.
+Phase I is COMPLETE; Phase II is OPEN. The produced joint weak minimum has a full
+weak probe equation and a complete mass-corrected curvature inequality against
+every bounded measurable exact-moment comparison with its original positive ratio
+box. Nonsymmetric smooth recovery for that curvature class is now native. No
+symmetry, probe sign, smooth attainment, zero eigenvalue or finite switch count is
+inferred from these necessary conditions.
 
-Next prove nonsymmetric smooth curvature recovery for the bounded measurable
-exact-moment comparison class with its actual positive ratio witnesses. Combine
-that recovery with the existing weighted graph and mass continuity to justify
-each needed nonsmooth comparison and extend the adjoint inequality. Prove moment
-constraint qualification before extracting multipliers; establish the additional
-regularity, interface/boundary and original geometric path laws actually used.
-Maximal weak-probe graph density is not asserted by the present theorem.
+Next prove the actual moment constraint qualification before extracting curvature
+multipliers, and establish the additional regularity, interface/boundary and
+original geometric path laws used by the determining argument. Any further weak
+probe or normalized pair closure used must be proved in the actual weighted graph
+and full-action topology; maximal weak-probe density is not asserted here.
 
 T8–T10 still require a genuinely determining characterization and justified
 selection, universal complete-action safety, original smooth negative witnesses
 below every strictly larger cap, and precise unrestricted endpoint safety and
-attainment scope. An integrable adjoint and necessary inequalities do not identify
-C_rot. Final native, independent-review, research/manuscript and delivery gates
-remain mandatory; no required original-plan task is deferred.
+attainment scope. Necessary inequalities do not identify C_rot. Final native,
+independent-review, research/manuscript and delivery gates remain mandatory;
+no required original-plan task is deferred.

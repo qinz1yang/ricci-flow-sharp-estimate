@@ -248,6 +248,12 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.WeakCurvatureCoefficients",
     "RicciFlowSharpEstimate.Geometry.AreaGreenPrimitives",
     "RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjoint",
+    "RicciFlowSharpEstimate.Analysis.SmoothBoxApproximation",
+    "RicciFlowSharpEstimate.Analysis.InteriorMomentBasis",
+    "RicciFlowSharpEstimate.Analysis.InteriorMomentRecovery",
+    "RicciFlowSharpEstimate.Analysis.BalancedMomentRecovery",
+    "RicciFlowSharpEstimate.Geometry.BoundedAreaCurvature",
+    "RicciFlowSharpEstimate.Geometry.BoundedCurvatureOptimality",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1444,7 +1450,19 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.weakCurvatureAdjoint_integrable,
       area ++ `IsRecoverableAreaCompetitor.curvature_variation_eq_integral_adjoint,
       area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_inequality_of_minimum,
-      area ++ `exists_recoverable_area_minimizer_with_curvature_adjoint
+      area ++ `exists_recoverable_area_minimizer_with_curvature_adjoint,
+      analysis ++ `exists_contDiff_approx_Icc_of_memLp,
+      analysis ++ `exists_contDiff_interior_moment_basis,
+      analysis ++ `exists_contDiff_exact_moments_of_memLp_of_interior_box,
+      analysis ++ `exists_contDiff_Icc_exact_balanced_moments,
+      analysis ++ `exists_contDiff_Icc_exact_balanced_moments_sequence,
+      area ++ `IsBoundedAreaCurvature,
+      area ++ `IsBoundedAreaCurvature.memLp_curvature,
+      area ++ `IsSmoothAreaCurvature.bounded,
+      area ++ `IsRecoverableAreaCompetitor.curvature_bounded,
+      area ++ `IsBoundedAreaCurvature.exists_smooth_recovery,
+      area ++ `IsRecoverableAreaCompetitor.bounded_curvature_adjoint_inequality_of_minimum,
+      area ++ `exists_recoverable_area_minimizer_with_bounded_curvature_adjoint
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3818,6 +3836,30 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.curvature_adjoint_inequality_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_recoverable_area_minimizer_with_curvature_adjoint
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_approx_Icc_of_memLp
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_interior_moment_basis
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_exact_moments_of_memLp_of_interior_box
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_Icc_exact_balanced_moments
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_Icc_exact_balanced_moments_sequence
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsBoundedAreaCurvature
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsBoundedAreaCurvature.memLp_curvature
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCurvature.bounded
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_bounded
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsBoundedAreaCurvature.exists_smooth_recovery
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.bounded_curvature_adjoint_inequality_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_recoverable_area_minimizer_with_bounded_curvature_adjoint
 """
 
 

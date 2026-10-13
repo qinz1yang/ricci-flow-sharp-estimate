@@ -31,10 +31,13 @@ curvature feasible throughout [0,1], derives positive mass from the physical bou
 and gives the same produced minimum its complete mass-corrected curvature inequality.
 A weighted Green-kernel continuation now proves a genuine L1 curvature adjoint
 representing the full mass-corrected variation and applies it to that same minimum.
-Only the weighted warp coefficient is required to be integrable. The single Round 4
-outer review is pending. Further nonsmooth comparison recovery, moment multiplier
-qualification, required regularity/path transfer, determining selection, global
-safety and endpoint scope remain open. C_rot is not identified.
+Only the weighted warp coefficient is required to be integrable. Nonsymmetric
+smooth recovery now preserves both moments and the same original box for every
+bounded measurable curvature, including degenerate boxes. It extends the actual
+minimum’s adjoint inequality to every such comparison. The single Round 4 outer
+review is pending. Moment multiplier qualification, required further weak-probe
+closure and regularity/path transfer, determining selection, global safety and
+endpoint scope remain open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

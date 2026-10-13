@@ -9,14 +9,15 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
-Round 2's exhaustive original-data normalization and variation packet passed its
-single outer review at `734dd5b`. Round 3 adds complete-action coercivity with a
-curvature-box-dependent mass correction, uniform normalized energy bounds and
-both-pole weighted-mass tightness, retaining the original ratio restriction.
-Its native evidence is recorded separately; its single outer review is pending.
-The actual weak domain, full-action limits/recovery, joint critical-object
-applications, determining selection, global safety and endpoint scope remain
-open. No unrestricted sharp value is identified.
+Rounds 2 and 3 passed their single outer reviews at `734dd5b` and `2778716`.
+Round 4 constructs actual joint weak limits, full-action lower semicontinuity,
+strong recovery of smooth-sequence limits, and a physically nonzero normalized
+joint minimum in the recoverable class. Its complete probe equation and integrable
+mass-corrected curvature adjoint now include every bounded measurable admissible
+comparison, using nonsymmetric exact-moment recovery in the original box. The
+single outer Round 4 review is pending. Moment qualification, required further
+regularity/closure/path laws and all determining, global safety and endpoint gates
+remain open. No unrestricted sharp value is identified.
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,
@@ -454,3 +455,27 @@ The comparison scope is all original admissible smooth curvatures. Nonsmooth
 comparison recovery and closure, moment constraint qualification, regularity and
 all determining/global/sharpness/endpoint gates remain active. No moment multipliers
 or pointwise switching signs are asserted. The same outer review remains pending.
+
+### Phase-II Round 4 nonsymmetric curvature recovery and measurable optimality
+
+`Geometry.AreaProfile.exists_recoverable_area_minimizer_with_bounded_curvature_adjoint`
+in `Geometry/BoundedCurvatureOptimality.lean` strengthens the actual minimum’s
+comparison scope to every `IsBoundedAreaCurvature C J`. The primary class retains
+measurability, the original positive ratio witnesses and both exact moments.
+Its `exists_smooth_recovery` theorem returns one sequence in the same original box,
+with exact moments and strong L2 convergence, without symmetry or monotonicity.
+
+The general Analysis chain consists of `SmoothBoxApproximation`,
+`InteriorMomentBasis`, `InteriorMomentRecovery` and `BalancedMomentRecovery`.
+The dual-moment basis comes from an explicitly invertible interior bump matrix.
+Quantitative interior correction and contraction toward the mean prove the
+same-box theorem; boundary means and degenerate boxes are treated exactly.
+Bounded strong curvature convergence then controls pairings with the already
+proved L1 complete adjoint. The full weak action is not assumed continuous under
+weak curvature convergence. See the [research derivation](research/phase2-unrestricted.md)
+and [native receipt](evidence/phase2-round-4-nonsymmetric/receipt.json).
+
+The same configured outer review remains pending. Moment constraint qualification,
+any further weak-probe or normalized-pair closure used, regularity/interface and
+original geometric path laws, and every determining/global/sharpness/endpoint gate
+remain required. No new multiplier, structural family or sharp value is asserted.

@@ -954,3 +954,56 @@ qualification, required regularity/interface/path laws and all determining,
 universal-safety, smooth-sharpness and endpoint gates remain active. The adjoint
 representation supplies necessary conditions and does not identify C_rot.
 Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase-II Round 4 nonsymmetric curvature recovery checkpoint
+
+Six new leaves prove smooth exact-moment recovery of every bounded measurable
+curvature in its original positive ratio box, then extend the actual joint
+minimum's complete integrable-adjoint inequality to every such comparison.
+The quantitative construction uses native smooth approximation, two fixed interior
+bumps with a proved invertible moment matrix, contraction toward the mean, and
+exact treatment of boundary means and degenerate boxes.
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-nonsymmetric \
+  --reuse-receipt docs/evidence/phase2-round-4-adjoint/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-nonsymmetric/receipt.json), SHA256
+`ed4fdb58fc9fb646987daa5f99f257ef383facac9db1b0355ae5b52b9a82cac0`, passes for
+239 modules. Six fresh source elaborations are silent; 233 matching prior
+elaborations are reused. Root build, strict declaration-kind inspection and all
+available declaration linters pass. The 1,185 required selectors, 1,286 exact
+signature/declaration queries and 3,228 actual transitive axiom rows (1,019 private)
+contain only subsets of propext, Classical.choice and Quot.sound. All 244 input/
+245 output hashes and three reconstructed diagnostic-driver hashes match; physical,
+checker and flat-root inventories agree. Provenance covers 4,191 source-command
+records through 31 receipts. Checker changes only extend inventories and queries.
+
+The six leaves add 11 public theorems and one definition. Root repaired candidate
+indicator-integral elaboration, a triangle-inequality name, explicit integrability
+arguments and pointwise normalization before the final silent gate. No accepted
+source, linter or resource policy was changed. The source simplifier recommended
+no change and recorded matching final hashes; this advisory is not a second
+independent acceptance review.
+
+The supplemental native driver uses a nonsymmetric four-step curvature with
+values 7/4, 11/4, 5/4 and 9/4 on consecutive quarters. It proves the actual moments
+(2,1), the positive box [1,3], distinct reflected values, same-box smooth recovery,
+and the produced nonzero unit-mass minimum's inequality against that measurable
+comparison. It also verifies exact constant recovery for the degenerate box [2,2].
+The final driver compiles silently. Exact source/command/output hashes appear in
+the [checkpoint record](evidence/phase2-round-4-nonsymmetric/checkpoint.json).
+
+The [preservation record](evidence/phase2-round-4-nonsymmetric/preservation.json)
+confirms all 233 prior native leaves, 175 accepted leaves, 149 Phase-I leaves,
+2,325 historical workflow files, accepted paper, tasks, pins and 4,350 tracked
+prior evidence files remain unchanged. Compiler, platform and ten clean pinned
+dependencies match the previous receipt. No typesetting occurred. All worker
+leases are released; the single configured outer Round 4 review remains pending
+for the combined 64-leaf packet.
+
+Moment constraint qualification, any further weak-probe/normalized-pair closure
+used, required regularity/interface/path laws and all determining, universal-safety,
+smooth-sharpness and endpoint gates remain active. The theorem supplies necessary
+conditions and does not identify C_rot. Phase I is COMPLETE; Phase II is OPEN.
