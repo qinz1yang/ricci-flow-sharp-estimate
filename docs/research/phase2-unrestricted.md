@@ -502,9 +502,8 @@ original or relaxed optimizer.
 The six new canonical leaves contain 58 public theorems, three definitions and
 one extension structure. Their evidence is recorded in the
 [Round 2 native receipt](../evidence/phase2-round-2/receipt.json) and
-[checkpoint record](../evidence/phase2-round-2/checkpoint.json). The configured
-fresh outer review remains pending. The unchanged Round 0 and Round 1 reviews
-remain accepted. Phase-I source, paper and evidence bytes remain preserved.
+[checkpoint record](../evidence/phase2-round-2/checkpoint.json). The single Round 2 outer review passed at `734dd5b`, including both delivered
+checkpoints. The unchanged Round 0 and Round 1 reviews remain accepted. Phase-I source, paper and evidence bytes remain preserved.
 
 Additional native regression checks use `D.a=c` for **arbitrary `c>0`**:
 `ℓ=2c`, `X(v)=(v+1)/2`, physical `K=2` and `V(x)=2x−1`.
@@ -577,43 +576,196 @@ cannot simply be substituted for the normalized scalar problem.
 
 The [continuation native receipt](../evidence/phase2-round-2-continuation/receipt.json)
 reuses the unchanged initial Round 2 native inputs and records fresh checks of
-these two leaves and the affected root. The configured single outer review of
-the coherent Round 2 packet remains pending; no extra acceptance review or
-rebuild of unchanged mathematics is claimed.
+these two leaves and the affected root. The single outer review of the coherent Round 2 packet passed at `734dd5b`;
+unchanged mathematics and its matching native evidence remain accepted.
+
+## Round 3: complete-action coercivity and both-pole mass control
+
+Let `K` be continuous and `r` be C² on the real line. Assume the actual normalized
+moments and a positive physical curvature box `0<κ≤K≤Λ` on `[0,1]`. These hypotheses
+include every original smooth normalized competitor. No derivative of K is
+bounded or used in the following estimate. Write
+
+\[
+ m=\int_0^1fr^2,\qquad U=\int_0^1r^2,\qquad
+ \mathcal E=\int_0^1 f(L_Kr)^2,\qquad
+ \mathcal G=\int_0^1 f^2(r')^2.
+\]
+Here `f=warp K`, its slope is the actual primitive `b=warpSlope K`, and `L_K`
+uses the actual first and second derivatives of r. The energy `𝓔` is distinct
+from the fourth-order Jacobi operator `E_K` used in earlier sections.
+
+The native comparison of second derivatives and the two pole values gives
+
+\[
+ \kappa x(1-x)\leq f(x)\leq\Lambda x(1-x),\qquad
+ |b(x)|\leq2,\qquad 0\leq f(x)\leq2\min(x,1-x). \tag{20}
+\]
+The quadratic comparisons require only the corresponding curvature bound and
+moments. Nonnegative curvature suffices for the slope and two-pole upper bound.
+No symmetry of the geometry or probe is assumed.
+
+The actual weighted operator flux satisfies
+
+\[
+ (f^2r'r)'=frL_Kr+f^2(r')^2+fKr^2.
+\]
+The moments imply `f(0)=f(1)=0`, so both flux values vanish for every C² probe,
+with unrestricted probe endpoint values. Integrating gives
+
+\[
+ \int_0^1frL_Kr=-\mathcal G-\int_0^1fKr^2.
+\]
+Multiplying a square by the nonnegative warp and integrating then proves the
+parameterized interpolation estimate
+
+\[
+ 4t\mathcal G\leq4t^2\mathcal E+m\qquad(t\geq0). \tag{21}
+\]
+This calculation retains the curvature term with its actual nonnegative sign.
+
+For `w=x(1-x)`, a separate generic C¹ Hardy estimate is
+
+\[
+ U\leq12\int_0^1wr^2+4\int_0^1w^2(r')^2.
+\]
+It comes from the exact derivative of `w(1−2x)r²`, whose two boundary values are
+zero, and a scalar square inequality. The numbers are consequences of that flux
+and the absorption, not proposed values of a threshold. Transferring this estimate
+through (20) gives
+
+\[
+ \kappa^2U\leq12\kappa m+4\mathcal G. \tag{22}
+\]
+
+The proof estimates the **original complete density**, not its smooth K′
+factorization. For `q=L_Kr`, the explicit nonnegative-square decomposition implies
+
+\[
+ f q^2-Kbr(fp+br/2)+K^2fr^2
+       \geq f q^2-\Lambda f^2p^2-3\Lambda r^2,
+ \qquad p=r'.
+\]
+Thus `A≥𝓔−Λ𝓖−3ΛU`. Set
+
+\[
+ d=\Lambda(1+12/\kappa^2),\qquad
+ \Gamma(\kappa,\Lambda)=\frac{d^2}{2}
+             +\frac{36\Lambda}{\kappa}+\frac3\kappa+\frac1{\kappa^4}\geq0.
+\]
+Using (21) at `t=1/(2d)` and `t=κ²/4`, together with (22), yields respectively
+
+\[
+ \frac{\mathcal E}{2}\leq
+ A+\left(\frac{d^2}{2}+\frac{36\Lambda}{\kappa}\right)m,
+ \qquad
+ U\leq\mathcal E+\left(\frac{12}{\kappa}+\frac4{\kappa^4}\right)m.
+\]
+The resulting homogeneous complete-action coercivity theorem is
+
+\[
+ \boxed{\ \frac{\mathcal E+U}{4}\leq A_K(r)+\Gamma(\kappa,\Lambda)m(K,r)\ }. \tag{23}
+\]
+The constants are chosen before K and r, depend only on the positive box, and
+require no bounds on curvature derivatives. Negative action is allowed; the mass
+correction in (23) is essential. This estimate supplies no new safe cap.
+
+For `m=1` and `A≤B`, both `𝓔` and U are at most `4(B+Γ)`. The actual sum of the
+weighted masses near the two poles is
+
+\[
+ P_\delta(K,r)=\int_0^\delta fr^2+\int_{1-\delta}^1fr^2.
+\]
+For every `0≤δ≤1`, (20) and integral monotonicity prove
+
+\[
+ 0\leq P_\delta(K,r)\leq4\delta U
+                  \leq16\delta(B+\Gamma). \tag{24}
+\]
+The two intervals may overlap; both contributions remain in the definition.
+For every ε>0, the explicit choice
+
+\[
+ \delta_\varepsilon=
+ \min\!\left(1,\frac{\varepsilon}{16(\max(B,0)+\Gamma)+1}\right)>0
+\]
+works for every admissible K,r and every radius `0≤t≤δ_ε`. This proves a single
+modulus tending to zero for both weighted polar masses, uniformly over any
+varying sequence with these bounds. No geometry or probe is chosen before the
+uniform radius in that theorem.
+
+The original ratio restriction is retained in the cap-class consumers. From
+`∫K=2`, a positive box `[κ,Λ]` and `Λ/κ≤C`, integration of the box gives
+`κ≤2≤Λ`, hence `2/C≤K≤2C`. The latter is an auxiliary common box for the estimate;
+it does not replace the original ratio restriction. The native ratio-class
+coercivity and polar-radius statements keep κ, Λ, their positive lower bound,
+and `Λ/κ≤C` explicitly in their hypotheses. Their constants depend only on C
+(and the action bound for the radius), even when the original boxes vary.
+
+### Round 3 native map and scope
+
+Geometry names in the table have prefix `Geometry.AreaProfile`; all prefixes are
+relative to `RicciFlowSharpEstimate`.
+
+| Result | Canonical declaration or source |
+|---|---|
+| Actual warp, slope and ratio bounds (20) | Six theorems in `Geometry/AreaWarpBounds.lean`, including `warp_bounds_of_curvature_bounds`, `warp_nonneg_le_two_mul_min`, `curvature_bounds_of_ratio` |
+| Generic C¹ Hardy estimate | `Analysis.integral_sq_le_parabolic_weighted_energy` in `Analysis/ParabolicWeightedHardy.lean` |
+| Actual energies and C² operator continuity | `probeOperatorEnergy`, `probeGradientEnergy`, `meridionalOperator_continuous_of_contDiff_two` in `Geometry/AreaProbeEnergy.lean` |
+| Actual flux pairing and interpolation (21) | `integral_warp_mul_probe_operator`, `probeGradientEnergy_interpolation` in the same module |
+| Transfer of Hardy (22) | `integral_sq_le_probeMass_gradient` in the same module |
+| Complete density bound and homogeneous coercivity (23) | `probeOperatorEnergy_sub_le_action`, `actionMassCorrection`, `meridionalAction_coercive`, `exists_uniform_action_coercivity` in `Geometry/AreaActionCoercivity.lean` |
+| Actual two-tail mass | `polarProbeMass`, `polarProbeMass_nonneg`, `polarProbeMass_le_four_mul_radius` in `Geometry/AreaPolarMass.lean` |
+| Unit-mass bounds and uniform radius (24) | `probe_energies_le_of_unit_mass_action_le`, `polarProbeMass_le_of_unit_mass_action_le`, `exists_uniform_polar_mass_radius` in `Geometry/AreaActionCoercivity.lean` |
+| Original ratio-class consumers | `meridionalAction_coercive_of_curvature_ratio`, `exists_uniform_polar_mass_radius_of_ratio` in the same module |
+
+The packet has five new canonical leaves, 24 public theorems and four definitions.
+Its [native receipt](../evidence/phase2-round-3/receipt.json) and
+[checkpoint record](../evidence/phase2-round-3/checkpoint.json) bind the final inputs
+and validation. The configured single Round 3 outer review is pending. Accepted
+Phase-I and Phase-II rounds 0–2 remain preserved. The first-phase TeX/PDF is unchanged.
+
+Exploratory exact rational polynomial integration tested `K=2` with `(1−x)^n`
+and `x^n`, concentrating near the two different poles, before the coercivity
+consumers were promoted. These computations were stress tests, not theorem
+evidence. Additional native consumer checks cover both polynomial families for
+**every natural n**, and a varying sequence of curvatures, probes and original
+ratio boxes with unit mass, a common action bound and one shared radius. The actual proof of (23) is uniform over all
+stated competitors and does not rely on those examples.
 
 ## Exact frontier and next target
 
-Phase I remains COMPLETE and Phase II remains OPEN. Round 2 closes T6's smooth
-original-competitor reduction, subject to its pending outer review. No value,
-selected branch, critical optimizer, universal new lower bound, exhaustive joint
-smooth recovery or unrestricted endpoint statement has been established.
+Phase I remains COMPLETE and Phase II remains OPEN. The Round 2 exhaustive
+smooth normalization and original-form variation packet passed its single outer
+review at `734dd5b`. Round 3 supplies the complete-action coercivity and both-pole
+weighted-mass gate in the stated continuous-curvature/C²-probe scope. Its outer
+review remains pending. No determining value, selected threshold branch, joint
+critical optimizer, universal new safe cap, exhaustive recovery or unrestricted
+endpoint theorem has been established.
 
-The next executable research target is **T7's polar compactness gate**, together
-with T5's remaining original critical-object application. Specify the actual
-relaxed competitor space and topology used by the proposed threshold route.
-First prove or refute the estimate needed to prevent loss of unit weighted mass
-at **both** poles for varying geometry and probes with controlled complete
-action. Then justify nonzero limits, the full limiting action and recovery with
-both exact moments, curvature box/ratio and every derivative-sensitive term.
-The current fixed-probe continuity and symmetric monotone recovery do not meet
-these gates. A failed estimate must be recorded as a precise route obstruction,
-not hidden as a final theorem hypothesis.
+T7 remains active. The next target is the stronger polar control and actual weak
+domain needed for subsequential compactness and the **complete** limiting action.
+A global U bound and weighted mass tightness do not by themselves prove uniform
+integrability of the unweighted term `−K b²r²/2` or convergence of the mixed term.
+Prove the required unweighted/mixed tail estimates, then specify the domain with
+actual weak derivatives, prove subsequences and local convergence, retain both
+moments and the original ratio constraint, and prove weighted mass remains one.
+A totalized derivative of an arbitrary nonsmooth function is not a weak operator.
+For nonsmooth curvature, keep the original density until any weak/interface
+factorization has been proved.
 
-The fixed-geometry original-form application above advances T5's use of probe
-conditions. The joint geometry/probe conditions still require an application
-from the actual original joint minimum or critical notion selected by the route.
-T6 supplies exhaustive smooth competitors; it does not construct a critical pair, a topological
-minimum, continuous families of realizers or moment multipliers. The quotient's
-eigenvalue is its actual action-to-mass ratio; a zero-mode specialization still
-requires zero action. No symmetry, contact count or optimizer-specific sign is
-inferred. A nonsmooth route must retain the original action or prove the weak
-interface identity; it cannot discard curvature-jump contributions from the
-smooth K′ factorization.
+Full-action lower semicontinuity and exhaustive smooth recovery still require
+proof, including exact moments, positivity, box/ratio and derivative-sensitive
+action convergence. Existing fixed-probe continuity and symmetric monotone
+recovery do not close these gates. Any proposed limiting class must be tested
+rather than defined with the desired compactness or positivity as a premise.
 
-T8–T10 must identify the constant through a genuinely determining characterization
-with every selection/structural property it uses, prove comparison over **all**
-original competitors, construct smooth negative witnesses below **every** larger
-cap, and settle the exact endpoint safety and attainment scope. The safety-transfer
-theorems above do not discharge their universal scalar premise. Completing these
-reductions cannot replace the required global mathematics, native evidence,
-single independent review and traceable private delivery.
+T5 still requires the actual joint geometry/probe minimum or critical object and
+its precise feasible-variation application, with the normalized geometry scale
+or the equivalent ℓ² correction. Current necessary conditions produce no such
+object, moment multipliers, symmetry, finite switch count or zero eigenvalue.
+T8–T10 still require a genuinely determining characterization and justified
+selection, universal complete-action safety over every original competitor,
+negative original smooth witnesses below every strictly larger cap, and the
+exact unrestricted endpoint safety/attainment scope. Final T11 depends on all
+of that mathematics and its native, independent and private-delivery gates.

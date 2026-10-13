@@ -1,0 +1,4 @@
+✔ [9814/9817] Built RicciFlowSharpEstimate.Geometry.AreaProbeEnergy (23s)
+✔ [9815/9817] Built RicciFlowSharpEstimate.Geometry.AreaActionCoercivity (9.8s)
+✔ [9816/9817] Built RicciFlowSharpEstimate (14s)
+Build completed successfully (9817 jobs).

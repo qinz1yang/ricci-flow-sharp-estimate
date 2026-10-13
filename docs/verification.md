@@ -498,3 +498,57 @@ verifies all 164 previous native sources, including the 158 previously accepted
 modules, the Phase-I paper, historical task/workflow and pins. Prior native
 receipts are unchanged. The same single configured Round 2 outer review remains
 pending for the combined packet. Phase I is COMPLETE and Phase II remains OPEN.
+
+
+## Phase II, Round 3: complete-action coercivity and both-pole mass control
+
+Round 2's normalization and original-form variation packet passed its single
+outer review at `734dd5b`. Round 3 proves uniform complete-action coercivity with
+an explicit curvature-box-dependent mass correction, the resulting bounds on
+the actual operator energy and ordinary square integral, and one uniform radius
+for the sum of the weighted masses near both poles. The original curvature-ratio
+restriction remains present in the cap-class consumers. Curvature continuity
+and C² probe regularity suffice; no curvature derivative bound or artificial
+probe endpoint condition is imposed. This is the T7 estimate checkpoint, not a
+weak-domain, full limiting-action, recovery or sharp-constant theorem.
+
+The [final native receipt](evidence/phase2-round-3/receipt.json), SHA256
+`3d013f1ad272b777d2bec161df9ac64220ed4f9b8ee6172ec3d0c1880f1c3003`, passes for
+171 modules. All five new canonical modules have fresh silent elaborations;
+166 unchanged accepted elaborations are reused. Root build, unsuppressed
+declaration linters and native declaration-kind inspection pass. There are
+953 selectors, 1,052 signature/declaration queries and 2,740 actual transitive
+axiom rows, including 825 private declarations. Only subsets of `propext`,
+`Classical.choice` and `Quot.sound` occur. All 176 native inputs, 177 outputs,
+three diagnostic-driver hashes and the new public signatures were rechecked.
+
+The five leaves are `Analysis/ParabolicWeightedHardy`, `Geometry/AreaWarpBounds`,
+`Geometry/AreaProbeEnergy`, `Geometry/AreaPolarMass`, and
+`Geometry/AreaActionCoercivity`. They contribute 24 public theorems and four
+actual functional/coefficient definitions. The checker changes only extend its
+existing inventories; the validation policy and dependency pins are unchanged.
+
+An initial root build found that the new finite-regularity operator-continuity
+lemma shared a fully qualified name with an accepted smooth theorem. The repair
+renamed only the new C² lemma to `meridionalOperator_continuous_of_contDiff_two`
+and updated its new consumers/queries. Accepted source was preserved. A bounded
+name search over all owned Lean sources found no remaining collision, and the
+final root/source/linter/signature/axiom gate above passes. No diagnostic was
+suppressed. The source simplifier found no required mathematical rewrite before
+that integration rename; the rename changed no statement or proof logic.
+
+Native consumer checks cover both pole-concentrating polynomial families for
+every natural exponent and an entire varying sequence of curvatures, probes and
+original ratio boxes with unit mass and a common action bound sharing one radius. The driver was replayed after the final
+rename and compiles silently. Its command/source/output hashes are in the
+[checkpoint record](evidence/phase2-round-3/checkpoint.json). Earlier exact rational
+polynomial computations were exploratory stress tests, not theorem evidence.
+
+The [preservation record](evidence/phase2-round-3/preservation.json) verifies all
+166 accepted prior modules, all 149 Phase-I modules, all 2,325 historical workflow
+files, the accepted paper, historical task and fixed pins. No paper was edited
+or typeset. The single configured Round 3 outer review remains pending; prior
+accepted reviews and evidence remain valid. Phase I is COMPLETE and Phase II is
+OPEN, with the exact remaining weak-domain, polar limiting-action, recovery,
+joint critical-object, determining/global and endpoint obligations recorded in
+the [research notes](research/phase2-unrestricted.md).

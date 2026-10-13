@@ -1,0 +1,20 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN",
+  "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+  "round2_accepted_revision": "734dd5b844a4888c7d3f7cf8b6c23d1d750f84a7",
+  "unchanged_accepted_modules": 166,
+  "unchanged_phase1_modules": 149,
+  "unchanged_phase1_workflow_files": 2325,
+  "paper_sha256": {
+    "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+    "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+  },
+  "historical_task_unchanged": true,
+  "pins_sha256": {
+    "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+  },
+  "accepted_native_receipt_sha256": "4507a32fc5dc8028591cfc9cb954da2fcf2087c019c6e9b4bdf3a3f8b437922c"
+}

@@ -181,6 +181,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.NormalizedAreaHaar",
     "RicciFlowSharpEstimate.Geometry.NormalizedAreaVariation",
     "RicciFlowSharpEstimate.Geometry.NormalizedAreaRayleigh",
+    "RicciFlowSharpEstimate.Analysis.ParabolicWeightedHardy",
+    "RicciFlowSharpEstimate.Geometry.AreaWarpBounds",
+    "RicciFlowSharpEstimate.Geometry.AreaProbeEnergy",
+    "RicciFlowSharpEstimate.Geometry.AreaPolarMass",
+    "RicciFlowSharpEstimate.Geometry.AreaActionCoercivity",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1128,7 +1133,35 @@ SELECTOR = r"""
       poleData ++ `AreaNormalization.oneFormDissipation_pullback_meridional_hasDerivAt,
       poleData ++ `AreaNormalization.oneFormDissipation_div_normSq_eq,
       poleData ++ `AreaNormalization.oneFormDissipation_div_normSq_hasDerivAt,
-      poleData ++ `AreaNormalization.oneFormDissipation_div_normSq_euler_eq_of_isLocalMin
+      poleData ++ `AreaNormalization.oneFormDissipation_div_normSq_euler_eq_of_isLocalMin,
+      analysis ++ `integral_sq_le_parabolic_weighted_energy,
+      area ++ `quadratic_le_warp_of_curvature_lower,
+      area ++ `warp_le_quadratic_of_curvature_upper,
+      area ++ `warp_bounds_of_curvature_bounds,
+      area ++ `abs_warpSlope_le_two,
+      area ++ `warp_nonneg_le_two_mul_min,
+      area ++ `curvature_bounds_of_ratio,
+      area ++ `probeOperatorEnergy,
+      area ++ `probeGradientEnergy,
+      area ++ `meridionalOperator_continuous_of_contDiff_two,
+      area ++ `integral_warp_mul_probe_operator,
+      area ++ `probeGradientEnergy_nonneg,
+      area ++ `probeOperatorEnergy_nonneg,
+      area ++ `probeGradientEnergy_interpolation,
+      area ++ `integral_sq_le_probeMass_gradient,
+      area ++ `polarProbeMass,
+      area ++ `polarProbeMass_nonneg,
+      area ++ `polarProbeMass_le_four_mul_radius,
+      area ++ `probeOperatorEnergy_sub_le_action,
+      area ++ `actionMassCorrection,
+      area ++ `actionMassCorrection_nonneg,
+      area ++ `meridionalAction_coercive,
+      area ++ `exists_uniform_action_coercivity,
+      area ++ `probe_energies_le_of_unit_mass_action_le,
+      area ++ `polarProbeMass_le_of_unit_mass_action_le,
+      area ++ `exists_uniform_polar_mass_radius,
+      area ++ `meridionalAction_coercive_of_curvature_ratio,
+      area ++ `exists_uniform_polar_mass_radius_of_ratio
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3002,6 +3035,62 @@ open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalizatio
 #check oneFormDissipation_div_normSq_hasDerivAt
 open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
 #check oneFormDissipation_div_normSq_euler_eq_of_isLocalMin
+open RicciFlowSharpEstimate.Analysis in
+#check integral_sq_le_parabolic_weighted_energy
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check quadratic_le_warp_of_curvature_lower
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_le_quadratic_of_curvature_upper
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_bounds_of_curvature_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check abs_warpSlope_le_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_nonneg_le_two_mul_min
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvature_bounds_of_ratio
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeOperatorEnergy
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeGradientEnergy
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalOperator_continuous_of_contDiff_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integral_warp_mul_probe_operator
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeGradientEnergy_nonneg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeOperatorEnergy_nonneg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeGradientEnergy_interpolation
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integral_sq_le_probeMass_gradient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check polarProbeMass
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check polarProbeMass_nonneg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check polarProbeMass_le_four_mul_radius
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeOperatorEnergy_sub_le_action
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check actionMassCorrection
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check actionMassCorrection_nonneg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_coercive
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_action_coercivity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probe_energies_le_of_unit_mass_action_le
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check polarProbeMass_le_of_unit_mass_action_le
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_polar_mass_radius
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_coercive_of_curvature_ratio
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_polar_mass_radius_of_ratio
 """
 
 

@@ -1,0 +1,51 @@
+{
+  "phase2_status": "OPEN; complete-action coercivity and both-pole weighted-mass checkpoint only",
+  "parent_accepted_revision": "734dd5b844a4888c7d3f7cf8b6c23d1d750f84a7",
+  "native_receipt_sha256": "3d013f1ad272b777d2bec161df9ac64220ed4f9b8ee6172ec3d0c1880f1c3003",
+  "native_inputs_verified": 176,
+  "native_outputs_verified": 177,
+  "native_counts": {
+    "modules": 171,
+    "inputs": 176,
+    "outputs": 177,
+    "selectors": 953,
+    "signature_queries": 1052,
+    "axiom_rows": 2740,
+    "private_axiom_rows": 825,
+    "fresh_source_elaborations": 5,
+    "reused_source_elaborations": 166
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "ccbcd7431ec8683f6428b89685c36adaf68c7857ac51ab111e5e9448a19b712d",
+    "docs/theorem-map.md": "c6439d15748ea854000aff9a1d44d97773b94795437ac0b0c3f78826cfebd796",
+    "docs/research/phase2-unrestricted.md": "77ad991dec966bae67d3dce626d0a2123b0641e9b116f41b0d815909ac4af478",
+    "docs/verification.md": "7203f181aa4d77aef0d69ebf9778fd526630874e9dcc0c49ed4b9ba1984e45e6"
+  },
+  "independent_review": "Pending single configured Round 3 outer review. Accepted Phase-I and Phase-II rounds 0-2 retained.",
+  "source_simplifier": "Five-module advisory found no required mathematical rewrite. Root subsequently resolved a root import collision by naming the new weaker-regularity lemma meridionalOperator_continuous_of_contDiff_two and updating new consumers/queries, without statement or proof-logic changes. Optional extraction of a lower-curvature-only intermediate estimate was not applied.",
+  "additional_native_probes": {
+    "scope": "Round K=2 coercivity for arbitrary C2 r, both (1-x)^n and x^n for every natural n, and one shared polar radius for a varying unit-mass sequence with common complete-action and original curvature-ratio bounds. Replayed after final source rename.",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "/tmp/hmz-fence-4lzhkuwo/math-target-round3-energy-bebylkki/Round3Checks.lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "driver_sha256": "21718e5c2acf15882fcc875d930322ebf47dbfbf5c24b3a2283a43417f161efc",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "semantic_options": [
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "exit_code": 0
+  },
+  "exploratory_tests": "Exact rational integration of left/right pole-concentrating polynomials was used only to stress-test the route before its consumers; it is not native theorem evidence."
+}

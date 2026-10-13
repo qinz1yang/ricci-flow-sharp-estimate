@@ -9,16 +9,14 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
-Round 1's curvature and normalized directional-calculus packet passed its outer
-review at `38bdb31`. Round 2 adds exhaustive smooth normalization from arbitrary
-original profiles and probes, including actual jets, complete action, physical
-nonzero mass and the fixed-representation Haar/safety transfer. Its continuation
-also gives direct original-form derivatives, physical Rayleigh scaling and the
-fixed-geometry eigen-equation from actual original directional minima. Native
-evidence is recorded separately; the single fresh Round 2 outer review is pending.
-Polar compactness, critical-object applications, global comparison, determining
-selection, sharp recovery and endpoint scope remain open. No unrestricted sharp
-value is identified.
+Round 2's exhaustive original-data normalization and variation packet passed its
+single outer review at `734dd5b`. Round 3 adds complete-action coercivity with a
+curvature-box-dependent mass correction, uniform normalized energy bounds and
+both-pole weighted-mass tightness, retaining the original ratio restriction.
+Its native evidence is recorded separately; its single outer review is pending.
+The actual weak domain, full-action limits/recovery, joint critical-object
+applications, determining selection, global safety and endpoint scope remain
+open. No unrestricted sharp value is identified.
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
 It contains the variational solution, explicit L² stability, hemisphere symmetry,

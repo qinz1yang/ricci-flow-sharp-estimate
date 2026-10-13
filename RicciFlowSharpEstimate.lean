@@ -165,3 +165,8 @@ import RicciFlowSharpEstimate.Geometry.NormalizedAreaMass
 import RicciFlowSharpEstimate.Geometry.NormalizedAreaHaar
 import RicciFlowSharpEstimate.Geometry.NormalizedAreaVariation
 import RicciFlowSharpEstimate.Geometry.NormalizedAreaRayleigh
+import RicciFlowSharpEstimate.Analysis.ParabolicWeightedHardy
+import RicciFlowSharpEstimate.Geometry.AreaWarpBounds
+import RicciFlowSharpEstimate.Geometry.AreaProbeEnergy
+import RicciFlowSharpEstimate.Geometry.AreaPolarMass
+import RicciFlowSharpEstimate.Geometry.AreaActionCoercivity
