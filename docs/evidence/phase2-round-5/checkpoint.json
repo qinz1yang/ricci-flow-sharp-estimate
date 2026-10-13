@@ -1,0 +1,92 @@
+{
+  "phase2_status": "OPEN; same-minimum recovery API repair and complete-action Picone comparison checkpoint",
+  "parent_reviewed_revision": "a65205d9a83dfebe62074158ca96ce3f365b5397",
+  "native_receipt_sha256": "dbf0506b5711d5c8cb9d8d0a36bf3bb53349873ea3be678d5378f4299c09cd27",
+  "native_counts": {
+    "modules": 251,
+    "inputs": 256,
+    "outputs": 257,
+    "selectors": 1209,
+    "signature_queries": 1310,
+    "axiom_rows": 3322,
+    "private_axiom_rows": 1076,
+    "fresh_source_elaborations": 39,
+    "reused_source_elaborations": 212
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 27,
+    "verified_source_provenance_records": 3301
+  },
+  "new_public_declarations": {
+    "theorems": 8,
+    "definitions": 0,
+    "modules": 5
+  },
+  "strengthened_recovery_declarations": [
+    "IsRecoverableAreaCompetitor.exists_action_recovery",
+    "exists_area_minimizer_with_geometric_recovery"
+  ],
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "f7cf39779006dff68121aaaa0f08ca151e761a70e2f75026b2a3205f284487f8",
+    "docs/theorem-map.md": "48bebae2d281f169204802c5e2285b81eaba7377b96fe0acd30b582274a84d06",
+    "docs/research/phase2-unrestricted.md": "22d14db7d5b437297523dd5590abb3406efeeea79ee7bcfa7958fda948005303",
+    "docs/verification.md": "4d5e674dc13453c1cb576e731d2f6ec5602b60b2cbd3996c5fe6f10e7614af07"
+  },
+  "independent_review": "Pending single configured Round 5 outer review of new/changed mathematics and the affected recovery API closure. Unchanged Round 4 acceptance reused; no second acceptance review.",
+  "source_simplifier": {
+    "scope": "Seven changed/new leaves; no change recommended. Source-only advisory, not acceptance review.",
+    "advisory_sha256": "91308aa106dfd58811ec1d0733e75dff53502f208fe22adcc6b931ca71f208ac",
+    "final_source_hashes_match_advisory": true
+  },
+  "additional_native_probes": [
+    {
+      "name": "SameMinimumRecovery",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round5-root-sekuwh0x/SameMinimumRecovery.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "dfe5d408d44fb5dd69e2ff6f59ca05ac3502f4cd3cc92047ae61544ae5e5a849",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_scope": "silent"
+    },
+    {
+      "name": "RoundNodalDiagnostics",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round5-root-sekuwh0x/RoundNodalDiagnostics.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "58b997b92a32cd65e86c3b62b7f37052300e5e2c8694c9cabb2ec3176376c298",
+      "output_sha256": "0fe647945c2dd0cba9f69a1e271fc0ab3e223458ceac602410fcde914daf4464",
+      "output_scope": "requested exact signatures and two actual axiom closures"
+    }
+  ],
+  "native_reuse_scope": "Genuine unchanged 212-module Round4-recovery prefix. All 39 post-prefix leaves freshly elaborated; checker policy unchanged.",
+  "mathematical_scope": "Preserve four strong graph limits for the exact action-recovery subsequence and normalized tail used by original metric/form equations. Actual weak multiplication and weighted graph continuity justify normalized recoverable product paths and multiplicative stationarity. Complete Picone identity at the actual weak minimum has explicit integrable signed remainder. Smooth positive Jacobi reference with nonpositive meridional operator supplies a same-geometry all-smooth-probe inequality without assuming the universal inequality.",
+  "route_tests": [
+    "Nodal round r=x-1/2 has Jr=100r and rLr<=0, but s=1 has action4/3,mass1/3 and refutes the all-probe lambda100 bound. This is not a minimizing/zero-mode claim.",
+    "Positive round r=1+x has Lr=2-10x>0 at1/10 and is not any scalar Jacobi eigenfunction. Positivity alone does not supply the operator sign.",
+    "Round positive constant r=1 at K=2 gives the genuine all-probe certificate with lambda4."
+  ],
+  "remaining_required_mathematics": [
+    "Establish or refute sign/nonvanishing and coupled regularity actually needed to apply comparison to the joint problem; prove further domain/interface/path bridges if used.",
+    "Derive a genuinely determining characterization and justified selection; prove universal complete scalar safety and all-original-form Haar transfer.",
+    "Produce original smooth negative witnesses below every strictly larger cap and precise unrestricted endpoint/attainment scope.",
+    "Complete final native/independent-review/research/manuscript and private delivery gates."
+  ]
+}

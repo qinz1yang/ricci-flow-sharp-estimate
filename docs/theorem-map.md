@@ -15,7 +15,8 @@ strong recovery of smooth-sequence limits, and a physically nonzero normalized
 joint minimum in the recoverable class. Its complete probe equation and integrable
 mass-corrected curvature adjoint now include every bounded measurable admissible
 comparison, using nonsymmetric exact-moment recovery in the original box. The
-single outer Round 4 review is pending. Genuine moment multipliers and a.e. box
+single outer Round 4 review at `a65205d` verified the chain, with a localized
+same-object recovery API repair subsequently implemented in Round 5. Genuine moment multipliers and a.e. box
 complementarity are now derived. The actual weak probe equation also produces
 absolutely continuous Euler fluxes with natural pole laws and a continuous interior
 operator representative. Further coupled regularity/closure/path laws and all
@@ -531,3 +532,22 @@ This regularity and natural-domain result does not determine the threshold or
 supply a structural family/global certificate. Further coupled regularity, all
 weak-domain and original path bridges used, and determining/global/sharpness/
 endpoint gates remain active. The same outer Round 4 review remains pending.
+
+## Phase II Round 5: same-minimum recovery and complete Picone comparison
+
+| Result | Canonical source |
+|---|---|
+| Four strong limits for the exact selected action-recovery sequence | `Geometry/RecoverableAreaCompetitor.lean` |
+| Same four limits for the literally normalized tail used by original metrics/forms | `Geometry/AreaMinimumGeometry.lean` |
+| Genuine weak product jets and strong weighted graph multiplication | `Analysis/ParabolicGraphMultiplication.lean` |
+| Positive-mass normalized product probes remain recoverable | `Geometry/RecoverableProbeMultiplication.lean` |
+| Actual minimum stationarity in multiplicative weak directions | `Geometry/RecoverableMultiplicativeStationarity.lean` |
+| Complete pointwise/integrated Picone identity and conditional all-probe smooth comparison | `Geometry/AreaGroundStateComparison.lean` |
+| Integrable signed Picone identity at the same actual weak minimum | `Geometry/WeakGroundStateComparison.lean` |
+
+The five new leaves add eight public theorems, no definitions. The two existing
+recovery conclusions are strengthened without changing the minimum, topology,
+outer integrability facts or geometric producer equations. Native evidence is in
+[evidence/phase2-round-5](evidence/phase2-round-5/receipt.json); the single configured
+Round 5 outer review remains pending. The conditional comparison neither supplies
+its reference uniformly over curvature nor identifies the unrestricted threshold.

@@ -19,9 +19,12 @@ namespace RicciFlowSharpEstimate.Geometry.AreaProfile
 open Set MeasureTheory Filter Topology DifferentialGeometry.Geometry.Curvature
 open scoped ContDiff ENNReal
 
+local notation "areaμ" => volume.restrict (Ioo (0 : ℝ) 1)
+
 /-- Every cap at least one has a recoverable weak minimum and actual original
-smooth nonzero metric/form realizations approaching its action. All geometric
-producer equations remain tied to the recovered smooth curvature and probe. -/
+smooth nonzero metric/form realizations recovering that particular weak minimum.
+The exact normalized tail in the geometric equations converges in all four
+strong curvature/probe/weighted-derivative coordinates, as well as in action. -/
 theorem exists_area_minimizer_with_geometric_recovery (C : ℝ) (hC : 1 ≤ C) :
     ∃ K0 r0 p0 z0 : ℝ → ℝ,
       IsRecoverableAreaCompetitor C K0 r0 p0 z0 ∧
@@ -39,6 +42,17 @@ theorem exists_area_minimizer_with_geometric_recovery (C : ℝ) (hC : 1 ≤ C) :
       (hR : ∀ n, ContDiff ℝ ∞ (R n)),
       (∀ n, α n = 1 / Real.sqrt (probeMass (Ks (n + N)) (rs (n + N)))) ∧
       (∀ n, 0 < α n) ∧ Tendsto α atTop (𝓝 1) ∧
+      Tendsto (fun n => eLpNorm (Ks (n + N) - K0) 2 areaμ) atTop (𝓝 0) ∧
+      Tendsto (fun n => eLpNorm ((fun x => α n * rs (n + N) x) - r0) 2 areaμ)
+        atTop (𝓝 0) ∧
+      Tendsto (fun n => eLpNorm
+        ((fun x => Real.sqrt (x * (1 - x)) * deriv (fun y => α n * rs (n + N) y) x) -
+          (fun x => Real.sqrt (x * (1 - x)) * p0 x)) 2 areaμ) atTop (𝓝 0) ∧
+      Tendsto (fun n => eLpNorm
+        ((fun x => x * (1 - x) * Real.sqrt (x * (1 - x)) *
+          deriv (deriv (fun y => α n * rs (n + N) y)) x) -
+          (fun x => x * (1 - x) * Real.sqrt (x * (1 - x)) * z0 x)) 2 areaμ)
+        atTop (𝓝 0) ∧
       (∀ n, ContDiff ℝ ∞ (fun x => α n * rs (n + N) x)) ∧
       (∀ n, probeMass (Ks (n + N)) (fun x => α n * rs (n + N) x) = 1) ∧
       (∀ n, ∃ x ∈ Ioo (0 : ℝ) 1, α n * rs (n + N) x ≠ 0) ∧
@@ -88,17 +102,28 @@ theorem exists_area_minimizer_with_geometric_recovery (C : ℝ) (hC : 1 ≤ C) :
   classical
   obtain ⟨K0, r0, p0, z0, hRecoverable, hr0c, hp0c, hnz, hEq, hMin⟩ :=
     exists_recoverable_area_minimizer C hC
-  obtain ⟨_, _, Ks, rs, hS, hAction⟩ := hRecoverable.exists_action_recovery hC
+  obtain ⟨_, _, Ks, rs, hS, hKS, hRS, hPS, hZS, hAction⟩ :=
+    hRecoverable.exists_action_recovery hC
   choose κs Λs hκs hboxs hratios using fun n => (hS n).2.2.1
   have hAction' : Tendsto (fun n => meridionalAction (Ks n) (rs n)) atTop
       (𝓝 (smoothAreaInfimum C)) := by simpa only [hEq] using hAction
   have hm : ∀ n, probeMass (Ks n) (rs n) = 1 := fun n => (hS n).2.2.2.2.2
   refine ⟨K0, r0, p0, z0, hRecoverable, hr0c, hp0c, hnz, hEq, hMin,
     Ks, rs, κs, Λs, hS, hAction', ?_⟩
-  exact exists_smooth_geometric_recovery_of_scalar_limits Ks rs κs Λs C
+  obtain ⟨N, α, X, D, R, hR, hαeq, hαpos, hαlim, hRest⟩ :=
+    exists_smooth_geometric_recovery_of_scalar_limits Ks rs κs Λs C
     (smoothAreaInfimum C) (fun n => (hS n).1) (fun n => (hS n).2.1) hκs hboxs hratios
     (fun n => (hS n).2.2.2.1) (fun n => (hS n).2.2.2.2.1)
     (by simpa only [hm] using
       (tendsto_const_nhds : Tendsto (fun _ : ℕ => (1 : ℝ)) atTop (𝓝 1))) hAction'
+  have hScaled := Analysis.parabolicGraph_tendsto_const_mul
+    (fun n => (hS (n + N)).2.1.of_le (by simp)) hRecoverable.2.1 hαlim
+    (hRS.comp (tendsto_add_atTop_nat N)) (hPS.comp (tendsto_add_atTop_nat N))
+    (hZS.comp (tendsto_add_atTop_nat N))
+  refine ⟨N, α, X, D, R, hR, hαeq, hαpos, hαlim,
+    hKS.comp (tendsto_add_atTop_nat N), ?_, ?_, ?_, hRest⟩
+  · simpa only [one_mul] using hScaled.1
+  · simpa only [one_mul] using hScaled.2.1
+  · simpa only [one_mul] using hScaled.2.2
 
 end RicciFlowSharpEstimate.Geometry.AreaProfile

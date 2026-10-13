@@ -1367,7 +1367,7 @@ parameter.
 | Smooth competitor, finite infimum and actual minimizing sequence | `Geometry/SmoothAreaInfimum.lean` |
 | Recoverable weak class, smooth embedding and proved action recovery | `Geometry/RecoverableAreaCompetitor.lean` |
 | Actual physically nonzero weak minimum equal to the smooth infimum | `Geometry/AreaJointMinimum.lean` |
-| Full original geometric recovery of that minimum | `Geometry/AreaMinimumGeometry.lean` |
+| Original geometric recovery; four exact limit ties strengthened in Round 5 | `Geometry/AreaMinimumGeometry.lean` |
 | Original-form quotient comparison with exact physical scale | `Geometry/NormalizedAreaInfimum.lean` |
 
 The six leaves add 21 public theorems and four definitions. Native evidence is in
@@ -1949,3 +1949,114 @@ below every strictly larger cap, and precise unrestricted endpoint safety and
 attainment scope. Necessary conditions and flux regularity do not identify C_rot.
 Final native, independent-review, research/manuscript and delivery gates remain
 mandatory; no required original-plan task is deferred.
+
+## Round 5: same-minimum recovery and a complete-action comparison
+
+The single Round 4 outer review at `a65205d` verified the 71-leaf direct-method
+and necessary-condition development. Its M1 finding concerned two convenience
+recovery conclusions: action convergence alone did not identify recovery of the
+particular displayed minimum. Earlier joint recovery and minimum existence were
+sound. The creation-time pending-review statements above are historical.
+
+`IsRecoverableAreaCompetitor.exists_action_recovery` now returns all four strong
+L² limits for its exact returned subsequence: curvature, probe, `sqrt(w)` times
+its actual first derivative, and `w sqrt(w)` times its actual second derivative.
+The outer action/mass integrability conjunctions remain in place.
+`exists_area_minimizer_with_geometric_recovery` carries them to the exact shifted,
+literally normalized tail appearing in its metric/form equations. There is no
+second unrelated sequence. The public-consumer native driver extracts these four
+limits, the same original form and both jets, actual curvature and dissipation,
+and applies the new weak identity to the same displayed minimum. In particular,
+negating the recovering sequence can no longer preserve convergence to a fixed
+nonzero displayed probe merely because its quadratic action is unchanged.
+
+Write `f=warp K`, `b=warpSlope K`, `w=x(1-x)`, and `q=fz+2bp-Kr` for the tied
+weak derivatives `p=Dr`, `z=Dp`. For every globally smooth multiplier u the
+complete algebraic identity is
+
+\[
+ A_K[ru]-B_K(r,ru^2)
+ =\int_0^1 f\,[fru''+2(fp+br)u']^2
+       -2f^2rq\,(u')^2.
+\]
+
+Here A is the literal complete action and B its full polarization. The mixed
+`-Kbfrp` and potential `(K²f-Kb²/2)r²` contributions cancel in this difference;
+they have not been dropped from either original expression. The pointwise
+algebra theorem is explicitly about supplied jets; analytic consumers tie every
+jet to the same actual or weak probe derivative.
+
+Smooth multiplication preserves the genuine weak derivative graph:
+
+\[
+ D(ru)=pu+ru',\qquad D^2(ru)=zu+2pu'+ru''.
+\]
+
+The weak product rule uses compactly supported smooth test products. Its three
+weighted graph coordinates are finite sums of bounded continuous coefficients
+multiplying the original coordinates. The same formulas prove strong graph
+continuity for actual smooth recovery probes. Applying the multiplier to a
+single recovery sequence, then normalizing a positive-mass tail, proves
+recoverable-class membership with exact moments, ratio and unit mass. No endpoint
+trace is imposed on r or p, and no maximal-domain density is assumed.
+
+At the actual recoverable minimum, normalized paths with multiplier `1+t u`
+give genuine multiplicative stationarity. Using the square multiplier yields
+
+\[
+ A_K[ru]-\lambda\int_0^1 f(ru)^2
+ =\int_0^1 f\,[fru''+2(fp+br)u']^2-2f^2rq\,(u')^2,
+ \qquad \lambda=A_K[r]=\mathrm{smoothAreaInfimum}(C).
+\]
+
+The public weak theorem also returns integrability of the signed remainder,
+proved from the integrable complete action and pairing densities. No sign of
+r or q, classical smoothness of the weak minimum, or zero value of λ is inferred.
+
+For smooth admissible K, a globally smooth reference r that is positive on
+**[0,1]**, satisfies the actual Jacobi equation `J_K r=λr` there, and has
+`L_K r≤0` there, gives
+
+\[
+ \lambda\int_0^1 f s^2\le A_K[s]
+ \quad\text{for every globally smooth }s.
+\]
+
+The proof extends the smooth quotient s/r from the closed physical interval,
+retains its actual first and second derivatives, and uses the complete Green
+identity with vanishing geometric pole flux. Positivity is required only on
+that interval. The certificate has no universal-inequality premise. The round
+reference K=2,r=1 supplies a nonvacuous application with λ=4.
+
+Two exact native tests delimit the proposed route. For K=2 and r=x−1/2,
+`Lr=−10r`, `Jr=100r`, and `r Lr≤0`, but the interior node prevents smooth quotient
+coverage. The test s=1 has mass 1/3 and complete action 4/3, contradicting an
+all-probe bound with λ=100. This is a higher eigenfunction, not a minimum or zero
+mode. Separately, r=1+x is positive on [0,1] but `Lr=2−10x` is positive at x=1/10.
+It is nonstationary: `Jr=−44+100x` is not any scalar multiple of r on the interval.
+This second example rules out deriving the operator sign from positivity alone;
+it makes no claim about the sign of an actual minimizing eigenfunction.
+
+The five new leaves add eight public theorems and no definitions. The 244
+unchanged leaves of the reviewed 246-leaf parent, all 175 Round 3 leaves and all
+149 Phase-I leaves are preserved; only the two identified recovery APIs change.
+Source, signature, linter and actual axiom evidence is recorded in
+`docs/evidence/phase2-round-5/`. The single configured Round 5 outer review is
+pending. The accepted Phase-I manuscript is untouched.
+
+## Current frontier after the comparison test
+
+Phase I is COMPLETE; Phase II remains OPEN. The conditional fixed-geometry
+comparison and actual-minimum identity do not give a reference of the required
+sign/regularity, cover all curvature geometries at a cap, or select a threshold.
+The exact nodal test forbids replacing these obligations by an arbitrary
+stationary branch. Next prove or refute the nonvanishing/operator-sign and coupled
+regularity properties actually needed for a uniform determining argument. Any
+alternative route must retain global sufficiency and justified selection.
+
+T8–T10 still require a genuinely determining characterization, universal scalar
+safety and its all-original-form Haar transfer, smooth original negative witnesses
+with ratio below every strictly larger cap, and exact unrestricted endpoint
+safety/attainment. Further domain/interface/geometric-path bridges must be proved
+when used. Final research/manuscript, native and independent-review gates remain
+mandatory. No original-plan obligation is deferred or declared complete.

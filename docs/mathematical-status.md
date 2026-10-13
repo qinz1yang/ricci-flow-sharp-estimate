@@ -40,7 +40,15 @@ full mass-corrected adjoint. Strict original ratio boxes are derived above cap o
 cap one is treated by exact a.e. roundness. The full weak probe equation now
 produces actual absolutely continuous Euler fluxes with natural zero pole traces
 and a continuous interior representative of the weak operator. No endpoint condition
-is imposed on the probe itself. The single Round 4 outer review is pending.
+is imposed on the probe itself. The single Round 4 outer review at `a65205d`
+verified this chain, identifying one localized omission of recovery-to-minimum
+limits in two convenience APIs. Round 5 returns those four limits for the exact
+subsequence and normalized geometric tail. New weighted graph multiplication
+justifies multiplicative weak variations, giving a complete signed Picone identity
+at the actual minimum. A positive smooth Jacobi reference with nonpositive
+meridional operator supplies a conditional all-probe lower bound on the same
+geometry. Exact nodal and positive nonstationary round examples rule out dropping
+the coverage/sign obligations. The single Round 5 outer review remains pending.
 Further coupled regularity, weak-probe closure/interface/path transfer, determining
 selection, global safety and endpoint scope remain open. C_rot is not identified.
 

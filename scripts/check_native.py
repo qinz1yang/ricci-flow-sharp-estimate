@@ -261,6 +261,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.SecondOrderWeakEuler",
     "RicciFlowSharpEstimate.Geometry.WeakProbeEulerCoefficients",
     "RicciFlowSharpEstimate.Geometry.WeakProbeEulerFlux",
+    "RicciFlowSharpEstimate.Analysis.ParabolicGraphMultiplication",
+    "RicciFlowSharpEstimate.Geometry.RecoverableProbeMultiplication",
+    "RicciFlowSharpEstimate.Geometry.RecoverableMultiplicativeStationarity",
+    "RicciFlowSharpEstimate.Geometry.AreaGroundStateComparison",
+    "RicciFlowSharpEstimate.Geometry.WeakGroundStateComparison",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1485,7 +1490,15 @@ SELECTOR = r"""
       area ++ `weakProbeEulerFlux,
       area ++ `weakProbeEulerMomentum,
       area ++ `IsRecoverableAreaCompetitor.probe_euler_flux_of_minimum,
-      area ++ `exists_recoverable_area_minimizer_with_natural_flux
+      area ++ `exists_recoverable_area_minimizer_with_natural_flux,
+      analysis ++ `HasParabolicWeakDerivatives.mul_contDiff,
+      analysis ++ `parabolicGraph_tendsto_mul_contDiff,
+      area ++ `IsRecoverableAreaCompetitor.normalized_probe_mul,
+      area ++ `IsRecoverableAreaCompetitor.weak_probe_mul_equation_of_minimum,
+      area ++ `weakMeridionalPicone_density_identity,
+      area ++ `meridionalAction_mul_sub_pairing_eq_picone,
+      area ++ `meridionalAction_ge_mass_of_ground_state,
+      area ++ `IsRecoverableAreaCompetitor.picone_identity_of_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3915,6 +3928,22 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.probe_euler_flux_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_recoverable_area_minimizer_with_natural_flux
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.mul_contDiff
+open RicciFlowSharpEstimate.Analysis in
+#check parabolicGraph_tendsto_mul_contDiff
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.normalized_probe_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.weak_probe_mul_equation_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalPicone_density_identity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_mul_sub_pairing_eq_picone
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_ge_mass_of_ground_state
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.picone_identity_of_minimum
 """
 
 

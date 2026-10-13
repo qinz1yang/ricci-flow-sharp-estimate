@@ -62,8 +62,9 @@ theorem IsSmoothAreaCompetitor.recoverable {C : ℝ} {K r : ℝ → ℝ}
     exact tendsto_const_nhds
 
 /-- Every recoverable weak competitor has an actual original smooth
-unit-mass recovery sequence for the complete action. Genuine integrability
-of the limiting action and mass densities is proved at the same time. -/
+unit-mass recovery sequence converging to this very curvature and weak probe
+graph, with complete-action convergence. Genuine integrability of the limiting
+action and mass densities is proved at the same time. -/
 theorem IsRecoverableAreaCompetitor.exists_action_recovery
     {C : ℝ} {K r p z : ℝ → ℝ} (hC : 1 ≤ C)
     (h : IsRecoverableAreaCompetitor C K r p z) :
@@ -71,6 +72,14 @@ theorem IsRecoverableAreaCompetitor.exists_action_recovery
       (K x) (r x) (p x) (z x)) (Ioo (0 : ℝ) 1) ∧
     IntegrableOn (fun x => warp K x * r x ^ 2) (Ioo (0 : ℝ) 1) ∧
     ∃ Ks rs : ℕ → ℝ → ℝ, (∀ n, IsSmoothAreaCompetitor C (Ks n) (rs n)) ∧
+      Tendsto (fun n => eLpNorm (Ks n - K) 2 areaμ) atTop (𝓝 0) ∧
+      Tendsto (fun n => eLpNorm (rs n - r) 2 areaμ) atTop (𝓝 0) ∧
+      Tendsto (fun n => eLpNorm
+        ((fun x => Real.sqrt (x * (1 - x)) * deriv (rs n) x) -
+          (fun x => Real.sqrt (x * (1 - x)) * p x)) 2 areaμ) atTop (𝓝 0) ∧
+      Tendsto (fun n => eLpNorm
+        ((fun x => x * (1 - x) * Real.sqrt (x * (1 - x)) * deriv (deriv (rs n)) x) -
+          (fun x => x * (1 - x) * Real.sqrt (x * (1 - x)) * z x)) 2 areaμ) atTop (𝓝 0) ∧
       Tendsto (fun n => meridionalAction (Ks n) (rs n)) atTop
         (𝓝 (weakMeridionalAction K r p z)) := by
   obtain ⟨hK, hgraph, _, hzero, hone, _, Ks, rs, hS, hKS, hRS, hPS, hZS⟩ := h
@@ -105,7 +114,8 @@ theorem IsRecoverableAreaCompetitor.exists_action_recovery
     (hL1I.comp hψ.tendsto_atTop) hKae (hRS.comp hψ.tendsto_atTop)
     (hPS.comp hψ.tendsto_atTop) (hZS.comp hψ.tendsto_atTop)
   exact ⟨hLimits.1, hLimits.2.1, fun n => Ks (ψ n), fun n => rs (ψ n),
-    fun n => hS (ψ n), hLimits.2.2.1⟩
+    fun n => hS (ψ n), hKS.comp hψ.tendsto_atTop, hRS.comp hψ.tendsto_atTop,
+    hPS.comp hψ.tendsto_atTop, hZS.comp hψ.tendsto_atTop, hLimits.2.2.1⟩
 
 /-- The actual smooth-class infimum is a lower bound for every competitor
 in the recoverable weak class; the action limit is derived from topology. -/
@@ -113,7 +123,7 @@ theorem IsRecoverableAreaCompetitor.infimum_le_action
     {C : ℝ} {K r p z : ℝ → ℝ} (hC : 1 ≤ C)
     (h : IsRecoverableAreaCompetitor C K r p z) :
     smoothAreaInfimum C ≤ weakMeridionalAction K r p z := by
-  obtain ⟨_, _, Ks, rs, hS, hA⟩ := h.exists_action_recovery hC
+  obtain ⟨_, _, Ks, rs, hS, _, _, _, _, hA⟩ := h.exists_action_recovery hC
   exact ge_of_tendsto' hA (fun n => smoothAreaInfimum_le_action C hC (Ks n) (rs n) (hS n))
 
 end RicciFlowSharpEstimate.Geometry.AreaProfile

@@ -1119,3 +1119,67 @@ Further coupled regularity, curvature/interface analysis, weak-domain and origin
 path bridges actually used, and every determining/global/sharpness/endpoint gate
 remain active. The flux and representative conclusions do not identify C_rot.
 Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase II, Round 5: recovery witness ties and complete Picone comparison
+
+Round 4's single outer review at `a65205d` verified its 71 new leaves and native
+provenance, while finding one localized omission of convergence-to-minimum facts
+from two convenience recovery interfaces. Round 5 strengthens those conclusions
+and adds five leaves with eight public theorems: tied weak graph multiplication,
+normalized recoverable product probes, actual multiplicative stationarity, the
+complete Picone identity and a conditional smooth all-probe lower bound. The
+same actual weak minimum satisfies the integrable signed identity. This supplies
+no determining cap, sign/nonvanishing theorem for that minimum, or global selection.
+
+The final gate was run under the Root writer lock:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-5 \
+  --reuse-receipt docs/evidence/phase2-round-4-recovery/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-5/receipt.json), SHA256
+`dbf0506b5711d5c8cb9d8d0a36bf3bb53349873ea3be678d5378f4299c09cd27`, passes for
+251 modules, 256 inputs and 257 outputs. Thirty-nine source elaborations are fresh
+and silent; 212 unchanged source elaborations are reused from the genuine earlier
+recovery checkpoint. That is the last unchanged prefix before the two repaired
+modules. The existing checker policy is unchanged; no reuse filter or weaker
+validation rule was introduced. All post-prefix modules, including the changed
+sources and their affected consumers, are freshly checked. The full root build
+passes with no diagnostics.
+
+The inventory, physical leaves and flat imports agree. All 1,209 required selectors
+are present; 1,310 exact signature/declaration queries and 3,322 actual transitive
+axiom rows, including 1,076 private rows, pass. Every axiom closure is a subset of
+`propext`, `Classical.choice`, `Quot.sound`. All three available declaration linters
+and the existing native declaration-kind inspection are active and silent.
+Read-only reconstruction confirms all diagnostic-driver hashes, source/output
+bindings and 3,301 source-command provenance records across 27 receipts on the
+chosen unchanged-prefix chain. The other prior evidence remains preserved.
+
+Two supplemental native drivers bind the public interface and the comparison's
+precise scope. `SameMinimumRecovery` is silent: from the strengthened geometric
+headline alone it extracts the four graph limits for the same normalized tail,
+the original form and both jets, scalar curvature, nonzero forms and dissipation;
+it applies the weak identity to that same displayed minimum. It also instantiates
+the smooth all-probe certificate at K=2,r=1,λ=4. `RoundNodalDiagnostics` returns
+only its requested two signatures and two actual approved axiom closures. It
+proves the nodal λ=100 counterexample to an all-probe bound with only the natural
+product sign, and the positive nonstationary affine counterexample to inferring
+the operator sign from positivity. Exact commands/source/output hashes are in the
+[checkpoint record](evidence/phase2-round-5/checkpoint.json). These diagnostics do
+not claim that either test probe is a joint minimum or a zero mode.
+
+The [preservation record](evidence/phase2-round-5/preservation.json) checks all 244
+unchanged leaves of the 246-leaf parent and explicitly records the two requested
+API changes. All 175 Round 3 leaves, all 149 Phase-I leaves, 2,325 historical
+workflow files, 5,105 prior tracked evidence files, accepted paper bytes, both
+TASK files and fixed dependency pins remain unchanged. Compiler, platform and
+all ten dependency revisions match. No new typesetting was performed.
+
+The seven-leaf source simplifier advisory recommended no changes; its source
+hashes match final native inputs. It is not an acceptance review. The single
+configured Round 5 outer review remains pending; unchanged Round 4 mathematical
+acceptance is reused. Phase I is COMPLETE; Phase II is OPEN. All determining,
+universal safety, smooth sharpness, endpoint and final manuscript gates remain
+required.
