@@ -13,6 +13,9 @@ Round 2's exhaustive original-data normalization and variation packet passed its
 single outer review at `734dd5b`. Round 3 adds complete-action coercivity with a
 curvature-box-dependent mass correction, uniform normalized energy bounds and
 both-pole weighted-mass tightness, retaining the original ratio restriction.
+Its continuation adds weighted first/second derivative control and a direct
+uniform radius for both unweighted polar mass and the absolute complete-action
+remainder, including the mixed term.
 Its native evidence is recorded separately; its single outer review is pending.
 The actual weak domain, full-action limits/recovery, joint critical-object
 applications, determining selection, global safety and endpoint scope remain

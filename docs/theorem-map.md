@@ -316,3 +316,16 @@ Round 16 review at `2bda267`. The conditional
 first-order criterion is now specialized through the actual calibration, rather
 than being presented alone as the minimum. Geometric claims must retain the same metric,
 section producers, pullback maps, curvature bounds and quantifiers.
+
+### Phase-II Round 3 continuation: complete polar remainder
+
+The four leaves `Analysis/ParabolicDerivativeEnergy`, `Analysis/ParabolicPolarControl`,
+`Geometry/AreaProbeRegularity` and `Geometry/AreaActionPolarControl` extend the
+coercivity packet with eleven public theorems and two definitions. They prove the
+actual weighted second-derivative identity, first-power parabolic gradient control,
+direct unweighted tails at both poles and uniform absolute complete-action remainder
+tails. The actual original curvature-ratio restriction remains in the final consumer.
+See the [research derivation and exact map](research/phase2-unrestricted.md) and
+[continuation evidence](evidence/phase2-round-3-continuation/receipt.json). The single
+Round 3 outer review is pending. Weak-domain compactness, complete-action lower
+semicontinuity, exhaustive recovery and every determining/global/endpoint gate remain open.

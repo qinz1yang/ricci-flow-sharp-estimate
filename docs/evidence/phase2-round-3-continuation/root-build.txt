@@ -1,0 +1,3 @@
+✔ [9819/9821] Built RicciFlowSharpEstimate.Geometry.AreaActionPolarControl (10s)
+✔ [9820/9821] Built RicciFlowSharpEstimate (22s)
+Build completed successfully (9821 jobs).

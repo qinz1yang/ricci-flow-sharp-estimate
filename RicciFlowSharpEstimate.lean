@@ -170,3 +170,7 @@ import RicciFlowSharpEstimate.Geometry.AreaWarpBounds
 import RicciFlowSharpEstimate.Geometry.AreaProbeEnergy
 import RicciFlowSharpEstimate.Geometry.AreaPolarMass
 import RicciFlowSharpEstimate.Geometry.AreaActionCoercivity
+import RicciFlowSharpEstimate.Analysis.ParabolicDerivativeEnergy
+import RicciFlowSharpEstimate.Analysis.ParabolicPolarControl
+import RicciFlowSharpEstimate.Geometry.AreaProbeRegularity
+import RicciFlowSharpEstimate.Geometry.AreaActionPolarControl

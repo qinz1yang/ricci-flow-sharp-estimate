@@ -186,6 +186,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaProbeEnergy",
     "RicciFlowSharpEstimate.Geometry.AreaPolarMass",
     "RicciFlowSharpEstimate.Geometry.AreaActionCoercivity",
+    "RicciFlowSharpEstimate.Analysis.ParabolicDerivativeEnergy",
+    "RicciFlowSharpEstimate.Analysis.ParabolicPolarControl",
+    "RicciFlowSharpEstimate.Geometry.AreaProbeRegularity",
+    "RicciFlowSharpEstimate.Geometry.AreaActionPolarControl",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1161,7 +1165,20 @@ SELECTOR = r"""
       area ++ `polarProbeMass_le_of_unit_mass_action_le,
       area ++ `exists_uniform_polar_mass_radius,
       area ++ `meridionalAction_coercive_of_curvature_ratio,
-      area ++ `exists_uniform_polar_mass_radius_of_ratio
+      area ++ `exists_uniform_polar_mass_radius_of_ratio,
+      analysis ++ `integral_parabolic_mul_sq_le,
+      analysis ++ `integral_left_sq_le_parabolic_energy,
+      analysis ++ `integral_polar_sq_le_parabolic_energy,
+      area ++ `integral_warp_operator_add_curvature_sq,
+      area ++ `integral_warp_cube_second_deriv_sq_le,
+      area ++ `integral_parabolic_deriv_sq_le,
+      area ++ `meridionalActionRemainder,
+      area ++ `meridionalActionRemainder_continuous,
+      area ++ `polarActionRemainder,
+      area ++ `polarActionRemainder_le,
+      area ++ `exists_uniform_probe_regularity_bound,
+      area ++ `exists_uniform_polar_action_radius,
+      area ++ `exists_uniform_polar_action_radius_of_ratio
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3091,6 +3108,32 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check meridionalAction_coercive_of_curvature_ratio
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_uniform_polar_mass_radius_of_ratio
+open RicciFlowSharpEstimate.Analysis in
+#check integral_parabolic_mul_sq_le
+open RicciFlowSharpEstimate.Analysis in
+#check integral_left_sq_le_parabolic_energy
+open RicciFlowSharpEstimate.Analysis in
+#check integral_polar_sq_le_parabolic_energy
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integral_warp_operator_add_curvature_sq
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integral_warp_cube_second_deriv_sq_le
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integral_parabolic_deriv_sq_le
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalActionRemainder
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalActionRemainder_continuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check polarActionRemainder
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check polarActionRemainder_le
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_probe_regularity_bound
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_polar_action_radius
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_polar_action_radius_of_ratio
 """
 
 

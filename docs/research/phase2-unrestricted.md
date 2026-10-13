@@ -733,23 +733,131 @@ evidence. Additional native consumer checks cover both polynomial families for
 ratio boxes with unit mass, a common action bound and one shared radius. The actual proof of (23) is uniform over all
 stated competitors and does not rely on those examples.
 
+## Round 3 continuation: direct control of the remaining polar terms
+
+The initial Round 3 estimate controls weighted mass. The continuation proves
+additional derivative estimates and **direct** unweighted/remainder tail bounds;
+these are not inferred from weighted mass tightness alone. Keep the actual
+primitives f,b, operator q=L_Kr and positive box κ≤K≤Λ with both exact moments.
+Continuous K and C² r still suffice, with no curvature derivative bound.
+Put w(x)=x(1−x) and
+
+\[
+ H=\int_0^1 w(r')^2,\qquad J=\int_0^1 f^3(r'')^2.
+\]
+
+The actual flux `2 f² b (r′)²` vanishes at both poles. Its derivative, using
+`f′=b` and `b′=−2K`, gives
+
+\[
+ \int_0^1 f(q+Kr)^2=J+4\int_0^1 f^2K(r')^2,
+ \qquad J\leq2E+2\Lambda^2m. \tag{25}
+\]
+
+This identity does not differentiate K or require pole values of r or r′ to
+vanish. A separate polynomial flux `w²(1−2x)p²` gives, for every C¹ function p,
+
+\[
+ \int_0^1 wp^2\leq10\int_0^1w^2p^2+\int_0^1w^3(p')^2.
+\]
+
+Apply it to p=r′, use f≥κw, (25), and (21) at t=1 to obtain
+
+\[
+ \kappa^3H\leq(10\kappa+2)E+
+       (5\kappa/2+2\Lambda^2)m. \tag{26}
+\]
+
+For m=1 and A≤B, let D=max(B,0)+Γ(κ,Λ). One explicit bound chosen before all
+competitors is
+
+\[
+ M=1+4D+
+   \frac{4(10\kappa+2)D+5\kappa/2+2\Lambda^2}{\kappa^3}>0.
+\]
+
+Then E,U,G,H≤M. The first-power weight in H is stronger at the poles than the
+squared-warp gradient bound G used in the initial coercivity argument.
+
+For C¹ r define its two unweighted tails
+`T_s=∫₀ˢr²+∫₁₋ₛ¹r²`. A tent with branches `(1−s)x` and `s(1−x)` has squared
+height at most `s w`. Integrate the derivative of each affine branch times r²;
+the internal boundary terms cancel exactly. The square inequality and reflection
+then yield, for 0≤s≤1, a>0 and s≤a²,
+
+\[
+ T_s\leq2sU+2a(U+H). \tag{27}
+\]
+
+The second term is essential: a bound on U alone would not give uniform tail
+integrability. The proof has no singular division by the vanishing warp and no
+artificial endpoint condition.
+
+The canonical remainder is defined by literal subtraction from the original
+six-entry density:
+
+\[
+ R_K(r)=\operatorname{density}_K(r)-f(L_Kr)^2
+       =-Kbfrr'-Kb^2r^2/2+K^2fr^2.
+\]
+
+Let `S_s=∫₀ˢ|R_K(r)|+∫₁₋ₛ¹|R_K(r)|`, the actual `polarActionRemainder`.
+The already proved bounds |b|≤2 and 0≤f≤1, followed by a parameterized square
+estimate, give for every t>0
+
+\[
+ S_s\leq(\Lambda/t+2\Lambda+\Lambda^2)T_s+2\Lambda tG. \tag{28}
+\]
+
+This controls the absolute complete remainder, including its negative unweighted
+term and mixed derivative term. It does not replace either with a K′ potential.
+For 0<t≤1 and 0≤s≤t⁴, apply (27) with a=t² and the common M bound:
+
+\[
+ T_s\leq6t^2M,\qquad
+ S_s\leq(20\Lambda+6\Lambda^2)tM.
+\]
+
+Set Q=(6+20Λ+6Λ²)M, t=min(1,ε/(Q+1)), and δ=t⁴. For every ε>0 this δ>0,
+δ≤1 works for **every** admissible K,r and **every** width 0≤s≤δ, with
+`T_s≤ε` and `S_s≤ε`. The same theorem has an original-ratio consumer: C≥1,
+varying κ,Λ>0 and Λ/κ≤C remain explicit, while the auxiliary [2/C,2C] box permits
+one common radius before all competitors. No optimizer symmetry is assumed.
+
+The continuation adds these native targets:
+
+| Result | Canonical declarations (relative prefixes as above) |
+|---|---|
+| Weighted interpolation | `Analysis.integral_parabolic_mul_sq_le` in `Analysis/ParabolicDerivativeEnergy.lean` |
+| Direct one- and two-pole unweighted estimates | `Analysis.integral_left_sq_le_parabolic_energy`, `Analysis.integral_polar_sq_le_parabolic_energy` in `Analysis/ParabolicPolarControl.lean` |
+| Actual second-derivative identity and both derivative bounds | `integral_warp_operator_add_curvature_sq`, `integral_warp_cube_second_deriv_sq_le`, `integral_parabolic_deriv_sq_le` in `Geometry/AreaProbeRegularity.lean` |
+| Complete remainder, absolute tails and (28) | `meridionalActionRemainder`, its C¹ continuity theorem, `polarActionRemainder`, `polarActionRemainder_le` in `Geometry/AreaActionPolarControl.lean` |
+| Uniform sublevel and original-ratio consumers | `exists_uniform_probe_regularity_bound`, `exists_uniform_polar_action_radius`, `exists_uniform_polar_action_radius_of_ratio` in the same module |
+
+These are four additional canonical leaves, eleven public theorems and two
+definitions. Their final native receipt is recorded under
+`docs/evidence/phase2-round-3-continuation/`. The single configured Round 3 outer
+review remains pending for the combined packet; no independent acceptance is
+inferred from the source simplifier advisory.
+
 ## Exact frontier and next target
 
 Phase I remains COMPLETE and Phase II remains OPEN. The Round 2 exhaustive
 smooth normalization and original-form variation packet passed its single outer
 review at `734dd5b`. Round 3 supplies the complete-action coercivity and both-pole
-weighted-mass gate in the stated continuous-curvature/C²-probe scope. Its outer
+weighted-mass gate and direct unweighted/absolute-remainder tail control in the
+stated continuous-curvature/C²-probe scope. Its outer
 review remains pending. No determining value, selected threshold branch, joint
 critical optimizer, universal new safe cap, exhaustive recovery or unrestricted
 endpoint theorem has been established.
 
-T7 remains active. The next target is the stronger polar control and actual weak
-domain needed for subsequential compactness and the **complete** limiting action.
-A global U bound and weighted mass tightness do not by themselves prove uniform
-integrability of the unweighted term `−K b²r²/2` or convergence of the mixed term.
-Prove the required unweighted/mixed tail estimates, then specify the domain with
-actual weak derivatives, prove subsequences and local convergence, retain both
-moments and the original ratio constraint, and prove weighted mass remains one.
+T7 remains active. The direct tail estimates above remove the prior polar
+remainder obstacle, but do not produce a limiting object. Next specify the actual
+weak-derivative domain and topology, prove subsequences and local convergence,
+retain both exact moments and the original ratio constraint, and prove weighted
+mass remains one. The positive operator square may still concentrate; its lower
+semicontinuity requires a genuine weak-operator convergence proof. Neither (27)
+nor (28) alone proves full-action lower semicontinuity.
 A totalized derivative of an arbitrary nonsmooth function is not a weak operator.
 For nonsmooth curvature, keep the original density until any weak/interface
 factorization has been proved.

@@ -1,0 +1,42 @@
+{
+  "phase2_status": "OPEN; direct polar estimate continuation only",
+  "parent_accepted_revision": "734dd5b844a4888c7d3f7cf8b6c23d1d750f84a7",
+  "parent_native_revision": "a615d5bf34007db235d03ca51eb4074cbf5874e9",
+  "native_receipt_sha256": "a0a0cf17bc5d9e0849a0bb8d7c43cc47978cdc05ad32dc2822bf82625f37516c",
+  "native_counts": {
+    "modules": 175,
+    "inputs": 180,
+    "outputs": 181,
+    "selectors": 966,
+    "signature_queries": 1065,
+    "axiom_rows": 2766,
+    "private_axiom_rows": 831,
+    "fresh_source_elaborations": 4,
+    "reused_source_elaborations": 171
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "eddb9811ae5cdb3786a24599eee61ae4d71f6c4b3736c8bef5c63e804c281872",
+    "docs/theorem-map.md": "5d90947b015e063da69d8331f4a5d0644c452070ccb65c4c507dc7def3273322",
+    "docs/research/phase2-unrestricted.md": "91a944ef71798553fc510088141870f3d1c7413f68242c3073e5ed1a41eae022",
+    "docs/verification.md": "e2577185a3c19465a19d715ed48c2c75e6ea758a96d8fb4ccbee502402384773"
+  },
+  "independent_review": "Pending single configured Round 3 outer review for combined initial and continuation packet; no new acceptance claimed.",
+  "source_simplifier": "Four-module source advisory found no necessary change. Optional uncompiled continuity-proof cleanup not applied. Final source hashes match advisory.",
+  "additional_native_probes": {
+    "scope": "Exact round constant-probe remainder at both poles; C1 continuity; varying normalized sequence with original curvature ratio and one common two-pole radius.",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "/tmp/hmz-fence-4lzhkuwo/math-target-round3c-root-qosh0jwq/ContinuationChecks.lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file."
+    ],
+    "driver_sha256": "5b33bb618772235c47ed042a363b18b29bc54522f6d22fc56145b4894ed23d2f",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit_code": 0
+  }
+}

@@ -552,3 +552,38 @@ accepted reviews and evidence remain valid. Phase I is COMPLETE and Phase II is
 OPEN, with the exact remaining weak-domain, polar limiting-action, recovery,
 joint critical-object, determining/global and endpoint obligations recorded in
 the [research notes](research/phase2-unrestricted.md).
+
+## Phase-II Round 3 continuation: direct polar action control
+
+The continuation native command under the Root cache-writer lock was:
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-3-continuation \
+  --reuse-receipt docs/evidence/phase2-round-3/receipt.json
+```
+
+It passed for 175 modules, with four fresh silent source elaborations and 171
+matching prior native elaborations reused. Those prior inputs include 166 accepted
+modules and the five initial Round 3 modules still awaiting outer review. Root
+build, unsuppressed declaration linters, native declaration-kind inspection,
+966 required selectors and 1,065 signature/declaration queries pass. All 2,766
+actual transitive axiom rows, including 831 private rows, contain only a subset
+of `propext`, `Classical.choice`, `Quot.sound`. All 180 input hashes, 181 output
+hashes and three reconstructed diagnostic-driver hashes match the final files.
+
+Receipt SHA256: `a0a0cf17bc5d9e0849a0bb8d7c43cc47978cdc05ad32dc2822bf82625f37516c`.
+
+Supplemental native consumers verify the exact round constant-probe remainder
+`−4` at each pole, the C¹ remainder-continuity API and one common two-pole radius
+for a varying normalized sequence with the actual curvature-ratio restriction.
+The driver compiles silently. The source-only simplifier found no necessary
+changes; its optional continuity-proof cleanup was left outside this packet.
+The single configured Round 3 outer review remains pending for the combined
+initial and continuation packet; no duplicate acceptance review was added.
+
+[The checkpoint](evidence/phase2-round-3-continuation/checkpoint.json) binds the
+documents, supplemental driver/output and advisory scope. [Preservation evidence](evidence/phase2-round-3-continuation/preservation.json)
+confirms all 171 prior native sources, all 149 Phase-I sources, all 2,325 historical
+workflow files, the accepted paper, historical/current task and dependency pins
+remain unchanged. Phase I is COMPLETE. Phase II remains OPEN; no joint limit,
+weak-domain theorem, lower semicontinuity, exhaustive recovery or sharp value is claimed.
