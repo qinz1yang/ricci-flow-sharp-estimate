@@ -24,12 +24,14 @@ arbitrary maximal weak-graph element. The latest continuation constructs an actu
 weak class and proves that its action equals the original smooth meridional infimum.
 Every smooth competitor embeds; full-action recovery is derived from the graph
 topology, and original geometric quotient/recovery bindings retain the actual scale.
-The current continuation proves normalized smooth probe perturbations feasible in
-that class and derives the complete weak probe equation for the produced minimum,
-with its actual action as eigenvalue. The single Round 4 outer review is pending.
-Feasible curvature variations and their mass correction, multiplier qualification,
-further required regularity/path transfer, determining selection, global safety and
-endpoint scope remain open. C_rot is not identified.
+Normalized smooth probe perturbations are proved feasible in that class and give
+the complete weak probe equation with the actual action as eigenvalue. The curvature
+continuation proves normalized convex paths toward every original admissible smooth
+curvature feasible throughout [0,1], derives positive mass from the physical bounds,
+and gives the same produced minimum its complete mass-corrected curvature inequality.
+The single Round 4 outer review is pending. Further weak curvature directions,
+multiplier qualification, required regularity/path transfer, determining selection,
+global safety and endpoint scope remain open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

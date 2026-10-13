@@ -840,3 +840,60 @@ their mass derivative and multiplier qualification, determining selection, unive
 safety, sharp smooth witnesses and exact endpoint scope remain required. The weak
 probe equation is a necessary condition, not a sharp-value characterization.
 Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase-II Round 4 curvature: actual-minimum curvature inequality
+
+Five new leaves prove integrable-curvature affine primitive/moment/mass laws,
+original smooth curvature convexity with mixed positive ratio witnesses, the
+complete weak cubic action derivative, and normalized curvature-segment closure
+in the actual recoverable class. Positive physical mass is derived throughout
+[0,1]. The cap-only producer now returns one nonzero unit-mass joint minimum
+satisfying both its full smooth-probe equation and the complete mass-corrected
+curvature inequality toward every admissible smooth comparison curvature.
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-curvature \
+  --reuse-receipt docs/evidence/phase2-round-4-variation/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-curvature/receipt.json), SHA256
+`e89236c9b33c11753c74ff158dfacb13b93528fe78f0c52c4121d3a35ff33e9c`, passes for
+228 modules. Five fresh source elaborations are silent, and 223 matching prior
+elaborations are reused. The root build, strict native declaration-kind inspection
+and all available declaration linters pass. The 1,148 required selectors and
+1,249 exact signature/declaration queries match the inspected source. All 3,149
+actual transitive axiom rows, including 985 private rows, use only subsets of
+propext, Classical.choice and Quot.sound. All 233 input/234 output hashes and
+three reconstructed diagnostic-driver hashes match, as do physical/checker/root
+inventories. Reuse provenance covers 3,719 source-command records across 29 receipts.
+The checker delta only extends inventories and queries; pins and gates are unchanged.
+
+There are 20 public theorems and three definitions. Exact cubic interpolation of
+integrable physical densities justifies every derivative coefficient; no Kprime
+potential or totalized-integral shortcut is used. Root removed the unnecessary
+supplied-mass-positivity burden by proving positivity on the whole convex segment.
+Candidate beta-redex rewriting and redundant tactic tails were repaired before
+final silent checks, without changing accepted sources or resource policies.
+The five-source simplifier found no needed change and recorded matching hashes.
+Its source-only advisory is not an additional mathematical acceptance review.
+
+Supplemental native checks use the smooth exact-moment comparison
+`J(x)=x²−x+13/6` in the positive ratio-three box. At the round unit-mass probe
+`sqrt(3)`, the literal mass derivative is `−1/60`, so both moments do not make
+the normalization correction vanish. Further consumers use the entire convex
+segment without a positivity premise and obtain a single nonzero unit-mass joint
+minimum from C≥1 alone, simultaneously satisfying the identity probe equation
+and the round-comparison curvature inequality. The [checkpoint record](evidence/phase2-round-4-curvature/checkpoint.json)
+binds exact driver, command and silent output hashes.
+
+The [preservation record](evidence/phase2-round-4-curvature/preservation.json)
+confirms all 223 prior native leaves, 175 accepted leaves, 149 Phase-I leaves,
+2,325 historical workflow files, accepted paper, tasks, pins and 3,871 tracked
+evidence files remain unchanged. No typesetting occurred. The same configured
+Round 4 outer review is pending for the combined 53-leaf packet.
+
+Further nonsmooth comparison directions, valid weak adjoint/switching and multiplier
+qualification, required regularity/path transfer, determining selection, universal
+safety, sharp smooth witnesses and exact endpoint scope remain active mathematics.
+These necessary conditions do not determine C_rot. Phase I remains COMPLETE;
+Phase II remains OPEN.

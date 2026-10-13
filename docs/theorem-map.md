@@ -410,3 +410,25 @@ The [research map](research/phase2-unrestricted.md) records the five-leaf proof 
 variations of the actual object, multiplier qualification and every determining,
 global, sharpness and endpoint gate remain active. The same outer Round 4 review
 is pending for the combined packet; Phase II remains OPEN.
+
+### Phase-II Round 4 curvature: actual joint weak necessary conditions
+
+`Geometry.AreaProfile.exists_recoverable_area_minimizer_weak_conditions` in
+`Geometry/RecoverableCurvatureOptimality.lean` takes C≥1 alone and produces the
+same physically nonzero unit-mass minimum with both the full smooth-probe equation
+and the mass-corrected curvature inequality toward every original admissible
+smooth curvature. No supplied minimizing object or directional minimum is required.
+
+`RecoverableCurvatureSegment.lean` constructs the normalized recoverable path on
+the whole convex interval and derives its positive mass. Actual original box
+witnesses and both moments are preserved. `AreaIntegrableAffine.lean` supplies the
+integrable primitive/mass laws; `SmoothAreaCurvature.lean` retains the original
+curvature constraints; `WeakCurvatureSegment.lean` proves full-density integrability
+and the literal cubic derivative, including both potential terms and the mixed term.
+See the [research derivation](research/phase2-unrestricted.md) and
+[native receipt](evidence/phase2-round-4-curvature/receipt.json).
+
+Further weak curvature directions, multiplier qualification, structural/regularity
+and path-transfer bridges, and every determining/global/sharpness/endpoint gate
+remain required. The comparison theorem does not assert maximal weak-domain density
+or determine C_rot. The same configured Round 4 outer review remains pending.

@@ -238,6 +238,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.WeakAreaPolarization",
     "RicciFlowSharpEstimate.Geometry.RecoverableProbeVariation",
     "RicciFlowSharpEstimate.Geometry.RecoverableProbeStationarity",
+    "RicciFlowSharpEstimate.Geometry.AreaIntegrableAffine",
+    "RicciFlowSharpEstimate.Geometry.SmoothAreaCurvature",
+    "RicciFlowSharpEstimate.Geometry.WeakCurvatureSegment",
+    "RicciFlowSharpEstimate.Geometry.RecoverableCurvatureSegment",
+    "RicciFlowSharpEstimate.Geometry.RecoverableCurvatureOptimality",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1386,7 +1391,30 @@ SELECTOR = r"""
       area ++ `probeMass_hasDerivAt_of_warp_bounds,
       area ++ `IsRecoverableAreaCompetitor.normalized_probe_add_mul,
       area ++ `IsRecoverableAreaCompetitor.weak_probe_equation_of_minimum,
-      area ++ `exists_recoverable_area_minimizer_weak_probe_equation
+      area ++ `exists_recoverable_area_minimizer_weak_probe_equation,
+      area ++ `warp_affine_of_integrableOn,
+      area ++ `warpSlope_affine_of_integrableOn,
+      area ++ `curvature_moments_affine_of_integrableOn,
+      area ++ `probeMass_affine_curvature_of_integrableOn,
+      area ++ `probeMass_curvature_difference_intervalIntegrable,
+      area ++ `probeMass_curvature_segment_hasDerivAt,
+      area ++ `IsSmoothAreaCurvature,
+      area ++ `IsSmoothAreaCompetitor.curvature_admissible,
+      area ++ `IsSmoothAreaCurvature.with_unit_probe,
+      area ++ `IsSmoothAreaCurvature.common_bounds,
+      area ++ `IsSmoothAreaCurvature.memLp_curvature,
+      area ++ `IsSmoothAreaCurvature.geometry_bounds,
+      area ++ `IsSmoothAreaCurvature.convex_combination,
+      area ++ `isSmoothAreaCurvature_round,
+      area ++ `weakCurvatureSegmentDensity,
+      area ++ `weakCurvatureSegmentVariation,
+      area ++ `weakCurvatureSegmentDensity_integrable,
+      area ++ `weakCurvatureSegmentDensity_intervalIntegrable,
+      area ++ `weakMeridionalAction_curvature_segment_hasDerivAt,
+      area ++ `IsRecoverableAreaCompetitor.probeMass_curvature_segment_pos,
+      area ++ `IsRecoverableAreaCompetitor.normalized_curvature_segment,
+      area ++ `IsRecoverableAreaCompetitor.curvature_segment_inequality_of_minimum,
+      area ++ `exists_recoverable_area_minimizer_weak_conditions
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3664,6 +3692,52 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.weak_probe_equation_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_recoverable_area_minimizer_weak_probe_equation
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_affine_of_integrableOn
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_affine_of_integrableOn
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvature_moments_affine_of_integrableOn
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_affine_curvature_of_integrableOn
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_curvature_difference_intervalIntegrable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_curvature_segment_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCurvature
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCompetitor.curvature_admissible
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCurvature.with_unit_probe
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCurvature.common_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCurvature.memLp_curvature
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCurvature.geometry_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCurvature.convex_combination
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check isSmoothAreaCurvature_round
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureSegmentDensity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureSegmentVariation
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureSegmentDensity_integrable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureSegmentDensity_intervalIntegrable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction_curvature_segment_hasDerivAt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probeMass_curvature_segment_pos
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.normalized_curvature_segment
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_segment_inequality_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_recoverable_area_minimizer_weak_conditions
 """
 
 

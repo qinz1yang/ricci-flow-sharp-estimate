@@ -1474,26 +1474,147 @@ The five leaves add 23 public theorems and two definitions. Native evidence is i
 `docs/evidence/phase2-round-4-variation/`. All 218 prior source leaves and receipts
 are preserved. The single configured outer Round 4 review remains pending.
 
+## Actual weak curvature inequalities from the joint minimum
+
+The curvature continuation proves feasibility and the full one-sided necessary
+condition for the same produced weak minimum. Its comparison curvatures are every
+globally smooth J satisfying both exact moments and positive original box witnesses
+with ratio at most C. No reflection, monotonicity or contact pattern is required.
+The base curvature K and probe r need only belong to the stated recoverable weak
+class, with their genuine weak derivatives p,z.
+
+Write f=f_K, b=b_K, q=fz+2bp−Kr and set
+
+\[
+ dK=J-K,\quad df=f_J-f_K,\quad db=b_J-b_K,
+ \qquad dq=df\,z+2db\,p-dK\,r.
+\]
+
+The literal full curvature derivative is the integral of
+
+\[
+\begin{split}
+ V={}&df\,q^2+2f q\,dq
+ -(dK\,b f+K\,db\,f+K b\,df)rp\\
+ &-(dK\,b^2/2+K b\,db)r^2
+ +(2K\,dK\,f+K^2df)r^2.
+\end{split}
+\]
+
+`exists_recoverable_area_minimizer_weak_conditions C hC` produces the actual
+nonzero unit-mass joint minimum, with action equal to the original smooth
+infimum, global minimality in the recoverable class, the previous full weak
+probe equation, and, for every such J,
+
+\[
+ 0\le\int_0^1 V
+       -\operatorname{smoothAreaInfimum}(C)\int_0^1(f_J-f_K)r^2.
+\]
+
+Only C≥1 is supplied to this producer. It does not assume a minimizing object,
+feasible directional minima, a zero eigenvalue or a desired positivity conclusion.
+The scalar objective retains the already proved original length-squared quotient
+binding. This is a necessary condition, not a determining characterization.
+
+### Actual feasible curvature paths and positive normalization
+
+For integrable K,J on the physical interval, the original primitives obey the
+exact affine laws for K_t=(1−t)K+tJ. Both moments remain exact for every real t.
+`IsSmoothAreaCurvature` exposes the original smooth curvature constraints
+independently of the probe; its conversion to/from the existing smooth competitor
+keeps that competitor definition unchanged.
+
+For t in [0,1], mixing the original lower and upper witnesses gives
+
+\[
+ \kappa_t=(1-t)\kappa_K+t\kappa_J>0,\qquad
+ \Lambda_t=(1-t)\Lambda_K+t\Lambda_J\le C\kappa_t.
+\]
+
+The same mixing rule supplies witnesses for the weak pair and each smooth recovery
+curvature. Auxiliary common bounds do not replace the original ratio condition.
+Moreover f_K≤C²f_J by the actual quadratic warp comparisons. Since m(K,r)=1,
+integrability and monotonicity give 1≤C²m(J,r), so m(J,r)>0. The affine mass law
+then proves m(K_t,r)>0 throughout the entire convex segment, including t=1.
+No positive-mass premise is left for the caller to supply.
+
+`IsRecoverableAreaCompetitor.normalized_curvature_segment` constructs the actual
+recoverable competitor
+
+\[
+ \left(K_t,\frac{r}{\sqrt{m(K_t,r)}},
+ \frac{p}{\sqrt{m(K_t,r)}},\frac{z}{\sqrt{m(K_t,r)}}\right).
+\]
+
+Apply the same fixed segment to the original smooth recovery curvatures.
+Their strong L² convergence and a common a.e. subsequence are retained; the
+original probes and their three graph coordinates keep their strong convergence.
+Full strong-graph mass continuity gives a late positive smooth tail. Its literal
+normalization factors converge to the displayed factor; the scalar graph theorem
+then proves normalized strong graph convergence and exact unit mass. Thus class
+membership is constructed from actual smooth approximants, not postulated as a
+feasible-path field. No new probe trace or pole condition enters.
+
+### Integrability and the complete one-sided variation
+
+The full density is exactly cubic along the affine curvature path. To justify
+coefficient integration for nonsmooth K,r, the proof first establishes genuine
+integrability of the actual complete densities at t=0,1/3,2/3,1. These are convex
+curvature parameters with the proved physical coefficient bounds. Exact algebra
+expresses each polynomial coefficient as a finite linear combination of those
+integrable densities. In particular the linear coefficient is
+`(-11 D_0 + 18 D_(1/3) - 9 D_(2/3) + 2 D_1)/2`, and it is exactly V above.
+The four evaluation points are an exact polynomial identity, not a numerical
+approximation or a finite-dimensional optimizer restriction.
+
+Affine primitive laws and this coefficient integrability give the literal action
+derivative at zero. The mass derivative is separately proved to equal
+`integral (f_J−f_K)r²`; its interval integrability follows from the two actual
+endpoint masses. No K′ expression or derivative of a totalized integral is used.
+Although the polynomial identity holds for all real parameters, geometric
+feasibility is asserted on the convex interval only.
+
+Actual normalized minimality and quadratic probe scaling give
+`A(K_t;r)−A(K;r)m(K_t,r)≥0` on [0,1], with equality at zero. Its derivative in
+the inward tangent direction is nonnegative. Combining the full action and mass
+derivatives proves the displayed inequality. Applying that consumer to the
+previous cap-only producer gives both weak necessary conditions on one minimum.
+
+| Role | Canonical source |
+|---|---|
+| Integrable-curvature affine primitive, moment and mass laws | `Geometry/AreaIntegrableAffine.lean` |
+| Original smooth curvature constraints and convex mixed boxes | `Geometry/SmoothAreaCurvature.lean` |
+| Complete weak curvature density, integrability and derivative | `Geometry/WeakCurvatureSegment.lean` |
+| Positive mass and normalized recoverable convex segments | `Geometry/RecoverableCurvatureSegment.lean` |
+| Actual minimum inequality and combined cap-only producer | `Geometry/RecoverableCurvatureOptimality.lean` |
+
+The five leaves add 20 public theorems and three definitions. All 223 earlier
+source leaves remain unchanged. Evidence for this continuation is recorded in
+`docs/evidence/phase2-round-4-curvature/`; the single configured outer Round 4
+review remains pending for the combined packet.
+
 ## Exact frontier and next target
 
-Phase I is COMPLETE; Phase II is OPEN. Round 4 now has an actual joint weak minimum,
-full-action recovery and a justified weak probe equation for every smooth direction.
-The normalized perturbations are proved feasible in the same class; no artificial
-pole condition, curvature smoothness, smooth attainment or zero action is assumed.
-The original geometric recovery and scale bindings remain available unchanged.
+Phase I is COMPLETE; Phase II is OPEN. Round 4 now has an actual joint weak
+minimum, full-action recovery, the weak probe equation in every smooth direction,
+and the complete mass-corrected curvature inequality toward every admissible
+smooth curvature. The corresponding normalized paths are proved feasible in the
+same recoverable class. No curvature smoothness, smooth attainment, zero action,
+artificial probe endpoint condition or optimizer symmetry is assumed.
 
-The next mainline target is feasible curvature variations of this actual minimum.
-Prove that the particular moment- and ratio-preserving curvature paths, with their
-literal mass normalization, remain in the recoverable class. Derive the complete
-weak curvature action derivative and its varying-mass correction, then obtain the
-actual one-/two-sided necessary inequalities. Prove multiplier qualification before
-extracting moment multipliers. Establish any additional regularity or original
-geometric path transfer actually used; maximal weak-graph density is not asserted.
+Next establish the further domain/variation closure actually needed for the
+structural argument, including any extension to nonsmooth curvature comparison
+directions. Prove a legitimate adjoint or switching representation of this weak
+curvature functional with its actual weighted integrability. Qualify the two
+moment constraints before extracting multipliers, and prove the regularity,
+interface/boundary laws and original geometric path transfer actually used.
+Maximal weak-graph density and unrestricted measurable-curvature recovery are
+not asserted by the present comparison theorem.
 
-T8–T10 still require a genuinely determining characterization and justified selection,
-universal complete-action safety, original smooth negative witnesses below every
-larger cap, and precise unrestricted endpoint safety/attainment. Neither the
-variational infimum nor the new weak equation identifies C_rot. No symmetry,
-finite switch count or selected structural branch follows from these necessary
-conditions. Final native, independent-review, research/manuscript and delivery
-gates remain mandatory; no required original-plan task is deferred.
+T8–T10 still require a genuinely determining characterization and justified
+selection, universal complete-action safety, original smooth negative witnesses
+below every larger cap, and precise unrestricted endpoint safety/attainment.
+Neither the variational infimum nor these necessary equations identifies C_rot.
+No finite switch count or selected structural branch follows from them. Final
+native, independent-review, research/manuscript and delivery gates remain mandatory;
+no required original-plan task is deferred.
