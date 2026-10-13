@@ -1426,3 +1426,51 @@ in this continuation. Their matching full native evidence is reused without a
 new project build, declaration-linter or project axiom run. No typesetting was
 performed. The precise remaining critical-cone question is recorded for the
 reviewer; the original Phase-II completion criteria are unchanged.
+
+## Phase II, Round 7 endpoint producer
+
+Three new leaves contain five public theorems: subthreshold safety, original
+endpoint safety, exact-curvature-cap transport of recoverability, zero smooth
+value at the original threshold, and an actual zero-action minimum with the
+same four graph limits. No accepted parent leaf is edited. The changing-cap
+proof retains the actual limiting box and proves real liminf boundedness before
+using it. The same-pair recovery regression remains explicitly covered.
+
+Under the Root writer lock, the completed native command was:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-7 \
+  --reuse-receipt docs/evidence/phase2-round-6/receipt.json
+```
+
+The [receipt](evidence/phase2-round-7/receipt.json), SHA256
+`34c392df8810e50792dec522b9b1f90a5ffd55e51bc4e8f95d5bd4a2d53fb8de`, passes for
+267 modules, 272 inputs and 273 outputs. Three fresh source elaborations are
+silent and 264 unchanged accepted elaborations are reused. Root build, source
+and declaration linters and native declaration-kind inspection pass. The 1,243
+required selectors, 1,344 exact queries and 3,393 actual transitive axiom rows,
+including 1,111 private rows, use only subsets of `propext`, `Classical.choice`
+and `Quot.sound`. Read-only reconstruction checks all input/output/driver hashes
+and 4,610 source-command records across 32 receipts. Checker policy is unchanged
+outside inventories and queries.
+
+`EndpointMinimumChecks.lean` obtains the zero-action pair without a zero-value,
+operator-sign, branch or free-region premise. It consumes the same quadruple's
+stationarity, classical first probe derivative, canonical operator equality,
+absolute continuity and natural pole traces of both Euler fluxes, their a.e.
+derivative laws, and all four strong recovery limits. A round-class check covers
+cap transport to one with a degenerate curvature box. The final completed run
+(exec session 53557, exit 0) has empty stdout/stderr. Exact source/output/command
+bindings are in the [checkpoint](evidence/phase2-round-7/checkpoint.json).
+
+Bounded source simplifier advice recommends no changes, with all inspected
+hashes matching. It is source advice, not acceptance review. All source-reader
+leases are released. The single configured Round 7 outer review is pending;
+accepted Round 6 mathematics is reused without duplicate review.
+
+The [preservation record](evidence/phase2-round-7/preservation.json) verifies all
+264 accepted parent leaves, 149 Phase-I leaves, 2,325 historical workflow files
+and 6,446 prior evidence files unchanged. Accepted paper, both TASKs, pins,
+compiler/platform and ten dependency revisions match. No typesetting occurred.
+Phase I remains COMPLETE. Phase II remains OPEN: the endpoint producer gives
+neither operator orientation nor a determining value or smooth attainment.

@@ -263,3 +263,6 @@ import RicciFlowSharpEstimate.Analysis.DivergenceStrongMaximum
 import RicciFlowSharpEstimate.Geometry.WeakProbeStrongMaximum
 import RicciFlowSharpEstimate.Geometry.RecoverableProbeSign
 import RicciFlowSharpEstimate.Geometry.SmoothAreaSafety
+import RicciFlowSharpEstimate.Geometry.RecoverableAreaCap
+import RicciFlowSharpEstimate.Geometry.RotationalEndpointSafety
+import RicciFlowSharpEstimate.Geometry.AreaThresholdMinimum

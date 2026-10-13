@@ -2633,3 +2633,77 @@ asked which exact minimum-level implication can justify the next step. T9e,
 all-probe coverage and all determining/global/sharpness/endpoint gates remain
 active. Source, output and scope bindings are recorded in the
 [coupled-investigation record](../evidence/phase2-round-6-coupled/checkpoint.json).
+
+## Round 7: the actual endpoint zero-action minimum
+
+The Round 6 review accepts the prerequisite packet but finds the orientation
+objective stalled. Its prescribed next step is now implemented: for the existing
+original safe-set supremum C*=rotationalThreshold,
+
+\[
+ C_*\in\operatorname{rotationalSafeCaps},\qquad
+ \operatorname{smoothAreaInfimum}(C_*)=0.
+\]
+
+`exists_zero_action_recoverable_area_minimizer` produces an actual recoverable
+pair at C*, with unit physical mass, a nonzero interior probe value, continuous
+interior probe and first derivative, zero complete action, and global minimality
+against the full recoverable class. It returns the zero weak probe equation for
+every globally smooth test, without endpoint restrictions, and a smooth sequence
+with all four strong limits to that very K,r,p,z and action tending to zero.
+No zero-value or operator-sign hypothesis occurs in either headline.
+
+Endpoint safety uses the order structure of the actual nonempty bounded safe
+set. Every 1<=D<C* is safe. If C*=1, the accepted cap-one theorem applies.
+Otherwise contract each arbitrary smooth exact-moment curvature toward two,
+keeping its arbitrary smooth probe fixed. For 0<t<1, the contracted positive box
+has ratio strictly below C*, since
+
+\[
+ (1-t)\Lambda+2t<C_*((1-t)\kappa+2t)
+\]
+
+follows from Lambda<=C*kappa and C*>1. Both moments remain exact. Original scalar
+safety at this smaller ratio and continuity of the complete action give endpoint
+scalar safety; the accepted Haar transfer returns the original all-form result.
+The proof does not use a CK plateau, a symmetry assumption, or probe normalization
+along the contraction.
+
+For zero value, choose C*<D<C_CK and caps
+C_n=C*+(D-C*)/(n+1). Negative smooth unit-mass competitors exist at every C_n by
+the actual negative-infimum theorem and nonemptiness of its value set. They lie
+in the single cap D and action sublevel zero. Coercivity supplies a real lower
+bound before the liminf comparison. The accepted joint compactness/recovery
+producer gives a nonzero unit-mass limit with A_0<=liminf A_n<=0. Its same box
+witnesses converge along one subsequence, and Lambda_n<=C_n*kappa_n passes to
+Lambda_0<=C*kappa_0 with kappa_0>0. Keeping only the auxiliary D box would not
+suffice.
+
+`IsRecoverableAreaCompetitor.of_curvature_cap` closes this distinction. For a
+recoverable pair at any cap and the same K admissible at a new cap, it recovers
+K by smooth exact-moment curvatures in the new positive box, pairs them with the
+existing smooth probe recovery, and takes a genuine curvature a.e. subsequence.
+The strong graph theorem gives full action and mass passage. A positive-mass
+tail is normalized by its literal inverse square root; graph scaling preserves
+the same r,p,z and all actual derivative limits. No ordering of the two caps,
+maximal-domain density or supplied action convergence is assumed. The degenerate
+box and cap-one cases are included.
+
+The resulting pair is genuinely recoverable at C*. Endpoint safety yields
+0<=smoothAreaInfimum(C*)<=A_0<=0. Thus both quantities vanish, and the very same
+limit is globally minimal. The public consumer applies the existing first-order
+system and Euler-flux theorems to this pair: its multiplier is derived to be zero,
+the canonical fluxes are absolutely continuous with natural zero pole traces,
+and the weak operator agrees a.e. with the canonical interior representative.
+The probe itself has no imposed boundary value or derivative.
+
+Native source/root, required linters, exact signatures, actual axiom checks and
+the silent public consumer pass; see the
+[Round 7 evidence](../evidence/phase2-round-7/checkpoint.json). The single outer
+review is pending. This proves endpoint safety and relaxed zero-action attainment,
+not original smooth attainment or an identifying equation for C_rot. The next
+sign question concerns existence of a suitable orientation of an actual endpoint
+minimum. The earlier negative-near-threshold sign conjecture remains unproved
+and unrefuted. All-probe coverage, determining selection, global comparison at
+the determining value, original smooth sharpness and exact smooth equality/
+attainment scope remain required. Phase I stays COMPLETE; Phase II stays OPEN.

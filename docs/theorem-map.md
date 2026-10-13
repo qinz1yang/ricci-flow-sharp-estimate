@@ -610,3 +610,21 @@ joint minima below the CK threshold and preserves their minimizing property and
 recovery under negation. These statements do not select a one-sided operator,
 identify C_rot, or settle endpoint safety. T9e remains open. Round 5 acceptance
 is reused; the Round 6 outer review is pending for this prerequisite packet.
+
+## Phase II Round 7: endpoint safety and an actual zero-action minimum
+
+The Round 6 outer review at `284dc76` verifies the preceding six prerequisites;
+it does not resolve operator orientation. Round 7 adds:
+
+| Result | Canonical source |
+|---|---|
+| Every cap at least one strictly below the threshold is safe; contraction of arbitrary smooth curvature proves endpoint safety for all original forms | `Geometry/RotationalEndpointSafety.lean` |
+| Recoverability transfers to every cap satisfied by the same curvature, through exact-box curvature recovery and literal probe normalization | `Geometry/RecoverableAreaCap.lean` |
+| Zero smooth value at the original threshold and an actual nonzero unit-mass weak minimum, with zero probe equation and all four strong smooth-recovery limits to that same pair | `Geometry/AreaThresholdMinimum.lean` |
+
+These three leaves add five public theorems and no definitions. All 264 accepted
+parent leaves remain unchanged. The [native receipt](evidence/phase2-round-7/receipt.json)
+and public consumer pass; the single Round 7 outer review is pending. No sign,
+symmetry, finite-dimensional selection or smooth extremizer is assumed or
+produced. Determining C_rot, operator orientation, all-probe coverage and the
+remaining original smooth sharpness/endpoint-attainment obligations remain open.

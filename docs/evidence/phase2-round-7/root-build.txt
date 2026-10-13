@@ -1,0 +1,3 @@
+✔ [9911/9913] Built RicciFlowSharpEstimate.Geometry.AreaThresholdMinimum (23s)
+✔ [9912/9913] Built RicciFlowSharpEstimate (9.4s)
+Build completed successfully (9913 jobs).

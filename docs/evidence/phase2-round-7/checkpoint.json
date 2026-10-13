@@ -1,0 +1,87 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; actual endpoint producer passes native gates, operator orientation and determining goal remain open",
+  "parent_outer_reviewed_revision": "284dc760ad62ea36229fc41fa1120db0ff9eb0ff",
+  "parent_native_receipt": "docs/evidence/phase2-round-6/receipt.json",
+  "native_receipt_sha256": "34c392df8810e50792dec522b9b1f90a5ffd55e51bc4e8f95d5bd4a2d53fb8de",
+  "native_counts": {
+    "modules": 267,
+    "inputs": 272,
+    "outputs": 273,
+    "selectors": 1243,
+    "signature_queries": 1344,
+    "axiom_rows": 3393,
+    "private_axiom_rows": 1111,
+    "fresh_source_elaborations": 3,
+    "reused_source_elaborations": 264
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 32,
+    "verified_source_provenance_records": 4610
+  },
+  "new_public_declarations": {
+    "modules": 3,
+    "theorems": 5,
+    "definitions": 0
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "bb86ecc63bef7c3f2e28b2480c0ca936cc6183430c8e8281ec27dcd2ed54769e",
+    "docs/theorem-map.md": "4c30f991fd87840c08f20ee45cbdfa7b8d5f69de8919374da2698cc7ed629e35",
+    "docs/research/phase2-unrestricted.md": "331249dff3437bbf83383e09df1d565a96eb94bec350348c7ad686d03b556825",
+    "docs/verification.md": "491833507d2684a0a465051c800ee3a3f426f148465c266943b6f6ebafbd705b"
+  },
+  "public_headlines": [
+    "RicciFlowSharpEstimate.Geometry.mem_rotationalSafeCaps_of_lt_rotationalThreshold",
+    "RicciFlowSharpEstimate.Geometry.rotationalThreshold_mem_rotationalSafeCaps",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.of_curvature_cap",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.smoothAreaInfimum_rotationalThreshold",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.exists_zero_action_recoverable_area_minimizer"
+  ],
+  "source_simplifier": {
+    "scope": "Five new public endpoint/cap theorems and the same-object public consumer; bounded source advice, not acceptance review",
+    "finding": "No necessary source changes. Exact cap transport preserves K,r,p,z and all four strong limits; changing-cap proof retains the same limiting box witnesses and genuine real liminf lower bound. Zero action is derived from compactness/recovery and endpoint safety. Consumer fluxes and recovery refer to the same quadruple.",
+    "source_hashes": {
+      "RicciFlowSharpEstimate/Geometry/RecoverableAreaCap.lean": "bb028d4e03adafbedde02e51da7b5d2d5b77b66d112059b877f43afe65d4a42b",
+      "RicciFlowSharpEstimate/Geometry/RotationalEndpointSafety.lean": "8be90cfb9ff5c844c1631fb183f22259f013cbbbbb47ceee8dc8c87aeafcc36e",
+      "RicciFlowSharpEstimate/Geometry/AreaThresholdMinimum.lean": "e18ffa3ba8a2a11a813ae2b74d825bfa5f28643a431cb35fdb3ca0ad1f89f7b8"
+    },
+    "consumer_sha256": "7d99ce727b44b638ea602599058120a058199d41917c43d2605ee9e6df82f535",
+    "lease": "released",
+    "capture": "Root record of returned /root/round7_simplifier source-advice message; no worker compilation or canonical writes."
+  },
+  "additional_native_probes": [
+    {
+      "name": "EndpointMinimumChecks",
+      "command": [
+        "flock",
+        ".lake/rfse-root-writer.lock",
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round7-root-pyqpfoj_/EndpointMinimumChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "7d99ce727b44b638ea602599058120a058199d41917c43d2605ee9e6df82f535",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_capture": "Exact empty stdout/stderr in Root scratch EndpointMinimumChecks.txt, completed exec session 53557 after final source edit; no extra replay claimed.",
+      "scope": "Unconditional endpoint safety and zero value; actual same zero-action minimum, mass/nonzero/minimality/stationarity, actual probe derivative, canonical operator and zero-multiplier AC Euler fluxes/natural traces/a.e. laws, all four recovery limits and zero action limit. Degenerate curvature-box/cap-one transport regression.",
+      "native_debt": false
+    }
+  ],
+  "endpoint_safety_scope": "Original all-smooth-form safety at rotationalThreshold, derived by order-theoretic subthreshold safety, arbitrary smooth exact-moment contraction and full action continuity; threshold=1 separately uses cap-one safety.",
+  "cap_recovery_scope": "Same K,r,p,z transported from any recoverable cap to any cap satisfied by K. Exact new-box curvature recovery, existing strong probe graph, genuine a.e. curvature subsequence and literal positive-tail mass normalization preserve all four limits. No cap-order assumption.",
+  "zero_minimum_scope": "Negative smooth unit-mass competitors at caps descending to threshold are compact at one derived common cap below CK. Same limiting positive box witnesses retain threshold ratio. Exact-cap recoverability and endpoint safety force smooth infimum and actual limit action to zero. Global minimality and zero probe equation are derived; no sign/branch/zero-mode premise.",
+  "checker_policy_delta": "Only module inventory, required selectors and exact signature queries. Remaining checker AST matches accepted parent.",
+  "independent_review": "Single configured Round 7 outer review pending. Unchanged Round 6 proof/evidence reused; bounded simplifier is not an acceptance review.",
+  "remaining_required_mathematics": [
+    "Existence of an appropriately oriented actual endpoint minimum with one-sided operator, or rigorous refutation of that exact existential route; nearby-negative sign conjecture remains unproved/unrefuted.",
+    "Weak all-smooth-probe quotient/pole graph coverage and any additional domain/interface/path bridges used.",
+    "Genuinely determining characterization, justified selection and global comparison at its identified value.",
+    "Original smooth negative metric/form witnesses below every larger cap, precise original smooth endpoint equality/attainment, and final research/manuscript/native/review/delivery closure."
+  ]
+}

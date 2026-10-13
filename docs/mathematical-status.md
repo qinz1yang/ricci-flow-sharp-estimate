@@ -77,6 +77,19 @@ the operator-orientation question, which remains unresolved: neither a one-sided
 operator producer nor a counterexample to the precise joint-minimum claim has
 been obtained. No further assumed-sign comparison is promoted.
 
+Round 6's single outer review at `284dc76` accepted the prerequisite theorems
+and recorded the orientation objective as stalled. Round 7 now proves safety at
+the original unrestricted threshold and zero smooth joint value there. An actual
+unit-mass recoverable minimum has zero complete action, genuine stationarity and
+strong recovery to the same curvature and weak probe jets at that exact cap.
+The cap-transfer theorem constructs this recovery; pointwise admissibility is
+not substituted for graph closure. The native public consumer obtains the same
+pair's zero-multiplier coupled and natural flux laws. The Round 7 native gate
+passes; its single outer review is pending. Operator orientation and all-probe
+coverage remain open. This endpoint producer does not determine C_rot or settle
+original smooth endpoint attainment; the remaining global and final gates are
+unchanged.
+
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.
 Native layers prove the all-cap parameter, the generic

@@ -279,6 +279,9 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.WeakProbeStrongMaximum",
     "RicciFlowSharpEstimate.Geometry.RecoverableProbeSign",
     "RicciFlowSharpEstimate.Geometry.SmoothAreaSafety",
+    "RicciFlowSharpEstimate.Geometry.RecoverableAreaCap",
+    "RicciFlowSharpEstimate.Geometry.RotationalEndpointSafety",
+    "RicciFlowSharpEstimate.Geometry.AreaThresholdMinimum",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1540,7 +1543,12 @@ SELECTOR = r"""
       area ++ `weakMeridionalAction_neg,
       area ++ `IsRecoverableAreaCompetitor.neg_probe,
       area ++ `smoothAreaInfimum_nonneg_iff_rotationalSafeCap,
-      area ++ `smoothAreaInfimum_neg_of_rotationalThreshold_lt
+      area ++ `smoothAreaInfimum_neg_of_rotationalThreshold_lt,
+      area ++ `IsRecoverableAreaCompetitor.of_curvature_cap,
+      geo ++ `mem_rotationalSafeCaps_of_lt_rotationalThreshold,
+      geo ++ `rotationalThreshold_mem_rotationalSafeCaps,
+      area ++ `smoothAreaInfimum_rotationalThreshold,
+      area ++ `exists_zero_action_recoverable_area_minimizer
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4044,6 +4052,16 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check smoothAreaInfimum_nonneg_iff_rotationalSafeCap
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check smoothAreaInfimum_neg_of_rotationalThreshold_lt
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.of_curvature_cap
+open RicciFlowSharpEstimate.Geometry in
+#check mem_rotationalSafeCaps_of_lt_rotationalThreshold
+open RicciFlowSharpEstimate.Geometry in
+#check rotationalThreshold_mem_rotationalSafeCaps
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaInfimum_rotationalThreshold
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_zero_action_recoverable_area_minimizer
 """
 
 
