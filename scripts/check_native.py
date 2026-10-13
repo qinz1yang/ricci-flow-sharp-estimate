@@ -271,6 +271,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RecoverableAreaRegularity",
     "RicciFlowSharpEstimate.Geometry.WeakProbeFirstOrderSystem",
     "RicciFlowSharpEstimate.Geometry.AreaProbeMaximumPrinciple",
+    "RicciFlowSharpEstimate.Analysis.IntegrableBoundaryTrace",
+    "RicciFlowSharpEstimate.Analysis.DivergenceMaximumPrinciple",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeDerivativeFlux",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeMaximumPrinciple",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1518,7 +1522,13 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.probe_first_order_system_of_minimum,
       area ++ `nonneg_of_meridionalOperator_nonpos,
       area ++ `pos_of_meridionalOperator_neg,
-      area ++ `meridionalAction_ge_mass_of_negative_source
+      area ++ `meridionalAction_ge_mass_of_negative_source,
+      analysis ++ `eq_zero_of_integrableOn_div_left,
+      analysis ++ `eq_zero_of_integrableOn_div_right,
+      analysis ++ `nonneg_of_divergence_inequality,
+      area ++ `weakProbeDerivativeFlux,
+      area ++ `IsRecoverableAreaCompetitor.derivative_flux_absolutelyContinuous,
+      area ++ `IsRecoverableAreaCompetitor.nonneg_of_weakMeridionalOperator_nonpos
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3994,6 +4004,18 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check pos_of_meridionalOperator_neg
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check meridionalAction_ge_mass_of_negative_source
+open RicciFlowSharpEstimate.Analysis in
+#check eq_zero_of_integrableOn_div_left
+open RicciFlowSharpEstimate.Analysis in
+#check eq_zero_of_integrableOn_div_right
+open RicciFlowSharpEstimate.Analysis in
+#check nonneg_of_divergence_inequality
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakProbeDerivativeFlux
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.derivative_flux_absolutelyContinuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.nonneg_of_weakMeridionalOperator_nonpos
 """
 
 

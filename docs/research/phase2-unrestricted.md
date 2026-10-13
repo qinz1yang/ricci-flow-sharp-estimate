@@ -2167,3 +2167,93 @@ proof obligation. The original universal all-form safety, sharp smooth original
 witnesses below every larger cap, exact endpoint/attainment and final manuscript/
 evidence/review requirements remain active. No claimed cap or value of C_rot is
 produced by this continuation.
+
+
+## Round 5 weak poles: true derivative-flux traces and a weak maximum principle
+
+The smooth maximum principle at `dd0a54e` cannot itself be applied to the weak
+minimum through the poles. This continuation supplies a different proof in the
+actual recoverable weak domain. It uses no absolute-value replacement of the
+second-order graph and no new boundary value for r or p.
+
+Define the literal derivative flux F=f²p. This is distinct from the existing
+Euler flux P and momentum A. Interior C¹ regularity of f and local absolute
+continuity of p give
+
+\[
+ F'=f(q+Kr)\quad\text{a.e.},\qquad q=fz+2bp-Kr.
+\]
+
+The source is globally integrable: the accepted weighted L² factors
+`sqrt(f)q` and `sqrt(f)Kr` pair with `sqrt(f)`. The first-derivative graph condition
+also gives integrability of F/x and F/(1−x). For either d=x or d=1−x and
+w=x(1−x), the actual upper warp bound yields
+
+\[
+ |f^2p/d|\le(2C)^2|\sqrt w\,p|.
+\]
+
+The proof forms a genuine full-interval absolutely continuous primitive of the
+integrable source, based at 1/2, and identifies it with F on (0,1) by local FTC.
+A continuous function G on [a,b] with G(x)/(x−a) integrable on (a,b) must satisfy
+G(a)=0; otherwise its reciprocal is continuous on a smaller interval, making
+1/(x−a) integrable, a contradiction. Reflection proves the right-pole version.
+Applying both to the actual flux primitive forces both traces to zero. Only then
+is that primitive identified with the literal F on [0,1], proving its absolute
+continuity and genuine zero traces. Substitution of f(0)=f(1)=0 alone was not used
+as a continuity or trace argument.
+
+The generic divergence maximum principle uses a C¹ interior function r and a
+continuous zero-endpoint flux G, locally absolutely continuous, with
+`G=A r'`, A≥0, and a.e. `G'=S≤c r`, c>0. It imposes no probe endpoint limit or
+value. Set `psi=Real.smoothTransition(-r)` and H=G psi. The test is bounded in
+[0,1], vanishes at nonnegative r and is positive at negative r. Local absolute
+continuity and the genuine derivative laws give H'≤0 a.e.; the diffusion term is
+`-A*(r')²*smoothTransition'(-r)≤0`. Both endpoint limits of H are zero because
+`|H|≤|G|`. Thus H is zero throughout the interior. Derivative uniqueness and
+strict positivity of c exclude negative r a.e., and continuity upgrades this to
+pointwise interior nonnegativity. This is first-order AC calculus, not a claim
+that the test is an admissible second-order variational competitor.
+
+The physical consumer supplies A=f², G=F, S=f(q+Kr) and c=fK. Positive original
+curvature and warp imply c>0 a.e.; the required actual flux traces have just been
+proved. Hence the continuous representatives of every recoverable competitor
+satisfy
+
+\[
+ q\le0\text{ a.e. on }(0,1)\quad\Longrightarrow\quad
+ r\ge0\text{ at every point of }(0,1).
+\]
+
+The actual cap-produced minimum is a native consumer; its same flux is produced
+without any source-sign premise, and its probe is nonnegative (with a positive
+interior point from physical nonzero) if its actual operator is nonpositive a.e.
+That operator sign is not inferred from stationarity or minimality.
+
+Exact domain tests check both reciprocal divergences and a normalized nonconstant
+round probe r=sqrt(10)x. It has mass one and nonzero derivatives sqrt(10) at both
+poles while its actual f²p flux has true zero traces. A further generic test permits
+an arbitrary negative raw probe value at a pole while the interior conclusion
+holds. Thus the weak result concerns the physical interior, not arbitrary raw
+endpoint representatives. The accepted smooth result retains its own closed-
+interval C² scope. No Neumann or Dirichlet probe condition has been introduced.
+
+Four new leaves add five public theorems and one literal flux definition. All
+256 prior leaves and receipts are unchanged. Native evidence is in
+`docs/evidence/phase2-round-5-weak-poles/`; the single Round 5 outer review remains
+pending for all three checkpoints. The accepted Phase-I paper stays unchanged.
+
+## Current frontier after weak pole comparison
+
+The weak nonnegativity bridge under an a.e. source sign is now proved in the
+actual domain, without global C² regularity. It still does not establish the
+minimum's operator sign or strict interior nonvanishing, nor does it justify
+quotient coverage of every smooth probe in the weak complete Picone identity.
+Those are the next route-specific obligations; further pole, density, interface
+or geometric-path results must be proved only when used.
+
+The determining characterization and justified selection, universal complete
+scalar safety and original all-form transfer, sharp original smooth witnesses
+below every larger cap, exact unrestricted endpoint/attainment, and final
+research/manuscript/native/independent-review gates remain mandatory. No new safe
+cap or value of C_rot is claimed. Phase I is COMPLETE; Phase II is OPEN.

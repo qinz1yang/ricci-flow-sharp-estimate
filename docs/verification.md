@@ -1235,3 +1235,52 @@ unchanged. Accepted paper bytes, both TASKs, dependency pins, compiler/platform
 and all ten dependency revisions match. No typesetting was performed. Phase I is
 COMPLETE and Phase II remains OPEN, with every determining/global/sharpness/
 endpoint and final research/manuscript gate still required.
+
+## Phase II, Round 5 weak poles: actual zero traces and weak maximum principle
+
+Four new leaves, five public theorems and one literal flux definition close the
+weak-domain pole comparison step. The actual derivative flux f²p is absolutely
+continuous with zero traces derived from weighted graph integrability. A bounded
+smooth negative-value test gives interior r≥0 from a.e. weak operator q≤0. The
+operator sign remains a premise; strict nonvanishing and determining global
+safety are not conclusions.
+
+The final command, under the Root writer lock, was:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-5-weak-poles \
+  --reuse-receipt docs/evidence/phase2-round-5-regularity/receipt.json
+```
+
+The [receipt](evidence/phase2-round-5-weak-poles/receipt.json), SHA256
+`bc9be8017024a780dcd93655000ec2ff43dfb0c0a8de557103a90e5e9d07702c`, passes for
+260 modules, 265 inputs and 266 outputs. Four fresh source elaborations are
+silent; all 256 unchanged prior elaborations are reused. Root build, source and
+declaration linters and native declaration-kind inspection pass. All 1,230
+selectors, 1,331 exact signature/declaration queries and 3,369 actual transitive
+axiom rows, including 1,100 private rows, pass with only subsets of `propext`,
+`Classical.choice`, `Quot.sound`. Read-only reconstruction verifies source/output/
+driver hashes and 3,817 source-command records across 29 receipts on the chosen
+native lineage. The checker changes only inventories and queries.
+
+The silent `WeakPoleChecks` driver consumes the actual cap-produced minimum,
+retaining its own literal flux, mass, physical nonzero and conditional sign
+consequence. It checks both reciprocal endpoint divergences, the unit-mass round
+probe sqrt(10)x with nonzero derivatives at both poles, and a generic interior
+comparison allowing a negative raw endpoint value. The last test prevents an
+unwarranted endpoint sign conclusion for arbitrary weak representatives. Exact
+command, source/output hashes and capture provenance are recorded in the
+[checkpoint](evidence/phase2-round-5-weak-poles/checkpoint.json).
+
+The four-leaf source simplifier recommended no changes; its hashes match final
+sources. This is source advice, not an acceptance review. All worker leases are
+released. The single configured Round 5 outer review remains pending for the
+three changed packets; unchanged Round 4 acceptance is reused.
+
+The [preservation record](evidence/phase2-round-5-weak-poles/preservation.json)
+verifies all 256 prior native leaves, 175 Round 3 leaves, 149 Phase-I leaves,
+2,325 historical workflow files and 5,630 prior tracked evidence files unchanged.
+Accepted paper bytes, both TASKs, pins, compiler/platform and all ten dependency
+revisions match. No typesetting was performed. Phase I is COMPLETE; Phase II is
+OPEN. All determining, universal safety, sharp original smooth witness, endpoint
+and final research/manuscript/review requirements remain active.

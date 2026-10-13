@@ -55,8 +55,13 @@ operator satisfying the coupled first-order equations. The smooth meridional
 maximum principle treats both physical poles: nonpositive source gives a
 nonnegative probe, strictly negative source gives a positive probe. An exact
 interior absolute-value corner is excluded from the second weak graph, so
-absolute value is not a general admissible sign reduction. This does not prove
-the actual minimum's operator sign or global C² pole regularity. Further used
+absolute value is not a general admissible sign reduction. A further continuation
+now proves true zero pole traces and absolute continuity
+of the literal derivative flux f²p from weighted graph integrability, then derives
+interior probe nonnegativity from an a.e. nonpositive weak meridional operator.
+The comparison uses bounded smooth testing, with no absolute-value graph closure
+or C² pole hypothesis. This does not prove the actual minimum's operator sign,
+strict nonvanishing, arbitrary-probe Picone coverage or a determining cap. Further used
 closure/interface/path laws, determining selection, universal safety, smooth
 sharpness and endpoint scope remain open. C_rot is not identified.
 

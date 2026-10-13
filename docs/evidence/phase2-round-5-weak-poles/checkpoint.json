@@ -1,0 +1,69 @@
+{
+  "phase2_status": "OPEN; genuine weak derivative-flux pole traces and conditional interior maximum principle",
+  "parent_native_revision": "dd0a54e6f756bd61d343c972af2f42ab37675a48",
+  "parent_outer_reviewed_revision": "a65205d9a83dfebe62074158ca96ce3f365b5397",
+  "native_receipt_sha256": "bc9be8017024a780dcd93655000ec2ff43dfb0c0a8de557103a90e5e9d07702c",
+  "native_counts": {
+    "modules": 260,
+    "inputs": 265,
+    "outputs": 266,
+    "selectors": 1230,
+    "signature_queries": 1331,
+    "axiom_rows": 3369,
+    "private_axiom_rows": 1100,
+    "fresh_source_elaborations": 4,
+    "reused_source_elaborations": 256
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 29,
+    "verified_source_provenance_records": 3817
+  },
+  "new_public_declarations": {
+    "modules": 4,
+    "theorems": 5,
+    "definitions": 1
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "3d9431ee3abf4a12c128f0bfddcb754b067727914268ddfdabb3e53616d13723",
+    "docs/theorem-map.md": "7615970feb027a3cae7ba2f4f4ac0767a903545115a888cc1e461975191aeceb",
+    "docs/research/phase2-unrestricted.md": "69791d2af39bcd07eca7ae27570f793162bd2e679fd6c21e7c7d4189b950757c",
+    "docs/verification.md": "11cfb36744aea641f56676242d36d1415dbd5eb28f10bbef168cf99bb1e5ae9b"
+  },
+  "independent_review": "Pending single configured Round 5 outer review for the initial 13dbfd3 packet, dd0a54e continuation and this four-leaf packet. Unchanged Round 4 acceptance reused; no duplicate acceptance review.",
+  "source_simplifier": {
+    "scope": "Four-leaf source advice only; not acceptance review",
+    "finding": "No required simplification or integrability repair. True flux traces follow inverse-distance integrability; the bounded smooth test avoids probe endpoint data and absolute-value graph closure. Final nonnegativity is interior and conditional on actual a.e. operator sign.",
+    "advisory_sha256": "9b201e7f7a6b6c4774bef04ec1e4139fff24c843e44340f95e983929ce2f889c",
+    "source_hashes_match": true
+  },
+  "additional_native_probes": [
+    {
+      "name": "WeakPoleChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round5w-root-zktdndeq/WeakPoleChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "c8107c37ffbeb280b63ceff452a6dd843625783ab9d2e5807589d25837d915fc",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_capture": "Exact empty stdout/stderr returned by completed exec session 82853 after the final diagnostic source edit. No extra replay is claimed.",
+      "scope": "Same cap-produced minimum with literal derivative flux AC/traces, operator-sign implication and positive interior point; both inverse-distance endpoint exclusions; normalized nonconstant round probe with nonzero pole derivatives; arbitrary negative raw endpoint value allowed by the open-domain comparison."
+    }
+  ],
+  "trace_scope": "Continuous endpoint traces vanish when the corresponding inverse-distance quotient is integrable. For a recoverable competitor with continuous interior first derivative, the literal f^2 p has global AC, true zero pole traces and actual a.e. derivative f(q+Kr), all derived from tied weak derivatives and weighted graph integrability. No endpoint value of r or p is imposed.",
+  "comparison_scope": "A bounded smooth negative-value test in the first-order divergence identity proves interior nonnegativity from an a.e. nonpositive actual weak meridional operator. The consumer uses the same positive physical warp/curvature and derived derivative flux. No absolute-value second-graph closure or global C2 regularity is assumed.",
+  "domain_tests": "The cap-produced unit-mass minimum yields its actual flux and conditional nonnegativity with an interior positive point. The normalized round probe sqrt(10)x has nonzero pole derivatives yet true zero flux traces. A generic comparison allows a negative raw endpoint representative; no weak endpoint sign is claimed.",
+  "remaining_required_mathematics": [
+    "Derive or refute the actual minimum operator-sign orientation and strict interior nonvanishing needed by the chosen comparison route.",
+    "Prove every all-probe quotient/endpoint-approximation or additional domain/interface/geometric-path bridge actually used.",
+    "Derive a determining characterization and justified selection with universal complete scalar and original all-smooth-form safety.",
+    "Produce original smooth negative witnesses below every strictly larger cap, settle precise endpoint/attainment and finish native/review/research/manuscript closure."
+  ]
+}

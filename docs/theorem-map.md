@@ -567,3 +567,17 @@ leaves are unchanged. The single Round 5 outer review remains pending for both
 checkpoints. The maximum principle is a global C² probe statement; the actual
 weak minimum has only the stated interior regularity. No operator sign, global
 smoothness, determining cap or threshold selection is inferred for that minimum.
+
+## Phase II Round 5 weak-pole continuation
+
+| Result | Canonical source |
+|---|---|
+| Both continuous endpoint traces forced by integrability after division by endpoint distance | `Analysis/IntegrableBoundaryTrace.lean` |
+| Divergence maximum principle with bounded smooth testing and zero flux, without probe endpoint regularity | `Analysis/DivergenceMaximumPrinciple.lean` |
+| Literal f²p flux, global absolute continuity, derived zero pole traces and actual derivative f(q+Kr) | `Geometry/WeakProbeDerivativeFlux.lean` |
+| Interior nonnegativity of the actual recoverable weak probe from its a.e. operator sign | `Geometry/WeakProbeMaximumPrinciple.lean` |
+
+The four leaves add five public theorems and one definition. All 256 parent leaves
+are preserved. Operator nonpositivity remains an explicit hypothesis; no strict
+positivity, zero action, all-probe weak Picone coverage or threshold determination
+is asserted. The same single configured Round 5 outer review remains pending.
