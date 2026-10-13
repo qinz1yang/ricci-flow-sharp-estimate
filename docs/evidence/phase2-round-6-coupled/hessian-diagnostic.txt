@@ -1,0 +1,11 @@
+Round6CoupledDiagnostic.density_symmetric_increment (f b K r p z k d t : ℝ) :
+  meridionalActionDensity f b (K + t * k) r p (z + t * d) + meridionalActionDensity f b (K - t * k) r p (z - t * d) -
+      2 * meridionalActionDensity f b K r p z =
+    2 * t ^ 2 * (f * ((f * d - r * k) ^ 2 + (r * k) ^ 2))
+Round6CoupledDiagnostic.principal_warp_identity (f r d e : ℝ) :
+  f * ((f * d - r * (-e / 2)) ^ 2 + (r * (-e / 2)) ^ 2) = f * (f * d + r * e / 2) ^ 2 + f * r ^ 2 * e ^ 2 / 4
+Round6CoupledDiagnostic.principal_positive {f r d k : ℝ} (hf : 0 < f) (hr : r ≠ 0) (hdir : d ≠ 0 ∨ k ≠ 0) :
+  0 < f * ((f * d - r * k) ^ 2 + (r * k) ^ 2)
+'Round6CoupledDiagnostic.density_symmetric_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round6CoupledDiagnostic.principal_warp_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round6CoupledDiagnostic.principal_positive' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1395,3 +1395,34 @@ continuation. Matching native evidence from the prerequisite checkpoint is reuse
 no extra compiler, linter, axiom or typesetting run is claimed. Final note bindings
 are in the [research-note record](evidence/phase2-round-6-research/checkpoint.json).
 The mainline gate and the full Phase-II suite remain open.
+
+### Round 6 coupled-investigation continuation
+
+The coupled numerical search and full source-level Hessian calculation did not
+resolve actual-minimum operator orientation. Thirty-six local searches passed
+their numerical consistency checks, but provide no exact feasibility, global
+minimum, pointwise-sign or threshold certificate. The full critical-cone weak
+variation argument remains provisional.
+
+Root separately ran `HessianDiagnostic.lean` in scratch under the writer lock,
+using the pinned compiler and unsuppressed standard source-linter options. The
+completed run (exec session 99760, exit 0) printed the three requested exact
+signatures and actual axiom closures, with no warnings or errors. The closures
+use only `propext`, `Classical.choice`, `Quot.sound`. Its pointwise symmetric
+density increment, principal-form identity and strict positivity calculation
+do not assert weak-path feasibility or operator orientation. This diagnostic
+was not added to the canonical library; no new library theorem is counted.
+
+The [coupled-investigation record](evidence/phase2-round-6-coupled/checkpoint.json)
+binds the exact command, source/output hashes, numerical scripts/results and
+final documentation. The [raw native output](evidence/phase2-round-6-coupled/hessian-diagnostic.txt)
+is preserved. Bounded source simplifier advice found no required correction and
+retained these scope limits; this is not acceptance review. All worker leases
+are released, and the same single configured Round 6 outer review is pending.
+
+All 269 native inputs still match the existing Round 6 receipt. No canonical
+Lean source, checker, root import, dependency pin or historical receipt changed
+in this continuation. Their matching full native evidence is reused without a
+new project build, declaration-linter or project axiom run. No typesetting was
+performed. The precise remaining critical-cone question is recorded for the
+reviewer; the original Phase-II completion criteria are unchanged.

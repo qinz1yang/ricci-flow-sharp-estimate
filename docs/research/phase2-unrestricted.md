@@ -2512,3 +2512,124 @@ The round's mainline gate remains unresolved. A next attempt must supply a new
 global argument specific to the actual minimizing object, or a rigorous relevant
 minimum-level refutation. It must not silently promote any unproved kernel sign,
 transport feasibility, recovery or energy-lowering premise.
+
+## Round 6 coupled search and second-variation test
+
+The actual-minimum orientation claim remains unresolved. A bounded numerical
+search found no candidate that refutes it, and a local second-variation test
+produced no sign implication. The numerical results below are exploratory;
+the full weak-path calculation is provisional. Only the explicitly identified
+pointwise density algebra has fresh native evidence.
+
+The search varied piecewise constant curvature on uniform cells and globally
+polynomial probes with their actual first and second derivatives. It retained
+both curvature moments and optimized the original lower box witness kappa with
+kappa<=K<=C kappa. The warp and its slope were the literal primitives of that
+same curvature. Cell Gaussian quadrature integrated the complete density and
+physical mass, including both positive squares and both signed terms. For
+polynomial degree d, d+2 nodes per cell suffice for exact integration in real
+arithmetic; the implementation used floating arithmetic throughout. The
+generalized least eigenvector supplied the probe, and the curvature gradient
+included the varying-mass correction. No reflection symmetry or probe sign was
+imposed. Orientation by the probe's mean occurred only when reporting results.
+
+Thirty-six local searches covered 32/64/128 cells and probe degrees 10/20/24,
+with caps 3, 4, 4.2, 4.8 and 4.93 in the combinations recorded in the evidence.
+Twelve runs began at asymmetric extreme points of the same curvature polytope.
+All reported local optimizer success, positive sampled probes and negative
+sampled operators after the reporting orientation. The largest moment residual
+was 2.23e-15 and largest box violation 3.59e-15. These residuals are floating
+checks, not exact admissibility proofs. Representative seed-zero values are:
+
+| Cells / probe degree | Cap | Computed normalized action | Largest sampled q |
+|---|---:|---:|---:|
+| 32 / 10 | 4.8 | -0.288865 | -2.553787 |
+| 64 / 20 | 4.8 | -0.313330 | -2.539618 |
+| 128 / 24 | 4.8 | -0.320013 | -2.530503 |
+| 64 / 20 | 4.2 | -0.047170 | -2.641652 |
+| 128 / 24 | 4.2 | -0.053274 | -2.621281 |
+
+The changing values under refinement preclude treating these as certified
+minimum values. Local optimizer success, agreement across starts and sampled
+signs establish neither global minimality nor uniqueness, symmetry, pointwise
+one-sidedness or a threshold. No C_rot estimate is asserted. Checks against the
+round spectrum, direct complete-density evaluation and a fixed-vector Rayleigh
+finite-difference gradient test passed. NumPy/SciPy and the scripts remained in
+isolated scratch; project dependencies and pins were unchanged.
+
+The independent source-level calculation considered compact smooth directions
+psi,s with k=-psi''/2 and the tied path
+
+\[
+ K_t=K+tk,\quad f_t=f+t\psi,\quad b_t=b+t\psi',\qquad
+ (r_t,p_t,z_t)=(r+ts,p+ts',z+ts'').
+\]
+
+Compact support gives both zero moments of k. It does not ensure that the path
+stays in the original curvature box. Feasibility, recoverable-class membership
+and the weak-path variation theorem still need formal proof for any direction
+actually used. In particular, no free curvature interval is inferred from the
+minimum. With h=psi', the actual operator expands as q_t=q+t a+t^2 c, where
+
+\[
+ a=fs''+2bs'-Ks+\psi z+2hp-kr,\qquad
+ c=\psi s''+2hs'-ks.
+\]
+
+For the actual unit-mass value lambda, put
+
+\[
+\begin{aligned}
+ V_0&=K^2f-Kb^2/2-\lambda f,& B_0&=Kbf,\\
+ V_1&=2Kkf+K^2\psi-kb^2/2-Kbh-\lambda\psi,
+ &B_1&=kbf+Khf+Kb\psi,\\
+ V_2&=k^2f+2Kk\psi-kbh-Kh^2/2,
+ &B_2&=khf+kb\psi+Kh\psi.
+\end{aligned}
+\]
+
+The proposed full coefficient of t^2 in A_t-lambda m(t) is the integral of
+
+\[
+ Q=fa^2+2fqc+2\psi qa+V_0s^2+2V_1rs+V_2r^2
+   -B_0ss'-B_1(rs'+sp)-B_2rp.
+\]
+
+Here m'(0)=integral(psi r^2+2frs). If g_1=(A_t-lambda m(t))'(0), the
+normalized second derivative is 2 integral Q-2 m'(0)g_1. The qualified moment
+conditions give g_1=integral(W-alpha-beta x)k. A one-sided feasible direction
+may have g_1>0, in which case a negative second coefficient does not contradict
+minimality. Second-order nonnegativity applies on the critical cone g_1=0;
+arbitrary compact directions cannot be substituted for this condition. These
+full weak-path assertions are source-level research, not new library theorems.
+
+A separate native diagnostic does verify the exact pointwise identity, with
+f,b,r,p fixed and D the canonical complete density,
+
+\[
+ D(f,b,K+tk,r,p,z+td)+D(f,b,K-tk,r,p,z-td)-2D(f,b,K,r,p,z)
+ =2t^2 f\bigl((fd-rk)^2+(rk)^2\bigr).
+\]
+
+Substituting k=-psi''/2 gives the principal quadratic form
+
+\[
+ f(fs''+r\psi''/2)^2+fr^2(\psi'')^2/4.
+\]
+
+It is positive for a nonzero principal direction when f>0 and r is nonzero,
+independently of the base q. Cancelling the first square leaves the second.
+This rules out reading a q-sign condition from this principal test alone; it
+does not rule out a global use of the full Hessian. The native diagnostic
+asserts neither feasible variations nor a conclusion about a minimizing pair.
+
+The missing step for this route is to construct, from sign change of the actual
+q, a genuinely feasible critical direction and prove that the full integral
+of Q is negative, retaining the mass correction and every lower-order term.
+No such construction was obtained. A separate proposal to first produce an
+actual zero-action critical pair would itself require a proof of existence and
+regime relevance; a zero eigenvalue cannot be assumed. The Round 6 reviewer is
+asked which exact minimum-level implication can justify the next step. T9e,
+all-probe coverage and all determining/global/sharpness/endpoint gates remain
+active. Source, output and scope bindings are recorded in the
+[coupled-investigation record](../evidence/phase2-round-6-coupled/checkpoint.json).

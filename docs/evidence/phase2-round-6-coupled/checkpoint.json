@@ -1,0 +1,268 @@
+{
+  "status": "PROVISIONAL coupled research checkpoint; actual-minimum operator orientation unresolved",
+  "parent_revision": "f2d510087189cd024e8427129aaf443068216133",
+  "canonical_library_delta": {
+    "new_modules": 0,
+    "new_declarations": 0,
+    "changed_native_inputs": 0
+  },
+  "reused_native_evidence": {
+    "receipt": "docs/evidence/phase2-round-6/receipt.json",
+    "sha256": "d33ba34d212e99d25e08a1e8c3bb2e0547e67cf81201438f8a36ecf738857a04",
+    "matched_input_hashes": 269,
+    "matched_output_hashes": 270,
+    "new_project_build": false,
+    "new_project_declaration_linter_run": false,
+    "new_project_axiom_run": false
+  },
+  "native_diagnostic": {
+    "scope": "Exact pointwise complete-density symmetric increment and principal quadratic-form identity/positivity only. No weak-path feasibility, global minimality or operator-sign conclusion.",
+    "source": "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/HessianDiagnostic.lean",
+    "source_sha256": "2f417094a4bfd0eef010695ba79f6ec38ac00fb71e1ded2c85da51fc23988e76",
+    "output": "docs/evidence/phase2-round-6-coupled/hessian-diagnostic.txt",
+    "output_sha256": "876bd65fe7d65dd5a88caa7177dcc7d050c6f98c15cfa10c67983009520eb4fc",
+    "command": [
+      "flock",
+      ".lake/rfse-root-writer.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file.",
+      "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/HessianDiagnostic.lean"
+    ],
+    "capture": "Combined stdout/stderr redirected to HessianDiagnostic.txt in Root scratch; completed exec session 99760 after final source edit. This record preserves that run, not a replay.",
+    "exit_code": 0,
+    "signatures": 3,
+    "actual_axiom_rows": 3,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "warnings_or_errors": 0,
+    "canonical_integration": false,
+    "independent_review": "Single configured Round 6 outer review pending."
+  },
+  "numerical_exploration": {
+    "scope": "Exploratory local Ritz/curvature optimization, not global minimum, certified pointwise sign or threshold proof",
+    "scratch": "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv",
+    "python": "3.10.12",
+    "versions": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3"
+    },
+    "project_dependency_changes": false,
+    "command_argv": [
+      [
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/venv/bin/python",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/joint_probe.py",
+        "32",
+        "10",
+        "3",
+        "4",
+        "4.8",
+        "4.93"
+      ],
+      [
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/venv/bin/python",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/joint_probe.py",
+        "64",
+        "20",
+        "4.2",
+        "4.8"
+      ],
+      [
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/venv/bin/python",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/joint_probe.py",
+        "128",
+        "24",
+        "4.2",
+        "4.8"
+      ],
+      [
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/venv/bin/python",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-root-lrti9lxv/joint_extreme_starts.py"
+      ]
+    ],
+    "completed_exec_sessions": [
+      46461,
+      74494,
+      88444,
+      1436
+    ],
+    "exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "hashes": {
+      "joint_probe.py": "1a8a0ce274050788fd0b5e7903ae571d7d084c67ff27456ede0537251b6c8d8c",
+      "joint_extreme_starts.py": "0be34ce2baecedc6a293c2f1c8dc03a20d9274471b7534faeaaa332a37a5fd21",
+      "joint-32-10.json": "e3237c0f1e147c1838eb639460fdfcb85d215c184880617990cf725baf70bdfc",
+      "joint-32-10.txt": "922c632620c019736e1430b2d65104aedcfa6aa3fe9ea0f49bbcc98c2b7eaa2c",
+      "joint-64-20.json": "9340fcf8db0d81b10491dc26b41a7b8b11b8b4f092e5cf61751eec1aa582d0b6",
+      "joint-64-20.txt": "eef3504c09319fa582ae51c5aa4b5478dcd2bd5a30a6f791c2fdd0a3ceabe268",
+      "joint-128-24.json": "dded96b7ff55bf1f6fdd8510318ad84bbb94fac625ec493f2accdaac6283fb8f",
+      "joint-128-24.txt": "e9d30c25d2cd761dbcef3f0cb50ef340afe85a58545e2b1f6949839cf40062ba",
+      "joint-extreme-starts.json": "8c8b79ea888173fc96056184bb9f76b7826a03400cac882c5da2e32083538aae",
+      "joint-extreme-starts.txt": "42f2aca919c6427ffeb7e6ce4495bab2140f1b233f0ca92ccf9989f54bf405d6",
+      "numerical-summary.json": "f7c393dca331e656b9cdfe891d8020b19771b16b074ec3bb75787f74b4b9e254"
+    },
+    "method": "Piecewise constant curvature with both moment equations and original variable ratio box; actual polynomial probe jets; complete density/mass Gaussian quadrature; mass-corrected Rayleigh gradient; local SLSQP. No symmetry or probe-sign constraint.",
+    "batches": [
+      {
+        "name": "joint-32-10",
+        "runs": 12,
+        "verification": {
+          "round_spectrum_max_error": 8.731149137020111e-11,
+          "gradient_max_error": 5.2048365617451964e-11
+        }
+      },
+      {
+        "name": "joint-64-20",
+        "runs": 6,
+        "verification": {
+          "round_spectrum_max_error": 9.19681042432785e-9,
+          "gradient_max_error": 5.114242362935784e-12
+        }
+      },
+      {
+        "name": "joint-128-24",
+        "runs": 6,
+        "verification": {
+          "round_spectrum_max_error": 1.816079020500183e-8,
+          "gradient_max_error": 3.3474972793712254e-11
+        }
+      },
+      {
+        "name": "joint-extreme-starts",
+        "runs": 12,
+        "verification": {
+          "round_spectrum_max_error": 9.19681042432785e-9,
+          "gradient_max_error": 5.114242362935784e-12
+        }
+      }
+    ],
+    "aggregate": {
+      "runs": 36,
+      "successful": 36,
+      "max_moment_residual": 2.220446049250313e-15,
+      "max_box_violation": 3.58245002475261e-15,
+      "smallest_sampled_probe": 1.7499712386910733,
+      "largest_sampled_operator": -2.527758994389181,
+      "negative_trial_runs": 30,
+      "source_sha256": "1a8a0ce274050788fd0b5e7903ae571d7d084c67ff27456ede0537251b6c8d8c",
+      "versions": {
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "scope": "Exploratory local Ritz/curvature optimization, not global minimum, certified pointwise sign or threshold proof"
+    },
+    "representative_seed_zero": [
+      {
+        "cells": 32,
+        "probe_degree": 10,
+        "C": 3,
+        "seed": 0,
+        "action": 0.7024045607687394,
+        "operator_max": -2.837628967869856
+      },
+      {
+        "cells": 32,
+        "probe_degree": 10,
+        "C": 4,
+        "seed": 0,
+        "action": 0.07950869973407251,
+        "operator_max": -2.694666182193757
+      },
+      {
+        "cells": 32,
+        "probe_degree": 10,
+        "C": 4.8,
+        "seed": 0,
+        "action": -0.28886536600523505,
+        "operator_max": -2.5537867887590857
+      },
+      {
+        "cells": 32,
+        "probe_degree": 10,
+        "C": 4.93,
+        "seed": 0,
+        "action": -0.3402076876795389,
+        "operator_max": -2.527759084628334
+      },
+      {
+        "cells": 64,
+        "probe_degree": 20,
+        "C": 4.2,
+        "seed": 0,
+        "action": -0.047170423652773075,
+        "operator_max": -2.6416524406959767
+      },
+      {
+        "cells": 64,
+        "probe_degree": 20,
+        "C": 4.8,
+        "seed": 0,
+        "action": -0.31332961983311985,
+        "operator_max": -2.5396179679704804
+      },
+      {
+        "cells": 128,
+        "probe_degree": 24,
+        "C": 4.2,
+        "seed": 0,
+        "action": -0.053274143892561084,
+        "operator_max": -2.6212807994981855
+      },
+      {
+        "cells": 128,
+        "probe_degree": 24,
+        "C": 4.8,
+        "seed": 0,
+        "action": -0.3200127892498812,
+        "operator_max": -2.530502513470046
+      }
+    ],
+    "nonclaims": [
+      "Exact admissibility",
+      "Global minimizing object",
+      "Uniqueness or symmetry",
+      "Certified pointwise probe/operator sign",
+      "Value or estimate of rotationalThreshold"
+    ]
+  },
+  "full_hessian_derivation": {
+    "status": "PROVISIONAL source-level weak-path/critical-cone calculation",
+    "source": "/tmp/hmz-fence-4lzhkuwo/math-target-round6c-hessian-082fqxzz/hessian-report.md",
+    "sha256": "cdf5a4fa8a8c3574c656b026d3d3263e57075269912bafee2bc8f2c979435d41",
+    "missing": "Construct from sign-changing actual q a genuinely box-feasible recoverable critical direction and prove negativity of the full mass-corrected quadratic integral. Neither that implication nor a relevant joint-minimum counterexample was obtained."
+  },
+  "simplifier_advice": {
+    "kind": "Root record of returned bounded source-advice message; not acceptance review",
+    "owner": "/root/round6c_simplifier",
+    "finding": "No necessary correction. Literal primitives, moment/ratio constraints, complete density, mass-corrected gradient and Hessian coefficients agree. Keep pointwise native diagnostic and provisional full weak-path argument distinct.",
+    "inspected_sha256": {
+      "joint_probe.py": "1a8a0ce274050788fd0b5e7903ae571d7d084c67ff27456ede0537251b6c8d8c",
+      "joint_extreme_starts.py": "0be34ce2baecedc6a293c2f1c8dc03a20d9274471b7534faeaaa332a37a5fd21",
+      "HessianDiagnostic.lean": "2f417094a4bfd0eef010695ba79f6ec38ac00fb71e1ded2c85da51fc23988e76",
+      "HessianDiagnostic.txt": "876bd65fe7d65dd5a88caa7177dcc7d050c6f98c15cfa10c67983009520eb4fc",
+      "hessian-report.md": "cdf5a4fa8a8c3574c656b026d3d3263e57075269912bafee2bc8f2c979435d41"
+    },
+    "snapshot": "/tmp/hmz-fence-4lzhkuwo/math-target-round2-snapshot-cva4_zfw/published",
+    "restrictions": "Source-only; no Lean/Lake/Git, cache, network, executions, descendants or canonical writes.",
+    "lease": "released"
+  },
+  "documentation_sha256": {
+    "docs/research/phase2-unrestricted.md": "37123d0548dbeaa21c74bc7af71c8f357d54c4315f6a9ccb10ba7aa207827916",
+    "docs/verification.md": "89735316a7ca570b138dbd9a67ba2921052761dee3a9edc8161570cb0df52300"
+  },
+  "review_question": "T9e4: Can the full critical-cone Hessian give a global sign-changing-q contradiction in the negative near-threshold regime, or should the route first produce an actual zero-action critical pair? Identify exact missing theorems and prove relevance without assumed kernel signs, a free region or a zero eigenvalue.",
+  "independent_review": "Same single configured Round 6 outer review pending. Unchanged Round 5 acceptance reused.",
+  "completion": "Round 6 mainline NOT RESOLVED; Phase II OPEN. All original determining, global safety, smooth sharpness, endpoint and final gates remain active."
+}
