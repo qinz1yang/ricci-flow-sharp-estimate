@@ -2257,3 +2257,96 @@ scalar safety and original all-form transfer, sharp original smooth witnesses
 below every larger cap, exact unrestricted endpoint/attainment, and final
 research/manuscript/native/independent-review gates remain mandatory. No new safe
 cap or value of C_rot is claimed. Phase I is COMPLETE; Phase II is OPEN.
+
+## Round 5 strict interior positivity under the actual source sign
+
+The weak-pole comparison proves only nonnegativity from a nonpositive actual
+operator. The next step now gives strict positivity on the physical interior
+under that same source assumption. It uses no fourth-order eigen-equation and
+no strict negativity of the source; actual unit mass excludes the zero solution.
+
+The general strong maximum principle assumes a C¹ nonnegative function r on an
+open interval, a continuous strictly positive diffusion coefficient A, a locally
+absolutely continuous flux G=A r′, and an actual a.e. derivative satisfying
+G′=S≤c r. The continuous upper coefficient c may have either sign. One positive
+interior point forces positivity throughout the interval. No endpoint traces or
+endpoint regularity are needed for this local propagation statement.
+
+Here is the load-bearing zero-propagation argument. On a compact interior
+interval [u,v], continuity and positivity give A≥m>0 and c≤C with C≥0. Absolute
+continuity and the actual a.e. derivative inequality give, for s≤t in [u,v],
+
+\[
+ G(t)-G(s)\le C\int_s^t r.
+\]
+
+Integrability of the differentiated flux comes from its absolute continuity;
+the source is not treated as a totalized integral without a domain argument.
+If r(u)=0, its interior minimum has r′(u)=0 and hence G(u)=0. Put
+R(x)=integral from u to x of r. The flux inequality and A≥m give
+r′≤(C/m)R. For L=max(C/m,1),
+
+\[
+ H(x)=(r(x)+R(x))e^{-Lx},\qquad
+ H'(x)=(r'(x)+r(x)-L(r(x)+R(x)))e^{-Lx}\le0.
+\]
+
+Both r and R are nonnegative, and H(u)=0. Thus r(v)=0. For a zero at v, the
+backward primitive R(x)=integral from x to v of r and ordinary reflection give
+the reverse propagation. The argument needs no transformation of an a.e.
+curvature derivative under reflection. Any interior zero therefore contradicts
+the supplied positive point.
+
+The physical theorem first invokes the genuine weak-pole maximum principle for
+the same recoverable competitor. If the resulting nonnegative probe had no
+positive interior point, it would vanish a.e. on the physical interval and its
+literal mass would be zero, contradicting mass one. The strong principle then
+uses A=f², G=f²p, S=f(q+Kr), and the continuous upper coefficient c=2C f. The
+original a.e. bound K≤2C and r≥0 justify S≤c r; no continuity or derivative of K
+is introduced. Actual positive warp in (0,1) supplies strict interior diffusion.
+Thus, for that same unit-mass object,
+
+\[
+ q\le0\quad\text{a.e.}\quad\Longrightarrow\quad
+ r(x)>0\quad(0<x<1).
+\]
+
+The cap-only minimum producer is a native consumer, retaining its action equal
+to the smooth infimum and the source sign as an explicit condition. This result
+does not produce that sign from minimality or fix arbitrary endpoint values of
+a weak representative.
+
+An exact normalized round example distinguishes this result from the earlier
+strict-source theorem. For v(x)=4x²−4x+3, native polynomial integration gives
+mass(v)=57/35. Set alpha=1/sqrt(mass(v)) and r=alpha v. This is an original smooth
+unit-mass competitor, and its actual operator is
+
+\[
+ q(x)=-88\,\mathrm{alpha}\,(x-1/2)^2.
+\]
+
+It is nonpositive and vanishes at the interior midpoint. The new physical theorem
+still yields strict interior positivity. Domain checks also record that allowing
+zero interior diffusion permits r=x², G=S=0 and c=1 with an interior zero and a
+positive point elsewhere, while the identically zero probe cannot supply the
+nonzero-point premise. These are native exact tests, not numerical evidence.
+
+Two new leaves add two public theorems and no definitions. All 260 parent leaves
+remain unchanged. The new source/native evidence is recorded under
+`docs/evidence/phase2-round-5-strict-interior/`; the same single Round 5 outer
+review remains pending for all four checkpoints. The Phase-I paper is preserved.
+
+## Current frontier after strict interior comparison
+
+Conditional strict interior nonvanishing is now delivered. The next substantive
+route question is whether the actual minimum admits the required nonpositive
+operator orientation. If that step is true, full-action quotient/endpoint
+approximation must still justify coverage of every original smooth probe in the
+weak Picone comparison. Strict interior positivity alone provides no uniform
+positive lower bound through a pole and does not prove that coverage.
+
+Every structural restriction and threshold selection actually used must be
+proved. Determining C_rot, universal complete scalar safety and original all-form
+transfer, sharp original smooth witnesses below every larger cap, precise
+unrestricted endpoint/attainment and final research/manuscript/native/review gates
+remain required. Phase I is COMPLETE; Phase II is OPEN.

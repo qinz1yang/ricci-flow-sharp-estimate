@@ -275,6 +275,8 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.DivergenceMaximumPrinciple",
     "RicciFlowSharpEstimate.Geometry.WeakProbeDerivativeFlux",
     "RicciFlowSharpEstimate.Geometry.WeakProbeMaximumPrinciple",
+    "RicciFlowSharpEstimate.Analysis.DivergenceStrongMaximum",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeStrongMaximum",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1528,7 +1530,9 @@ SELECTOR = r"""
       analysis ++ `nonneg_of_divergence_inequality,
       area ++ `weakProbeDerivativeFlux,
       area ++ `IsRecoverableAreaCompetitor.derivative_flux_absolutelyContinuous,
-      area ++ `IsRecoverableAreaCompetitor.nonneg_of_weakMeridionalOperator_nonpos
+      area ++ `IsRecoverableAreaCompetitor.nonneg_of_weakMeridionalOperator_nonpos,
+      analysis ++ `pos_of_divergence_inequality_of_nonneg,
+      area ++ `IsRecoverableAreaCompetitor.pos_of_weakMeridionalOperator_nonpos
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4016,6 +4020,10 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.derivative_flux_absolutelyContinuous
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.nonneg_of_weakMeridionalOperator_nonpos
+open RicciFlowSharpEstimate.Analysis in
+#check pos_of_divergence_inequality_of_nonneg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.pos_of_weakMeridionalOperator_nonpos
 """
 
 

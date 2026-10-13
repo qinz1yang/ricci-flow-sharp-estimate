@@ -581,3 +581,17 @@ The four leaves add five public theorems and one definition. All 256 parent leav
 are preserved. Operator nonpositivity remains an explicit hypothesis; no strict
 positivity, zero action, all-probe weak Picone coverage or threshold determination
 is asserted. The same single configured Round 5 outer review remains pending.
+
+## Phase II Round 5 strict-interior continuation
+
+| Result | Canonical source |
+|---|---|
+| Strict interior positivity from a weak divergence inequality, nonnegativity and one positive point, with continuous positive diffusion and signed continuous upper coefficient | `Analysis/DivergenceStrongMaximum.lean` |
+| Strict interior positivity of the same recoverable unit-mass probe from its a.e. nonpositive actual operator | `Geometry/WeakProbeStrongMaximum.lean` |
+
+Two public theorems in two new leaves consume the actual flux and physical mass;
+all 260 parent leaves are unchanged. The source may vanish at interior points.
+No raw endpoint value, global C² regularity or strict source is assumed. The actual
+minimum's operator sign, full weak Picone quotient coverage, determining global
+selection and original safety/sharpness/endpoint conclusions remain open. The
+single Round 5 outer review is pending.

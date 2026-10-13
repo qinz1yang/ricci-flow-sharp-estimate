@@ -259,3 +259,5 @@ import RicciFlowSharpEstimate.Analysis.IntegrableBoundaryTrace
 import RicciFlowSharpEstimate.Analysis.DivergenceMaximumPrinciple
 import RicciFlowSharpEstimate.Geometry.WeakProbeDerivativeFlux
 import RicciFlowSharpEstimate.Geometry.WeakProbeMaximumPrinciple
+import RicciFlowSharpEstimate.Analysis.DivergenceStrongMaximum
+import RicciFlowSharpEstimate.Geometry.WeakProbeStrongMaximum

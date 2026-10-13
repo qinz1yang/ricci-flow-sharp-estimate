@@ -60,8 +60,10 @@ now proves true zero pole traces and absolute continuity
 of the literal derivative flux f²p from weighted graph integrability, then derives
 interior probe nonnegativity from an a.e. nonpositive weak meridional operator.
 The comparison uses bounded smooth testing, with no absolute-value graph closure
-or C² pole hypothesis. This does not prove the actual minimum's operator sign,
-strict nonvanishing, arbitrary-probe Picone coverage or a determining cap. Further used
+or C² pole hypothesis. A strong interior maximum principle now upgrades this to
+strict positivity under the same non-strict operator-sign hypothesis, using the
+actual unit mass to exclude the zero probe. The minimum's operator sign,
+arbitrary-probe Picone coverage and a determining cap remain unproved. Further used
 closure/interface/path laws, determining selection, universal safety, smooth
 sharpness and endpoint scope remain open. C_rot is not identified.
 

@@ -1,0 +1,69 @@
+{
+  "phase2_status": "OPEN; strict interior weak comparison under the actual operator-sign hypothesis",
+  "parent_native_revision": "cd0533c0e8c46ce734a43d6463873fb7c67112d5",
+  "parent_outer_reviewed_revision": "a65205d9a83dfebe62074158ca96ce3f365b5397",
+  "native_receipt_sha256": "9b34001835a037737b1656593d56653b132ec35af731c44b9d5b628575303c93",
+  "native_counts": {
+    "modules": 262,
+    "inputs": 267,
+    "outputs": 268,
+    "selectors": 1232,
+    "signature_queries": 1333,
+    "axiom_rows": 3374,
+    "private_axiom_rows": 1103,
+    "fresh_source_elaborations": 2,
+    "reused_source_elaborations": 260
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 30,
+    "verified_source_provenance_records": 4079
+  },
+  "new_public_declarations": {
+    "modules": 2,
+    "theorems": 2,
+    "definitions": 0
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "e29620be73a51f291f22b3ffb06e4580473c9890d205c25e50a10ef6ea9b3532",
+    "docs/theorem-map.md": "df487148ea67fe922c5c613582a3f98348f09aa64362047ad9ced91457be8f02",
+    "docs/research/phase2-unrestricted.md": "2792a04a733d922114b4301bb1355249701348ee2c5158f1c237d6c7e330eca0",
+    "docs/verification.md": "5fe39bd1800da290524b142c030baf411c0829bc9ec2a06631879aad11df626c"
+  },
+  "independent_review": "Pending same single configured Round 5 outer review for all four changed packets; unchanged Round 4 acceptance reused. No duplicate acceptance review.",
+  "source_simplifier": {
+    "scope": "Two frozen new leaves; source advice only, not acceptance review",
+    "finding": "No necessary simplification, API or integrability correction. Local AC supplies integrability of the actual flux derivative; physical application preserves the same unit-mass competitor, literal flux and continuous upper coefficient without stronger regularity/source hypotheses.",
+    "advisory_sha256": "f67081eb7ff8b253376d89e03787e9cd972e280e7e2d3f0870291126a73aa220",
+    "source_hashes_match": true
+  },
+  "additional_native_probes": [
+    {
+      "name": "StrongDomainChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round5s-root-48r9_n07/StrongDomainChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "f0cff793b27e4fd2348cd49f22b3dc267f156c14423889a36418a7efe08b1546",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_capture": "Exact empty stdout/stderr returned by completed exec session 35621 after final source edit; no extra replay is claimed.",
+      "scope": "Cap-produced same unit-mass minimum with conditional strict interior positivity; normalized round quadratic with nonpositive source vanishing at midpoint; zero interior diffusion and zero-probe exclusions."
+    }
+  ],
+  "general_scope": "On an open interval: C1 nonnegative r, continuous positive A, continuous signed c and locally AC flux G=A*rprime with actual a.e. derivative S<=c*r. One positive point forces strict positivity throughout the interior. Compact bounds, actual flux FTC and an integrating factor propagate a zero in both directions without boundary data.",
+  "physical_scope": "For the same recoverable unit-mass curvature/probe/weak jets with continuous interior r,p, actual q<=0 a.e. yields r>0 throughout Ioo01. The prior genuine zero-flux comparison gives nonnegativity; literal mass supplies a positive point. Actual positive f^2 and continuous majorant 2C*f consume the original curvature box. No strict source, global C2 assumption or probe endpoint condition is added.",
+  "domain_tests": "A normalized original round quadratic v=4x^2-4x+3 has mass(v)=57/35 and actual normalized source -88*alpha*(x-1/2)^2, including an interior source zero. The cap-produced minimum consumer retains its own action and conditional sign. Zero diffusion permits x^2 with an interior zero; zero probe cannot supply the positive point.",
+  "remaining_required_mathematics": [
+    "Produce or refute the actual minimum operator-sign orientation needed by this route.",
+    "Prove all-probe weak Picone quotient/endpoint approximation and any further domain/interface/path bridge actually used; interior positivity alone gives no positive lower bound at poles.",
+    "Derive a genuinely determining characterization and justified selection with universal scalar safety and original all-smooth-form transfer.",
+    "Produce sharp original smooth witnesses below every larger cap, settle precise endpoint/attainment, and finish native/outer-review/research/manuscript closure."
+  ]
+}

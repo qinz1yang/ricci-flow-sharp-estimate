@@ -1284,3 +1284,51 @@ Accepted paper bytes, both TASKs, pins, compiler/platform and all ten dependency
 revisions match. No typesetting was performed. Phase I is COMPLETE; Phase II is
 OPEN. All determining, universal safety, sharp original smooth witness, endpoint
 and final research/manuscript/review requirements remain active.
+
+## Phase II, Round 5 strict-interior comparison
+
+Two new leaves and two public theorems derive strict interior positivity from
+nonnegativity, a weak divergence inequality and one positive point. The physical
+consumer supplies that point from the same recoverable competitor's unit mass,
+using its literal flux and actual positive interior warp. Nonpositive operator
+source remains an explicit premise; it need not be strictly negative everywhere.
+No pole value, global C² regularity or determining cap is asserted.
+
+Under the Root writer lock, the final command was:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-5-strict-interior \
+  --reuse-receipt docs/evidence/phase2-round-5-weak-poles/receipt.json
+```
+
+The [receipt](evidence/phase2-round-5-strict-interior/receipt.json), SHA256
+`9b34001835a037737b1656593d56653b132ec35af731c44b9d5b628575303c93`, passes for
+262 modules, 267 inputs and 268 outputs. Two fresh source elaborations are silent;
+260 unchanged elaborations are reused. Root build, required source/declaration
+linters and native declaration-kind inspection pass. All 1,232 selectors, 1,333
+exact signature/declaration queries and 3,374 actual transitive axiom rows,
+including 1,103 private rows, pass with only subsets of `propext`,
+`Classical.choice`, `Quot.sound`. Read-only reconstruction verifies all source/
+output/driver hashes and 4,079 source-command records across 30 receipts. The
+checker policy is unchanged; only inventories and queries were extended.
+
+The silent `StrongDomainChecks` driver consumes the cap-produced minimum and
+returns conditional strict positivity of that same object. An exact original
+normalized round quadratic has a nonpositive operator with a zero at the
+midpoint, demonstrating the genuine non-strict source scope. Zero diffusion
+and zero-probe tests check why the corresponding hypotheses matter. Exact
+commands, final source/output hashes and capture provenance appear in the
+[checkpoint](evidence/phase2-round-5-strict-interior/checkpoint.json).
+
+The two-leaf source simplifier found no required changes and its hashes match
+final inputs. This was source advice, not an acceptance review. All worker leases
+are released. The same single configured Round 5 outer review remains pending
+for all four packets; unchanged Round 4 acceptance is reused.
+
+The [preservation record](evidence/phase2-round-5-strict-interior/preservation.json)
+checks all 260 parent leaves, 175 Round 3/149 Phase-I leaves, 2,325 historical
+workflow files and 5,899 prior tracked evidence files unchanged. Accepted paper
+bytes, both TASKs, dependency pins, compiler/platform and all ten dependency
+revisions match. No typesetting was performed. Phase I is COMPLETE; Phase II is
+OPEN. Operator-sign production, all-probe quotient/endpoint coverage and every
+determining/global/sharpness/attainment/final manuscript gate remain required.
