@@ -1,0 +1,6 @@
+✔ [9834/9839] Built RicciFlowSharpEstimate.Analysis.LocallyUniformSubsequence (4.7s)
+✔ [9835/9839] Built RicciFlowSharpEstimate.Analysis.InteriorSobolevCompactness (7.1s)
+✔ [9836/9839] Built RicciFlowSharpEstimate.Geometry.AreaProbeCompactness (8.6s)
+✔ [9837/9839] Built RicciFlowSharpEstimate.Geometry.AreaJointCompactness (7.4s)
+✔ [9838/9839] Built RicciFlowSharpEstimate (9.8s)
+Build completed successfully (9839 jobs).

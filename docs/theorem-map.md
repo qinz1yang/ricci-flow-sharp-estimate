@@ -329,3 +329,16 @@ See the [research derivation and exact map](research/phase2-unrestricted.md) and
 [continuation evidence](evidence/phase2-round-3-continuation/receipt.json). The single
 Round 3 outer review is pending. Weak-domain compactness, complete-action lower
 semicontinuity, exhaustive recovery and every determining/global/endpoint gate remain open.
+
+### Phase-II Round 4: actual weak domain and joint normalized limit
+
+`Geometry.AreaProfile.exists_normalized_joint_weak_limit` in
+`Geometry/AreaJointCompactness.lean` produces a single subsequence with weak-*
+curvature, convergent original box witnesses, exact moments and ratio, uniform
+original primitives, strong global L² probes, genuine weak derivatives and
+actual physical mass one. Its weak action domain retains both positive squares
+and all lower-order terms. The [research map](research/phase2-unrestricted.md)
+lists the 18 analytic/geometric leaves and their exact scope. Round 3 is accepted;
+Round 4's single outer review is pending. Full-action lower semicontinuity,
+unrestricted recovery, joint critical-object production and every determining,
+global, sharpness and endpoint gate remain required.

@@ -587,3 +587,57 @@ confirms all 171 prior native sources, all 149 Phase-I sources, all 2,325 histor
 workflow files, the accepted paper, historical/current task and dependency pins
 remain unchanged. Phase I is COMPLETE. Phase II remains OPEN; no joint limit,
 weak-domain theorem, lower semicontinuity, exhaustive recovery or sharp value is claimed.
+
+## Phase-II Round 4: actual joint weak limits with unit physical mass
+
+The single Round 3 outer review accepted the combined estimate packet at
+`2778716def07872f759e551b74b1f4f25fb331e9`; that supersedes the pending-review
+status in its historical creation records above. Round 4 consumes those estimates
+to construct an actual weak-derivative domain and a joint subsequence retaining
+the original curvature box/ratio, both exact moments and physical mass one.
+Probes converge strongly in L², their first derivatives converge locally
+uniformly, curvature converges against every L¹ test, and the actual primitives
+converge uniformly. The literal weak action is integrable. Full-action lower
+semicontinuity, unrestricted recovery and all sharp-constant gates remain open.
+
+The final native command, under the Root cache-writer lock, was:
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4 \
+  --reuse-receipt docs/evidence/phase2-round-3-continuation/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4/receipt.json), SHA256
+`8416efcda8c74f311022ca7587dd633c96ebc31a18a3b1574e388717e2d062c5`, passes for
+193 modules: 18 fresh silent source elaborations and 175 unchanged accepted
+elaborations reused. Root build, unsuppressed declaration linters and native
+declaration-kind inspection pass. The 1,043 required selectors, 1,144 signature
+and declaration queries, and 2,902 actual transitive axiom rows (865 private)
+pass. Every axiom row contains only a subset of `propext`, `Classical.choice`,
+`Quot.sound`. All 198 input hashes, 199 output hashes and three reconstructed
+diagnostic-driver hashes match. Physical modules, checker inventory and flat
+aggregate imports agree. Source-command provenance was followed through 2,636
+records across 24 receipts. The checker delta only extends inventories and queries.
+
+The 18 leaves contribute 73 public theorems and four definitions. An initial
+native declaration-kind failure on compiler-generated proof-valued constructors
+was repaired by expressing the same weak-derivative conditions as conjunction
+predicates with eight named theorem projections. The consumer conditions remain
+the same; no checker exception was added. The final linter also removed one
+unused `T2Space X` assumption from the general Ascoli helper. Default resource
+settings suffice throughout the final source gate.
+
+The source simplifier inspected the 18-leaf packet and the subsequent two-predicate
+delta, finding no required changes. Optional proof compression was left outside
+this checkpoint. The final unused-binder deletion is a native-linter integration
+repair. This advisory is separate from the single configured Round 4 outer
+mathematical review, which remains pending.
+
+The [checkpoint record](evidence/phase2-round-4/checkpoint.json) binds the exact
+documents and supplemental native consumers. They instantiate the joint producer
+on arbitrary varying sequences and on the nonvacuous round class K=2, r=√3,
+whose actual mass is one and complete action is four, and check smooth weak-graph
+embedding with exact action agreement. The [preservation record](evidence/phase2-round-4/preservation.json)
+confirms all 175 accepted sources, all 149 Phase-I sources, all 2,325 historical
+workflow files, paper bytes, historical/current tasks and pins remain unchanged.
+Phase I is COMPLETE; Phase II remains OPEN. No unrestricted sharp value is claimed.

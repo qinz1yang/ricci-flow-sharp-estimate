@@ -9,17 +9,15 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
-Round 2's exhaustive original-data normalization and variation packet passed its
-single outer review at `734dd5b`. Round 3 adds complete-action coercivity with a
-curvature-box-dependent mass correction, uniform normalized energy bounds and
-both-pole weighted-mass tightness, retaining the original ratio restriction.
-Its continuation adds weighted first/second derivative control and a direct
-uniform radius for both unweighted polar mass and the absolute complete-action
-remainder, including the mixed term.
-Its native evidence is recorded separately; its single outer review is pending.
-The actual weak domain, full-action limits/recovery, joint critical-object
-applications, determining selection, global safety and endpoint scope remain
-open. No unrestricted sharp value is identified.
+Rounds 2 and 3 passed their single outer reviews at `734dd5b` and `2778716`.
+Their exhaustive normalization, variations, coercivity and polar estimates remain
+accepted. Round 4 constructs an actual joint normalized weak limit of complete-action
+sublevels: both moments and the original curvature ratio are retained, weak derivatives
+are identified, probes converge strongly in L², and actual weighted mass remains one.
+The literal weak action is integrable with both positive-square factors retained.
+Its native evidence is separate; the single Round 4 outer review is pending.
+Full-action lower semicontinuity, exhaustive recovery, a produced joint critical object,
+determining selection, global safety and endpoint scope remain open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

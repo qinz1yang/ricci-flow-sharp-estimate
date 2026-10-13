@@ -190,6 +190,24 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.ParabolicPolarControl",
     "RicciFlowSharpEstimate.Geometry.AreaProbeRegularity",
     "RicciFlowSharpEstimate.Geometry.AreaActionPolarControl",
+    "RicciFlowSharpEstimate.Analysis.BoundedWeakPairing",
+    "RicciFlowSharpEstimate.Analysis.HilbertWeakSubsequence",
+    "RicciFlowSharpEstimate.Analysis.InteriorSobolevCompactness",
+    "RicciFlowSharpEstimate.Analysis.IntervalDerivativeEnergy",
+    "RicciFlowSharpEstimate.Analysis.L2UniformIntegrability",
+    "RicciFlowSharpEstimate.Analysis.L2WeakOrder",
+    "RicciFlowSharpEstimate.Analysis.L2WeightedMassContinuity",
+    "RicciFlowSharpEstimate.Analysis.LocallyUniformSubsequence",
+    "RicciFlowSharpEstimate.Analysis.ParabolicSobolev",
+    "RicciFlowSharpEstimate.Analysis.WeakDerivative",
+    "RicciFlowSharpEstimate.Analysis.WeakDerivativeLimits",
+    "RicciFlowSharpEstimate.Analysis.WeightedWeakDerivativeLimit",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureCompactness",
+    "RicciFlowSharpEstimate.Geometry.AreaJointCompactness",
+    "RicciFlowSharpEstimate.Geometry.AreaProbeCompactness",
+    "RicciFlowSharpEstimate.Geometry.AreaUniformPrimitives",
+    "RicciFlowSharpEstimate.Geometry.AreaWeakPrimitives",
+    "RicciFlowSharpEstimate.Geometry.WeakAreaAction",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1178,7 +1196,84 @@ SELECTOR = r"""
       area ++ `polarActionRemainder_le,
       area ++ `exists_uniform_probe_regularity_bound,
       area ++ `exists_uniform_polar_action_radius,
-      area ++ `exists_uniform_polar_action_radius_of_ratio
+      area ++ `exists_uniform_polar_action_radius_of_ratio,
+      analysis ++ `integrable_mul_of_ae_abs_le,
+      analysis ++ `abs_integral_mul_sub_le_of_ae_abs_le,
+      analysis ++ `tendsto_integral_mul_of_bounded_L2_pairings,
+      analysis ++ `HilbertWeakSubsequence.norm_le_of_tendsto_inner,
+      analysis ++ `HilbertWeakSubsequence.exists_subseq_tendsto_inner_of_norm_le,
+      analysis ++ `exists_subseq_locallyUniform_of_local_derivative_energy,
+      analysis ++ `mul_integral_sq_le_parabolic_energy,
+      analysis ++ `exists_subseq_locallyUniform_probe_deriv_of_weighted_energy,
+      analysis ++ `sq_sub_le_length_mul_integral_deriv_sq,
+      analysis ++ `sq_sub_le_abs_mul_integral_deriv_sq,
+      analysis ++ `length_mul_sq_le_integral_sq_add_integral_deriv_sq,
+      analysis ++ `memLp_two_of_ae_tendsto_of_integral_sq_bound,
+      analysis ++ `uniformIntegrable_two_of_sq_tails,
+      analysis ++ `memLp_and_tendsto_eLpNorm_two_of_sq_tails,
+      analysis ++ `L2WeakOrder.ae_nonneg_of_tendsto_inner,
+      analysis ++ `L2WeakOrder.ae_bounds_of_tendsto_inner,
+      analysis ++ `L2WeightedMassContinuity.tendsto_integral_mul_sq,
+      analysis ++ `L2WeightedMassContinuity.tendsto_top_of_eventually_ae_abs_sub_le,
+      analysis ++ `exists_subseq_tendstoLocallyUniformly_of_equicontinuous,
+      analysis ++ `HasParabolicWeakDerivatives,
+      analysis ++ `HasParabolicWeakDerivatives.integrable_sq,
+      analysis ++ `HasParabolicWeakDerivatives.integrable_weighted_deriv_sq,
+      analysis ++ `HasParabolicWeakDerivatives.integrable_weighted_secondDeriv_sq,
+      analysis ++ `hasParabolicWeakDerivatives_of_contDiff,
+      analysis ++ `HasParabolicWeakDerivatives.ae_unique,
+      analysis ++ `HasParabolicWeakDerivatives.memLp_deriv_compact,
+      analysis ++ `HasParabolicWeakDerivatives.memLp_secondDeriv_compact,
+      analysis ++ `integrable_mul_of_locallyIntegrableOn,
+      analysis ++ `HasWeakDerivOn,
+      analysis ++ `HasWeakDerivOn.integrable_deriv_test_mul,
+      analysis ++ `HasWeakDerivOn.integrable_test_mul_weakDeriv,
+      analysis ++ `HasWeakDerivOn.ae_unique,
+      analysis ++ `hasWeakDerivOn_of_contDiffOn,
+      analysis ++ `hasWeakDerivOn_of_contDiff,
+      analysis ++ `HasWeakDerivOn.congr_ae,
+      analysis ++ `test_mul_integral_tendsto_of_locallyUniformlyOn,
+      analysis ++ `HasWeakDerivOn.of_tendsto_test_pairings,
+      analysis ++ `hasWeakDerivOn_of_locallyUniformlyOn,
+      analysis ++ `locallyIntegrableOn_Ioo_div_weight,
+      analysis ++ `memLp_two_Ioo_div_weight_on_compact,
+      analysis ++ `memLp_two_Ioo_div_test,
+      analysis ++ `ae_weight_mul_div_Ioo,
+      analysis ++ `memLp_two_Ioo_weight_mul_div,
+      analysis ++ `memLp_two_Ioo_weighted_deriv,
+      analysis ++ `hasWeakDerivOn_Ioo_of_weighted_weak_L2_limit,
+      area ++ `exists_curvature_subsequence_of_ratio_bound,
+      area ++ `exists_normalized_joint_weak_limit,
+      area ++ `exists_subseq_locallyUniform_probe_deriv_of_action_bound,
+      area ++ `uniformIntegrable_probes_of_action_bound,
+      area ++ `exists_subseq_strong_probe_of_action_bound,
+      area ++ `exists_subseq_weak_probe_of_action_bound,
+      area ++ `tendstoUniformlyOn_warpSlope_of_weak_L2,
+      area ++ `tendstoUniformlyOn_warp_of_weak_L2,
+      area ++ `continuousOn_warpSlope_of_weak_L2,
+      area ++ `continuousOn_warp_of_weak_L2,
+      area ++ `warp_bounds_of_weak_L2,
+      area ++ `abs_warpSlope_le_two_of_weak_L2,
+      area ++ `warp_endpoints_of_weak_L2,
+      area ++ `hasWeakDerivOn_warp_of_weak_L2,
+      area ++ `hasWeakDerivOn_warpSlope_of_weak_L2,
+      area ++ `tendsto_warpSlope_of_weak_L2,
+      area ++ `tendsto_warp_of_weak_L2,
+      area ++ `weakMeridionalOperator,
+      area ++ `weakMeridionalAction,
+      area ++ `weakMeridionalAction_deriv,
+      area ++ `memLp_weak_operator_and_potential_of_warp_bounds,
+      area ++ `integrable_weakMeridionalActionDensity_of_warp_bounds,
+      area ++ `weakMeridionalAction_intervalIntegrable_of_warp_bounds,
+      area ++ `weakMeridionalAction_decomposition_of_warp_bounds,
+      analysis ++ `HasWeakDerivOn.locallyIntegrable,
+      analysis ++ `HasWeakDerivOn.locallyIntegrable_deriv,
+      analysis ++ `HasWeakDerivOn.integral_deriv_mul,
+      analysis ++ `HasParabolicWeakDerivatives.weakDeriv,
+      analysis ++ `HasParabolicWeakDerivatives.weakDeriv_deriv,
+      analysis ++ `HasParabolicWeakDerivatives.memLp,
+      analysis ++ `HasParabolicWeakDerivatives.memLp_weighted_deriv,
+      analysis ++ `HasParabolicWeakDerivatives.memLp_weighted_secondDeriv
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3134,6 +3229,164 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_uniform_polar_action_radius
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_uniform_polar_action_radius_of_ratio
+open RicciFlowSharpEstimate.Analysis in
+#check integrable_mul_of_ae_abs_le
+open RicciFlowSharpEstimate.Analysis in
+#check abs_integral_mul_sub_le_of_ae_abs_le
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_integral_mul_of_bounded_L2_pairings
+open RicciFlowSharpEstimate.Analysis in
+#check HilbertWeakSubsequence.norm_le_of_tendsto_inner
+open RicciFlowSharpEstimate.Analysis in
+#check HilbertWeakSubsequence.exists_subseq_tendsto_inner_of_norm_le
+open RicciFlowSharpEstimate.Analysis in
+#check exists_subseq_locallyUniform_of_local_derivative_energy
+open RicciFlowSharpEstimate.Analysis in
+#check mul_integral_sq_le_parabolic_energy
+open RicciFlowSharpEstimate.Analysis in
+#check exists_subseq_locallyUniform_probe_deriv_of_weighted_energy
+open RicciFlowSharpEstimate.Analysis in
+#check sq_sub_le_length_mul_integral_deriv_sq
+open RicciFlowSharpEstimate.Analysis in
+#check sq_sub_le_abs_mul_integral_deriv_sq
+open RicciFlowSharpEstimate.Analysis in
+#check length_mul_sq_le_integral_sq_add_integral_deriv_sq
+open RicciFlowSharpEstimate.Analysis in
+#check memLp_two_of_ae_tendsto_of_integral_sq_bound
+open RicciFlowSharpEstimate.Analysis in
+#check uniformIntegrable_two_of_sq_tails
+open RicciFlowSharpEstimate.Analysis in
+#check memLp_and_tendsto_eLpNorm_two_of_sq_tails
+open RicciFlowSharpEstimate.Analysis in
+#check L2WeakOrder.ae_nonneg_of_tendsto_inner
+open RicciFlowSharpEstimate.Analysis in
+#check L2WeakOrder.ae_bounds_of_tendsto_inner
+open RicciFlowSharpEstimate.Analysis in
+#check L2WeightedMassContinuity.tendsto_integral_mul_sq
+open RicciFlowSharpEstimate.Analysis in
+#check L2WeightedMassContinuity.tendsto_top_of_eventually_ae_abs_sub_le
+open RicciFlowSharpEstimate.Analysis in
+#check exists_subseq_tendstoLocallyUniformly_of_equicontinuous
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives
+open RicciFlowSharpEstimate.Analysis in
+#print HasParabolicWeakDerivatives
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.integrable_sq
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.integrable_weighted_deriv_sq
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.integrable_weighted_secondDeriv_sq
+open RicciFlowSharpEstimate.Analysis in
+#check hasParabolicWeakDerivatives_of_contDiff
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.ae_unique
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.memLp_deriv_compact
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.memLp_secondDeriv_compact
+open RicciFlowSharpEstimate.Analysis in
+#check integrable_mul_of_locallyIntegrableOn
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn
+open RicciFlowSharpEstimate.Analysis in
+#print HasWeakDerivOn
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.integrable_deriv_test_mul
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.integrable_test_mul_weakDeriv
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.ae_unique
+open RicciFlowSharpEstimate.Analysis in
+#check hasWeakDerivOn_of_contDiffOn
+open RicciFlowSharpEstimate.Analysis in
+#check hasWeakDerivOn_of_contDiff
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.congr_ae
+open RicciFlowSharpEstimate.Analysis in
+#check test_mul_integral_tendsto_of_locallyUniformlyOn
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.of_tendsto_test_pairings
+open RicciFlowSharpEstimate.Analysis in
+#check hasWeakDerivOn_of_locallyUniformlyOn
+open RicciFlowSharpEstimate.Analysis in
+#check locallyIntegrableOn_Ioo_div_weight
+open RicciFlowSharpEstimate.Analysis in
+#check memLp_two_Ioo_div_weight_on_compact
+open RicciFlowSharpEstimate.Analysis in
+#check memLp_two_Ioo_div_test
+open RicciFlowSharpEstimate.Analysis in
+#check ae_weight_mul_div_Ioo
+open RicciFlowSharpEstimate.Analysis in
+#check memLp_two_Ioo_weight_mul_div
+open RicciFlowSharpEstimate.Analysis in
+#check memLp_two_Ioo_weighted_deriv
+open RicciFlowSharpEstimate.Analysis in
+#check hasWeakDerivOn_Ioo_of_weighted_weak_L2_limit
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_curvature_subsequence_of_ratio_bound
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_normalized_joint_weak_limit
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_subseq_locallyUniform_probe_deriv_of_action_bound
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check uniformIntegrable_probes_of_action_bound
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_subseq_strong_probe_of_action_bound
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_subseq_weak_probe_of_action_bound
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendstoUniformlyOn_warpSlope_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendstoUniformlyOn_warp_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check continuousOn_warpSlope_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check continuousOn_warp_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_bounds_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check abs_warpSlope_le_two_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_endpoints_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check hasWeakDerivOn_warp_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check hasWeakDerivOn_warpSlope_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendsto_warpSlope_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check tendsto_warp_of_weak_L2
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalOperator
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction_deriv
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check memLp_weak_operator_and_potential_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check integrable_weakMeridionalActionDensity_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction_intervalIntegrable_of_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakMeridionalAction_decomposition_of_warp_bounds
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.locallyIntegrable
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.locallyIntegrable_deriv
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.integral_deriv_mul
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.weakDeriv
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.weakDeriv_deriv
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.memLp
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.memLp_weighted_deriv
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.memLp_weighted_secondDeriv
 """
 
 

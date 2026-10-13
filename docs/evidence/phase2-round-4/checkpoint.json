@@ -1,0 +1,68 @@
+{
+  "phase2_status": "OPEN; actual joint weak-domain/unit-mass subsequence checkpoint only",
+  "parent_accepted_revision": "2778716def07872f759e551b74b1f4f25fb331e9",
+  "native_receipt_sha256": "8416efcda8c74f311022ca7587dd633c96ebc31a18a3b1574e388717e2d062c5",
+  "native_counts": {
+    "modules": 193,
+    "inputs": 198,
+    "outputs": 199,
+    "selectors": 1043,
+    "signature_queries": 1144,
+    "axiom_rows": 2902,
+    "private_axiom_rows": 865,
+    "fresh_source_elaborations": 18,
+    "reused_source_elaborations": 175
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 24,
+    "verified_source_provenance_records": 2636
+  },
+  "new_public_declarations": {
+    "theorems": 73,
+    "definitions": 4,
+    "modules": 18
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "3d4e175e43f428f8bf5a9741bd31c6cbc9006e37fe61dc186eb2185c4e973e25",
+    "docs/theorem-map.md": "9203d3b5515da02f39121b0fcd19760a549bda7290cfe55b1bffeb9f93426a72",
+    "docs/research/phase2-unrestricted.md": "d58d278b68c486b066855476d4f99514aac16e15def94fa3b842815d1f564fbd",
+    "docs/verification.md": "4bf5d9ee50429ca833b20e57b273aba68fdf89771bc979f7952a25d7f4d7b5b8"
+  },
+  "independent_review": "Pending single configured Round 4 outer mathematical review. Prior Phase I and rounds 0\u20133 acceptance/evidence reused; no duplicate acceptance review.",
+  "source_simplifier": {
+    "scope": "Initial 18-leaf source-only advisory plus the two-predicate representation delta; no required changes. Optional compression not applied. Final removal of unused T2Space binder is a native-linter integration repair.",
+    "initial_advisory_sha256": "a4f062eb55d60b13169f11d3a0fbeb401acab8be5846fa8274b2986f10345786",
+    "predicate_delta_advisory_sha256": "2ed138d79f1f2f873d24a611d18a5cfabb25c3accaa38247ddf1dd6d74e1c749"
+  },
+  "integration_repairs": [
+    "Replace new Prop structures with logically identical conjunction predicates and eight theorem projections to satisfy strict generated-declaration-kind checks; actual consumer closure passes.",
+    "Remove unused T2Space X binder from general Ascoli helper; no linter suppression.",
+    "Bind inferred Lp multiplier Tendsto composition before comp/uncurry normalization; no resource override."
+  ],
+  "additional_native_probes": {
+    "scope": "Arbitrary normalized varying-sequence consumer retains genuine weak graph, both moments, mass one and physical nonzero limit. Concrete round K=2,r=sqrt(3),box=[2,2],cap=1 has exact mass 1/action 4 and instantiates that producer. Arbitrary C2 probe embeds with actual derivatives and exact original-action agreement.",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file.",
+      "/tmp/hmz-fence-4lzhkuwo/math-target-round4-root-9b5h7mwh/JointLimitChecks.lean"
+    ],
+    "driver_sha256": "b448b08cfee1669f27fd2bf96f25f70da7ba8a53e3508d853375a408deb20c2f",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit_code": 0
+  },
+  "exploratory_diagnostic": {
+    "scope": "Review oscillating curvature example, amplitude 1 and n=1,4,16,64; numerical quadrature only, no kernel theorem or LSC counterexample claimed.",
+    "output_sha256": "e054092d3e45cfa44ed3a08dc350072eb38392bd3a29d269fecda5de393ddb5f"
+  },
+  "remaining_required_mathematics": [
+    "Weak identification of both sqrt(f_n)q_n and sqrt(f_n)K_n r_n; lower semicontinuity of both positive squares and convergence of the two linear-K terms.",
+    "Unrestricted weighted-graph probe density and measurable-curvature recovery with exact moments, positivity, original ratio, complete action and mass, then tied original geometric realization.",
+    "Produced joint critical/minimizing object with justified variations, determining characterization/selection, universal safety, original smooth sharpness, endpoint scope and final evidence/review."
+  ]
+}
