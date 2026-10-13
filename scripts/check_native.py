@@ -227,6 +227,12 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaStrongGraphContinuity",
     "RicciFlowSharpEstimate.Geometry.AreaScalarGraphRecovery",
     "RicciFlowSharpEstimate.Geometry.AreaJointSmoothRecovery",
+    "RicciFlowSharpEstimate.Analysis.ParabolicGraphConvergence",
+    "RicciFlowSharpEstimate.Geometry.SmoothAreaInfimum",
+    "RicciFlowSharpEstimate.Geometry.RecoverableAreaCompetitor",
+    "RicciFlowSharpEstimate.Geometry.AreaJointMinimum",
+    "RicciFlowSharpEstimate.Geometry.AreaMinimumGeometry",
+    "RicciFlowSharpEstimate.Geometry.NormalizedAreaInfimum",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1324,7 +1330,33 @@ SELECTOR = r"""
       area ++ `exists_smooth_convex_recovery_of_weak_graph_pairings,
       area ++ `action_mass_tendsto_of_strong_area_graph,
       area ++ `exists_smooth_scalar_recovery_of_weak_graph_pairings,
-      area ++ `exists_joint_weak_limit_with_smooth_geometric_recovery
+      area ++ `exists_joint_weak_limit_with_smooth_geometric_recovery,
+      analysis ++ `strong_L2_const_mul_of_tendsto,
+      analysis ++ `parabolicGraph_tendsto_const_mul,
+      area ++ `IsSmoothAreaCompetitor,
+      area ++ `smoothAreaActionValues,
+      area ++ `smoothAreaInfimum,
+      area ++ `IsSmoothAreaCompetitor.common_bounds,
+      area ++ `IsSmoothAreaCompetitor.memLp_curvature,
+      area ++ `probeMass_two_sqrt_three,
+      area ++ `meridionalAction_two_sqrt_three,
+      area ++ `isSmoothAreaCompetitor_round,
+      area ++ `IsSmoothAreaCompetitor.action_lower_bound,
+      area ++ `smoothAreaActionValues_nonempty,
+      area ++ `smoothAreaActionValues_bddBelow,
+      area ++ `smoothAreaInfimum_le_action,
+      area ++ `smoothAreaInfimum_le_four,
+      area ++ `neg_actionMassCorrection_le_smoothAreaInfimum,
+      area ++ `exists_smooth_area_minimizing_sequence,
+      area ++ `IsRecoverableAreaCompetitor,
+      area ++ `IsSmoothAreaCompetitor.recoverable,
+      area ++ `IsRecoverableAreaCompetitor.exists_action_recovery,
+      area ++ `IsRecoverableAreaCompetitor.infimum_le_action,
+      area ++ `exists_recoverable_area_minimizer,
+      area ++ `exists_area_minimizer_with_geometric_recovery,
+      poleData ++ `AreaNormalization.isSmoothAreaCompetitor_normalizedProbe,
+      poleData ++
+        `AreaNormalization.smoothAreaInfimum_le_length_sq_mul_oneFormDissipation_div_normSq
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3502,6 +3534,56 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_smooth_scalar_recovery_of_weak_graph_pairings
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_joint_weak_limit_with_smooth_geometric_recovery
+open RicciFlowSharpEstimate.Analysis in
+#check strong_L2_const_mul_of_tendsto
+open RicciFlowSharpEstimate.Analysis in
+#check parabolicGraph_tendsto_const_mul
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCompetitor
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaActionValues
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaInfimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCompetitor.common_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCompetitor.memLp_curvature
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_two_sqrt_three
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_two_sqrt_three
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check isSmoothAreaCompetitor_round
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCompetitor.action_lower_bound
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaActionValues_nonempty
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaActionValues_bddBelow
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaInfimum_le_action
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check smoothAreaInfimum_le_four
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check neg_actionMassCorrection_le_smoothAreaInfimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_area_minimizing_sequence
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsSmoothAreaCompetitor.recoverable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_action_recovery
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.infimum_le_action
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_recoverable_area_minimizer
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_area_minimizer_with_geometric_recovery
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check isSmoothAreaCompetitor_normalizedProbe
+open RicciFlowSharpEstimate.Geometry.RotationalProfile.PoleData.AreaNormalization in
+#check smoothAreaInfimum_le_length_sq_mul_oneFormDissipation_div_normSq
 """
 
 

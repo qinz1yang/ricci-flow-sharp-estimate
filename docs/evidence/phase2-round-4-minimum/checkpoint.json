@@ -1,0 +1,61 @@
+{
+  "phase2_status": "OPEN; actual joint minimum in the recoverable weak class equals the normalized smooth meridional infimum",
+  "parent_accepted_revision": "2778716def07872f759e551b74b1f4f25fb331e9",
+  "parent_native_revision": "bb419b686887619b2148264f150e26510fb709ae",
+  "native_receipt_sha256": "073c47e22439030a239ab7c4f34e2eb880c308464edd804467d34a251670ba6b",
+  "native_counts": {
+    "modules": 218,
+    "inputs": 223,
+    "outputs": 224,
+    "selectors": 1100,
+    "signature_queries": 1201,
+    "axiom_rows": 3053,
+    "private_axiom_rows": 948,
+    "fresh_source_elaborations": 6,
+    "reused_source_elaborations": 212
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 27,
+    "verified_source_provenance_records": 3268
+  },
+  "new_public_declarations": {
+    "theorems": 21,
+    "definitions": 4,
+    "modules": 6
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "9851dc53ebc96db6f389168cbe32b4bcbe3133574aba92bda9729d992bb0e707",
+    "docs/theorem-map.md": "9a49ce92c9553c3f25c8a43ead74b8303d855971aa2c51f04306fe850d176014",
+    "docs/research/phase2-unrestricted.md": "5bb0789ef2bba902b7e39fc5046254857c1ee5e25692634eeb70fa069ce8f51c",
+    "docs/verification.md": "e9bb481b0134b55d4e925229b99012dd9ecd0758b25346824da772a51faa01cd"
+  },
+  "independent_review": "Pending single configured Round 4 outer review for combined initial, limiting-action, recovery and minimum packets. No duplicate acceptance review; Phase I and rounds 0\u20133 acceptance reused.",
+  "source_simplifier": {
+    "scope": "Six new minimum leaves only; all 657 lines inspected, no needed change. Source-only advisory, not acceptance review. Earlier Round4 advisories retained for unchanged source.",
+    "advisory_sha256": "90b3c4cd731adf9c3bc3da71d714aff9c9b1d5ec74e689c37b126b1b95fa34ab",
+    "final_source_hashes_match_advisory": true
+  },
+  "additional_native_probes": {
+    "scope": "Cap alone produces a physically nonzero normalized weak minimum equal to the smooth infimum and minimal over every recoverable competitor. Zero-mass witness excluded; round pair embeds with actual derivatives. Actual minimum geometric recovery yields nonzero original forms with original all-sphere ratio boxes and dissipation approaching 2pi*infimum. Arbitrary original data supplies its normalization through the accepted producer and retains literal length-squared physical quotient.",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file.",
+      "/tmp/hmz-fence-4lzhkuwo/math-target-round4m-root-goiqs9ha/MinimumChecks.lean"
+    ],
+    "driver_sha256": "ee8db677198f6d2a9abfee40ba80c51e2e06a622e709a9b0317203102a081ea6",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit_code": 0
+  },
+  "minimum_scope": "Strong curvature/parabolic graph closure of original normalized smooth competitors, with tied weak derivatives and original positive ratio/moment/mass constraints. Definition contains no action convergence or minimality. Every original smooth competitor embeds. No maximal weak-graph density or smooth attainment asserted. The infimum is a variational value, not a determining threshold.",
+  "remaining_required_mathematics": [
+    "Prove required feasible variations of the actual minimizing pair lie in the recoverable class; justify weak derivative/equations and necessary regularity. Retain curvature mass derivative.",
+    "Establish multiplier qualification and any needed original geometric path transfer; prove extra density/closure for any larger domain actually used.",
+    "Derive genuinely determining characterization and selection; universal safety; original smooth negative witnesses below every larger cap; precise unrestricted endpoint scope; final native/review/manuscript closure."
+  ]
+}

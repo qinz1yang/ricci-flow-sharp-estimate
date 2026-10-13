@@ -20,10 +20,13 @@ liminf of the original sequence. A further continuation constructs smooth recove
 of those limits from original smooth sequences, preserving the exact moments and
 actual ratio, with complete-action convergence, literal unit-mass normalization and
 tied nonzero original geometric realizations. This does not prove density for every
-arbitrary maximal weak-graph element. The single Round 4 outer review is pending.
-The chosen variational domain and its required variation/recovery bridges, a produced
-joint critical object, determining selection, global safety and endpoint scope remain
-open. C_rot is not identified.
+arbitrary maximal weak-graph element. The latest continuation constructs an actual joint minimum in a precise recoverable
+weak class and proves that its action equals the original smooth meridional infimum.
+Every smooth competitor embeds; full-action recovery is derived from the graph
+topology, and original geometric quotient/recovery bindings retain the actual scale.
+The single Round 4 outer review is pending. Admissibility and regularity of the
+minimizer’s required variations, multiplier qualification, determining selection,
+global safety and endpoint scope remain open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

@@ -1271,28 +1271,128 @@ both earlier Round 4 receipts remain unchanged. The configured single Round 4
 outer review remains pending for the combined packet. No recovery sequence or
 limiting-action conclusion is assumed by the final original-sequence producer.
 
+## Round 4 minimum: attain the original smooth infimum in a recoverable class
+
+`AreaProfile.exists_recoverable_area_minimizer` now takes only a ratio cap C≥1
+and produces a physically nonzero joint weak pair whose complete action equals
+the infimum over the actual normalized smooth curvature/probe class. It is minimal
+against every competitor in the explicitly defined recoverable weak class.
+`exists_area_minimizer_with_geometric_recovery` additionally returns original
+smooth nonzero metric/form realizations approaching that value, with all curvature,
+coordinate, inverse, jet and dissipation equations retained.
+
+This is a joint existence theorem. The new `smoothAreaInfimum C` is the variational
+value of the smooth meridional problem, **not a determining characterization of
+C_rot**. No value of that infimum, threshold selection or universal safety at a
+new cap is inferred merely from its definition or attainment.
+
+### Smooth problem, nonemptiness and a genuine minimizing sequence
+
+`IsSmoothAreaCompetitor C K r` means globally smooth K and r, positive original
+box witnesses κ,Λ with Λ/κ≤C, both exact moments 2 and 1, and actual probe mass one.
+Its action-value set is bounded below by
+`−actionMassCorrection(2/C,2C)` using the complete-action coercivity theorem and
+nonnegative operator/probe-square energies. The round pair K=2, r=√3 has mass one
+and action four. Thus the class is nonempty and its real infimum is finite.
+
+Mathlib's actual sequence approaching the infimum supplies action values and
+original smooth witnesses. A common late shift places them in action sublevel
+five, since the round value bounds the infimum by four. Five is an auxiliary
+bound derived from that round competitor and convergence, not a proposed sharp
+constant or an arbitrary numerical cutoff in the main result. The headline
+minimizer theorem has no sequence, sublevel bound or minimizing object as input.
+
+### The precise recoverable class and action transfer
+
+`IsRecoverableAreaCompetitor C K r p z` requires curvature L² regularity, genuine
+parabolic weak derivatives, a positive a.e. original ratio box, both exact moments,
+unit physical mass, and a sequence of original **unit-mass** smooth competitors
+converging strongly in curvature L² and in the three probe graph coordinates.
+Neither action convergence, a desired lower bound nor minimality appears in this
+definition. Every original smooth competitor embeds with its actual derivatives
+and a constant sequence; the class excludes zero physical mass.
+
+`IsRecoverableAreaCompetitor.exists_action_recovery` extracts an actual a.e.
+curvature subsequence from strong L² convergence, derives the relative primitive
+and strong-graph continuity hypotheses, and proves integrability plus convergence
+of the complete action. Hence every member's weak action is at least the original
+smooth infimum. This is a proved action consequence of the graph topology.
+It is not a density theorem for every arbitrary member of the maximal weak graph.
+
+For the limit of the minimizing sequence, the previous joint compactness/LSC
+producer gives action at most the smooth infimum. Its convex recovery sequence
+has strong graph convergence before normalization. The new scalar-multiplication
+lemma proves that multiplication by the actual positive normalization factors,
+which tend to one, preserves all three graph convergences with the **actual**
+first and second derivatives. Consequently the produced unit-mass limit belongs
+to the stated recoverable class. Action recovery then gives the reverse inequality:
+
+\[
+ A(K_0,r_0)=\inf\{A(K,r): (K,r)\text{ is an original normalized smooth competitor}\}.
+\]
+
+Every other recoverable competitor has action at least this value, so the produced
+pair is a joint minimum on this class. Its probe and first derivative are continuous
+in the interior, and its probe is nonzero at an actual interior point. No smooth
+regularity of the minimizer, zero eigenvalue, moment multiplier or extra endpoint
+condition is claimed.
+
+### Original geometric meaning and native map
+
+The original-form consumer constructs the normalized competitor from the actual
+original profile, its produced area normalization, original all-sphere curvature
+box, and nonzero original smooth meridional form. It proves
+
+\[
+ \operatorname{smoothAreaInfimum}(C)\le
+ \ell^2\frac{Q_g(h)}{\int |h|_g^2\,d\mathrm{vol}_g},
+ \qquad \ell=\operatorname{ReciprocalArea.length}(D.a),
+\]
+
+for that same metric and form. The physical nonzero hypothesis supplies the
+positive denominator/normalization. The area scale is the actual profile length;
+an uncorrected quotient over arbitrary metric scales is not being minimized.
+The established all-form Haar sign transfer remains separate and unchanged.
+
+The geometric recovery engine returns original smooth metrics/forms with the
+same ratio cap, nonzero forms and dissipation tending to
+`2π * smoothAreaInfimum C`. It retains the whole realizer interface rather than
+replacing its metric, coordinate or probe by an unrelated witness. This sequence
+statement supplies neither smooth attainment nor a continuous family in a variation
+parameter.
+
+| Role | Canonical source |
+|---|---|
+| Scalar multiplication in the actual strong graph topology | `Analysis/ParabolicGraphConvergence.lean` |
+| Smooth competitor, finite infimum and actual minimizing sequence | `Geometry/SmoothAreaInfimum.lean` |
+| Recoverable weak class, smooth embedding and proved action recovery | `Geometry/RecoverableAreaCompetitor.lean` |
+| Actual physically nonzero weak minimum equal to the smooth infimum | `Geometry/AreaJointMinimum.lean` |
+| Full original geometric recovery of that minimum | `Geometry/AreaMinimumGeometry.lean` |
+| Original-form quotient comparison with exact physical scale | `Geometry/NormalizedAreaInfimum.lean` |
+
+The six leaves add 21 public theorems and four definitions. Native evidence is in
+`docs/evidence/phase2-round-4-minimum/`. All 212 prior native leaves and their
+receipts are preserved. The single configured outer Round 4 review remains pending.
+
 ## Exact frontier and next target
 
-Phase I remains COMPLETE and Phase II remains OPEN. Round 4 now has native joint
-compactness with unit physical mass, full-action LSC, and smooth geometric recovery
-for the limits produced from original smooth sublevels. T7 remains active until
-the relaxation used in the actual minimization/threshold argument is specified
-and all its required recovery and variation bridges are closed and reviewed.
-Maximal weak-graph density has not been proved and must not be inferred from the
-produced-limit recovery theorem. No original smooth competitor is excluded.
+Phase I is COMPLETE; Phase II is OPEN. Round 4 now has native joint compactness,
+complete-action LSC, constructed smooth recovery, and an actual joint minimum on
+the stated recoverable weak class, equal to the original smooth meridional infimum.
+The original geometric scale and the full recovery producer bindings are verified
+by native consumers. The same outer review is pending for the combined packet.
 
-The next mainline target is the normalized joint variational problem and a produced
-minimizing/critical object, using the actual smooth-class infimum, coercivity,
-compactness, LSC and the constructed recovery. Establish its exact relation to the
-original smooth competitors and prove admissibility of each variation used. If
-that route needs additional weak-domain density, regularity, or path transfer,
-prove it before applying the existing necessary-condition consumers. Preserve the
-varying-mass derivative and geometric scale correction; produce multipliers only
-after the corresponding qualification argument. No symmetry, finite switch count,
-probe sign, smooth attainment or zero eigenvalue is inferred.
+The next mainline target is justified variations of this actual minimizing object.
+Prove membership of the particular varied/normalized weak pairs in the recoverable
+class and the regularity needed for each derivative or weak equation used. Derive
+the precise feasible minimum inequalities before invoking smooth necessary-condition
+consumers. Retain the curvature derivative of the mass, prove multiplier qualification,
+and establish any needed original geometric path transfer. Maximal weak-graph density
+remains unproved; any larger domain used must supply its own recovery/closure proof.
 
 T8–T10 still require a genuinely determining characterization and justified selection,
 universal complete-action safety, original smooth negative witnesses below every
-larger cap, and precise unrestricted endpoint safety/attainment. Final T11 depends
-on these mathematics, native evidence, independent review and delivery. C_rot is
-not identified, and no mandatory original-plan gate is deferred.
+larger cap, and precise unrestricted endpoint safety/attainment. No symmetry,
+finite switch count, smooth attainment or zero action is inferred from minimality.
+Final T11 depends on these mathematics, native evidence, independent review and
+delivery. C_rot is not identified, and no mandatory original-plan gate is deferred.

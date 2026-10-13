@@ -373,3 +373,22 @@ theorem for every arbitrary element of the maximal weak graph. T7's chosen-domai
 and variation bridges, the actual joint critical object and all determining,
 global, sharpness and endpoint gates remain active. One outer Round 4 review is
 pending for the combined packet; Phase II remains OPEN.
+
+### Phase-II Round 4 minimum: actual attainment in the recoverable class
+
+`Geometry.AreaProfile.exists_recoverable_area_minimizer` in
+`Geometry/AreaJointMinimum.lean` produces a physically nonzero weak minimum from
+C≥1 alone. Its action equals the actual normalized smooth meridional infimum and
+is no greater than the action of any recoverable competitor. The class is specified
+by genuine weak derivatives, physical constraints and strong graph approximation;
+its definition contains no action convergence or minimality premise. Every original
+smooth competitor embeds, and full-action recovery is proved from that topology.
+
+`exists_area_minimizer_with_geometric_recovery` retains the full original smooth
+metric/form realization and dissipation limit. `NormalizedAreaInfimum.lean` binds
+the same value to the original nonzero form’s physical quotient with the actual
+profile length squared. See the [six-leaf derivation](research/phase2-unrestricted.md)
+and [native receipt](evidence/phase2-round-4-minimum/receipt.json).
+The infimum is a variational value, not a determining characterization of C_rot.
+Feasible variations of the produced minimizer, all determining/global/endpoint
+gates and the single outer Round 4 review remain open.

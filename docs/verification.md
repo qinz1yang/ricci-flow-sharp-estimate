@@ -742,3 +742,52 @@ The combined Round 4 packet still awaits its single outer review. The precise
 variational domain and all variation/recovery bridges used next, a produced joint
 critical object, determining selection, universal safety, smooth sharpness and
 endpoint scope remain required. Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase-II Round 4 minimum: actual joint attainment
+
+The six new leaves construct a physically nonzero weak minimum over the stated
+recoverable class for each C≥1, with action equal to the actual normalized smooth
+meridional infimum. Smooth nonemptiness, finite lower bound and an actual minimizing
+sequence are proved. Every smooth competitor embeds, and the class’s action recovery
+is derived from its graph topology. Original geometric recovery and the physical
+quotient comparison retain the exact same objects and area scale.
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-minimum \
+  --reuse-receipt docs/evidence/phase2-round-4-recovery/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-minimum/receipt.json), SHA256
+`073c47e22439030a239ab7c4f34e2eb880c308464edd804467d34a251670ba6b`, passes for
+218 modules. Six fresh source elaborations are silent; 212 matching prior ones
+are reused, including the 37 earlier Round 4 leaves awaiting the same outer review.
+Root build, native declaration-kind inspection and all available declaration linters
+pass. The 1,100 required selectors, 1,201 exact signature/declaration queries and
+3,053 actual transitive axiom rows (948 private) pass. Every row contains only a
+subset of propext, Classical.choice, Quot.sound. All 223 input/224 output hashes,
+three reconstructed diagnostic-driver hashes and physical/checker/root inventories
+match. Reuse provenance covers 3,268 source-command records across 27 receipts.
+The checker delta only extends inventories and queries.
+
+There are 21 new public theorems and four definitions. Final source and linter
+outputs are silent without suppression or resource overrides. Root repaired
+candidate-level scalar-Lp reduction, an explicit elementary round integral and a
+cleared local hypothesis before the final gate. The source simplifier inspected
+all six final source files and found no needed change; its source hashes match.
+Its source-only advisory is not a duplicate mathematical acceptance review.
+
+Supplemental native checks instantiate the actual minimum from a cap alone, exclude
+zero physical mass, embed the nonvacuous round pair, and consume the geometric
+recovery with original all-sphere boxes and nonzero forms. The arbitrary-original-data
+quotient check obtains the area normalization from the accepted producer, rather
+than assuming independent normalized data. Exact source/command/silent-output hashes
+are in the [checkpoint record](evidence/phase2-round-4-minimum/checkpoint.json).
+The [preservation record](evidence/phase2-round-4-minimum/preservation.json) confirms
+all 212 prior native sources, accepted sources/paper, 2,325 historical workflow files,
+tasks, pins and prior evidence remain unchanged. No typesetting occurred.
+
+The chosen recoverable class does not assert maximal weak-graph density. Its actual
+minimum does not imply smooth attainment, zero action, feasible-direction equations,
+threshold selection or universal safety. Those required mathematical gates remain
+active, and the combined Round 4 packet still awaits its single outer review.
+Phase I is COMPLETE; Phase II is OPEN.

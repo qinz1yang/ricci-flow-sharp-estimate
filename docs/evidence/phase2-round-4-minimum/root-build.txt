@@ -1,0 +1,4 @@
+✔ [9861/9864] Built RicciFlowSharpEstimate.Geometry.AreaMinimumGeometry (8.3s)
+✔ [9862/9864] Built RicciFlowSharpEstimate.Geometry.NormalizedAreaInfimum (12s)
+✔ [9863/9864] Built RicciFlowSharpEstimate (9.8s)
+Build completed successfully (9864 jobs).
