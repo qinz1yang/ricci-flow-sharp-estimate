@@ -342,3 +342,15 @@ lists the 18 analytic/geometric leaves and their exact scope. Round 3 is accepte
 Round 4's single outer review is pending. Full-action lower semicontinuity,
 unrestricted recovery, joint critical-object production and every determining,
 global, sharpness and endpoint gate remain required.
+
+### Phase-II Round 4 continuation: the full original-sequence action liminf
+
+`Geometry.AreaProfile.exists_normalized_joint_weak_limit_le_liminf_action` in
+`Geometry/AreaJointActionCompactness.lean` retains the full joint-limit conclusions,
+adds both identified positive-square weak factors, and bounds the literal weak
+action by the liminf of the original smooth sequence. The [research map](research/phase2-unrestricted.md)
+records the nine-leaf proof: native strong L¹ product convergence, bounded weak
+pairings, both square-integral LSC arguments and actual signed-term limits.
+The initial checkpoint remains unchanged; one outer review is pending for the
+combined Round 4 packet. Unrestricted smooth recovery and all joint-critical,
+determining/global/sharpness/endpoint gates remain active.

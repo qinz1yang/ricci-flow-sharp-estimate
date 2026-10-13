@@ -208,6 +208,15 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaUniformPrimitives",
     "RicciFlowSharpEstimate.Geometry.AreaWeakPrimitives",
     "RicciFlowSharpEstimate.Geometry.WeakAreaAction",
+    "RicciFlowSharpEstimate.Analysis.BoundedWeakPairingLimits",
+    "RicciFlowSharpEstimate.Analysis.L2PointwiseProducts",
+    "RicciFlowSharpEstimate.Analysis.L2WeakLowerSemicontinuity",
+    "RicciFlowSharpEstimate.Analysis.L2WeakMultipliers",
+    "RicciFlowSharpEstimate.Geometry.AreaSublevelGraphBounds",
+    "RicciFlowSharpEstimate.Geometry.AreaDerivativeProductLimit",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureProductLimits",
+    "RicciFlowSharpEstimate.Geometry.AreaActionLowerSemicontinuity",
+    "RicciFlowSharpEstimate.Geometry.AreaJointActionCompactness",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1273,7 +1282,25 @@ SELECTOR = r"""
       analysis ++ `HasParabolicWeakDerivatives.weakDeriv_deriv,
       analysis ++ `HasParabolicWeakDerivatives.memLp,
       analysis ++ `HasParabolicWeakDerivatives.memLp_weighted_deriv,
-      analysis ++ `HasParabolicWeakDerivatives.memLp_weighted_secondDeriv
+      analysis ++ `HasParabolicWeakDerivatives.memLp_weighted_secondDeriv,
+      analysis ++ `integrable_and_tendsto_mul_of_bounded_weak_pairing,
+      analysis ++ `uniformIntegrable_mul_left_of_eLpNorm_two_bound,
+      analysis ++ `tendsto_eLpNorm_one_mul_sub_of_ae_tendsto_of_integral_sq_bound,
+      analysis ++ `tendsto_integral_abs_mul_sub_of_tendsto_eLpNorm_two,
+      analysis ++ `tendsto_integral_abs_sub_of_ae_tendsto_of_integral_sq_bound,
+      analysis ++ `tendsto_integral_mul_of_ae_tendsto_of_integral_sq_bound,
+      analysis ++ `eventually_lt_integral_sq_of_weak_L2,
+      analysis ++ `integral_sq_le_liminf_of_weak_L2,
+      analysis ++ `eventually_lt_sum_integral_sq_sub_of_weak_L2,
+      analysis ++ `memLp_mul_of_ae_abs_le,
+      analysis ++ `tendsto_integral_mul_of_weak_L2_strong_L2,
+      analysis ++ `tendsto_L2_mul_of_ae_tendsto,
+      analysis ++ `weak_L2_mul_of_ae_tendsto_of_ae_abs_le,
+      area ++ `exists_uniform_parabolic_graph_bound,
+      area ++ `weak_derivative_part_of_area_limits,
+      area ++ `curvature_action_pairings_tendsto,
+      area ++ `weak_factors_and_action_liminf_of_area_limits,
+      area ++ `exists_normalized_joint_weak_limit_le_liminf_action
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3387,6 +3414,42 @@ open RicciFlowSharpEstimate.Analysis in
 #check HasParabolicWeakDerivatives.memLp_weighted_deriv
 open RicciFlowSharpEstimate.Analysis in
 #check HasParabolicWeakDerivatives.memLp_weighted_secondDeriv
+open RicciFlowSharpEstimate.Analysis in
+#check integrable_and_tendsto_mul_of_bounded_weak_pairing
+open RicciFlowSharpEstimate.Analysis in
+#check uniformIntegrable_mul_left_of_eLpNorm_two_bound
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_eLpNorm_one_mul_sub_of_ae_tendsto_of_integral_sq_bound
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_integral_abs_mul_sub_of_tendsto_eLpNorm_two
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_integral_abs_sub_of_ae_tendsto_of_integral_sq_bound
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_integral_mul_of_ae_tendsto_of_integral_sq_bound
+open RicciFlowSharpEstimate.Analysis in
+#check eventually_lt_integral_sq_of_weak_L2
+open RicciFlowSharpEstimate.Analysis in
+#check integral_sq_le_liminf_of_weak_L2
+open RicciFlowSharpEstimate.Analysis in
+#check eventually_lt_sum_integral_sq_sub_of_weak_L2
+open RicciFlowSharpEstimate.Analysis in
+#check memLp_mul_of_ae_abs_le
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_integral_mul_of_weak_L2_strong_L2
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_L2_mul_of_ae_tendsto
+open RicciFlowSharpEstimate.Analysis in
+#check weak_L2_mul_of_ae_tendsto_of_ae_abs_le
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_parabolic_graph_bound
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weak_derivative_part_of_area_limits
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check curvature_action_pairings_tendsto
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weak_factors_and_action_liminf_of_area_limits
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_normalized_joint_weak_limit_le_liminf_action
 """
 
 

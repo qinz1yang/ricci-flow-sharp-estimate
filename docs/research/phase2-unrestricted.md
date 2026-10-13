@@ -840,7 +840,7 @@ definitions. Their final native receipt is recorded under
 review remains pending for the combined packet; no independent acceptance is
 inferred from the source simplifier advisory.
 
-## Round 4: actual weak domain and a joint unit-mass limit
+## Round 4 initial checkpoint: actual weak domain and a joint unit-mass limit
 
 Round 3's combined estimate packet passed its single outer review at `2778716`.
 Round 4 consumes those estimates to construct a limit; it does not supply
@@ -978,12 +978,10 @@ and no K′ potential or missing jump/interface contribution replaces the densit
 The coefficient-bound action lemma is an explicit auxiliary estimate; the joint
 producer discharges all its premises for the returned object.
 
-**No full-action lower semicontinuity or action/remainder convergence theorem is
-claimed here.** The returned weighted second-derivative convergence is not yet
-an identified global weak limit of `√f_n q_n`. The positive product `√f_n K_n r_n`
-also needs its own weak-L² identification and lower-semicontinuity argument.
-The two linear-K terms require their actual pairing limits and polar passage.
-None of these obligations can be replaced by convergence of the whole remainder.
+At the initial `0fe2595` checkpoint, full-action lower semicontinuity and the
+two positive-square weak identifications were still open. The continuation below
+supplies those identifications and the linear-K pairing limits. It does not
+replace them with convergence of the whole remainder.
 
 The review's oscillating example `K_n=2+cos(2πnx)` was checked as an exploratory
 diagnostic using its actual primitives and normalized constant probe. Numerical
@@ -1016,30 +1014,159 @@ The 18 new leaves have final native evidence recorded separately in
 pending. Accepted rounds 0–3, Phase I, its paper bytes and all earlier receipts
 remain unchanged.
 
+## Round 4 continuation: the complete-action liminf of the original sequence
+
+The continuation consumes the actual joint limit above. Its main theorem is
+`Geometry.AreaProfile.exists_normalized_joint_weak_limit_le_liminf_action` in
+`Geometry/AreaJointActionCompactness.lean`. Under the same smooth sublevel inputs,
+it retains every conclusion of the initial joint producer and adds weak L²
+pairings for both `√f_n q_n` and `√f_n K_n r_n`, together with
+
+\[
+ A_{\mathrm{weak}}(K_0,r_0,p_0,z_0)
+ \leq \liminf_{n\to\infty} A(K_n,r_n). \tag{35}
+\]
+
+The right side is the liminf of the **original sequence**. It is not merely the
+liminf along an arbitrary extracted subsequence. The complete density, its mixed
+term, negative potential and positive curvature square are all retained.
+
+### Identifying both positive factors
+
+Write the actual graph coordinates as
+
+\[
+ P_n=\sqrt w\,r_n',\qquad Z_n=w\sqrt w\,r_n''.
+\]
+
+`exists_uniform_parabolic_graph_bound` derives a common L² bound for r_n,P_n,Z_n
+from the accepted complete-action and derivative estimates. The initial producer
+already gives weak convergence of Z_n and pointwise interior convergence of P_n.
+On the finite physical measure space, the latter and its uniform L² bound imply
+weak L² convergence against every L² test.
+
+For the derivative part of the operator, use the actual coefficients
+
+\[
+ a_n=\frac{f_n\sqrt{f_n}}{w\sqrt w},\qquad
+ c_n=\frac{2b_n\sqrt{f_n}}{\sqrt w}.
+\]
+
+They are evaluated a.e. in (0,1), where the denominators are nonzero. The actual
+warp/slope estimates imply
+
+\[
+ 0\leq a_n\leq\Lambda\sqrt\Lambda,\qquad
+ |c_n|\leq4\sqrt\Lambda,
+ \quad
+ \sqrt{f_n}(f_n r_n''+2b_n r_n')=a_nZ_n+c_nP_n. \tag{36}
+\]
+
+Pointwise primitive convergence gives pointwise convergence of these bounded
+coefficients. A native dominated-convergence lemma makes each coefficient times
+one fixed L² test converge strongly in L². Weak/strong pairing then identifies
+the weak limit in (36). This does not require uniform relative warp convergence
+at the poles, a curvature derivative, or energy-tail vanishing.
+
+For the curvature factor, testing `√f_n K_n r_n` against v in L² amounts to
+pairing K_n with `r_n√f_n v`. The following native product principle supplies
+strong L¹ convergence of that varying test:
+
+\[
+ x_n\longrightarrow x\text{ strongly in }L^2,\quad
+ y_n\longrightarrow y\text{ a.e.},\quad
+ \sup_n\|y_n\|_2<\infty
+ \quad\Longrightarrow\quad
+ \int|x_ny_n-xy|\longrightarrow0. \tag{37}
+\]
+
+Here the measure is finite and membership of the limit y in L² is derived by
+Fatou. The proof establishes native uniform integrability using restricted
+Hölder estimates and applies Vitali convergence; uniform integrability is not
+an extra conclusion-containing premise. Apply (37) with x_n=r_n and
+`y_n=√f_n v`. Bounded weak curvature pairings against all L¹ tests then give the
+claimed potential-factor weak limit. Subtracting this from (36) identifies the
+actual full factor `√f_n q_n`. Both factors and their limits have genuine L²
+membership.
+
+### Passing the signed terms and the complete action
+
+The same product principle handles the coefficient of K in each signed term.
+For the mixed term take `y_n=b_n f_n r_n'`; for the negative potential take
+`y_n=b_n²r_n`. The pointwise limits come from the actual primitive and local
+probe/derivative convergence. Their global L² bounds follow from
+
+\[
+ |b_nf_nr_n'|\leq2\Lambda|\sqrt w\,r_n'|,
+ \qquad |b_n^2r_n|\leq4|r_n|. \tag{38}
+\]
+
+Consequently `b_n f_n r_n r_n'` and `b_n²r_n²` converge strongly in L¹ on the
+whole physical interval. Pairing these with the uniformly bounded weak curvature
+proves convergence of both literal signed integrals. Their limiting products
+are proved integrable. The previously verified polar estimates enter through
+global strong L² probe convergence; no additional tail assumption is introduced.
+
+For each positive square, the supporting inequality
+
+\[
+ \int u_n^2\geq2\int u_nu_0-\int u_0^2
+\]
+
+and the identified weak pairing give lower semicontinuity. Adding both inequalities
+and subtracting the genuinely converging signed integrals gives the full action
+inequality. Concentration of positive operator energy is allowed. In particular,
+no convergence of the whole remainder or action under oscillating curvature is
+asserted; the diagnostic preceding this continuation remains relevant.
+
+Finally, the mass-corrected coercivity bounds the smooth actions below by a finite
+box-dependent constant, while the input sublevel bounds them above. A genuine
+strictly increasing liminf subsequence is selected first. The initial joint
+compactness producer then selects a further subsequence; all of its constraints,
+weak derivatives, masses and convergences remain on the composed subsequence.
+The new full-action inequality and scalar action convergence yield (35) for the
+original sequence. No supplied weak pair, action minimum, compactness conclusion
+or lower-semicontinuity conclusion is an input of this strengthened producer.
+
+### Continuation native map and scope
+
+| Role | Canonical source |
+|---|---|
+| Uniform integrability and strong L¹ products | `Analysis/L2PointwiseProducts.lean` |
+| Weak/strong L² pairings and bounded varying multipliers | `Analysis/L2WeakMultipliers.lean` |
+| Bounded curvature with varying strong L¹ tests | `Analysis/BoundedWeakPairingLimits.lean` |
+| Weak square-integral lower semicontinuity | `Analysis/L2WeakLowerSemicontinuity.lean` |
+| Actual uniform graph-coordinate bounds | `Geometry/AreaSublevelGraphBounds.lean` |
+| Identified derivative-part weak limit | `Geometry/AreaDerivativeProductLimit.lean` |
+| Curvature factor and both signed integral limits | `Geometry/AreaCurvatureProductLimits.lean` |
+| Both full weak factors and complete-action LSC in the area topology | `Geometry/AreaActionLowerSemicontinuity.lean` |
+| Actual constrained joint limit satisfying (35) | `Geometry/AreaJointActionCompactness.lean` |
+
+The nine leaves add 18 public theorems. Native continuation evidence is recorded
+in `docs/evidence/phase2-round-4-continuation/`; the initial `0fe2595` source and
+receipt remain unchanged. One configured outer review remains pending for the
+combined Round 4 packet. This closes the native limiting-action checkpoint;
+it does not establish unrestricted smooth recovery or identify C_rot.
+
 ## Exact frontier and next target
 
-Phase I remains COMPLETE and Phase II remains OPEN. The accepted Round 3 estimate
-packet is preserved. Round 4 now constructs a joint normalized weak limit from
-actual complete-action sublevels, with retained original ratio/moments, genuine
-weak derivatives, global strong probe L² convergence and unit physical mass.
-Its one configured outer review is pending. No optimizer, determining value,
-selected threshold branch, new universally safe cap or unrestricted endpoint
-statement has been produced.
+Phase I remains COMPLETE and Phase II remains OPEN. The accepted Round 3 estimates
+are preserved. Round 4 now constructs a joint normalized weak limit retaining the
+original ratio/moments and unit physical mass, identifies both positive-square
+weak factors, and proves full-action lower semicontinuity with comparison to the
+liminf of the original sequence. Its one configured outer review remains pending.
+No optimizer, determining value, selected threshold branch, new universally safe
+cap or unrestricted endpoint statement is claimed.
 
-T7 remains active for the complete limiting action and exhaustive recovery.
-The next executable target is weak identification of both `√f_n q_n` and
-`√f_n K_n r_n`, lower semicontinuity of their positive squares, and convergence
-of the two terms linear in K using the returned strong local coefficients,
-weak curvature pairing and verified polar controls. Positive operator energy
-may concentrate; its polar tails need not vanish. Full remainder/action continuity
-under weak curvature is false in general and is not used.
-
-After that, prove unrestricted probe density in the weighted graph norm, including
-endpoint approximation, and nonsymmetric measurable-curvature recovery with exact
-moments, positivity and actual ratio. Complete derivative-sensitive action and
-mass convergence, literal late-stage normalization and the tied original geometric
-realizer are required. The older symmetric monotone fixed-probe recovery is not
-a substitute. No mandatory T7 bridge is deferred out of the original goal.
+T7 remains active for unrestricted derivative-sensitive smooth recovery. The next
+executable target is probe density in the actual weighted graph norm, including
+endpoint approximation without imposing a permanent pole condition, followed by
+nonsymmetric measurable-curvature recovery with exact moments, positivity and the
+original ratio. Control relative warp errors at both poles when passing the
+second-derivative square. Every term of the complete action and the physical mass
+must converge; then apply literal positive normalization and the tied original
+metric/form realizer. The older symmetric monotone fixed-probe recovery is not a
+substitute. No required bridge is deferred out of the original goal.
 
 T5 still requires a produced joint minimizing/critical object and justified feasible
 variations, with the scale-correct normalized objective. No moment multipliers,

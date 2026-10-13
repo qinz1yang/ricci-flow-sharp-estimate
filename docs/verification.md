@@ -641,3 +641,53 @@ embedding with exact action agreement. The [preservation record](evidence/phase2
 confirms all 175 accepted sources, all 149 Phase-I sources, all 2,325 historical
 workflow files, paper bytes, historical/current tasks and pins remain unchanged.
 Phase I is COMPLETE; Phase II remains OPEN. No unrestricted sharp value is claimed.
+
+## Phase-II Round 4 continuation: complete-action lower semicontinuity
+
+The continuation constructs a joint normalized weak limit whose literal complete
+action is at most the liminf of the **original** smooth sequence. It retains all
+initial joint-limit constraints and adds identified weak limits of both positive
+square factors. The two curvature-linear integrals converge through genuine
+strong L¹ coefficients and bounded weak curvature pairing. No strong curvature,
+full-remainder continuity or vanishing operator-energy tails are assumed.
+
+The final Root command was:
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-continuation \
+  --reuse-receipt docs/evidence/phase2-round-4/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-continuation/receipt.json), SHA256
+`44c9e26f09fa250057bbfcc0c7a4c90e26e88d1e88d01238c77269ae1631a022`, passes for
+202 modules: nine fresh silent source elaborations and 193 matching prior native
+elaborations reused. The latter include 175 accepted sources and the 18 initial
+Round 4 leaves awaiting the same outer review. Root build, unsuppressed declaration
+linters and native declaration-kind inspection pass. The 1,061 required selectors,
+1,162 exact signature/declaration queries and 2,955 actual transitive axiom rows
+(899 private) pass, using only subsets of `propext`, `Classical.choice`, `Quot.sound`.
+All 207 input and 208 output hashes and three reconstructed diagnostic-driver
+hashes match. Physical/checker/root inventories agree; source-command provenance
+was followed through 2,838 records across 25 receipts. Validation code and pins
+are unchanged; the checker delta only extends inventories and queries.
+
+The nine new leaves contribute 18 public theorems. Root repaired candidate-level
+notation and function-application elaboration issues with explicit typed terms
+and removed one unreachable tactic; final native outputs are silent without
+suppression or resource overrides. The nine-leaf source simplifier advisory found
+no required change. Optional consolidation of an existing private estimate was
+left outside this checkpoint. Its inspected source hashes match the final bytes.
+
+Supplemental native consumers instantiate arbitrary varying original box/ratio
+sequences and the exact round K=2, r=√3 class. The latter retains unit physical
+mass, both moments, a physically nonzero limit and weak action at most four.
+The driver compiles silently and its final source/output hashes are bound by the
+[checkpoint record](evidence/phase2-round-4-continuation/checkpoint.json).
+The [preservation record](evidence/phase2-round-4-continuation/preservation.json)
+confirms all 193 prior native leaves, accepted sources/paper, all 2,325 historical
+workflow files, tasks, pins and previous receipts are unchanged.
+
+The single configured Round 4 outer review remains pending for the combined
+initial and continuation packet. Unrestricted derivative-sensitive recovery,
+joint critical-object production and every determining/global/sharpness/endpoint
+gate remain active. Phase I is COMPLETE; Phase II is OPEN.

@@ -14,9 +14,10 @@ Their exhaustive normalization, variations, coercivity and polar estimates remai
 accepted. Round 4 constructs an actual joint normalized weak limit of complete-action
 sublevels: both moments and the original curvature ratio are retained, weak derivatives
 are identified, probes converge strongly in L², and actual weighted mass remains one.
-The literal weak action is integrable with both positive-square factors retained.
-Its native evidence is separate; the single Round 4 outer review is pending.
-Full-action lower semicontinuity, exhaustive recovery, a produced joint critical object,
+The continuation identifies both positive-square weak factors and proves complete-action
+lower semicontinuity, returning a constrained joint limit whose action is at most the
+liminf of the original sequence. Native evidence is separate; the single Round 4 outer
+review is pending. Exhaustive smooth recovery, a produced joint critical object,
 determining selection, global safety and endpoint scope remain open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
