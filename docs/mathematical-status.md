@@ -34,10 +34,13 @@ representing the full mass-corrected variation and applies it to that same minim
 Only the weighted warp coefficient is required to be integrable. Nonsymmetric
 smooth recovery now preserves both moments and the same original box for every
 bounded measurable curvature, including degenerate boxes. It extends the actual
-minimum’s adjoint inequality to every such comparison. The single Round 4 outer
-review is pending. Moment multiplier qualification, required further weak-probe
-closure and regularity/path transfer, determining selection, global safety and
-endpoint scope remain open. C_rot is not identified.
+minimum’s adjoint inequality to every such comparison. The moment qualification
+and two actual multipliers are now proved, giving a.e. box complementarity for the
+full mass-corrected adjoint. Strict original ratio boxes are derived above cap one;
+cap one is treated by exact a.e. roundness. The single Round 4 outer review is
+pending. Required further weak-probe closure, regularity/interface/path transfer,
+determining selection, global safety and endpoint scope remain open. C_rot is not
+identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

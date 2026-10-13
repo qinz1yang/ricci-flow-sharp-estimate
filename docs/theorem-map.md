@@ -15,8 +15,9 @@ strong recovery of smooth-sequence limits, and a physically nonzero normalized
 joint minimum in the recoverable class. Its complete probe equation and integrable
 mass-corrected curvature adjoint now include every bounded measurable admissible
 comparison, using nonsymmetric exact-moment recovery in the original box. The
-single outer Round 4 review is pending. Moment qualification, required further
-regularity/closure/path laws and all determining, global safety and endpoint gates
+single outer Round 4 review is pending. Genuine moment multipliers and a.e. box
+complementarity are now derived. Required further regularity/closure/path laws
+and all determining, global safety and endpoint gates
 remain open. No unrestricted sharp value is identified.
 
 The working manuscript is [paper/exponential_pair.tex](../paper/exponential_pair.tex).
@@ -479,3 +480,29 @@ The same configured outer review remains pending. Moment constraint qualificatio
 any further weak-probe or normalized-pair closure used, regularity/interface and
 original geometric path laws, and every determining/global/sharpness/endpoint gate
 remain required. No new multiplier, structural family or sharp value is asserted.
+
+### Phase-II Round 4 actual moment multipliers and complementarity
+
+`Geometry.AreaProfile.exists_recoverable_area_minimizer_with_moment_multipliers`
+in `Geometry/AreaMomentMultipliers.lean` takes C≥1 alone and returns the same
+physical joint minimum, full weak probe equation, complete mass-corrected adjoint,
+and two derived moment multipliers with a.e. box complementarity. The original
+box/ratio remains explicit and is strictly mean-feasible above cap one. The cap-one
+branch records a.e. round curvature and permits the degenerate box [2,2].
+
+`Analysis/BoxMomentMultipliers.lean` constructs the actual two-moment neighborhood
+from the fixed interior basis, separates the convex strict cost epigraph, proves
+the cost coefficient strictly negative, and normalizes it. Its natural general
+statement concerns an integrable linear cost with balanced moments in a fixed box.
+`Analysis/BoxVariationalInequality.lean` extracts the equivalent a.e. signs using
+a measurable extreme selector; its primary theorem allows arbitrary measures.
+`Geometry/AreaCurvatureBoxQualification.lean` derives the strict physical box and
+cap-one degeneracy from the original measurable curvature constraints. See the
+[research derivation](research/phase2-unrestricted.md) and
+[native receipt](evidence/phase2-round-4-multipliers/receipt.json).
+
+These are justified necessary conditions. No smooth adjoint, finite switch count,
+symmetry, zero eigenvalue or global sufficiency follows from the current theorem.
+Regularity/interface/boundary, any further weak-domain or original path bridges,
+and all determining/global/sharpness/endpoint gates remain active. The same outer
+Round 4 review remains pending.

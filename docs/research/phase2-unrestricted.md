@@ -1775,24 +1775,97 @@ remain unchanged. Native evidence is recorded in
 `docs/evidence/phase2-round-4-nonsymmetric/`; the single configured outer Round 4
 review remains pending for the combined packet.
 
+## Round 4 moment qualification and genuine multipliers
+
+The complete integrable curvature adjoint now has two **derived** moment
+multipliers. This step uses the actual measurable-comparison inequality of the
+produced minimum; neither multipliers nor constraint qualification are supplied
+as hypotheses of the cap-only producer.
+
+At a fixed positive box κ≤K≤Λ with κ<2<Λ, the constant curvature two is a strictly
+interior feasible point for both physical moments. The already constructed
+interior smooth moment basis gives perturbations 2+uψ0+vψ1. A quantified neighborhood
+of (u,v)=(0,0) stays inside the box and changes the moments by exactly (u,v).
+Qualification therefore does not require the minimizing curvature itself to have
+a region strictly between its obstacles.
+
+`Analysis.exists_box_moment_multipliers` proves the general balanced-moment
+linear optimization theorem for any integrable real weight W on (0,1). Its convex
+strict epigraph records the two moment deviations and the cost deviation. Actual
+constrained minimality excludes the origin. The explicit moment perturbations
+produce a nonempty open subset of this epigraph. Native Hahn–Banach separation
+then gives a nonzero normal. Its cost coefficient is nonpositive by the vertical
+ray, and cannot vanish: the two-sided moment neighborhood would force both other
+coefficients to vanish as well. Normalizing this strictly negative coefficient
+produces real numbers a,b and proves the literal unconstrained-box inequality
+
+\[
+ \int_0^1 (W(x)-a-bx)(J(x)-K(x))\,dx\ge0
+\]
+
+for every measurable J in the same box. Boundedness and integrability justify
+every moment, cost, mixture and subtraction identity.
+
+`Analysis.box_variational_inequality_iff` proves, for an arbitrary measure, that
+this box inequality is equivalent to the a.e. conditions
+
+\[
+ K>\kappa\ \Longrightarrow\ W-a-bx\le0,\qquad
+ K<\Lambda\ \Longrightarrow\ W-a-bx\ge0.
+\]
+
+The proof uses a genuinely measurable extreme selector built from a measurable
+representative of the weight. Its nonpositive integrand has zero integral and
+therefore vanishes almost everywhere. All pairings are integrable; zero measures
+and degenerate boxes require no artificial exception or nonemptiness hypothesis.
+
+`IsBoundedAreaCurvature.exists_strict_box` derives the required original witnesses
+for every C>1. The mean bound gives κ≤2≤Λ. If either endpoint equals two, integral
+equality forces K=2 a.e.; the box [1+1/C,C+1] then has ratio C and contains two
+strictly. Otherwise the supplied box is already strict. At C=1, the original
+ratio and mean force K=2 a.e.; the final producer uses [2,2], whose normal-cone
+conditions carry no switching information.
+
+`exists_recoverable_area_minimizer_with_moment_multipliers C hC` takes C≥1 alone.
+It returns the actual physically nonzero unit-mass joint minimum, its full probe
+equation and actual action value, global minimality in the recoverable class,
+the integrable complete adjoint with mass multiplier equal to that action, an
+original positive ratio box, and the two moment multipliers with the a.e. signs
+above. The box is strictly mean-feasible whenever C>1; cap one is handled exactly.
+No independent jets, omitted action terms, smoothness of the adjoint or prescribed
+pole data are introduced.
+
+| Role | Canonical source |
+|---|---|
+| Arbitrary-measure box inequality and a.e. complementarity equivalence | `Analysis/BoxVariationalInequality.lean` |
+| Actual two-moment qualification, separation and multiplier extraction | `Analysis/BoxMomentMultipliers.lean` |
+| Original positive ratio witnesses and cap-one degeneracy | `Geometry/AreaCurvatureBoxQualification.lean` |
+| Genuine multipliers and signs for the cap-only produced minimum | `Geometry/AreaMomentMultipliers.lean` |
+
+The four leaves add six public theorems and no definitions. All 239 previous
+leaves remain unchanged. Native evidence is recorded in
+`docs/evidence/phase2-round-4-multipliers/`. The same single outer Round 4 review
+remains pending.
+
 ## Exact frontier and next target
 
-Phase I is COMPLETE; Phase II is OPEN. The produced joint weak minimum has a full
-weak probe equation and a complete mass-corrected curvature inequality against
-every bounded measurable exact-moment comparison with its original positive ratio
-box. Nonsymmetric smooth recovery for that curvature class is now native. No
-symmetry, probe sign, smooth attainment, zero eigenvalue or finite switch count is
-inferred from these necessary conditions.
+Phase I is COMPLETE; Phase II is OPEN. The actual joint weak minimum now has its
+full weak probe equation and genuine moment multipliers for the complete
+mass-corrected curvature adjoint, with a.e. box complementarity derived from
+measurable comparisons. Qualification is proved in an actual original ratio box,
+including honest treatment of constant curvature and cap one.
 
-Next prove the actual moment constraint qualification before extracting curvature
-multipliers, and establish the additional regularity, interface/boundary and
-original geometric path laws used by the determining argument. Any further weak
-probe or normalized pair closure used must be proved in the actual weighted graph
-and full-action topology; maximal weak-probe density is not asserted here.
+Next establish the regularity and weak flux/interface/boundary laws actually
+needed to analyze this coupled system, retaining the physical pole domain and
+tied weak derivatives. Any further weighted-probe density, normalized-pair closure
+or original geometric path transfer used must be proved. Test the decisive global
+comparison before expanding a proposed structural family. The current a.e. signs
+do not imply continuity, symmetry, a fixed switch count, smooth attainment or a
+zero eigenvalue, and no such conclusion is used.
 
 T8–T10 still require a genuinely determining characterization and justified
 selection, universal complete-action safety, original smooth negative witnesses
 below every strictly larger cap, and precise unrestricted endpoint safety and
-attainment scope. Necessary inequalities do not identify C_rot. Final native,
+attainment scope. Necessary conditions do not identify C_rot. Final native,
 independent-review, research/manuscript and delivery gates remain mandatory;
 no required original-plan task is deferred.

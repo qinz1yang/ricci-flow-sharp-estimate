@@ -254,6 +254,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.BalancedMomentRecovery",
     "RicciFlowSharpEstimate.Geometry.BoundedAreaCurvature",
     "RicciFlowSharpEstimate.Geometry.BoundedCurvatureOptimality",
+    "RicciFlowSharpEstimate.Analysis.BoxVariationalInequality",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureBoxQualification",
+    "RicciFlowSharpEstimate.Analysis.BoxMomentMultipliers",
+    "RicciFlowSharpEstimate.Geometry.AreaMomentMultipliers",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1462,7 +1466,13 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.curvature_bounded,
       area ++ `IsBoundedAreaCurvature.exists_smooth_recovery,
       area ++ `IsRecoverableAreaCompetitor.bounded_curvature_adjoint_inequality_of_minimum,
-      area ++ `exists_recoverable_area_minimizer_with_bounded_curvature_adjoint
+      area ++ `exists_recoverable_area_minimizer_with_bounded_curvature_adjoint,
+      analysis ++ `box_variational_inequality_iff,
+      analysis ++ `exists_box_moment_multipliers,
+      area ++ `IsBoundedAreaCurvature.exists_strict_box,
+      area ++ `IsBoundedAreaCurvature.ae_eq_round_of_cap_one,
+      area ++ `IsRecoverableAreaCompetitor.exists_curvature_moment_multipliers,
+      area ++ `exists_recoverable_area_minimizer_with_moment_multipliers
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3860,6 +3870,18 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.bounded_curvature_adjoint_inequality_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_recoverable_area_minimizer_with_bounded_curvature_adjoint
+open RicciFlowSharpEstimate.Analysis in
+#check box_variational_inequality_iff
+open RicciFlowSharpEstimate.Analysis in
+#check exists_box_moment_multipliers
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsBoundedAreaCurvature.exists_strict_box
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsBoundedAreaCurvature.ae_eq_round_of_cap_one
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_curvature_moment_multipliers
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_recoverable_area_minimizer_with_moment_multipliers
 """
 
 

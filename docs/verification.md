@@ -1007,3 +1007,59 @@ Moment constraint qualification, any further weak-probe/normalized-pair closure
 used, required regularity/interface/path laws and all determining, universal-safety,
 smooth-sharpness and endpoint gates remain active. The theorem supplies necessary
 conditions and does not identify C_rot. Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase-II Round 4 genuine moment-multiplier checkpoint
+
+Four new leaves prove actual two-moment constraint qualification, derive two
+multipliers for the integrable linear curvature adjoint, and apply measurable
+box complementarity to the produced physical joint minimum. Strict original
+ratio witnesses are derived at every cap above one; cap one is handled by exact
+a.e. roundness and the degenerate box. No multiplier or separating normal is
+assumed by the cap-only theorem.
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-multipliers \
+  --reuse-receipt docs/evidence/phase2-round-4-nonsymmetric/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-multipliers/receipt.json), SHA256
+`c5f6ab3cd0fcff4ef9e2bf9b6e94df9d2970b6efd889c8b5ea852a6366c233dc`, passes for
+243 modules. Four fresh source elaborations are silent; 239 matching prior
+elaborations are reused. Root build, strict declaration-kind inspection and all
+available declaration linters pass. The 1,191 required selectors, 1,292 exact
+signature/declaration queries and 3,261 actual transitive axiom rows (1,042 private)
+contain only subsets of propext, Classical.choice and Quot.sound. All 248 input/
+249 output hashes and three reconstructed diagnostic-driver hashes match, and
+physical/checker/root inventories agree. Provenance covers 4,434 source-command
+records through 32 receipts. Checker changes only extend inventories and queries.
+
+The four leaves add six public theorems and no definitions. Root repaired native
+function-expression matching, explicit pointwise integrability arguments,
+functional extensionality, deprecated branch names and minor source diagnostics
+before the final silent gate. No mathematical hypothesis, accepted source,
+validation policy or resource limit was changed. The bounded source simplifier
+recommended no change and recorded matching final hashes; it is not an additional
+acceptance review.
+
+The supplemental driver proves constrained minimality for the affine cost W=x
+and then uses the new engine to obtain multipliers with zero residual a.e. It also
+checks the arbitrary-measure box equivalence on infinite counting measure and on
+a zero measure with inconsistent endpoints, derives a strict original ratio box
+for round curvature at cap two, and consumes the actual minimum producer at caps
+one and three. The cap-one object is round a.e.; the cap-three object is physically
+nonzero and has the derived multipliers/signs. The final driver is silent; its
+source/command/output hashes are in the
+[checkpoint record](evidence/phase2-round-4-multipliers/checkpoint.json).
+
+The [preservation record](evidence/phase2-round-4-multipliers/preservation.json)
+confirms all 239 prior native leaves, 175 accepted leaves, 149 Phase-I leaves,
+2,325 historical workflow files, accepted paper, tasks, pins and 4,598 prior
+tracked evidence files remain unchanged. Compiler, platform and ten clean pinned
+dependencies match. No typesetting occurred; all worker leases are released.
+The single configured outer Round 4 review remains pending for the combined
+68-leaf packet across nine checkpoints.
+
+Regularity and weak flux/interface/boundary laws, further weak-domain or original
+path bridges actually used, and all determining, universal-safety, smooth-sharpness
+and endpoint gates remain active. The a.e. signs do not establish a structural
+family or global sufficiency. Phase I is COMPLETE; Phase II is OPEN.
