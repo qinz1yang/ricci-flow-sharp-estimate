@@ -551,3 +551,19 @@ outer integrability facts or geometric producer equations. Native evidence is in
 [evidence/phase2-round-5](evidence/phase2-round-5/receipt.json); the single configured
 Round 5 outer review remains pending. The conditional comparison neither supplies
 its reference uniformly over curvature nor identifies the unrestricted threshold.
+
+## Phase II Round 5 continuation: local system and operator-sign consequences
+
+| Result | Canonical source |
+|---|---|
+| Actual local integral/continuous representatives, absolute continuity and FTC from genuine weak identities | `Analysis/WeakDerivativePrimitives.lean` |
+| Interior C¹ regularity and exclusion of a translated absolute-value corner from the second weak graph | `Analysis/ParabolicSobolevRegularity.lean` |
+| Same recoverable curvature primitives, classical interior warp derivative and local AC slope | `Geometry/RecoverableAreaRegularity.lean` |
+| Actual minimum's local coupled first-order system with canonical q=A/f² and literal Euler flux | `Geometry/WeakProbeFirstOrderSystem.lean` |
+| Smooth meridional maximum principle at both physical poles; strict-source Picone certificate | `Geometry/AreaProbeMaximumPrinciple.lean` |
+
+These five leaves add fifteen public theorems and no definitions. All 251 parent
+leaves are unchanged. The single Round 5 outer review remains pending for both
+checkpoints. The maximum principle is a global C² probe statement; the actual
+weak minimum has only the stated interior regularity. No operator sign, global
+smoothness, determining cap or threshold selection is inferred for that minimum.

@@ -49,8 +49,16 @@ at the actual minimum. A positive smooth Jacobi reference with nonpositive
 meridional operator supplies a conditional all-probe lower bound on the same
 geometry. Exact nodal and positive nonstationary round examples rule out dropping
 the coverage/sign obligations. The single Round 5 outer review remains pending.
-Further coupled regularity, weak-probe closure/interface/path transfer, determining
-selection, global safety and endpoint scope remain open. C_rot is not identified.
+A Round 5 continuation now derives local weak primitives and actual C¹ probe
+regularity, with locally absolutely continuous probe derivative and canonical
+operator satisfying the coupled first-order equations. The smooth meridional
+maximum principle treats both physical poles: nonpositive source gives a
+nonnegative probe, strictly negative source gives a positive probe. An exact
+interior absolute-value corner is excluded from the second weak graph, so
+absolute value is not a general admissible sign reduction. This does not prove
+the actual minimum's operator sign or global C² pole regularity. Further used
+closure/interface/path laws, determining selection, universal safety, smooth
+sharpness and endpoint scope remain open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

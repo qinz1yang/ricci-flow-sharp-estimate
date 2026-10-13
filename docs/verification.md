@@ -1183,3 +1183,55 @@ configured Round 5 outer review remains pending; unchanged Round 4 mathematical
 acceptance is reused. Phase I is COMPLETE; Phase II is OPEN. All determining,
 universal safety, smooth sharpness, endpoint and final manuscript gates remain
 required.
+
+## Phase II, Round 5 continuation: actual local system and physical maximum principle
+
+Five new leaves and fifteen public theorems derive the local weak FTC, genuine
+interior C¹ regularity, an exact interior-corner obstruction, the actual minimum's
+coupled first-order system and the smooth meridional maximum principle at both
+physical poles. The strict-source version supplies reference positivity for the
+complete Picone certificate. It does not establish the actual minimum's operator
+sign or global C² regularity, identify a cap, or replace the remaining global gates.
+
+The final command, under the Root writer lock, was:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-5-regularity \
+  --reuse-receipt docs/evidence/phase2-round-5/receipt.json
+```
+
+The [receipt](evidence/phase2-round-5-regularity/receipt.json), SHA256
+`79646cf0185b4b00af2546873ceb135da88bd2e9bf1444557982d7294deef895`, passes for
+256 modules, 261 inputs and 262 outputs. All five fresh source elaborations are
+silent; the 251 unchanged prior elaborations are reused. The full root build,
+all available declaration linters and native declaration-kind inspection pass
+without warnings or suppression. All 1,224 selectors, 1,325 exact signature/
+declaration queries and 3,353 actual axiom rows, including 1,091 private rows,
+pass. Every transitive closure contains only a subset of `propext`,
+`Classical.choice`, `Quot.sound`. Read-only reconstruction verifies all native
+source/output/driver bindings and 3,557 source-command records across 28 receipts
+on the chosen native lineage. The checker policy is unchanged.
+
+The supplemental `RegularityAndSignChecks` driver is silent. It consumes the
+cap-only physical minimum producer and the same canonical coupled system; tests
+local logarithmic FTC without a global pole-integrability hypothesis; combines a
+smooth linear graph with nonexistence of any second weak graph for its absolute
+value at an interior node; retains the allowed pole corner `|x|`; checks that a
+zero source does not imply strict positivity; and instantiates the strict-source
+round certificate at eigenvalue four. Exact command, source/output hashes and
+capture provenance appear in the [checkpoint](evidence/phase2-round-5-regularity/checkpoint.json).
+No test assumes a minimizing eigenvalue or a sign for the actual weak minimum.
+
+The five-leaf source simplifier recommended no changes and its hashes match final
+sources. It is not an acceptance review. All worker read leases are released;
+Root alone wrote canonical sources, used writable caches and performed native/Git
+operations. The single configured Round 5 outer review remains pending for the
+combined initial and continuation packets; unchanged Round 4 review is reused.
+
+The [preservation record](evidence/phase2-round-5-regularity/preservation.json)
+verifies all 251 prior native leaves, all 175 Round 3 leaves, all 149 Phase-I
+leaves, 2,325 historical workflow files and 5,365 prior tracked evidence files
+unchanged. Accepted paper bytes, both TASKs, dependency pins, compiler/platform
+and all ten dependency revisions match. No typesetting was performed. Phase I is
+COMPLETE and Phase II remains OPEN, with every determining/global/sharpness/
+endpoint and final research/manuscript gate still required.

@@ -266,6 +266,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.RecoverableMultiplicativeStationarity",
     "RicciFlowSharpEstimate.Geometry.AreaGroundStateComparison",
     "RicciFlowSharpEstimate.Geometry.WeakGroundStateComparison",
+    "RicciFlowSharpEstimate.Analysis.WeakDerivativePrimitives",
+    "RicciFlowSharpEstimate.Analysis.ParabolicSobolevRegularity",
+    "RicciFlowSharpEstimate.Geometry.RecoverableAreaRegularity",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeFirstOrderSystem",
+    "RicciFlowSharpEstimate.Geometry.AreaProbeMaximumPrinciple",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1498,7 +1503,22 @@ SELECTOR = r"""
       area ++ `weakMeridionalPicone_density_identity,
       area ++ `meridionalAction_mul_sub_pairing_eq_picone,
       area ++ `meridionalAction_ge_mass_of_ground_state,
-      area ++ `IsRecoverableAreaCompetitor.picone_identity_of_minimum
+      area ++ `IsRecoverableAreaCompetitor.picone_identity_of_minimum,
+      analysis ++ `HasWeakDerivOn.exists_integral_representative_Ioo,
+      analysis ++ `HasWeakDerivOn.exists_continuous_representative_Ioo,
+      analysis ++ `HasWeakDerivOn.absolutelyContinuousOnInterval,
+      analysis ++ `HasWeakDerivOn.integral_eq_sub_of_continuousOn,
+      analysis ++ `HasWeakDerivOn.hasDerivAt_of_continuousOn,
+      analysis ++ `HasWeakDerivOn.contDiffOn_one_of_continuousOn,
+      analysis ++ `HasWeakDerivOn.ae_hasDerivAt_of_continuousOn,
+      analysis ++ `HasParabolicWeakDerivatives.contDiffOn_one_of_continuousOn,
+      analysis ++ `not_exists_parabolicWeakDerivatives_abs_sub,
+      area ++ `IsRecoverableAreaCompetitor.primitive_weak_derivatives,
+      area ++ `IsRecoverableAreaCompetitor.primitive_local_regularity,
+      area ++ `IsRecoverableAreaCompetitor.probe_first_order_system_of_minimum,
+      area ++ `nonneg_of_meridionalOperator_nonpos,
+      area ++ `pos_of_meridionalOperator_neg,
+      area ++ `meridionalAction_ge_mass_of_negative_source
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3944,6 +3964,36 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check meridionalAction_ge_mass_of_ground_state
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.picone_identity_of_minimum
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.exists_integral_representative_Ioo
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.exists_continuous_representative_Ioo
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.absolutelyContinuousOnInterval
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.integral_eq_sub_of_continuousOn
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.hasDerivAt_of_continuousOn
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.contDiffOn_one_of_continuousOn
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.ae_hasDerivAt_of_continuousOn
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.contDiffOn_one_of_continuousOn
+open RicciFlowSharpEstimate.Analysis in
+#check not_exists_parabolicWeakDerivatives_abs_sub
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.primitive_weak_derivatives
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.primitive_local_regularity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_first_order_system_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check nonneg_of_meridionalOperator_nonpos
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check pos_of_meridionalOperator_neg
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_ge_mass_of_negative_source
 """
 
 

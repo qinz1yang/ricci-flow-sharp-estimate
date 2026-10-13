@@ -2060,3 +2060,110 @@ with ratio below every strictly larger cap, and exact unrestricted endpoint
 safety/attainment. Further domain/interface/geometric-path bridges must be proved
 when used. Final research/manuscript, native and independent-review gates remain
 mandatory. No original-plan obligation is deferred or declared complete.
+
+
+## Round 5 continuation: local weak regularity and the sign problem
+
+The comparison checkpoint at `13dbfd3` is preserved. Its remaining reference-sign
+and regularity conditions cannot be supplied by naming the actual minimum a
+ground state. This continuation derives the local calculus needed to read the
+coupled equations and determines exactly what an actual meridional source sign
+implies in the smooth physical domain.
+
+For `HasWeakDerivOn (a,b) r p`, the new native primitive theorem proves
+
+\[
+ r(x)=d+\int_c^x p(t)\,dt \quad\text{a.e. on }(a,b),\qquad c\in(a,b).
+\]
+
+Only local L¹ is assumed. A normalized compactly supported bump and the compact
+primitive of a zero-mean test first show that a function with zero distributional
+derivative is constant a.e. The actual local integral primitive has weak
+derivative p by absolutely continuous integration by parts on an interior compact
+interval enclosing the test. Every integral used there is proved integrable on
+that interval. Continuous representatives then obey pointwise FTC, local absolute
+continuity, a.e. genuine differentiation and, when p is continuous, a classical
+first derivative and C¹ regularity. Countably many rational interior intervals
+supply the a.e. derivative statement on the whole open domain.
+
+Applying this twice to the parabolic graph shows that any continuous probe
+representative is C¹ on (0,1), independently of the chosen weak derivative
+representatives. Consequently, for every c strictly inside (0,1), there exist no
+p,z such that `|x−c|` has the stipulated second weak graph. The linear probe
+`x−c` itself embeds smoothly. This is an exact obstruction to using absolute
+value as a general admissible sign reduction, not a statement that a produced
+minimum is nodal. The endpoint distinction is real: `|x|` does belong to the graph
+on (0,1), with weak derivatives 1 and 0. No pole smoothness condition was added.
+
+For the actual recoverable curvature, the accepted weak primitive laws are reused:
+`Df=b` and `Db=−2K`. The new weak FTC makes f classically differentiable with
+derivative b in the interior and gives b local absolute continuity with its actual
+a.e. derivative. No K′ exists or is needed in this argument.
+
+Let λ be the actual unit-mass minimum action, P its literal Euler flux, A its
+literal Euler momentum, and q=A/f². The continuous minimum representatives satisfy
+
+\[
+ \begin{aligned}
+ r'&=p,\\
+ p'&=(q-2bp+Kr)/f,\\
+ q'&=(P-Kbfr/2)/f^2,\\
+ P'&=fKq+Kbf p/2-(K^2f-Kb^2/2)r+\lambda fr.
+ \end{aligned}
+\]
+
+The first identity holds at every interior point. The other three are genuine
+a.e. `HasDerivAt` statements; p and q are absolutely continuous on every compact
+interior interval, and r is C¹ there. The q field is the canonical A/f², a.e.
+equal to the original tied weak operator. Its local absolute continuity follows
+from A's already proved global absolute continuity and the C¹ reciprocal of the
+strictly positive interior warp. The global P,A pole traces remain exactly the
+previously proved natural flux traces. This theorem neither divides by f at a pole
+nor assigns a classical derivative to an arbitrary weak second-jet representative.
+The native consumer obtains this system from C≥1 alone and the accepted actual
+minimum producer, with λ=`smoothAreaInfimum C`, unit mass and physical nonzero.
+
+The smooth maximum principle is separate. For positive continuous K with both
+exact moments and a C² probe r, it proves
+
+\[
+ L_Kr\le0\text{ on }[0,1]\Longrightarrow r\ge0\text{ on }[0,1],
+ \qquad
+ L_Kr<0\text{ on }[0,1]\Longrightarrow r>0\text{ on }[0,1].
+\]
+
+At an interior global minimum, r′=0 and r″≥0. At x=0 a closed-interval minimum
+has r′≥0 and the actual operator is `4r′−Kr`; at x=1 it has r′≤0 and the operator
+is `−4r′−Kr`. These physical first-derivative terms prove the same bound
+`−Kr≤Lr` in all three cases. No Dirichlet or Neumann condition is imposed. A zero
+probe with zero source shows why the non-strict version does not give strict
+positivity. Combining the strict version with the delivered complete Picone
+identity gives an all-smooth-probe bound from the actual Jacobi equation and
+strictly negative meridional source, with no separately supplied probe sign.
+The round reference r=1 verifies this certificate at λ=4.
+
+Five new leaves contain fifteen public theorems and no definitions. All 251 prior
+leaves and their receipts are unchanged. Native evidence is recorded in
+`docs/evidence/phase2-round-5-regularity/`; the one configured Round 5 outer review
+remains pending for the initial and continuation checkpoints. The accepted
+Phase-I paper bytes are untouched.
+
+## Current frontier after the local system
+
+Phase II remains OPEN. The actual minimum now has the displayed local system,
+but its meridional operator sign has not been established. The smooth maximum
+principle requires C² regularity through both poles, which is not supplied by
+interior C¹/local absolute continuity. It is therefore not silently applied to
+the weak minimum. A valid weak pole maximum/comparison theorem or a justified
+regularity bridge is still needed if this route uses that step. The absolute-value
+corner theorem rules out a general positivity reduction by taking absolute value;
+it does not rule out a positive minimum or an alternative comparison argument.
+
+The decisive remaining work is to establish or refute the source-sign and
+nonvanishing properties needed for a determining global route, while proving its
+actual all-curvature coverage and threshold selection. Any spectral/structural
+restriction, additional domain/interface/path bridge or endpoint use remains a
+proof obligation. The original universal all-form safety, sharp smooth original
+witnesses below every larger cap, exact endpoint/attainment and final manuscript/
+evidence/review requirements remain active. No claimed cap or value of C_rot is
+produced by this continuation.

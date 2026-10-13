@@ -1,0 +1,68 @@
+{
+  "phase2_status": "OPEN; actual weak local first-order system, smooth physical-pole maximum principle and exact absolute-value domain obstruction",
+  "parent_native_revision": "13dbfd3a232356f6198d04dafae0094fd32aa03c",
+  "parent_outer_reviewed_revision": "a65205d9a83dfebe62074158ca96ce3f365b5397",
+  "native_receipt_sha256": "79646cf0185b4b00af2546873ceb135da88bd2e9bf1444557982d7294deef895",
+  "native_counts": {
+    "modules": 256,
+    "inputs": 261,
+    "outputs": 262,
+    "selectors": 1224,
+    "signature_queries": 1325,
+    "axiom_rows": 3353,
+    "private_axiom_rows": 1091,
+    "fresh_source_elaborations": 5,
+    "reused_source_elaborations": 251
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 28,
+    "verified_source_provenance_records": 3557
+  },
+  "new_public_declarations": {
+    "modules": 5,
+    "theorems": 15,
+    "definitions": 0
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "854e4e23a370275f03e964a26d6453181826a843050bb629d6f1c5e358d36bba",
+    "docs/theorem-map.md": "9de84d562e5d563df961440e007d96088de648fec75e52c5fc19db6ca4fb501a",
+    "docs/research/phase2-unrestricted.md": "66fea1b59768f77ac0cfc7c2e93b0cc5c045b7ff11b5f3bd7d73fb63840fb974",
+    "docs/verification.md": "ba372e47f4d2f07cacf76a4d78c158c5c65cffa9ad9b4b49e8720e1d62a13f0a"
+  },
+  "independent_review": "Pending single configured Round 5 outer review for the initial 13dbfd3 packet and this five-leaf continuation. Unchanged Round 4 mathematical acceptance reused; no duplicate independent review.",
+  "source_simplifier": {
+    "scope": "Five final continuation leaves; no changes recommended. Source-only advisory, not acceptance review.",
+    "advisory_sha256": "038bbaad6130594c1fe0cf8a805e38c1dae8211356c51e1a5c46bdacc91026e5",
+    "source_hashes_match": true
+  },
+  "additional_native_probes": [
+    {
+      "name": "RegularityAndSignChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round5c-root-ovi7xm1r/RegularityAndSignChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "0ebbd3ff17daff4003ae55aff90b36dba1fcc957231afb338486bf0fd7eed4de",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_capture": "Exact empty stdout/stderr returned by completed exec session 67446 after the final source edit; no repeated build is claimed.",
+      "scope": "Actual cap-only minimum and same canonical coupled derivatives, local log FTC, smooth linear versus excluded interior absolute corner, admitted pole corner, zero-source non-strictness, and strict-source round all-probe certificate."
+    }
+  ],
+  "weak_domain_scope": "Actual weak derivatives with local L1 on an open interval yield an explicit integral representative, local AC and genuine derivatives. Continuous parabolic second-order graph representatives are C1 on the interior. No endpoint integrability or artificial probe trace is assumed.",
+  "coupled_scope": "For the same continuous representatives of the actual cap-produced minimum, canonical q=A/f^2 and literal flux P satisfy rprime=p everywhere in (0,1), plus the three displayed a.e. derivative laws. p and q are AC on every compact interior interval. K remains measurable, lambda is the actual action, all mass/potential terms are retained and division stays interior.",
+  "comparison_scope": "For continuous positive exact-moment K and C2 r, Lr<=0 implies r>=0 on the physical closed interval; Lr<0 implies r>0. Physical pole slopes, not imposed r/p traces, justify both endpoints. Strict source supplies positivity in the smooth Picone certificate.",
+  "route_obstruction": "For every interior c, no p,z make abs(x-c) belong to the actual second weak graph, although x-c is a smooth competitor. A pole corner abs(x) remains in the graph. This disproves uniform absolute-value admissibility, not positivity or nonvanishing of an actual minimum.",
+  "remaining_required_mathematics": [
+    "Prove or refute operator sign/nonvanishing needed by the chosen global route; justify a weak pole maximum/comparison theorem or actual global regularity bridge if used.",
+    "Derive determining characterization and justified selection with all-curvature coverage and universal original scalar/all-form safety.",
+    "Prove original smooth negative witnesses below every strictly larger cap, precise endpoint/attainment, and final native/review/research/manuscript closure."
+  ]
+}
