@@ -243,6 +243,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.WeakCurvatureSegment",
     "RicciFlowSharpEstimate.Geometry.RecoverableCurvatureSegment",
     "RicciFlowSharpEstimate.Geometry.RecoverableCurvatureOptimality",
+    "RicciFlowSharpEstimate.Analysis.UnitIntervalGreen",
+    "RicciFlowSharpEstimate.Analysis.WeightedKernelPairing",
+    "RicciFlowSharpEstimate.Geometry.WeakCurvatureCoefficients",
+    "RicciFlowSharpEstimate.Geometry.AreaGreenPrimitives",
+    "RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjoint",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1414,7 +1419,32 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.probeMass_curvature_segment_pos,
       area ++ `IsRecoverableAreaCompetitor.normalized_curvature_segment,
       area ++ `IsRecoverableAreaCompetitor.curvature_segment_inequality_of_minimum,
-      area ++ `exists_recoverable_area_minimizer_weak_conditions
+      area ++ `exists_recoverable_area_minimizer_weak_conditions,
+      analysis ++ `unitDirichletKernel,
+      analysis ++ `unitDirichletSlopeKernel,
+      analysis ++ `continuous_unitDirichletKernel,
+      analysis ++ `measurable_unitDirichletKernel,
+      analysis ++ `measurable_unitDirichletSlopeKernel,
+      analysis ++ `abs_unitDirichletKernel_le,
+      analysis ++ `abs_unitDirichletSlopeKernel_le_one,
+      analysis ++ `integral_unitDirichletKernel,
+      analysis ++ `integral_unitDirichletSlopeKernel,
+      analysis ++ `integrable_kernel_adjoint_of_weighted_integrable,
+      analysis ++ `integral_kernel_pairing_of_weighted_integrable,
+      area ++ `weakCurvatureWarpCoefficient,
+      area ++ `weakCurvatureSlopeCoefficient,
+      area ++ `weakCurvatureCoefficient,
+      area ++ `weakCurvatureWarpCoefficient_deriv,
+      area ++ `weakCurvatureSlopeCoefficient_deriv,
+      area ++ `weakCurvatureCoefficient_deriv,
+      area ++ `IsRecoverableAreaCompetitor.curvature_coefficients_integrable,
+      area ++ `warp_sub_eq_integral_unitDirichletKernel,
+      area ++ `warpSlope_sub_eq_integral_unitDirichletSlopeKernel,
+      area ++ `weakCurvatureAdjoint,
+      area ++ `IsRecoverableAreaCompetitor.weakCurvatureAdjoint_integrable,
+      area ++ `IsRecoverableAreaCompetitor.curvature_variation_eq_integral_adjoint,
+      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_inequality_of_minimum,
+      area ++ `exists_recoverable_area_minimizer_with_curvature_adjoint
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -3738,6 +3768,56 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.curvature_segment_inequality_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_recoverable_area_minimizer_weak_conditions
+open RicciFlowSharpEstimate.Analysis in
+#check unitDirichletKernel
+open RicciFlowSharpEstimate.Analysis in
+#check unitDirichletSlopeKernel
+open RicciFlowSharpEstimate.Analysis in
+#check continuous_unitDirichletKernel
+open RicciFlowSharpEstimate.Analysis in
+#check measurable_unitDirichletKernel
+open RicciFlowSharpEstimate.Analysis in
+#check measurable_unitDirichletSlopeKernel
+open RicciFlowSharpEstimate.Analysis in
+#check abs_unitDirichletKernel_le
+open RicciFlowSharpEstimate.Analysis in
+#check abs_unitDirichletSlopeKernel_le_one
+open RicciFlowSharpEstimate.Analysis in
+#check integral_unitDirichletKernel
+open RicciFlowSharpEstimate.Analysis in
+#check integral_unitDirichletSlopeKernel
+open RicciFlowSharpEstimate.Analysis in
+#check integrable_kernel_adjoint_of_weighted_integrable
+open RicciFlowSharpEstimate.Analysis in
+#check integral_kernel_pairing_of_weighted_integrable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureWarpCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureSlopeCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureCoefficient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureWarpCoefficient_deriv
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureSlopeCoefficient_deriv
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureCoefficient_deriv
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_coefficients_integrable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warp_sub_eq_integral_unitDirichletKernel
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_sub_eq_integral_unitDirichletSlopeKernel
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureAdjoint
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.weakCurvatureAdjoint_integrable
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_variation_eq_integral_adjoint
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_adjoint_inequality_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_recoverable_area_minimizer_with_curvature_adjoint
 """
 
 

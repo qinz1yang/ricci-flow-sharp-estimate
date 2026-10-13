@@ -432,3 +432,25 @@ Further weak curvature directions, multiplier qualification, structural/regulari
 and path-transfer bridges, and every determining/global/sharpness/endpoint gate
 remain required. The comparison theorem does not assert maximal weak-domain density
 or determine C_rot. The same configured Round 4 outer review remains pending.
+
+### Phase-II Round 4 adjoint: weighted curvature representation
+
+`Geometry.AreaProfile.exists_recoverable_area_minimizer_with_curvature_adjoint`
+in `Geometry/WeakCurvatureAdjoint.lean` produces the actual physical joint minimum,
+its probe equation and a genuine L1 adjoint inequality from C≥1 alone. The adjoint
+uses the complete action's three curvature coefficients and the actual mass
+multiplier, pinned to `smoothAreaInfimum C` in the producer.
+
+`Analysis/UnitIntervalGreen.lean` proves endpoint-valid Green kernel identities
+and the polar weight bound. `Analysis/WeightedKernelPairing.lean` transfers the
+pairing under weighted coefficient integrability alone. `WeakCurvatureCoefficients`
+proves exactly that domain from genuine weak jets and the actual geometry, while
+`AreaGreenPrimitives` binds both kernels to the original two-moment primitives.
+The full variation equality derives every needed integrability fact from primary
+inputs. See the [research derivation](research/phase2-unrestricted.md) and
+[native receipt](evidence/phase2-round-4-adjoint/receipt.json).
+
+The comparison scope is all original admissible smooth curvatures. Nonsmooth
+comparison recovery and closure, moment constraint qualification, regularity and
+all determining/global/sharpness/endpoint gates remain active. No moment multipliers
+or pointwise switching signs are asserted. The same outer review remains pending.

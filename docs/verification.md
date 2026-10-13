@@ -897,3 +897,60 @@ qualification, required regularity/path transfer, determining selection, univers
 safety, sharp smooth witnesses and exact endpoint scope remain active mathematics.
 These necessary conditions do not determine C_rot. Phase I remains COMPLETE;
 Phase II remains OPEN.
+
+## Phase-II Round 4 adjoint: weighted curvature pairing
+
+Five new leaves give the actual joint weak minimum a genuine integrable curvature
+adjoint. The warp coefficient is controlled with the parabolic weight supplied by the graph;
+slope and direct coefficients are integrable themselves. Exact Green-kernel
+identities bind the original moment-constrained primitive differences, and a
+generic weighted Fubini theorem represents the complete mass-corrected variation.
+The cap-only producer retains the original nonzero unit-mass minimum and full
+probe equation, adding the adjoint inequality for every admissible smooth curvature.
+
+```text
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-4-adjoint \
+  --reuse-receipt docs/evidence/phase2-round-4-curvature/receipt.json
+```
+
+The [native receipt](evidence/phase2-round-4-adjoint/receipt.json), SHA256
+`c96df771ddcc0772fdbd1a0391efe6eb8cf6a32029a979c4429d0e27287480c5`, passes for
+233 modules. Five fresh source elaborations are silent, and 228 matching prior
+elaborations are reused. Root build, strict declaration-kind inspection and all
+available declaration linters pass. The 1,173 required selectors, 1,274 exact
+signature/declaration queries and 3,196 actual transitive axiom rows (1,002 private)
+pass with only subsets of propext, Classical.choice and Quot.sound. All 238 input/
+239 output hashes and three reconstructed diagnostic-driver hashes match, as do
+physical/checker/root inventories. Provenance covers 3,952 source-command records
+through 30 receipts. Checker changes only extend inventories and queries.
+
+There are 19 public theorems and six definitions. Root repaired candidate indicator
+membership elaboration, deprecated branch-lemma names, line wrapping, reserved
+lambda notation, local measure notation and pointwise function-expression matching
+before the final silent gate. No accepted source or validation/resource policy was
+changed. The bounded five-source simplifier found no required change and recorded
+matching hashes; its advisory is not a second mathematical acceptance review.
+
+Supplemental native checks prove that the generic weighted engine handles the
+nonintegrable coefficient 1/x on (0,1): with weight x, kernel x*s and constant
+test one, the actual pairing equals 1/2. They also check both endpoint values of
+the Dirichlet kernel. The exact-moment curvature comparison x²−x+13/6 at K=2,
+r=sqrt(3), has full action variation −2/5 and mass variation −1/60. Its corrected
+variation at multiplier four is −1/3, and the new actual adjoint pairing has that
+same value. A cap-only consumer obtains the nonzero unit-mass minimum with its
+integrable adjoint and every smooth-comparison inequality. Exact source/command/
+silent-output hashes are in the [checkpoint record](evidence/phase2-round-4-adjoint/checkpoint.json).
+These rational values are regression data, not a threshold claim.
+
+The [preservation record](evidence/phase2-round-4-adjoint/preservation.json)
+confirms all 228 earlier native leaves, 175 accepted leaves, 149 Phase-I leaves,
+2,325 historical workflow files, accepted paper, tasks, pins and 4,108 tracked
+prior evidence files are unchanged. Compiler, platform and ten clean dependency
+revisions match the previous receipt. No typesetting occurred. The same configured
+Round 4 outer review remains pending for the combined 58-leaf packet.
+
+Nonsymmetric measurable-curvature comparison recovery/closure, moment constraint
+qualification, required regularity/interface/path laws and all determining,
+universal-safety, smooth-sharpness and endpoint gates remain active. The adjoint
+representation supplies necessary conditions and does not identify C_rot.
+Phase I is COMPLETE; Phase II is OPEN.

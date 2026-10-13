@@ -1,0 +1,3 @@
+✔ [9877/9879] Built RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjoint (8.2s)
+✔ [9878/9879] Built RicciFlowSharpEstimate (9.9s)
+Build completed successfully (9879 jobs).

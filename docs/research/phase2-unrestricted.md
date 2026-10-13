@@ -1593,28 +1593,147 @@ source leaves remain unchanged. Evidence for this continuation is recorded in
 `docs/evidence/phase2-round-4-curvature/`; the single configured outer Round 4
 review remains pending for the combined packet.
 
+## An integrable curvature adjoint for the actual weak minimum
+
+The next continuation gives the actual minimum's curvature inequality a legitimate
+integral representation on the weighted weak domain. Let w=x(1−x), f=f_K,
+b=b_K and q=fz+2bp−Kr. The three complete-action curvature coefficients are
+
+\[
+\begin{split}
+ \alpha&=q^2+2fqz-Kbrp+K^2r^2,\\
+ \beta&=4fqp-Kr(fp+br),\\
+ \gamma&=-2fqr-br(fp+br/2)+2Kfr^2.
+\end{split}
+\]
+
+They use the same original primitives and genuine weak derivatives. The new
+coefficient theorem proves that alpha is measurable modulo null sets, w*alpha is integrable,
+and beta and gamma are integrable. No unweighted integrability of alpha is
+assumed or concluded. Substitution of actual derivatives recovers all three
+existing smooth coefficients exactly.
+
+### The weighted kernel and actual primitive identities
+
+Define the unit-interval kernels
+
+\[
+ G(x,s)=\min(x,s)-xs,\qquad
+ H(x,s)=\begin{cases}-s&s\le x,\\1-s&s>x.\end{cases}
+\]
+
+G is jointly continuous, H is jointly measurable, and on the physical square
+`|G(x,s)|≤x(1−x)` and `|H(x,s)|≤1`. The slope branch at x=s is fixed explicitly.
+For every integrable u and every x in [0,1], including both endpoints,
+
+\[
+\begin{split}
+ \int_0^1G(x,s)u(s)\,ds
+ &=x\int_0^1(1-s)u(s)\,ds-\int_0^x(x-s)u(s)\,ds,\\
+ \int_0^1H(x,s)u(s)\,ds
+ &=\int_0^1(1-s)u(s)\,ds-\int_0^xu(s)\,ds.
+\end{split}
+\]
+
+Exact indicator integration proves these identities under genuine interval
+integrability. For xi=J−K with both equal curvature moments, the affine moment
+term vanishes. The original primitive formulas then give
+
+\[
+ f_J-f_K=2\int_0^1G(x,s)\xi(s)\,ds,\qquad
+ b_J-b_K=2\int_0^1H(x,s)\xi(s)\,ds.
+\]
+
+The Dirichlet kernel records the warp's already fixed pole values. It imposes
+no Dirichlet condition on the probe r or its weak derivatives.
+
+For an s-finite first measure and a finite second measure, the generic Analysis
+pairing theorem allows an almost everywhere measurable coefficient a with only
+w*a integrable and an almost everywhere measurable kernel bounded by |w| on the
+product measure. Its adjoint is integrable. A bounded almost everywhere measurable
+test xi gives genuinely integrable primal and adjoint products and Fubini's
+literal pairing identity. Product integrability is proved from the weighted
+majorant before exchanging integrals. The coefficient itself need not be in L1.
+
+For the physical coefficients, the graph supplies r, sqrt(w)*p and w*sqrt(w)*z
+in L2. The actual bound f≤2Cw gives sqrt(w)*f*z in L2; bounded b,K then give
+sqrt(w)*q in L2. Products of these factors control w*alpha, beta and gamma.
+This also controls w*(alpha−lambda*r²) for every real lambda. The older smooth
+Volterra pairing theorem requires continuous coefficients and is not silently
+applied to this weaker domain.
+
+### Full mass correction and the produced minimum
+
+The actual L1 adjoint is
+
+\[
+ W_\lambda(s)=\gamma(s)
+  +2\int_0^1G(x,s)(\alpha(x)-\lambda r(x)^2)\,dx
+  +2\int_0^1H(x,s)\beta(x)\,dx.
+\]
+
+For every recoverable weak competitor and every original admissible smooth J,
+`curvature_variation_eq_integral_adjoint` proves
+
+\[
+ \delta A_K[J-K]-\lambda\,\delta m_K[J-K]
+   =\int_0^1W_\lambda(s)(J(s)-K(s))\,ds.
+\]
+
+All integrability follows from the primary class and curvature constraints.
+Both original moments enter the primitive identities; the original box/ratio
+keeps the comparison difference essentially bounded. The full mixed and positive
+potential contributions remain in alpha, beta and gamma. No K′ potential,
+pointwise classical derivative of the weak probe, or unweighted polar-tail
+integrability premise is inserted.
+
+`exists_recoverable_area_minimizer_with_curvature_adjoint C hC` takes C≥1 alone
+and produces the same physically nonzero unit-mass minimum, its actual action
+value and global minimality in the recoverable class, its full smooth-probe
+equation, and
+
+\[
+ W_{\operatorname{smoothAreaInfimum}(C)}\in L^1(0,1),\qquad
+ \int_0^1W_{\operatorname{smoothAreaInfimum}(C)}(J-K)\ge0
+\]
+
+for every current admissible smooth comparison curvature J. The mass multiplier
+is pinned to the actual action/smooth infimum. This theorem does not extract
+multipliers for the two curvature moments or assert pointwise switching signs.
+
+| Role | Canonical source |
+|---|---|
+| Endpoint-valid kernels, bounds and integrable primitive formulas | `Analysis/UnitIntervalGreen.lean` |
+| Weighted product integrability and genuine Fubini pairing | `Analysis/WeightedKernelPairing.lean` |
+| Actual weak coefficients and their correct weighted integrability | `Geometry/WeakCurvatureCoefficients.lean` |
+| Both-moment binding to the original warp and slope | `Geometry/AreaGreenPrimitives.lean` |
+| L1 adjoint, full variation identity and actual minimum application | `Geometry/WeakCurvatureAdjoint.lean` |
+
+The five leaves add 19 public theorems and six definitions; all 228 earlier
+leaves remain unchanged. Native evidence is recorded in
+`docs/evidence/phase2-round-4-adjoint/`. The same single configured outer Round 4
+review remains pending.
+
 ## Exact frontier and next target
 
-Phase I is COMPLETE; Phase II is OPEN. Round 4 now has an actual joint weak
-minimum, full-action recovery, the weak probe equation in every smooth direction,
-and the complete mass-corrected curvature inequality toward every admissible
-smooth curvature. The corresponding normalized paths are proved feasible in the
-same recoverable class. No curvature smoothness, smooth attainment, zero action,
-artificial probe endpoint condition or optimizer symmetry is assumed.
+Phase I is COMPLETE; Phase II is OPEN. The produced joint weak minimum now has
+both a full weak probe equation and a complete mass-corrected curvature inequality
+represented by a genuine integrable adjoint. The comparison scope remains every
+original admissible smooth curvature, with the original two moments and ratio.
+No symmetry, probe sign, smooth attainment, zero eigenvalue or finite switch count
+is inferred from these necessary conditions.
 
-Next establish the further domain/variation closure actually needed for the
-structural argument, including any extension to nonsmooth curvature comparison
-directions. Prove a legitimate adjoint or switching representation of this weak
-curvature functional with its actual weighted integrability. Qualify the two
-moment constraints before extracting multipliers, and prove the regularity,
-interface/boundary laws and original geometric path transfer actually used.
-Maximal weak-graph density and unrestricted measurable-curvature recovery are
-not asserted by the present comparison theorem.
+Next prove nonsymmetric smooth curvature recovery for the bounded measurable
+exact-moment comparison class with its actual positive ratio witnesses. Combine
+that recovery with the existing weighted graph and mass continuity to justify
+each needed nonsmooth comparison and extend the adjoint inequality. Prove moment
+constraint qualification before extracting multipliers; establish the additional
+regularity, interface/boundary and original geometric path laws actually used.
+Maximal weak-probe graph density is not asserted by the present theorem.
 
 T8–T10 still require a genuinely determining characterization and justified
 selection, universal complete-action safety, original smooth negative witnesses
-below every larger cap, and precise unrestricted endpoint safety/attainment.
-Neither the variational infimum nor these necessary equations identifies C_rot.
-No finite switch count or selected structural branch follows from them. Final
-native, independent-review, research/manuscript and delivery gates remain mandatory;
-no required original-plan task is deferred.
+below every strictly larger cap, and precise unrestricted endpoint safety and
+attainment scope. An integrable adjoint and necessary inequalities do not identify
+C_rot. Final native, independent-review, research/manuscript and delivery gates
+remain mandatory; no required original-plan task is deferred.

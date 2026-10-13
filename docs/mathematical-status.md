@@ -29,9 +29,12 @@ the complete weak probe equation with the actual action as eigenvalue. The curva
 continuation proves normalized convex paths toward every original admissible smooth
 curvature feasible throughout [0,1], derives positive mass from the physical bounds,
 and gives the same produced minimum its complete mass-corrected curvature inequality.
-The single Round 4 outer review is pending. Further weak curvature directions,
-multiplier qualification, required regularity/path transfer, determining selection,
-global safety and endpoint scope remain open. C_rot is not identified.
+A weighted Green-kernel continuation now proves a genuine L1 curvature adjoint
+representing the full mass-corrected variation and applies it to that same minimum.
+Only the weighted warp coefficient is required to be integrable. The single Round 4
+outer review is pending. Further nonsmooth comparison recovery, moment multiplier
+qualification, required regularity/path transfer, determining selection, global
+safety and endpoint scope remain open. C_rot is not identified.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.
