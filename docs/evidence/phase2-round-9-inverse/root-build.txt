@@ -1,0 +1,6 @@
+✔ [9923/9928] Built RicciFlowSharpEstimate.Geometry.AreaSmoothInverse (6.8s)
+✔ [9924/9928] Built RicciFlowSharpEstimate.Analysis.ParabolicGraphComplete (9.7s)
+✔ [9925/9928] Built RicciFlowSharpEstimate.Geometry.AreaOperatorStability (12s)
+✔ [9926/9928] Built RicciFlowSharpEstimate.Geometry.AreaInverseStability (7.1s)
+✔ [9927/9928] Built RicciFlowSharpEstimate (9.0s)
+Build completed successfully (9928 jobs).

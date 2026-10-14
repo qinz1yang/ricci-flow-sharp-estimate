@@ -666,3 +666,17 @@ added to raw inverse estimates and no probe pole value is imposed. The
 [native checkpoint](evidence/phase2-round-9-prerequisites/checkpoint.json)
 covers this prerequisite scope only. The actual smooth inverse, common
 recovery and sign selection remain open at this checkpoint.
+
+## Phase II Round 9: smooth inverse and graph completion
+
+| Mathematical result | Canonical home |
+|---|---|
+| Weighted operator error under curvature variation, with equal physical moments | `Geometry/AreaOperatorStability.lean` |
+| Uniform full graph stability for two actual inverse equations, with a positive box required only for the first curvature | `Geometry/AreaInverseStability.lean` |
+| Globally smooth inverse, actual equation at both poles, nonnegativity for nonnegative sources and uniqueness on the physical interval | `Geometry/AreaSmoothInverse.lean` |
+| Completeness of the three canonical L² graph coordinates, genuine weak derivatives and continuous interior representatives | `Analysis/ParabolicGraphComplete.lean` |
+
+These four public theorems introduce no definitions. The
+[native checkpoint](evidence/phase2-round-9-inverse/checkpoint.json) verifies
+their stated scope, including zero sources. Common-cap inverse recovery and
+the independent minimum-level sign comparison are still required.

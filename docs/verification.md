@@ -1575,3 +1575,37 @@ historical workflow and pins are preserved. No typesetting occurred. The single
 configured Round 9 outer review remains pending. The inverse split, its parent
 sign selection and the complete determining/global/smooth-endpoint goal remain
 open and implementation continues beyond this prerequisite checkpoint.
+
+## Phase II, Round 9 smooth-inverse checkpoint
+
+Four further leaves add four public theorems and no definitions. The smooth
+inverse includes both physical poles, nonnegative and zero sources, and physical
+interval uniqueness. Stability controls all actual derivative coordinates;
+graph completeness retains both weak identities and all three strong limits.
+
+The native command was:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-9-inverse \
+  --reuse-receipt docs/evidence/phase2-round-9-prerequisites/receipt.json
+```
+
+Receipt SHA256 is
+`b2f8380f0c09f837fbcdd53e067073ee44c4755ad2c63f329b524f5981f7d589`.
+All 282 modules pass, with 287 inputs/288 successful command records, four
+fresh and 278 reused silent elaborations. Root, unsuppressed linters and native
+declaration-kind inspection pass. The 1,274 selectors, 1,375 exact queries and
+3,480 actual axiom rows (1,155 private) use only permitted foundations. The
+read-only provenance audit matches 5,439 source-command records through 35 receipts.
+
+The supplemental smooth-inverse consumer completed silently (Root session 95297,
+exit 0), exercising the zero-source solution's physical uniqueness and the
+nonnegative-source producer. The prior warning-containing scratch invocation
+is not used as evidence. Source-simplifier advice recommends no changes; it
+is not an acceptance review. Bindings appear in the
+[checkpoint](evidence/phase2-round-9-inverse/checkpoint.json).
+
+All 278 prior native leaves, 7,289 tracked evidence files, Phase-I paper/history,
+both TASKs and pins remain unchanged. No typesetting occurred. The configured
+outer review remains pending. Same-cap raw inverse recovery is still being
+constructed, and no endpoint sign or threshold determination is claimed.

@@ -1,0 +1,105 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; actual smooth inverse and graph completeness native; same-cap recovery and parent sign still open",
+  "parent_native_revision": "12f727b9bdf8f5e8b35eda124b5823e498a928a6",
+  "parent_outer_reviewed_revision": "43347fb9fc4a77d7e4349e98c668da7b254fa23b",
+  "native_receipt_sha256": "b2f8380f0c09f837fbcdd53e067073ee44c4755ad2c63f329b524f5981f7d589",
+  "native_counts": {
+    "modules": 282,
+    "inputs": 287,
+    "outputs": 288,
+    "selectors": 1274,
+    "signature_queries": 1375,
+    "axiom_rows": 3480,
+    "private_axiom_rows": 1155,
+    "fresh_source_elaborations": 4,
+    "reused_source_elaborations": 278
+  },
+  "verified_provenance_receipts": 35,
+  "verified_source_provenance_records": 5439,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "new_public_declarations": {
+    "modules": 4,
+    "theorems": 4,
+    "definitions": 0
+  },
+  "public_headlines": [
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalOperator_sub_curvature_energy_le",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.exists_uniform_meridional_inverse_stability",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.exists_smooth_meridional_inverse",
+    "RicciFlowSharpEstimate.Analysis.exists_parabolic_graph_limit_of_cauchy"
+  ],
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Geometry/AreaOperatorStability.lean": "f7c885482b98ba3edb1cfd4f25ee8d1f5aab3e488a31568327328ffb37459392",
+    "RicciFlowSharpEstimate/Geometry/AreaInverseStability.lean": "c95b0c80461bbcbd22fd1894d9485d232222414d399d1edede0929af72bf2843",
+    "RicciFlowSharpEstimate/Geometry/AreaSmoothInverse.lean": "f7c58234167183ea609e870aae6f204981a9a314c9f746dba42ca460115c2be1",
+    "RicciFlowSharpEstimate/Analysis/ParabolicGraphComplete.lean": "982081c4eb89494cbb884ea61d635e5109af6c0887a129f7ade00b725443747c"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "36e10a4df66256d75dad27bb2b9c2e083704ae62f3638d78760be67d5c0acc7c",
+    "docs/theorem-map.md": "7171dabfd7ad19ee44c7d21e0690deffde7a8fa056532244fe61de0c146dcbf7",
+    "docs/research/phase2-unrestricted.md": "3bee5ecad89bf67a7bbf80205f7129d4bd5713313eef57e8231f53633374616a",
+    "docs/verification.md": "c379080e3269f858015fbacc0ffd8826e2f41d4b486435e925773ec53d9c126b"
+  },
+  "source_simplifier": {
+    "status": "NO CHANGE; advice only, not acceptance review",
+    "source_hashes": {
+      "snapshot": "/tmp/hmz-fence-4lzhkuwo/math-target-round9-snapshot-yv28kmi5/published",
+      "scope": "first four files are assigned leaves; remaining files are bounded named dependency/lesson reads",
+      "sha256": {
+        "RicciFlowSharpEstimate/Geometry/AreaOperatorStability.lean": "f7c885482b98ba3edb1cfd4f25ee8d1f5aab3e488a31568327328ffb37459392",
+        "RicciFlowSharpEstimate/Geometry/AreaInverseStability.lean": "c95b0c80461bbcbd22fd1894d9485d232222414d399d1edede0929af72bf2843",
+        "RicciFlowSharpEstimate/Geometry/AreaSmoothInverse.lean": "f7c58234167183ea609e870aae6f204981a9a314c9f746dba42ca460115c2be1",
+        "RicciFlowSharpEstimate/Analysis/ParabolicGraphComplete.lean": "982081c4eb89494cbb884ea61d635e5109af6c0887a129f7ade00b725443747c",
+        "RicciFlowSharpEstimate/Analysis/SmoothIntervalExtension.lean": "ada68612f2a249daea7ba0705a7e2e25c63d2f3d92c99f57b0640096113c8a49",
+        "RicciFlowSharpEstimate/Analysis/ClosedIntervalDerivatives.lean": "3924c44b06b869c5e4d8168475f8fb390b131284a1f15da007657594473beb05",
+        "RicciFlowSharpEstimate/Geometry/AreaProbeMaximumPrinciple.lean": "6027311e995fd361d77154ebc80ac3b1242ccbea5c4aed0a1abbb46eb99b2ba8",
+        "RicciFlowSharpEstimate/Geometry/AreaActionVariation.lean": "e05c4e159ed4ddd68dffa9280ec2b8a720e9e54d0773a38ba06caafc580a2a00",
+        "RicciFlowSharpEstimate/Analysis/WeightedWeakDerivativeLimit.lean": "e8152d2d4cb3cbd95c0efdab129ee49237fc71a6185c46a5327481390ee368e3",
+        "bitlesson.md": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+      }
+    },
+    "report_sha256": "5f201ceac30e0703d8fd8a0ad298e0c19b1a5e75388f8decdb13648a10105099",
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "command": [
+        "/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "--root=/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/imports",
+        "-o",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/imports/RicciFlowSharpEstimate/Geometry/SmoothInverseChecks.olean",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/imports/RicciFlowSharpEstimate/Geometry/SmoothInverseChecks.lean"
+      ],
+      "LEAN_PATH": "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/imports:/home/ubuntu/projects/rfse/.lake/packages/Cli/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/batteries/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/Qq/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/aesop/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/importGraph/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/plausible/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/mathlib/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/DifferentialGeometry/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/build/lib/lean:/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/lib/lean",
+      "exit_code": 0,
+      "source_sha256": "9f32284ae46a8adf29fee0eec3c6d5c7da42bf1e413b91cc4d211a138979d641",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-14T02:38:51.540657+00:00",
+      "source_path": "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/SmoothInverseChecks.lean",
+      "output_path": "docs/evidence/phase2-round-9-inverse/inverse-consumer.txt",
+      "completed_exec_session": 95297,
+      "scope": "Produced zero-source solution equals zero on physical interval by returned uniqueness; nonnegative-source production",
+      "writer_lock": ".lake/rfse-root-writer.lock"
+    }
+  ],
+  "independent_review": "Single configured Round 9 outer review pending; prior scope unchanged",
+  "remaining_required_mathematics": [
+    "Common-cap simultaneous raw inverse recovery with positivity, literal source equations, complete action/mass convergence and positive-mass normalization",
+    "Geometry-specific minimum selection A_K(U+V)<=0 or a genuine same-cap negative competitor",
+    "All-smooth-probe comparison, determining characterization/selection, cross-geometry sufficiency, precise original smooth endpoint and final closure"
+  ]
+}

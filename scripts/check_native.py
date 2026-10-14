@@ -293,6 +293,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.ParabolicBoundary",
     "RicciFlowSharpEstimate.Geometry.WeakProbeDirichletDomain",
     "RicciFlowSharpEstimate.Analysis.ParabolicWeightedPointwise",
+    "RicciFlowSharpEstimate.Geometry.AreaOperatorStability",
+    "RicciFlowSharpEstimate.Geometry.AreaInverseStability",
+    "RicciFlowSharpEstimate.Geometry.AreaSmoothInverse",
+    "RicciFlowSharpEstimate.Analysis.ParabolicGraphComplete",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1586,7 +1590,11 @@ SELECTOR = r"""
       analysis ++ `HasWeakDerivOn.absolutelyContinuous_mul_of_parabolic_bounds,
       area ++ `IsRecoverableAreaCompetitor.transformed_probe_absolutelyContinuous,
       area ++ `IsRecoverableAreaCompetitor.transformed_probe_equation,
-      analysis ++ `parabolic_weight_mul_sq_le_energy
+      analysis ++ `parabolic_weight_mul_sq_le_energy,
+      area ++ `meridionalOperator_sub_curvature_energy_le,
+      area ++ `exists_uniform_meridional_inverse_stability,
+      area ++ `exists_smooth_meridional_inverse,
+      analysis ++ `exists_parabolic_graph_limit_of_cauchy
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4154,6 +4162,14 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.transformed_probe_equation
 open RicciFlowSharpEstimate.Analysis in
 #check parabolic_weight_mul_sq_le_energy
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalOperator_sub_curvature_energy_le
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_meridional_inverse_stability
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_smooth_meridional_inverse
+open RicciFlowSharpEstimate.Analysis in
+#check exists_parabolic_graph_limit_of_cauchy
 """
 
 

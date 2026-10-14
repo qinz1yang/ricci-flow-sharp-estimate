@@ -2879,3 +2879,35 @@ The [native evidence](../evidence/phase2-round-9-prerequisites/checkpoint.json)
 supports the preceding domain/estimate/regularity statements. It does not
 identify C_rot, select an operator sign, establish arbitrary-probe coverage or
 settle original smooth endpoint attainment. All original final gates remain.
+
+## Round 9 second checkpoint: smooth inversion and graph completion
+
+The actual Green map satisfies P_K K=1/2, including its explicit pole values.
+Consequently u -> P_K(g+K*u) is a contraction on continuous functions on [0,1].
+Its fixed point gains one derivative repeatedly through the finite-order pole
+quotient theorem. Smooth interval extension then yields a global smooth probe
+with -L_K u=g on the closed physical interval. The accepted maximum principle
+proves nonnegativity for nonnegative sources and uniqueness of this probe on
+[0,1]. Its extension outside that interval is not claimed unique. Zero sources
+are included; neither physical probe pole values nor a K′ bound is prescribed.
+
+For w=x(1-x), write G(u)=integral(u²)+integral(w(u′)²)+integral(w³(u″)²).
+The weighted pointwise estimate and the exact equal-moment primitive laws give
+integral(w*(L_K u-L_J u)²)<=60*G(u)*integral((K-J)²).
+Combining this with the inverse graph bound proves
+G(u-v)<=M*(2*integral(w*(g-h)²)+120*G(v)*integral((K-J)²))
+for the actual inverse equations -L_K u=g and -L_J v=h. Only K requires the
+stated positive box; M depends on that box and precedes all other data.
+
+Separately, a Cauchy sequence of the three canonical weighted L² coordinates
+has a limit with both genuine weak derivatives. Compactly supported weighted
+test pairings pass the weak identities, and continuous interior representatives
+are chosen afterwards. All three full-sequence strong limits are retained.
+This statement does not assume or produce mass one.
+
+The [native checkpoint](../evidence/phase2-round-9-inverse/checkpoint.json)
+establishes these four theorems. Turning the quantitative stability into a
+common-sequence inverse split, proving the complete action/mass passage and
+normalizing positive-mass combinations remain the active child. The additional
+geometry-specific inequality A_K(U+V)<=0 and all determining/global/endpoint
+requirements remain open.

@@ -119,9 +119,12 @@ mass normalization. Finite-order extension and division at simple endpoint
 zeros prove the Green/warp quotient gains one derivative through both poles,
 starting with continuous source data. A weighted pointwise bound controls the
 curvature-error multiplier. Nine leaves, 21 public theorems and two definitions
-pass native gates. The actual smooth inverse, simultaneous same-cap recovery
-and the separate minimum-level sign comparison are still being constructed;
-these prerequisites are not a split or sign producer. Outer review is pending.
+pass native gates. A second checkpoint now constructs the actual smooth inverse
+through both poles, proves uniform stability under source and curvature changes,
+and completes Cauchy sequences in the full genuine weak graph. Four further
+public theorems pass native gates. Simultaneous same-cap recovery and the
+separate minimum-level sign comparison remain open; these results do not yet
+constitute the required split. Outer review is pending.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.
