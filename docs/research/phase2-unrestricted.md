@@ -2966,3 +2966,52 @@ joint competitor when the complete cross pairing is positive. The inverse
 construction itself gives no such upper sign. C_rot remains undetermined;
 all-probe coverage, global sufficiency, original smooth endpoint classification
 and final suite/manuscript acceptance remain required.
+
+## Round 10 first checkpoint: whole-cap scale balance
+
+The single Round 9 outer review verifies the actual inverse split. The next
+research target remains the complete-action upper comparison, rather than any
+further assumed-sign consequence.
+
+The new native identity is
+
+\[
+ \int K W_\lambda=3A_K(r)-\lambda m_K(r),
+\]
+
+where W_lambda is the literal full curvature adjoint. Its proof uses the
+own-curvature Green representations of both f and b, weighted Fubini, and
+the exact cubic density identity in f,b,K. It does not treat rescaling K
+alone as a feasible physical variation. The mass term has degree one.
+
+At an actual zero minimum, integral K W_0 is zero. For any measurable
+v in [1,C] with integral (x-1/2)v=0, the genuine curvature
+J=2v/integral(v) has both physical moments and an original ratio-C box.
+The accepted whole-cap adjoint inequality applies to this actual J. Therefore
+K/kappa minimizes the linear cost integral W_0 v with only the centered
+moment fixed; its total integral is free. An explicit perturbation of the box
+midpoint proves qualification in the new one-moment separation theorem.
+
+The resulting native multiplier t has residual Z=W_0-t(x-1/2), complementary
+signs in the actual box [kappa,C*kappa], and
+
+\[
+ \int KZ=0,\qquad \int Z_+=C\int Z_-,\qquad
+ \int W_0=(C-1)\int Z_-.
+\]
+
+All products and positive/negative parts are genuinely integrable. This
+centering follows from comparisons allowing the box scale to vary; arbitrary
+fixed-box multipliers cannot simply be renamed to impose it. The theorem does
+not prove that Z is nonzero, that both obstacles are attained, or that the
+inverse-component cross pairing has the desired upper sign.
+
+The [native checkpoint](../evidence/phase2-round-10-scale/checkpoint.json)
+contains these three statements and the same-endpoint consumer. Source-level
+research also examines actual pole limits, a curvature clamp, finite transports
+with exact moment corrections, reciprocal local variations, and repaired
+hemisphere folds. Those investigations have not produced the strict complete-
+action inequality. Their unformalized identities and proposed free-interval
+argument remain provisional; no numerical or conditional calculation is
+promoted to an endpoint-selection theorem. Implementation continues within
+the unchanged Round 10 objective.

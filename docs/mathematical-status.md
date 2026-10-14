@@ -130,7 +130,19 @@ It derives complete-action/mass convergence and positive-mass normalization;
 the component sum has mass at least one. Seven further public theorems support
 this producer. The sum's action need not be zero by any result proved here.
 Minimum-level sign selection, threshold determination and all later original
-requirements remain open. The configured outer review is pending.
+requirements remain open. The single Round 9 outer review at `285dfc2` verifies
+the complete bounded inverse-split packet.
+
+Round 10's first checkpoint proves a global identity for the complete curvature
+adjoint: its pairing with K is three times the action minus the degree-one
+mass correction. Whole-cap comparisons normalize a box function by its actual
+integral, preserving both moments while allowing the original box scale to vary.
+A one-centered-moment duality theorem then produces a centered multiplier for
+the same zero minimum and exact positive/negative residual balances. These three
+native theorems supply no upper sign for the inverse-component cross pairing.
+The actual free-interval/critical-descent argument remains under construction;
+the Round 10 selection objective and all original determining/final gates are
+still open. Independent review of this new checkpoint is pending.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

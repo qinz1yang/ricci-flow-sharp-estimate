@@ -1,0 +1,111 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; native whole-cap scale balance is a necessary selection ingredient, not orientation or determining closure",
+  "parent_outer_reviewed_revision": "285dfc21308a03a7f2350ba5f982f28a17ff0765",
+  "native_receipt_sha256": "f51ac4f29dd2bdde58aa735ffd189bf1f7d6e841a539769b22a91c38db83ebc4",
+  "native_counts": {
+    "modules": 292,
+    "inputs": 297,
+    "outputs": 298,
+    "selectors": 1284,
+    "signature_queries": 1385,
+    "axiom_rows": 3578,
+    "private_axiom_rows": 1242,
+    "fresh_source_elaborations": 3,
+    "reused_source_elaborations": 289
+  },
+  "verified_provenance_receipts": 37,
+  "verified_source_provenance_records": 6020,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "new_public_declarations": {
+    "modules": 3,
+    "theorems": 3,
+    "definitions": 0
+  },
+  "public_headlines": [
+    "RicciFlowSharpEstimate.Analysis.exists_box_centered_moment_multiplier",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_scale_identity",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_scale_balanced_curvature_multiplier"
+  ],
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Analysis/BoxCenteredMomentMultiplier.lean": "0d6ef99de9014bbf4069df64aa815ee0f06988ab8d61d6ffcf3b2c18bd0a4899",
+    "RicciFlowSharpEstimate/Geometry/AreaAdjointScaling.lean": "8321fab71b9d12964d2b18d3a455acd7a6437492f1f6e13210784d218bc03579",
+    "RicciFlowSharpEstimate/Geometry/AreaScaleBalancedMultiplier.lean": "8b23d15c817552f45115934ec8ec2a86a60347a1063e982ac662fa4ed9c5c4c8"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "2823014ee5116115e822ea4b7585ecfa5af5f1ae1c9a259447c995ddb8fecca0",
+    "docs/theorem-map.md": "aa2090bea787cc3c4b5435054dc37f6ca032704ebc09f58205852df332004de6",
+    "docs/research/phase2-unrestricted.md": "89868756744ef3547f87825bd982093416187e497032fd44f3425667ecfd0d7c",
+    "docs/verification.md": "48b205d8974d84f44f77ea441bbe6debd8f93a677a9133d088e70008ec33291d"
+  },
+  "source_simplifier": {
+    "status": "NO CHANGE; advice only, not acceptance review",
+    "source_hashes": {
+      "snapshot": "/tmp/hmz-fence-4lzhkuwo/math-target-round10-snapshot-y1vd2cj0/published",
+      "assigned_source_sha256": {
+        "RicciFlowSharpEstimate/Analysis/BoxCenteredMomentMultiplier.lean": "0d6ef99de9014bbf4069df64aa815ee0f06988ab8d61d6ffcf3b2c18bd0a4899",
+        "RicciFlowSharpEstimate/Geometry/AreaAdjointScaling.lean": "8321fab71b9d12964d2b18d3a455acd7a6437492f1f6e13210784d218bc03579",
+        "RicciFlowSharpEstimate/Geometry/AreaScaleBalancedMultiplier.lean": "8b23d15c817552f45115934ec8ec2a86a60347a1063e982ac662fa4ed9c5c4c8"
+      },
+      "bounded_dependency_or_lesson_reads_sha256": {
+        "RicciFlowSharpEstimate/Geometry/WeakCurvatureAdjoint.lean": "f6ad1513819aaf3719575e3fac3d28cb234da968dd6da8b0c2ce8cc68161c495",
+        "RicciFlowSharpEstimate/Geometry/BoundedCurvatureOptimality.lean": "ee5a0221d5d11f38a5052f7c0d0b99f758e6d60d57e99310c607ecff691b6c9f",
+        "RicciFlowSharpEstimate/Geometry/AreaCurvatureBoxQualification.lean": "1ec5980994f5463be7aadbdbccaf02af061b5e1a8033adca31aa026759814639",
+        "RicciFlowSharpEstimate/Analysis/BoxVariationalInequality.lean": "fd00dbc0799c5528b5b002c9f02dcbbd11bf23e95027b00afd29d44f38c050ec",
+        "bitlesson.md": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+      },
+      "consumer": {
+        "path": "/tmp/hmz-fence-4lzhkuwo/math-target-round10-scale_simplifier-ogu7gxlb/ScaleBalanceChecks.lean",
+        "sha256": "1e9b7ed5e738f4fb7845623abfaaedf07c3b67b1c31266d38842f1c117c96aed"
+      },
+      "parent_reported_passed_native_scale_receipt": "f51ac4f29dd2bdde58aa735ffd189bf1f7d6e841a539769b22a91c38db83ebc4",
+      "scope": "Source simplifier advice only; bounded dependency declarations/excerpts, not acceptance audit."
+    },
+    "report_sha256": "42f1f156508028ef7b5961ae62e8454fd5853266de546f9f6561950ae26f4a16",
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "command": [
+        "/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "--root=/tmp/hmz-fence-4lzhkuwo/math-target-round10-root-f4lbol58/imports",
+        "-o",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round10-root-f4lbol58/imports/RicciFlowSharpEstimate/Geometry/ScaleBalanceChecks.olean",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round10-root-f4lbol58/imports/RicciFlowSharpEstimate/Geometry/ScaleBalanceChecks.lean"
+      ],
+      "LEAN_PATH": "/tmp/hmz-fence-4lzhkuwo/math-target-round10-root-f4lbol58/imports:/home/ubuntu/projects/rfse/.lake/packages/Cli/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/batteries/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/Qq/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/aesop/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/importGraph/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/plausible/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/mathlib/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/DifferentialGeometry/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/build/lib/lean:/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/lib/lean",
+      "exit_code": 0,
+      "source_sha256": "1e9b7ed5e738f4fb7845623abfaaedf07c3b67b1c31266d38842f1c117c96aed",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-14T06:23:08.049532+00:00",
+      "name": "ScaleBalanceChecks",
+      "source_path": "/tmp/hmz-fence-4lzhkuwo/math-target-round10-root-f4lbol58/ScaleBalanceChecks.lean",
+      "output_path": "docs/evidence/phase2-round-10-scale/scale-consumer.txt",
+      "completed_exec_session": 43369,
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "scope": "Same actual endpoint zero minimum gets centered complementarity/balance; round constant unit-mass probe verifies arbitrary multiplier correction 12-lambda",
+      "imports": "Root scratch overlay; exact relevant imported source bytes match canonical three new leaves; unchanged dependencies match accepted native receipt"
+    }
+  ],
+  "checker_policy_delta": "Only module/selector/signature inventories; remaining AST matches accepted Round9",
+  "independent_review": "Single configured Round10 outer review pending; unchanged Round9 mathematics retains acceptance",
+  "remaining_round_objective": "Prove complete-action upper comparison for actual inverse components or actual same-cap negative competitor, then select an oriented zero minimum with all same-object ties. Not achieved by scale balance.",
+  "continuing_mathematics": [
+    "Actual curvature clamp regularity and genuine free critical interval; currently under formalization",
+    "Strict violating full variation or finite comparison; currently unresolved",
+    "All-probe coverage, independently determining characterization/selection, cross-geometry sufficiency, original smooth endpoint classification and final manuscript/evidence/delivery closure remain required"
+  ]
+}

@@ -1,0 +1,5 @@
+✔ [9934/9938] Built RicciFlowSharpEstimate.Geometry.AreaAdjointScaling (21s)
+✔ [9935/9938] Built RicciFlowSharpEstimate.Analysis.BoxCenteredMomentMultiplier (29s)
+✔ [9936/9938] Built RicciFlowSharpEstimate.Geometry.AreaScaleBalancedMultiplier (16s)
+✔ [9937/9938] Built RicciFlowSharpEstimate (16s)
+Build completed successfully (9938 jobs).

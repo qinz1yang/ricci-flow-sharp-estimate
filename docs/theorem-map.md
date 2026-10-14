@@ -699,3 +699,20 @@ records native evidence and the same-endpoint consumer. No component or sum
 is asserted to be an endpoint minimum. The separate complete-action selection
 inequality, all-probe comparison, determining value, cross-geometry sufficiency
 and original smooth endpoint question remain open.
+
+## Phase II Round 10: global curvature-scale balance
+
+Round 9's single outer review at `285dfc2` verifies the preceding inverse-split
+packet. The next checkpoint adds three theorems and no definitions:
+
+| Mathematical result | Canonical home |
+|---|---|
+| One centered-moment multiplier for a linear cost on a nondegenerate a.e. box, with no fixed total integral or positive-box premise | `Analysis/BoxCenteredMomentMultiplier.lean` |
+| Actual curvature/adjoint pairing equals three times the complete action minus the mass correction | `Geometry/AreaAdjointScaling.lean` |
+| Centered curvature multiplier and exact residual balances from whole-cap minimality of the same zero minimum | `Geometry/AreaScaleBalancedMultiplier.lean` |
+
+The [scale checkpoint](evidence/phase2-round-10-scale/checkpoint.json) records
+native evidence and a consumer using the actual endpoint minimum. No nonzero
+residual, strict box saturation, free interval or operator sign is asserted by
+these three statements. The minimum-level complete-action comparison remains
+the active round objective.

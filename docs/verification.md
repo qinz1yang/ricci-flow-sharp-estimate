@@ -1659,3 +1659,38 @@ both TASKs, compiler/dependencies and pins are preserved. No typesetting or
 numerical search was used. Phase II remains open at the geometry-specific
 action comparison, all-probe coverage, determination/global sufficiency,
 original smooth endpoint classification and final acceptance gates.
+
+## Phase II, Round 10 global-scale checkpoint
+
+Three new leaves contain three public theorems and no definitions. The
+accepted Round 9 source and evidence are unchanged. Root ran:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-10-scale \
+  --reuse-receipt docs/evidence/phase2-round-9-split/receipt.json
+```
+
+Receipt SHA256 is
+`f51ac4f29dd2bdde58aa735ffd189bf1f7d6e841a539769b22a91c38db83ebc4`.
+The 292-module gate passes with 297 inputs and 298 successful command/output
+records, three fresh and 289 reused silent elaborations. Root, required
+unsuppressed linters and native declaration-kind inspection pass. There are
+1,284 required selectors, 1,385 exact signature queries and 3,578 actual axiom
+rows, including 1,242 private rows, using only permitted foundations. Driver
+reconstruction and 6,020 source-command records through 37 receipts match.
+
+The source-bound `ScaleBalanceChecks.lean` consumer completed silently in Root's
+recorded import overlay (session 43369, exit 0). It obtains the centered balance
+for the same actual endpoint zero minimum and separately checks the complete
+adjoint pairing 12-lambda for the unit-mass round probe. Source SHA256 is
+`1e9b7ed5e738f4fb7845623abfaaedf07c3b67b1c31266d38842f1c117c96aed`.
+The three relevant checked source imports match canonical bytes. The
+[checkpoint](evidence/phase2-round-10-scale/checkpoint.json) binds this command,
+source/output, source advice and final documents.
+
+The bounded simplifier recommends no changes; it is not acceptance review.
+All 289 accepted parent leaves, 149 Phase-I leaves, 7,880 prior tracked evidence
+files, 2,325 historical workflow files, accepted paper, TASKs and pins are
+preserved. The configured outer review is pending for the new packet. This
+checkpoint does not close Round 10's complete-action selection objective;
+work continues on the actual critical-direction route and all original gates.

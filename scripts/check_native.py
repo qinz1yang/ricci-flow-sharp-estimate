@@ -304,6 +304,9 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaRawGraphRecovery",
     "RicciFlowSharpEstimate.Geometry.AreaInverseRecovery",
     "RicciFlowSharpEstimate.Geometry.RecoverableOperatorSplit",
+    "RicciFlowSharpEstimate.Analysis.BoxCenteredMomentMultiplier",
+    "RicciFlowSharpEstimate.Geometry.AreaAdjointScaling",
+    "RicciFlowSharpEstimate.Geometry.AreaScaleBalancedMultiplier",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1608,7 +1611,10 @@ SELECTOR = r"""
       area ++ `cauchy_parabolic_graph_of_inverse_sources,
       area ++ `IsBoundedAreaCurvature.raw_graph_recovery,
       area ++ `exists_nonnegative_meridional_inverse_recovery,
-      area ++ `IsRecoverableAreaCompetitor.exists_nonnegative_operator_split
+      area ++ `IsRecoverableAreaCompetitor.exists_nonnegative_operator_split,
+      analysis ++ `exists_box_centered_moment_multiplier,
+      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_scale_identity,
+      area ++ `IsRecoverableAreaCompetitor.exists_scale_balanced_curvature_multiplier
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4198,6 +4204,12 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_nonnegative_meridional_inverse_recovery
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_nonnegative_operator_split
+open RicciFlowSharpEstimate.Analysis in
+#check exists_box_centered_moment_multiplier
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_adjoint_scale_identity
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_scale_balanced_curvature_multiplier
 """
 
 
