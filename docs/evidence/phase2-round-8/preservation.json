@@ -1,0 +1,26 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN",
+  "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+  "prior_accepted_revision": "df362be163a767b3ea9a7de516f2f1e598deac88",
+  "prior_native_revision": "df362be163a767b3ea9a7de516f2f1e598deac88",
+  "unchanged_prior_native_modules": 267,
+  "unchanged_accepted_modules": 267,
+  "unchanged_phase1_modules": 149,
+  "unchanged_phase1_workflow_files": 2325,
+  "paper_sha256": {
+    "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+    "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+  },
+  "historical_task_unchanged": true,
+  "phase2_task_unchanged": true,
+  "pins_sha256": {
+    "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+  },
+  "prior_native_receipt_sha256": "34c392df8810e50792dec522b9b1f90a5ffd55e51bc4e8f95d5bd4a2d53fb8de",
+  "prior_tracked_evidence_unchanged": true,
+  "unchanged_tracked_evidence_files": 6722,
+  "same_native_toolchain_platform_dependencies": true
+}

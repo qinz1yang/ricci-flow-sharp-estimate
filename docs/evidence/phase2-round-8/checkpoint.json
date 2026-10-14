@@ -1,0 +1,96 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; endpoint operator-sign selection and determining/global/endpoint goal unresolved",
+  "round_mainline_status": "UNRESOLVED; four native subordinate theorems do not close sign selection",
+  "parent_outer_reviewed_revision": "df362be163a767b3ea9a7de516f2f1e598deac88",
+  "parent_native_receipt": "docs/evidence/phase2-round-7/receipt.json",
+  "native_receipt_sha256": "47294dc55e3713aee639e9e3e87aa9a2ef5ba3a37b9564b8cac168af46ce87fa",
+  "native_counts": {
+    "modules": 269,
+    "inputs": 274,
+    "outputs": 275,
+    "selectors": 1247,
+    "signature_queries": 1348,
+    "axiom_rows": 3400,
+    "private_axiom_rows": 1113,
+    "fresh_source_elaborations": 2,
+    "reused_source_elaborations": 267
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 33,
+    "verified_source_provenance_records": 4879
+  },
+  "new_public_declarations": {
+    "modules": 2,
+    "theorems": 4,
+    "definitions": 0
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "4d01a5e6b83f2376e7757086f6e1291751604ba74c1a0dcca9ec1c916666c1ac",
+    "docs/theorem-map.md": "00ecb7c42394c8eac6bdabd0b236da8d7598c1d4b1eae3db23a47692e7a5a932",
+    "docs/research/phase2-unrestricted.md": "f7b688a391e548d4d8e902db67b4092c56e0cef522f5332403c9da2d23212a3b",
+    "docs/verification.md": "612a24e9ad099fbdbcaf5cdf2c7e66297f04b997f15dfb3abee3a23f74c5bd5f"
+  },
+  "public_headlines": [
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.smoothAreaInfimum_one",
+    "RicciFlowSharpEstimate.Geometry.one_lt_rotationalThreshold",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.exists_smooth_area_competitor_action_neg_of_rotationalThreshold_lt",
+    "RicciFlowSharpEstimate.Geometry.exists_smooth_geometric_negative_witness_of_rotationalThreshold_lt"
+  ],
+  "source_simplifier": {
+    "scope": "Two new leaves and same-object consumer; bounded advice, not acceptance review",
+    "finding": "No canonical changes recommended. Adopted supplemental unit-mass/original-form nonvanishing check and Root compiled it silently.",
+    "source_hashes": {
+      "RicciFlowSharpEstimate/Geometry/AreaRoundGap.lean": "57289828ef620d5815093f93101f954800a63c8747aca1004b1905dad80382af",
+      "RicciFlowSharpEstimate/Geometry/RotationalSharpWitness.lean": "a14b9571d1b567c469612998d45f26e4b4af60cbb685ed16ccac2bc2ac877b9c"
+    },
+    "original_consumer_sha256": "76d687fb2d9fcbb27b4c74714217e094b49f6eff43319c3482814c975eb37b0b",
+    "adopted_consumer_sha256": "f44110023b3c948a7b6dfb5c58bcd0bebf5ce8ff335fc630e1d285849b3b4cf8",
+    "report_sha256": "c58dca6d81ea7fc7c877d3a7474c78e1d814fd1c9fffae4fd78545e21df9c866",
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round8-root-rm2hzkij/SharpGapMassChecks.lean"
+      ],
+      "cwd": "/home/ubuntu/projects/rfse",
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-4lzhkuwo/math-target-round8-root-rm2hzkij/SharpGapMassChecks.lean",
+      "source_sha256": "f44110023b3c948a7b6dfb5c58bcd0bebf5ce8ff335fc630e1d285849b3b4cf8",
+      "output_path": "/tmp/hmz-fence-4lzhkuwo/math-target-round8-root-rm2hzkij/SharpGapMassChecks.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-14T00:25:04.943363+00:00",
+      "name": "SharpGapMassChecks",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "output_capture": "Completed exec session 68875, exit 0; exact stdout/stderr retained as sharp-gap-consumer.txt.",
+      "scope": "Derived strict cap for moment qualification on same endpoint zero minimum; original geometric witness with strict ratio room, inverse/probe/jet/curvature/dissipation bindings; physical nonzero derived from unit mass independently of negativity.",
+      "native_debt": false
+    }
+  ],
+  "native_evidence_reuse": "Saved completed native gate source/output/driver/provenance bindings independently checked against unchanged canonical inputs; current compiler/platform and ten dependencies match. No repeated full build. Older saved consumer completion was unavailable and is not relied on; strengthened consumer was freshly compiled.",
+  "checker_policy_delta": "Only module inventory, required selectors and exact signature queries. Remaining AST matches accepted parent.",
+  "research_status": {
+    "status": "PROVISIONAL source-level analysis only; no new native theorem or exact existential refutation",
+    "inverse_source_route": "Actual component-domain/recovery producer and nonpositive complete cross pairing remain missing. Generic inverse positivity fails to imply selection.",
+    "joint_variation_route": "Composed actual normalized probe and curvature variations give a candidate joint feasible family; full critical-direction discriminant does not force the desired cross-pairing upper sign. No useful critical descent direction constructed.",
+    "saved_route_report_sha256": "34ec6369ade0b0b8b7376a40c6a9b27d55cd8249fc96b0aa7cc31b935090e6f8",
+    "continuation_report_sha256": "282d965e5eefdf01a2ea1b39c3529666343b54e9f3496db8a5731a97d3882919",
+    "continuation_inputs_sha256": "93e7012fadcb2446bc4b036e6a1acbc4a36f418941e0d4aa996e6e17e0910b35"
+  },
+  "independent_review": "Single configured Round 8 outer review pending; no duplicate review of accepted Round 7 mathematics.",
+  "remaining_required_mathematics": [
+    "Unconditional same-object endpoint minimum with nonpositive operator and derived strict positivity, or rigorous refutation of the exact existential target plus replacement route.",
+    "Specific all-smooth-probe quotient/pole graph coverage and additional domain/interface/path bridges actually used.",
+    "Genuinely determining threshold characterization, justified selection and universal comparison across original geometries/forms.",
+    "Precise original smooth endpoint equality/attainment, combination with the determining value, and final manuscript/native/review/private-delivery closure."
+  ]
+}

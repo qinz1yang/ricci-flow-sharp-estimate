@@ -1474,3 +1474,65 @@ and 6,446 prior evidence files unchanged. Accepted paper, both TASKs, pins,
 compiler/platform and ten dependency revisions match. No typesetting occurred.
 Phase I remains COMPLETE. Phase II remains OPEN: the endpoint producer gives
 neither operator orientation nor a determining value or smooth attainment.
+
+## Phase II, Round 8 strict gap and smooth witnesses
+
+Two new leaves contain four public theorems and no definitions. They prove the
+exact normalized round value four, the strict threshold gap above one, an
+actual negative smooth scalar competitor at each superthreshold cap, and an
+original represented metric/nonzero smooth form with negative dissipation and
+ratio strictly below any prescribed larger cap. All 267 accepted parent leaves
+remain unchanged. Round 7's single outer review at `df362be` is reused.
+
+The completed saved native command was:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-8 \
+  --reuse-receipt docs/evidence/phase2-round-7/receipt.json
+```
+
+The [receipt](evidence/phase2-round-8/receipt.json), SHA256
+`47294dc55e3713aee639e9e3e87aa9a2ef5ba3a37b9564b8cac168af46ce87fa`, binds
+269 modules, 274 inputs and 275 command outputs. Two fresh source elaborations
+are silent; 267 matching accepted elaborations are reused. The recorded root
+build, source/declaration linters and native declaration-kind inspection pass.
+There are 1,247 required selectors, 1,348 exact queries and 3,400 actual
+transitive axiom rows, including 1,113 private rows, all using only subsets of
+`propext`, `Classical.choice`, `Quot.sound`.
+
+After operational recovery, Root checked every source/output hash, reconstructed
+the three diagnostic drivers, and verified 4,879 source-command provenance
+records through 33 receipts. The current platform, compiler binary/version and
+ten clean dependency revisions match. Checker policy differs from the accepted
+parent only in module inventory, required selectors and exact signature queries.
+The unchanged saved native gate was reused, not rerun or inferred from empty
+logs without completion records.
+
+Root additionally compiled `SharpGapMassChecks.lean` under
+`.lake/rfse-root-writer.lock` with the pinned unsuppressed source-linter options.
+The completed execution (session 68875, exit 0) has empty stdout/stderr. It
+consumes the derived strict-cap premise for moment qualification on the same
+zero-action minimum, and the original negative-witness producer with strict
+ratio room, both inverse maps, actual jets, all-sphere curvature and same-metric
+dissipation. It derives physical nonvanishing from the same unit mass and probe
+equation, independently of negative dissipation. Source SHA256 is
+`f44110023b3c948a7b6dfb5c58bcd0bebf5ce8ff335fc630e1d285849b3b4cf8`.
+The [checkpoint](evidence/phase2-round-8/checkpoint.json) retains the exact
+command and source/output bindings. The older saved consumer is preserved but
+its lost completion record is not used as acceptance evidence.
+
+Bounded source-simplifier advice recommended no changes to the canonical
+leaves and proposed the adopted consumer mass check. It is not an acceptance
+review. Research reports on inverse-source replacement and genuine joint
+variations remain provisional: no sign theorem, component recovery theorem,
+physical counterexample or negative feasible critical direction is claimed.
+All worker read leases are released. The single configured Round 8 outer
+review is pending.
+
+The [preservation record](evidence/phase2-round-8/preservation.json) verifies
+267 accepted parent leaves, 149 Phase-I leaves, 2,325 historical workflow files,
+6,722 prior tracked evidence files, accepted paper bytes, both TASKs and pins.
+No typesetting or Phase-I modification occurred. Phase I is COMPLETE; Phase II
+is OPEN. The round's endpoint operator-sign objective remains unresolved, as
+do determining selection, all-probe and cross-geometry comparison, original
+smooth endpoint equality/attainment and final suite acceptance.

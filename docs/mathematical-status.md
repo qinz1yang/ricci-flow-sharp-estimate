@@ -85,10 +85,30 @@ strong recovery to the same curvature and weak probe jets at that exact cap.
 The cap-transfer theorem constructs this recovery; pointwise admissibility is
 not substituted for graph closure. The native public consumer obtains the same
 pair's zero-multiplier coupled and natural flux laws. The Round 7 native gate
-passes; its single outer review is pending. Operator orientation and all-probe
-coverage remain open. This endpoint producer does not determine C_rot or settle
+passes; its single outer review at `df362be` verifies this scope. Operator
+orientation and all-probe coverage remain open. This endpoint producer does not determine C_rot or settle
 original smooth endpoint attainment; the remaining global and final gates are
 unchanged.
+
+Round 8 proves the exact cap-one smooth value `smoothAreaInfimum 1 = 4` and
+therefore `1 < rotationalThreshold`, using the endpoint zero value. The same
+endpoint minimum now meets the strict-cap premise of curvature moment
+qualification. It also produces original smooth negative metric/form witnesses
+with curvature ratio strictly below every prescribed cap larger than the
+threshold. Their actual normalized curvature, unit-mass probe, inverse maps,
+derivatives, all-sphere curvature and same-metric dissipation equations are
+retained. Four public theorems in two leaves pass native gates; the single
+Round 8 outer review is pending. A native consumer independently derives the
+original form's nonvanishing from unit mass and its exact probe equation.
+
+The Round 8 sign-selection objective remains unresolved. Neither the proposed
+inverse-source modulus replacement nor a genuine joint curvature/probe
+variation has supplied the missing minimum-level cross-pairing inequality.
+These route investigations are provisional research, not native sign theorems
+or a refutation of the exact existential endpoint target. All-probe coverage,
+determining selection and comparison across geometries, original smooth
+endpoint equality/attainment, and final acceptance remain open. The smooth
+negative-witness theorem does not identify the threshold.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

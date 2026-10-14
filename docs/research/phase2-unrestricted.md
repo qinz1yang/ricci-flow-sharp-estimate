@@ -2707,3 +2707,109 @@ minimum. The earlier negative-near-threshold sign conjecture remains unproved
 and unrefuted. All-probe coverage, determining selection, global comparison at
 the determining value, original smooth sharpness and exact smooth equality/
 attainment scope remain required. Phase I stays COMPLETE; Phase II stays OPEN.
+
+## Round 8: the strict round gap and original smooth sharpness
+
+The Round 7 outer review verifies the endpoint producer in its stated scope.
+Round 8 adds four native theorems, with its own outer review still pending.
+For round normalized curvature K=2, write f=warp K, q=L_K r,
+m=integral(f r²), and G=integral(f²(r')²). The accepted square factorization
+and weighted operator pairing give
+
+\[
+ A_K(r)=\int_0^1 f q^2,\qquad
+ \int_0^1 f r q=-G-2m,\qquad
+ 0\le\int_0^1 f(q+2r)^2=A_K(r)-4G-4m.
+\]
+
+Consequently every smooth unit-mass round probe has action at least four.
+Cap-one curvature equals two on the physical interval; the proof transports
+this equality through its actual warp, slope, mass and action, without making
+a false assertion about smooth extensions outside the interval. The existing
+round constant probe attains four. Thus `smoothAreaInfimum_one` proves the
+exact value four, and the already proved endpoint value zero yields
+`one_lt_rotationalThreshold`. The native consumer applies the moment-multiplier
+method directly to the same endpoint zero minimum. Strict mean qualification
+does not assert a free curvature interval or an operator sign.
+
+For any D>C*, choose C strictly between C* and D. The actual smooth action-value
+set at cap C is nonempty and its infimum is negative, so it contains a negative
+value. This supplies smooth K,r with the original positive box, both exact
+moments and physical mass one. The original geometric realizer applied to these
+very functions returns X,P,R, retaining both inverse identities, R=r composed
+with X, the first and second probe jets, the all-sphere curvature equation and
+
+\[
+ Q_{P.\mathrm{metric}}(P.\mathrm{meridionalOneForm}(R))
+   =2\pi A_K(r)<0,\qquad \Lambda/\kappa\le C<D.
+\]
+
+The returned metric is represented and its curvature box holds at every sphere
+point, including both poles. Negative dissipation excludes the zero form in the
+headline proof. The native consumer also checks the separate mass-based bridge:
+if this original form vanished, its coefficient R would vanish on (-1,1),
+continuity would extend this to [-1,1], and the exact forward probe equation
+would make r vanish on [0,1], contradicting unit mass. No additional recovery
+theorem or smooth endpoint extremizer is used.
+
+### Endpoint sign selection: provisional route assessment
+
+The main Round 8 objective remains unresolved. The following is exploratory
+source-level analysis, not a new native theorem or a refutation of the exact
+existential endpoint-sign target.
+
+The actual zero-multiplier first-order system retains the terms involving Kb,
+where b=f'. In a smooth diagnostic only, eliminating the canonical flux gives
+L_K q=-(bK'/2)r and L_K r=q. The actual weak curvature is merely measurable;
+one cannot insert K' or infer a cooperative system from zero action. In
+particular, neither curvature monotonicity nor a sign of bK' has been proved.
+
+Even granting an appropriate positive inverse of -L_K and recoverable solutions
+u,v of L_K u=-q_+ and L_K v=-q_-, replacing r=v-u by w=u+v would give
+L_K w=-|q|. But complete nullspace orthogonality would give
+B(u,u)=B(u,v)=B(v,v)=b0>=0 and A_K(w)=4b0. The missing inequality is b0<=0,
+as well as the actual component-domain and recovery producers. Generic inverse
+positivity does not supply it. For example, the source-level matrix diagnostic
+A=[[2,-1],[-1,2]], V=diag(-4,11) has positive inverse and
+A²+V=[[1,-4],[-4,16]] positive semidefinite, yet its nonzero null vectors are
+multiples of (4,1), whose -A image is (-7,2). This is an algebraic shortcut
+obstruction, not a physical curvature example or a kernel-supported new result.
+
+A further bounded investigation uses actual existing variation producers:
+first normalize r+e s for a globally smooth s, then move curvature through
+K_t=(1-t)K+tJ for an admissible smooth J. The two positive normalizations
+combine to normalization of that same literal probe under K_t. This is a
+source-level route to a feasible joint family at the original cap. The full
+cubic curvature density and complete polarization would imply
+
+\[
+ F(t,e)=A_{K_t}(r+es)\ge0,\qquad
+ F(t,\alpha t)=t d+t^2(e_2+2\alpha\ell+\alpha^2 a)+O(t^3),
+\]
+
+with a=A_K(s)>=0, d the actual full curvature-adjoint pairing, and e_2 the
+complete second coefficient. When d=0 the necessary condition is
+ell²<=a e_2. If the inverse-component direction were actually produced, it would
+give ell(w)²<=4b0 e_2, still no upper sign on b0. When d>0, the first-order
+term dominates. Strict moment qualification does not construct a nonzero
+critical direction. The displayed unnormalized path K_t,r+alpha*t*s is affine.
+Its normalized feasible representative generally has nonzero acceleration;
+this calculation concerns F, whose sign is unchanged by positive mass
+normalization. Differentiating the normalized action instead would require
+those acceleration terms. Any different nonlinear path also needs its own
+feasibility and complete second variation.
+
+Thus no actual same-cap descent comparison under b0>0 has been constructed.
+Producing such a comparison, or a different endpoint-specific selection
+mechanism, remains the decisive research obligation. One nodal minimum would
+not refute existence of another orientable joint minimum. No numerical starts,
+assumed free region, principal-square shortcut or supplied-sign wrapper closes
+this gap. The earlier nearby-negative sign conjecture remains unproved and
+unrefuted.
+
+The [Round 8 evidence](../evidence/phase2-round-8/checkpoint.json) distinguishes
+the four native theorems from this provisional analysis. Specific all-smooth-
+probe coverage, a genuinely determining characterization and selection,
+comparison across all original geometries, precise original smooth endpoint
+equality/attainment and all final review/manuscript gates remain required.
+Phase I is COMPLETE; Phase II is OPEN.

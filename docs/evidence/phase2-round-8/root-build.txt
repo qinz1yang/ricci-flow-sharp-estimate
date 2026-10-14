@@ -1,0 +1,4 @@
+✔ [9912/9915] Built RicciFlowSharpEstimate.Geometry.AreaRoundGap (10s)
+✔ [9913/9915] Built RicciFlowSharpEstimate.Geometry.RotationalSharpWitness (12s)
+✔ [9914/9915] Built RicciFlowSharpEstimate (9.7s)
+Build completed successfully (9915 jobs).

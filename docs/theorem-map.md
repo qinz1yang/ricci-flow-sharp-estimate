@@ -624,7 +624,25 @@ it does not resolve operator orientation. Round 7 adds:
 
 These three leaves add five public theorems and no definitions. All 264 accepted
 parent leaves remain unchanged. The [native receipt](evidence/phase2-round-7/receipt.json)
-and public consumer pass; the single Round 7 outer review is pending. No sign,
+and public consumer pass; the single Round 7 outer review at `df362be` verifies
+this scope. No sign,
 symmetry, finite-dimensional selection or smooth extremizer is assumed or
 produced. Determining C_rot, operator orientation, all-probe coverage and the
 remaining original smooth sharpness/endpoint-attainment obligations remain open.
+
+## Phase II Round 8: strict cap-one gap and original smooth sharp witnesses
+
+| Result | Canonical source and declaration |
+|---|---|
+| Exact cap-one smooth normalized value four | `Geometry/AreaRoundGap.lean`: `AreaProfile.smoothAreaInfimum_one` |
+| Strict threshold gap above one, allowing endpoint moment qualification | `Geometry/AreaRoundGap.lean`: `one_lt_rotationalThreshold` |
+| Actual negative smooth unit-mass competitor at every superthreshold cap | `Geometry/RotationalSharpWitness.lean`: `AreaProfile.exists_smooth_area_competitor_action_neg_of_rotationalThreshold_lt` |
+| Original represented metric and nonzero smooth form with negative dissipation and curvature ratio strictly below any larger cap, retaining all scalar/geometry producer equations | `Geometry/RotationalSharpWitness.lean`: `exists_smooth_geometric_negative_witness_of_rotationalThreshold_lt` |
+
+The four theorems introduce no definitions and preserve all 267 accepted parent
+leaves. The [native receipt](evidence/phase2-round-8/receipt.json) and the
+same-object cap-qualification/geometric consumer pass. The consumer checks
+physical nonvanishing from the returned unit mass without using negative
+dissipation. The single Round 8 outer review is pending. Endpoint operator-sign
+selection remains unresolved; no conditional sign wrapper is added. These
+results do not determine C_rot or prove original smooth endpoint attainment.

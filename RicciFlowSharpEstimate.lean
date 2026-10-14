@@ -266,3 +266,5 @@ import RicciFlowSharpEstimate.Geometry.SmoothAreaSafety
 import RicciFlowSharpEstimate.Geometry.RecoverableAreaCap
 import RicciFlowSharpEstimate.Geometry.RotationalEndpointSafety
 import RicciFlowSharpEstimate.Geometry.AreaThresholdMinimum
+import RicciFlowSharpEstimate.Geometry.AreaRoundGap
+import RicciFlowSharpEstimate.Geometry.RotationalSharpWitness
