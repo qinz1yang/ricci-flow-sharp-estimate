@@ -680,3 +680,22 @@ These four public theorems introduce no definitions. The
 [native checkpoint](evidence/phase2-round-9-inverse/checkpoint.json) verifies
 their stated scope, including zero sources. Common-cap inverse recovery and
 the independent minimum-level sign comparison are still required.
+
+## Phase II Round 9: simultaneous same-cap inverse split
+
+| Mathematical result | Canonical home |
+|---|---|
+| Globally smooth nonnegative signed-source approximants with exact difference and both weighted strong limits | `Analysis/SmoothSourceSplit.lean` |
+| Strong addition of actual parabolic graph sequences, including both derivative coordinates | `Analysis/ParabolicGraphAddition.lean` |
+| Strong weighted convergence of the literal operator from curvature and full graph convergence | `Geometry/AreaOperatorGraphContinuity.lean` |
+| Source/curvature convergence implies Cauchy convergence of all three actual inverse graph coordinates | `Geometry/AreaInverseGraphCauchy.lean` |
+| Raw same-cap recovery gives integrability and both value limits; positive mass permits genuine normalized recovery | `Geometry/AreaRawGraphRecovery.lean` |
+| Actual nonnegative inverse and full graph recovery on a prescribed original curvature sequence, including zero sources | `Geometry/AreaInverseRecovery.lean` |
+| Positive/negative-source components of the same recoverable probe, exact difference in every jet, common recovery for every linear combination, and sum mass at least one | `Geometry/RecoverableOperatorSplit.lean` |
+
+Seven new public theorems and no definitions complete the bounded split
+producer. The [checkpoint](evidence/phase2-round-9-split/checkpoint.json)
+records native evidence and the same-endpoint consumer. No component or sum
+is asserted to be an endpoint minimum. The separate complete-action selection
+inequality, all-probe comparison, determining value, cross-geometry sufficiency
+and original smooth endpoint question remain open.

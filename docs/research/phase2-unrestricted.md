@@ -2911,3 +2911,58 @@ common-sequence inverse split, proving the complete action/mass passage and
 normalizing positive-mass combinations remain the active child. The additional
 geometry-specific inequality A_K(U+V)<=0 and all determining/global/endpoint
 requirements remain open.
+
+## Round 9 final packet: simultaneous inverse recovery
+
+Starting with the actual recoverable endpoint probe, choose one existing
+smooth curvature/probe recovery with curvature convergence also almost
+everywhere. The three strong graph limits imply sqrt(w)*L_Kn(r_n) converges
+strongly to sqrt(w)*q for the literal weak q=L_K r. This uses the actual
+relative warp and slope primitives and bounded L² multipliers, without K′.
+
+For epsilon_n=1/(n+1), the smooth regularizer
+R_epsilon(t)=(sqrt(t²+epsilon²)+t)/2 gives nonnegative smooth sources
+g_n^+=R_epsilon_n(q_n), g_n^-=R_epsilon_n(-q_n). Their difference is exactly
+q_n and they converge in weighted L² to max(q,0), max(-q,0). This construction
+does not require unweighted square integrability of q.
+
+Solve -L_Kn U_n=g_n^+ using the actual smooth inverse. Its stability estimate
+gives Cauchy convergence in all three canonical L² graph coordinates: comparing
+to the zero probe first bounds the individual graph energies, and the two-index
+estimate then controls their differences. Graph completeness produces U and
+its genuine jets with continuous interior representatives. Strong operator
+continuity identifies the same limit's source as max(q,0). Nonnegativity passes
+through almost-everywhere subsequential convergence and interior continuity.
+
+Define V_n=r_n+U_n and V=r+U, with both jets defined by those exact sums.
+The exact source difference implies -L_Kn V_n=g_n^-. The physical maximum
+principle makes V_n nonnegative without probe pole conditions; the full graph
+limit is nonnegative and satisfies -L_K V=max(-q,0). Thus r=V-U, p=p_V-p_U
+and z=z_V-z_U as literal functions, not just unrelated representatives.
+
+The same K_n recovers every aU+bV together with its actual two derivative
+coordinates. The complete six-entry action and mass converge with genuine
+integrability. If the physical limiting mass is positive, a positive tail is
+normalized by its actual mass and both jets are scaled by the same factor.
+Raw components are never assigned a mass-one predicate. Zero source cases
+are included. Since U,V are nonnegative and r=V-U has mass one,
+mass(U+V)>=mass(V-U)=1; normalized sum recovery therefore has no supplied
+positive-mass premise.
+
+This completes the prescribed bounded inverse/recovery child by a direct
+smooth-inverse completion route. The transformed zero-trace domain remains
+proved in the first checkpoint. The proof uses the Green contraction, uniform
+coercive graph estimates and completion in the original weighted graph; it
+does not invoke an unproved H⁻¹ variational inverse, maximal-domain density,
+or a bound on K′. The shared source and graph recovery replace those proposed
+intermediate mechanisms without changing the split target.
+
+The [native packet](../evidence/phase2-round-9-split/checkpoint.json) and consumer
+retain the original endpoint minimum and produce these components without a
+supplied operator-sign or positive-reference premise. They do not prove that
+U, V or their sum minimizes the complete action. The remaining parent task is
+still to prove A_K(U+V)<=A_K(V-U)=0 or construct a genuine negative same-cap
+joint competitor when the complete cross pairing is positive. The inverse
+construction itself gives no such upper sign. C_rot remains undetermined;
+all-probe coverage, global sufficiency, original smooth endpoint classification
+and final suite/manuscript acceptance remain required.

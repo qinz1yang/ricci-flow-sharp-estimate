@@ -1,0 +1,4 @@
+✔ [9932/9935] Built RicciFlowSharpEstimate.Analysis.SmoothSourceSplit (5.7s)
+✔ [9933/9935] Built RicciFlowSharpEstimate.Geometry.RecoverableOperatorSplit (7.2s)
+✔ [9934/9935] Built RicciFlowSharpEstimate (9.5s)
+Build completed successfully (9935 jobs).

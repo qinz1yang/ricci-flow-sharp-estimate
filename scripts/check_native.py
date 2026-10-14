@@ -297,6 +297,13 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaInverseStability",
     "RicciFlowSharpEstimate.Geometry.AreaSmoothInverse",
     "RicciFlowSharpEstimate.Analysis.ParabolicGraphComplete",
+    "RicciFlowSharpEstimate.Analysis.SmoothSourceSplit",
+    "RicciFlowSharpEstimate.Analysis.ParabolicGraphAddition",
+    "RicciFlowSharpEstimate.Geometry.AreaOperatorGraphContinuity",
+    "RicciFlowSharpEstimate.Geometry.AreaInverseGraphCauchy",
+    "RicciFlowSharpEstimate.Geometry.AreaRawGraphRecovery",
+    "RicciFlowSharpEstimate.Geometry.AreaInverseRecovery",
+    "RicciFlowSharpEstimate.Geometry.RecoverableOperatorSplit",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1594,7 +1601,14 @@ SELECTOR = r"""
       area ++ `meridionalOperator_sub_curvature_energy_le,
       area ++ `exists_uniform_meridional_inverse_stability,
       area ++ `exists_smooth_meridional_inverse,
-      analysis ++ `exists_parabolic_graph_limit_of_cauchy
+      analysis ++ `exists_parabolic_graph_limit_of_cauchy,
+      analysis ++ `exists_smooth_nonnegative_source_split,
+      analysis ++ `parabolicGraph_tendsto_add,
+      area ++ `weighted_meridionalOperator_tendsto_of_strong_graph,
+      area ++ `cauchy_parabolic_graph_of_inverse_sources,
+      area ++ `IsBoundedAreaCurvature.raw_graph_recovery,
+      area ++ `exists_nonnegative_meridional_inverse_recovery,
+      area ++ `IsRecoverableAreaCompetitor.exists_nonnegative_operator_split
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4170,6 +4184,20 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_smooth_meridional_inverse
 open RicciFlowSharpEstimate.Analysis in
 #check exists_parabolic_graph_limit_of_cauchy
+open RicciFlowSharpEstimate.Analysis in
+#check exists_smooth_nonnegative_source_split
+open RicciFlowSharpEstimate.Analysis in
+#check parabolicGraph_tendsto_add
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weighted_meridionalOperator_tendsto_of_strong_graph
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check cauchy_parabolic_graph_of_inverse_sources
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsBoundedAreaCurvature.raw_graph_recovery
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_nonnegative_meridional_inverse_recovery
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_nonnegative_operator_split
 """
 
 

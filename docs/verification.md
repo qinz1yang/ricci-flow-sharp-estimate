@@ -1609,3 +1609,53 @@ All 278 prior native leaves, 7,289 tracked evidence files, Phase-I paper/history
 both TASKs and pins remain unchanged. No typesetting occurred. The configured
 outer review remains pending. Same-cap raw inverse recovery is still being
 constructed, and no endpoint sign or threshold determination is claimed.
+
+## Phase II, Round 9 final inverse-split checkpoint
+
+Seven further public theorems in seven leaves complete the bounded raw inverse
+split and its common same-cap recovery. Across Round 9, twenty new leaves add
+32 public theorems and two definitions. The original 269 accepted leaves are
+unchanged; no parent sign-selection or determining-value theorem is claimed.
+
+The final native command was:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-9-split \
+  --reuse-receipt docs/evidence/phase2-round-9-inverse/receipt.json
+```
+
+Receipt SHA256 is
+`0c6589070c4387056c4c8d07b86ddd7f2922321d14be44414715cad830757e4a`.
+All 289 modules pass, with 294 input hashes and 295 successful command/output
+records. Seven fresh and 282 reused source elaborations are silent. The root,
+unsuppressed source/declaration linters and native declaration-kind inspection
+pass. The 1,281 required selectors, 1,382 exact queries and 3,538 actual axiom
+rows (1,206 private) use only `propext`, `Classical.choice` and `Quot.sound`.
+Driver reconstruction and 5,728 source-command records through 36 receipts
+match. Checker policy AST agrees with accepted Round 8 outside inventories
+and signature queries.
+
+The first attempt stopped because two private axiom-row names ended in
+`error`, matching the unchanged diagnostic substring check. The helpers were
+renamed to `error_bound`; no mathematical statement, proof or checking policy
+was weakened. Failed outputs are retained in Root scratch and are not relied
+upon. The final affected/root build and full native gate pass.
+
+`InverseSplitChecks.lean` completed silently against the final canonical imports
+(Root session 85428, exit 0). It starts from the actual endpoint zero minimum,
+retains its minimality and all three difference identities, consumes both
+literal component source equations, derives positive sum mass, normalizes both
+jets together, and extracts all four strong recovery limits and the complete
+action limit for that normalized sum. A separate zero-source instantiation
+uses the raw producer with no mass or source-nonzero premise. Its source SHA256
+is `72c59a1a925891f09061b32e6729788d1a7dfaaa6b6dd085cb0bbcb18a4cf443`.
+Bindings appear in the [checkpoint](evidence/phase2-round-9-split/checkpoint.json).
+
+The source simplifier recommends no changes to this seven-leaf packet or its
+consumer. All reader leases are released; the single configured outer review
+remains pending. All 282 prior native leaves, 7,581 prior tracked evidence
+files, 149 Phase-I leaves, 2,325 historical workflow files, the accepted paper,
+both TASKs, compiler/dependencies and pins are preserved. No typesetting or
+numerical search was used. Phase II remains open at the geometry-specific
+action comparison, all-probe coverage, determination/global sufficiency,
+original smooth endpoint classification and final acceptance gates.

@@ -122,9 +122,15 @@ curvature-error multiplier. Nine leaves, 21 public theorems and two definitions
 pass native gates. A second checkpoint now constructs the actual smooth inverse
 through both poles, proves uniform stability under source and curvature changes,
 and completes Cauchy sequences in the full genuine weak graph. Four further
-public theorems pass native gates. Simultaneous same-cap recovery and the
-separate minimum-level sign comparison remain open; these results do not yet
-constitute the required split. Outer review is pending.
+public theorems pass native gates. The final Round 9 packet constructs the
+simultaneous same-cap inverse split of the literal source: nonnegative raw
+components with genuine jets, exact difference equal to the original probe
+and jets, and one curvature sequence recovering every linear combination.
+It derives complete-action/mass convergence and positive-mass normalization;
+the component sum has mass at least one. Seven further public theorems support
+this producer. The sum's action need not be zero by any result proved here.
+Minimum-level sign selection, threshold determination and all later original
+requirements remain open. The configured outer review is pending.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

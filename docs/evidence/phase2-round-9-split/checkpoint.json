@@ -1,0 +1,134 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; bounded same-cap raw inverse split native, parent action sign and determining/global/endpoint remain open",
+  "parent_native_revision": "ab832ac7cadbcbadfee20071c62b5f5c050d2fe6",
+  "parent_outer_reviewed_revision": "43347fb9fc4a77d7e4349e98c668da7b254fa23b",
+  "native_receipt_sha256": "0c6589070c4387056c4c8d07b86ddd7f2922321d14be44414715cad830757e4a",
+  "native_counts": {
+    "modules": 289,
+    "inputs": 294,
+    "outputs": 295,
+    "selectors": 1281,
+    "signature_queries": 1382,
+    "axiom_rows": 3538,
+    "private_axiom_rows": 1206,
+    "fresh_source_elaborations": 7,
+    "reused_source_elaborations": 282
+  },
+  "verified_provenance_receipts": 36,
+  "verified_source_provenance_records": 5728,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "new_public_declarations": {
+    "modules": 7,
+    "theorems": 7,
+    "definitions": 0
+  },
+  "round9_public_declarations": {
+    "modules": 20,
+    "theorems": 32,
+    "definitions": 2
+  },
+  "public_headlines": [
+    "RicciFlowSharpEstimate.Analysis.exists_smooth_nonnegative_source_split",
+    "RicciFlowSharpEstimate.Analysis.parabolicGraph_tendsto_add",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.weighted_meridionalOperator_tendsto_of_strong_graph",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.cauchy_parabolic_graph_of_inverse_sources",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsBoundedAreaCurvature.raw_graph_recovery",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.exists_nonnegative_meridional_inverse_recovery",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_nonnegative_operator_split"
+  ],
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Analysis/SmoothSourceSplit.lean": "6a4584ca363e35bb18e0b8ba6af37e3a37e6cbfd6643772f867154a67b8a3167",
+    "RicciFlowSharpEstimate/Analysis/ParabolicGraphAddition.lean": "a6e987eda77e61f6d0a5f8cb4e47b54f44ad8825d5e2918359094317b941ac91",
+    "RicciFlowSharpEstimate/Geometry/AreaOperatorGraphContinuity.lean": "c8c3a61291cfb2c73b0992956975e43b76a1463a430da0e5106cc656d7192d54",
+    "RicciFlowSharpEstimate/Geometry/AreaInverseGraphCauchy.lean": "4f74a80cdfa7bf8500febcec2f98b5dc5d8a147d5c229d79b06bb4b240817d04",
+    "RicciFlowSharpEstimate/Geometry/AreaRawGraphRecovery.lean": "a40961d80a09044a193d2b614dc4504046d9986b48c2ca2eef865356193941ad",
+    "RicciFlowSharpEstimate/Geometry/AreaInverseRecovery.lean": "20e3166964e8f06d402063252cf2f340a340e9c2faaafcba7275b366b2fa1f60",
+    "RicciFlowSharpEstimate/Geometry/RecoverableOperatorSplit.lean": "19ae7dd66f2402556f37beef4bdcebfb6541b6ab57be12fc0b7737d9b3eb0291"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "842528b73f3a2a40733c9800a108125f8518ab45f7d65704a6ebe8889d629450",
+    "docs/theorem-map.md": "75acd9457d81f04aa1f16b69b1ea15cfce73214ef53a5f78fd900161d94e98b2",
+    "docs/research/phase2-unrestricted.md": "fe10b1246c52d6b6cce92a07454146bff53a16c439f81d236feaab810c1b16bb",
+    "docs/verification.md": "f4cc32329aaf6c39579af14403ff6576b05fc627b5790e0f6e22ff4d164e166a"
+  },
+  "source_simplifier": {
+    "status": "NO CHANGE; source advice only, not acceptance review",
+    "source_hashes": {
+      "snapshot": "/tmp/hmz-fence-4lzhkuwo/math-target-round9-snapshot-to0kc1cj/published",
+      "assigned_source_sha256": {
+        "RicciFlowSharpEstimate/Analysis/SmoothSourceSplit.lean": "6a4584ca363e35bb18e0b8ba6af37e3a37e6cbfd6643772f867154a67b8a3167",
+        "RicciFlowSharpEstimate/Analysis/ParabolicGraphAddition.lean": "a6e987eda77e61f6d0a5f8cb4e47b54f44ad8825d5e2918359094317b941ac91",
+        "RicciFlowSharpEstimate/Geometry/AreaOperatorGraphContinuity.lean": "c8c3a61291cfb2c73b0992956975e43b76a1463a430da0e5106cc656d7192d54",
+        "RicciFlowSharpEstimate/Geometry/AreaInverseGraphCauchy.lean": "4f74a80cdfa7bf8500febcec2f98b5dc5d8a147d5c229d79b06bb4b240817d04",
+        "RicciFlowSharpEstimate/Geometry/AreaRawGraphRecovery.lean": "a40961d80a09044a193d2b614dc4504046d9986b48c2ca2eef865356193941ad",
+        "RicciFlowSharpEstimate/Geometry/AreaInverseRecovery.lean": "20e3166964e8f06d402063252cf2f340a340e9c2faaafcba7275b366b2fa1f60",
+        "RicciFlowSharpEstimate/Geometry/RecoverableOperatorSplit.lean": "19ae7dd66f2402556f37beef4bdcebfb6541b6ab57be12fc0b7737d9b3eb0291"
+      },
+      "bounded_dependency_or_lesson_reads_sha256": {
+        "RicciFlowSharpEstimate/Geometry/BoundedAreaCurvature.lean": "05aef48e17e402f1293a14d686e94bc3d4c00eef99e14ca03248074bd03671c0",
+        "RicciFlowSharpEstimate/Geometry/SmoothAreaCurvature.lean": "06f801275d21b3fb0491da5b89a74ae528ab06a7467a0e46e58ce14652120c14",
+        "RicciFlowSharpEstimate/Analysis/ParabolicWeakDerivativeAlgebra.lean": "64b235b6bdb14bf4e36ef78caa40c069cc0c3f046e879d8be707aac2373cd3c2",
+        "RicciFlowSharpEstimate/Geometry/RecoverableAreaGeometry.lean": "5879e8b7b8baa128714b230eee31980eeda86a37fe87a5d7a05c7594f2057b63",
+        "RicciFlowSharpEstimate/Analysis/ParabolicGraphConvergence.lean": "579baa051969a2b58d5a59415278939968026f6eda5f5ffc04732dac57ac0c48",
+        "RicciFlowSharpEstimate/Geometry/RecoverableAreaCompetitor.lean": "4bd7cf2d71934258585b6065cac30797dc81c3777063b5fa62dc9f734ac227bd",
+        "bitlesson.md": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+      },
+      "consumer": {
+        "path": "/tmp/hmz-fence-4lzhkuwo/math-target-round9-split_simplifier-pfnufaf7/InverseSplitChecks.lean",
+        "sha256": "72c59a1a925891f09061b32e6729788d1a7dfaaa6b6dd085cb0bbcb18a4cf443"
+      },
+      "scope": "Source simplifier advice only; dependency reads include bounded declaration searches and excerpts, not acceptance audits."
+    },
+    "report_sha256": "7640a15f361820b34e0128c125087484f1b2eb4f3df369fe42b1dd8b036feaa3",
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/InverseSplitChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "72c59a1a925891f09061b32e6729788d1a7dfaaa6b6dd085cb0bbcb18a4cf443",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-14T03:53:17.384714+00:00",
+      "source_path": "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/InverseSplitChecks.lean",
+      "output_path": "docs/evidence/phase2-round-9-split/split-consumer.txt",
+      "completed_exec_session": 85428,
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "scope": "Actual endpoint minimum and all three literal split ties; actual component sources; derived sum positive mass and normalized same-object all-four recovery/action limit; raw zero-source instantiation",
+      "imports": "Final canonical Lake imports; no scratch overlay"
+    }
+  ],
+  "diagnostic_repair": {
+    "scope": "Two private source helper names ended in error and matched unchanged literal error-colon check in successful axiom row text; renamed to error_bound and completed fresh affected/root/full diagnostic gate",
+    "failed_attempt_evidence": "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/split-first-diagnostic-failure",
+    "failed_attempt_is_acceptance_evidence": false,
+    "checker_policy_unchanged": true
+  },
+  "checker_policy_delta": "Only module/selector/signature inventories; remaining AST matches accepted Round 8",
+  "independent_review": "Single configured Round 9 outer review pending; unchanged Round 8 mathematics retains prior acceptance",
+  "remaining_required_mathematics": [
+    "Geometry-specific selection A_K(U+V)<=0 or genuine same-cap negative competitor under positive complete cross pairing; recoverable inverse existence alone gives no action upper sign",
+    "One actual endpoint minimum with one-sided operator and same-object positivity/recovery",
+    "Specific all-smooth-probe quotient/pole comparison bridge",
+    "Independent determining characterization and justified threshold/branch selection with global sufficiency across every original geometry",
+    "Precise original smooth endpoint equality/attainment or nonattainment, and final manuscript/native/review/private-delivery acceptance"
+  ]
+}
