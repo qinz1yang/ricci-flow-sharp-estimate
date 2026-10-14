@@ -9,6 +9,17 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 10 now produces an actual free curvature interval at the same zero-action
+joint minimum, with positive warp/probe margins and strict a.e. margins in an
+original ratio box. The curvature representative is tied to the original K
+almost everywhere; genuine weighted regularity and pole flux estimates justify
+the argument through arbitrary probe zeros. This removes the earlier missing
+free-region premise. It does not prove a strict negative variation, orient the
+endpoint source, or determine C_rot. The complete-action selection, all-probe
+comparison, global determination and precise smooth endpoint gates remain open.
+The new [checkpoint](evidence/phase2-round-10-free/checkpoint.json) records the
+bounded regularity/free-interval packet and same-minimum recovery consumer.
+
 Rounds 2 and 3 passed their single outer reviews at `734dd5b` and `2778716`.
 Their exhaustive normalization, variations, coercivity and polar estimates remain
 accepted. Round 4 constructs an actual joint normalized weak limit of complete-action

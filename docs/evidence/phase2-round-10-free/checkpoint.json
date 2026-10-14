@@ -1,0 +1,107 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; actual free interval is a new selection prerequisite, not strict descent or orientation",
+  "parent_outer_reviewed_revision": "285dfc21308a03a7f2350ba5f982f28a17ff0765",
+  "parent_native_revision": "ca2fe96105b62ece7184a43c8bc26fd73cc2c138",
+  "native_receipt_sha256": "ea1f4cdd007367125058149c62c429584ff9c585d04ab9b782445c6cc266762d",
+  "native_counts": {
+    "modules": 296,
+    "inputs": 301,
+    "outputs": 302,
+    "selectors": 1289,
+    "signature_queries": 1390,
+    "axiom_rows": 3635,
+    "private_axiom_rows": 1285,
+    "fresh_source_elaborations": 4,
+    "reused_source_elaborations": 292
+  },
+  "verified_provenance_receipts": 38,
+  "verified_source_provenance_records": 6316,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "new_public_declarations": {
+    "modules": 4,
+    "theorems": 5,
+    "definitions": 0
+  },
+  "public_headlines": [
+    "RicciFlowSharpEstimate.Analysis.weighted_dirichlet_adjoint_local_regularity",
+    "RicciFlowSharpEstimate.Analysis.slope_kernel_adjoint_absolutelyContinuous",
+    "RicciFlowSharpEstimate.Analysis.HasWeakDerivOn.absolutelyContinuous_mul_sq_of_parabolic_bounds",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_regular_curvature_representative",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_free_curvature_interval"
+  ],
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Analysis/WeightedGreenRegularity.lean": "de05de278be4b6a3eb64e9a9486f9abbb1833b91ffa202737f58e61b92dc14b8",
+    "RicciFlowSharpEstimate/Analysis/ParabolicEnergyBoundary.lean": "6103b08a39568ed52c0b4d7c6a74f4b040bb0c40c2d67075a98d27d1401ec758",
+    "RicciFlowSharpEstimate/Geometry/AreaCurvatureControl.lean": "4f5d9cc262952c616dfd1e1b8b5e5b7ba2d609a2699923d8cb2ea6d99cf8b6dc",
+    "RicciFlowSharpEstimate/Geometry/AreaFreeCurvatureInterval.lean": "8eb4f49b7132c4688306c242fd1528d8c7ba2775c6d16b7c765ee12579378b7a"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "ed3659de778accc921a6a526f8a5e8ecd9c7dd7b000578309af598ba5592a081",
+    "docs/theorem-map.md": "1c261a38bb544209861637d3608234d0384514e854cc3ccc42802ae3a3653b72",
+    "docs/research/phase2-unrestricted.md": "1437558540b8270fb0e34b933c18e902cc56144dffdde2713659730704451477",
+    "docs/verification.md": "1407ea4a600f8c8dd0bd071f6b16b41d742d39f3480e623f6c6c111a3e95a898"
+  },
+  "source_simplifier": {
+    "status": "NO CHANGE; source advice, not acceptance review",
+    "report_sha256": "d62f8c390fd282d8985d81d9828817b825357cfade2510a15f8a77bd9fd92f49",
+    "source_hashes": {
+      "snapshot": "/tmp/hmz-fence-4lzhkuwo/math-target-round10-free-snapshot-mbsap6q8/published",
+      "assigned_source_sha256": {
+        "RicciFlowSharpEstimate/Analysis/WeightedGreenRegularity.lean": "de05de278be4b6a3eb64e9a9486f9abbb1833b91ffa202737f58e61b92dc14b8",
+        "RicciFlowSharpEstimate/Analysis/ParabolicEnergyBoundary.lean": "6103b08a39568ed52c0b4d7c6a74f4b040bb0c40c2d67075a98d27d1401ec758",
+        "RicciFlowSharpEstimate/Geometry/AreaCurvatureControl.lean": "4f5d9cc262952c616dfd1e1b8b5e5b7ba2d609a2699923d8cb2ea6d99cf8b6dc",
+        "RicciFlowSharpEstimate/Geometry/AreaFreeCurvatureInterval.lean": "8eb4f49b7132c4688306c242fd1528d8c7ba2775c6d16b7c765ee12579378b7a"
+      },
+      "bitlesson_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855",
+      "consumer": {
+        "path": "/tmp/hmz-fence-4lzhkuwo/math-target-round10-scale_simplifier-ogu7gxlb/FreeIntervalChecks.lean",
+        "sha256": "f17ab9f8b996b667d3a06f73fe5f9b996adff991c5550bf8c753ff6f0f15b71a"
+      },
+      "scope": "Source simplifier advice only; four assigned leaves and supplied same-endpoint consumer."
+    },
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round10-root-f4lbol58/FreeIntervalChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "f17ab9f8b996b667d3a06f73fe5f9b996adff991c5550bf8c753ff6f0f15b71a",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-14T07:43:01.563503+00:00",
+      "name": "FreeIntervalChecks",
+      "source_path": "/tmp/hmz-fence-4lzhkuwo/math-target-round10-root-f4lbol58/FreeIntervalChecks.lean",
+      "output_path": "docs/evidence/phase2-round-10-free/free-consumer.txt",
+      "completed_exec_session": 28956,
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical project imports, final four new source hashes match native receipt",
+      "scope": "Actual endpoint minimum, same original K/r/p/z, original ratio box and produced free interval, physical mass one, zero complete action, global minimality and all four graph recovery limits plus action limit"
+    }
+  ],
+  "checker_policy_delta": "Only module/selector/signature inventories; remaining AST matches prior scale checkpoint",
+  "independent_review": "Single configured Round10 outer review pending; unchanged Round9 mathematics retains acceptance",
+  "remaining_round_objective": "Obtain strict complete-action inverse-sum comparison or a genuine negative same-cap joint competitor, then one oriented actual zero minimum with recovery. A produced free interval does not settle this implication.",
+  "continuing_mathematics": [
+    "Optimized full affine joint variation on an actual free interval; strict descent unresolved",
+    "Larger-scale/global same-cap comparison if localized variation is insufficient",
+    "All-probe coverage, independently determining characterization/selection, cross-geometry sufficiency, original smooth endpoint classification and final manuscript/evidence/private-delivery closure remain required"
+  ]
+}

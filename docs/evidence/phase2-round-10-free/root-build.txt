@@ -1,0 +1,6 @@
+✔ [9937/9942] Built RicciFlowSharpEstimate.Analysis.WeightedGreenRegularity (11s)
+✔ [9938/9942] Built RicciFlowSharpEstimate.Analysis.ParabolicEnergyBoundary (12s)
+✔ [9939/9942] Built RicciFlowSharpEstimate.Geometry.AreaCurvatureControl (13s)
+✔ [9940/9942] Built RicciFlowSharpEstimate.Geometry.AreaFreeCurvatureInterval (14s)
+✔ [9941/9942] Built RicciFlowSharpEstimate (17s)
+Build completed successfully (9942 jobs).

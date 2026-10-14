@@ -3015,3 +3015,48 @@ action inequality. Their unformalized identities and proposed free-interval
 argument remain provisional; no numerical or conditional calculation is
 promoted to an endpoint-selection theorem. Implementation continues within
 the unchanged Round 10 objective.
+
+## Round 10 continuation: an actual free curvature interval
+
+The next packet proves a regular representative of the curvature at an actual
+joint minimum. Write q for the canonical continuous interior representative of
+the literal weak operator. The complete curvature adjoint has the form
+Z=2*f*r²*K+H, where H is locally absolutely continuous. This uses the actual
+weighted Dirichlet adjoint and the actual slope-kernel adjoint; unweighted
+integrability of the warp coefficient is not assumed. Complementarity gives
+Kc=clip_[kappa,Lambda](-H/(2*f*r²)) wherever r is nonzero, and Kc=K almost
+everywhere. At probe zeros the representative uses the boxed original K.
+The weighted product Kc*f*r² remains locally absolutely continuous across
+all zeros, without a hypothesis on their number or isolation.
+
+For a zero-action minimum, this yields a genuine free interval. If Kc took
+only its two box values wherever r is nonzero, continuity there would make
+it locally constant. For the actual flux F=Kc*f*r²*b/2, the derivative would be
+
+\[
+ F'=f q^2-\mathcal D_K(r,r',r'')
+\]
+
+almost everywhere on every compact interior interval, where D is the COMPLETE
+action density. At a probe zero, the nonnegative locally absolutely continuous
+product Kc*f*r² has a local minimum; its derivative vanishes wherever it exists.
+This proves the same flux law there, with no differentiation of measurable K.
+
+The first parabolic graph bounds prove that the literal f*r² is globally
+absolutely continuous and has true zero traces. The bound |F|<=Lambda*f*r²
+then controls both pole limits. Local FTC and a global integral primitive give
+integral(F')=0. Zero action would therefore imply integral(f*q²)=0. The warp
+is positive inside, so q=0 almost everywhere; the accepted strong maximum
+principle applied to the probe and its negation contradicts unit mass.
+Consequently one interior point has nonzero r and strict curvature margins.
+Continuity gives a nondegenerate closed interior interval and eta>0 with
+f>=eta, |r|>=eta, and kappa+eta<=K<=Lambda-eta almost everywhere on that
+interval, in the SAME original ratio box.
+
+The four leaves contain five public theorems and no definitions. Their native
+checkpoint is recorded in [the free-interval evidence](../evidence/phase2-round-10-free/checkpoint.json).
+The supplemental consumer starts from the actual endpoint minimum and retains
+its mass, zero complete action, global minimality and all four recovery limits.
+A free interval permits local curvature perturbations; it does not construct a
+negative direction. The strict complete-action comparison for the inverse sum
+remains unproved, as do the determining/global and original smooth-endpoint gates.

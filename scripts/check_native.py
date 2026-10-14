@@ -307,6 +307,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.BoxCenteredMomentMultiplier",
     "RicciFlowSharpEstimate.Geometry.AreaAdjointScaling",
     "RicciFlowSharpEstimate.Geometry.AreaScaleBalancedMultiplier",
+    "RicciFlowSharpEstimate.Analysis.WeightedGreenRegularity",
+    "RicciFlowSharpEstimate.Analysis.ParabolicEnergyBoundary",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureControl",
+    "RicciFlowSharpEstimate.Geometry.AreaFreeCurvatureInterval",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1614,7 +1618,12 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.exists_nonnegative_operator_split,
       analysis ++ `exists_box_centered_moment_multiplier,
       area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_scale_identity,
-      area ++ `IsRecoverableAreaCompetitor.exists_scale_balanced_curvature_multiplier
+      area ++ `IsRecoverableAreaCompetitor.exists_scale_balanced_curvature_multiplier,
+      analysis ++ `weighted_dirichlet_adjoint_local_regularity,
+      analysis ++ `slope_kernel_adjoint_absolutelyContinuous,
+      analysis ++ `HasWeakDerivOn.absolutelyContinuous_mul_sq_of_parabolic_bounds,
+      area ++ `IsRecoverableAreaCompetitor.exists_regular_curvature_representative,
+      area ++ `IsRecoverableAreaCompetitor.exists_free_curvature_interval
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4210,6 +4219,16 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.curvature_adjoint_scale_identity
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_scale_balanced_curvature_multiplier
+open RicciFlowSharpEstimate.Analysis in
+#check weighted_dirichlet_adjoint_local_regularity
+open RicciFlowSharpEstimate.Analysis in
+#check slope_kernel_adjoint_absolutelyContinuous
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.absolutelyContinuous_mul_sq_of_parabolic_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_regular_curvature_representative
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_free_curvature_interval
 """
 
 

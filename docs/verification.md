@@ -1694,3 +1694,36 @@ files, 2,325 historical workflow files, accepted paper, TASKs and pins are
 preserved. The configured outer review is pending for the new packet. This
 checkpoint does not close Round 10's complete-action selection objective;
 work continues on the actual critical-direction route and all original gates.
+
+## Phase II, Round 10 regular-curvature/free-interval checkpoint
+
+The bounded continuation adds four leaves, five public theorems and no
+public definitions. The native gate in
+`docs/evidence/phase2-round-10-free/receipt.json` passes:
+
+- 296 modules, 301 source/configuration/checker inputs and 302 successful
+  command/output records; four fresh silent source elaborations and 292 reused.
+- The changed/affected/root build and unsuppressed source/declaration linters
+  pass. Native declaration-kind inspection remains enabled.
+- 1,289 required selectors, 1,390 exact signature queries and 3,635 actual
+  transitive axiom rows, including 1,285 private rows. Every closure uses only
+  propext, Classical.choice and Quot.sound.
+- Read-only literal-AST reconstruction matches all diagnostic drivers. Checker
+  policy outside inventories/selectors/signature queries is unchanged. Reuse
+  provenance matches 6,316 source-command records through 38 receipts.
+- All 292 preceding native leaves, 289 accepted Round 9 leaves, 149 Phase-I
+  leaves, 8,182 previously tracked evidence files, 2,325 historical workflow
+  files, accepted paper bytes, both TASKs, pins, compiler and dependencies are
+  preserved.
+
+Receipt SHA256:
+`ea1f4cdd007367125058149c62c429584ff9c585d04ab9b782445c6cc266762d`.
+The supplemental `FreeIntervalChecks.lean` uses canonical imports to retain
+one actual endpoint minimum, its original ratio box and newly produced free
+interval, mass one, zero complete action, global minimality and all four
+smooth-recovery limits. Its final source/output/command/completion bindings
+are recorded in the [checkpoint](evidence/phase2-round-10-free/checkpoint.json).
+Source simplifier advice is NO CHANGE, not an independent acceptance verdict.
+The single configured outer review remains pending for the Round 10 delta.
+The beta upper sign, threshold determination and every remaining original
+mathematical/final gate remain open.

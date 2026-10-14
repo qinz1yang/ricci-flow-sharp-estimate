@@ -716,3 +716,18 @@ native evidence and a consumer using the actual endpoint minimum. No nonzero
 residual, strict box saturation, free interval or operator sign is asserted by
 these three statements. The minimum-level complete-action comparison remains
 the active round objective.
+
+## Phase II Round 10: regular curvature and a genuine free interval
+
+| Mathematical result | Canonical home |
+|---|---|
+| Actual weighted Dirichlet adjoint has interior C¹ regularity and a locally absolutely continuous derivative; actual slope adjoint has a global primitive and zero traces | `Analysis/WeightedGreenRegularity.lean` |
+| Literal f*r² has global absolute continuity, zero traces and its genuine integrable product derivative under the first parabolic graph bounds | `Analysis/ParabolicEnergyBoundary.lean` |
+| Same-minimum curvature representative equals original K almost everywhere, is regular off probe zeros, and has locally absolutely continuous Kc*f*r² across zeros | `Geometry/AreaCurvatureControl.lean` |
+| Every actual zero-action joint minimum has a compact interior interval with positive warp/probe margins and strict original-curvature box margins | `Geometry/AreaFreeCurvatureInterval.lean` |
+
+The [free-interval checkpoint](evidence/phase2-round-10-free/checkpoint.json)
+records five public theorems and no definitions. The interval is produced;
+no source sign, curvature derivative or nodal-set structure is assumed.
+A strict negative full variation or global inverse-sum comparison remains
+required for the contracted endpoint-selection objective.
