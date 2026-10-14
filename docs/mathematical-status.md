@@ -9,6 +9,14 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+The Round 10 review accepts scale balance and verifies the free-interval
+mathematics and native evidence, subject to one bounded API correction.
+Round 11 removes that derived measurability premise from the weighted Green
+theorem and its caller. The nonlocal finite comparison remains unproved:
+normalized-box, reoptimized sorting and repaired-cap investigations have not
+produced strict negative action or refuted the actual endpoint selection
+target. This API correction is not mainline selection progress.
+
 Round 10 now produces an actual free curvature interval at the same zero-action
 joint minimum, with positive warp/probe margins and strict a.e. margins in an
 original ratio box. The curvature representative is tied to the original K

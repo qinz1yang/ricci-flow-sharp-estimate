@@ -3060,3 +3060,52 @@ its mass, zero complete action, global minimality and all four recovery limits.
 A free interval permits local curvature perturbations; it does not construct a
 negative direction. The strict complete-action comparison for the inverse sum
 remains unproved, as do the determining/global and original smooth-endpoint gates.
+
+## Round 11: finite comparison tests and the bounded API correction
+
+The Round 10 outer review accepts the scale packet and verifies the
+curvature/free-interval mathematics and native evidence. Its one API finding
+is addressed by deriving source measurability inside the weighted Green
+theorem: divide the measurable weighted source by x*(1-x), which is positive
+almost everywhere on the physical open interval. The caller now supplies
+only weighted integrability. No conclusion or physical domain is changed.
+
+The Round 11 mainline remains the strict finite comparison, not this API
+correction. Three bounded investigations below are **PROVISIONAL source-level
+research**, not native selection theorems or endpoint counterexamples.
+
+For the actual inverse sum s=U+V, choose the original scale-balanced box and
+v0=K/kappa. Given any centered-moment v1 in [1,C], the full interval family
+v_t=(1-t)v0+t*v1 and J_t=2*v_t/integral(v_t) retains both exact physical
+moments and the original cap. Its raw Green primitives are linear in v_t.
+With the genuine probe r+alpha*s and its summed jets, the normalized action
+has the sign of a(t)+2*alpha*b(t)+alpha²*c(t), where all three coefficients
+are COMPLETE cubic geometry pairings. At t=0 they are 0,0,4*beta/kappa³.
+The nonnegative old-geometry source-change cost has not disappeared. The
+concrete box reflection v1=C+1-v0 is admissible, but no strictly negative
+finite coefficient combination has been established for it or another v1.
+
+Weighted curvature sorting followed by probe reoptimization is distinct from
+the rejected source-transport recipe. A round constant-probe first-variation
+test favors sorting, but it does not prove the least-value comparison at the
+endpoint. The actual zero-mode exchange weight depends on the probe and
+Euler flux. Minimality supplies an inequality for allowed exchanges, not
+the positional ordering needed by a finite rearrangement theorem. The
+rearranged geometry's recovery and BV factorization would also need proof.
+
+A separate repaired-cap family uses
+R_a=(s'(a)*r-p(a)*s)/2, whose derivative at the cut is zero. Its original
+complete action is beta*p(a)² and B(R_a,s)=-2*beta*p(a). Away from p(a)=0
+it is therefore not a new zero mode; the original stationary boundary law
+cannot erase its bulk terms. The affine warp repair itself changes the pole
+slope. Only the full reflected/rescaled geometry is an admissible comparison,
+so the original moment multiplier cannot be applied to the raw repair as
+though it were a normalized tangent. The finite cap action remains unsigned;
+its transformed recovery has not been assumed from linear-combination recovery.
+
+None of these tests rejects existence of an orientable endpoint minimum or
+proves the required negative same-cap competitor. No new inverse package,
+conditional positivity wrapper, numerical start or discriminant theorem is
+offered as a substitute. C_rot and all original global/endpoint/final gates
+remain open. The [Round 11 evidence](../evidence/phase2-round-11/checkpoint.json)
+records the bounded API delta separately from this unresolved research.

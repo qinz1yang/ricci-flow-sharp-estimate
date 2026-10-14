@@ -1727,3 +1727,44 @@ Source simplifier advice is NO CHANGE, not an independent acceptance verdict.
 The single configured outer review remains pending for the Round 10 delta.
 The beta upper sign, threshold determination and every remaining original
 mathematical/final gate remain open.
+
+## Phase II, Round 11 bounded API delta
+
+Round 10 review Q3 is implemented in exactly two Lean files. The weighted
+Green theorem now derives source measurability from weighted integrability
+using the positive interior parabolic weight; its curvature-control caller
+no longer supplies the redundant premise. No theorem, definition, conclusion,
+physical domain or recovery witness is added or replaced.
+
+`docs/evidence/phase2-round-11/receipt.json` records a passing native gate:
+296 modules, 301 inputs and 302 successful command/output records; four fresh
+silent elaborations and 292 reused. The affected root build, unsuppressed
+linters and declaration-kind inspection pass. All 1,289 required selectors,
+1,390 exact signature queries and 3,635 actual axiom rows (1,285 private)
+pass; closures use only propext, Classical.choice and Quot.sound.
+
+Receipt SHA256:
+`f45c7448efb4b37602759af3e9ad51667243593a61ace782bccd7cbc84c806d6`.
+The exact native signature has only the weighted-integrability hypothesis.
+Literal driver reconstruction and 6,316 source-command records through 38
+receipts match. The checker is byte-identical to the reviewed parent. Its
+existing reuse rule requires an entirely unchanged source prefix, so the
+successful gate uses the scale checkpoint. The first attempt stopped at that
+reuse precondition after a successful affected/root build; no failed receipt
+is relied on and no policy was weakened.
+
+All 294 other parent leaves, 289 accepted Round 9 leaves, 149 Phase-I leaves,
+8,488 prior evidence files, 2,325 historical workflow files, accepted paper,
+both TASKs, compiler, pins and dependencies remain unchanged. The canonical
+same-endpoint consumer completes silently, retaining the original curvature,
+free interval, unit mass, zero complete action, global minimality and all four
+recovery limits. Its source SHA256 remains
+`f17ab9f8b996b667d3a06f73fe5f9b996adff991c5550bf8c753ff6f0f15b71a`.
+Completed command/output bindings and the NO CHANGE source-advice hashes are
+in the [checkpoint](evidence/phase2-round-11/checkpoint.json).
+
+This is a bounded API repair. The finite-comparison reports are provisional,
+not native selection or refutation theorems. The round's mainline comparison,
+the determining/global and smooth-endpoint requirements remain unresolved.
+The single configured outer review will assess this delta; the unchanged
+Round 10 mathematical review is retained.

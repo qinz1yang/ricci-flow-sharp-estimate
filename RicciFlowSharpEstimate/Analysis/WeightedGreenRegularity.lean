@@ -311,7 +311,6 @@ integrability alone. Its classical derivative is the actual weighted tail
 difference, which is locally absolutely continuous with derivative `-A` almost
 everywhere. No unweighted endpoint integrability or independent jet is assumed. -/
 theorem weighted_dirichlet_adjoint_local_regularity (A : ℝ → ℝ)
-    (hAm : AEStronglyMeasurable A areaμ)
     (hA : Integrable (fun s => s * (1 - s) * A s) areaμ) :
     let G := fun x => ∫ s, unitDirichletKernel s x * A s ∂areaμ
     let J := fun x => (∫ s in x..1, (1 - s) * A s) - ∫ s in (0 : ℝ)..x, s * A s
@@ -326,6 +325,12 @@ theorem weighted_dirichlet_adjoint_local_regularity (A : ℝ → ℝ)
     (∀ a ∈ Ioo (0 : ℝ) 1, ∀ b ∈ Ioo (0 : ℝ) 1,
       AbsolutelyContinuousOnInterval G a b ∧ AbsolutelyContinuousOnInterval J a b) ∧
     (∀ᵐ x ∂areaμ, HasDerivAt J (-A x) x) := by
+  have hweight : AEStronglyMeasurable (fun x : ℝ => x * (1 - x)) areaμ :=
+    (continuous_id.mul (continuous_const.sub continuous_id)).aestronglyMeasurable
+  have hAm : AEStronglyMeasurable A areaμ := by
+    apply (hA.aestronglyMeasurable.div₀ hweight).congr
+    filter_upwards [ae_restrict_mem measurableSet_Ioo] with x hx
+    exact mul_div_cancel_left₀ (A x) (mul_pos hx.1 (sub_pos.mpr hx.2)).ne'
   let G : ℝ → ℝ := fun x => ∫ s, unitDirichletKernel s x * A s ∂areaμ
   let J : ℝ → ℝ := fun x =>
     (∫ s in x..1, (1 - s) * A s) - ∫ s in (0 : ℝ)..x, s * A s

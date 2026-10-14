@@ -164,9 +164,7 @@ theorem IsRecoverableAreaCompetitor.exists_regular_curvature_representative
       (sub_pos.mpr hx.2)).trans_le (hg.2.2.1 x ⟨hx.1.le, hx.2.le⟩).1
   let A : ℝ → ℝ := fun x => weakCurvatureWarpCoefficient K r p z x - lam * r x ^ 2
   let B : ℝ → ℝ := weakCurvatureSlopeCoefficient K r p z
-  obtain ⟨hAm0, hAw0, hBi, _hDi⟩ := h.curvature_coefficients_integrable hC.le
-  have hAm : AEStronglyMeasurable A areaμ :=
-    hAm0.sub ((h.2.1.memLp.aestronglyMeasurable.pow 2).const_mul lam)
+  obtain ⟨_, hAw0, hBi, _⟩ := h.curvature_coefficients_integrable hC.le
   have hweightm : AEStronglyMeasurable (fun x : ℝ => x * (1 - x)) areaμ :=
     (continuous_id.mul (continuous_const.sub continuous_id)).aestronglyMeasurable
   have hweightb : ∀ᵐ x ∂areaμ, ‖x * (1 - x)‖ ≤ (1 : ℝ) := by
@@ -183,7 +181,7 @@ theorem IsRecoverableAreaCompetitor.exists_regular_curvature_representative
   let G : ℝ → ℝ := fun x => ∫ s, Analysis.unitDirichletKernel s x * A s ∂areaμ
   let T : ℝ → ℝ := fun x => ∫ s, Analysis.unitDirichletSlopeKernel s x * B s ∂areaμ
   obtain ⟨_hGformula, _hGCD, _hJC, _hGD, hGAC, _hJD⟩ :=
-    Analysis.weighted_dirichlet_adjoint_local_regularity A hAm hAw
+    Analysis.weighted_dirichlet_adjoint_local_regularity A hAw
   obtain ⟨_hTformula, hTAC, _hT0, _hT1, _hTD⟩ :=
     Analysis.slope_kernel_adjoint_absolutelyContinuous B hBi
   let c : ℝ → ℝ := fun x => 2 * warp K x * r x ^ 2

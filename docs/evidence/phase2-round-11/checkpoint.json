@@ -1,0 +1,117 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; nonlocal finite-action selection is unresolved",
+  "round_mainline_verdict": "NOT ACHIEVED; API repair receives no selection credit",
+  "parent_outer_reviewed_revision": "b19ca3881ea9b2f73ef26792cf36043816b8bb8d",
+  "native_receipt_sha256": "f45c7448efb4b37602759af3e9ad51667243593a61ace782bccd7cbc84c806d6",
+  "native_counts": {
+    "modules": 296,
+    "inputs": 301,
+    "outputs": 302,
+    "selectors": 1289,
+    "signature_queries": 1390,
+    "axiom_rows": 3635,
+    "private_axiom_rows": 1285,
+    "fresh_source_elaborations": 4,
+    "reused_source_elaborations": 292
+  },
+  "verified_provenance_receipts": 38,
+  "verified_source_provenance_records": 6316,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "new_public_declarations": {
+    "modules": 0,
+    "theorems": 0,
+    "definitions": 0
+  },
+  "changed_public_signature": "RicciFlowSharpEstimate.Analysis.weighted_dirichlet_adjoint_local_regularity",
+  "signature_delta": "Remove hAm; derive AEStronglyMeasurable A internally from hA via division by the positive parabolic weight a.e.",
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Analysis/WeightedGreenRegularity.lean": "b6655661dfde5dd92def28fcbc7a9e6cc1f13ad3626fdce9fd1889cffc93bf65",
+    "RicciFlowSharpEstimate/Geometry/AreaCurvatureControl.lean": "6e39575bc1184e2f035ed8dacf275cbca129af7bc7f4a86b55fd01c379941a59"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "d14e6bb1209beaacfc62b97ef8176bcf56ae7415a35921faf09617aeb2af3dd6",
+    "docs/theorem-map.md": "61c34dcd001e8f57f371cc4ff1d7f5ba5048a1f3acbcc3d865a0e1952f5728ce",
+    "docs/research/phase2-unrestricted.md": "9075f69e9bc24473400f29ca92fb3a2274476b67d9407c5ee1f56020794a16fb",
+    "docs/verification.md": "919e75ca4c8d394b3833598bce44576fd929901c4e5ce0881fd5a66bf2e55b6d"
+  },
+  "source_simplifier": {
+    "status": "NO CHANGE; delta-only source advice, not acceptance review",
+    "report_sha256": "fef8ddea78f1064cac4bd364d9aaa65ca94b45eae46419ba75d9b8e7a8ba7219",
+    "source_hashes": {
+      "packet": "/tmp/hmz-fence-4lzhkuwo/math-target-round11-q3-advice-1olxfcix",
+      "dependency_snapshot": "/tmp/hmz-fence-4lzhkuwo/math-target-round10-free-snapshot-mbsap6q8/published",
+      "scope": "Q3 delta only; source advice, not acceptance review",
+      "sha256": {
+        "WeightedGreenRegularity.lean": "b6655661dfde5dd92def28fcbc7a9e6cc1f13ad3626fdce9fd1889cffc93bf65",
+        "AreaCurvatureControl.lean": "6e39575bc1184e2f035ed8dacf275cbca129af7bc7f4a86b55fd01c379941a59",
+        "delta.diff": "54ce8cf5497e6f8134c99498a31e1ed6682617df00d8ee2d3a65c23d73fd7b86",
+        "bitlesson.md": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+      }
+    },
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round11-root-ml0ipvam/FreeIntervalChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "f17ab9f8b996b667d3a06f73fe5f9b996adff991c5550bf8c753ff6f0f15b71a",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-14T09:11:01.386118+00:00",
+      "name": "FreeIntervalChecks",
+      "source_path": "/tmp/hmz-fence-4lzhkuwo/math-target-round11-root-ml0ipvam/FreeIntervalChecks.lean",
+      "output_path": "docs/evidence/phase2-round-11/free-consumer.txt",
+      "completed_exec_session": 40602,
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final project imports; changed signature/caller and affected free-interval module match current native receipt",
+      "scope": "Same actual endpoint minimum, original curvature/free interval, mass, action, global minimality and all four strong recovery limits"
+    }
+  ],
+  "checker_policy_delta": "None: checker bytes identical to b19ca38",
+  "reuse_origin": "docs/evidence/phase2-round-10-scale/receipt.json",
+  "reuse_reason": "Existing gate requires every source in the prior receipt unchanged; two Q3 sources occur after the 292-leaf scale prefix. Failed immediate-parent reuse attempt is preserved locally and not relied on.",
+  "independent_review": "Single configured Round11 outer delta review pending; unchanged Round10 proof/native review retained",
+  "provisional_research": [
+    {
+      "path": "/tmp/hmz-fence-4lzhkuwo/math-target-round11-root-ml0ipvam/finite-box-comparison.md",
+      "sha256": "dc4c618633ef83e82a8212efcb7bb31f1fc8657e2c81c6a1545d29fe7bf92fe3",
+      "status": "PROVISIONAL source-level research; no strict endpoint comparison, native theorem or exact physical refutation"
+    },
+    {
+      "path": "/tmp/hmz-fence-4lzhkuwo/math-target-round11-spectral-mgrp6tgf/least-value-rearrangement-report.md",
+      "sha256": "169b49e4803403255a8071ba593d320e5812b4d6f9d89b6df1e8cc8b1c4a442a",
+      "status": "PROVISIONAL source-level research; no strict endpoint comparison, native theorem or exact physical refutation"
+    },
+    {
+      "path": "/tmp/hmz-fence-4lzhkuwo/math-target-round11-cap-pn8rl2is/cap-comparison-provisional.md",
+      "sha256": "ae7f941b3cf96a7ba641667d81f70deb3831ccc946a01711882a2b5be235e771",
+      "status": "PROVISIONAL source-level research; no strict endpoint comparison, native theorem or exact physical refutation"
+    }
+  ],
+  "remaining_round_objective": "Construct a strict negative same-cap joint competitor under beta>0 or otherwise prove the actual existential endpoint orientation. No finite comparison tested here supplies the decisive sign.",
+  "remaining_original_gates": [
+    "Selected-reference all-smooth-probe coverage",
+    "Independent threshold characterization and justified selection",
+    "Cross-geometry global sufficiency",
+    "Exact original smooth endpoint classification and all-form transfer",
+    "Final manuscript/research, native, independent-review and private delivery"
+  ]
+}

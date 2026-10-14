@@ -731,3 +731,10 @@ records five public theorems and no definitions. The interval is produced;
 no source sign, curvature derivative or nodal-set structure is assumed.
 A strict negative full variation or global inverse-sum comparison remains
 required for the contracted endpoint-selection objective.
+
+Round 11 internalizes the weighted Green theorem's derived source
+measurability: its public input is now only weighted integrability. The actual
+curvature-control caller is updated; all conclusions and object ties remain.
+This bounded API correction introduces no new theorem or definition and does
+not settle the nonlocal selection comparison. See the
+[API checkpoint](evidence/phase2-round-11/checkpoint.json).
