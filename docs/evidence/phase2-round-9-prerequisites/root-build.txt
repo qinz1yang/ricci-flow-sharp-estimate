@@ -1,0 +1,11 @@
+✔ [9914/9924] Built RicciFlowSharpEstimate.Geometry.AreaInverseEstimate (12s)
+✔ [9915/9924] Built RicciFlowSharpEstimate.Analysis.ParabolicBoundary (13s)
+✔ [9916/9924] Built RicciFlowSharpEstimate.Analysis.ParabolicWeightedPointwise (15s)
+✔ [9917/9924] Built RicciFlowSharpEstimate.Analysis.FiniteIntervalExtension (17s)
+✔ [9918/9924] Built RicciFlowSharpEstimate.Analysis.FiniteHadamardFactor (11s)
+✔ [9919/9924] Built RicciFlowSharpEstimate.Analysis.UnitIntervalGreenRegularity (12s)
+✔ [9920/9924] Built RicciFlowSharpEstimate.Geometry.WeakProbeDirichletDomain (16s)
+✔ [9921/9924] Built RicciFlowSharpEstimate.Analysis.FiniteSimplePoleQuotient (9.3s)
+✔ [9922/9924] Built RicciFlowSharpEstimate.Geometry.AreaGreenQuotientRegularity (9.6s)
+✔ [9923/9924] Built RicciFlowSharpEstimate (15s)
+Build completed successfully (9924 jobs).

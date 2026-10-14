@@ -97,8 +97,8 @@ qualification. It also produces original smooth negative metric/form witnesses
 with curvature ratio strictly below every prescribed cap larger than the
 threshold. Their actual normalized curvature, unit-mass probe, inverse maps,
 derivatives, all-sphere curvature and same-metric dissipation equations are
-retained. Four public theorems in two leaves pass native gates; the single
-Round 8 outer review is pending. A native consumer independently derives the
+retained. Four public theorems in two leaves pass native gates and the single
+Round 8 outer review at `43347fb`. A native consumer independently derives the
 original form's nonvanishing from unit mass and its exact probe equation.
 
 The Round 8 sign-selection objective remains unresolved. Neither the proposed
@@ -109,6 +109,19 @@ or a refutation of the exact existential endpoint target. All-probe coverage,
 determining selection and comparison across geometries, original smooth
 endpoint equality/attainment, and final acceptance remain open. The smooth
 negative-witness theorem does not identify the threshold.
+
+Round 9's first checkpoint supplies the actual transformed weak domain and
+the analytic estimates for the inverse-source split. The literal product f*r
+is globally absolutely continuous, has zero traces, and belongs to L² with
+its tied derivative; its local second-order equation is proved without K′.
+A box-only operator estimate controls all three original graph norms without
+mass normalization. Finite-order extension and division at simple endpoint
+zeros prove the Green/warp quotient gains one derivative through both poles,
+starting with continuous source data. A weighted pointwise bound controls the
+curvature-error multiplier. Nine leaves, 21 public theorems and two definitions
+pass native gates. The actual smooth inverse, simultaneous same-cap recovery
+and the separate minimum-level sign comparison are still being constructed;
+these prerequisites are not a split or sign producer. Outer review is pending.
 
 The complete finite mathematical suite is natively proved and passed independent
 whole-suite acceptance in Round 16 at `2bda267`.

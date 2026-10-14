@@ -2813,3 +2813,69 @@ probe coverage, a genuinely determining characterization and selection,
 comparison across all original geometries, precise original smooth endpoint
 equality/attainment and all final review/manuscript gates remain required.
 Phase I is COMPLETE; Phase II is OPEN.
+
+## Round 9 first checkpoint: actual inverse domain and pole regularity
+
+The Round 8 review accepts the strict round gap and original smooth negative
+witnesses, but the endpoint sign objective remains open. Its prescribed next
+child is the actual inverse split with simultaneous same-cap recovery. The
+following are native prerequisites, not completion of that child.
+
+Write f=warp K, b=warpSlope K and q=L_K r. The literal transformed function
+y=f*r is absolutely continuous on [0,1], with y(0)=y(1)=0, y in L² and
+y'=b*r+f*p in L². A generic first-weak-derivative theorem proves this using
+the actual weak product, the linear pole bound on f, and square integrability
+of r and sqrt(w)*p. Reciprocal-distance integrability forces the traces of the
+absolutely continuous extension; substituting f=0 at a pole alone would not
+establish them. The probe itself has no imposed endpoint value. For continuous
+interior r,p, the same object's transformed derivative is locally absolutely
+continuous and obeys
+
+\[
+ y''+(K/f)y=q\quad\text{almost everywhere on }(0,1).
+\]
+
+The actual f''=-2K law supplies the curvature term without differentiating K.
+The public consumer applies both statements to the already produced zero
+minimum, retaining its original recoverability and global minimality.
+
+For smooth probes, the nonnegative square integral of f(q+kappa*r)^2 and the
+accepted weighted operator pairing give the native estimate
+
+\[
+ \kappa^2 m+2\kappa G\le E,\qquad
+ E=\int f q^2,\quad G=\int f^2(r')^2.
+\]
+
+The existing Hardy and derivative estimates then imply
+integral(r²)+integral(w(r')²)+integral(w³(r'')²)<=M(kappa,Lambda)*E,
+with M selected before every curvature and probe in that positive box. No
+mass normalization, K′ bound or probe pole condition occurs. Separately,
+w(x)r(x)²<=4*(integral(r²)+integral(w(r')²)) follows by applying the interval
+pointwise estimate on [x/2,(x+1)/2]. This controls multiplication of curvature
+L² errors by sqrt(w)*r in the upcoming inverse stability argument.
+
+For pole regularity, finite C^n data on a closed interval are extended only
+with that finite order: extend their within derivative inductively and
+integrate, starting with continuous clamping. Weighted derivative averages
+prove finite regularity of the released Hadamard factor. Factoring each of
+two distinct simple endpoint zeros locally loses only one derivative.
+The exact Dirichlet primitive gains two derivatives from its source. Dividing
+by f therefore gives a one-derivative gain for the physical Green quotient,
+whose endpoint values are its explicit weighted source moments divided by two.
+The native consumer includes the merely continuous source |x-1/2|, so no
+unproved smooth extension of finite-order source data enters this step.
+
+The selected construction route now seeks the genuine contraction fixed point
+of u=P_K(g+K*u), followed by this finite-order bootstrap and the accepted smooth
+interval extension. The curvature row mass one half is the proposed contraction
+mechanism and still needs its producer in the next packet. The weighted graph
+estimate will support completion and stability for the actual weighted sources.
+Neither smooth inversion nor simultaneous raw recovery is claimed by this
+first checkpoint. The additional implication A_K(U+V)<=0 remains entirely
+separate from existence of the inverse components.
+
+The [native evidence](../evidence/phase2-round-9-prerequisites/checkpoint.json)
+supports the preceding domain/estimate/regularity statements. It does not
+identify C_rot, select an operator sign, establish arbitrary-probe coverage or
+settle original smooth endpoint attainment. All original final gates remain.

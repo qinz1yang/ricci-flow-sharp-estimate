@@ -1,0 +1,127 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; inverse-domain/regularity prerequisite checkpoint, actual inverse/recovery and parent sign remain open",
+  "parent_outer_reviewed_revision": "43347fb9fc4a77d7e4349e98c668da7b254fa23b",
+  "parent_native_receipt": "docs/evidence/phase2-round-8/receipt.json",
+  "native_receipt_sha256": "fd6bd3ba91fdc2232ec9f2d445678c253d24c8789a8272b8208021e99194250d",
+  "native_counts": {
+    "modules": 278,
+    "inputs": 283,
+    "outputs": 284,
+    "selectors": 1270,
+    "signature_queries": 1371,
+    "axiom_rows": 3442,
+    "private_axiom_rows": 1128,
+    "fresh_source_elaborations": 9,
+    "reused_source_elaborations": 269
+  },
+  "source_provenance": {
+    "verified_provenance_receipts": 34,
+    "verified_source_provenance_records": 5157
+  },
+  "new_public_declarations": {
+    "modules": 9,
+    "theorems": 21,
+    "definitions": 2
+  },
+  "public_headlines": [
+    "RicciFlowSharpEstimate.Analysis.integral_contDiff_succ",
+    "RicciFlowSharpEstimate.Analysis.exists_contDiff_nat_extension_Icc",
+    "RicciFlowSharpEstimate.Analysis.hadamardFactor_contDiff_nat",
+    "RicciFlowSharpEstimate.Analysis.hadamardFactor_apply_center",
+    "RicciFlowSharpEstimate.Analysis.sub_mul_hadamardFactor_of_contDiff_one",
+    "RicciFlowSharpEstimate.Analysis.exists_contDiff_nat_sub_factor_Icc",
+    "RicciFlowSharpEstimate.Analysis.contDiffOn_quotient_of_simple_endpoint_zeros",
+    "RicciFlowSharpEstimate.Analysis.unitDirichletPrimitive",
+    "RicciFlowSharpEstimate.Analysis.unitDirichletPrimitive_hasDerivAt",
+    "RicciFlowSharpEstimate.Analysis.unitDirichletPrimitive_contDiff",
+    "RicciFlowSharpEstimate.Analysis.unitDirichletPrimitive_zero",
+    "RicciFlowSharpEstimate.Analysis.unitDirichletPrimitive_one",
+    "RicciFlowSharpEstimate.Analysis.deriv_unitDirichletPrimitive_zero",
+    "RicciFlowSharpEstimate.Analysis.deriv_unitDirichletPrimitive_one",
+    "RicciFlowSharpEstimate.Analysis.unitDirichletPrimitive_eq_integral",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.areaGreenQuotient",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.areaGreenQuotient_contDiffOn_succ",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.probeMass_gradient_le_probeOperatorEnergy",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.exists_uniform_meridional_inverse_graph_bound",
+    "RicciFlowSharpEstimate.Analysis.HasWeakDerivOn.absolutelyContinuous_mul_of_parabolic_bounds",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.transformed_probe_absolutelyContinuous",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.transformed_probe_equation",
+    "RicciFlowSharpEstimate.Analysis.parabolic_weight_mul_sq_le_energy"
+  ],
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Analysis/FiniteIntervalExtension.lean": "f91447f5485bcab4cad6077c8be052b4cf264ff0e949eff8863832fc16c36fe4",
+    "RicciFlowSharpEstimate/Analysis/FiniteHadamardFactor.lean": "dea66a4aada82be21282daf3c6f5114b55d4c1cae0e6455f5e8a643ad8d6a1c7",
+    "RicciFlowSharpEstimate/Analysis/FiniteSimplePoleQuotient.lean": "c0ea0c5977ff7ba6ed5e16b1714746b6abe3ce80f25091a8f218f1d67fda2027",
+    "RicciFlowSharpEstimate/Analysis/UnitIntervalGreenRegularity.lean": "6f82d5e26dbf83a2ccf1958db3043ec075bd2c69000dd1016d75e807ef4a8014",
+    "RicciFlowSharpEstimate/Geometry/AreaGreenQuotientRegularity.lean": "0a6db7687103e437d8faf3b9034dfc699b862fc1e83db059d71bd3f4309adfe6",
+    "RicciFlowSharpEstimate/Geometry/AreaInverseEstimate.lean": "06297a4db8620272e7806e7f5aacfa65c13cc2ad6f507d809f339c27a37e5725",
+    "RicciFlowSharpEstimate/Analysis/ParabolicBoundary.lean": "0aa4a3382c20fd08d51235086761fc8eb882f76d89b7d3e9b73327b63352b603",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeDirichletDomain.lean": "4250a76f7ea0f33adb21f8838dc2ba3cf0466dcb38aab1ee42ffd2245dd8e2ea",
+    "RicciFlowSharpEstimate/Analysis/ParabolicWeightedPointwise.lean": "ff740bc052a1b6bbff7aa3ecfe8790988ac924e23f142e10fc00a2e32de8a721"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "8931a78134c30409ad2b5a35c5e307121472bbb9e6673192e6fba433e872ea2e",
+    "docs/theorem-map.md": "5e21ca00a220ecd0106c0bfe80aceea6fd6865c1e51101129602692fe3ba3c99",
+    "docs/research/phase2-unrestricted.md": "59c955e5d63ea3a54edb167efe7c15b689e760f2eef91eca09d2c32c9cf863d0",
+    "docs/verification.md": "a92d4caa1eec7390deb5d1305edfe03b3b048b4805fdd543fe0cc28b88e0b0aa"
+  },
+  "source_simplifier": {
+    "status": "No change recommended; source advice, not acceptance review",
+    "source_hashes": {
+      "RicciFlowSharpEstimate/Analysis/FiniteIntervalExtension.lean": "f91447f5485bcab4cad6077c8be052b4cf264ff0e949eff8863832fc16c36fe4",
+      "RicciFlowSharpEstimate/Analysis/FiniteHadamardFactor.lean": "dea66a4aada82be21282daf3c6f5114b55d4c1cae0e6455f5e8a643ad8d6a1c7",
+      "RicciFlowSharpEstimate/Analysis/FiniteSimplePoleQuotient.lean": "c0ea0c5977ff7ba6ed5e16b1714746b6abe3ce80f25091a8f218f1d67fda2027",
+      "RicciFlowSharpEstimate/Analysis/UnitIntervalGreenRegularity.lean": "6f82d5e26dbf83a2ccf1958db3043ec075bd2c69000dd1016d75e807ef4a8014",
+      "RicciFlowSharpEstimate/Analysis/ParabolicBoundary.lean": "0aa4a3382c20fd08d51235086761fc8eb882f76d89b7d3e9b73327b63352b603",
+      "RicciFlowSharpEstimate/Analysis/ParabolicWeightedPointwise.lean": "ff740bc052a1b6bbff7aa3ecfe8790988ac924e23f142e10fc00a2e32de8a721",
+      "RicciFlowSharpEstimate/Geometry/AreaGreenQuotientRegularity.lean": "0a6db7687103e437d8faf3b9034dfc699b862fc1e83db059d71bd3f4309adfe6",
+      "RicciFlowSharpEstimate/Geometry/AreaInverseEstimate.lean": "06297a4db8620272e7806e7f5aacfa65c13cc2ad6f507d809f339c27a37e5725",
+      "RicciFlowSharpEstimate/Geometry/WeakProbeDirichletDomain.lean": "4250a76f7ea0f33adb21f8838dc2ba3cf0466dcb38aab1ee42ffd2245dd8e2ea",
+      "prerequisite-consumer/InversePrerequisiteChecks.lean": "650b26dbc9a72da0cbc3105ada760aa4aa4bfd30077ce2eced9c3220e8e3565c",
+      "RicciFlowSharpEstimate.lean": "1d52ed772df762a217cb3ef1a1d3179c952b862cb66f5d94b864f779541e6692",
+      "bitlesson.md": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855",
+      "phase2-TASK.md": "6db4a1fc3ef89ea17eb6283e9fa16c4fc0de230b55dd29334fef70d942992948",
+      "RicciFlowSharpEstimate/Geometry/AreaProfileCalculus.lean": "040e906268ead59f3a61df56cc113af6d2c31533b8a2e434c8a703ad9d9ac5ca",
+      "RicciFlowSharpEstimate/Geometry/RecoverableAreaRegularity.lean": "ea4ff2ecd6978aa0b434713f80fdcbcb55af76dc5174f566d06245e8a4f10f08",
+      "RicciFlowSharpEstimate/Analysis/UnitIntervalGreen.lean": "a4cf2f69beb07009e99d1925b728d2ccfee6ffb9561bdfce1fc52c800f6edb54",
+      "DifferentialGeometry/Analysis/Calculus/Taylor.lean": "dd69f691b832425be949341a0ed51f43feb5facb07b997ae9ecd53e4b4b2f341"
+    },
+    "report_sha256": "d6058b8ab4dfeb3fb8ba0e5edb20a70d41bab4a3dde843f0d5b365fde7eff3a7",
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/InversePrerequisiteChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "650b26dbc9a72da0cbc3105ada760aa4aa4bfd30077ce2eced9c3220e8e3565c",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-14T01:41:56.625414+00:00",
+      "name": "InversePrerequisiteChecks",
+      "source_path": "/tmp/hmz-fence-4lzhkuwo/math-target-round9-root-gx_ywiho/InversePrerequisiteChecks.lean",
+      "output_path": "docs/evidence/phase2-round-9-prerequisites/prerequisite-consumer.txt",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "completed_exec_session": 79594,
+      "scope": "Same actual endpoint zero minimum retains recoverability/minimality and gains true transformed H1 zero traces and local equation; continuous corner source gains one derivative through both Green/warp poles.",
+      "native_debt": false
+    }
+  ],
+  "checker_policy_delta": "Only inventories/selectors/signature queries; remaining policy AST matches parent.",
+  "independent_review": "Single configured Round 9 outer review pending. No duplicate review of unchanged Round 8 mathematics.",
+  "remaining_required_mathematics": [
+    "Construct the actual smooth meridional inverse from a contraction, preserving smoothness and equations through both poles.",
+    "Prove coefficient/source stability, full graph completion, smooth positive-source approximation and simultaneous same-cap raw inverse recovery with zero-source cases and justified normalization.",
+    "Resolve the separate minimum-level comparison A_K(U+V)<=0 or construct an actual negative-action same-cap competitor under positive cross pairing.",
+    "Prove all-smooth-probe coverage, genuinely determining characterization/selection and global comparison, exact original smooth endpoint equality/attainment and final manuscript/native/review/private-delivery closure."
+  ]
+}

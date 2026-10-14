@@ -646,3 +646,23 @@ physical nonvanishing from the returned unit mass without using negative
 dissipation. The single Round 8 outer review is pending. Endpoint operator-sign
 selection remains unresolved; no conditional sign wrapper is added. These
 results do not determine C_rot or prove original smooth endpoint attainment.
+
+## Phase II Round 9: inverse-domain and pole-regularity prerequisites
+
+The Round 8 outer review verifies the four preceding theorems at `43347fb`.
+The first Round 9 checkpoint adds:
+
+| Mathematical result | Canonical home |
+|---|---|
+| Finite-order closed-interval extension, finite regularity of the released Hadamard factor, and loss of only one derivative at two distinct simple denominator zeros | `Analysis/FiniteIntervalExtension.lean`, `Analysis/FiniteHadamardFactor.lean`, `Analysis/FiniteSimplePoleQuotient.lean` |
+| Exact Dirichlet primitive, its two-derivative gain, and the physical Green/warp quotient's one-derivative gain through both poles | `Analysis/UnitIntervalGreenRegularity.lean`, `Geometry/AreaGreenQuotientRegularity.lean` |
+| Operator energy controls physical mass, gradient and all three graph energies using only a positive curvature box | `Geometry/AreaInverseEstimate.lean` |
+| Linear pole vanishing gives a genuine zero-trace H¹ product; the literal transformed endpoint probe satisfies its actual weak equation | `Analysis/ParabolicBoundary.lean`, `Geometry/WeakProbeDirichletDomain.lean` |
+| Weighted pointwise control from the first two graph energies, including both endpoints | `Analysis/ParabolicWeightedPointwise.lean` |
+
+These nine leaves contain 21 public theorems and two definitions. The public
+Hadamard factor is the existing released object. No mass-one condition is
+added to raw inverse estimates and no probe pole value is imposed. The
+[native checkpoint](evidence/phase2-round-9-prerequisites/checkpoint.json)
+covers this prerequisite scope only. The actual smooth inverse, common
+recovery and sign selection remain open at this checkpoint.

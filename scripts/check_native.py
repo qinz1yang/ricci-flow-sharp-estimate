@@ -284,6 +284,15 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaThresholdMinimum",
     "RicciFlowSharpEstimate.Geometry.AreaRoundGap",
     "RicciFlowSharpEstimate.Geometry.RotationalSharpWitness",
+    "RicciFlowSharpEstimate.Analysis.FiniteIntervalExtension",
+    "RicciFlowSharpEstimate.Analysis.FiniteHadamardFactor",
+    "RicciFlowSharpEstimate.Analysis.FiniteSimplePoleQuotient",
+    "RicciFlowSharpEstimate.Analysis.UnitIntervalGreenRegularity",
+    "RicciFlowSharpEstimate.Geometry.AreaGreenQuotientRegularity",
+    "RicciFlowSharpEstimate.Geometry.AreaInverseEstimate",
+    "RicciFlowSharpEstimate.Analysis.ParabolicBoundary",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeDirichletDomain",
+    "RicciFlowSharpEstimate.Analysis.ParabolicWeightedPointwise",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1554,7 +1563,30 @@ SELECTOR = r"""
       area ++ `smoothAreaInfimum_one,
       geo ++ `one_lt_rotationalThreshold,
       area ++ `exists_smooth_area_competitor_action_neg_of_rotationalThreshold_lt,
-      geo ++ `exists_smooth_geometric_negative_witness_of_rotationalThreshold_lt
+      geo ++ `exists_smooth_geometric_negative_witness_of_rotationalThreshold_lt,
+      analysis ++ `integral_contDiff_succ,
+      analysis ++ `exists_contDiff_nat_extension_Icc,
+      analysis ++ `hadamardFactor_contDiff_nat,
+      analysis ++ `hadamardFactor_apply_center,
+      analysis ++ `sub_mul_hadamardFactor_of_contDiff_one,
+      analysis ++ `exists_contDiff_nat_sub_factor_Icc,
+      analysis ++ `contDiffOn_quotient_of_simple_endpoint_zeros,
+      analysis ++ `unitDirichletPrimitive,
+      analysis ++ `unitDirichletPrimitive_hasDerivAt,
+      analysis ++ `unitDirichletPrimitive_contDiff,
+      analysis ++ `unitDirichletPrimitive_zero,
+      analysis ++ `unitDirichletPrimitive_one,
+      analysis ++ `deriv_unitDirichletPrimitive_zero,
+      analysis ++ `deriv_unitDirichletPrimitive_one,
+      analysis ++ `unitDirichletPrimitive_eq_integral,
+      area ++ `areaGreenQuotient,
+      area ++ `areaGreenQuotient_contDiffOn_succ,
+      area ++ `probeMass_gradient_le_probeOperatorEnergy,
+      area ++ `exists_uniform_meridional_inverse_graph_bound,
+      analysis ++ `HasWeakDerivOn.absolutelyContinuous_mul_of_parabolic_bounds,
+      area ++ `IsRecoverableAreaCompetitor.transformed_probe_absolutelyContinuous,
+      area ++ `IsRecoverableAreaCompetitor.transformed_probe_equation,
+      analysis ++ `parabolic_weight_mul_sq_le_energy
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4076,6 +4108,52 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check exists_smooth_area_competitor_action_neg_of_rotationalThreshold_lt
 open RicciFlowSharpEstimate.Geometry in
 #check exists_smooth_geometric_negative_witness_of_rotationalThreshold_lt
+open RicciFlowSharpEstimate.Analysis in
+#check integral_contDiff_succ
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_nat_extension_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check hadamardFactor_contDiff_nat
+open RicciFlowSharpEstimate.Analysis in
+#check hadamardFactor_apply_center
+open RicciFlowSharpEstimate.Analysis in
+#check sub_mul_hadamardFactor_of_contDiff_one
+open RicciFlowSharpEstimate.Analysis in
+#check exists_contDiff_nat_sub_factor_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check contDiffOn_quotient_of_simple_endpoint_zeros
+open RicciFlowSharpEstimate.Analysis in
+#check unitDirichletPrimitive
+open RicciFlowSharpEstimate.Analysis in
+#check unitDirichletPrimitive_hasDerivAt
+open RicciFlowSharpEstimate.Analysis in
+#check unitDirichletPrimitive_contDiff
+open RicciFlowSharpEstimate.Analysis in
+#check unitDirichletPrimitive_zero
+open RicciFlowSharpEstimate.Analysis in
+#check unitDirichletPrimitive_one
+open RicciFlowSharpEstimate.Analysis in
+#check deriv_unitDirichletPrimitive_zero
+open RicciFlowSharpEstimate.Analysis in
+#check deriv_unitDirichletPrimitive_one
+open RicciFlowSharpEstimate.Analysis in
+#check unitDirichletPrimitive_eq_integral
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check areaGreenQuotient
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check areaGreenQuotient_contDiffOn_succ
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check probeMass_gradient_le_probeOperatorEnergy
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check exists_uniform_meridional_inverse_graph_bound
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.absolutelyContinuous_mul_of_parabolic_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.transformed_probe_absolutelyContinuous
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.transformed_probe_equation
+open RicciFlowSharpEstimate.Analysis in
+#check parabolic_weight_mul_sq_le_energy
 """
 
 

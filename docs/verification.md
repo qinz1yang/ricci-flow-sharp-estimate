@@ -1536,3 +1536,42 @@ No typesetting or Phase-I modification occurred. Phase I is COMPLETE; Phase II
 is OPEN. The round's endpoint operator-sign objective remains unresolved, as
 do determining selection, all-probe and cross-geometry comparison, original
 smooth endpoint equality/attainment and final suite acceptance.
+
+## Phase II, Round 9 first prerequisite checkpoint
+
+Nine new leaves contain 21 public theorems and two definitions. Their natural
+scope is the transformed zero-trace weak domain, uniform operator graph
+estimates, finite-order extension/simple-pole division, physical Green quotient
+regularity and a weighted pointwise bound. Smooth inversion and simultaneous
+same-cap recovery are not asserted by this checkpoint.
+
+Root ran the coherent native gate under the writer lock:
+
+```sh
+python3 scripts/check_native.py --output-dir docs/evidence/phase2-round-9-prerequisites \
+  --reuse-receipt docs/evidence/phase2-round-8/receipt.json
+```
+
+Receipt SHA256 is
+`fd6bd3ba91fdc2232ec9f2d445678c253d24c8789a8272b8208021e99194250d`.
+The gate covers 278 modules, 283 inputs and 284 successful command records;
+nine fresh silent source elaborations, with 269 matching accepted elaborations
+reused. Root, source/declaration linters and declaration-kind inspection
+pass. There are 1,270 selectors, 1,371 exact queries and 3,442 actual transitive
+axiom rows, including 1,128 private rows, using only permitted foundations.
+Source/output/driver reconstruction and 5,157 source-command records through
+34 receipts match. Checker policy changes are only inventories and queries.
+
+`InversePrerequisiteChecks.lean` completed silently (Root exec session 79594,
+exit 0), applying the new domain and equation to the same actual endpoint zero
+minimum without a sign or supplied transformed boundary premise. It also
+instantiates one-derivative pole regularity for the continuous corner source
+|x-1/2|. Bounded source simplifier advice finds no required changes; it is not
+acceptance review. Exact bindings are in the
+[checkpoint](evidence/phase2-round-9-prerequisites/checkpoint.json).
+
+All 269 parent leaves and previous evidence remain unchanged. Phase I's paper,
+historical workflow and pins are preserved. No typesetting occurred. The single
+configured Round 9 outer review remains pending. The inverse split, its parent
+sign selection and the complete determining/global/smooth-endpoint goal remain
+open and implementation continues beyond this prerequisite checkpoint.
