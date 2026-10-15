@@ -347,6 +347,11 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.WeakProbePolarFluxBounds",
     "RicciFlowSharpEstimate.Geometry.WeakProbeBoundedPolarStates",
     "RicciFlowSharpEstimate.Geometry.WeakCurvaturePolarRate",
+    "RicciFlowSharpEstimate.Analysis.IntegralAverageRemainder",
+    "RicciFlowSharpEstimate.Analysis.ClampedIteratedAverage",
+    "RicciFlowSharpEstimate.Analysis.ClampedIntegralFeedback",
+    "RicciFlowSharpEstimate.Geometry.AreaPrimitivePoleRates",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvaturePoleLimits",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1709,7 +1714,18 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.polar_corrected_flux_derivatives_of_minimum,
       area ++ `IsRecoverableAreaCompetitor.polar_corrected_flux_bounds_of_minimum,
       area ++ `IsRecoverableAreaCompetitor.probe_bounded_polar_states_of_minimum,
-      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_polar_derivative_rate_of_minimum
+      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_polar_derivative_rate_of_minimum,
+      analysis ++ `interval_average_tendsto_zero,
+      analysis ++ `tendsto_div_sub_interval_average_of_deriv,
+      analysis ++ `abs_interval_average_sub_le_of_ae_bound,
+      analysis ++ `integrableOn_interval_average_of_ae_bound,
+      analysis ++ `abs_iterated_interval_average_sub_le_of_ae_bound,
+      analysis ++ `tendsto_of_clamped_iterated_average,
+      analysis ++ `tendsto_clamp_of_derivative_average,
+      area ++ `IsRecoverableAreaCompetitor.primitive_first_order_pole_rates,
+      area ++ `IsRecoverableAreaCompetitor.primitive_curvature_average_pole_rates,
+      area ++
+        `IsRecoverableAreaCompetitor.exists_curvature_pole_limits_at_nonzero_traces_of_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4414,6 +4430,26 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.probe_bounded_polar_states_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.curvature_adjoint_polar_derivative_rate_of_minimum
+open RicciFlowSharpEstimate.Analysis in
+#check interval_average_tendsto_zero
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_div_sub_interval_average_of_deriv
+open RicciFlowSharpEstimate.Analysis in
+#check abs_interval_average_sub_le_of_ae_bound
+open RicciFlowSharpEstimate.Analysis in
+#check integrableOn_interval_average_of_ae_bound
+open RicciFlowSharpEstimate.Analysis in
+#check abs_iterated_interval_average_sub_le_of_ae_bound
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_of_clamped_iterated_average
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_clamp_of_derivative_average
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.primitive_first_order_pole_rates
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.primitive_curvature_average_pole_rates
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_curvature_pole_limits_at_nonzero_traces_of_minimum
 
 """
 

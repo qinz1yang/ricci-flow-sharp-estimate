@@ -1,0 +1,175 @@
+{
+  "native_receipt_sha256": "61746e82349a9e9f2153c6d7336bf5cee4254176bfceecfd680269c6c89d5454",
+  "native_counts": {
+    "modules": 337,
+    "inputs": 342,
+    "outputs": 343,
+    "selectors": 1348,
+    "signature_queries": 1449,
+    "axiom_rows": 4005,
+    "private_axiom_rows": 1468,
+    "fresh_source_elaborations": 5,
+    "reused_source_elaborations": 332
+  },
+  "verified_provenance_receipts": 43,
+  "verified_source_provenance_records": 7919,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot remains undetermined",
+  "round_mainline_status": "Actual nonzero-probe-trace curvature pole limits and cancelling averaged-feedback selection natively established; single outer delta review pending",
+  "parent_revision": "e33c0e183948b31218546f27b1aecbf45440092e",
+  "parent_review_scope": "Round17 bounded packet passes its single outer review; unchanged accepted mathematics/evidence reused",
+  "new_public_declarations": {
+    "modules": 5,
+    "theorems": 10,
+    "definitions": 0
+  },
+  "declarations": [
+    "RicciFlowSharpEstimate.Analysis.interval_average_tendsto_zero",
+    "RicciFlowSharpEstimate.Analysis.tendsto_div_sub_interval_average_of_deriv",
+    "RicciFlowSharpEstimate.Analysis.abs_interval_average_sub_le_of_ae_bound",
+    "RicciFlowSharpEstimate.Analysis.integrableOn_interval_average_of_ae_bound",
+    "RicciFlowSharpEstimate.Analysis.abs_iterated_interval_average_sub_le_of_ae_bound",
+    "RicciFlowSharpEstimate.Analysis.tendsto_of_clamped_iterated_average",
+    "RicciFlowSharpEstimate.Analysis.tendsto_clamp_of_derivative_average",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.primitive_first_order_pole_rates",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.primitive_curvature_average_pole_rates",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_curvature_pole_limits_at_nonzero_traces_of_minimum"
+  ],
+  "source_sha256": {
+    "RicciFlowSharpEstimate/Analysis/IntegralAverageRemainder.lean": "01e3c73df653e414337820094966b7623b2646f333009e0ea65c3c90fae1c4cc",
+    "RicciFlowSharpEstimate/Analysis/ClampedIteratedAverage.lean": "6cd20e689aa3ca5c53717255f59be49d55ead66fcbca0b3f75c652353a0f2f6b",
+    "RicciFlowSharpEstimate/Analysis/ClampedIntegralFeedback.lean": "44d2ee93d9ffb8b5f834a9665d3bf660919074c083d84ae7e9f2103c54a33860",
+    "RicciFlowSharpEstimate/Geometry/AreaPrimitivePoleRates.lean": "f191b2037a137ab22fdf83715d698341d8b6742667b83e371c966755a99ed4d0",
+    "RicciFlowSharpEstimate/Geometry/AreaCurvaturePoleLimits.lean": "35a4ce3f1e90750b0ff124c0e3f7132d91b964f6c3954bade55ff6c035ba3199"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "66ec5f1ba73c5f2782144425b46cce74f8281afd5f9397b383c86693f71fb92d",
+    "docs/theorem-map.md": "8c4cbdf7d9626e5a973391fe7fe50090163f948462adf30c4b04ff0473689cfa",
+    "docs/research/phase2-unrestricted.md": "5af327e55d1bf606508cace368d79242528f83850e86173baf4da7d15377962d",
+    "docs/verification.md": "6e3bf050cde75ee5d734ad7554f90fd5b3b49751a3d830cf7b7f3e0b716d6926"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round18-root-mi8jnddb/statement-audit.md",
+    "sha256": "76712b171518b7e1b638d4936eaf85c8309b6113800008d7ee8056e6524773ef",
+    "scope": "Root mathematical/integration audit, not independent acceptance"
+  },
+  "source_simplifier": {
+    "frozen_files_verified": 5,
+    "changed_only_by_two_reported_private_proof_substitutions": [
+      "RicciFlowSharpEstimate/Geometry/AreaCurvaturePoleLimits.lean"
+    ],
+    "all_ten_public_statements_and_witness_ties_unchanged": true,
+    "source_only_not_acceptance": true,
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round18-advice-jxhmut3b/advice/report.md",
+    "report_sha256": "8f1c42e16f595ee61b78005bbe62e5194b8c0e0f319a7bcbe721b60637c62e6e",
+    "patch_sha256": "475479503f34b573690a17793c0c2e6ae643fdcae697530a773c28f87b2e8dcd",
+    "input_snapshot": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round18-advice-jxhmut3b/frozen",
+    "input_manifest_sha256": "03238fc03d2cb9147978e4995b61e27a2402328a8fd176d53b95b6685dbf42f7",
+    "integrated_diff_sha256": "d4bd3bc3815dbe5f3bac47be4c335e0272a426d1360df667c668e68309effec5",
+    "lease": "released"
+  },
+  "worker_packet": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round18-average-q9fg7yk9/ClampedIteratedAverage.lean",
+    "sha256": "e4e3f588739442990ce5b0a8e45f3b71bef5ac9d9aacfa5746f2c792f684e3be",
+    "status": "PROVISIONAL source-only when returned; Root repaired mechanical native issues and final canonical gate validates integrated bytes",
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "name": "PolarClampChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round18-root-mi8jnddb/PolarClampChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round18-root-mi8jnddb/PolarClampChecks.lean",
+      "source_sha256": "5381375ce83d9e6842763db5259ab0f4161ff92a53adcff255bda7d95ef717b1",
+      "output_path": "docs/evidence/phase2-round-18-polar-clamp/polar-clamp-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-15T22:14:39.430886+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final project source and native cache; no scratch overlay",
+      "scope": "Same actual endpoint K,r,p,z, physical mass one, zero complete action, global minimality, one common scale box/multiplier and full residual/complementarity/balances, literal boxed curvature representative with a.e. tie and all interior node laws, actual corrected-q traces and nonzero-probe-trace pole limits including both explicit cancelling factor-five selections, all four strong original graph recovery limits and complete-action convergence",
+      "completed_exec_session": 39385
+    }
+  ],
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "e33c0e183948b31218546f27b1aecbf45440092e",
+    "unchanged_prior_native_modules": 332,
+    "authorized_parent_source_changes": [],
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 10429,
+    "prior_native_receipt_sha256": "6fcda3feeb3b504cfc003b9240ff862816879db26aadb174e41e3cba711bd48f",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "checker_policy_delta": "Only module, required-selector and exact-query inventories; remaining policy AST unchanged",
+  "checker_policy_audit_sha256": "37edb23ed102020abab4bd925e3710c45d49a3fc11ac9bf09c255d3f04fbe565",
+  "reuse_origin": "docs/evidence/phase2-round-17-polar-rates/receipt.json",
+  "independent_review": "Single configured Round18 outer delta review pending; no duplicate unchanged acceptance review",
+  "q6_documentation_delta": "Current theorem-map Round15 review sentence corrected to accepted proof review and Round16/Q5 gate closure; no mathematical credit or duplicate build/review",
+  "remaining_original_gates": [
+    "Actual zero-R leading rates, remaining cancellations and every polar/node/representative/domain/interface/path bridge used",
+    "Informative determining characterization and justified threshold selection",
+    "Independent universal complete-action sufficiency for every original rotational metric and smooth one-form, with all used coverage/Haar bridges",
+    "Exact original smooth endpoint equality/attainment or nonattainment and all-form transfer, combined with determining value and accepted original smooth witnesses",
+    "Final manuscript/research, native, independent review and private delivery closure"
+  ],
+  "conditional_routes": {
+    "operator_sign_selection": "UNRESOLVED, UNREFUTED and parked; optional sufficient mechanism",
+    "positive_reference_quotient_coverage": "Required only if used by the actual comparison",
+    "matrix_jacobi_selector": "UNRESOLVED and parked after its two safety-dependent selector tests"
+  },
+  "scope_limits": [
+    "Actual zero-action recoverable global minima at C>1; legitimate continuous r,p representatives retained",
+    "One kappa,t selected once; all full residual/complementarity/scale balances and interior node laws retained",
+    "Everywhere one-sided limits only at poles with nonzero actual R trace, where eventual r!=0 is proved",
+    "Cancelling values clip(-L/(5*R0^2)) and clip(LR/(5*R1^2)) retain actual corrected-q and complete Green constants",
+    "Raw weak K remains a.e. tied only; no pointwise trace of arbitrary modifications is claimed",
+    "No assumption that an endpoint minimum has any nonzero pole trace; zero-R cases stay open",
+    "No total node/contact count, symmetry, finite-dimensional family, determining constant, independently new global sufficiency, smooth pole-value recovery or original smooth attainment"
+  ],
+  "bitlesson_unchanged_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+}

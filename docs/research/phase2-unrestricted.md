@@ -3637,3 +3637,124 @@ classification and all-form equality transfer, and final manuscript/native/
 review/private delivery remain required. Accepted smooth superthreshold
 witnesses are reused. Only AC1 and AC2 are fully met; no necessary condition
 or polar rate is being substituted for the full C_rot determination.
+
+## Round 18: actual polar clamp selection at nonzero probe traces
+
+The averaged-feedback test succeeds in its contracted scope. Five new leaves
+and ten native theorems are bound by the
+[checkpoint](../evidence/phase2-round-18-polar-clamp/checkpoint.json). The one
+configured outer delta review remains pending. Round 17's actual polar-rate
+packet passes its single outer review at e33c0e1 and is reused unchanged.
+C_rot remains undetermined; only AC1 and AC2 are fully met.
+
+### Genuine endpoint FTC and actual primitive rates
+
+For a locally differentiable H with actual zero trace at 0 and an L1 source
+G, a finite limit of deriv H-G first gives integrability of deriv H on a
+smaller endpoint interval. Native endpoint FTC then identifies H(x) with
+integral_0^x deriv H; it does not assign a boundary value to raw H. Averaging
+the vanishing remainder proves
+
+    H(x)/x - average_(0,x) G -> L.
+
+A remainder tending to zero has average tending to zero by its uniform
+bound on a whole shrinking interval. No pointwise limit of the comparison
+source G is needed. The same actual warp and its genuine derivative/slope
+have f/x -> 2 and f/(1-x) -> 2, by native l'Hopital and accepted physical
+endpoint values. No curvature derivative or curvature pole limit is supplied.
+
+The literal slope primitive gives (2-b)=2*integral_0^x K, and its true total
+moment gives (2+b)=2*integral_x^1 K. Bounded curvature averages and the first-
+order warp rate show
+
+    (2-b)/f - average_(0,x) K -> 0              at 0+,
+    (2+b)/f - average_(x,1) K -> 0              at 1-.
+
+The averages themselves may oscillate. Their boundedness, rather than a
+presumed limiting value, controls multiplication by the vanishing warp error.
+
+### The averaging contraction closes
+
+Use canonical interval-average notation and write
+
+    M_K(x)=average_(0,x) [s -> average_(0,s) K].
+
+An a.e. bound on abs(K-c) is preserved by averaging. The variable-endpoint
+average is integrable, so the same centered bound holds after the second
+average. A bounded K satisfying the actual eventual law
+
+    K(x)=clip(A-rho*M_K(x)+e(x)),  e -> 0,  0<=rho<1,
+
+therefore tends to clip(A/(1+rho)). The native proof constructs the fixed
+point and the supremum of abs(K-k) on a shrinking interval. It proves
+M<=rho*M+(1-rho)*epsilon/2, forcing M<=epsilon/2. No selector, averaging
+norm estimate, curvature trace or comparison conclusion is an extra premise.
+The source is integrable and boxed; the averaged function is the literal K.
+
+For the actual minimum put a=R(0), with a nonzero in this case, and retain
+H=W-t*(x-1/2), D=2*f*r² and the complete constant L from Round 17. Replacing
+K by the same Kc inside integrals is justified by its proved a.e. equality.
+The derivative rate and endpoint FTC give, when H's left trace is zero,
+
+    H(x)/x - a²*M_Kc(x) -> L,
+    D(x)/x -> 4*a².
+
+Thus -H/D equals -L/(4*a²)-M_Kc/4 plus a remainder tending to zero, even
+when the averages have no limit. Its actual clipped feedback has gain 1/4.
+The selected value is
+
+    clip_[kappa,C*kappa](-L/(5*a²)).
+
+The full complete-action Green terms remain in
+
+    L=-6*a*qL+2*integral_0^1(1-s)*A(s)-2*integral_0^1 B-t.
+
+Here qL is the actual corrected-q trace, A the actual warp coefficient and
+B the actual slope coefficient. The physical theorem has zero complete
+action; this is the actual lambda=0 specialization, not an erased mass term.
+For noncancelling H trace, positivity of D near the pole gives the appropriate
+constant obstacle saturation, derived from that trace and D tending to zero.
+
+### Exact reflection, common multiplier and representative scope
+
+At the right pole use y=1-x, the actual H(1-y), f(1-y), r(1-y) and Kc(1-y).
+The genuine derivative changes sign, and the integral substitution identifies
+the reflected average. Hence the selected cancelling trace is
+
+    clip_[kappa,C*kappa](L_R/(5*R(1)^2)),
+    L_R=6*R(1)*qR-2*integral_0^1 s*A(s)-2*integral_0^1 B-t.
+
+The same kappa,t are selected once by the accepted node-clamp producer.
+The new theorem retains its complete residual/complementarity/scale balances,
+a.e. curvature tie, everywhere box, all interior node laws and the canonical
+corrected-q trace equations. The accepted actual H values identify left
+cancellation with t=4*R(0)^2 and right cancellation with t=-4*R(1)^2.
+The two cancellations cannot be chosen independently for two nonzero traces.
+
+At each nonzero probe trace, eventual nonvanishing of the same r is derived
+from its actual limit. The representative therefore uses its literal divided
+clamp throughout that polar neighborhood; the limit is an everywhere one-
+sided limit of Kc, not merely an a.e./off-zero conclusion. Raw weak K remains
+only a.e. equal and may have arbitrary point modifications. At zero probe
+traces the theorem supplies no curvature limit or polar node exclusion.
+The endpoint consumer retains the identical K,r,p,z, physical mass one, zero
+action, global minimum, one common full scale/node/pole package and all four
+strong original graph recovery limits with complete-action convergence.
+
+### Remaining structural and full determining frontier
+
+The nonzero-trace cancelling-clamp obstruction is removed. Zero-R cases still
+need genuine higher numerator/denominator rates and any zero-set/representative
+bridge used there. One concrete next test is to use the accepted corrected-q
+trace and bounded p to derive the actual q and divergence-primitive leading
+rates at a zero R trace, before assuming a nonzero leading coefficient or
+excluding further cancellations. No such extra rate is certified here.
+
+No total node/contact count, symmetry or finite-dimensional family is proved.
+An informative determining characterization, justified threshold selection,
+independently universal complete-action comparison across every original
+rotational metric and smooth one-form, every used coverage/Haar/recovery
+bridge, exact original smooth endpoint classification and all-form transfer,
+and final manuscript/native/review/private delivery remain open. Existing
+original smooth witnesses and endpoint safety are reused. Necessary local
+clamp selection does not identify C_rot or prove cross-geometry sufficiency.

@@ -9,6 +9,17 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 18 proves a finite one-sided limit of the same boxed curvature
+representative at each physical pole whose actual probe trace is nonzero.
+Genuine endpoint FTC converts the accepted derivative rate into nested
+curvature averages; bounded averaging and a proved contraction select the
+explicit clipped value in the cancelling case. Both pole signs and one
+common scale multiplier are retained. The
+[checkpoint](evidence/phase2-round-18-polar-clamp/checkpoint.json) records
+this bounded packet; its single outer delta review is pending. Zero probe-
+trace pole control, informative threshold selection, independent universal
+sufficiency and the original smooth endpoint classification remain open.
+
 Round 17 establishes boundedness of the actual minimizing p and canonical q
 and finite traces of the corrected coordinates q+r*(2-b)/(2f) and
 q+r*(2+b)/(2f) at their respective poles. The complete canonical residual
@@ -16,8 +27,8 @@ has a genuine derivative rate after subtracting its explicit curvature-
 primitive term. Zero probe traces are included; at such a pole the correction
 vanishes and the residual derivative has a finite trace. The
 [checkpoint](evidence/phase2-round-17-polar-rates/checkpoint.json) records
-this bounded native packet; the single configured outer delta review remains
-pending. No limit of unweighted p/q or curvature is assumed or concluded.
+this bounded packet, accepted by its single outer review at e33c0e1.
+No limit of unweighted p/q or curvature follows from that rate alone.
 The cancelling divided clamp, determining selection, independent universal
 sufficiency and original smooth endpoint classification remain open.
 

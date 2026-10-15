@@ -1995,3 +1995,58 @@ zero-trace rates or representative bridge actually used, determining selection,
 independent universal sufficiency, exact original smooth endpoint equality and
 all-form transfer, and final full-suite manuscript/evidence/delivery remain
 open. Phase I remains COMPLETE; Phase II remains OPEN, with C_rot undetermined.
+
+## Phase II, Round 18 actual nonzero-trace polar clamp selection
+
+Five new leaves add ten public theorems and no definitions. Genuine endpoint
+FTC and actual warp/curvature-average rates connect the complete accepted
+derivative rate to nested averaging. A proved bounded-average contraction
+selects the actual clipped factor-five limit at a cancelling nonzero-probe-
+trace pole. Exact reflection gives the right sign. One common scale box and
+multiplier retain every residual/node law; noncancelling saturation is included.
+Zero-R poles remain outside the curvature-limit conclusion.
+
+The final canonical gate passes for 337 modules, 342 current input hashes
+and 343 successful command/output bindings. All five fresh source
+elaborations are silent; 332 accepted parent elaborations are reused.
+Root, all three available unsuppressed declaration linters and native
+declaration-kind inspection pass. The 1,348 required selectors,
+1,449 exact queries and 4,005 actual transitive axiom rows, including
+1,468 private rows, use only propext, Classical.choice and Quot.sound.
+All three literal driver hashes and 7,919 source-command records
+through 43 receipts match. Checker policy outside module/selector/query
+inventories is unchanged.
+
+Receipt SHA256:
+`61746e82349a9e9f2153c6d7336bf5cee4254176bfceecfd680269c6c89d5454`.
+The source simplifier's two private EventuallyEq.symm substitutions preserve
+all ten public statements and witness laws; final native evidence covers the
+integrated bytes. Source advice is not an acceptance review. No failed
+canonical evidence is relied on; repaired scratch diagnostics are not failed
+mathematical routes.
+
+The canonical same-endpoint consumer is silent and exits zero. Its source
+SHA256 is `5381375ce83d9e6842763db5259ab0f4161ff92a53adcff255bda7d95ef717b1`.
+It retains identical K,r,p,z, physical mass one, zero complete action, global
+minimality, the same full scale box/multiplier/residual/node/pole package and
+all four strong original graph recovery limits with complete-action passage.
+No nonzero pole trace or curvature limit is supplied to the endpoint example.
+The [checkpoint](evidence/phase2-round-18-polar-clamp/checkpoint.json) binds
+final sources, four documents, the consumer, Root audit, source advice and
+preservation.
+
+All 332 parent leaves, 149 Phase-I leaves and 10,429 prior evidence
+files remain unchanged. All 2,325 Phase-I workflow hashes, 142 pre-restart
+historical Round bindings, both tasks, accepted paper bytes, fixed pins and
+compiler/platform/ten clean dependency revisions are preserved. The immutable
+tracker prefix and historical stop-state match. Q6's stale current Round15
+review sentence is corrected in the ordinary documentation delta, with no
+new mathematical review/build or mainline credit. Round17's single outer
+review passes at e33c0e1. Round18's one configured outer delta review remains
+pending; unchanged accepted mathematics/evidence are reused.
+
+Phase I remains COMPLETE; Phase II remains OPEN and C_rot undetermined.
+Zero-R rates and every further used domain/interface/representative/coverage
+bridge, informative determination/selection, independent universal sufficiency,
+original smooth endpoint equality/all-form transfer and final full-suite
+manuscript/evidence/review/private delivery remain open.

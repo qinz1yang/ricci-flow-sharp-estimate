@@ -1,0 +1,7 @@
+✔ [9977/9983] Built RicciFlowSharpEstimate.Geometry.AreaPrimitivePoleRates (10s)
+✔ [9978/9983] Built RicciFlowSharpEstimate.Analysis.ClampedIteratedAverage (10s)
+✔ [9979/9983] Built RicciFlowSharpEstimate.Analysis.IntegralAverageRemainder (12s)
+✔ [9980/9983] Built RicciFlowSharpEstimate.Analysis.ClampedIntegralFeedback (9.0s)
+✔ [9981/9983] Built RicciFlowSharpEstimate.Geometry.AreaCurvaturePoleLimits (18s)
+✔ [9982/9983] Built RicciFlowSharpEstimate (14s)
+Build completed successfully (9983 jobs).

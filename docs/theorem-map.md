@@ -12,8 +12,9 @@ The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 The Round 15 physical-pole packet proves unweighted integrability and finite
 probe traces for the actual signed minimum. It applies to every continuous
 recoverable global minimum at C>=1, with the actual action multiplier. The
-[native checkpoint](evidence/phase2-round-15-poles/checkpoint.json) is new;
-the configured single outer review is pending.
+[native checkpoint](evidence/phase2-round-15-poles/checkpoint.json) passed its
+mathematical review at 036c1b4; Round 16's accepted Q5 delta at 7a3d0bf closed
+the remaining API and affected-evidence gate.
 
 | Declaration | Result and use |
 |---|---|
@@ -840,7 +841,30 @@ minimum result retains the actual complete-action multiplier at arbitrary
 C>=1. The [checkpoint](evidence/phase2-round-17-polar-rates/checkpoint.json)
 binds native evidence and one exact-cap endpoint consumer retaining the same
 chosen scale multiplier and all four graph recovery limits. The single outer
-delta review is pending. The explicit curvature-primitive term need not itself
+delta review passes at e33c0e1. The explicit curvature-primitive term need not itself
 have a limit. No unweighted p/q pole trace, cancelling divided-clamp selection,
 finite total nodes/contacts, determining value, independent universal comparison
 or original smooth endpoint classification is asserted.
+
+## Phase II Round 18: actual nonzero-trace curvature pole selection
+
+| Mathematical result | Canonical home |
+|---|---|
+| Vanishing interval-average remainders and genuine endpoint FTC for a derivative-minus-L1-source limit | `Analysis/IntegralAverageRemainder.lean` |
+| Centered a.e. averaging bounds, integrability of the variable-endpoint average, iterated bound and explicit clipped fixed-point convergence under a strict gain | `Analysis/ClampedIteratedAverage.lean` |
+| A genuine derivative-average law and first-order denominator imply the selected clamped quotient limit | `Analysis/ClampedIntegralFeedback.lean` |
+| Actual two-pole first-order warp rates and slope/warp comparison with original one-sided curvature averages | `Geometry/AreaPrimitivePoleRates.lean` |
+| One actual zero minimum, scale box and multiplier give the accepted complete residual/node data and both nonzero-probe-trace curvature pole limits, including explicit cancelling values | `Geometry/AreaCurvaturePoleLimits.lean` |
+
+Five new leaves contain ten public theorems and no definitions. The physical
+headline `exists_curvature_pole_limits_at_nonzero_traces_of_minimum` returns
+one common kappa,t and the literal boxed representative Kc=K almost everywhere.
+Finite pole limits are implications with the corresponding R trace nonzero;
+no nondegeneracy is assumed for the minimum as a whole. At cancellation the
+left value is clip(-L/(5*R(0)^2)) and the right value is
+clip(L_R/(5*R(1)^2)), with the actual corrected-q traces and full Green terms
+fixing L,L_R. Noncancelling saturation is included. The
+[checkpoint](evidence/phase2-round-18-polar-clamp/checkpoint.json) retains the
+actual endpoint and all four recovery limits. One outer delta review remains
+pending. No raw weak-K pole limit, zero-R pole conclusion, determining value,
+independent global comparison or original smooth attainment is asserted.
