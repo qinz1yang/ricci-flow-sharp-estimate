@@ -9,6 +9,19 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 16 proves the actual weighted-state and canonical regular-adjoint pole
+laws. Both f*p and f*q extend absolutely continuously with zero traces, where
+q is the canonical Euler momentum divided by f². The complete regular adjoint
+tends to -2*R(0)^2 and -2*R(1)^2 for the same explicit probe extension R;
+its centered residual has the corresponding +t/2 and -t/2 corrections for
+the same chosen multiplier. Zero probe traces are included. The
+[checkpoint](evidence/phase2-round-16-adjoint-poles/checkpoint.json) records
+native validation; the single outer delta review remains pending. Q5's
+standalone operator L1 API now needs only the cap, recoverable competitor
+and global minimality. Neither unweighted p/q limits, a cancelling pole-clamp
+limit, determining selection, universal sufficiency nor smooth attainment
+is inferred.
+
 Round 15 derives unweighted L1 control of the actual minimizing probe
 derivative and literal weak meridional operator through both physical poles.
 An explicit primitive extends the same probe absolutely continuously to the
@@ -16,8 +29,9 @@ closed interval, gives finite one-sided traces and bounds it globally. Zero
 probe traces are allowed. The complete Euler source, natural flux traces and
 original parabolic warp bounds produce these estimates; no source sign or
 unweighted state bound is supplied. The
-[checkpoint](evidence/phase2-round-15-poles/checkpoint.json) records the new
-native packet, with its single outer review pending. Curvature/operator pole
+[checkpoint](evidence/phase2-round-15-poles/checkpoint.json) records the native
+packet. Its mathematical review passes at 036c1b4; Q5's bounded API correction
+is included in Round 16's delta. Curvature/unweighted-operator pole
 limits, determining selection, universal sufficiency and exact smooth endpoint
 classification remain open.
 

@@ -46,7 +46,7 @@ theorem IsRecoverableAreaCompetitor.probe_pole_integrability_of_minimum
     have hh := hg.2.2.1 x ⟨hx.1.le, hx.2.le⟩
     exact ⟨by simpa only [mul_assoc] using hh.1,
       by simpa only [mul_assoc] using hh.2.1⟩
-  have hQI := h.weak_operator_integrable_of_minimum hC hr hp hmin
+  have hQI := h.weak_operator_integrable_of_minimum hC hmin
   have hrI := h.2.1.memLp.integrable (by norm_num : (1 : ENNReal) ≤ 2)
   have hSI : Integrable
       (fun x => weakMeridionalOperator K r p z x + K x * r x) areaμ :=

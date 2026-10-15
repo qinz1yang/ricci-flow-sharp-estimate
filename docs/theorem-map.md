@@ -802,3 +802,21 @@ curvature-control caller is updated; all conclusions and object ties remain.
 This bounded API correction introduces no new theorem or definition and does
 not settle the nonlocal selection comparison. See the
 [API checkpoint](evidence/phase2-round-11/checkpoint.json).
+
+## Phase II Round 16: actual weighted-state and regular-adjoint pole laws
+
+| Mathematical result | Canonical home |
+|---|---|
+| Genuine integrable derivative and reciprocal-distance integrability produce a tied AC extension with both zero boundary values and limits | `Analysis/ZeroBoundaryExtension.lean` |
+| Weighted L1 source gives closed continuity and zero endpoint values of the literal Dirichlet adjoint in its second argument | `Analysis/GreenBoundaryTraces.lean` |
+| Actual f*p and canonical f*q are AC on the physical closed interval with zero pole limits; only p's continuous representative is required | `Geometry/WeakProbeWeightedPoleTraces.lean` |
+| Complete canonical regular-adjoint limits and every fixed centered-multiplier correction, allowing zero probe traces | `Geometry/WeakCurvatureAdjointPoleTraces.lean` |
+
+Four public theorems and no definitions are new. Q5 removes avoidable hr/hp
+from `weak_operator_integrable_of_minimum` and adapts its one caller;
+`probe_pole_integrability_of_minimum` retains its legitimate pointwise inputs.
+The [checkpoint](evidence/phase2-round-16-adjoint-poles/checkpoint.json) binds
+native evidence and a same-endpoint consumer with one scale residual and all
+four recovery limits. The single outer delta review is pending. No divided
+pole-clamp limit, total node/contact bound, determining characterization,
+cross-geometry sufficiency or original smooth endpoint classification follows.

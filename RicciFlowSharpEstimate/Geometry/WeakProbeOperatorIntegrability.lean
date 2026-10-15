@@ -4,7 +4,8 @@ No license is granted by this file.
 Authors: Ziyang Qin
 -/
 import RicciFlowSharpEstimate.Geometry.WeakProbeEulerL2
-import RicciFlowSharpEstimate.Geometry.WeakProbeFirstOrderSystem
+import RicciFlowSharpEstimate.Geometry.WeakProbeEulerFlux
+import RicciFlowSharpEstimate.Geometry.RecoverableAreaRegularity
 import RicciFlowSharpEstimate.Analysis.H1EndpointIntegrability
 import RicciFlowSharpEstimate.Analysis.WeightedDerivativeIntegrability
 
@@ -22,8 +23,6 @@ or polar state bound is assumed. -/
 theorem IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum
     {C : ℝ} {K r p z : ℝ → ℝ} (hC : 1 ≤ C)
     (h : IsRecoverableAreaCompetitor C K r p z)
-    (hr : ContinuousOn r (Ioo (0 : ℝ) 1))
-    (hp : ContinuousOn p (Ioo (0 : ℝ) 1))
     (hmin : ∀ K' r' p' z' : ℝ → ℝ, IsRecoverableAreaCompetitor C K' r' p' z' →
       weakMeridionalAction K r p z ≤ weakMeridionalAction K' r' p' z') :
     Integrable (weakMeridionalOperator K r p z) areaμ := by
@@ -68,7 +67,7 @@ theorem IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum
   have hbB : ∀ᵐ x ∂areaμ, ‖b x‖ ≤ 2 := by
     filter_upwards [ae_restrict_mem measurableSet_Ioo] with x hx
     exact (hg.2.2.1 x ⟨hx.1.le, hx.2.le⟩).2.2
-  obtain ⟨_hUA, hPAC, _hAAC, hP0, hP1, _hA0, _hA1, hPD, _hAD, _hqC, _hqeq⟩ :=
+  obtain ⟨hUA, hPAC, hAAC, hP0, hP1, _hA0, _hA1, hPD, hAD, _hqC, hqeq⟩ :=
     h.probe_euler_flux_of_minimum hC hmin
   change AbsolutelyContinuousOnInterval P 0 1 at hPAC
   change P 0 = 0 at hP0
@@ -101,14 +100,34 @@ theorem IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum
       w x * S x
     dsimp only [d, S]
     field_simp [(hfpos x hx).ne', (hwpos x hx).ne']
-  obtain ⟨_hrD, _hrCD, _hqC, hqeq, hAC, hsys⟩ :=
-    h.probe_first_order_system_of_minimum hC hr hp hmin
   change weakMeridionalOperator K r p z =ᵐ[areaμ] q at hqeq
+  have hfD := (h.primitive_local_regularity hC).1
+  have hfCD : ContDiffOn ℝ 1 f (Ioo (0 : ℝ) 1) :=
+    (h.primitive_weak_derivatives hC).1.contDiffOn_one_of_continuousOn
+      (hg.1.mono Ioo_subset_Icc_self) (hg.2.1.mono Ioo_subset_Icc_self)
   have hqAC (a : ℝ) (ha : a ∈ Ioo (0 : ℝ) 1)
-      (d : ℝ) (hd : d ∈ Ioo (0 : ℝ) 1) : AbsolutelyContinuousOnInterval q a d :=
-    (hAC a ha d hd).2
-  have hqD : ∀ᵐ x ∂areaμ, HasDerivAt q (S x) x :=
-    hsys.mono fun _ hx => hx.2.1
+      (d : ℝ) (hd : d ∈ Ioo (0 : ℝ) 1) : AbsolutelyContinuousOnInterval q a d := by
+    have hab := ordConnected_Ioo.uIcc_subset ha hd
+    have hAad := hAAC.mono (show uIcc a d ⊆ uIcc (0 : ℝ) 1 by
+      simpa only [uIcc_of_le zero_le_one] using hab.trans Ioo_subset_Icc_self)
+    have hInv : ContDiffOn ℝ 1 (fun x => (f x ^ 2)⁻¹) (uIcc a d) :=
+      ((hfCD.pow 2).inv (fun x hx => pow_ne_zero 2 (hfpos x hx).ne')).mono hab
+    simpa only [q, f, lam, Pi.mul_def, div_eq_mul_inv] using
+      hAad.mul hInv.absolutelyContinuousOnInterval
+  have hqD : ∀ᵐ x ∂areaμ, HasDerivAt q (S x) x := by
+    filter_upwards [hUA, hAD, ae_restrict_mem measurableSet_Ioo] with x hxA hxAD hxI
+    have hfne := (hfpos x hxI).ne'
+    have hQ := hxAD.div ((hfD x hxI).pow 2) (pow_ne_zero 2 hfne)
+    have hxA' : weakProbeEulerMomentum K r p z lam x =
+        f x ^ 2 * weakMeridionalOperator K r p z x := hxA.symm
+    change HasDerivAt q _ x
+    convert hQ using 1
+    simp only [weakProbeFirstCoefficient, Pi.pow_apply, Nat.cast_ofNat,
+      Nat.reduceSub, pow_one]
+    rw [hxA']
+    dsimp only [S, f, b, P, lam]
+    field_simp [hfne]
+    ring
   have hqI := Analysis.integrable_of_parabolic_weighted_derivative hqAC hqD hSw
   exact hqI.congr hqeq.symm
 

@@ -1,0 +1,4 @@
+✔ [9966/9969] Built RicciFlowSharpEstimate.Analysis.GreenBoundaryTraces (7.9s)
+✔ [9967/9969] Built RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjointPoleTraces (9.7s)
+✔ [9968/9969] Built RicciFlowSharpEstimate (13s)
+Build completed successfully (9969 jobs).

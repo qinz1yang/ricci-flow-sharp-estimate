@@ -334,6 +334,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.WeakProbeEulerL2",
     "RicciFlowSharpEstimate.Geometry.WeakProbeOperatorIntegrability",
     "RicciFlowSharpEstimate.Geometry.WeakProbePoleTraces",
+    "RicciFlowSharpEstimate.Analysis.ZeroBoundaryExtension",
+    "RicciFlowSharpEstimate.Analysis.GreenBoundaryTraces",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeWeightedPoleTraces",
+    "RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjointPoleTraces",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1679,7 +1683,12 @@ SELECTOR = r"""
       analysis ++ `integrable_of_parabolic_divergence_flux,
       area ++ `IsRecoverableAreaCompetitor.probe_zeroth_coefficient_memLp_two,
       area ++ `IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum,
-      area ++ `IsRecoverableAreaCompetitor.probe_pole_integrability_of_minimum
+      area ++ `IsRecoverableAreaCompetitor.probe_pole_integrability_of_minimum,
+      analysis ++ `exists_zero_boundary_extension_of_integrable_deriv,
+      analysis ++ `weighted_dirichlet_adjoint_boundary_traces,
+      area ++
+        `IsRecoverableAreaCompetitor.probe_weighted_state_pole_traces_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_pole_traces_of_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4352,6 +4361,14 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.probe_pole_integrability_of_minimum
+open RicciFlowSharpEstimate.Analysis in
+#check exists_zero_boundary_extension_of_integrable_deriv
+open RicciFlowSharpEstimate.Analysis in
+#check weighted_dirichlet_adjoint_boundary_traces
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_weighted_state_pole_traces_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_adjoint_pole_traces_of_minimum
 
 """
 

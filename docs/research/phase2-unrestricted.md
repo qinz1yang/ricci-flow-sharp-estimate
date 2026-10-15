@@ -3410,3 +3410,91 @@ universal sufficiency across every original geometry and smooth probe, exact
 original smooth endpoint equality/attainment and all-form transfer, and final
 manuscript/evidence/delivery still remain open. The original C_rot objective
 has not been replaced by a necessary system or variational definition.
+
+## Round 16: actual weighted-state and regular-adjoint pole laws
+
+The contracted pole test closes. The native
+[checkpoint](../evidence/phase2-round-16-adjoint-poles/checkpoint.json) covers
+four new theorems, their actual endpoint application and Q5's bounded API
+generalization. The single configured outer delta review is pending; the
+unchanged accepted proofs and their reviews are reused. C_rot remains
+undetermined and Phase II remains OPEN.
+
+### Actual weighted states, without polar nondegeneracy
+
+Write f for the actual warp, b for its slope, lambda for the complete minimum
+action, P for its canonical Euler flux and q for its canonical momentum/f².
+The already proved unweighted integrability and the genuine equations give
+
+    (f*p)' = q + K*r - b*p,
+    (f*q)' = b*q + P/f - K*b*r/2.
+
+Every right-hand term is L1. For the second equation, P/x and P/(1-x)
+are L1 by the accepted complete-source L2 estimate and genuine zero flux
+traces. With w=x(1-x), P/w=P/x+P/(1-x), and the original geometry gives
+w/f<=C/2. Thus P/f is L1. No derivative of measurable K is taken.
+
+The first equation is the direct derivative variant of the contracted
+divergence argument: it uses the genuine tied jets and previously established
+p integrability. A globally integrable derivative extends each weighted state
+absolutely continuously. Its quotient by either endpoint distance is also L1,
+because f/x and f/(1-x) are bounded and p,q are L1. The native reciprocal-
+distance trace theorem forces both extension values to zero. Their natural
+literal endpoint values are already zero, so the actual weighted functions
+are AC on [0,1] and tend to zero at both poles. This is more than substituting
+f=0 in the weighted flux: the interior limits and closed AC law are proved.
+
+The public weighted-state theorem requires a continuous p representative but
+does not require continuous r. Q5 independently removes both continuity
+premises from the standalone a.e.-invariant Q-integrability theorem: canonical
+momentum AC and the positive C1 warp directly yield q's local AC and derivative.
+The old bundled first-order theorem is unchanged. The final probe and adjoint
+trace statements retain hr/hp for their legitimate pointwise conclusions.
+
+### Both genuine Green terms and the complete polar values
+
+For the literal Dirichlet adjoint G(x)=integral kernel(s,x)*A(s), weighted
+source integrability is enough. On the closed physical interval the exact
+bound is |kernel(s,x)|<=s(1-s); the kernel is continuous in its second argument.
+Native dominated continuity gives G continuous up to both poles with value
+zero. Source measurability is derived by division by the positive interior
+weight. The slope adjoint T already has an accepted globally AC extension
+and zero endpoints; that result is consumed unchanged.
+
+Here A is the full weak curvature warp coefficient minus lambda*r², and T
+uses the actual slope coefficient. The lambda*r² correction is retained and
+weighted integrable. The complete canonical regular part is
+
+    W = -2*(f*q)*r - b*r*(f*p) - b²*r²/2 + 2*G + 2*T.
+
+Use the same explicit R from Round 15, with R=r throughout the interior.
+Since b tends to 2 and -2 and both weighted states and Green terms tend to
+zero, W tends to -2*R(0)^2 and -2*R(1)^2. Either R trace may vanish. For every
+fixed t, H=W-t*(x-1/2) has traces -2*R(0)^2+t/2 and -2*R(1)^2-t/2.
+The endpoint consumer selects one existing kappa,t once and applies this law
+to that same t while retaining the full residual, clamp, interior node laws,
+unit mass, zero action, global minimum and all four original recovery limits.
+It also checks Q integrability using only hC, the competitor and minimality.
+
+These are limits of the canonical regular expression. The full weak adjoint
+has an accepted a.e. representation tie; no pointwise limit of an arbitrarily
+modified literal Q or full adjoint is asserted. Nor is convergence of the
+recovery sequences' smooth pole values inferred from weighted graph recovery.
+
+### Remaining determining and endpoint gap
+
+The two-pole regular-adjoint values remove the previously uncontrolled weighted
+state/Green boundary contribution. They do not control H/(2*f*r²) when both
+numerator and denominator vanish. The next signed-route test must derive the
+additional rates from the actual coupled equations, including zero R traces,
+before using a divided polar chart or global contact pattern. No finite total
+node/switch count, curvature pole limit or source orientation is assumed.
+Apply the owner's two-unsuccessful-attempt rotation rule to that new keystone;
+the old sign and matrix selectors remain parked, unresolved and unrefuted.
+
+The necessary system still needs an informative determining characterization,
+justified threshold selection and an independent universally sufficient
+comparison over every original geometry and smooth probe. Every coverage and
+Haar bridge actually used, original smooth endpoint equality/attainment and
+all-form transfer, and final manuscript/native/review/private-delivery closure
+remain required. Only AC1 and AC2 are fully met; no original result is deferred.

@@ -1890,3 +1890,55 @@ unchanged. The single configured outer delta review is pending. No boundedness
 of p/q, curvature pole trace, total node count, determining constant, universal
 new comparison or original smooth attainment is inferred. Phase I remains
 COMPLETE; Phase II remains OPEN with all original final gates retained.
+
+
+## Phase II, Round 16 weighted-state and regular-adjoint pole laws
+
+Four new theorem leaves prove a tied zero-boundary AC extension criterion,
+closed weighted Dirichlet-adjoint continuity, actual weighted-state zero pole
+limits and complete canonical regular-adjoint pole values. The centered
+residual laws hold for every fixed multiplier, so the same once-produced
+scale multiplier is retained. Both zero probe-trace cases are covered. Q5
+removes avoidable hr/hp from standalone operator L1 and updates its caller;
+the physical probe-trace statement keeps its legitimate continuity inputs.
+
+The final native gate passes for 323 modules, 328 input hashes and 329
+successful command/output bindings. Twelve source elaborations are fresh and
+silent, including the two Q5 files and the four new leaves; 311 accepted
+Round 14 elaborations are reused. The reuse policy requires an unchanged
+prior source prefix, so the six unchanged Round 15 leaves are also elaborated
+in that affected checkpoint. Their accepted mathematical review is reused.
+Root, unsuppressed declaration linters and native declaration-kind checks pass.
+All 1,326 selectors, 1,427 exact queries and 3,874 actual transitive axiom rows,
+including 1,434 private rows, use only propext, Classical.choice and Quot.sound.
+Literal driver hashes and 7,250 source-command records through 41 provenance
+receipts match. Checker policy outside inventories/selectors/queries is unchanged.
+
+Receipt SHA256:
+`d462cd13e7e8abf12c6047f41b6b02469acf778c7ebfec1dba93c9523a41181a`.
+No failed gate receipt is relied on. Source advice simplifies the two endpoint
+zero integrals and a private one-sided-continuity helper. Root adds the explicit
+zero-function reduction required by the first canonical elaboration; the final
+native gate covers all integrated bytes. The failed attempt is retained only
+in Root scratch, not as accepted evidence or a failed mathematical route.
+
+The canonical same-endpoint and Q5 minimal-input consumer exits zero silently.
+Its source SHA256 is
+`7ae340b5defce6b4fca4ebeeede390808e901b8255fb0614251f9916c518c2dc`.
+It retains the identical K,r,p,z, mass one, zero action, global minimum, one
+original scale box/multiplier, all residual/clamp/interior-node laws and all
+four strong recovery limits alongside the new weighted-state and adjoint pole
+laws. Q integrability is also checked without hr/hp. The
+[checkpoint](evidence/phase2-round-16-adjoint-poles/checkpoint.json) binds final
+source, four documents, the consumer, source advice and preservation.
+
+All 317 unaffected parent leaves, all 149 Phase-I leaves and 9,754 prior native
+evidence files are unchanged. Exactly two parent source changes implement Q5.
+All 2,325 Phase-I workflow hashes, 142 pre-restart historical Round-file hashes,
+both tasks, accepted paper, compiler/platform, ten dependencies and fixed pins
+are preserved. The immutable tracker prefix and historical stop-state remain
+unchanged. The single configured outer delta review is pending; no second
+review of unchanged mathematics is requested. Cancelling pole-clamp ratios,
+total nodes/contacts, determining selection, universal sufficiency, precise
+original smooth endpoint equality and final full-suite closure remain open.
+Phase I remains COMPLETE; Phase II remains OPEN.

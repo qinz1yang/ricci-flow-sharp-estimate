@@ -1,0 +1,165 @@
+{
+  "native_receipt_sha256": "d462cd13e7e8abf12c6047f41b6b02469acf778c7ebfec1dba93c9523a41181a",
+  "native_counts": {
+    "modules": 323,
+    "inputs": 328,
+    "outputs": 329,
+    "selectors": 1326,
+    "signature_queries": 1427,
+    "axiom_rows": 3874,
+    "private_axiom_rows": 1434,
+    "fresh_source_elaborations": 12,
+    "reused_source_elaborations": 311
+  },
+  "verified_provenance_receipts": 41,
+  "verified_source_provenance_records": 7250,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot remains undetermined",
+  "round_mainline_status": "Actual weighted-state zero traces and complete regular-adjoint pole laws natively established; single outer delta review pending",
+  "parent_revision": "036c1b4c84c2e704ba47cb5377447f036de30a1c",
+  "parent_review_scope": "Round15 mathematics/native evidence verified; Q5 API delta is included here for review",
+  "new_public_declarations": {
+    "modules": 4,
+    "theorems": 4,
+    "definitions": 0
+  },
+  "declarations": [
+    "RicciFlowSharpEstimate.Analysis.exists_zero_boundary_extension_of_integrable_deriv",
+    "RicciFlowSharpEstimate.Analysis.weighted_dirichlet_adjoint_boundary_traces",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_weighted_state_pole_traces_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_pole_traces_of_minimum"
+  ],
+  "q5_delta": {
+    "theorem": "IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum",
+    "change": "Remove hr/hp; directly reconstruct q local AC/derivative from actual Euler momentum and positive C1 warp",
+    "caller": "WeakProbePoleTraces.lean; retain legitimate hr/hp of pointwise trace headline",
+    "external_consumer": "Only hC, recoverable competitor and global minimality supplied for Q L1",
+    "status": "Native/consumer checks pass; one bounded outer delta review pending"
+  },
+  "source_sha256": {
+    "RicciFlowSharpEstimate/Analysis/ZeroBoundaryExtension.lean": "b13b0de20a183035791a7a2fd2f7be6606ffe2b8be1e0dd2390e84af0218e61e",
+    "RicciFlowSharpEstimate/Analysis/GreenBoundaryTraces.lean": "68f496aa04c15d49342e920a5e5785b5d33ba0f4c8f393c690ec55820bc6fe69",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeWeightedPoleTraces.lean": "f24fc007fa0ca22499edeeb874f194d0f28859cfa0380cbe4aa95ef86da7d24c",
+    "RicciFlowSharpEstimate/Geometry/WeakCurvatureAdjointPoleTraces.lean": "44698b0d5a73e91e81039226bea5f5d49125b0fab37497e94d4c56f97fb87ba0",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeOperatorIntegrability.lean": "105ffa8e1b02ce03ec15e56ad4bc0326b4d3d990d3cd90557fb698a4a9af86d3",
+    "RicciFlowSharpEstimate/Geometry/WeakProbePoleTraces.lean": "6735ab52309d86925d79778a7a1040cb25e6a2f6cb702036207729724c46d81a"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "fcc2ccb727cdb6d2a33bed031fe355e60286b3aa95668e5f1b5fb2ff9c9bbfe1",
+    "docs/theorem-map.md": "15ceb9adb2a1d687b1ba8701d40a51f75037f05063bb4af5d7262cd59009c8de",
+    "docs/research/phase2-unrestricted.md": "2b2b52c55255d494cca8266b9cb44a8543b81ba838806da54d1d86e4d0771e26",
+    "docs/verification.md": "f06d9d4b79920cd34f273749d18ec5906ce7bf8d48abe608de25ce4a1151e45e"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round16-root-2gtmxs0t/statement-audit.md",
+    "sha256": "be04323c5a63cc8991d17465347f31b91f7b3b3a57ed32ea160cc9a91098c883",
+    "scope": "Root integration/semantic audit, not independent acceptance"
+  },
+  "source_simplifier": {
+    "status": "APPLIED: direct zero integrals and private one-sided continuity helper; Root adds Pi.zero_apply; signatures and witness equations unchanged",
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round16-advice-9imzkt_w/advice/report.md",
+    "report_sha256": "78c397fc9ff40706237e3e80d42a04b60547002942ecdac150d3e4574def0f74",
+    "patch_sha256": "261d787bcc94e9abbbf07a54e1ae99e874bf06fbb2a049eb538998918a38c5a8",
+    "input_snapshot": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round16-advice-9imzkt_w/frozen",
+    "input_manifest_sha256": "f23b9c061d58f5e85ccb4bb9e22e72f7395bb687d4c206f68cb125a38df001c5",
+    "scope": "Source-only advice on six files; not acceptance review",
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "name": "AdjointPoleChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round16-root-2gtmxs0t/AdjointPoleChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round16-root-2gtmxs0t/AdjointPoleChecks.lean",
+      "source_sha256": "7ae340b5defce6b4fca4ebeeede390808e901b8255fb0614251f9916c518c2dc",
+      "output_path": "docs/evidence/phase2-round-16-adjoint-poles/adjoint-pole-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-15T19:45:37.592074+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final project source and native cache; no scratch overlay",
+      "scope": "Same endpoint K,r,p,z, unit mass, zero action, global minimality, full same scale-balanced residual/clamp, all four recovery limits, actual p/operator L1, same-probe AC extension, both actual weighted states globally AC with zero pole limits, complete regular-adjoint pole laws and same-t centered residual laws; Q5 minimal-input consumer without hr/hp",
+      "completed_exec_session": 59662
+    }
+  ],
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "036c1b4c84c2e704ba47cb5377447f036de30a1c",
+    "unchanged_prior_native_modules": 317,
+    "authorized_q5_parent_source_changes": [
+      "RicciFlowSharpEstimate/Geometry/WeakProbeOperatorIntegrability.lean",
+      "RicciFlowSharpEstimate/Geometry/WeakProbePoleTraces.lean"
+    ],
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 9754,
+    "prior_native_receipt_sha256": "de8cca382a2506e19fcefa0cb9ca681e677a7e1ebc8c146fc7c511b9045b1073",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "checker_policy_delta": "Only modules, required selectors and exact signature inventories; remaining policy AST unchanged",
+  "reuse_origin": "docs/evidence/phase2-round-14-nodes/receipt.json",
+  "independent_review": "Single configured Round16 outer delta review pending; reuse unchanged accepted mathematical reviews and evidence",
+  "remaining_original_gates": [
+    "Cancelling polar curvature-clamp rates and all further domain/interface/path bridges actually used",
+    "Informative determining characterization and justified selection",
+    "Independent universal sufficiency across every original rotational metric and smooth one-form with all coverage/Haar bridges",
+    "Exact original smooth endpoint equality/attainment or nonattainment and all-form transfer, combined with determining value and accepted smooth sharpness",
+    "Final manuscript/research, native, independent review and private delivery closure"
+  ],
+  "conditional_routes": {
+    "operator_sign_selection": "UNRESOLVED, UNREFUTED and parked; optional sufficient mechanism",
+    "positive_reference_quotient_coverage": "Required only if used by chosen comparison",
+    "matrix_jacobi_selector": "UNRESOLVED and parked after safety-dependent selector tests"
+  },
+  "scope_limits": [
+    "Both physical poles; zero r traces allowed; actual action multiplier retained at every cap C>=1",
+    "Weighted-state q is the canonical momentum/f^2; no raw-Q pointwise pole limit",
+    "Regular-adjoint limits use the same explicit R; centered laws retain every fixed chosen t",
+    "No unweighted p/q or curvature pole limit, cancelling divided-clamp conclusion, finite total nodes/contact pattern, symmetry or selected branch",
+    "No recovery pole-value convergence, original smooth attainment, determining constant or independently new universal comparison"
+  ],
+  "bitlesson_unchanged_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+}
