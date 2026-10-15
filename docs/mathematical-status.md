@@ -9,13 +9,22 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
-The Round 10 review accepts scale balance and verifies the free-interval
-mathematics and native evidence, subject to one bounded API correction.
-Round 11 removes that derived measurability premise from the weighted Green
-theorem and its caller. The nonlocal finite comparison remains unproved:
-normalized-box, reoptimized sorting and repaired-cap investigations have not
-produced strict negative action or refuted the actual endpoint selection
-target. This API correction is not mainline selection progress.
+Round 13 resumes research through the signed system. New continuation and
+nodal theorems show that the actual minimizing state cannot vanish in all four
+coordinates, every interior probe zero is isolated, and only finitely many
+zeros lie in any compact interior subset. Curvature remains measurable and
+no operator orientation is assumed. This removes interior nodal accumulation
+as an obstacle to a node-compatible analysis; it does not bound the total
+number of nodes near poles or determine C_rot. The new native checkpoint and
+single configured outer review concern only this delta.
+
+The earlier operator-sign selection mechanism is unresolved and unrefuted.
+It is now a parked conditional route, under the owner's route reassessment.
+The determining characterization, appropriate selection, universal comparison,
+arbitrary original-probe coverage, precise smooth endpoint and final delivery
+requirements remain open. A bounded matrix/Jacobi investigation also remains
+provisional: its current chart selector still depends on the original safety
+statement. Earlier round descriptions below retain their historical scope.
 
 Round 10 now produces an actual free curvature interval at the same zero-action
 joint minimum, with positive warp/probe margins and strict a.e. margins in an

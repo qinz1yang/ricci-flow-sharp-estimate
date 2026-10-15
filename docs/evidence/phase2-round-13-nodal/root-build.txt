@@ -1,0 +1,4 @@
+✔ [9943/9946] Built RicciFlowSharpEstimate.Geometry.WeakProbeContinuation (20s)
+✔ [9944/9946] Built RicciFlowSharpEstimate.Geometry.WeakProbeNodalSet (8.0s)
+✔ [9945/9946] Built RicciFlowSharpEstimate (9.8s)
+Build completed successfully (9946 jobs).

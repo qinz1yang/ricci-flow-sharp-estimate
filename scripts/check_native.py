@@ -311,6 +311,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.ParabolicEnergyBoundary",
     "RicciFlowSharpEstimate.Geometry.AreaCurvatureControl",
     "RicciFlowSharpEstimate.Geometry.AreaFreeCurvatureInterval",
+    "RicciFlowSharpEstimate.Analysis.AbsolutelyContinuousUniqueness",
+    "RicciFlowSharpEstimate.Analysis.WeakSystemZeroIsolation",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeContinuation",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeNodalSet",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1623,7 +1627,12 @@ SELECTOR = r"""
       analysis ++ `slope_kernel_adjoint_absolutelyContinuous,
       analysis ++ `HasWeakDerivOn.absolutelyContinuous_mul_sq_of_parabolic_bounds,
       area ++ `IsRecoverableAreaCompetitor.exists_regular_curvature_representative,
-      area ++ `IsRecoverableAreaCompetitor.exists_free_curvature_interval
+      area ++ `IsRecoverableAreaCompetitor.exists_free_curvature_interval,
+      analysis ++ `AbsolutelyContinuousOnInterval.eq_zero_of_abs_deriv_le,
+      analysis ++ `isolated_zero_of_weak_triangular_system,
+      area ++ `IsRecoverableAreaCompetitor.probe_state_ne_zero_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.isolated_zero_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.finite_zero_set_on_compact_of_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4229,6 +4238,16 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_regular_curvature_representative
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_free_curvature_interval
+open RicciFlowSharpEstimate.Analysis in
+#check AbsolutelyContinuousOnInterval.eq_zero_of_abs_deriv_le
+open RicciFlowSharpEstimate.Analysis in
+#check isolated_zero_of_weak_triangular_system
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_state_ne_zero_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.isolated_zero_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.finite_zero_set_on_compact_of_minimum
 """
 
 

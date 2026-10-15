@@ -9,6 +9,22 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+The Round 13 signed continuation packet has the following scope. Its native
+checkpoint is new; independent acceptance is reserved for the configured outer
+review. All unchanged accepted results retain their evidence.
+
+| Declaration | Result and use |
+|---|---|
+| `Analysis.AbsolutelyContinuousOnInterval.eq_zero_of_abs_deriv_le` | Propagates a zero of a nonnegative AC function under an a.e. logarithmic derivative bound. |
+| `Analysis.isolated_zero_of_weak_triangular_system` | Local nodal isolation with AC state and essentially bounded lower coefficients. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_state_ne_zero_of_minimum` | Nonvanishing of the actual canonical signed four-state, using physical mass one. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.isolated_zero_of_minimum` | Isolates every interior zero of the same minimizing probe, without source orientation. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.finite_zero_set_on_compact_of_minimum` | Finitely many probe zeros on each compact interior set; no total pole node count. |
+
+The operator-sign route is unresolved and unrefuted, rather than a prerequisite
+for all alternatives. These theorems do not select a determining branch or
+supply cross-geometry sufficiency. The accepted Phase-I manuscript is unchanged.
+
 Rounds 2 and 3 passed their single outer reviews at `734dd5b` and `2778716`.
 Round 4 constructs actual joint weak limits, full-action lower semicontinuity,
 strong recovery of smooth-sequence limits, and a physically nonzero normalized

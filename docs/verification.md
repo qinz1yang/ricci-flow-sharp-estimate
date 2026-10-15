@@ -1768,3 +1768,43 @@ not native selection or refutation theorems. The round's mainline comparison,
 the determining/global and smooth-endpoint requirements remain unresolved.
 The single configured outer review will assess this delta; the unchanged
 Round 10 mathematical review is retained.
+
+
+## Phase II, Round 13 signed continuation and nodal sets
+
+The four new leaves prove weak energy uniqueness, local triangular nodal
+isolation, and nonvanishing of the actual signed minimizing state. They give
+isolated interior probe zeros and a finite zero set on every compact subset of
+the physical interior, with no source-sign or curvature-derivative premise.
+The original endpoint producer is reused, rather than reconstructed.
+
+The final native gate passes for 300 modules, 305 input bindings and 306
+successful command/output records. Four source elaborations are fresh and
+silent; 296 accepted source elaborations are reused. The affected root build,
+all three available declaration linters and native declaration-kind inspection
+pass. The gate checks 1,294 required selectors, 1,395 exact signature queries
+and 3,661 actual transitive axiom rows, including 1,304 private rows. Every
+closure uses only propext, Classical.choice and Quot.sound. Literal driver
+reconstruction matches, and 6,616 source-command provenance records through
+39 receipts are verified.
+
+Receipt SHA256:
+`380a89cab4fb7dfaf806c0c9ead55891d7722e0f2c7d25c19bbc50821ac286dd`.
+The initial validation attempt rejected long new signature-query lines after
+its mathematical checks passed. Namespace-open query formatting fixed that
+failure; no failed receipt is accepted. The final gate also validates the
+simplifier's replacement of one duplicate private helper by Mathlib's abs_sub.
+Checker policy outside inventories, selectors and exact queries is unchanged.
+
+The canonical endpoint consumer retains the same K,r,p,z, mass one, zero complete
+action, global minimality and all four recovery limits, while exposing the new
+signed-state and nodal conclusions. Its completed command/output bindings,
+source advice, preservation and final document hashes are recorded in the
+[checkpoint](evidence/phase2-round-13-nodal/checkpoint.json).
+
+The configured single Round 13 outer reviewer remains responsible for
+independent acceptance. No unchanged accepted theorem is re-reviewed. The
+operator-sign and tested matrix-selection routes remain unresolved and parked;
+compact interior nodal finiteness does not determine the threshold, control
+all pole nodes, prove a finite switching structure or settle smooth endpoint
+attainment. Phase I remains COMPLETE and Phase II OPEN.

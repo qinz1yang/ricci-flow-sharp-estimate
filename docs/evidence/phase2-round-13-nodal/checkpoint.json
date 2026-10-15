@@ -1,0 +1,152 @@
+{
+  "native_receipt_sha256": "380a89cab4fb7dfaf806c0c9ead55891d7722e0f2c7d25c19bbc50821ac286dd",
+  "native_counts": {
+    "modules": 300,
+    "inputs": 305,
+    "outputs": 306,
+    "selectors": 1294,
+    "signature_queries": 1395,
+    "axiom_rows": 3661,
+    "private_axiom_rows": 1304,
+    "fresh_source_elaborations": 4,
+    "reused_source_elaborations": 296
+  },
+  "verified_provenance_receipts": 39,
+  "verified_source_provenance_records": 6616,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot is undetermined",
+  "round_mainline_status": "Signed nodal objective natively established; independent outer verdict pending",
+  "parent_outer_reviewed_revision": "ada6b25cf6b52c24c6202fa962f7372606d77979",
+  "new_public_declarations": {
+    "modules": 4,
+    "theorems": 5,
+    "definitions": 0
+  },
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Analysis/AbsolutelyContinuousUniqueness.lean": "79b11773fb1402268a13cdee1ab2e93fffddd1139975e6fd45ebdec3744ea3d5",
+    "RicciFlowSharpEstimate/Analysis/WeakSystemZeroIsolation.lean": "0d693e6337caea512b2ad00d6cfce478af8a8d925cfdf42630aefe563bd092c6",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeContinuation.lean": "503890d8f4cec1b80b725706264aae7c9b381aa7ea1cced9c7a370550e1b8f93",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeNodalSet.lean": "47de279de5fb050b6edc1204ea9ceb41fb74612c610434a7097c08559943481f"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "bbfaa48cc464a4b719f2c1eca6b3e7b6f9eb12ccc53c59e30c1ae14517cbee57",
+    "docs/theorem-map.md": "aa1581af722d8334429614f04fe5ffb2e845361b68b4a1b8d54df4e17f21abf5",
+    "docs/research/phase2-unrestricted.md": "cab68658d46fe325c175f31658d03c3ce6c1148b252cd04dbd7639b6872b9321",
+    "docs/verification.md": "2ad08300f0b99cb18c7dd70650da12584731c2158c5267339632ff23bd54d505"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round13-root-capfwxsm/statement-audit.md",
+    "sha256": "22e8a2abb32cfb794e4483b5e67718b7744f0ecff3e0b447c5e03950a15fec79",
+    "scope": "Root integration audit, not independent acceptance"
+  },
+  "source_simplifier": {
+    "status": "APPLIED: replace duplicate private absolute-difference helper by Mathlib abs_sub; no public signature or mathematical bound changes",
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round13-simplifier-j3lesrdm/report.md",
+    "report_sha256": "c4e96e7cf9154858dd260387e5f89d675fe3768455ed087ac696f828cb340310",
+    "patch_sha256": "67a654ab72902ca1de23cdb7edec1a44c42bbfc91d12ad490d7aec8b3296aee3",
+    "input_snapshot": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round13-snapshot-0guuzuy0/published",
+    "scope": "Source advice on four new leaves only; no acceptance review",
+    "lease": "released; no active workers"
+  },
+  "additional_native_probes": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round13-root-capfwxsm/NodalChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "84be98710f58a4650b5e0627ae9d0de27e744a10fb519bcc37e61ee7e97136b3",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-15T15:59:57.984841+00:00",
+      "name": "NodalChecks",
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round13-root-capfwxsm/NodalChecks.lean",
+      "output_path": "docs/evidence/phase2-round-13-nodal/nodal-consumer.txt",
+      "completed_exec_session": 4160,
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final project imports and actual final native cache; no scratch overlay",
+      "scope": "Same endpoint K,r,p,z, continuous representatives, canonical zero-multiplier state, mass one, zero action, global minimality, isolated zeros, finite compact zero sets and all four strong recovery limits"
+    }
+  ],
+  "checker_policy_delta": "Only module inventory, required selectors and exact-signature query content; remaining policy AST identical to accepted parent",
+  "reuse_origin": "docs/evidence/phase2-round-11/receipt.json",
+  "independent_review": "Single configured Round13 outer delta review pending; unchanged accepted mathematics and review retained",
+  "provisional_research": [
+    {
+      "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round13-matrix-0gv0ctwz/matrix-selection-report.md",
+      "sha256": "4d7b5b759b7415f45df5bb5ed1566c6df9583be60d3e3c8d7a694b85aa3cef80",
+      "status": "UNRESOLVED, parked after two bounded source-only matrix-selection tests; no native theorem or independent safety characterization"
+    }
+  ],
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "ada6b25cf6b52c24c6202fa962f7372606d77979",
+    "unchanged_prior_native_modules": 296,
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 8794,
+    "prior_native_receipt_sha256": "f45c7448efb4b37602759af3e9ad51667243593a61ace782bccd7cbc84c806d6",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "initial_gate_attempt": {
+    "status": "Not relied on; signature-query long-line warnings repaired by namespace-open formatting",
+    "preserved_outputs": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round13-root-capfwxsm/native-before-advice",
+    "failed_receipt_accepted": false
+  },
+  "remaining_original_gates": [
+    "Independent determining characterization and appropriate selection",
+    "Universal sufficiency across every original rotational geometry and smooth form, with all coverage bridges actually used",
+    "Exact original smooth endpoint equality and attainment/nonattainment, all-form transfer and identification with the determining value",
+    "Final manuscript/research, native, independent review and private delivery closure"
+  ],
+  "conditional_routes": {
+    "operator_sign_selection": "UNRESOLVED, UNREFUTED and parked by owner; not prerequisite for the signed route",
+    "positive_reference_quotient_coverage": "Required only if that comparison route is used",
+    "matrix_jacobi_selector": "UNRESOLVED; current construction still assumes original-form safety"
+  },
+  "scope_limits": [
+    "No finite total node count at poles",
+    "No finite switch count, symmetry or global smoothness",
+    "No operator orientation, determining value, universal new comparison or smooth attainment theorem"
+  ]
+}

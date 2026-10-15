@@ -3095,8 +3095,8 @@ rearranged geometry's recovery and BV factorization would also need proof.
 
 A separate repaired-cap family uses
 R_a=(s'(a)*r-p(a)*s)/2, whose derivative at the cut is zero. Its original
-complete action is beta*p(a)² and B(R_a,s)=-2*beta*p(a). Away from p(a)=0
-it is therefore not a new zero mode; the original stationary boundary law
+complete action is beta*p(a)² and B(R_a,s)=-2*beta*p(a). Under beta>0
+and p(a)≠0, it is therefore not a new zero mode; the original stationary boundary law
 cannot erase its bulk terms. The affine warp repair itself changes the pole
 slope. Only the full reflected/rescaled geometry is an admissible comparison,
 so the original moment multiplier cannot be applied to the raw repair as
@@ -3109,3 +3109,99 @@ conditional positivity wrapper, numerical start or discriminant theorem is
 offered as a substitute. C_rot and all original global/endpoint/final gates
 remain open. The [Round 11 evidence](../evidence/phase2-round-11/checkpoint.json)
 records the bounded API delta separately from this unresolved research.
+
+
+## Round 13: signed continuation and compact interior nodal structure
+
+The current route uses the actual signed zero minimum. The former sufficient
+operator-sign selection mechanism remains **UNRESOLVED and UNREFUTED**, parked
+under the owner's route reassessment. None of the original determining,
+selection, global sufficiency, original smooth endpoint or final acceptance
+requirements is removed. Chronological descriptions above retain their scope
+at the time they were written; source orientation is not a prerequisite for
+this alternative.
+
+The new native theorem packet establishes a structural statement that was not
+previously available: the minimizing probe has no interior accumulation of zeros.
+It is finite on every compact interior subset. The same statement applies to
+any continuous recoverable global minimum at a cap C>=1; zero action is not a
+premise of the general nodal theorem. The actual endpoint producer supplies one
+such minimum together with zero action and all four smooth recovery limits.
+
+Let f=warp K, b=warpSlope K, lambda=A_K(r), let P be the canonical integral Euler
+flux and q the canonical Euler momentum divided by f². The accepted signed
+first-order system is reused with these exact objects. It already supplies
+r'=p, local AC of p and q, the literal operator's a.e. equality to q, and the
+actual equations for p',q',P'. No new independent jets or state representatives
+are introduced.
+
+The first new step is weak uniqueness. On any compact interior interval, the
+positive warp has a bounded reciprocal, and the original box bounds K while
+|b|<=2. All four equations therefore have bounded linear coefficients. For
+E=r²+p²+q²+P², the actual a.e. laws imply |E'|<=B E for a derived finite B.
+Absolute continuity and the two integrating factors exp(±Bx) propagate any
+zero of E in both directions. A simultaneously vanishing state would make
+r zero throughout the physical interior, contradicting its actual mass one.
+This argument uses no K derivative and imposes no physical probe pole value.
+
+The local nodal engine treats each possible first nonzero coordinate. At a
+zero of r, nonzero p directly gives isolation. If p=0 and q!=0, bounded lower
+coefficients times vanishing states disappear in the a.e. derivative limit;
+AC and FTC then give the actual nonzero derivative p'=q/f at the node. Rolle's
+theorem transfers isolation to r. If r=p=q=0 and P!=0, the same argument gives
+q'=P/f² and p'=0 there. Dividing the first p-equation by x-x0 yields a nonzero
+a.e. limit of p'/(x-x0). FTC signs isolate the zero of p on both sides, followed
+again by Rolle. This is not formal differentiation of a measurable curvature
+or a claim of a full smooth Taylor expansion. Compactness and continuity then
+make the zero set finite on any compact subset of (0,1).
+
+The canonical leaves are `Analysis/AbsolutelyContinuousUniqueness`,
+`Analysis/WeakSystemZeroIsolation`, `Geometry/WeakProbeContinuation` and
+`Geometry/WeakProbeNodalSet`. The endpoint consumer retains the exact K,r,p,z,
+unit mass, zero complete action, global minimality and all four strong limits.
+The result does not assert a finite total node count as the poles are approached,
+a finite switch count, symmetry, global smooth curvature or smooth attainment.
+Its independent review is the single configured Round 13 outer delta review.
+
+### Bounded matrix-certificate attempt — provisional and parked
+
+Two source-only tests examined a node-compatible matrix certificate for the
+complete action. With y=(r,p) and control z, the actual leading coefficient is
+f³, the mixed vector is (-Kf²,2bf²), and the lower matrix has entries
+Q11=2K²f-Kb²/2, Q12=-5Kbf/2 and Q22=4b²f. The Hamiltonian momentum is (-P,f²q).
+These calculations retain the original mixed lower term; they are provisional
+research calculations, not new native certificate theorems.
+
+A compact clamped Jacobi frame can be selected by excluding clamped zero modes,
+but the attempted exclusion uses original-form nonnegativity. Polar exhaustion
+of its quadratic endpoint values likewise needs a lower bound supplied by that
+same safety statement. A compact negative probe makes a fixed-endpoint value
+unbounded below by adding arbitrary multiples of it. Thus neither tested selector
+removes the determining/global safety dependency. This is an obstruction to
+these two constructions, not a refutation of all matrix comparisons. The route
+is parked after the two tests until a new curvature-dependent control mechanism
+is available.
+
+Logarithmic polar cutoffs suggest a separate possible coverage bridge: on an
+annulus epsilon²<x<epsilon, a smooth cutoff in log(x)/|log epsilon| has both
+integral x*eta'^2 and integral x³*eta''² tending to zero. This could cover every
+original smooth probe without dividing by a positive reference. The estimates
+and their proposed graph/action passage are still **PROVISIONAL** here; they
+are not used by the nodal proofs or claimed as native results.
+
+The next signed-route test is to combine the proved isolated-node behavior
+with the actual curvature clamp and scale multiplier laws: determine what can
+be controlled on both sides of each node and at the singular poles before any
+global structural or branch assertion. No finite contact pattern is assumed.
+The decisive remaining full goal is still an informative characterization with
+appropriate selection and sufficiency across every original geometry and probe,
+followed by exact original smooth endpoint classification and final delivery.
+
+### Prospective qualification of the historical cap report
+
+The historical hashed cap report is preserved. Its assertion that at least one
+retained cap restriction is nonzero requires a chosen-cut proof. If both displayed
+coefficients (s'(a),p(a)) vanish, its R_a is identically zero. Before using any
+such cap, establish its actual nonzero restriction and positive physical mass
+before normalization. The beta>0 qualifier in the chronological cap discussion
+above is now explicit. Neither correction refutes endpoint selection.
