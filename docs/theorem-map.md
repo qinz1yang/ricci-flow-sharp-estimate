@@ -865,6 +865,34 @@ left value is clip(-L/(5*R(0)^2)) and the right value is
 clip(L_R/(5*R(1)^2)), with the actual corrected-q traces and full Green terms
 fixing L,L_R. Noncancelling saturation is included. The
 [checkpoint](evidence/phase2-round-18-polar-clamp/checkpoint.json) retains the
-actual endpoint and all four recovery limits. One outer delta review remains
-pending. No raw weak-K pole limit, zero-R pole conclusion, determining value,
+actual endpoint and all four recovery limits. Its single outer delta review
+passes at 1c779db. No raw weak-K pole limit, zero-R pole conclusion, determining value,
 independent global comparison or original smooth attainment is asserted.
+
+## Phase II Round 19: zero-trace leading states and singular boundary uniqueness
+
+| Mathematical result | Canonical home |
+|---|---|
+| A finite shrinking envelope for the literal coupled singular Volterra inequalities must vanish near the endpoint | `Analysis/SingularVolterraUniqueness.lean` |
+| Genuine AC fluxes and local AC state equations turn bounded derivative estimates into that boundary uniqueness theorem | `Analysis/SingularFluxUniqueness.lean` |
+| An essential derivative/coordinate limit gives the ordinary quadratic quotient limit of the same genuine AC zero flux | `Analysis/PolarDerivativeAsymptotics.lean` |
+| Exact domain reflection preserves AC for either ordering of the interval endpoints | `Analysis/AbsolutelyContinuousReflection.lean` |
+| The true derivative-flux equation and first-order warp rate give both oriented p and r leading rates, with only a.e. bounded lower coefficient | `Analysis/PolarFluxLeadingRates.lean` |
+| The actual minimizing probe and canonical operator cannot both have zero trace at either physical pole | `Geometry/WeakProbeBoundaryUniqueness.lean` |
+| At each actual zero R trace, corrected q has a derived nonzero trace; q,p and the linear probe quotient have their stated limits, with the negative right p sign | `Geometry/WeakProbeZeroTraceRates.lean` |
+
+Seven new leaves add eight public theorems and no definitions. The physical
+headlines apply at every C>=1 with the actual complete-action multiplier.
+They retain canonical momentum/warp q, Euler flux P, derivative flux f²p
+and the explicit same-probe extension R. The
+[checkpoint](evidence/phase2-round-19-zero-traces/checkpoint.json) binds the
+canonical source and an actual endpoint consumer. That consumer retains one
+chosen kappa,t, all accepted scale/residual/node/nonzero-trace pole laws and
+all four original strong recovery limits. Corrected-q constants from its two
+applications are explicitly identified by uniqueness of their actual limits.
+The single configured outer delta review is pending.
+
+No raw weak-K trace, higher zero-R H/D selection, total node/contact count,
+determining value, independent global comparison or smooth attainment is
+asserted. All original determining, coverage, smooth-endpoint and final gates
+remain open.

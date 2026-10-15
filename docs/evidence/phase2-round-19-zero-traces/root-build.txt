@@ -1,0 +1,9 @@
+✔ [9982/9990] Built RicciFlowSharpEstimate.Analysis.AbsolutelyContinuousReflection (6.3s)
+✔ [9983/9990] Built RicciFlowSharpEstimate.Analysis.PolarDerivativeAsymptotics (6.9s)
+✔ [9984/9990] Built RicciFlowSharpEstimate.Analysis.SingularVolterraUniqueness (11s)
+✔ [9985/9990] Built RicciFlowSharpEstimate.Analysis.PolarFluxLeadingRates (6.3s)
+✔ [9986/9990] Built RicciFlowSharpEstimate.Analysis.SingularFluxUniqueness (7.7s)
+✔ [9987/9990] Built RicciFlowSharpEstimate.Geometry.WeakProbeBoundaryUniqueness (8.0s)
+✔ [9988/9990] Built RicciFlowSharpEstimate.Geometry.WeakProbeZeroTraceRates (6.8s)
+✔ [9989/9990] Built RicciFlowSharpEstimate (10s)
+Build completed successfully (9990 jobs).

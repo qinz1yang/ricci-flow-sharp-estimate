@@ -352,6 +352,13 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.ClampedIntegralFeedback",
     "RicciFlowSharpEstimate.Geometry.AreaPrimitivePoleRates",
     "RicciFlowSharpEstimate.Geometry.AreaCurvaturePoleLimits",
+    "RicciFlowSharpEstimate.Analysis.SingularVolterraUniqueness",
+    "RicciFlowSharpEstimate.Analysis.SingularFluxUniqueness",
+    "RicciFlowSharpEstimate.Analysis.PolarDerivativeAsymptotics",
+    "RicciFlowSharpEstimate.Analysis.AbsolutelyContinuousReflection",
+    "RicciFlowSharpEstimate.Analysis.PolarFluxLeadingRates",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeBoundaryUniqueness",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeZeroTraceRates",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1725,7 +1732,15 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.primitive_first_order_pole_rates,
       area ++ `IsRecoverableAreaCompetitor.primitive_curvature_average_pole_rates,
       area ++
-        `IsRecoverableAreaCompetitor.exists_curvature_pole_limits_at_nonzero_traces_of_minimum
+        `IsRecoverableAreaCompetitor.exists_curvature_pole_limits_at_nonzero_traces_of_minimum,
+      analysis ++ `exists_eq_zero_of_singular_volterra_bounds,
+      analysis ++ `exists_zero_interval_of_singular_flux_bounds,
+      analysis ++ `tendsto_div_sq_of_ae_derivative_quotient,
+      analysis ++ `absolutelyContinuousOnInterval_comp_sub_left,
+      analysis ++ `leading_rates_of_degenerate_derivative_flux,
+      analysis ++ `leading_rates_of_degenerate_derivative_flux_right,
+      area ++ `IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.probe_zero_trace_leading_rates_of_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4450,6 +4465,22 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.primitive_curvature_average_pole_rates
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_curvature_pole_limits_at_nonzero_traces_of_minimum
+open RicciFlowSharpEstimate.Analysis in
+#check exists_eq_zero_of_singular_volterra_bounds
+open RicciFlowSharpEstimate.Analysis in
+#check exists_zero_interval_of_singular_flux_bounds
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_div_sq_of_ae_derivative_quotient
+open RicciFlowSharpEstimate.Analysis in
+#check absolutelyContinuousOnInterval_comp_sub_left
+open RicciFlowSharpEstimate.Analysis in
+#check leading_rates_of_degenerate_derivative_flux
+open RicciFlowSharpEstimate.Analysis in
+#check leading_rates_of_degenerate_derivative_flux_right
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_zero_trace_leading_rates_of_minimum
 
 """
 

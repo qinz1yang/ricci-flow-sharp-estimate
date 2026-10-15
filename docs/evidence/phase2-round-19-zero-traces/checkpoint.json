@@ -1,0 +1,180 @@
+{
+  "native_receipt_sha256": "957b8b6523f3c589cd1679566142b030ec853714ca8ac7cf90562ed8bac37ebb",
+  "native_counts": {
+    "modules": 344,
+    "inputs": 349,
+    "outputs": 350,
+    "selectors": 1356,
+    "signature_queries": 1457,
+    "axiom_rows": 4072,
+    "private_axiom_rows": 1505,
+    "fresh_source_elaborations": 7,
+    "reused_source_elaborations": 337
+  },
+  "verified_provenance_receipts": 44,
+  "verified_source_provenance_records": 8263,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot remains undetermined",
+  "round_mainline_status": "Actual two-pole zero-trace leading rates and boundary uniqueness natively established; single outer delta review pending",
+  "parent_revision": "1c779db92c75b74d311b2d89caed1c685cacaa6a",
+  "parent_review_scope": "Round18 bounded packet passes its single outer review; unchanged accepted mathematics/evidence reused",
+  "new_public_declarations": {
+    "modules": 7,
+    "theorems": 8,
+    "definitions": 0
+  },
+  "declarations": [
+    "RicciFlowSharpEstimate.Analysis.exists_eq_zero_of_singular_volterra_bounds",
+    "RicciFlowSharpEstimate.Analysis.exists_zero_interval_of_singular_flux_bounds",
+    "RicciFlowSharpEstimate.Analysis.tendsto_div_sq_of_ae_derivative_quotient",
+    "RicciFlowSharpEstimate.Analysis.absolutelyContinuousOnInterval_comp_sub_left",
+    "RicciFlowSharpEstimate.Analysis.leading_rates_of_degenerate_derivative_flux",
+    "RicciFlowSharpEstimate.Analysis.leading_rates_of_degenerate_derivative_flux_right",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_zero_trace_leading_rates_of_minimum"
+  ],
+  "source_sha256": {
+    "RicciFlowSharpEstimate/Analysis/SingularVolterraUniqueness.lean": "2f17726a8f9247903c8fa9bf9dbc6f88e1840a5272487b7dff883bfab1fcf49b",
+    "RicciFlowSharpEstimate/Analysis/SingularFluxUniqueness.lean": "579553cf1655bc4ef35ed8135e3c262a07f7db65548d623e394cc184324615a0",
+    "RicciFlowSharpEstimate/Analysis/PolarDerivativeAsymptotics.lean": "c056e4521dff53b9a8408e453fb3892675d49d1e28e88b07a7d4d6f5fa4dabf6",
+    "RicciFlowSharpEstimate/Analysis/AbsolutelyContinuousReflection.lean": "9b3b0a06882063a2fac761bfe8f577d005814306b87c9c37ea675eb95934df9c",
+    "RicciFlowSharpEstimate/Analysis/PolarFluxLeadingRates.lean": "6d35a84e7d55cc2ee888806fffec001265a6a025981f8d302b68ead0e7df9cd9",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeBoundaryUniqueness.lean": "991e7b95eccfc032623bf7dd6d7d3968ae9a348688417a5053136dc200908d23",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeZeroTraceRates.lean": "5f3de5a6e4308e6daffe3fd6645004ea4ac44a3fb1015f4ec6d0d93b1ce6472f"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "45b46d6d12bcecec50f5ab96b881e19489586634889bd1232bbc97088152b0b0",
+    "docs/theorem-map.md": "a5d53a078ee8a76fe25202752c28827814e0562cbe20e67b65eb628d5d8d623f",
+    "docs/research/phase2-unrestricted.md": "fe8d8150ab4c45f5f6e220941c65dd25aa71a155d0890782d622ec92bee1d2d6",
+    "docs/verification.md": "448c43c1d2e03c7c01343b55bbb0adb281930168d178a7c4dcb17786461ecb0e"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round19-root-zezb4_as/round19-root-audit.md",
+    "sha256": "3e5b574b568457d129be0f4fde498422835652ad80e20b0f9483806eb73b117d",
+    "scope": "Builder semantics/integration inspection, not independent acceptance"
+  },
+  "source_simplifier": {
+    "frozen_files_verified": 8937,
+    "new_source_files_verified": 7,
+    "changed_only_by_duplicate_private_helper_removal_and_two_abs_sub_uses": true,
+    "all_eight_public_signatures_and_witness_ties_unchanged": true,
+    "source_only_not_acceptance": true,
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round19-advice-r1tfqqyn/advice/report.md",
+    "report_sha256": "19593c5aa2edc56417f6980627548f73e44675da65e6c65e6fa021018f391ad2",
+    "patch_sha256": "f9fed8e4d34d08abb12983a64e90d5bbc27b237ef1b510c29d07cc3ea4e653c4",
+    "input_snapshot": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round19-advice-r1tfqqyn/published",
+    "input_manifest_sha256": "30149b154352225797e8bf6e701739fef6d63f02626046dcd8c9ffe33056fc58",
+    "integrated_diff_sha256": "cc9eb200e7bd8b018003faf2a2a3bcd39166ce1a8bec1c1da8f5f42106b05b43",
+    "lease": "released; no writable entries or symlinks; no worker compiler/cache/Git/network/descendants"
+  },
+  "worker_packets": [
+    {
+      "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round19-flux-0nrjzod9/PolarDerivativeAsymptotics.lean",
+      "sha256": "d00b2868c50571904a41380177ad4e61e2dd7ceca7d4865d2dda8c4ddd775cb1",
+      "status": "PROVISIONAL source-only candidate; Root repaired imports/elaboration and validated final canonical bytes",
+      "lease": "released; no worker native/cache/Git/network/descendants"
+    },
+    {
+      "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round19-reflection-bridge/AbsolutelyContinuousReflection.lean",
+      "sha256": "53629228cee18fdd46f447e626a6d9f842b9e3c1ba9e4d6b8d7c27f3bb350d38",
+      "status": "PROVISIONAL source-only candidate; Root repaired imports/elaboration and validated final canonical bytes",
+      "lease": "released; no worker native/cache/Git/network/descendants"
+    }
+  ],
+  "additional_native_probes": [
+    {
+      "name": "ZeroTraceChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round19-root-zezb4_as/ZeroTraceChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round19-root-zezb4_as/ZeroTraceChecks.lean",
+      "source_sha256": "824f5183e5270b9752631a7ed891c8c9c18890079bd789e2a83047fc0e767c03",
+      "output_path": "docs/evidence/phase2-round-19-zero-traces/zero-trace-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-15T23:18:43.811054+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final project source and native cache; no scratch overlay",
+      "scope": "Derived nonzero corrected-q coefficients and actual q/p/r leading rates at both zero-probe-trace poles, explicitly tied to the same corrected-q constants by uniqueness; same actual endpoint K,r,p,z, physical mass one, zero complete action, global minimality, one common scale box/multiplier and full residual/complementarity/balances, literal boxed curvature representative with a.e. tie and all interior node laws, actual corrected-q traces and nonzero-probe-trace pole limits including both explicit cancelling factor-five selections, all four strong original graph recovery limits and complete-action convergence"
+    }
+  ],
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "1c779db92c75b74d311b2d89caed1c685cacaa6a",
+    "unchanged_prior_native_modules": 337,
+    "authorized_parent_source_changes": [],
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 10776,
+    "prior_native_receipt_sha256": "61746e82349a9e9f2153c6d7336bf5cee4254176bfceecfd680269c6c89d5454",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "checker_policy_delta": "Only module, required-selector and exact-query inventories; remaining policy AST unchanged",
+  "checker_policy_audit_sha256": "814e4e1b452d8cf614fd467f299eda40ad38077d33292a6f8858cfba336f8f51",
+  "reuse_origin": "docs/evidence/phase2-round-18-polar-clamp/receipt.json",
+  "independent_review": "Single configured Round19 outer delta review pending; no duplicate unchanged acceptance review",
+  "remaining_original_gates": [
+    "Further zero-R H/D cancellation and every used domain/polar/interface/representative bridge",
+    "Informative determining data and justified threshold selection",
+    "Independent universal safety over every original geometry/form with all coverage/Haar/recovery bridges",
+    "Exact original smooth endpoint equality/attainment and all-form transfer",
+    "Final Phase-II manuscript/research, native, independent review and private delivery"
+  ],
+  "conditional_routes": {
+    "operator_sign_selection": "parked UNRESOLVED and UNREFUTED optional sufficient mechanism",
+    "positive_reference_quotient_coverage": "mandatory only if that mechanism is used; all-probe coverage remains required",
+    "matrix_jacobi_selector": "parked after two unsuccessful tests; not refuted"
+  },
+  "scope_limits": [
+    "No assumption that either pole has zero R trace",
+    "qL/qR nonzero are derived only in their respective actual zero-R cases; their signs are unrestricted",
+    "Canonical q and genuine interior representatives; assigned raw endpoint values are not traces",
+    "No curvature limit or higher divided-clamp cancellation conclusion in zero-R cases",
+    "No total node/contact count, symmetry, finite dimension or branch uniqueness",
+    "No independent global comparison or determination of C_rot",
+    "No original smooth attainment or convergence of recovered smooth pole values"
+  ],
+  "bitlesson_unchanged_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+}

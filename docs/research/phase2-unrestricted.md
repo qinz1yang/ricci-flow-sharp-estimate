@@ -3643,7 +3643,7 @@ or polar rate is being substituted for the full C_rot determination.
 The averaged-feedback test succeeds in its contracted scope. Five new leaves
 and ten native theorems are bound by the
 [checkpoint](../evidence/phase2-round-18-polar-clamp/checkpoint.json). The one
-configured outer delta review remains pending. Round 17's actual polar-rate
+configured outer delta review passes at 1c779db. Round 17's actual polar-rate
 packet passes its single outer review at e33c0e1 and is reused unchanged.
 C_rot remains undetermined; only AC1 and AC2 are fully met.
 
@@ -3758,3 +3758,117 @@ bridge, exact original smooth endpoint classification and all-form transfer,
 and final manuscript/native/review/private delivery remain open. Existing
 original smooth witnesses and endpoint safety are reused. Necessary local
 clamp selection does not identify C_rot or prove cross-geometry sufficiency.
+
+## Round 19: actual zero-trace leading rates and boundary uniqueness
+
+The zero-R test succeeds in its contracted scope. Seven new leaves contain
+eight public theorems and no definitions. The
+[checkpoint](../evidence/phase2-round-19-zero-traces/checkpoint.json) binds
+the source and same-endpoint consumer; one configured outer delta review is
+pending. The accepted Round18 packet is reused unchanged. Phase I remains
+COMPLETE, Phase II OPEN, and only AC1/AC2 are fully met.
+
+### Hypothesis and decisive boundary test
+
+Fix any actual recoverable global minimum at C>=1, with its continuous
+interior representatives r,p, actual lambda=weakMeridionalAction, canonical
+q=EulerMomentum/f², Euler flux P, genuine derivative flux F=f²p and explicit
+R=r(1/2)+integral_(1/2)^x p. The accepted corrected-q limits and bounded
+(2-b)/f or (2+b)/f imply q tends to its respective corrected trace whenever
+the corresponding R trace is zero. No curvature trace is used.
+
+The decisive hypothesis to reject is R(0)=qL=0. The original parabolic box
+gives lo*x<=f<=m*x on the left half, with lo=1/C, m=2*C, abs(b)<=2 and
+abs(K)<=m almost everywhere. Bounded actual p and endpoint FTC give
+abs(r)<=N*x. Thus E=abs(q)+abs(p)+abs(r)/x has a finite envelope. The complete
+source is retained literally:
+
+    P'=f*K*q+K*b*f*p/2-(K²*f-K*b²/2)*r+lambda*f*r.
+
+Its absolute value is at most A*x*E, for the explicitly derived nonnegative
+A=3*m²+m³+3*m+abs(lambda)*m+1. Genuine zero-trace AC/FTC gives the actual
+P primitive, hence P=O(x²). The actual equation
+
+    q'=(P-K*b*f*r/2)/f²
+
+then has an integrable bounded right side at the pole. Its local AC law and
+zero q trace identify the same q with its endpoint primitive. No arbitrary
+assigned value q(0) is used. The full derivative-flux equation and true zero
+trace likewise give the literal F primitive and its bound for p. These yield
+the three coupled integral inequalities for P,q,p together with
+abs(r)<=integral_0^x abs(p).
+
+### The shrinking-envelope contraction closes
+
+The Volterra engine constructs M as the supremum of E on a sufficiently
+small interval (0,delta); boundedness and nonemptiness are proved. The P
+primitive gives abs(P)<=A*x²*M. It follows successively that
+
+    abs(q)<=T*x*M,
+    abs(p)<=U*x*M,
+    abs(r)/x<=U*x*M,
+
+for fixed nonnegative T,U. Hence M<=(T+2U)*delta*M. Choosing delta with
+(T+2U)*delta<1 forces M=0, so the same r,p,q,P all vanish on that interval.
+The accepted actual state-nonvanishing theorem contradicts this at an
+interior point. Thus a zero probe trace forces qL!=0. The proof derives all
+integral bounds from the genuine equations; none is an extra minimum-level
+premise. Measurable K is never differentiated, and no source orientation,
+limiting curvature, independent polar jet or finite-node assumption enters.
+
+The reusable differential engine derives a.e. differentiability from its
+local AC input by a countable rational-interval cover. It does not export
+that derivable regularity as a separate user hypothesis.
+
+### Genuine leading rates and exact reflection
+
+For a genuine zero AC flux, an essential limit deriv(F)/x -> L gives the
+ordinary limit F/x² -> L/2. The proof extracts a uniform a.e. error bound on
+each whole shrinking interval, integrates the actual derivative by FTC and
+controls the weighted quadratic remainder. Applied to F'=f*(q+K*r), the
+accepted f/x -> 2, q -> qL and bounded K with r -> 0 give
+
+    F/x² -> qL,   p -> qL/4,   r/x -> qL/4,   qL!=0.
+
+The final probe quotient follows from its genuine derivative r'=p and
+endpoint limit, not an imposed Taylor jet. The source limit is only essential;
+the resulting F,p,r quotient limits are ordinary one-sided limits of their
+actual representatives.
+
+At the right pole reflect the full same functions by y=1-x:
+rR=r(1-y), pR=-p(1-y), qR=q(1-y), PR=-P(1-y), FR=-F(1-y),
+fR=f(1-y), bR=-b(1-y) and KR=K(1-y). The complete source, including lambda,
+retains its form. AC reflection and the measure-preserving substitution are
+proved/applied explicitly; geometric symmetry is not assumed. The genuine
+tail primitive F(x)=-integral_x^1 f*(q+K*r) therefore gives
+
+    q -> qR,   p -> -qR/4,   r/(1-x) -> qR/4,   qR!=0
+
+when R(1)=0. Either or both R traces may vanish; nonzero qL/qR are outputs.
+Their signs are unrestricted.
+
+### Actual endpoint application and unresolved successor
+
+The consumer calls the accepted endpoint producer once and the accepted
+scale/node/nonzero-trace-pole package once. It retains that same kappa,t and
+all residual/complementarity/balance laws. Corrected-q constants supplied by
+the new theorem are tied to the package's constants by uniqueness of limits.
+The same K,r,p,z, physical mass one, zero action, global minimality, four
+strong original graph recovery limits and complete-action convergence remain.
+No boundary nondegeneracy is supplied to the endpoint example.
+
+The observed outcome is a proved zero-trace leading state and singular
+boundary uniqueness, removing the tested structural obstruction. Higher
+zero-R numerator/denominator cancellations in H/D and every polar zero-set
+or representative bridge actually used remain successor obligations. No
+curvature limit in those cases or global node/contact pattern is claimed.
+The next signed-clamp test must consume these nonzero leading coefficients
+in the complete adjoint at its actual cancellation order, without assuming
+smooth K, symmetry or fixed switching. Its success would still require a
+separate determining/selection and cross-geometry sufficiency argument.
+
+An informative characterization of C_rot, justified threshold selection,
+independent universal safety across every original rotational metric and
+smooth one-form, all used coverage/Haar/recovery bridges, exact original
+smooth endpoint equality/attainment and final manuscript/native/review/private
+delivery remain open. Necessary boundary structure does not determine C_rot.

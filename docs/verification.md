@@ -2042,11 +2042,74 @@ compiler/platform/ten clean dependency revisions are preserved. The immutable
 tracker prefix and historical stop-state match. Q6's stale current Round15
 review sentence is corrected in the ordinary documentation delta, with no
 new mathematical review/build or mainline credit. Round17's single outer
-review passes at e33c0e1. Round18's one configured outer delta review remains
-pending; unchanged accepted mathematics/evidence are reused.
+review passes at e33c0e1. Round18's single configured outer delta review
+passes at 1c779db; unchanged accepted mathematics/evidence are reused.
 
 Phase I remains COMPLETE; Phase II remains OPEN and C_rot undetermined.
 Zero-R rates and every further used domain/interface/representative/coverage
 bridge, informative determination/selection, independent universal sufficiency,
 original smooth endpoint equality/all-form transfer and final full-suite
 manuscript/evidence/review/private delivery remain open.
+
+## Phase II, Round 19 zero-trace leading rates and boundary uniqueness
+
+Seven new leaves add eight public theorems and no definitions. Genuine
+AC/FTC and full-source bounds produce the actual singular Volterra
+inequalities. Their shrinking-envelope contraction excludes simultaneous
+zero probe/canonical-operator traces at either physical pole. The genuine
+derivative flux and actual first-order warp rate give ordinary q,p,r leading
+limits at every zero R trace, with the nonzero q coefficient derived and the
+right p sign negative. Exact reflection retains the complete action multiplier.
+
+The final canonical gate passes for 344 physical/checker/root modules,
+349 current input hashes and 350 successful command/output bindings.
+All seven fresh source elaborations are silent; all 337 accepted parent
+elaborations are reused. Root, all three available unsuppressed declaration
+linters and native declaration-kind inspection pass. The 1,356 selectors,
+1,457 exact queries and 4,072 actual transitive axiom rows, including
+1,505 private rows, use only propext, Classical.choice and Quot.sound.
+All eight new declarations occur in the exact-signature and axiom output.
+All three reconstructed literal driver hashes and 8,263 source-command
+records through 44 receipts match. Checker policy outside the module,
+required-selector and exact-query inventories is unchanged.
+
+Receipt SHA256:
+`957b8b6523f3c589cd1679566142b030ec853714ca8ac7cf90562ed8bac37ebb`.
+The source-only simplifier removes one duplicate private absolute-difference
+helper and replaces its two uses by Mathlib's abs_sub. All eight public
+statements and same-object witness laws are unchanged; final native evidence
+covers the integrated bytes. Advice is not independent acceptance. The two
+source-only worker candidates remain provisional records; their final Root
+integration and import/elaboration repairs are covered by canonical evidence.
+No failed development diagnostic is used as successful evidence or a failed
+mathematical route.
+
+The actual canonical endpoint consumer is silent and exits zero. Its source
+SHA256 is `824f5183e5270b9752631a7ed891c8c9c18890079bd789e2a83047fc0e767c03`.
+It calls the endpoint producer once and the accepted scale/node/nonzero-trace
+pole producer once. The new zero-trace constants are identified with that
+same package's corrected-q constants by uniqueness of limits. The identical
+K,r,p,z, physical mass one, zero action, global minimality, full residual and
+one chosen kappa,t, all accepted node/pole laws, all four original strong
+graph recovery limits and complete-action convergence remain. No zero or
+nonzero pole trace, boundary coefficient or curvature limit is supplied.
+The [checkpoint](evidence/phase2-round-19-zero-traces/checkpoint.json) binds
+final source, four documents, this consumer, Root audit, source advice and
+preservation.
+
+All 337 accepted parent leaves, 149 Phase-I leaves, 10,776 prior evidence
+files, 2,325 Phase-I workflow hashes and 142 pre-restart historical Round-file
+hashes remain unchanged. Both tasks, accepted paper bytes, immutable tracker
+prefix, historical stop-state, fixed pins, compiler/platform and ten clean
+dependency revisions are preserved. All worker/advice read leases are
+released; workers ran no Lean/Lake and accessed no Root writable cache.
+The single configured Round19 outer delta review remains pending; there is
+no duplicate acceptance review of unchanged mathematics.
+
+Phase I remains COMPLETE; Phase II remains OPEN and C_rot undetermined.
+Higher zero-R H/D cancellation rates and every further used polar/interface/
+representative/coverage bridge, informative determination/selection,
+independent universal sufficiency, exact original smooth endpoint equality
+and all-form transfer, and final full-suite manuscript/evidence/review/private
+delivery remain required. No total node/contact count or smooth attainment
+is claimed by this checkpoint.

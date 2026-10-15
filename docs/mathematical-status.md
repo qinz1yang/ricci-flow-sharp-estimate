@@ -9,6 +9,19 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 19 establishes the zero-probe-trace leading state at both physical
+poles of the actual signed minimum. The canonical operator has a derived
+nonzero trace qL or qR; the genuine probe derivative tends to qL/4 on the
+left and -qR/4 on the right; r/x and r/(1-x) tend to qL/4 and qR/4.
+These coefficients have unrestricted signs. Singular Volterra uniqueness
+excludes a simultaneous zero probe/operator trace using the complete Euler
+source, its actual action multiplier and genuine zero fluxes. No source sign,
+curvature limit or polar nondegeneracy is supplied. The
+[checkpoint](evidence/phase2-round-19-zero-traces/checkpoint.json) records
+this bounded packet; its single outer delta review is pending. Higher
+zero-trace clamp cancellations, determining selection, independent universal
+sufficiency and the original smooth endpoint classification remain open.
+
 Round 18 proves a finite one-sided limit of the same boxed curvature
 representative at each physical pole whose actual probe trace is nonzero.
 Genuine endpoint FTC converts the accepted derivative rate into nested
@@ -16,8 +29,8 @@ curvature averages; bounded averaging and a proved contraction select the
 explicit clipped value in the cancelling case. Both pole signs and one
 common scale multiplier are retained. The
 [checkpoint](evidence/phase2-round-18-polar-clamp/checkpoint.json) records
-this bounded packet; its single outer delta review is pending. Zero probe-
-trace pole control, informative threshold selection, independent universal
+this bounded packet, accepted by its single outer review at 1c779db. Further
+zero-probe-trace clamp control, informative threshold selection, independent universal
 sufficiency and the original smooth endpoint classification remain open.
 
 Round 17 establishes boundedness of the actual minimizing p and canonical q
