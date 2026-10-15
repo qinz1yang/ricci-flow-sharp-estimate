@@ -1,0 +1,156 @@
+{
+  "native_receipt_sha256": "de8cca382a2506e19fcefa0cb9ca681e677a7e1ebc8c146fc7c511b9045b1073",
+  "native_counts": {
+    "modules": 319,
+    "inputs": 324,
+    "outputs": 325,
+    "selectors": 1322,
+    "signature_queries": 1423,
+    "axiom_rows": 3853,
+    "private_axiom_rows": 1417,
+    "fresh_source_elaborations": 8,
+    "reused_source_elaborations": 311
+  },
+  "verified_provenance_receipts": 41,
+  "verified_source_provenance_records": 7246,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot remains undetermined",
+  "round_mainline_status": "Actual unweighted polar integrability and finite probe traces natively established; single outer verdict pending",
+  "parent_outer_reviewed_revision": "a47db01b3b8166caecb0dc8c322214f265047b1e",
+  "new_public_declarations": {
+    "modules": 8,
+    "theorems": 8,
+    "definitions": 0
+  },
+  "declarations": [
+    "RicciFlowSharpEstimate.Analysis.integrableOn_tail_integral_of_coordinate_mul_integrable",
+    "RicciFlowSharpEstimate.Analysis.integrableOn_div_sq_primitive_of_integrable",
+    "RicciFlowSharpEstimate.Analysis.AbsolutelyContinuousOnInterval.integrable_div_endpoints_of_deriv_memLp_two",
+    "RicciFlowSharpEstimate.Analysis.integrable_of_parabolic_weighted_derivative",
+    "RicciFlowSharpEstimate.Analysis.integrable_of_parabolic_divergence_flux",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_zeroth_coefficient_memLp_two",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_pole_integrability_of_minimum"
+  ],
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Analysis/PolarIntegralBounds.lean": "432032a8545efb8e2c52145f9e153158578de2be19fab5a1983fab46486fef8a",
+    "RicciFlowSharpEstimate/Analysis/PolarHeadIntegralBounds.lean": "d95091f10a9e3cb87747a07f9dfb67f750a08a215aebc31ff273af239a2acf66",
+    "RicciFlowSharpEstimate/Analysis/H1EndpointIntegrability.lean": "5e8c8d4920566300d99f7b393ab4e95a41e94474302c342ff41021dae8e3a772",
+    "RicciFlowSharpEstimate/Analysis/WeightedDerivativeIntegrability.lean": "c35ecddc45a4f3bba43f0dcd9617f3ef98c32f1db39efb2829f95114b990b416",
+    "RicciFlowSharpEstimate/Analysis/ParabolicDivergenceIntegrability.lean": "1c64456b743600bac4375020b0294d3800d1d7945e439d2781ce89b6eb4f5aa5",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeEulerL2.lean": "b6ffc022f4b68c8d48bde0415bf8b419dcb01143e79f2f9b3fa4ece57a206fca",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeOperatorIntegrability.lean": "14aa5ca0138955d92d1b7a4a86c97a10488184b0dda9d8dc0777c025db5f669c",
+    "RicciFlowSharpEstimate/Geometry/WeakProbePoleTraces.lean": "9c80a725227ac7c59ed816783ae6000f1cd583cbb0bf68b755ec77a70ca63a15"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "8bcf8770b8a201fbf7500c896f8dc308ca0e19c31db6cb9ef50c23fdca4d3f4e",
+    "docs/theorem-map.md": "e4b6a50d975ec5bb28cc227e1475564974f3b5bea6d96b6446718d495e9c3ec7",
+    "docs/research/phase2-unrestricted.md": "a934d454ae2480e513a95f436ee3d95e277a3f075779f1f1293f20f12ee416de",
+    "docs/verification.md": "6cbf2080a6008ed175d9265fd3c39656b852e5af3bfe46a600a7e394c3143618"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round15-root-_ek5tbi2/statement-audit.md",
+    "sha256": "2a2832cfcf1c624d563ca53ad893ffcff7ece0f8b8d9f1a585bed397b4396f5d",
+    "scope": "Root integration audit, not independent acceptance"
+  },
+  "source_simplifier": {
+    "status": "APPLIED: replace two manual one-sided interval-neighborhood proofs by Ioo_mem_nhdsGT/LT; all eight public signatures and witness equations unchanged",
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round15-advice-1gqt9_cq/advice/report.md",
+    "report_sha256": "d75f1cddd5eed164f4967ec917466470745c891904967df1180dd9e213f0fd5d",
+    "patch_sha256": "9da90eea21f8e51c649ccb9d749d1c7801d5ee9a20879173b2a24d930456e592",
+    "input_snapshot": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round15-advice-1gqt9_cq/frozen",
+    "scope": "Source-only advice on eight leaves; not an acceptance review",
+    "lease": "released; no worker processes"
+  },
+  "additional_native_probes": [
+    {
+      "name": "PoleChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round15-root-_ek5tbi2/PoleChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round15-root-_ek5tbi2/PoleChecks.lean",
+      "source_sha256": "7a53f49893e3b2370cabc43763120bf92543534b2fc2d1444267ca3a71dbfa17",
+      "output_path": "docs/evidence/phase2-round-15-poles/pole-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-15T18:44:27.632708+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final project source and native cache; no scratch overlay",
+      "scope": "Same endpoint K,r,p,z, unit mass, zero action, global minimality, full same scale-balanced residual/clamp, all four recovery limits, actual p/operator L1 and explicit same-probe AC extension with both finite pole traces, derivative tie and global bound",
+      "completed_exec_session": 82721
+    }
+  ],
+  "checker_policy_delta": "Only module inventory, required selectors and exact signature queries; remaining policy AST identical to accepted parent",
+  "reuse_origin": "docs/evidence/phase2-round-14-nodes/receipt.json",
+  "independent_review": "Single configured Round15 gpt-6-astra/max outer delta review pending; unchanged accepted mathematics/evidence and review reused",
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "a47db01b3b8166caecb0dc8c322214f265047b1e",
+    "unchanged_prior_native_modules": 311,
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 9425,
+    "prior_native_receipt_sha256": "396481718ee80a365e922e20f49715b13624ce3c21fa3b1d31f6e12f8633e5ec",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "remaining_original_gates": [
+    "Actual weighted state/Green/adjoint/clamp pole laws and every further domain/interface/path bridge used",
+    "Independent informative determining characterization and appropriate selection",
+    "Universal sufficiency across every original rotational geometry and smooth form, including every coverage bridge actually used",
+    "Exact original smooth endpoint equality/attainment/nonattainment, all-form transfer and combination with determining value and accepted smooth sharpness",
+    "Final manuscript/research, native, independent-review and private-delivery closure"
+  ],
+  "conditional_routes": {
+    "operator_sign_selection": "UNRESOLVED, UNREFUTED and parked; not prerequisite for signed route",
+    "positive_reference_quotient_coverage": "Required only if used by chosen comparison",
+    "matrix_jacobi_selector": "UNRESOLVED and parked after its safety-dependent selector tests"
+  },
+  "scope_limits": [
+    "Finite traces of the same original weak probe r; arbitrary assigned weak pole point values are not trace data",
+    "No nonzero probe trace, bounded p/q, finite operator or curvature pole limit",
+    "No smooth recovery pole-value convergence, smooth attainment, total node count, switch pattern, symmetry or selected branch",
+    "No determining constant or independently new universal comparison"
+  ]
+}

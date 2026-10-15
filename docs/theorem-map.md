@@ -9,9 +9,32 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+The Round 15 physical-pole packet proves unweighted integrability and finite
+probe traces for the actual signed minimum. It applies to every continuous
+recoverable global minimum at C>=1, with the actual action multiplier. The
+[native checkpoint](evidence/phase2-round-15-poles/checkpoint.json) is new;
+the configured single outer review is pending.
+
+| Declaration | Result and use |
+|---|---|
+| `Analysis.integrableOn_tail_integral_of_coordinate_mul_integrable` | A coordinate-weighted L1 source has an L1 tail primitive; unweighted source integrability is not assumed. |
+| `Analysis.integrableOn_div_sq_primitive_of_integrable` | The coordinate-weighted primitive of an L1 source remains L1 after division by x². |
+| `Analysis.AbsolutelyContinuousOnInterval.integrable_div_endpoints_of_deriv_memLp_two` | Genuine zero-trace AC/L2-derivative data give both integrable endpoint quotients. |
+| `Analysis.integrable_of_parabolic_weighted_derivative` | Local AC and the actual parabolically weighted derivative give unweighted L1 membership. |
+| `Analysis.integrable_of_parabolic_divergence_flux` | A true zero-trace f²p divergence flux with f comparable to x(1-x) and an L1 source forces p in L1. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_zeroth_coefficient_memLp_two` | The complete zeroth Euler coefficient is unweighted L2 for every real multiplier and recoverable competitor. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum` | The same minimum's literal weak operator is unweighted L1 through both poles. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_pole_integrability_of_minimum` | Same-probe derivative L1, explicit AC extension, genuine derivative/identity laws, finite original-probe traces and global probe bound. |
+
+The endpoint consumer retains its original K,r,p,z, unit mass, zero action,
+global minimum, accepted same scale-box/clamp data and all four strong recovery
+limits. No assigned weak pole point value is identified with a trace. No
+nonzero trace, bounded p or q, curvature trace, total node count, determining
+value, new universal comparison or smooth attainment is concluded.
+
 The Round 14 node-interface packet retains the same actual minimum, box and
 centered multiplier. Its [native checkpoint](evidence/phase2-round-14-nodes/checkpoint.json)
-is separate from the pending single outer review. The principal declarations are:
+and single outer review are accepted at a47db01. The principal declarations are:
 
 | Declaration | Result and use |
 |---|---|

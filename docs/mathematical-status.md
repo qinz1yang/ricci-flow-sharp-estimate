@@ -9,6 +9,18 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 15 derives unweighted L1 control of the actual minimizing probe
+derivative and literal weak meridional operator through both physical poles.
+An explicit primitive extends the same probe absolutely continuously to the
+closed interval, gives finite one-sided traces and bounds it globally. Zero
+probe traces are allowed. The complete Euler source, natural flux traces and
+original parabolic warp bounds produce these estimates; no source sign or
+unweighted state bound is supplied. The
+[checkpoint](evidence/phase2-round-15-poles/checkpoint.json) records the new
+native packet, with its single outer review pending. Curvature/operator pole
+limits, determining selection, universal sufficiency and exact smooth endpoint
+classification remain open.
+
 Round 14 closes the interior curvature-clamp trace step for the actual signed
 zero minimum. Genuine same-cap recovery of both cuts excludes double zeros,
 so every interior node is simple. The complete adjoint has a C1 regular part
@@ -16,8 +28,8 @@ whose second a.e. law is affine in the original measurable curvature. One
 scale-balanced box and multiplier then give an a.e. equal curvature
 representative with finite left and right limits at every node, including
 vanishing numerator and first derivative. The new
-[checkpoint](evidence/phase2-round-14-nodes/checkpoint.json) concerns this delta;
-its configured outer review is pending. Singular-pole estimates, determining
+[checkpoint](evidence/phase2-round-14-nodes/checkpoint.json) and single outer
+review are accepted at a47db01. Further singular-pole estimates, determining
 selection, global sufficiency and original smooth endpoint classification
 remain open. No finite switching pattern or operator orientation is inferred.
 

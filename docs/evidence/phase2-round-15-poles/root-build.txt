@@ -1,0 +1,10 @@
+✔ [9956/9965] Built RicciFlowSharpEstimate.Analysis.H1EndpointIntegrability (6.2s)
+✔ [9957/9965] Built RicciFlowSharpEstimate.Geometry.WeakProbeEulerL2 (7.1s)
+✔ [9958/9965] Built RicciFlowSharpEstimate.Analysis.PolarHeadIntegralBounds (8.2s)
+✔ [9959/9965] Built RicciFlowSharpEstimate.Analysis.PolarIntegralBounds (9.3s)
+✔ [9960/9965] Built RicciFlowSharpEstimate.Analysis.WeightedDerivativeIntegrability (5.7s)
+✔ [9961/9965] Built RicciFlowSharpEstimate.Analysis.ParabolicDivergenceIntegrability (7.8s)
+✔ [9962/9965] Built RicciFlowSharpEstimate.Geometry.WeakProbeOperatorIntegrability (7.2s)
+✔ [9963/9965] Built RicciFlowSharpEstimate.Geometry.WeakProbePoleTraces (6.4s)
+✔ [9964/9965] Built RicciFlowSharpEstimate (8.9s)
+Build completed successfully (9965 jobs).

@@ -3304,3 +3304,109 @@ independently determining characterization, justified selection, sufficiency
 across every original geometry and smooth probe, exact original smooth endpoint
 classification and final manuscript/evidence/delivery remain open. The parked
 operator-sign and matrix-selector routes are not prerequisites for this work.
+
+## Round 15: actual unweighted pole control and finite probe traces
+
+The new signed-route result establishes unweighted L1 membership of the
+literal weak meridional operator Q and the genuine first derivative p, and
+finite one-sided traces of the same minimizing probe r at both physical
+poles. An explicit primitive extends r absolutely continuously to [0,1],
+agrees with it throughout the interior, retains derivative p there and bounds
+the original probe globally. Neither trace is assumed nonzero. The
+[native checkpoint](../evidence/phase2-round-15-poles/checkpoint.json) concerns
+this packet; its single configured outer review is pending. The preceding
+Round 14 interior packet is independently accepted and reused unchanged.
+
+### The decisive complete-source estimate
+
+Let lambda be the actual minimum action, P its canonical Euler flux, and
+q the canonical Euler momentum divided by f². The accepted signed system
+ties q to the literal Q a.e. The complete Euler source is
+
+    P' = f*K*q + K*b*f*p/2 - (K²*f-K*b²/2)*r + lambda*f*r.
+
+Every term is unweighted L2. Indeed r is L2, sqrt(w)*p is L2 and sqrt(f)*q
+is L2 from the accepted graph/action bounds, while f,K,b have the original
+physical bounds. The factor f improves the weighted p and q terms. This
+estimate retains both potential terms, the mixed term and the true mass
+multiplier. No unweighted p/q estimate is assumed at this stage.
+
+Natural accepted zero traces and AC of P, combined with P' in L2, give
+P/x and P/(1-x) in L1. The general endpoint theorem proves the square-root
+increment bound by Cauchy-Schwarz and integrates distance^(-1/2). It requires
+only the true AC function, its two zero traces and its actual derivative in
+L2; no additional pointwise rate is an input.
+
+### Singular integrals give q and p in L1
+
+The tail kernel proves that integrability of t*S(t) on (0,b) implies
+integrability of integral_x^b S(t) in x. Its product-measure row length t
+provides the needed weight. The source itself need not be unweighted L1;
+its a.e. measurability is recovered from the weighted product. The companion
+head kernel proves that
+
+    x^(-2) * integral_0^x t*g(t)
+
+is L1 whenever g is L1. Its row integral is controlled by
+t*integral_t^b x^(-2) dx = 1-t/b <= 1. Both are genuine native Fubini
+arguments, with empty intervals handled and no separate positivity binder
+for b. No external mathematical axiom is used.
+
+For the actual q equation, write w=x(1-x), d=w/f and
+
+    S = q' = (P-K*b*f*r/2)/f²,
+    w*S = d²*(P/w) - d*(K*b/2)*r.
+
+The original parabolic lower bound gives 0<d<=C/2. Since
+P/w=P/x+P/(1-x), all terms on the right are L1. Applying the tail estimate
+to genuine local AC/FTC on each half interval, with exact reflection at the
+right pole, gives q in unweighted L1. The canonical a.e. equality transports
+this conclusion to the original literal weak operator Q.
+
+The accepted literal derivative flux F=f²*p is globally AC, has zero traces
+and satisfies F'=f*(Q+K*r). The source Q+K*r is now L1. The two genuine
+endpoint integral representations of F and the head estimate give
+F/x² and F/(1-x)² in L1. The original lower bound on f then controls p on
+both halves. The generic divergence theorem uses only a.e. coefficient bounds,
+the tied flux equation and true derivative law; it derives p's measurability
+internally. No assumed source sign, p bound or polar leading coefficient is
+inserted. Curvature is never differentiated.
+
+### The same probe has actual finite traces
+
+The theorem displays
+
+    R(x) = r(1/2) + integral_(1/2)^x p(t).
+
+Unweighted p integrability makes R absolutely continuous on [0,1]. Genuine
+weak FTC proves R=r throughout (0,1), and its classical interior derivative
+is the same p. Its endpoint continuity therefore gives the original probe's
+one-sided limits R(0) and R(1); compactness bounds r on the full interior.
+These are derived traces. Arbitrarily assigned r(0),r(1) of an a.e. weak
+representative are not boundary data and are not silently equated with them.
+Only the natural flux has a zero boundary condition; no zero probe boundary
+condition is introduced. Both zero-trace cases are included in the result.
+
+The general physical theorem applies at any C>=1 to a continuous recoverable
+global minimum, not just a zero-action endpoint. The concrete endpoint
+consumer starts from the accepted original producer and retains the same
+K,r,p,z, mass one, zero action, global minimality, full same scale residual and
+literal interior clamp, all four strong recovery limits and action passage.
+Those recovery limits remain the original weighted graph limits. No convergence
+of the smooth recovery sequences' assigned pole values is asserted.
+
+### Remaining polar and determining obligations
+
+This closes the unbounded-probe uncertainty needed to analyze the r² factor
+of the polar curvature adjoint. It does not give boundedness or finite traces
+of p,q, or a curvature/clamp limit at a pole. Next use these new L1 estimates
+with the actual signed equations to test the boundary behavior of f*p and
+f*q, and combine it with the genuine Green/adjoint terms. Treat vanishing r
+traces without a nondegeneracy premise. No finite total node count or fixed
+obstacle-contact pattern is inferred from a finite possibly-zero trace.
+
+An independently determining characterization, appropriate solution selection,
+universal sufficiency across every original geometry and smooth probe, exact
+original smooth endpoint equality/attainment and all-form transfer, and final
+manuscript/evidence/delivery still remain open. The original C_rot objective
+has not been replaced by a necessary system or variational definition.

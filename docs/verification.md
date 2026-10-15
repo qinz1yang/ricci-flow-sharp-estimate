@@ -1848,3 +1848,45 @@ The single configured outer delta review remains pending; accepted unchanged
 mathematics is not re-reviewed. Physical-pole control, determining selection,
 universal sufficiency, original smooth endpoint classification and full
 manuscript/final delivery remain open. Phase I is COMPLETE; Phase II is OPEN.
+
+## Phase II, Round 15 actual polar integrability and traces
+
+Eight new theorem leaves prove singular tail/head integral bounds, H1
+endpoint quotient integrability, a genuine weighted-derivative criterion,
+parabolic divergence integrability, and their application to the complete
+Euler source and actual minimizing probe. The literal operator and p are
+unweighted L1. The explicitly tied probe extension is AC on [0,1], has
+derivative p in the interior, finite one-sided traces and a global bound.
+Zero probe traces are allowed; no source sign or polar state bound is supplied.
+
+The final native gate passes for 319 modules, 324 inputs and 325 successful
+command/output records. Eight source elaborations are fresh and silent;
+all 311 accepted Round 14 elaborations are reused. The canonical root build,
+unsuppressed declaration linters and native declaration-kind checks pass.
+All 1,322 required selectors, 1,423 exact queries and 3,853 actual transitive
+axiom rows, including 1,417 private rows, pass with only propext,
+Classical.choice and Quot.sound. Literal driver hashes match, and 7,246
+source-command provenance records through 41 receipts are verified.
+
+Receipt SHA256:
+`de8cca382a2506e19fcefa0cb9ca681e677a7e1ebc8c146fc7c511b9045b1073`.
+Checker policy outside modules/selectors/exact queries is unchanged. Source
+advice replaces two elementary neighborhood proofs by Ioo_mem_nhdsGT/LT;
+the final native gate validates the integrated bytes. No failed gate receipt
+is used as evidence.
+
+The canonical endpoint consumer exits zero silently, retaining the original
+K,r,p,z, mass one, zero action, global minimum, full accepted scale-box/clamp
+data and all four recovery limits alongside the new pole conclusions.
+Its source SHA256 is
+`7a53f49893e3b2370cabc43763120bf92543534b2fc2d1444267ca3a71dbfa17`.
+The [checkpoint](evidence/phase2-round-15-poles/checkpoint.json) binds its
+exact command/output, final source/docs, source advice and preservation.
+
+All 311 accepted parent leaves, 149 Phase-I leaves, 9,425 prior evidence files,
+2,325 Phase-I workflow hashes, both tasks, accepted paper, pins and compiler/
+dependency/platform bindings are preserved. The immutable tracker prefix is
+unchanged. The single configured outer delta review is pending. No boundedness
+of p/q, curvature pole trace, total node count, determining constant, universal
+new comparison or original smooth attainment is inferred. Phase I remains
+COMPLETE; Phase II remains OPEN with all original final gates retained.

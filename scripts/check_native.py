@@ -326,6 +326,14 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjointRegularity",
     "RicciFlowSharpEstimate.Geometry.WeakProbeSimpleZeros",
     "RicciFlowSharpEstimate.Geometry.AreaCurvatureNodeLimits",
+    "RicciFlowSharpEstimate.Analysis.PolarIntegralBounds",
+    "RicciFlowSharpEstimate.Analysis.PolarHeadIntegralBounds",
+    "RicciFlowSharpEstimate.Analysis.H1EndpointIntegrability",
+    "RicciFlowSharpEstimate.Analysis.WeightedDerivativeIntegrability",
+    "RicciFlowSharpEstimate.Analysis.ParabolicDivergenceIntegrability",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeEulerL2",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeOperatorIntegrability",
+    "RicciFlowSharpEstimate.Geometry.WeakProbePoleTraces",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1663,7 +1671,15 @@ SELECTOR = r"""
       area ++ `weakCurvatureAdjointRegularPart,
       area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_regularPart_of_minimum,
       area ++ `IsRecoverableAreaCompetitor.simple_zero_of_zero_action_minimum,
-      area ++ `IsRecoverableAreaCompetitor.exists_curvature_node_limits_of_zero_action_minimum
+      area ++ `IsRecoverableAreaCompetitor.exists_curvature_node_limits_of_zero_action_minimum,
+      analysis ++ `integrableOn_tail_integral_of_coordinate_mul_integrable,
+      analysis ++ `integrableOn_div_sq_primitive_of_integrable,
+      analysis ++ `AbsolutelyContinuousOnInterval.integrable_div_endpoints_of_deriv_memLp_two,
+      analysis ++ `integrable_of_parabolic_weighted_derivative,
+      analysis ++ `integrable_of_parabolic_divergence_flux,
+      area ++ `IsRecoverableAreaCompetitor.probe_zeroth_coefficient_memLp_two,
+      area ++ `IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.probe_pole_integrability_of_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4319,6 +4335,23 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.simple_zero_of_zero_action_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_curvature_node_limits_of_zero_action_minimum
+
+open RicciFlowSharpEstimate.Analysis in
+#check integrableOn_tail_integral_of_coordinate_mul_integrable
+open RicciFlowSharpEstimate.Analysis in
+#check integrableOn_div_sq_primitive_of_integrable
+open RicciFlowSharpEstimate.Analysis in
+#check AbsolutelyContinuousOnInterval.integrable_div_endpoints_of_deriv_memLp_two
+open RicciFlowSharpEstimate.Analysis in
+#check integrable_of_parabolic_weighted_derivative
+open RicciFlowSharpEstimate.Analysis in
+#check integrable_of_parabolic_divergence_flux
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_zeroth_coefficient_memLp_two
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.weak_operator_integrable_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_pole_integrability_of_minimum
 
 """
 
