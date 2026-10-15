@@ -1808,3 +1808,43 @@ operator-sign and tested matrix-selection routes remain unresolved and parked;
 compact interior nodal finiteness does not determine the threshold, control
 all pole nodes, prove a finite switching structure or settle smooth endpoint
 attainment. Phase I remains COMPLETE and Phase II OPEN.
+
+## Phase II, Round 14 interior curvature-clamp traces
+
+Eleven new leaves contain eighteen public theorems and two definitions. They
+prove genuine double-trace cut recovery, simplicity of every interior node
+of a zero-action joint minimum, complete adjoint regularity and the actual
+same-box curvature-clamp traces. The doubly cancelling numerator case is
+resolved by a forced second-order feedback limit. No operator sign is supplied.
+
+The final native gate passes for 311 modules, 316 input bindings and 317
+successful command/output records. Eleven source elaborations are fresh and
+silent; all 300 accepted Round 13 elaborations are reused. The canonical root
+build, unsuppressed declaration linters and native declaration-kind checks pass.
+All 1,314 required selectors, 1,415 exact queries and 3,797 actual transitive
+axiom rows, including 1,384 private rows, pass with only propext,
+Classical.choice and Quot.sound. Literal driver hashes match; 6,927 source
+provenance records through 40 receipts are verified.
+
+Receipt SHA256:
+`396481718ee80a365e922e20f49715b13624ce3c21fa3b1d31f6e12f8633e5ec`.
+Checker policy is unchanged outside module, required-selector and exact-query
+inventories. Source advice replaces one private interval helper by Mathlib's
+ordConnected_Ioo.uIcc_subset; the final native evidence covers the integrated
+proof bytes. No failed gate receipt is relied on.
+
+The canonical endpoint consumer exits zero silently. It retains the displayed
+K,r,p,z, unit mass, zero action, global minimality, full scale-balanced residual,
+literal curvature clamp, both node traces and all four original recovery limits.
+Its source hash is
+`41b39d794db05898d246752cfd3c4f175edf012dfb07da12df692c2c16cd02b9`.
+The [checkpoint](evidence/phase2-round-14-nodes/checkpoint.json) binds this
+consumer, exact source/document hashes, advice and preservation.
+
+All 300 parent leaves, 149 Phase-I leaves, 9,104 prior evidence files and 2,325
+Phase-I workflow hashes are preserved. Both tasks, accepted paper, fixed pins,
+compiler/platform/dependencies and the immutable tracker prefix are unchanged.
+The single configured outer delta review remains pending; accepted unchanged
+mathematics is not re-reviewed. Physical-pole control, determining selection,
+universal sufficiency, original smooth endpoint classification and full
+manuscript/final delivery remain open. Phase I is COMPLETE; Phase II is OPEN.

@@ -1,0 +1,171 @@
+{
+  "native_receipt_sha256": "396481718ee80a365e922e20f49715b13624ce3c21fa3b1d31f6e12f8633e5ec",
+  "native_counts": {
+    "modules": 311,
+    "inputs": 316,
+    "outputs": 317,
+    "selectors": 1314,
+    "signature_queries": 1415,
+    "axiom_rows": 3797,
+    "private_axiom_rows": 1384,
+    "fresh_source_elaborations": 11,
+    "reused_source_elaborations": 300
+  },
+  "verified_provenance_receipts": 40,
+  "verified_source_provenance_records": 6927,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot remains undetermined",
+  "round_mainline_status": "Arbitrary interior node-clamp objective natively established; independent outer verdict pending",
+  "parent_outer_reviewed_revision": "c0efad2138114fdaa452be2df0e43e6acf91a9b5",
+  "new_public_declarations": {
+    "modules": 11,
+    "theorems": 18,
+    "definitions": 2
+  },
+  "declarations": [
+    "RicciFlowSharpEstimate.Analysis.HasWeakDerivOn.sq_sub_le_length_mul_integral_sq",
+    "RicciFlowSharpEstimate.Analysis.HasParabolicWeakDerivatives.sq_le_energy_of_double_zero_left",
+    "RicciFlowSharpEstimate.Analysis.smoothLeftCutoff",
+    "RicciFlowSharpEstimate.Analysis.contDiff_smoothLeftCutoff",
+    "RicciFlowSharpEstimate.Analysis.smoothLeftCutoff_mem_Icc",
+    "RicciFlowSharpEstimate.Analysis.smoothLeftCutoff_eq_one",
+    "RicciFlowSharpEstimate.Analysis.smoothLeftCutoff_eq_zero",
+    "RicciFlowSharpEstimate.Analysis.smoothLeftCutoff_derivatives_eq_zero",
+    "RicciFlowSharpEstimate.Analysis.exists_smoothLeftCutoff_derivative_bounds",
+    "RicciFlowSharpEstimate.Analysis.smoothLeftCutoff_tendsto",
+    "RicciFlowSharpEstimate.Analysis.parabolicGraph_tendsto_smoothLeftCutoff",
+    "RicciFlowSharpEstimate.Analysis.hasParabolicWeakDerivatives_of_strong_graph",
+    "RicciFlowSharpEstimate.Analysis.exists_smooth_cut_parabolicGraph_recovery",
+    "RicciFlowSharpEstimate.Analysis.AbsolutelyContinuousOnInterval.abs_sub_linear_le_of_deriv_bound",
+    "RicciFlowSharpEstimate.Analysis.tendsto_clamp_of_quadratic_feedback",
+    "RicciFlowSharpEstimate.Analysis.exists_oneSided_clamp_limits_of_quadratic_feedback",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.weakCurvatureAdjointRegularPart",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_regularPart_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.simple_zero_of_zero_action_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_curvature_node_limits_of_zero_action_minimum"
+  ],
+  "source_hashes": {
+    "RicciFlowSharpEstimate/Analysis/WeakDerivativeEnergy.lean": "8a55c87340e5839f325289fae80f56bda6390a6576457b4c6436bb8cfede1fef",
+    "RicciFlowSharpEstimate/Analysis/SmoothLeftCutoff.lean": "06ce123c8990fd469ce941cc3997a8a961ea53a7dad344ca6623ffd7ec3dd0b1",
+    "RicciFlowSharpEstimate/Analysis/ParabolicGraphCutoff.lean": "dcb18c537167a99dcb72029bc903ad671af6ab743e49de79b648e0a9afe133c8",
+    "RicciFlowSharpEstimate/Analysis/ParabolicGraphClosed.lean": "90272795d1d6389463b79157156f10b6ba275bb00460419ccc64a760d5081b5a",
+    "RicciFlowSharpEstimate/Analysis/ParabolicCutRecovery.lean": "790e37f743dd3c26b9484ef8e7cc70ec1d2720f08a10e5e8ee387f537ffbf1e6",
+    "RicciFlowSharpEstimate/Analysis/AbsolutelyContinuousTaylor.lean": "fb5f944a41a9648cf856da2734b0369fe87a7d8352141a23c23f33cd0d7cef10",
+    "RicciFlowSharpEstimate/Analysis/ClampedSecondOrderFeedback.lean": "ff241559c4f7cdf59ce380a56ad49aad3052eafdc318eb286afc5e308a392ba0",
+    "RicciFlowSharpEstimate/Analysis/ClampedNodeLimits.lean": "07091a734e299dbe9c7fb5ebd4f1f20e3d6481c578b4e841100a3420b9bf4118",
+    "RicciFlowSharpEstimate/Geometry/WeakCurvatureAdjointRegularity.lean": "b6776f5bf5d402d0fc9bb752f66a99ae2e22d2855a8a6b312d0deedc8d309bbb",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeSimpleZeros.lean": "b82b88bd99c933ab48e3c8256dbda68e2360ecd636625079a9add8e947059c01",
+    "RicciFlowSharpEstimate/Geometry/AreaCurvatureNodeLimits.lean": "6ac25dcea0d5bde3359874e048acb6d1b0662925d0fcc7e9f67df7c4824535d8"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "e45f014db4b262d6ac602321e8d0830938772f6e744f186741accdc4166baf33",
+    "docs/theorem-map.md": "6cf5a2d1494d94a81d8352b764a137da43262e262f98dd64bab240d7342548dc",
+    "docs/research/phase2-unrestricted.md": "e6a9d05e3b4312cac9436009889c2e0b7cad8128f8da2042379faac8db79da4a",
+    "docs/verification.md": "1b54292e9c1bbe2af0d540b64cd236398dbb7f8649d3b555df4935e9648da9f9"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round14-root-fsl3gta9/statement-audit.md",
+    "sha256": "6c8f8c5695dcff27ddf54cc88882d4533ac8c8f726bd6d2a24c4b896b3402ca5",
+    "scope": "Root integration audit, not independent acceptance"
+  },
+  "source_simplifier": {
+    "status": "APPLIED: replace duplicate private interval-join helper by Mathlib ordConnected_Ioo.uIcc_subset; public signatures and witnesses unchanged",
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round14-advice-k8hfhd9j/advice/report.md",
+    "report_sha256": "246a913968fb7ee2cfdb71693e4d9ace7db870f496b8dbc489c8d864c7f6c18b",
+    "patch_sha256": "affd7ef9e26100d54e304e04e5ee8d38190f73c17367ceb72b0b862d85d02109",
+    "input_snapshot": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round14-advice-k8hfhd9j/frozen",
+    "scope": "Source advice on eleven new leaves; not an acceptance review",
+    "lease": "released; no worker processes"
+  },
+  "additional_native_probes": [
+    {
+      "name": "NodeClampChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round14-root-fsl3gta9/NodeClampChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round14-root-fsl3gta9/NodeClampChecks.lean",
+      "source_sha256": "41b39d794db05898d246752cfd3c4f175edf012dfb07da12df692c2c16cd02b9",
+      "output_path": "docs/evidence/phase2-round-14-nodes/node-clamp-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-15T17:43:34.438312+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final project source and native cache; no scratch overlay",
+      "scope": "Same endpoint K,r,p,z, unit mass, zero action, global minimality, same scale-balanced residual and literal clamp, both node traces and all four original strong recovery limits",
+      "completed_exec_session": 68782
+    }
+  ],
+  "checker_policy_delta": "Only module inventory, required selectors and exact signature-query content; remaining policy AST identical to accepted parent",
+  "reuse_origin": "docs/evidence/phase2-round-13-nodal/receipt.json",
+  "independent_review": "Single configured Round14 gpt-6-astra/max outer delta review pending; valid unchanged accepted review/evidence reused",
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "c0efad2138114fdaa452be2df0e43e6acf91a9b5",
+    "unchanged_prior_native_modules": 300,
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 9104,
+    "prior_native_receipt_sha256": "380a89cab4fb7dfaf806c0c9ead55891d7722e0f2c7d25c19bbc50821ac286dd",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "remaining_original_gates": [
+    "Actual physical-pole bounds and every further domain/interface/path bridge used",
+    "Independent determining characterization and appropriate selection",
+    "Universal sufficiency across all original rotational geometries and smooth forms, including every coverage bridge used",
+    "Exact original smooth endpoint equality/attainment/nonattainment and all-form transfer, combined with the determining value and accepted smooth sharpness",
+    "Final manuscript/research, native, independent-review and private-delivery closure"
+  ],
+  "conditional_routes": {
+    "operator_sign_selection": "UNRESOLVED, UNREFUTED and parked by owner; no prerequisite for this signed route",
+    "positive_reference_quotient": "Required only if used by eventual comparison",
+    "matrix_jacobi_selector": "UNRESOLVED and parked; previous selector depended on original-form safety"
+  },
+  "scope_limits": [
+    "Interior node traces only; no curvature/state pole traces",
+    "No finite total node count, finite switching pattern, symmetry or global smoothness",
+    "No operator orientation, determining value, independent new universal comparison or smooth attainment theorem"
+  ],
+  "pole_test": "Actual warp vanishes at both physical poles with parabolic upper bounds; reciprocal-warp estimates used here are compact-interior only. Weak point values are not physical traces. No unproved pole bridge is used."
+}

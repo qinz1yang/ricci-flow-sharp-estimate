@@ -1,0 +1,1 @@
+/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean

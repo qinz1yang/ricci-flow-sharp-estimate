@@ -9,6 +9,18 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 14 closes the interior curvature-clamp trace step for the actual signed
+zero minimum. Genuine same-cap recovery of both cuts excludes double zeros,
+so every interior node is simple. The complete adjoint has a C1 regular part
+whose second a.e. law is affine in the original measurable curvature. One
+scale-balanced box and multiplier then give an a.e. equal curvature
+representative with finite left and right limits at every node, including
+vanishing numerator and first derivative. The new
+[checkpoint](evidence/phase2-round-14-nodes/checkpoint.json) concerns this delta;
+its configured outer review is pending. Singular-pole estimates, determining
+selection, global sufficiency and original smooth endpoint classification
+remain open. No finite switching pattern or operator orientation is inferred.
+
 Round 13 resumes research through the signed system. New continuation and
 nodal theorems show that the actual minimizing state cannot vanish in all four
 coordinates, every interior probe zero is isolated, and only finitely many

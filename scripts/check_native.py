@@ -315,6 +315,17 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.WeakSystemZeroIsolation",
     "RicciFlowSharpEstimate.Geometry.WeakProbeContinuation",
     "RicciFlowSharpEstimate.Geometry.WeakProbeNodalSet",
+    "RicciFlowSharpEstimate.Analysis.WeakDerivativeEnergy",
+    "RicciFlowSharpEstimate.Analysis.SmoothLeftCutoff",
+    "RicciFlowSharpEstimate.Analysis.ParabolicGraphCutoff",
+    "RicciFlowSharpEstimate.Analysis.ParabolicGraphClosed",
+    "RicciFlowSharpEstimate.Analysis.ParabolicCutRecovery",
+    "RicciFlowSharpEstimate.Analysis.AbsolutelyContinuousTaylor",
+    "RicciFlowSharpEstimate.Analysis.ClampedSecondOrderFeedback",
+    "RicciFlowSharpEstimate.Analysis.ClampedNodeLimits",
+    "RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjointRegularity",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeSimpleZeros",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureNodeLimits",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1632,7 +1643,27 @@ SELECTOR = r"""
       analysis ++ `isolated_zero_of_weak_triangular_system,
       area ++ `IsRecoverableAreaCompetitor.probe_state_ne_zero_of_minimum,
       area ++ `IsRecoverableAreaCompetitor.isolated_zero_of_minimum,
-      area ++ `IsRecoverableAreaCompetitor.finite_zero_set_on_compact_of_minimum
+      area ++ `IsRecoverableAreaCompetitor.finite_zero_set_on_compact_of_minimum,
+      analysis ++ `HasWeakDerivOn.sq_sub_le_length_mul_integral_sq,
+      analysis ++ `HasParabolicWeakDerivatives.sq_le_energy_of_double_zero_left,
+      analysis ++ `smoothLeftCutoff,
+      analysis ++ `contDiff_smoothLeftCutoff,
+      analysis ++ `smoothLeftCutoff_mem_Icc,
+      analysis ++ `smoothLeftCutoff_eq_one,
+      analysis ++ `smoothLeftCutoff_eq_zero,
+      analysis ++ `smoothLeftCutoff_derivatives_eq_zero,
+      analysis ++ `exists_smoothLeftCutoff_derivative_bounds,
+      analysis ++ `smoothLeftCutoff_tendsto,
+      analysis ++ `parabolicGraph_tendsto_smoothLeftCutoff,
+      analysis ++ `hasParabolicWeakDerivatives_of_strong_graph,
+      analysis ++ `exists_smooth_cut_parabolicGraph_recovery,
+      analysis ++ `AbsolutelyContinuousOnInterval.abs_sub_linear_le_of_deriv_bound,
+      analysis ++ `tendsto_clamp_of_quadratic_feedback,
+      analysis ++ `exists_oneSided_clamp_limits_of_quadratic_feedback,
+      area ++ `weakCurvatureAdjointRegularPart,
+      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_regularPart_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.simple_zero_of_zero_action_minimum,
+      area ++ `IsRecoverableAreaCompetitor.exists_curvature_node_limits_of_zero_action_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4248,6 +4279,47 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.isolated_zero_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.finite_zero_set_on_compact_of_minimum
+open RicciFlowSharpEstimate.Analysis in
+#check HasWeakDerivOn.sq_sub_le_length_mul_integral_sq
+open RicciFlowSharpEstimate.Analysis in
+#check HasParabolicWeakDerivatives.sq_le_energy_of_double_zero_left
+open RicciFlowSharpEstimate.Analysis in
+#check smoothLeftCutoff
+open RicciFlowSharpEstimate.Analysis in
+#check contDiff_smoothLeftCutoff
+open RicciFlowSharpEstimate.Analysis in
+#check smoothLeftCutoff_mem_Icc
+open RicciFlowSharpEstimate.Analysis in
+#check smoothLeftCutoff_eq_one
+open RicciFlowSharpEstimate.Analysis in
+#check smoothLeftCutoff_eq_zero
+open RicciFlowSharpEstimate.Analysis in
+#check smoothLeftCutoff_derivatives_eq_zero
+open RicciFlowSharpEstimate.Analysis in
+#check exists_smoothLeftCutoff_derivative_bounds
+open RicciFlowSharpEstimate.Analysis in
+#check smoothLeftCutoff_tendsto
+open RicciFlowSharpEstimate.Analysis in
+#check parabolicGraph_tendsto_smoothLeftCutoff
+open RicciFlowSharpEstimate.Analysis in
+#check hasParabolicWeakDerivatives_of_strong_graph
+open RicciFlowSharpEstimate.Analysis in
+#check exists_smooth_cut_parabolicGraph_recovery
+open RicciFlowSharpEstimate.Analysis in
+#check AbsolutelyContinuousOnInterval.abs_sub_linear_le_of_deriv_bound
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_clamp_of_quadratic_feedback
+open RicciFlowSharpEstimate.Analysis in
+#check exists_oneSided_clamp_limits_of_quadratic_feedback
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check weakCurvatureAdjointRegularPart
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_adjoint_regularPart_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.simple_zero_of_zero_action_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_curvature_node_limits_of_zero_action_minimum
+
 """
 
 

@@ -1,0 +1,13 @@
+✔ [9945/9957] Built RicciFlowSharpEstimate.Analysis.WeakDerivativeEnergy (6.4s)
+✔ [9946/9957] Built RicciFlowSharpEstimate.Analysis.ParabolicGraphClosed (9.1s)
+✔ [9947/9957] Built RicciFlowSharpEstimate.Analysis.AbsolutelyContinuousTaylor (9.9s)
+✔ [9948/9957] Built RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjointRegularity (10s)
+✔ [9949/9957] Built RicciFlowSharpEstimate.Analysis.SmoothLeftCutoff (11s)
+✔ [9950/9957] Built RicciFlowSharpEstimate.Analysis.ParabolicGraphCutoff (6.8s)
+✔ [9951/9957] Built RicciFlowSharpEstimate.Analysis.ClampedSecondOrderFeedback (12s)
+✔ [9952/9957] Built RicciFlowSharpEstimate.Analysis.ParabolicCutRecovery (6.8s)
+✔ [9953/9957] Built RicciFlowSharpEstimate.Analysis.ClampedNodeLimits (6.0s)
+✔ [9954/9957] Built RicciFlowSharpEstimate.Geometry.WeakProbeSimpleZeros (10s)
+✔ [9955/9957] Built RicciFlowSharpEstimate.Geometry.AreaCurvatureNodeLimits (11s)
+✔ [9956/9957] Built RicciFlowSharpEstimate (8.9s)
+Build completed successfully (9957 jobs).

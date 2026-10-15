@@ -9,9 +9,34 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+The Round 14 node-interface packet retains the same actual minimum, box and
+centered multiplier. Its [native checkpoint](evidence/phase2-round-14-nodes/checkpoint.json)
+is separate from the pending single outer review. The principal declarations are:
+
+| Declaration | Result and use |
+|---|---|
+| `Analysis.HasWeakDerivOn.sq_sub_le_length_mul_integral_sq` | Genuine weak-derivative increment energy bound. |
+| `Analysis.HasParabolicWeakDerivatives.sq_le_energy_of_double_zero_left` | Compact interior decay at a double trace zero. |
+| `Analysis.parabolicGraph_tendsto_smoothLeftCutoff` | All three true product-jet limits for arbitrary shrinking positive widths. |
+| `Analysis.hasParabolicWeakDerivatives_of_strong_graph` | Closedness of the displayed parabolic weak graph. |
+| `Analysis.exists_smooth_cut_parabolicGraph_recovery` | Both literal cuts, one common unbounded smooth selection and all six graph limits. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.simple_zero_of_zero_action_minimum` | Actual zero minima have no double interior probe zeros. |
+| `Geometry.AreaProfile.weakCurvatureAdjointRegularPart` | Canonical momentum/Green expression tied to the full curvature adjoint. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_regularPart_of_minimum` | C1 regular part and complete second a.e. derivative law, with no K derivative. |
+| `Analysis.AbsolutelyContinuousOnInterval.abs_sub_linear_le_of_deriv_bound` | AC second-order Taylor estimate. |
+| `Analysis.tendsto_clamp_of_quadratic_feedback` | Forced trace in the doubly cancelling feedback case. |
+| `Analysis.exists_oneSided_clamp_limits_of_quadratic_feedback` | Finite traces in every numerator case. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_curvature_node_limits_of_zero_action_minimum` | Same scale-balanced residual, literal a.e. curvature clamp and both traces at every actual node. |
+
+The fixed `Analysis.smoothLeftCutoff` and its seven public smoothness, value,
+derivative and convergence laws supply the cutoff used by this graph argument.
+No pole trace, total node count, finite switching pattern, independent
+determining characterization, new global safety or smooth endpoint theorem
+is claimed. These original final requirements remain open.
+
 The Round 13 signed continuation packet has the following scope. Its native
-checkpoint is new; independent acceptance is reserved for the configured outer
-review. All unchanged accepted results retain their evidence.
+checkpoint and single outer review are accepted at c0efad2. All unchanged
+accepted results retain their evidence.
 
 | Declaration | Result and use |
 |---|---|

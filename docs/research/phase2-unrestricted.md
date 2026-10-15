@@ -3205,3 +3205,102 @@ coefficients (s'(a),p(a)) vanish, its R_a is identically zero. Before using any
 such cap, establish its actual nonzero restriction and positive physical mass
 before normalization. The beta>0 qualifier in the chronological cap discussion
 above is now explicit. Neither correction refutes endpoint selection.
+
+## Round 14: simple nodes and the actual curvature-clamp traces
+
+The signed route now resolves the interior node-interface step. The packet
+uses one actual zero-action joint minimum and its canonical q,P, complete
+adjoint, original box and centered multiplier. It makes no operator-sign
+assumption. The [native checkpoint](../evidence/phase2-round-14-nodes/checkpoint.json)
+records the new kernel-supported declarations; the single configured outer
+delta review remains pending. No determining constant is claimed.
+
+### Why the actual zero minimum has only simple interior nodes
+
+At a hypothetical r(c)=p(c)=0, local weak second-derivative energy gives
+p(x)^2 <= (c-x) E and r(x)^2 <= (c-x)^3 E on a left interval ending at c.
+For shrinking intervals E tends to zero. A fixed smooth transition at width
+epsilon therefore has vanishing errors chi'*r, chi'*p and chi''*r in L2.
+The bounded interior weights preserve these limits in all three parabolic
+graph coordinates. The cutoff jets are the actual product derivatives.
+
+Closedness identifies both weak derivatives of the literal left cut. Its
+complement is the right cut. A diagonal selection from the original smooth
+sequence recovers both cuts on one common same-cap curvature sequence; the
+smooth left and right probes sum exactly to the selected original probe.
+All six derivative-graph limits survive this construction.
+
+The accepted raw_graph_recovery theorem gives complete-action and physical
+mass passage for each raw cut. Original zero minimality implies nonnegative
+smooth action at the same cap. Both cut actions are consequently nonnegative,
+and their exact local-density sum is the original zero action, so both vanish.
+Their physical masses sum to one. Choose a positive-mass cut before normalizing
+it. It is an actual zero-action global minimum and vanishes on an open interval,
+contradicting the accepted nodal isolation theorem. Thus p(c) is nonzero at
+every actual interior zero. The p=0/q!=0 and p=q=0/P!=0 possibilities are
+excluded by this feasible full-action argument rather than omitted or assumed
+nondegenerate. No physical probe boundary condition is added.
+
+### Complete adjoint cancellation and the decisive cancelling case
+
+Write f=warp K, b=warpSlope K, lambda=A_K(r), and use the canonical q,P.
+Let R be the actual curvature adjoint minus its direct factor 2*f*r^2*K.
+With A=weakCurvatureWarpCoefficient-lambda*r^2, B the slope coefficient,
+and J the genuine Green-tail derivative, the new native theorem proves
+
+    R' = 6*f*q*p - b*f*p^2 - 3*b*q*r - 2*P*r/f + 2*J - 2*integral(B),
+
+and its locally AC derivative satisfies a.e.
+
+    R'' = (2*f*p^2 + 6*q*r - 4*b*r*p + b^2*r^2/(2*f))*K
+          + 3*b^2*p^2 - 3*b*q*p + 4*P*p/f - b*P*r/f^2.
+
+All explicit curvature terms cancel in R'; the full second law is affine in
+the original measurable K with continuous interior state coefficients. These
+identities retain the complete lower action terms and follow from AC/FTC and
+the actual signed equations, without differentiating K.
+
+Choose kappa,t once from the accepted whole-cap scale-balanced producer.
+Set H=R-t*(x-1/2), D=2*f*r^2, and use that same residual's complementarity
+to obtain Kc=clip_[kappa,C*kappa](-H/D) off nodes, equal to original K a.e.
+At nodes use the boxed original point value; these choices do not affect traces.
+The theorem returns the full residual integrability, signs and scale balances
+for these very same kappa,t, rather than identifying separate existential boxes.
+
+At a node c the proved simple zero gives D/(x-c)^2 -> alpha=2*f(c)*p(c)^2>0.
+If H(c)!=0, continuity forces an obstacle on both sides. If H(c)=0 but
+H'(c)!=0, the first derivative forces the corresponding opposite obstacle
+traces. The difficult case is H(c)=H'(c)=0. Put
+
+    beta = 3*b(c)^2*p(c)^2 - 3*b(c)*q(c)*p(c) + 4*P(c)*p(c)/f(c).
+
+The actual law becomes H''=alpha*Kc+beta+e with e->0. Two AC integrations
+give a contracting feedback for the clipped quotient. A punctured-neighborhood
+supremum estimate proves convergence without assuming a curvature limit:
+
+    Kc -> clip_[kappa,C*kappa](-beta/(3*alpha)).
+
+The Taylor estimate and contraction are general Analysis theorems. Their
+point derivative and eventual denominator positivity are derived internally.
+Together with the first-order cases they prove finite left and right curvature
+limits at every actual interior probe zero. The displayed endpoint consumer
+retains the exact K,r,p,z, unit mass, zero complete action, global minimality,
+all scale balances and all four original strong recovery limits.
+
+### Pole test and remaining determining gap
+
+The actual accepted geometry bounds include f(0)=f(1)=0 and
+0<f(x)<=2*C*x*(1-x) in the interior. Thus compact reciprocal-warp bounds
+cannot be made uniform at either pole. In addition, arbitrary point values of
+weak representatives at a pole are not trace data. The new argument uses only
+compact interior intervals and does not turn weighted zero flux traces into
+bounded r,q or curvature traces. This test identifies the precise missing
+polar bridge; no general pole-limit theorem is asserted or used here.
+
+The next signed-route obligation is the actual polar asymptotic/trace control
+needed to use the coupled system globally. Finite interior node traces imply
+neither a finite total node count nor finitely many obstacle contacts. An
+independently determining characterization, justified selection, sufficiency
+across every original geometry and smooth probe, exact original smooth endpoint
+classification and final manuscript/evidence/delivery remain open. The parked
+operator-sign and matrix-selector routes are not prerequisites for this work.
