@@ -1,0 +1,11 @@
+✔ [9968/9978] Built RicciFlowSharpEstimate.Analysis.PolarFluxIntegrability (6.1s)
+✔ [9969/9978] Built RicciFlowSharpEstimate.Geometry.AreaSlopePoleBounds (6.7s)
+✔ [9970/9978] Built RicciFlowSharpEstimate.Analysis.ParabolicDivergenceBound (9.1s)
+✔ [9971/9978] Built RicciFlowSharpEstimate.Analysis.IntegrableDerivativeExtension (9.8s)
+✔ [9972/9978] Built RicciFlowSharpEstimate.Geometry.WeakProbePolarFlux (7.3s)
+✔ [9973/9978] Built RicciFlowSharpEstimate.Analysis.PolarFluxLimits (6.2s)
+✔ [9974/9978] Built RicciFlowSharpEstimate.Geometry.WeakProbePolarFluxBounds (8.5s)
+✔ [9975/9978] Built RicciFlowSharpEstimate.Geometry.WeakProbeBoundedPolarStates (17s)
+✔ [9976/9978] Built RicciFlowSharpEstimate.Geometry.WeakCurvaturePolarRate (10s)
+✔ [9977/9978] Built RicciFlowSharpEstimate (10s)
+Build completed successfully (9978 jobs).

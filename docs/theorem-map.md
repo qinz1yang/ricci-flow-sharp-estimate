@@ -817,6 +817,30 @@ from `weak_operator_integrable_of_minimum` and adapts its one caller;
 `probe_pole_integrability_of_minimum` retains its legitimate pointwise inputs.
 The [checkpoint](evidence/phase2-round-16-adjoint-poles/checkpoint.json) binds
 native evidence and a same-endpoint consumer with one scale residual and all
-four recovery limits. The single outer delta review is pending. No divided
+four recovery limits. Its single outer delta review passes at 7a3d0bf. No divided
 pole-clamp limit, total node/contact bound, determining characterization,
 cross-geometry sufficiency or original smooth endpoint classification follows.
+
+## Phase II Round 17: corrected polar states and complete adjoint derivative rate
+
+| Mathematical result | Canonical home |
+|---|---|
+| Local AC and an actual L1 derivative produce an interior-tied global AC extension, both finite traces and a bound | `Analysis/IntegrableDerivativeExtension.lean` |
+| Actual coordinate-weighted derivative and zero endpoint flux give inverse-square flux integrability; the reflected law treats the other endpoint | `Analysis/PolarFluxIntegrability.lean` |
+| The same genuine flux laws give zero flux/distance limits at both endpoints | `Analysis/PolarFluxLimits.lean` |
+| A bounded source in the true parabolic divergence flux gives a pointwise bound on the tied state | `Analysis/ParabolicDivergenceBound.lean` |
+| Original slope primitives and parabolic bounds control the actual polar quotients | `Geometry/AreaSlopePoleBounds.lean` |
+| Corrected actual Euler fluxes are AC with genuine zero endpoint values and complete derivative equations | `Geometry/WeakProbePolarFlux.lean` |
+| Corrected fluxes divided by squared pole distances are L1 and their distance quotients tend to zero | `Geometry/WeakProbePolarFluxBounds.lean` |
+| Every actual continuous global minimum has bounded p and canonical q, and finite corrected-q traces at both poles | `Geometry/WeakProbeBoundedPolarStates.lean` |
+| Full unweighted warp-source integrability and the actual two-pole derivative rate of every fixed centered regular adjoint, including zero probe traces | `Geometry/WeakCurvaturePolarRate.lean` |
+
+Nine leaves add twelve public theorems and no definitions. Every physical
+minimum result retains the actual complete-action multiplier at arbitrary
+C>=1. The [checkpoint](evidence/phase2-round-17-polar-rates/checkpoint.json)
+binds native evidence and one exact-cap endpoint consumer retaining the same
+chosen scale multiplier and all four graph recovery limits. The single outer
+delta review is pending. The explicit curvature-primitive term need not itself
+have a limit. No unweighted p/q pole trace, cancelling divided-clamp selection,
+finite total nodes/contacts, determining value, independent universal comparison
+or original smooth endpoint classification is asserted.

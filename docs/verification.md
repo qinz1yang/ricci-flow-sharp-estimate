@@ -1942,3 +1942,56 @@ review of unchanged mathematics is requested. Cancelling pole-clamp ratios,
 total nodes/contacts, determining selection, universal sufficiency, precise
 original smooth endpoint equality and final full-suite closure remain open.
 Phase I remains COMPLETE; Phase II remains OPEN.
+
+## Phase II, Round 17 corrected states and complete polar derivative rate
+
+Nine new leaves add twelve public theorems and no definitions. Genuine
+corrected Euler fluxes yield inverse-square estimates and zero distance
+quotients. Actual p and canonical q are bounded, the two corrected-q
+coordinates have finite respective pole traces, and the complete centered
+regular adjoint has the stated genuine derivative rate at both poles.
+Zero probe traces are included. The curvature-primitive correction remains
+explicit unless its probe trace vanishes; no curvature limit is assumed.
+
+The final canonical gate passes for 332 modules, 337 input hashes
+and 338 successful command/output bindings. All 9 fresh source elaborations
+are silent; all 323 accepted parent elaborations are reused. Root build,
+unsuppressed declaration linters and native declaration-kind inspection pass.
+All 1,338 required selectors, 1,439 exact queries and 3,943 actual transitive
+axiom rows, including 1,448 private rows, use only propext,
+Classical.choice and Quot.sound. Literal driver hashes and
+7,582 source-command records through 42 provenance receipts match.
+Checker policy outside modules/selectors/exact queries is unchanged.
+
+Receipt SHA256:
+`6fcda3feeb3b504cfc003b9240ff862816879db26aadb174e41e3cba711bd48f`.
+The source simplifier's two direct restricted-measure proof substitutions
+preserve every signature and witness law; final native evidence covers the
+integrated bytes. Advice is source-only and receives no acceptance credit.
+No failed canonical gate receipt is relied on.
+
+The canonical same-endpoint consumer exits zero silently. Its source SHA256 is
+`6f1f6e8ef27f94f479eea283b629f5c48e816a959ad6f604dc6734bb121c723f`.
+It retains the same K,r,p,z, unit physical mass, zero complete action, global
+minimum, one chosen scale box/multiplier, full residual/clamp/interior-node
+laws, older pole laws and all four strong recovery limits and action passage.
+Trace constants from the state and rate statements are explicitly identified
+by uniqueness, and the actual derivative rate uses that same chosen t. The
+[checkpoint](evidence/phase2-round-17-polar-rates/checkpoint.json) binds final
+sources, four documents, exact consumer command/output, Root statement audit,
+source advice and preservation.
+
+All 323 parent leaves, 149 Phase-I leaves and
+10,087 prior evidence files remain unchanged. All
+2,325 Phase-I workflow hashes, 142 pre-restart historical Round-file
+hashes, both tasks, accepted paper, fixed pins and compiler/platform/ten pinned
+dependencies are preserved. The immutable tracker prefix and historical
+stop-state remain unchanged. Round 16's single outer delta review, including
+Q5, passes at 7a3d0bf. Round 17's single configured outer delta review is
+pending; no repeated review of unchanged mathematics is requested.
+
+This is a necessary polar rate. Cancelling divided-clamp limits, any further
+zero-trace rates or representative bridge actually used, determining selection,
+independent universal sufficiency, exact original smooth endpoint equality and
+all-form transfer, and final full-suite manuscript/evidence/delivery remain
+open. Phase I remains COMPLETE; Phase II remains OPEN, with C_rot undetermined.

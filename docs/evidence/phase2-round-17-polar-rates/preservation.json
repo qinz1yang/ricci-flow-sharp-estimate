@@ -1,0 +1,36 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN",
+  "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+  "prior_outer_reviewed_revision": "7a3d0bf5d7269c52af4155809940153d78ca2b4d",
+  "unchanged_prior_native_modules": 323,
+  "authorized_parent_source_changes": [],
+  "unchanged_phase1_modules": 149,
+  "unchanged_phase1_workflow_files": 2325,
+  "paper_sha256": {
+    "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+    "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+  },
+  "historical_task_unchanged": true,
+  "phase2_task_unchanged": true,
+  "pins_sha256": {
+    "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+  },
+  "prior_tracked_evidence_unchanged": true,
+  "unchanged_tracked_evidence_files": 10087,
+  "prior_native_receipt_sha256": "d462cd13e7e8abf12c6047f41b6b02469acf778c7ebfec1dba93c9523a41181a",
+  "same_native_toolchain_platform_dependencies": true,
+  "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+  "pre_restart_historical_round_files_unchanged": 142,
+  "pre_restart_tracked_source_and_evidence_bindings": 9107,
+  "intentional_existing_file_deltas": [
+    "RicciFlowSharpEstimate.lean",
+    "docs/mathematical-status.md",
+    "docs/research/phase2-unrestricted.md",
+    "docs/theorem-map.md",
+    "docs/verification.md",
+    "scripts/check_native.py"
+  ]
+}

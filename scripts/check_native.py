@@ -338,6 +338,15 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.GreenBoundaryTraces",
     "RicciFlowSharpEstimate.Geometry.WeakProbeWeightedPoleTraces",
     "RicciFlowSharpEstimate.Geometry.WeakCurvatureAdjointPoleTraces",
+    "RicciFlowSharpEstimate.Analysis.IntegrableDerivativeExtension",
+    "RicciFlowSharpEstimate.Analysis.PolarFluxIntegrability",
+    "RicciFlowSharpEstimate.Analysis.PolarFluxLimits",
+    "RicciFlowSharpEstimate.Analysis.ParabolicDivergenceBound",
+    "RicciFlowSharpEstimate.Geometry.AreaSlopePoleBounds",
+    "RicciFlowSharpEstimate.Geometry.WeakProbePolarFlux",
+    "RicciFlowSharpEstimate.Geometry.WeakProbePolarFluxBounds",
+    "RicciFlowSharpEstimate.Geometry.WeakProbeBoundedPolarStates",
+    "RicciFlowSharpEstimate.Geometry.WeakCurvaturePolarRate",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1688,7 +1697,19 @@ SELECTOR = r"""
       analysis ++ `weighted_dirichlet_adjoint_boundary_traces,
       area ++
         `IsRecoverableAreaCompetitor.probe_weighted_state_pole_traces_of_minimum,
-      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_pole_traces_of_minimum
+      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_pole_traces_of_minimum,
+      analysis ++ `exists_boundary_extension_of_integrable_deriv,
+      analysis ++ `integrableOn_div_sq_of_coordinate_derivative,
+      analysis ++ `integrableOn_div_sub_sq_of_distance_derivative,
+      analysis ++ `tendsto_div_zero_of_coordinate_derivative,
+      analysis ++ `tendsto_div_sub_zero_of_distance_derivative,
+      analysis ++ `bounded_of_parabolic_divergence_flux,
+      area ++ `IsRecoverableAreaCompetitor.slope_pole_quotient_bounds,
+      area ++ `IsRecoverableAreaCompetitor.primitive_polar_ratio_bounds,
+      area ++ `IsRecoverableAreaCompetitor.polar_corrected_flux_derivatives_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.polar_corrected_flux_bounds_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.probe_bounded_polar_states_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.curvature_adjoint_polar_derivative_rate_of_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4369,6 +4390,30 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.probe_weighted_state_pole_traces_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.curvature_adjoint_pole_traces_of_minimum
+open RicciFlowSharpEstimate.Analysis in
+#check exists_boundary_extension_of_integrable_deriv
+open RicciFlowSharpEstimate.Analysis in
+#check integrableOn_div_sq_of_coordinate_derivative
+open RicciFlowSharpEstimate.Analysis in
+#check integrableOn_div_sub_sq_of_distance_derivative
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_div_zero_of_coordinate_derivative
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_div_sub_zero_of_distance_derivative
+open RicciFlowSharpEstimate.Analysis in
+#check bounded_of_parabolic_divergence_flux
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.slope_pole_quotient_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.primitive_polar_ratio_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.polar_corrected_flux_derivatives_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.polar_corrected_flux_bounds_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.probe_bounded_polar_states_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_adjoint_polar_derivative_rate_of_minimum
 
 """
 

@@ -1,0 +1,177 @@
+{
+  "native_receipt_sha256": "6fcda3feeb3b504cfc003b9240ff862816879db26aadb174e41e3cba711bd48f",
+  "native_counts": {
+    "modules": 332,
+    "inputs": 337,
+    "outputs": 338,
+    "selectors": 1338,
+    "signature_queries": 1439,
+    "axiom_rows": 3943,
+    "private_axiom_rows": 1448,
+    "fresh_source_elaborations": 9,
+    "reused_source_elaborations": 323
+  },
+  "verified_provenance_receipts": 42,
+  "verified_source_provenance_records": 7582,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot remains undetermined",
+  "round_mainline_status": "Actual bounded states, corrected operator traces and complete first-order polar derivative rates natively established; single outer delta review pending",
+  "parent_revision": "7a3d0bf5d7269c52af4155809940153d78ca2b4d",
+  "parent_review_scope": "Round16 complete bounded packet and Q5 pass the single outer delta review; unchanged accepted review/evidence reused",
+  "new_public_declarations": {
+    "modules": 9,
+    "theorems": 12,
+    "definitions": 0
+  },
+  "declarations": [
+    "RicciFlowSharpEstimate.Analysis.exists_boundary_extension_of_integrable_deriv",
+    "RicciFlowSharpEstimate.Analysis.integrableOn_div_sq_of_coordinate_derivative",
+    "RicciFlowSharpEstimate.Analysis.integrableOn_div_sub_sq_of_distance_derivative",
+    "RicciFlowSharpEstimate.Analysis.tendsto_div_zero_of_coordinate_derivative",
+    "RicciFlowSharpEstimate.Analysis.tendsto_div_sub_zero_of_distance_derivative",
+    "RicciFlowSharpEstimate.Analysis.bounded_of_parabolic_divergence_flux",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.slope_pole_quotient_bounds",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.primitive_polar_ratio_bounds",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.polar_corrected_flux_derivatives_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.polar_corrected_flux_bounds_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.probe_bounded_polar_states_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_polar_derivative_rate_of_minimum"
+  ],
+  "source_sha256": {
+    "RicciFlowSharpEstimate/Analysis/IntegrableDerivativeExtension.lean": "2f1e9afc8ec578f73df2b10017c6d86c9cd12471337df97b4d879b35ebc9a25a",
+    "RicciFlowSharpEstimate/Analysis/PolarFluxIntegrability.lean": "2eda0fb75be13a92aa21c2873c290a89359d13c9da7f5d26c689da4f32cc54e4",
+    "RicciFlowSharpEstimate/Analysis/PolarFluxLimits.lean": "36082f28fa61d996a104c9af5ed7a65a5853d85426f8a888955329a390b9239c",
+    "RicciFlowSharpEstimate/Analysis/ParabolicDivergenceBound.lean": "bd427af1f61572a0927c25ed358f5c7203f91eab3e0542f8b2563bdf36084acb",
+    "RicciFlowSharpEstimate/Geometry/AreaSlopePoleBounds.lean": "68122fbe8f5661300981e98e57595cf427d94a443d9263548874948e6f2cce39",
+    "RicciFlowSharpEstimate/Geometry/WeakProbePolarFlux.lean": "caa1562b1df1b768f296299017b01ede84baffbdc0f58532ad340ec958cd5bdd",
+    "RicciFlowSharpEstimate/Geometry/WeakProbePolarFluxBounds.lean": "36bd6c45aab289d23bbbe8f30008a43af00ea578bae187619d35f06b71ade379",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeBoundedPolarStates.lean": "904b40e09e55a505e4052e54e6c22fc97650ff0cc9ee6b4b39bb43736a0b9fa5",
+    "RicciFlowSharpEstimate/Geometry/WeakCurvaturePolarRate.lean": "afec892fd3a5735ccb89d7fc2cd9cb5df5ca752cde5479018573a34c78da693f"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "1318af87b856690241eddc8e5bd75bfcc1ae5596ecbda126947a9c324812c8aa",
+    "docs/theorem-map.md": "7d742f7dd43958ef3d885d392f39cb4ff4cc99a9eb3ddac056645e83a44af5da",
+    "docs/research/phase2-unrestricted.md": "74f7c815a00efae5d60ae8130cb144cf77e36fdcab65e19e11b27debd9d7c414",
+    "docs/verification.md": "0d049d3765826da0517f4c052a094b7437f6cb3c8fbf5b442f5701c70bba614e"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round17-root-iyjyehmf/statement-audit.md",
+    "sha256": "05f8716f1e61149bf16ed35a4186d9019486aa47593758d6f21b21e9eec4282a",
+    "scope": "Root semantic and integration audit; not independent acceptance"
+  },
+  "source_simplifier": {
+    "verified_frozen_sources": 9,
+    "changed_only_by_two_reported_restriction_substitutions": [
+      "RicciFlowSharpEstimate/Geometry/WeakProbeBoundedPolarStates.lean"
+    ],
+    "all_twelve_signatures_and_original_witness_laws_unchanged": true,
+    "final_native_bytes_required": true,
+    "source_advice_only_not_acceptance": true,
+    "snapshot_leases_released": true,
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round17-advice-f_04z1b3/advice/report.md",
+    "report_sha256": "0c3e5a77fbbf2fdedc6d03335d320c85fe2fd63eb116265c0775a15049ab990b",
+    "patch_sha256": "a584e0176b2798030f3df24758cac1c5e1cc627452bccad5c53d80c169640d44",
+    "input_manifest_sha256": "ef6c8049090ca95d6601bf7bbf51f6789eca4485f734044e6a79e0979a9c8d64",
+    "integrated_diff_sha256": "ee9be6f3c6add1c76113df31829a8122ea1298bd9498dcb6eea8d9c48d2b2748",
+    "status": "APPLIED: two direct a.e. restriction substitutions; all twelve signatures and witness laws unchanged; final native gate covers integrated bytes",
+    "input_snapshot": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round17-advice-f_04z1b3/frozen",
+    "scope": "Source-only advice on nine files; not an acceptance review",
+    "lease": "released"
+  },
+  "additional_native_probes": [
+    {
+      "name": "PolarRateChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round17-root-iyjyehmf/PolarRateChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round17-root-iyjyehmf/PolarRateChecks.lean",
+      "source_sha256": "6f1f6e8ef27f94f479eea283b629f5c48e816a959ad6f604dc6734bb121c723f",
+      "output_path": "docs/evidence/phase2-round-17-polar-rates/polar-rate-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-15T21:13:52.011212+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final project source and native cache; no scratch overlay",
+      "scope": "Same endpoint K,r,p,z, unit mass, zero action, global minimality, one common scale box/multiplier and full residual/clamp/node laws, all four recovery limits, accepted probe/weighted-state/adjoint pole laws, actual bounded p and canonical q, corrected-q traces identified by uniqueness, full unweighted warp source and genuine derivative rates using the same chosen t; minimal-input Q integrability",
+      "completed_exec_session": 90220
+    }
+  ],
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "7a3d0bf5d7269c52af4155809940153d78ca2b4d",
+    "unchanged_prior_native_modules": 323,
+    "authorized_parent_source_changes": [],
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 10087,
+    "prior_native_receipt_sha256": "d462cd13e7e8abf12c6047f41b6b02469acf778c7ebfec1dba93c9523a41181a",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "checker_policy_delta": "Only module, required-selector and exact-query inventories; remaining policy AST unchanged",
+  "checker_policy_audit_sha256": "8ea83d5e626b495c1ae727a881350810b110120b8728e4c6eee7a620b465d624",
+  "reuse_origin": "docs/evidence/phase2-round-16-adjoint-poles/receipt.json",
+  "independent_review": "Single configured Round17 outer delta review pending; unchanged accepted mathematical reviews/evidence reused",
+  "remaining_original_gates": [
+    "Cancelling divided polar clamp and further zero-trace, representative, domain/interface/path bridges actually used",
+    "Informative determining characterization and justified threshold selection",
+    "Independent universal sufficiency across every original rotational metric and smooth one-form, with every used coverage/Haar bridge",
+    "Exact original smooth endpoint equality/attainment or nonattainment and all-form transfer combined with determining value and accepted smooth sharpness",
+    "Final manuscript/research, native, single independent review and private delivery closure"
+  ],
+  "conditional_routes": {
+    "operator_sign_selection": "UNRESOLVED, UNREFUTED and parked; optional sufficient mechanism",
+    "positive_reference_quotient_coverage": "Required only if used by the actual comparison",
+    "matrix_jacobi_selector": "UNRESOLVED and parked after safety-dependent selector tests"
+  },
+  "scope_limits": [
+    "Both physical poles; either or both probe traces may vanish; actual complete-action multiplier retained at every cap C>=1",
+    "Canonical q is the true Euler momentum/f^2; no pointwise polar limit of arbitrarily modified literal Q is claimed",
+    "Bounded p and q for each actual minimum; finite corrected-q traces, without raw p/q or curvature pole limits",
+    "Rate uses deriv of canonical H=W-t*(x-1/2), for every fixed t; endpoint consumer uses the one chosen scale t",
+    "Curvature-primitive correction stays explicit when R trace is nonzero; cancelling divided clamp remains open",
+    "No finite total node/contact count, symmetry, selected branch, smooth recovery pole-value convergence, original smooth attainment, determining value or independently new universal comparison"
+  ],
+  "bitlesson_unchanged_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+}

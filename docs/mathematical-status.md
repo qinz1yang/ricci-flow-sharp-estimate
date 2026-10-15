@@ -9,6 +9,18 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 17 establishes boundedness of the actual minimizing p and canonical q
+and finite traces of the corrected coordinates q+r*(2-b)/(2f) and
+q+r*(2+b)/(2f) at their respective poles. The complete canonical residual
+has a genuine derivative rate after subtracting its explicit curvature-
+primitive term. Zero probe traces are included; at such a pole the correction
+vanishes and the residual derivative has a finite trace. The
+[checkpoint](evidence/phase2-round-17-polar-rates/checkpoint.json) records
+this bounded native packet; the single configured outer delta review remains
+pending. No limit of unweighted p/q or curvature is assumed or concluded.
+The cancelling divided clamp, determining selection, independent universal
+sufficiency and original smooth endpoint classification remain open.
+
 Round 16 proves the actual weighted-state and canonical regular-adjoint pole
 laws. Both f*p and f*q extend absolutely continuously with zero traces, where
 q is the canonical Euler momentum divided by f². The complete regular adjoint
@@ -16,7 +28,7 @@ tends to -2*R(0)^2 and -2*R(1)^2 for the same explicit probe extension R;
 its centered residual has the corresponding +t/2 and -t/2 corrections for
 the same chosen multiplier. Zero probe traces are included. The
 [checkpoint](evidence/phase2-round-16-adjoint-poles/checkpoint.json) records
-native validation; the single outer delta review remains pending. Q5's
+native validation; its single outer delta review passes at 7a3d0bf. Q5's
 standalone operator L1 API now needs only the cap, recoverable competitor
 and global minimality. Neither unweighted p/q limits, a cancelling pole-clamp
 limit, determining selection, universal sufficiency nor smooth attainment

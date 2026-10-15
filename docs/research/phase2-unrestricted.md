@@ -3498,3 +3498,142 @@ comparison over every original geometry and smooth probe. Every coverage and
 Haar bridge actually used, original smooth endpoint equality/attainment and
 all-form transfer, and final manuscript/native/review/private-delivery closure
 remain required. Only AC1 and AC2 are fully met; no original result is deferred.
+
+## Round 17: actual corrected states and first-order polar numerator rate
+
+The bounded test succeeds through the genuine coupled flux equations. The
+[checkpoint](../evidence/phase2-round-17-polar-rates/checkpoint.json) records
+nine new leaves and twelve theorems; the configured single outer delta review
+is pending. Round 16 and Q5 have passed their single outer review at 7a3d0bf;
+unchanged accepted proofs and evidence are reused. Phase I remains COMPLETE,
+Phase II remains OPEN, and C_rot remains undetermined.
+
+### Decisive cancellation in the actual Euler flux
+
+Fix one recoverable continuous global minimum at C>=1. Let lambda be its
+complete action, f its actual warp, b its actual slope, P its canonical Euler
+flux and q its canonical momentum/f². Use the accepted explicit same-probe
+extension R=r(1/2)+integral_(1/2)^x p. Put
+
+    uL=2-b,                 uR=2+b,
+    EL=P-uL*b*R/2,          ER=P-uR*b*R/2.
+
+Both corrected fluxes are AC on the physical closed interval. The genuine
+Euler zero traces and the slope values give EL(0)=0 and ER(1)=0. Their
+actual a.e. derivatives are T(uL) and T(uR), where the complete expression is
+
+    T(u)=f*K*(q-K*r)+b*(f*K-u)*p/2+K*u²*r/2+lambda*f*r.
+
+This follows by differentiating the actual AC product; only b'=-2K is used.
+Measurable K is never differentiated. The original geometry bounds f/x and
+f/(1-x), and bounds uL/x and uR/(1-x) by 4C. Accepted unweighted L1 control
+of q,p,r then makes T(uL)/x and T(uR)/(1-x) integrable. The apparent
+nonintegrable K*b*r/2 term of q' has cancelled in these corrected flux laws.
+
+The genuine zero-flux integral representation, not an assigned zero value
+alone, now gives EL/x² and ER/(1-x)² in L1. The corresponding endpoint
+quotients EL/x and ER/(1-x) tend to zero. Actual parabolic lower bounds
+transfer the inverse-square estimates to EL/f² and ER/f² on their respective
+half intervals and give EL/f -> 0 and ER/f -> 0 at the poles. These bounds
+use no source orientation, curvature limit or nonzero probe trace.
+
+### Corrected operator traces and bounded actual states
+
+The actual corrected coordinates satisfy
+
+    QL=q+r*uL/(2f),         QR=q+r*uR/(2f),
+    QL'=EL/f²+(K*r+p)*uL/(2f),
+    QR'=ER/f²+(-K*r+p)*uR/(2f).
+
+Local AC comes from the true tied coordinates. Their derivatives are L1 on
+the corresponding half intervals, so tied anchored integral extensions give
+finite actual limits qL and qR. Original primitive bounds control uL/f and
+uR/f there, while R is already bounded; hence canonical q is bounded on the
+whole interior, with the midpoint accounted for. The literal weak operator
+equals q almost everywhere, as in the accepted Euler producer.
+
+The genuine F=f²*p is AC, has both zero endpoint traces, and satisfies
+F'=f*(Q+K*r). This source is now bounded almost everywhere. Its actual
+endpoint primitives are bounded by constants times x² and (1-x)². Dividing
+by the squared parabolic lower bound proves p bounded throughout (0,1).
+The bound depends on the actual minimum; no uniform numerical bound across
+all geometries is claimed. The result allows either or both R traces to vanish.
+It proves finite corrected-q traces, not a polar limit of raw q or p.
+
+### The complete regular-adjoint derivative rate
+
+The full warp source improves from weighted L1 to unweighted L1:
+
+    A=weakCurvatureWarpCoefficient-lambda*r²
+     =3q²-4bqp+2Kqr-Kbrp+K²r²-lambda*r²       almost everywhere.
+
+The proof uses the actual weak-operator equality, the new p/q bounds and
+accepted r² integrability. No lower action term or mass correction is removed.
+Write B for the actual slope coefficient and
+
+    J(x)=integral_x^1 (1-s)*A(s)-integral_0^x s*A(s).
+
+Unweighted A integrability makes both tails AC on [0,1]. Thus J tends to
+integral_0^1(1-s)*A(s) and -integral_0^1 s*A(s). The accepted genuine derivative
+of the canonical regular adjoint W is
+
+    W'=6fqp-bfp²-3bqr-2Pr/f+2J-2*integral_0^1 B.
+
+For every fixed t, let H=W-t*(x-1/2), a0=R(0), a1=R(1). The native theorem
+proves limits of its actual derivative, not an independent supplied jet:
+
+    H'-a0²*(2-b)/f -> -6*a0*qL+2*integral_0^1(1-s)*A(s)
+                         -2*integral_0^1 B-t                 at 0+,
+    H'+a1²*(2+b)/f ->  6*a1*qR-2*integral_0^1 s*A(s)
+                         -2*integral_0^1 B-t                 at 1-.
+
+Indeed, substitution of the actual corrected coordinates and flux gives
+
+    -3bqr-2Pr/f = -3br*Qe+(b*r²/2)*(ue/f)-2Er/f.
+
+The accepted fp zero trace, the new p/q bounds and E/f zero trace control
+every remaining product. The difference between b*r²/2 and its endpoint
+value tends to zero, and ue/f is bounded; no trace of ue/f is assumed.
+When a probe trace is zero, its correction vanishes identically in the
+displayed limit, giving a finite genuine H' trace even if that trace also
+vanishes. For nonzero probe trace the explicit curvature-primitive term is
+retained; the theorem does not claim that H' alone has a limit.
+
+The endpoint consumer calls the actual zero-minimum producer once and selects
+one kappa,t once from the accepted same-box theorem. It retains K,r,p,z,
+physical mass one, zero complete action, global minimality, all scale-residual
+balances, literal clamp/interior node laws, both older pole laws and all four
+strong recovery limits and complete-action passage. Corrected-state and rate
+constants from separate theorem calls are identified by uniqueness of limits;
+no existential witnesses are silently equated. The new rate uses precisely
+the same chosen t. Zero action simplifies only the actual lambda correction
+in this endpoint consumer; the general theorem retains lambda.
+
+### Exact remaining obstruction and next test
+
+This supplies the contracted first-order numerator rate and removes the
+unbounded p/q and unweighted Green-source obstructions. It does not prove a
+limit of the cancelling quotient H/(2*f*r²). When the probe trace is nonzero
+and H's endpoint value is zero, integrating the retained primitive term still
+couples the quotient to averages of the unknown curvature. The next concrete
+test is a genuine averaged-feedback estimate from the same clamp and these
+rates, including its selection/contraction and all polar remainder bounds.
+At a zero probe trace with cancelling H value and H' trace, the denominator
+vanishes to higher order and further actual coupled rates remain unproved.
+No Taylor expansion of measurable K, polar nondegeneracy, finite total node
+count or prescribed contact pattern is supplied.
+
+The curvature representative at a probe zero still uses clipped raw K.
+An off-zero or a.e. polar result cannot become an everywhere Kc limit if
+nodes can accumulate there without a proved representative/zero-set bridge.
+None is claimed in this packet. A failed subsequent estimate would not
+refute the whole signed route. Parked sign and matrix mechanisms remain
+unresolved and unrefuted, not compulsory prerequisites.
+
+An informative determining characterization and justified selection,
+independently sufficient comparison over every original geometry and smooth
+one-form with every used coverage/Haar bridge, original smooth endpoint
+classification and all-form equality transfer, and final manuscript/native/
+review/private delivery remain required. Accepted smooth superthreshold
+witnesses are reused. Only AC1 and AC2 are fully met; no necessary condition
+or polar rate is being substituted for the full C_rot determination.
