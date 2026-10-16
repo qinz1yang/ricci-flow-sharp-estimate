@@ -9,6 +9,24 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 22 establishes the independent universal lower bound **C_rot>=2**.
+Two genuine boundary-null fluxes complete the full original scalar action
+into three squares and a potential. For continuous normalized curvature,
+a C2 probe with its actual derivatives, and kappa<=K<=Lambda<=2*kappa,
+the action is at least kappa*(2*kappa-Lambda) times physical mass. No
+curvature derivative, reference zero mode, source sign or minimum premise
+is used. The accepted exhaustive normalization and Haar transport give
+safety for every original smooth one-form on every allowed rotational
+metric of curvature ratio at most two, including ratio two. The
+[checkpoint](evidence/phase2-round-22-pinching-safety/checkpoint.json)
+records the bounded packet; its single outer delta review is pending.
+
+The principal arbitrary-cap signed-data sufficiency test remains unresolved
+and unrefuted: its exact finite control squares leave an unsigned state/mixed
+integral. The independent cap-two comparison is the round's one bounded
+alternative. It does not determine C_rot, identify it with two, select a
+sharp stationary branch or settle the original smooth endpoint equality set.
+
 Round 21 proves cap expansion from an arbitrary actual zero-action global
 minimum at C>1 with continuous interior probe/derivative representatives:
 every D>C admits an original smooth negative metric/form
@@ -21,7 +39,7 @@ recovery produce the original witness with all maps, curvature, probe jets
 and nonzero/dissipation ties. No minimum at the enlarged cap is assumed,
 and the accepted superthreshold witness theorem is not used. The
 [checkpoint](evidence/phase2-round-21-cap-expansion/checkpoint.json) records
-the bounded packet; its single outer delta review remains pending.
+the bounded packet; its single outer delta review passes at 3cbeb6b.
 This advances threshold selection. It does not determine C_rot or establish
 independent universal sufficiency at an informative characterized value.
 Original smooth endpoint equality and all-form transfer remain open.

@@ -367,6 +367,8 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaCurvatureResidualNonzero",
     "RicciFlowSharpEstimate.Geometry.AreaScaleBalancedFreeInterval",
     "RicciFlowSharpEstimate.Geometry.AreaMinimumCapExpansion",
+    "RicciFlowSharpEstimate.Geometry.AreaPinchingCalibration",
+    "RicciFlowSharpEstimate.Geometry.RotationalPinchingSafety",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1760,7 +1762,11 @@ SELECTOR = r"""
       area ++ `IsRecoverableAreaCompetitor.curvature_centered_residual_ne_zero_of_minimum,
       area ++ `IsRecoverableAreaCompetitor.exists_scale_balanced_free_curvature_interval,
       area ++ `IsRecoverableAreaCompetitor.exists_smooth_area_competitor_action_neg_of_zero_minimum,
-      geo ++ `exists_smooth_geometric_negative_witness_above_zero_minimum
+      geo ++ `exists_smooth_geometric_negative_witness_above_zero_minimum,
+      area ++ `meridionalAction_eq_pinching_calibration,
+      area ++ `meridionalAction_ge_pinching_mass,
+      geo ++ `two_mem_rotationalSafeCaps,
+      geo ++ `two_le_rotationalThreshold
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4521,6 +4527,14 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_smooth_area_competitor_action_neg_of_zero_minimum
 open RicciFlowSharpEstimate.Geometry in
 #check exists_smooth_geometric_negative_witness_above_zero_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_eq_pinching_calibration
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_ge_pinching_mass
+open RicciFlowSharpEstimate.Geometry in
+#check two_mem_rotationalSafeCaps
+open RicciFlowSharpEstimate.Geometry in
+#check two_le_rotationalThreshold
 
 """
 

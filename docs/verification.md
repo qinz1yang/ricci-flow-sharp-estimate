@@ -2272,7 +2272,7 @@ pinned dependencies are preserved. Q8's current-status prose is corrected
 in the ordinary documentation update, without theorem credit or a separate
 proof build/review.
 
-One configured outer delta review remains pending. This result advances
+The single configured Round21 outer delta review passes at 3cbeb6b. This result advances
 selection; a zero global minimum cannot serve as an independently informative
 determining certificate. C_rot, independent universal sufficiency, every used
 original-probe/domain/path/Haar/recovery bridge, exact original smooth endpoint
@@ -2280,3 +2280,86 @@ equality/attainment and all-form transfer, and final Phase-II manuscript/native/
 review/private delivery remain required. Phase I remains COMPLETE; Phase II
 remains OPEN, with only AC1/AC2 fully met. No finite switching, symmetry,
 source orientation, finite-dimensional family or branch uniqueness is assumed.
+
+## Phase II, Round 22 independent original all-form safety at ratio two
+
+Two new canonical leaves expose four public theorems and no public
+definitions. The exact original complete-action calibration uses continuous
+K, a C2 probe and both physical curvature moments. Its two genuine boundary
+fluxes vanish at both poles without probe boundary restrictions. The proved
+mass bound kappa*(2*kappa-Lambda)*probeMass for positive boxes
+kappa<=K<=Lambda<=2*kappa gives an independent whole-action comparison.
+The accepted exhaustive normalization/Haar bridge transfers it to every
+original smooth one-form on every original represented rotational metric
+of curvature ratio at most two. Thus 2<=C_rot; equality is not claimed.
+
+The [native receipt](evidence/phase2-round-22-pinching-safety/receipt.json)
+and [checkpoint](evidence/phase2-round-22-pinching-safety/checkpoint.json)
+bind final canonical source, exact statements, all diagnostics, actual
+transitive axiom closure, consumer and four living documents. The final
+gate covers 354 physical/checker/root modules, 359 input hashes and
+360 successful native command/output bindings. Two fresh source
+elaborations and all 352 matched reused parent outputs are silent.
+The 1,370 required selectors and 1,471 exact signature queries execute;
+all four new statements and their axiom rows occur. Root, the three
+unsuppressed declaration linters and native declaration-kind inspection
+pass. All 4,171 actual transitive axiom rows, including 1,576 private rows,
+use only propext, Classical.choice and Quot.sound. Three literal driver
+hashes and all 8,973 source-command records through 46 provenance receipts
+match in the read-only binding audit.
+
+Native receipt SHA256:
+`44eaad5064c737b3798d1afac2177253dddb8c3b4bfe3d948f7fb912c508b999`.
+
+The inspected Root runner executes the identical native commands, literal
+diagnostic drivers, reuse tests and fail-fast requirements without the
+helper's external 180s wall timeout, holding the real writer lock throughout
+actual compilation. The helper entry point is not executed or claimed
+successful. Checker policy outside module/selector/query inventories and
+all Lean/linter/axiom options are unchanged. No duplicate compiler is launched.
+
+The canonical PinchingSafetyChecks consumer is silent and exits zero with
+no scratch import overlay. Its source SHA256 is
+`61e18f684391cb275adff5e22f0f379c573bfda87ef423fe18fd932ad94e68c3`.
+It uses nonconstant K=3*x^2-3*x+5/2, both exact
+moments, the actual box[7/4,5/2] and an arbitrary C2 probe to obtain
+action>=7/4*physical mass. It also consumes safety for an arbitrary original
+metric and smooth one-form at every cap1<=C<=2, retaining the exact same
+metric/form, and combines the new explicit lower bound with the accepted
+strict CK upper bound. No reference mode, global minimum, safe-cap or
+infimum premise is supplied.
+
+The principal direct signed-data reverse implication remains unresolved
+and unrefuted. Root's exact finite algebra probe checks the canonical full
+tangent, nonnegative fixed-state control squares and explicit state/mixed
+polynomial; it does not sign that remaining physical integral. No valid
+full-system physical counterexample is claimed. The unsuccessful test is
+recorded separately and receives no independent-safety theorem credit.
+The actual universal cap-two comparison is the sole bounded alternative
+specified before its source implementation in the contract supplement.
+
+Source simplification advice recommends NO CHANGE. All four new frozen
+source/contract/BitLesson input bindings and 357 authoritative tracked
+parent-native input hashes match. The retained 9,322-file parent source
+inventory and new input packet are enforced read-only without symlinks.
+The older temporary full review manifest is now unavailable; no fresh
+match against that missing manifest or reconstruction of it is claimed.
+Accepted unchanged mathematical review is reused. Source-only advice,
+the worker algebra packet and Root's statement audit are not independent
+acceptance; the one configured outer delta review remains pending.
+
+All 352 parent leaves, 149 Phase-I leaves, 11,851 prior evidence files,
+2,325 Phase-I workflow files, 142 pre-restart historical Round files,
+both TASKs, accepted paper bytes, pins, immutable tracker prefix, BitLesson
+and historical stop-state remain unchanged. Compiler/platform and ten clean
+pinned dependencies match. Development import-overlay and external-consumer
+elaboration repairs are preserved separately, not used as acceptance evidence
+or counted as failed mathematical routes.
+
+Phase I remains COMPLETE; Phase II remains OPEN, with only AC1/AC2 met.
+This packet gives an explicit independent lower bound, not an informative
+sharp characterization. Determining selection/uniqueness as appropriate,
+universal sufficiency at the characterized sharp value, every used original
+domain/path/coverage/normalization/Haar/recovery bridge, original smooth
+endpoint equality/attainment and all-form transfer, and final separate
+manuscript/native/review/private delivery remain mandatory and open.

@@ -4001,7 +4001,7 @@ previous theorem extracting witnesses above that threshold. Four new
 leaves contain five public theorems and no definitions. The
 [checkpoint](../evidence/phase2-round-21-cap-expansion/checkpoint.json)
 binds the canonical source, native evidence and same-endpoint consumer;
-one configured outer delta review is pending.
+its single configured outer delta review passes at 3cbeb6b.
 
 ### Complete residual and the actual common box
 
@@ -4077,3 +4077,125 @@ comparison, exact original smooth endpoint equality/attainment and
 all-form transfer, and final manuscript/native/review/private-delivery
 gates remain mandatory. No finite switching, symmetry, source sign,
 finite-dimensional family, unique branch or smooth attainment is assumed.
+
+## Round 22: direct signed-data test and an independent global comparison
+
+The principal test was whether the complete signed zero-mode/flux,
+regular-adjoint, scale/complementarity and physical two-pole laws imply
+nonnegative complete action for every original changed geometry/probe,
+without hmin, safe-cap membership, infimum identity or all-probe positivity.
+The direct input system is frozen in the
+[signed-data test](/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round22-root-508dnjrd/signed-data-test.md).
+It uses the same literal primitives, canonical momentum/flux, unit mass,
+zero action, true jets, original box/moments and both zero/nonzero pole cases.
+Its forward production is already covered by the accepted endpoint packet.
+Freezing necessary laws is not new mathematical credit.
+
+### Principal attempt: exact finite control and state excess
+
+At a fixed state f,b,r,p the complete density has the exact control excess
+
+```text
+ell(f,b,K+k,r,p,z+w)-ell(f,b,K,r,p,z)-Dc*k-2*A0*w
+  = f*(f*w-r*k)^2 + f*r^2*k^2.
+```
+
+Here Dc and A0 are the literal direct-curvature and second-probe coefficients.
+The full simultaneous tangent retains all three curvature coefficients and
+twice all three probe coefficients at lambda=0. Root natively checks the
+exact finite polynomial, including every mixed and potential term, in the
+source-only worker probe. The physical increments must still be the actual
+warp/slope differences, J-K, s-r and the true first/second derivative
+differences. Independently varied scalar entries are not physical examples.
+
+The curvature tangent is the complete adjoint pairing; both exact moments
+cancel its centering term. Scale/complementarity signs this linear pairing
+even for a separately scaled ratio<=C comparison box. The probe tangent
+has the genuine flux primitive A0*(s'-p)-P*(s-r), with vanishing actual
+pole products. These first-order cancellations leave the finite state/mixed
+integral explicitly recorded in the
+[attempt note](/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round22-root-508dnjrd/finite-comparison-attempt.md).
+The integrated cancellation argument is a research calculation, not a new
+canonical formalized theorem. Its sign is not produced by the control
+squares. Even the fixed-geometry probe block contains the full action of
+the probe increment. For a weak reference curvature it cannot simply be
+called an original smooth comparison with J=K; the accepted normalized
+probe perturbation and full-action recovery are the relevant bridges.
+
+Outcome: the arbitrary-cap reverse implication remains **UNRESOLVED and
+UNREFUTED**. No counterexample satisfying the full signed system and physical
+domain was obtained. A negative scalar density diagnostic is not such a
+counterexample. This one bounded attempt produced exact finite algebra and
+identified the unsigned integral, without an independent global theorem.
+The mechanism is parked rather than promoted into a mandatory lemma.
+
+### Sole bounded alternative: whole-action boundary-null completion
+
+A different mechanism constructs an actual comparison directly for every
+original probe. Put f=warp K, b=f' and q=L_K r using the literal physical
+primitives and derivatives. For constant box parameters kappa,Lambda,
+the genuine flux
+
+```text
+F = 2*kappa*f^2*r*r' + (Lambda/2)*f*b*r^2
+```
+
+vanishes at both physical poles. Continuous K and a C2 probe suffice for
+its classical derivative, because f'=b and b'=-2K. Adding F' to the full
+six-entry action density gives exactly
+
+\[
+ f(q+\kappa r)^2+
+ \left(2\kappa-\frac{\Lambda-K}{2}\right)f^2(r')^2+
+ \frac{\Lambda-K}{2}(fr'+br)^2+
+ \bigl(K^2+(2\kappa-\Lambda)K-\kappa^2\bigr)fr^2.
+\]
+
+Genuine endpoint FTC therefore proves the corresponding complete-action
+identity. No derivative of K or condition on r's pole value/derivative is
+used. If kappa>0 and kappa<=K<=Lambda<=2*kappa, the three square
+coefficients are nonnegative, and
+
+\[
+ K^2+(2\kappa-\Lambda)K-\kappa^2
+ \ge \kappa(2\kappa-\Lambda)\ge0.
+\]
+
+Thus the independently proved homogeneous bound is
+
+\[
+ A_K(r)\ge\kappa(2\kappa-\Lambda)\int_0^1fr^2.
+\]
+
+The value two follows from these exact coefficient signs; it is not an
+arbitrary numerical cutoff. Probe nodes cause no division or chart change.
+This comparison needs no reference mode, branch, source orientation, global
+minimum or supplied positivity certificate. It signs the whole finite
+original action rather than just a first variation.
+
+### Original all-form scope, contribution and remaining target
+
+The accepted exhaustive normalization and all-form Haar transport apply
+the actual scalar bound on the same original metric and form, including
+the nonnegative nonzonal remainder. Hence curvature ratio<=2 is universally
+safe for ALL original smooth one-forms in the allowed rotational class,
+and **2<=C_rot**. The proof includes ratio exactly two. Four public theorems
+in two canonical leaves state the calibration, mass bound, original safe-cap
+membership and threshold lower bound. The
+[checkpoint](../evidence/phase2-round-22-pinching-safety/checkpoint.json)
+binds native evidence and a consumer with a nonconstant normalized curvature,
+arbitrary C2 probe and actual original all-form inputs. The source simplifier
+recommends NO CHANGE; it is not an independent acceptance review.
+
+The principal signed-data implication is still unproved; the successful
+bounded alternative supplies a genuine independent universal comparison
+on an explicit cap range. It does not determine C_rot, identify it with two,
+prove a sharp selected branch, classify exact unrestricted-endpoint equality
+or establish smooth attainment. The accepted sharp witnesses and strict
+conformal-Killing upper bound remain unchanged. Future global work must
+construct and select an informative sharp comparison beyond this constant
+completion, with every used original coverage/domain/path/Haar/recovery
+bridge. A variable coefficient or state-dependent comparison field is a
+possible next test, not an assumed certificate or theorem. All original
+determining, endpoint/all-form and final manuscript/native/review/private
+delivery gates remain mandatory and OPEN; only AC1/AC2 are fully met.

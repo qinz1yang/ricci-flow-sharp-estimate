@@ -942,7 +942,7 @@ the identical initial K,r,p,z, physical mass, global minimum, full common
 box/residual/node/pole package and all four strong graph recovery limits,
 and produces the full original geometric witness below every larger cap.
 The source-only simplifier changes two private integral-zero proofs; its
-advice does not replace the single pending outer delta review.
+advice does not replace the single outer delta review, which passes at 3cbeb6b.
 
 The generic engine derives negative-part integrability from its positive
 real integral, chooses a measurable representative of that part, and
@@ -954,3 +954,27 @@ identity or minimality at the larger cap is assumed. This selection
 implication is not an informative determining characterization; the
 independent universal comparison and original smooth endpoint/all-form
 equality remain required.
+
+## Phase II Round 22: independent curvature-ratio-two all-form safety
+
+| Declaration | Result and use |
+|---|---|
+| `Geometry.AreaProfile.meridionalAction_eq_pinching_calibration` | The original complete action equals the explicit three-square/potential integral for continuous K, a C2 probe and both physical curvature moments. The two actual pole fluxes vanish without probe boundary restrictions. |
+| `Geometry.AreaProfile.meridionalAction_ge_pinching_mass` | A positive original box kappa<=K<=Lambda<=2*kappa gives action>=kappa*(2*kappa-Lambda)*physical mass, independently of stationary data, source sign or curvature derivatives. |
+| `Geometry.two_mem_rotationalSafeCaps` | The genuine normalization/Haar bridge transfers that proved scalar bound to every original smooth one-form on every original rotational metric of curvature ratio at most two. |
+| `Geometry.two_le_rotationalThreshold` | The independent original all-form comparison gives the explicit lower bound C_rot>=2; equality is not asserted. |
+
+Two new leaves expose four public theorems and no public definitions. The
+[checkpoint](evidence/phase2-round-22-pinching-safety/checkpoint.json)
+binds their actual native evidence and consumer. The consumer uses a
+nonconstant normalized polynomial curvature with a merely C2 probe and
+the exact original metric/form at every cap between one and two. No
+minimum, safe-cap, infimum or reference-mode premise is supplied.
+
+This global comparison is the one bounded alternative after an unsuccessful
+finite signed-data comparison. The latter's natively checked algebra leaves
+an unsigned finite state integral; it neither proves nor refutes the full
+physical reverse implication and receives no independent-safety theorem
+credit. No new necessary-data wrapper is added. Informative sharp-value
+determination/selection, universal sufficiency at that value, exact original
+smooth endpoint/all-form equality and final full-suite delivery remain open.
