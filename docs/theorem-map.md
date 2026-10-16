@@ -978,3 +978,22 @@ physical reverse implication and receives no independent-safety theorem
 credit. No new necessary-data wrapper is added. Informative sharp-value
 determination/selection, universal sufficiency at that value, exact original
 smooth endpoint/all-form equality and final full-suite delivery remain open.
+
+## Phase II Round 23: a produced warp-dependent global comparison
+
+| Declaration | Result and use |
+|---|---|
+| `Geometry.AreaProfile.warpSlope_sq_add_four_mul_warp_bounds` | Continuous original curvature, both exact moments and a nonnegative lower box endpoint give `b^2+4*kappa*f<=4<=b^2+4*Lambda*f`. The sign of the actual monotone slope selects the appropriate physical pole. |
+| `Geometry.AreaProfile.meridionalAction_nonneg_of_quadratic_pinching` | For continuous K, an arbitrary C2 probe and the original positive box, `Lambda^2<=2*kappa*Lambda+kappa^2/2` gives nonnegative complete action. Field production, full mixed-term sign and both-pole FTC are proved internally. |
+| `Geometry.quadratic_pinching_mem_rotationalSafeCaps` | Every original smooth one-form is safe at curvature ratio at most `1+sqrt(3/2)`, through the accepted same-metric normalization/Haar bridge. |
+| `Geometry.quadratic_pinching_le_rotationalThreshold` | The explicit independent comparison gives `1+sqrt(3/2)<=C_rot`; equality is not asserted. |
+
+Three new leaves expose four public theorems and no public definitions. The
+[checkpoint](evidence/phase2-round-23-warp-calibration/checkpoint.json) binds
+the native evidence and consumer, including a nonconstant normalized curvature
+of actual ratio11/5>2 and arbitrary original smooth metric/form inputs.
+One configured outer delta review remains pending. The positive quadratic
+root selects this constructed field's safe cap, not the unrestricted sharp
+value; no tied zero-action object or original smooth endpoint classification
+is produced. Every original determining, global-at-sharp-value and final
+delivery gate remains open.

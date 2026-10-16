@@ -4199,3 +4199,69 @@ bridge. A variable coefficient or state-dependent comparison field is a
 possible next test, not an assumed certificate or theorem. All original
 determining, endpoint/all-form and final manuscript/native/review/private
 delivery gates remain mandatory and OPEN; only AC1/AC2 are fully met.
+
+## Round 23: construct and control a warp-dependent comparison field
+
+The principal test succeeds in constructing an independent comparison beyond
+the constant completion. Put `a=kappa`, `beta=Lambda-kappa^2*f/2` in
+`F=2*a*f^2*r*r'+beta*f*b*r^2/2`. Its actual derivatives use only
+`f'=b`, `b'=-2K`, the true probe jets and `Dbeta=-kappa^2*b/2`.
+The canonical proof integrates the negative flux; both actual pole values
+vanish from f=0. Continuous K and a C2 probe suffice, without probe sign
+or artificial pole conditions.
+
+The reachable-state inequalities are produced from the original geometry:
+
+\[
+ b^2+4\kappa f\le4\le b^2+4\Lambda f.
+\]
+
+Indeed the derivative of `b^2+4*c*f` is `-4*b*(K-c)`. The actual monotone
+slope determines whether the comparison uses the left or right pole;
+both exact moments and both pole values are retained, without symmetry.
+
+Inflate the input upper endpoint to `C*kappa`, where
+`C=1+sqrt(3/2)` and `C^2=2*C+1/2`. With `u=kappa*f`, `t=b^2` and
+`k=K/kappa`, the complete calibrated density equals
+
+\[
+ f(q+\kappa r)^2+
+ 2\kappa\left(fr'+\frac{(C-k-u/2)b}{4}r\right)^2+
+ \kappa G(C,u,t,k)r^2,
+\]
+\[
+ G=u\bigl(k^2+(2-C)k-1+uk/2-t/2\bigr)
+   +(C-k)t/2-(C-k-u/2)^2t/8.
+\]
+
+For `v=t/4`, the derived domain is `0<=v<=1`,
+`(1-v)/C<=u<=1-v`, `1<=k<=C`. When v<1, substitute
+`u=(1-v)*[(2*C-4)+(5-2*C)*y]`, `k=1+(C-1)*z` and derive
+`0<=y,z<=1`. An explicit degree(3,2,2) polynomial expansion has 36
+nonnegative coefficients, using the exact quadratic equation and its
+derived rational brackets. At v=1, u=0 and
+`G=(C-k)*(4-C+k)/2>=0`; no endpoint chart is assumed. The root arises
+from `G(C,1/C,0,1)=(1/C)*(2-C+1/(2*C))`, not a numerical cutoff.
+
+Genuine endpoint FTC therefore signs the whole original action when
+`Lambda^2<=2*kappa*Lambda+kappa^2/2`. The accepted exhaustive
+normalization/Haar bridge proves **1+sqrt(3/2)<=C_rot**, with ALL original
+smooth one-forms and the displayed cap included. The
+[checkpoint](../evidence/phase2-round-23-warp-calibration/checkpoint.json)
+binds the final native packet and actual consumer. Source simplification
+advice recommends NO CHANGE; one outer delta review remains pending.
+
+This is one successful field-construction test, with no bounded alternative.
+The diagnostic calculation was exploratory; the exact coefficient proof and
+actual original-object transfer supply the mathematics. No hmin, reference
+mode, source orientation, assumed positivity, K derivative or finite switching
+family is used. Round22's accepted comparison remains unchanged.
+
+The new bound does not determine C_rot or select its sharp branch. In
+particular no nonzero zero-action object at this field's cap is produced.
+The next sharp-comparison test must construct comparison data together with
+such an original-domain object and justify their selection; global minimality
+must follow from the independent comparison before using accepted cap expansion.
+Optimizing another lower bound or renaming a variational threshold is not
+determination. All original smooth-endpoint/equality, used domain/recovery
+bridges and final manuscript/native/review/private-delivery gates remain OPEN.

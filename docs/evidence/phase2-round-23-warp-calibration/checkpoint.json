@@ -1,0 +1,176 @@
+{
+  "native_receipt_sha256": "6a454dfdb414a69f0fd0aebf75256618c9ad1e0caac979cedb633ad91561afd3",
+  "native_counts": {
+    "modules": 357,
+    "inputs": 362,
+    "outputs": 363,
+    "selectors": 1374,
+    "signature_queries": 1475,
+    "axiom_rows": 4211,
+    "private_axiom_rows": 1612,
+    "fresh_source_elaborations": 3,
+    "reused_source_elaborations": 354
+  },
+  "verified_provenance_receipts": 47,
+  "verified_source_provenance_records": 9330,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot remains undetermined; only AC1/AC2 fully met",
+  "parent_revision": "473c0483795b681735d0444f58f7e27791777a07",
+  "parent_review_scope": "Round22 ratio-two all-form packet accepted; unchanged mathematics and evidence reused",
+  "round_mainline_status": "Produced geometry-state field and full original comparison establish 1+sqrt(3/2)<=C_rot; single outer delta review pending",
+  "new_public_declarations": {
+    "modules": 3,
+    "theorems": 4,
+    "definitions": 0
+  },
+  "declarations": [
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.warpSlope_sq_add_four_mul_warp_bounds",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalAction_nonneg_of_quadratic_pinching",
+    "RicciFlowSharpEstimate.Geometry.quadratic_pinching_mem_rotationalSafeCaps",
+    "RicciFlowSharpEstimate.Geometry.quadratic_pinching_le_rotationalThreshold"
+  ],
+  "source_sha256": {
+    "RicciFlowSharpEstimate/Geometry/AreaWarpStateBounds.lean": "8f3a11bf26e4b551a81c60a46b0a03dff52df98ba93cfea619bca74f81f04215",
+    "RicciFlowSharpEstimate/Geometry/AreaWarpCalibration.lean": "da2cf849ab9809eae696b101a1060fbdc24a68c6a483cee208bf4a985ebe4d0e",
+    "RicciFlowSharpEstimate/Geometry/RotationalQuadraticPinching.lean": "32d2e57155507d9315b46f19ef96bad41c47adfa205541f5da416cdeb76b901f"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "2dd6cc25fe909f33f97c89efd8ceda164aec35b7dafbcb7a48a264cf77abedd9",
+    "docs/theorem-map.md": "85c00bd87bd1c6add7d05d304403963c93278f68c2ad8f385ca0e309ac4c7fd3",
+    "docs/research/phase2-unrestricted.md": "281825ab3a7d187872497202ba7be10d94cc736e0e07c19f9533438a38b284ed",
+    "docs/verification.md": "bee1721d254aea15f52283985bc87586a5b6b3f2767c5cfe894077aace990526"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round23-root-xhp1qk6z/round23-root-audit.md",
+    "sha256": "9cf88c91817d8872f9d072047e273b1a545bf8448970d37cd37620a7df0f7869",
+    "scope": "Builder semantic/API/integration audit, not independent acceptance"
+  },
+  "principal_attempt": {
+    "record_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round23-root-xhp1qk6z/field-construction.md",
+    "record_sha256": "9858836cbd49cc4c211f614852694fc7662cd70ed7cb8d715ffc69971a204f3e",
+    "hypothesis": "Continuous original K, C2 original r, exact moments and positive box with Lambda^2<=2*kappa*Lambda+kappa^2/2",
+    "test": "Construct a=kappa and beta=Lambda-kappa^2*f/2; derive full flux, reachable states and entire mixed remainder sign, genuine endpoint FTC and all-original-form transfer",
+    "outcome": "Explicit Bernstein coefficient proof signs the full remainder on the produced original state domain, including its v=1 boundary",
+    "contribution": "Independent global scalar/action and original all-form safety at an explicit strictly larger cap; not sharp determination",
+    "remaining_gap": "Informative sharp comparison/zero-object selection and its global and original smooth-endpoint implications",
+    "next_action": "Test a sharp comparison together with a tied nonzero zero-action object; do not equate this field boundary with C_rot",
+    "bounded_alternative": "None; the principal field-construction attempt succeeds at its bounded lower-bound scope"
+  },
+  "additional_native_probes": [
+    {
+      "name": "WarpCalibrationChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round23-root-xhp1qk6z/WarpCalibrationChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round23-root-xhp1qk6z/WarpCalibrationChecks.lean",
+      "source_sha256": "86f57994385ae83a9ffd42c33dd734bf01a6180e48b4b0fe8307394f1627e016",
+      "output_path": "docs/evidence/phase2-round-23-warp-calibration/warp-calibration-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-16T06:25:09.214122+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final source and native cache; no scratch overlay",
+      "scope": "Nonconstant original polynomial curvature with both exact moments and positive box, arbitrary C2 probe and quadratic pinching comparison; arbitrary original represented metric and smooth one-form at every cap 1<=C<=1+sqrt(3/2), retaining the exact same metric/form; explicit lower bound1+sqrt(3/2) combined with the accepted strict conformal-Killing upper bound. No reference mode, hmin, safe-cap or infimum premise. Also checks the complete generic field product-rule polynomial."
+    }
+  ],
+  "source_simplifier": {
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round23-advice-ezxlfjav/advice/report.md",
+    "report_sha256": "7f29d80e1e5ee12ec8a5d732aa957a226da839bf4be7a3191cabf8e66cad821b",
+    "new_input_manifest": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round23-advice-ezxlfjav/inputs.json",
+    "new_input_manifest_sha256": "87800a16b624e93607c1d9dce7d94fadfee7cae6f30c50912f5501c628afcce9",
+    "current_input_bindings_match": true,
+    "inputs_readonly_no_symlinks": true,
+    "recommendation": "NO CHANGE",
+    "status": "PROVISIONAL source-only advice, not mathematical acceptance",
+    "leases": "state worker and simplifier released; no descendants or compiler activity"
+  },
+  "worker_packets": [
+    {
+      "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round23-states-wccqowqf/AreaWarpStateBounds.lean",
+      "sha256": "8cef9fc6a7839a764fc7bea4dec406947a2d83574b8b098b6225fc26d9ace046",
+      "status": "PROVISIONAL source-only packet; Root generalizes kappa>0 to kappa>=0 and removes one unnecessary tactic focus before canonical native validation",
+      "lease": "released; no worker compiler/Lean/Lake/cache/Git/network/descendants"
+    }
+  ],
+  "development_logs": "Initial private algebra/module logs contain failed elaboration and linter attempts; none is successful acceptance evidence or a failed mathematical route. Final canonical receipt and consumer bind the corrected bytes.",
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "473c0483795b681735d0444f58f7e27791777a07",
+    "unchanged_prior_native_modules": 354,
+    "authorized_parent_source_changes": [],
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 12215,
+    "prior_native_receipt_sha256": "44eaad5064c737b3798d1afac2177253dddb8c3b4bfe3d948f7fb912c508b999",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "checker_policy_delta": "Only module, required-selector and exact-query inventories; remaining AST policy unchanged",
+  "checker_policy_audit_sha256": "83ee842cea320d5bd2e84d507e0b4aff1c6d1deff79cf6aef2a6ea681549fa23",
+  "reuse_origin": "docs/evidence/phase2-round-22-pinching-safety/receipt.json",
+  "reuse_reason": "All354 accepted parent leaves, compiler/options/configuration and dependency revisions match unchanged",
+  "execution_orchestration": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round23-root-xhp1qk6z/native_round23.py",
+    "sha256": "b705b733a85c4d0c24d553451d751ac8207835c4e9255d21a8314ee0c9d6ee50",
+    "checker_entry_point_executed": false,
+    "scope": "Root executes identical native commands, literal diagnostic drivers, reuse and fail-fast requirements without the helper external 180s wall timeout; Lean options and all diagnostics unchanged",
+    "writer_lock": ".lake/rfse-root-writer.lock"
+  },
+  "helper_entry_point_claim": "Not executed; Root runs identical commands/literal drivers and reuse/fail-fast checks without the external180s timeout; Lean/linter/axiom policy unchanged",
+  "independent_review": "Single configured Round23 outer delta review pending; unchanged accepted mathematics not re-reviewed",
+  "remaining_original_gates": [
+    "Informative sharp characterization and appropriate threshold selection/uniqueness",
+    "Independent universal safety at the characterized sharp value for every original metric/form",
+    "Every used domain/polar/interface/admissible-path/coverage/normalization/Haar/recovery bridge",
+    "Exact original smooth endpoint equality/attainment or nonattainment and all-form transfer",
+    "Final separate PhaseII manuscript/research, native, independent review and ordinary private delivery"
+  ],
+  "conditional_routes": "Operator-sign, matrix/Jacobi selector and single-signed-trajectory sufficiency remain parked UNRESOLVED/UNREFUTED optional mechanisms; all-original-probe coverage always mandatory",
+  "scope_limits": [
+    "No identification C_rot=1+sqrt(3/2)",
+    "No zero-action object or sharpness at this field cap",
+    "No smooth endpoint classification, symmetry, finite switching, finite dimension or branch uniqueness"
+  ],
+  "bitlesson_unchanged_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+}

@@ -9,6 +9,17 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 23 constructs a warp-dependent comparison giving the stronger independent
+bound **1+sqrt(3/2)<=C_rot**. The actual two-pole state inequalities
+`b^2+4*kappa*f<=4<=b^2+4*Lambda*f` control the full mixed remainder of
+the field `a=kappa`, `beta=Lambda-kappa^2*f/2`. An explicit polynomial
+coefficient proof, genuine boundary-null flux FTC and the accepted same-metric
+normalization/Haar bridge give safety for ALL original smooth one-forms,
+including the displayed cap. Neither probe nodes nor arbitrary smooth pole
+values are excluded. The [checkpoint](evidence/phase2-round-23-warp-calibration/checkpoint.json)
+records the bounded packet; one outer delta review remains pending.
+This is a lower bound, not a determining characterization or endpoint result.
+
 Round 22 establishes the independent universal lower bound **C_rot>=2**.
 Two genuine boundary-null fluxes complete the full original scalar action
 into three squares and a potential. For continuous normalized curvature,
@@ -19,7 +30,7 @@ is used. The accepted exhaustive normalization and Haar transport give
 safety for every original smooth one-form on every allowed rotational
 metric of curvature ratio at most two, including ratio two. The
 [checkpoint](evidence/phase2-round-22-pinching-safety/checkpoint.json)
-records the bounded packet; its single outer delta review is pending.
+records the bounded packet; its single outer delta review passes at 473c048.
 
 The principal arbitrary-cap signed-data sufficiency test remains unresolved
 and unrefuted: its exact finite control squares leave an unsigned state/mixed

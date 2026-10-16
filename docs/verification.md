@@ -2346,7 +2346,7 @@ The older temporary full review manifest is now unavailable; no fresh
 match against that missing manifest or reconstruction of it is claimed.
 Accepted unchanged mathematical review is reused. Source-only advice,
 the worker algebra packet and Root's statement audit are not independent
-acceptance; the one configured outer delta review remains pending.
+acceptance; the single Round22 outer delta review passes at 473c048.
 
 All 352 parent leaves, 149 Phase-I leaves, 11,851 prior evidence files,
 2,325 Phase-I workflow files, 142 pre-restart historical Round files,
@@ -2363,3 +2363,52 @@ universal sufficiency at the characterized sharp value, every used original
 domain/path/coverage/normalization/Haar/recovery bridge, original smooth
 endpoint equality/attainment and all-form transfer, and final separate
 manuscript/native/review/private delivery remain mandatory and open.
+
+## Phase II Round 23: warp-dependent full-action comparison
+
+The final canonical gate passes for 357 physical/checker/root modules,
+362 input hashes and 363 successful native command/output bindings.
+Three new source elaborations and 354 matched reused parent outputs are
+silent. Root succeeds. The 1,374 required selectors and 1,475 exact queries
+include all four new public statements. Three unsuppressed declaration
+linters and native declaration-kind inspection pass. All 4,211 actual
+transitive axiom rows, including 1,612 private rows, use only propext,
+Classical.choice and Quot.sound. Three literal driver hashes and all
+9,330 source-command records through 47 provenance receipts match.
+
+Native receipt SHA256:
+`6a454dfdb414a69f0fd0aebf75256618c9ad1e0caac979cedb633ad91561afd3`.
+The [checkpoint](evidence/phase2-round-23-warp-calibration/checkpoint.json)
+binds the three sources, four documents, actual consumer, source advice,
+Root audit/attempt records, native provenance and preservation. The bound
+Root runner retains every command, option, literal diagnostic driver,
+reuse check and fail-fast requirement under the real writer lock; the
+helper entry point is not called and its external 180s timeout is omitted.
+Checker policy outside inventories is unchanged.
+
+The canonical WarpCalibrationChecks consumer exits zero silently, without
+a scratch import overlay. Source SHA256:
+`86f57994385ae83a9ffd42c33dd734bf01a6180e48b4b0fe8307394f1627e016`.
+It checks both moments of K=(48/7)*x^2-(48/7)*x+22/7, its actual box
+[10/7,22/7] and attained ratio11/5>2, arbitrary C2 probes, the complete
+generic field product-rule polynomial, and arbitrary original metrics/forms
+through cap1+sqrt(3/2). No minimum, reference mode, safety or certificate
+premise is supplied.
+
+Source simplifier advice recommends NO CHANGE; all five frozen new input
+bindings match final canonical bytes. The state worker's provisional packet
+is preserved separately from Root's weaker kappa>=0 API and linter repair.
+Both source-only leases are released. Neither advice nor Root's semantic
+audit is independent acceptance; one configured outer delta review is pending.
+
+All 354 parent leaves, 149 Phase-I leaves, 12,215 prior evidence files,
+2,325 Phase-I workflow files, 142 pre-restart historical Round files, both
+TASKs, accepted paper, pins, immutable prefix, BitLesson and historical
+stop-state remain unchanged. Actual compiler/platform and ten clean pinned
+dependencies match. Failed development syntax/linter logs remain separate;
+they are not successful acceptance evidence or failed mathematical routes.
+
+This packet proves an explicit larger universal lower bound. It does not
+identify C_rot, supply a sharp zero-action object, classify the original
+smooth endpoint or close the full Phase-II manuscript/research and final
+mathematical/delivery gates. Phase I remains COMPLETE; Phase II remains OPEN.

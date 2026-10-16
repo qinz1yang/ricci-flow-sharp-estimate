@@ -369,6 +369,9 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaMinimumCapExpansion",
     "RicciFlowSharpEstimate.Geometry.AreaPinchingCalibration",
     "RicciFlowSharpEstimate.Geometry.RotationalPinchingSafety",
+    "RicciFlowSharpEstimate.Geometry.AreaWarpStateBounds",
+    "RicciFlowSharpEstimate.Geometry.AreaWarpCalibration",
+    "RicciFlowSharpEstimate.Geometry.RotationalQuadraticPinching",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1766,7 +1769,11 @@ SELECTOR = r"""
       area ++ `meridionalAction_eq_pinching_calibration,
       area ++ `meridionalAction_ge_pinching_mass,
       geo ++ `two_mem_rotationalSafeCaps,
-      geo ++ `two_le_rotationalThreshold
+      geo ++ `two_le_rotationalThreshold,
+      area ++ `warpSlope_sq_add_four_mul_warp_bounds,
+      area ++ `meridionalAction_nonneg_of_quadratic_pinching,
+      geo ++ `quadratic_pinching_mem_rotationalSafeCaps,
+      geo ++ `quadratic_pinching_le_rotationalThreshold
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4535,6 +4542,14 @@ open RicciFlowSharpEstimate.Geometry in
 #check two_mem_rotationalSafeCaps
 open RicciFlowSharpEstimate.Geometry in
 #check two_le_rotationalThreshold
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check warpSlope_sq_add_four_mul_warp_bounds
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_nonneg_of_quadratic_pinching
+open RicciFlowSharpEstimate.Geometry in
+#check quadratic_pinching_mem_rotationalSafeCaps
+open RicciFlowSharpEstimate.Geometry in
+#check quadratic_pinching_le_rotationalThreshold
 
 """
 
