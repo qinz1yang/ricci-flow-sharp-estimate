@@ -3880,7 +3880,7 @@ The bounded zero-R clamp test succeeds. Four new leaves contain five public
 theorems and no definitions. The
 [checkpoint](../evidence/phase2-round-20-polar-saturation/checkpoint.json)
 binds final sources, native evidence and the same-endpoint consumer. One
-configured outer delta review remains pending. Phase I remains COMPLETE;
+configured outer delta review passes at 4287e5f, including Q7. Phase I remains COMPLETE;
 Phase II remains OPEN and only AC1/AC2 are fully met.
 
 ### Exact hypothesis and decisive estimate
@@ -3989,3 +3989,91 @@ endpoint equality/attainment and all-form transfer, and final manuscript,
 native, independent-review and private-delivery gates remain open. No total
 node/contact count, finite switching family, symmetry, unique branch or
 smooth attainment follows from this packet.
+
+## Round 21: arbitrary-zero-minimum cap expansion
+
+The principal theorem starts from an arbitrary C>1 with an actual
+recoverable unit-mass global minimum K,r,p,z of zero complete action,
+with continuous interior representatives r,p.
+For every D>C it returns an original smooth negative metric/form witness
+at C<Cbar<D. It does not assume C=rotationalThreshold or invoke the
+previous theorem extracting witnesses above that threshold. Four new
+leaves contain five public theorems and no definitions. The
+[checkpoint](../evidence/phase2-round-21-cap-expansion/checkpoint.json)
+binds the canonical source, native evidence and same-endpoint consumer;
+one configured outer delta review is pending.
+
+### Complete residual and the actual common box
+
+Fix one centered multiplier t. Write H for the canonical regular adjoint
+minus t*(x-1/2), D=2*f*r² and Z for the complete centered weak adjoint.
+The accepted representative tie is Z=H+D*K a.e. If Z were zero a.e.,
+bounded curvature would imply |H|<=2*C*|D| a.e. The continuous H and D
+extend this inequality throughout the interior; no continuity of Z or K
+is supplied. The true pole limits of D are zero. The two accepted H
+values then force t=0 and zero probe traces. The actual nonzero quadratic
+remainder at such a pole contradicts the resulting cubic bound. Thus
+the complete residual is not almost everywhere zero, for every t.
+
+Select the accepted scale-balanced box once. Its integrable residual,
+nonvanishing and balance force both positive and negative residual
+masses to be strictly positive. Complementarity gives genuine contact
+at both obstacles. These contacts identify any other positive curvature
+box of ratio at most C: its lower and upper endpoints must be exactly
+kappa and C*kappa. Only after this identification is the separately
+produced free interval transferred into the chosen box. It has a uniform
+curvature margin, positive warp/probe margin and Z=0 a.e. there.
+
+### Exact moments and strict full-action descent
+
+The general box-expansion engine needs only measurable bounded K,
+positive real integral of max(-Z,0), and a strict free interval on which
+Z=0. Positive real integral derives integrability of that negative part
+under the totalized Bochner convention. Its measurable representative
+defines a measurable indicator V. Two separated smooth bumps inside
+the actual free interval give an invertible two-moment matrix, hence
+a bounded smooth correction c with the same zeroth and first moments
+as V. The direction V-c has both moments zero. A derived positive step,
+bounded by the larger upper-box gap and free-interval margin, keeps
+J=K+epsilon*(V-c) in the enlarged box. Its exact residual cost is
+-epsilon*integral(max(-Z,0))<0. Full-source measurability/integrability
+and an upper-contact premise are not additional public assumptions.
+
+The exact moments cancel the centering term, so this is a strictly
+negative pairing with the full curvature adjoint, retaining every warp,
+slope and lower-action contribution. Same-box smooth curvature recovery
+and the accepted bounded L1-pairing passage select an actual smooth
+comparison with strict negative pairing. The original quadruple is
+transported to the larger cap without assuming minimality there. The
+existing complete segment derivative, including its finite higher-order
+action terms, yields a genuine negative point. The segment has strictly
+positive physical mass; actual normalization scales its action by a
+positive square. Full-action recovery then selects a negative original
+smooth area competitor. The geometric realizer retains the curvature,
+both inverse maps, original probe and its true first/second jets,
+same-metric dissipation, represented metric and nonzero one-form.
+Choosing Cbar strictly between C and D gives the required ratio room.
+
+### Outcome and next determining obligation
+
+The decisive test succeeds through the complete chain, including actual
+finite descent and smooth original realization. There is no remaining
+uncontrolled term in this cap-expansion implication. The endpoint
+consumer starts with the accepted endpoint producer once, retaining
+the same K,r,p,z, unit mass, global minimum, full common scale/node/pole
+laws and all four strong graph recovery limits and action convergence.
+It invokes the new theorem without added sign/contact/selector inputs.
+Two private integral-zero simplifications preserve every public type;
+source advice and Root's statement audit are not independent acceptance.
+
+This result advances threshold selection; global minimality in its input
+still carries a universal comparison burden. A uniquely selected zero
+of another variational value would not determine C_rot. The next
+principal test must identify informative determining data and an actual
+independent sufficiency implication across geometries, before expanding
+contact-pattern bookkeeping without a proved dependency. All original
+probe coverage and normalization/Haar/recovery bridges used by that
+comparison, exact original smooth endpoint equality/attainment and
+all-form transfer, and final manuscript/native/review/private-delivery
+gates remain mandatory. No finite switching, symmetry, source sign,
+finite-dimensional family, unique branch or smooth attainment is assumed.

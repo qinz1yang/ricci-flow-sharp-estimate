@@ -9,6 +9,23 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 21 proves cap expansion from an arbitrary actual zero-action global
+minimum at C>1 with continuous interior probe/derivative representatives:
+every D>C admits an original smooth negative metric/form
+witness at some C<Cbar<D. The complete centered residual cannot vanish a.e.;
+scale balance yields strict residual masses and identifies the separately
+produced free interval's box. A moment-corrected bounded comparison has
+strictly negative full-adjoint pairing. Same-box smoothing, the genuine
+complete-action derivative, positive-mass normalization and full-action
+recovery produce the original witness with all maps, curvature, probe jets
+and nonzero/dissipation ties. No minimum at the enlarged cap is assumed,
+and the accepted superthreshold witness theorem is not used. The
+[checkpoint](evidence/phase2-round-21-cap-expansion/checkpoint.json) records
+the bounded packet; its single outer delta review remains pending.
+This advances threshold selection. It does not determine C_rot or establish
+independent universal sufficiency at an informative characterized value.
+Original smooth endpoint equality and all-form transfer remain open.
+
 Round 20 closes the zero-probe-trace curvature-clamp cases at both physical
 poles. The actual canonical adjoint has essential second-derivative limit
 -3*q*²/4 and a genuine quadratic remainder with coefficient -3*q*²/8.
@@ -21,7 +38,7 @@ everywhere conclusions for the same boxed representative. Combined with
 Round 18, one minimum and one box/multiplier now have both curvature pole
 limits, without a nonzero probe-trace assumption. The
 [checkpoint](evidence/phase2-round-20-polar-saturation/checkpoint.json)
-records the bounded packet; one outer delta review remains pending. Q7's
+records the bounded packet; its single outer delta review passes at 4287e5f. Q7's
 derived continuity premise is removed with its actual caller adapted.
 No total node/contact count, determining characterization, independent
 universal comparison or original smooth endpoint classification is claimed.
@@ -48,9 +65,10 @@ curvature averages; bounded averaging and a proved contraction select the
 explicit clipped value in the cancelling case. Both pole signs and one
 common scale multiplier are retained. The
 [checkpoint](evidence/phase2-round-18-polar-clamp/checkpoint.json) records
-this bounded packet, accepted by its single outer review at 1c779db. Further
-zero-probe-trace clamp control, informative threshold selection, independent universal
-sufficiency and the original smooth endpoint classification remain open.
+this bounded packet, accepted by its single outer review at 1c779db. At that
+checkpoint the zero-probe-trace clamp remained open; Round 20 subsequently
+closed it. Informative threshold selection, independent universal sufficiency
+and the original smooth endpoint classification remain open.
 
 Round 17 establishes boundedness of the actual minimizing p and canonical q
 and finite traces of the corrected coordinates q+r*(2-b)/(2f) and

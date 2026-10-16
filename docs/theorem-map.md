@@ -920,7 +920,37 @@ and complete-action convergence. The minimal-input consumer supplies no
 q-continuity premise to the repaired generic engine.
 
 The sufficient physical flux estimate is P/d -> 0 from the accepted
-corrected-flux laws. No new O(d²) bound is claimed. The one outer delta
-review remains pending. C_rot, determining selection, independent universal
+corrected-flux laws. No new O(d²) bound is claimed. The single outer delta
+review passes at 4287e5f, including Q7. C_rot, determining selection, independent universal
 sufficiency, original smooth endpoint/all-form equality and final delivery
 remain open; no total node/contact count or smooth attainment is inferred.
+
+## Phase II Round 21: cap expansion above arbitrary zero-action minima
+
+| Declaration | Result and use |
+|---|---|
+| `Analysis.exists_moment_preserving_box_expansion` | A bounded measurable curvature, positive negative-part residual integral and a strict free interval give an upper-box expansion preserving both moments with strictly negative residual pairing. Full-source integrability, source measurability and an upper-contact premise are not required. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_centered_residual_ne_zero_of_minimum` | The complete centered residual of any actual zero-action global minimum cannot vanish a.e., using its actual pole values and nonzero quadratic rate. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_scale_balanced_free_curvature_interval` | One scale-balanced box/multiplier has strict residual masses, both contact laws and an actual free interval in that same box; separately produced boxes are identified by proof. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_smooth_area_competitor_action_neg_of_zero_minimum` | Every larger cap than an arbitrary C>1 carrying an actual zero-action global minimum admits a negative original smooth unit-mass area competitor. |
+| `Geometry.exists_smooth_geometric_negative_witness_above_zero_minimum` | Every D>C has an original smooth negative metric/form witness at C<Cbar<D, with exact moments, ratio room, inverse maps, actual curvature/probe jets, represented metric and same-metric dissipation/nonzero laws. |
+
+Four new leaves contain five public theorems and no definitions. The
+[checkpoint](evidence/phase2-round-21-cap-expansion/checkpoint.json) binds
+their native evidence and the endpoint consumer. That consumer retains
+the identical initial K,r,p,z, physical mass, global minimum, full common
+box/residual/node/pole package and all four strong graph recovery limits,
+and produces the full original geometric witness below every larger cap.
+The source-only simplifier changes two private integral-zero proofs; its
+advice does not replace the single pending outer delta review.
+
+The generic engine derives negative-part integrability from its positive
+real integral, chooses a measurable representative of that part, and
+corrects its indicator's two moments with separated smooth bumps inside
+the free interval. The physical application cancels the centering term
+by the exact moments and retains the full adjoint, complete segment
+derivative, genuine positive mass and full-action recovery. No threshold
+identity or minimality at the larger cap is assumed. This selection
+implication is not an informative determining characterization; the
+independent universal comparison and original smooth endpoint/all-form
+equality remain required.

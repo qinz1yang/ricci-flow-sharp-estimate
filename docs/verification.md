@@ -2195,7 +2195,7 @@ and 142 pre-restart historical Round-file hashes are preserved. Both tasks,
 accepted paper bytes, fixed pins, compiler/platform and ten clean dependency
 revisions remain. The immutable tracker prefix is unchanged.
 
-The single configured Round20 outer delta review remains pending, covering
+The single configured Round20 outer delta review passes at 4287e5f, covering
 new mathematics and Q7 while reusing the accepted unchanged proof review.
 Phase I remains COMPLETE; Phase II remains OPEN and C_rot undetermined.
 The next principal test must confront a concrete determining/selection or
@@ -2205,3 +2205,78 @@ endpoint/all-form equality and final full-suite manuscript/evidence/review/
 private delivery remains required. No total node/contact count, fixed
 switching, symmetry, finite family, unique branch or smooth attainment is
 claimed.
+
+## Phase II, Round 21 cap expansion from an arbitrary zero-action minimum
+
+Four new leaves add five public theorems and no definitions. From any actual
+zero-action recoverable global minimum at C>1 with continuous interior r,p,
+every D>C has an original smooth negative metric/form witness at C<Cbar<D.
+The proof closes the complete residual contradiction, strict scale/contact
+masses, identification of the separately produced free box, exact moments,
+strict full-adjoint comparison, actual finite normalized descent, full-action
+recovery and original geometric realization. It assumes no threshold identity
+or larger-cap minimality and uses no old superthreshold witness extraction.
+
+The final canonical gate passes for 352 physical/checker/root modules,
+357 input hashes and 358 successful native command/output bindings.
+All four new source elaborations are fresh and silent; all 348 accepted
+parent elaborations are reused with matching source/options/provenance.
+The aggregate, 1,366 required selectors, 1,467 exact signature queries,
+three unsuppressed declaration linters and native declaration-kind check
+pass. All 4,161 actual transitive axiom rows, including 1,570 private rows,
+use only propext, Classical.choice and Quot.sound. The literal diagnostic
+driver hashes and all 8,619 source-command records through 45 provenance
+receipts match. Checker policy outside module/selector/query inventories
+is unchanged.
+
+The [native receipt](evidence/phase2-round-21-cap-expansion/receipt.json)
+has SHA256
+`662a4126d938a5d3645d221be757a119a5cd9c43bfb91faa93606b9c54bf8a8b`.
+Root executes the inspected checker's identical native commands, literal
+drivers, reuse checks and fail-fast diagnostic requirements without the
+helper's external 180s wall timeout. The receipt binds this orchestration's
+source hash; the helper entry point was not executed and is not claimed
+successful. All Lean options, compiler diagnostics, declaration and axiom
+requirements are unchanged. The actual writer lock covers compilation;
+there is no duplicate RFSE compiler or new transport failure in this gate.
+
+The canonical CapExpansionChecks consumer passes silently with source SHA256
+`827f2bdd40b9e89744b6758194bf0386deaa6387e7be8f3d678ee04a749f90f7`.
+It uses the actual endpoint producer, retaining identical initial K,r,p,z,
+unit physical mass, zero action, global minimum, the entire common
+scale/residual/node/pole package, all four strong original graph limits
+and complete-action convergence. The new theorem supplies the complete
+original geometric witness below every larger cap without added sign,
+contact or selector premises. No separately produced multipliers are
+identified. The final invocation imports canonical source/cache with no
+scratch overlay.
+
+Source advice inspected 10,149 enforced read-only hash bindings and proposed
+exactly two private integral-zero substitutions. All five public types and
+object ties remain unchanged; final native evidence covers the integrated
+bytes. The worker's earlier candidate was repaired and its generic API
+weakened by Root: only positive real negative-part integral is supplied,
+with negative-part integrability and its measurable representative derived
+internally. Full-source measurability/integrability and contact are omitted.
+Source packets, advice and Root's statement audit are not independent
+acceptance. All worker read/write leases are released.
+
+The [checkpoint](evidence/phase2-round-21-cap-expansion/checkpoint.json)
+binds the four final sources, four documents, canonical consumer, source
+advice, Root audit, native orchestration/provenance and preservation.
+All 348 parent leaves, 149 Phase-I leaves, 11,489 prior evidence files,
+2,325 Phase-I workflow files and 142 pre-restart historical Round files
+remain unchanged. Both tasks, accepted paper bytes, immutable tracker
+prefix, historical stop-state, fixed pins, compiler/platform and ten clean
+pinned dependencies are preserved. Q8's current-status prose is corrected
+in the ordinary documentation update, without theorem credit or a separate
+proof build/review.
+
+One configured outer delta review remains pending. This result advances
+selection; a zero global minimum cannot serve as an independently informative
+determining certificate. C_rot, independent universal sufficiency, every used
+original-probe/domain/path/Haar/recovery bridge, exact original smooth endpoint
+equality/attainment and all-form transfer, and final Phase-II manuscript/native/
+review/private delivery remain required. Phase I remains COMPLETE; Phase II
+remains OPEN, with only AC1/AC2 fully met. No finite switching, symmetry,
+source orientation, finite-dimensional family or branch uniqueness is assumed.

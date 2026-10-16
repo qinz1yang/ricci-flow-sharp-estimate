@@ -363,6 +363,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.ClampedPoleAsymptotics",
     "RicciFlowSharpEstimate.Geometry.WeakCurvatureZeroTracePole",
     "RicciFlowSharpEstimate.Geometry.AreaCurvatureAllPoleLimits",
+    "RicciFlowSharpEstimate.Analysis.MomentPreservingBoxExpansion",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureResidualNonzero",
+    "RicciFlowSharpEstimate.Geometry.AreaScaleBalancedFreeInterval",
+    "RicciFlowSharpEstimate.Geometry.AreaMinimumCapExpansion",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1751,7 +1755,12 @@ SELECTOR = r"""
         `IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_second_pole_rates_of_minimum,
       area ++
         `IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_quadratic_pole_rates_of_minimum,
-      area ++ `IsRecoverableAreaCompetitor.exists_curvature_pole_limits_of_minimum
+      area ++ `IsRecoverableAreaCompetitor.exists_curvature_pole_limits_of_minimum,
+      analysis ++ `exists_moment_preserving_box_expansion,
+      area ++ `IsRecoverableAreaCompetitor.curvature_centered_residual_ne_zero_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.exists_scale_balanced_free_curvature_interval,
+      area ++ `IsRecoverableAreaCompetitor.exists_smooth_area_competitor_action_neg_of_zero_minimum,
+      geo ++ `exists_smooth_geometric_negative_witness_above_zero_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4502,6 +4511,16 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_quadratic_pole_rates_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.exists_curvature_pole_limits_of_minimum
+open RicciFlowSharpEstimate.Analysis in
+#check exists_moment_preserving_box_expansion
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_centered_residual_ne_zero_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_scale_balanced_free_curvature_interval
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_smooth_area_competitor_action_neg_of_zero_minimum
+open RicciFlowSharpEstimate.Geometry in
+#check exists_smooth_geometric_negative_witness_above_zero_minimum
 
 """
 

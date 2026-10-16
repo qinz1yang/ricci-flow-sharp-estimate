@@ -1,0 +1,5 @@
+✔ [9994/9998] Built RicciFlowSharpEstimate.Geometry.AreaScaleBalancedFreeInterval (6.9s)
+✔ [9995/9998] Built RicciFlowSharpEstimate.Analysis.MomentPreservingBoxExpansion (17s)
+✔ [9996/9998] Built RicciFlowSharpEstimate.Geometry.AreaMinimumCapExpansion (12s)
+✔ [9997/9998] Built RicciFlowSharpEstimate (9.8s)
+Build completed successfully (9998 jobs).
