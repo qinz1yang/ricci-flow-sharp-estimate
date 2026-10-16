@@ -1,0 +1,37 @@
+{
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN",
+  "parent_revision": "088b48f5ede5e1f072e3d00540b616b28c6e4bc4",
+  "unchanged_canonical_modules": 357,
+  "canonical_source_changes": [],
+  "new_canonical_declarations": 0,
+  "unchanged_phase1_modules": 149,
+  "unchanged_phase1_workflow_files": 2325,
+  "paper_sha256": {
+    "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+    "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+  },
+  "both_tasks_unchanged": true,
+  "pins_sha256": {
+    "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+  },
+  "unchanged_prior_evidence_files": 12582,
+  "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+  "bitlesson_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855",
+  "unchanged_pre_restart_round_files": 142,
+  "pre_restart_source_and_evidence_bindings": 9107,
+  "intentional_existing_file_deltas": [
+    "RicciFlowSharpEstimate.lean",
+    "docs/mathematical-status.md",
+    "docs/research/phase2-unrestricted.md",
+    "docs/theorem-map.md",
+    "docs/verification.md",
+    "scripts/check_native.py"
+  ],
+  "current_environment_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round24-root-3dfv3ywp/current-environment.json",
+  "current_environment_sha256": "2f50aa68103048685c424284ce3c17f01b4bedc6e4d7163e8e7e0cb07495f65b",
+  "audit_source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round24-root-3dfv3ywp/audit_unchanged.py",
+  "audit_source_sha256": "8effafbb3243159561e0aa25d09f52f570bf2377f1f0c97db3d534c0c84e4722"
+}

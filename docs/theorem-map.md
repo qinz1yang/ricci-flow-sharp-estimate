@@ -992,8 +992,27 @@ Three new leaves expose four public theorems and no public definitions. The
 [checkpoint](evidence/phase2-round-23-warp-calibration/checkpoint.json) binds
 the native evidence and consumer, including a nonconstant normalized curvature
 of actual ratio11/5>2 and arbitrary original smooth metric/form inputs.
-One configured outer delta review remains pending. The positive quadratic
+The single outer delta review passes at 088b48f. The positive quadratic
 root selects this constructed field's safe cap, not the unrestricted sharp
 value; no tied zero-action object or original smooth endpoint classification
 is produced. Every original determining, global-at-sharp-value and final
 delivery gate remains open.
+
+## Phase II Round 24: joint field/equality feasibility remains unresolved
+
+No public declaration or canonical library source is added. The
+[research checkpoint](evidence/phase2-round-24-field-feasibility/checkpoint.json)
+binds three private native probes and their exact types, declaration linters
+and transitive axioms. They check the actual complete product rule, one
+normalized original smooth curvature/probe fixture with negative candidate
+density at a point, conditional open-rectangle rigidity for warp-only
+fields, and failure of the stated constant-history enclosure conditions.
+Another actual smooth curvature distinguishes an upper-contact state from
+the constant-upper history curve.
+
+These are restricted diagnostics, not new global comparison or determining
+theorems. In particular a negative calibrated density at one point does not
+assert negative original action; the enclosure and rectangle hypotheses are
+not established as physical reachability statements. No compatible sharp
+zero object or weak equality bridge is produced. The joint test is STALLED;
+the accepted bound and every original sharp-value/endpoint gate are unchanged.

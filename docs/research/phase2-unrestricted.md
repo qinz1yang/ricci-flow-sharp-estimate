@@ -4249,7 +4249,7 @@ normalization/Haar bridge proves **1+sqrt(3/2)<=C_rot**, with ALL original
 smooth one-forms and the displayed cap included. The
 [checkpoint](../evidence/phase2-round-23-warp-calibration/checkpoint.json)
 binds the final native packet and actual consumer. Source simplification
-advice recommends NO CHANGE; one outer delta review remains pending.
+advice recommends NO CHANGE; the single outer delta review passes at 088b48f.
 
 This is one successful field-construction test, with no bounded alternative.
 The diagnostic calculation was exploratory; the exact coefficient proof and
@@ -4265,3 +4265,99 @@ must follow from the independent comparison before using accepted cap expansion.
 Optimizing another lower bound or renaming a variational threshold is not
 determination. All original smooth-endpoint/equality, used domain/recovery
 bridges and final manuscript/native/review/private-delivery gates remain OPEN.
+
+## Round 24: joint field and equality feasibility
+
+The single principal target is a genuinely variable probe-independent field
+and a compatible nonzero recoverable zero object at the same selected cap.
+The complete remainder is kept as `A*p^2+B*p*r+D*r^2`, with
+`A=2*a*f^2`, `B=f*((beta-K)*b+2*f*Da)` and
+`D=f*(K^2+(2*a-beta)*K-a^2)+(beta-K)*b^2/2+(f*b/2)*Dbeta`.
+The undivided saturation equations include `q+a*r=0` and both kernel
+equations, with actual derivatives, both moments and unit physical mass.
+No global minimum, safety premise, symmetry or finite switching is supplied.
+The [checkpoint](../evidence/phase2-round-24-field-feasibility/checkpoint.json)
+binds the private native sources, commands and outputs described below.
+
+**Attempt 1.** Put `u=kappa*f`, `k=K/kappa`, `t=b^2` and test
+`a=kappa*(1+alpha*u)`, `beta=kappa*(C-c*u)`.
+The genuine complete product rule retains `Da=alpha*kappa^2*b` and
+`Dbeta=-c*kappa^2*b`, without differentiating K. A conditional smooth
+constant-upper polar-branch calculation motivates `alpha=1/8`,
+`c=(2*C-1)/4`; it is not a produced law for the relaxed optimizer.
+
+The decisive physical diagnostic takes `C=5/2`, `kappa=20/17`,
+`Lambda=50/17` and
+`K(x)=50/17-(480/17)*x^2*(1-x)^2`. This smooth curvature has both exact
+moments and attains both box endpoints. Its actual midpoint state is
+`f=7/17`, `b=0`, `K=kappa`. The genuine smooth probe
+`r(x)=1-(25/289)*(x-1/2)^2` has `r=1`, `p=0`, `r''=-50/289` there,
+so `q+a*r=0`. The full candidate calibrated density is exactly
+`-4498900/410338673`. Positive physical normalization preserves this sign
+and gives an actual `IsSmoothAreaCompetitor (5/2) K s`.
+
+Outcome: this particular universally pointwise-nonnegative certificate is
+refuted. Neither negative original action nor unsafety of cap 5/2 follows.
+The calculation does not refute all affine fields or general variable fields.
+No zero object, independent global comparison or determining data result.
+
+**Supporting rigidity test.** For warp-only C1 fields at fixed `f>0`,
+`a>0`, write `af=a_f`, `bf=beta_f`. The determinant numerator is
+
+`H(k,t)=8*a*f*(k^2+(2*a-beta)*k-a^2)`
+`+t*(4*a*(beta-k+f*bf)-(beta-k+2*f*af)^2)`.
+
+Native calculus shows that a nonnegative affine pencil `P(k)+t*R(k)` on
+an open rectangle, vanishing at an interior point, has `P=R=P'=R'=0`
+there. Here `P=P'=0` would force `k^2+a^2=0`; hence H is strictly
+positive inside such a rectangle. The exact identity
+`8*a*Q=(4*a*w+(beta-k+2*f*af)*b*r)^2+H*r^2`, `w=f*p`, is checked too.
+This obstructs this rectangular-enclosure method of free interior equality.
+It is not a physical reachability theorem. Application to the accepted weak
+free interval would still require same-box state-interior and weak equality
+bridges, with the `a=0` and nodal cases treated separately. Those are not
+proved or assumed here.
+
+**Attempt 2.** Retain the actual history defect
+`Phi=b^2+4*Lambda*f-4`, whose genuine derivative is
+`4*b*(Lambda-K)`. At diagnostic cap `5/2`, test
+`a=kappa*(1+u/8+gamma*Phi)` and
+`beta=kappa*(5/2-u+eta*Phi)`, for arbitrary real constants gamma, eta.
+The complete derivative proof includes
+`Da=kappa^2*b*(1/8+4*gamma*(5/2-k))` and
+`Dbeta=kappa^2*b*(-1+4*eta*(5/2-k))`.
+
+On the enclosure boundary `k=5/2`, `t=4-4*u`, the determinant numerator
+factors as `u*P(u)`, with P continuous and `P(0)=96*eta`. Its
+nonnegativity throughout `0<u<2/5` requires `eta>=0`. At the actual
+quartic midpoint above, `u=140/289`, `t=0`, `k=1`, `Phi=244/289`.
+Nonnegative Q at `p=0,r=1` requires `eta<=-9/488`, for every gamma.
+Native proofs establish this incompatibility. The midpoint is an actual
+original state; physical realization of the enclosure boundary is not
+proved. The conclusion rejects these enclosure conditions, not every
+original-geometry comparison with these fields.
+
+A separate literal-primitive fixture has
+`w=15/256`, `I=1/630-w/70+w^2/30` and
+`K=5/2-[x*(1-x)]^2*[x*(1-x)-w]^2/(2*I)`.
+It is smooth, has both exact moments, lies in `[25/24,5/2]`, and satisfies
+`K(1/16)=5/2`, `b(1/16)>0`, `b(1/16)^2+10*f(1/16)-4>0`.
+Thus upper contact cannot be identified with constant-upper history. This
+fixture supplies no sharp zero object or action sign.
+
+**Contribution, gap and next action.** All three private probes have native
+compiler, declaration-kind/linter and actual transitive-axiom checks. Their
+types retain the stated restrictions. They add no canonical theorem or
+global sharp comparison. After two substantive unsuccessful constructions,
+the low-order warp/constant-history mechanism is parked UNRESOLVED and
+UNREFUTED at full original scope. The contracted joint producer is STALLED.
+The accepted lower bound remains `1+sqrt(3/2)`.
+
+A different producer mechanism must control genuine slope/history dependence
+jointly with the zero object, rather than refit constant coefficients or
+optimize another beta-only bound. A possible next bounded test uses full-state
+characteristic data or nonconstant gamma(u), eta(u), retaining every
+`Phi*gamma'(u)` and `Phi*eta'(u)` term. No such producer, selection or
+global extension is claimed. Every used weak/polar/interface/recovery bridge,
+independent sharp-value safety, original smooth endpoint/all-form equality
+and final Phase-II manuscript/native/review/private-delivery gate stays open.

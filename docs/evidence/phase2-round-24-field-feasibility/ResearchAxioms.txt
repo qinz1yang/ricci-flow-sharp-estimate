@@ -1,0 +1,731 @@
+Selected 127 research declarations, including private/generated declarations
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature._proof_2: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature._proof_2: (1 +
+    1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral._proof_2: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral._proof_2: (69 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_2: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_2: (11 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_1: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_1: (5 +
+    1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_3: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_3: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝
+    3 =
+  2560950 / 35701
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_4: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_4: ∀
+  (motive : ℕ → Sort u_1) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (match 4 with
+    | 0 => h_1 ()
+    | 2 => h_2 ()
+    | 3 => h_3 ()
+    | 4 => h_4 ()
+    | 5 => h_5 ()
+    | 6 => h_6 ()
+    | 7 => h_7 ()
+    | 8 => h_8 ()
+    | x => h_9 x) =
+    h_4 ()
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialDensity: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialDensity: (ℝ → ℝ) →
+  (ℝ → ℝ) → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibrationDet._proof_2: [propext]
+TYPE _private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibrationDet._proof_2: (1 + 1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK._proof_2: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK._proof_2: (191 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_first_moment: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_first_moment: ∫ (x : ℝ) in 0..1,
+    x * RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x =
+  1
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR._proof_1: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR._proof_1: (24 + 1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK.eq_1: ∀ (x : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ x = 50 / 17 - 480 / 17 * x ^ 2 * (1 - x) ^ 2
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight._proof_1: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight._proof_1: (14 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK: [propext, Classical.choice, Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK: ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyA._proof_3: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyA._proof_3: (3 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_3: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_3: ∀
+  (motive : ℕ → Sort u_1) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (match 3 with
+    | 0 => h_1 ()
+    | 2 => h_2 ()
+    | 3 => h_3 ()
+    | 4 => h_4 ()
+    | 5 => h_5 ()
+    | 6 => h_6 ()
+    | 7 => h_7 ()
+    | 8 => h_8 ()
+    | x => h_9 x) =
+    h_3 ()
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_1: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_1: ∀
+  (motive : ℕ → Sort u_1) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (match 0 with
+    | 0 => h_1 ()
+    | 2 => h_2 ()
+    | 3 => h_3 ()
+    | 4 => h_4 ()
+    | 5 => h_5 ()
+    | 6 => h_6 ()
+    | 7 => h_7 ()
+    | 8 => h_8 ()
+    | x => h_9 x) =
+    h_1 ()
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_polynomial: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_polynomial: ∀ (x : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x =
+    ∑ n ∈ Finset.range 9, RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝ n * x ^ n
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK._proof_3: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK._proof_3: (79 + 1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK_smooth: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK_smooth: ContDiff ℝ (↑⊤)
+  RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_4: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_4: (27972314 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK._proof_1: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK._proof_1: (119 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_6: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_6: ∀
+  (motive : ℕ → Sort u_1) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (match 6 with
+    | 0 => h_1 ()
+    | 2 => h_2 ()
+    | 3 => h_3 ()
+    | 4 => h_4 ()
+    | 5 => h_5 ()
+    | 6 => h_6 ()
+    | 7 => h_7 ()
+    | 8 => h_8 ()
+    | x => h_9 x) =
+    h_6 ()
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK._proof_1: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK._proof_1: (159 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_7: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_7: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝
+    7 =
+  82575360 / 35701
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK_deriv: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK_deriv: ∀ (x : ℝ),
+  HasDerivAt RicciFlowSharpEstimate.Geometry.AreaProfile.intK✝ (RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ x) x
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_1: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝
+    0 =
+  5 / 2
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialBeta: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialBeta: ℝ → ℝ → ℝ → ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK._proof_3: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK._proof_3: (479 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_9: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_9: ∀
+  (motive : ℕ → Sort u_1) (x : ℕ) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (x = 0 → False) →
+    (x = 2 → False) →
+      (x = 3 → False) →
+        (x = 4 → False) →
+          (x = 5 → False) →
+            (x = 6 → False) →
+              (x = 7 → False) →
+                (x = 8 → False) →
+                  (match x with
+                    | 0 => h_1 ()
+                    | 2 => h_2 ()
+                    | 3 => h_3 ()
+                    | 4 => h_4 ()
+                    | 5 => h_5 ()
+                    | 6 => h_6 ()
+                    | 7 => h_7 ()
+                    | 8 => h_8 ()
+                    | x => h_9 x) =
+                    h_9 x
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_corner_factor: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_corner_factor: ∀ (γ η u : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.historyDet✝ γ η u (4 - 4 * u) (5 / 2) =
+    u * RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient✝ γ η u
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR._proof_2: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR._proof_2: (288 + 1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK.eq_1: ∀ (x : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.intXK✝ x =
+    25 / 17 * x ^ 2 - 120 / 17 * x ^ 4 + 192 / 17 * x ^ 5 - 80 / 17 * x ^ 6
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.coefficientJ: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.coefficientJ: ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyDet: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyDet: ℝ → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight.eq_1: RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight✝ =
+  15 / 256
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_5: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_5: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝
+    5 =
+  89832960 / 35701
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_warp_value: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_warp_value: RicciFlowSharpEstimate.Geometry.AreaProfile.warp
+    RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ (1 / 16) =
+  138043425435 / 1197926776832
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyBeta._proof_1: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyBeta._proof_1: (4 + 1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.test_warp: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.test_warp: RicciFlowSharpEstimate.Geometry.AreaProfile.warp
+    RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ (1 / 2) =
+  7 / 17
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_zeroth_primitive: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_zeroth_primitive: ∀ (y : ℝ),
+  ∫ (x : ℝ) in 0..y, RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x =
+    ∑ n ∈ Finset.range 9, RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝ n * (y ^ (n + 1) / (↑n + 1))
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_3: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_3: (54 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK._proof_2: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK._proof_2: (16 + 1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyDensity: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyDensity: (ℝ → ℝ) →
+  (ℝ → ℝ) → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.affine_pencil_zero_first_order: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.affine_pencil_zero_first_order: ∀ {P Q : ℝ → ℝ}
+  {a b c d x s : ℝ},
+  x ∈ Set.Ioo a b →
+    s ∈ Set.Ioo c d →
+      DifferentiableAt ℝ P x →
+        DifferentiableAt ℝ Q x →
+          (∀ k ∈ Set.Ioo a b, ∀ t ∈ Set.Ioo c d, 0 ≤ P k + t * Q k) →
+            P x + s * Q x = 0 → P x = 0 ∧ Q x = 0 ∧ deriv P x = 0 ∧ deriv Q x = 0
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.no_constant_history_enclosure: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.no_constant_history_enclosure: ∀
+  (γ η : ℝ),
+  (∀ u ∈ Set.Ioo 0 (2 / 5), 0 ≤ RicciFlowSharpEstimate.Geometry.AreaProfile.historyDet✝ γ η u (4 - 4 * u) (5 / 2)) →
+    0 ≤ 140 / 289 * (2 - (5 / 2 - 140 / 289 + η * (244 / 289)) - (140 / 289 / 8 + γ * (244 / 289)) ^ 2) → False
+_private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibrationDet._proof_3: [propext]
+TYPE _private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibrationDet._proof_3: (3 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_5: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_5: ∀
+  (motive : ℕ → Sort u_1) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (match 5 with
+    | 0 => h_1 ()
+    | 2 => h_2 ()
+    | 3 => h_3 ()
+    | 4 => h_4 ()
+    | 5 => h_5 ()
+    | 6 => h_6 ()
+    | 7 => h_7 ()
+    | 8 => h_8 ()
+    | x => h_9 x) =
+    h_5 ()
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.integralK: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.integralK: ∀ (x : ℝ),
+  ∫ (y : ℝ) in 0..x, RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ y =
+    RicciFlowSharpEstimate.Geometry.AreaProfile.intK✝ x
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.negative_actual_density: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.negative_actual_density: RicciFlowSharpEstimate.Geometry.AreaProfile.trialDensity✝
+    RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ RicciFlowSharpEstimate.Geometry.AreaProfile.testR✝ (20 / 17)
+    (5 / 2) (1 / 8) 1 (1 / 2) =
+  -(4498900 / 410338673)
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_box: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_box: ∀ x ∈ Set.Icc 0 1,
+  25 / 24 ≤ RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x ∧
+    RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x ≤ 5 / 2
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_flux_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_flux_hasDerivAt: ∀ (K r : ℝ → ℝ),
+  Continuous K →
+    ContDiff ℝ 2 r →
+      ∀ (κ γ η x : ℝ),
+        HasDerivAt (RicciFlowSharpEstimate.Geometry.AreaProfile.historyFlux✝ K r κ γ η)
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.historyDensity✝ K r κ γ η x -
+            RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalActionDensity
+              (RicciFlowSharpEstimate.Geometry.AreaProfile.warp K x)
+              (RicciFlowSharpEstimate.Geometry.AreaProfile.warpSlope K x) (K x) (r x) (deriv r x) (deriv (deriv r) x))
+          x
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK: [propext, Classical.choice, Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK: ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trial_density_scale: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trial_density_scale: ∀ (K r : ℝ → ℝ),
+  ContDiff ℝ 2 r →
+    ∀ (κ C α c d x : ℝ),
+      RicciFlowSharpEstimate.Geometry.AreaProfile.trialDensity✝ K (fun y ↦ d * r y) κ C α c x =
+        d ^ 2 * RicciFlowSharpEstimate.Geometry.AreaProfile.trialDensity✝ K r κ C α c x
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_monomial_integral: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_monomial_integral: ∀ (m : ℕ)
+  (y : ℝ),
+  ∫ (x : ℝ) in 0..y, x ^ m * RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x =
+    ∑ n ∈ Finset.range 9,
+      RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝ n * (y ^ (n + m + 1) / (↑(n + m) + 1))
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient: ℝ → ℝ → ℝ → ℝ
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_smooth: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_smooth: ContDiff ℝ (↑⊤)
+  RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_8: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_8: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝
+    8 =
+  -20643840 / 35701
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_integral_value: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_integral_value: RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral✝ =
+  35701 / 41287680
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral._proof_1: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral._proof_1: (629 +
+    1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral: ℝ
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_9: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_9: ∀ (x : ℕ),
+  (x = 0 → False) →
+    (x = 2 → False) →
+      (x = 3 → False) →
+        (x = 4 → False) →
+          (x = 5 → False) →
+            (x = 6 → False) →
+              (x = 7 → False) → (x = 8 → False) → RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝ x = 0
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyA: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyA: ℝ → ℝ → ℝ → ℝ → ℝ
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight: ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_5: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_5: (26 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.test_box: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.test_box: ∀ x ∈ Set.Icc 0 1,
+  20 / 17 ≤ RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ x ∧
+    RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ x ≤ 50 / 17
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK._proof_2: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK._proof_2: (239 + 1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_midpoint_eta_neg: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_midpoint_eta_neg: ∀ (γ η : ℝ),
+  0 ≤ 140 / 289 * (2 - (5 / 2 - 140 / 289 + η * (244 / 289)) - (140 / 289 / 8 + γ * (244 / 289)) ^ 2) → η ≤ -9 / 488
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.upper_branch_identity: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.upper_branch_identity: ∀ (C u : ℝ),
+  8 * (1 + u / 8) *
+        RicciFlowSharpEstimate.Geometry.AreaProfile.coefficientJ✝ C u (4 - 4 * C * u) C (1 / 8) ((2 * C - 1) / 4) -
+      (C - (2 * C - 1) / 4 * u - C + 2 * (1 / 8) * u) ^ 2 * (4 - 4 * C * u) =
+    u ^ 2 * (19 * C ^ 2 - 6 * C - 3 + (C ^ 3 + C ^ 2 / 2 - 3 / 8) * u - u ^ 2 / 64)
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral._proof_3: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral._proof_3: (29 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trial_flux_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trial_flux_hasDerivAt: ∀ (K r : ℝ → ℝ),
+  Continuous K →
+    ContDiff ℝ 2 r →
+      ∀ (κ C α c x : ℝ),
+        HasDerivAt (RicciFlowSharpEstimate.Geometry.AreaProfile.trialFlux✝ K r κ C α c)
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.trialDensity✝ K r κ C α c x -
+            RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalActionDensity
+              (RicciFlowSharpEstimate.Geometry.AreaProfile.warp K x)
+              (RicciFlowSharpEstimate.Geometry.AreaProfile.warpSlope K x) (K x) (r x) (deriv r x) (deriv (deriv r) x))
+          x
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK_deriv: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK_deriv: ∀ (x : ℝ),
+  HasDerivAt RicciFlowSharpEstimate.Geometry.AreaProfile.intXK✝
+    (x * RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ x) x
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_5: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_5: (89832959 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.test_moments: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.test_moments: ∫ (x : ℝ) in 0..1,
+      RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ x =
+    2 ∧
+  ∫ (x : ℝ) in 0..1, x * RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ x = 1
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR: [propext, Classical.choice, Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR: ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyA._proof_1: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyA._proof_1: (7 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff: ℕ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK.eq_1: ∀ (x : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.intK✝ x =
+    50 / 17 * x - 160 / 17 * x ^ 3 + 240 / 17 * x ^ 4 - 96 / 17 * x ^ 5
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyBeta: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyBeta: ℝ → ℝ → ℝ → ℝ → ℝ
+_private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibrationDet: [propext, Classical.choice, Quot.sound]
+TYPE _private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibrationDet: ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature._proof_1: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature._proof_1: (4 +
+    1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_2: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_2: (35700 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK._proof_1: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testK._proof_1: (49 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature: ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR_deriv: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR_deriv: ∀ (x : ℝ),
+  HasDerivAt RicciFlowSharpEstimate.Geometry.AreaProfile.testR✝ (-(50 / 289) * (x - 1 / 2)) x
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_7: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_7: (82575359 +
+    1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_2: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_2: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝
+    2 =
+  -70875 / 35701
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_slope_value: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_slope_value: RicciFlowSharpEstimate.Geometry.AreaProfile.warpSlope
+    RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ (1 / 16) =
+  3948311353 / 2339700736
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyFlux: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyFlux: (ℝ → ℝ) →
+  (ℝ → ℝ) → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_6: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_6: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝
+    6 =
+  -126282240 / 35701
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK: [propext, Classical.choice, Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intXK: ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialFlux: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialFlux: (ℝ → ℝ) →
+  (ℝ → ℝ) → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_6: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_6: (2 +
+    1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_8: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_8: ∀
+  (motive : ℕ → Sort u_1) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (match 8 with
+    | 0 => h_1 ()
+    | 2 => h_2 ()
+    | 3 => h_3 ()
+    | 4 => h_4 ()
+    | 5 => h_5 ()
+    | 6 => h_6 ()
+    | 7 => h_7 ()
+    | 8 => h_8 ()
+    | x => h_9 x) =
+    h_8 ()
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_defect_value: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_defect_value: RicciFlowSharpEstimate.Geometry.AreaProfile.warpSlope
+          RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ (1 / 16) ^
+        2 +
+      10 *
+        RicciFlowSharpEstimate.Geometry.AreaProfile.warp RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝
+          (1 / 16) -
+    4 =
+  573468335240625 / 5474199534038941696
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_nonconstant: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_nonconstant: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝
+    0 ≠
+  RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ (1 / 2)
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient.eq_1: ∀ (γ η u : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient✝ γ η u =
+    8 * (1 + (1 / 8 + 6 * γ) * u) * (12 * η + u * (55 / 8 + 18 * γ - 27 * η) - (1 / 8 + 6 * γ) ^ 2 * u ^ 2) -
+      4 * (-3 / 4 + 6 * η) ^ 2 * u * (1 - u)
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral.eq_1: RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral✝ =
+  1 / 630 - RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight✝ / 70 +
+    RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight✝ ^ 2 / 30
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyA._proof_2: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyA._proof_2: (9 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_6: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_6: (126282239 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK._proof_3: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.intK._proof_3: (95 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_3: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_3: (2560949 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_4: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCornerQuotient._proof_4: (17 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.integralXK: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.integralXK: ∀ (x : ℝ),
+  ∫ (y : ℝ) in 0..x, y * RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ y =
+    RicciFlowSharpEstimate.Geometry.AreaProfile.intXK✝ x
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight._proof_2: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight._proof_2: (255 +
+    1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_upper_contact: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_upper_contact: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝
+    (1 / 16) =
+  5 / 2
+_private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibration_det_pos_on_rectangle: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibration_det_pos_on_rectangle: ∀
+  (f a af beta bf kl ku tl tu k t : ℝ),
+  0 < f →
+    0 < a →
+      k ∈ Set.Ioo kl ku →
+        t ∈ Set.Ioo tl tu →
+          (∀ j ∈ Set.Ioo kl ku,
+              ∀ s ∈ Set.Ioo tl tu, 0 ≤ RicciFlowSharpEstimate.Analysis.calibrationDet✝ f a af beta bf s j) →
+            0 < RicciFlowSharpEstimate.Analysis.calibrationDet✝ f a af beta bf t k
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_corner_eta_nonneg: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_corner_eta_nonneg: ∀ (γ η : ℝ),
+  (∀ u ∈ Set.Ioo 0 (2 / 5), 0 ≤ RicciFlowSharpEstimate.Geometry.AreaProfile.historyDet✝ γ η u (4 - 4 * u) (5 / 2)) →
+    0 ≤ η
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1: (motive :
+    ℕ → Sort u_1) →
+  (x : ℕ) →
+    (Unit → motive 0) →
+      (Unit → motive 2) →
+        (Unit → motive 3) →
+          (Unit → motive 4) →
+            (Unit → motive 5) →
+              (Unit → motive 6) → (Unit → motive 7) → (Unit → motive 8) → ((x : ℕ) → motive x) → motive x
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_1: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_1: (70874 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.deriv_testR: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.deriv_testR: deriv
+    RicciFlowSharpEstimate.Geometry.AreaProfile.testR✝ =
+  fun x ↦ -(50 / 289) * (x - 1 / 2)
+_private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibrationDet._proof_1: [propext]
+TYPE _private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.calibrationDet._proof_1: (7 + 1).AtLeastTwo
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_8: [propext]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff._proof_8: (20643839 +
+    1).AtLeastTwo
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialA: [propext, Classical.choice, Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialA: ℝ → ℝ → ℝ → ℝ
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR.eq_1: ∀ (x : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.testR✝ x = 1 - 25 / 289 * (x - 1 / 2) ^ 2
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_zeroth_moment: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_zeroth_moment: ∫ (x : ℝ) in 0..1,
+    RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x =
+  2
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.splitter: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.splitter: (motive :
+    ℕ → Sort u_1) →
+  (x : ℕ) →
+    (Unit → motive 0) →
+      (Unit → motive 2) →
+        (Unit → motive 3) →
+          (Unit → motive 4) →
+            (Unit → motive 5) →
+              (Unit → motive 6) →
+                (Unit → motive 7) →
+                  (Unit → motive 8) →
+                    ((x : ℕ) →
+                        (x = 0 → False) →
+                          (x = 2 → False) →
+                            (x = 3 → False) →
+                              (x = 4 → False) →
+                                (x = 5 → False) → (x = 6 → False) → (x = 7 → False) → (x = 8 → False) → motive x) →
+                      motive x
+_private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.matrix_completion: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.WarpOnlyPencilChecks.0.RicciFlowSharpEstimate.Analysis.matrix_completion: ∀ (f a af beta bf b k w r : ℝ),
+  8 * a *
+      (2 * a * w ^ 2 + (beta - k + 2 * f * af) * b * w * r +
+        (f * (k ^ 2 + (2 * a - beta) * k - a ^ 2) + (beta - k + f * bf) * b ^ 2 / 2) * r ^ 2) =
+    (4 * a * w + (beta - k + 2 * f * af) * b * r) ^ 2 +
+      RicciFlowSharpEstimate.Analysis.calibrationDet✝ f a af beta bf (b ^ 2) k * r ^ 2
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR_smooth: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.testR_smooth: ContDiff ℝ (↑⊤)
+  RicciFlowSharpEstimate.Geometry.AreaProfile.testR✝
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature.eq_1: ∀ (x : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x =
+    5 / 2 -
+      (x * (1 - x)) ^ 2 * (x * (1 - x) - RicciFlowSharpEstimate.Geometry.AreaProfile.historyWeight✝) ^ 2 /
+        (2 * RicciFlowSharpEstimate.Geometry.AreaProfile.historyIntegral✝)
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_first_primitive: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.history_first_primitive: ∀ (y : ℝ),
+  ∫ (x : ℝ) in 0..y, x * RicciFlowSharpEstimate.Geometry.AreaProfile.historyCurvature✝ x =
+    ∑ n ∈ Finset.range 9,
+      RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝ n * (y ^ (n + 1 + 1) / (↑(n + 1) + 1))
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_4: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.eq_4: RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff✝
+    4 =
+  -27972315 / 35701
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_2: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_2: ∀
+  (motive : ℕ → Sort u_1) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (match 2 with
+    | 0 => h_1 ()
+    | 2 => h_2 ()
+    | 3 => h_3 ()
+    | 4 => h_4 ()
+    | 5 => h_5 ()
+    | 6 => h_6 ()
+    | 7 => h_7 ()
+    | 8 => h_8 ()
+    | x => h_9 x) =
+    h_2 ()
+_private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_7: []
+TYPE _private.HistoryStateChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.historyCoeff.match_1.eq_7: ∀
+  (motive : ℕ → Sort u_1) (h_1 : Unit → motive 0) (h_2 : Unit → motive 2) (h_3 : Unit → motive 3)
+  (h_4 : Unit → motive 4) (h_5 : Unit → motive 5) (h_6 : Unit → motive 6) (h_7 : Unit → motive 7)
+  (h_8 : Unit → motive 8) (h_9 : (x : ℕ) → motive x),
+  (match 7 with
+    | 0 => h_1 ()
+    | 2 => h_2 ()
+    | 3 => h_3 ()
+    | 4 => h_4 ()
+    | 5 => h_5 ()
+    | 6 => h_6 ()
+    | 7 => h_7 ()
+    | 8 => h_8 ()
+    | x => h_9 x) =
+    h_7 ()
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.deriv_deriv_testR: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.deriv_deriv_testR: ∀ (x : ℝ),
+  deriv (deriv RicciFlowSharpEstimate.Geometry.AreaProfile.testR✝) x = -(50 / 289)
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.test_slope: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.test_slope: RicciFlowSharpEstimate.Geometry.AreaProfile.warpSlope
+    RicciFlowSharpEstimate.Geometry.AreaProfile.testK✝ (1 / 2) =
+  0
+_private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialDensity._proof_1: [propext]
+TYPE _private.AffineFieldChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.trialDensity._proof_1: (1 + 1).AtLeastTwo

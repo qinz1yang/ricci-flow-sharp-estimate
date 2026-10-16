@@ -9,6 +9,17 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 24's joint variable-field/equality test is **STALLED**. Three private
+native research probes check complete flux identities, a physical failure
+of one candidate's pointwise calibrated density, a conditional warp-only
+rigidity calculation and incompatible conditions for a constant history
+correction on the stated enclosure. These do not prove negative original
+action, a general impossibility theorem or a sharp zero object. No canonical
+theorem or new bound is added. The restricted construction is parked;
+informative field/zero-object production and independent sharp comparison
+remain open. Its [research checkpoint](evidence/phase2-round-24-field-feasibility/checkpoint.json)
+distinguishes new private diagnostics from unchanged accepted evidence.
+
 Round 23 constructs a warp-dependent comparison giving the stronger independent
 bound **1+sqrt(3/2)<=C_rot**. The actual two-pole state inequalities
 `b^2+4*kappa*f<=4<=b^2+4*Lambda*f` control the full mixed remainder of
@@ -17,7 +28,7 @@ coefficient proof, genuine boundary-null flux FTC and the accepted same-metric
 normalization/Haar bridge give safety for ALL original smooth one-forms,
 including the displayed cap. Neither probe nodes nor arbitrary smooth pole
 values are excluded. The [checkpoint](evidence/phase2-round-23-warp-calibration/checkpoint.json)
-records the bounded packet; one outer delta review remains pending.
+records the bounded packet; its single outer delta review passes at 088b48f.
 This is a lower bound, not a determining characterization or endpoint result.
 
 Round 22 establishes the independent universal lower bound **C_rot>=2**.

@@ -2399,7 +2399,7 @@ Source simplifier advice recommends NO CHANGE; all five frozen new input
 bindings match final canonical bytes. The state worker's provisional packet
 is preserved separately from Root's weaker kappa>=0 API and linter repair.
 Both source-only leases are released. Neither advice nor Root's semantic
-audit is independent acceptance; one configured outer delta review is pending.
+audit is independent acceptance; the single outer delta review passes at 088b48f.
 
 All 354 parent leaves, 149 Phase-I leaves, 12,215 prior evidence files,
 2,325 Phase-I workflow files, 142 pre-restart historical Round files, both
@@ -2412,3 +2412,41 @@ This packet proves an explicit larger universal lower bound. It does not
 identify C_rot, supply a sharp zero-action object, classify the original
 smooth endpoint or close the full Phase-II manuscript/research and final
 mathematical/delivery gates. Phase I remains COMPLETE; Phase II remains OPEN.
+
+## Phase II Round 24: private field-feasibility diagnostics
+
+The [research checkpoint](evidence/phase2-round-24-field-feasibility/checkpoint.json)
+binds three private source probes, their exact native commands and silent
+exit-zero outputs, plus explicit type/transitive-axiom output and silent
+declaration-linter output. All 127 selected private/generated declarations
+have explicit type and actual axiom rows; anonymous fixture examples are
+checked by source elaboration rather than standalone signature queries.
+The actual selector includes private/generated
+declarations from all three probes, checks required load-bearing names, and
+uses the same three declaration linters and declaration-kind inspection as
+the accepted checker. Only propext, Classical.choice and Quot.sound are
+allowed. The compiler/options are unchanged; the actual writer lock covers
+each compiler lifetime. The Root-only scratch import overlay contains the
+unchanged canonical dependency artifacts and isolated probe outputs.
+
+No canonical source, aggregate or checker policy changes. The accepted
+Round 23 source/root/signature/linter/axiom evidence is reused; this round
+does not claim a fresh canonical root build or full-suite recomputation.
+All 362 accepted source inputs and 363 command/output bindings match.
+All 357 canonical modules, 149 Phase-I modules, 12,582 prior evidence files,
+2,325 Phase-I workflow files and 142 pre-restart historical Round files are
+preserved, together with both TASKs, accepted paper, pins, BitLesson and
+immutable tracker prefix. Actual compiler/platform and ten clean pinned
+dependencies match. Failed development elaboration and driver-syntax logs
+remain separate from the five successful final private native commands.
+Source-only worker packets and NO CHANGE simplifier advice are distinct
+from final private native evidence. One configured outer delta review of
+this research checkpoint remains pending.
+
+The diagnostics have restricted mathematical scope: the negative candidate
+density is pointwise, the rectangle and history-correction obstructions
+retain their enclosure premises, and no sharp zero object or independent
+global comparison is produced. The joint test is STALLED and adds zero
+canonical declarations. The accepted C_rot lower bound and all original
+determining, sharp safety, endpoint and final delivery obligations remain
+unchanged. Phase I remains COMPLETE; Phase II remains OPEN.

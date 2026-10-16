@@ -1,0 +1,104 @@
+{
+  "round": 24,
+  "parent_revision": "088b48f5ede5e1f072e3d00540b616b28c6e4bc4",
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN",
+  "mainline_progress_verdict": "STALLED",
+  "mainline_result": "Joint sharp field/zero-object producer not delivered; restricted research diagnostics only",
+  "new_canonical_modules": 0,
+  "new_canonical_declarations": 0,
+  "safe_lower_bound_unchanged": "1+sqrt(3/2) <= C_rot; no identification or new bound",
+  "fresh_native_scope": "Three isolated private research probes, exact declared types, declaration kinds/linters and actual axiom closures only",
+  "private_research_declarations_selected": 127,
+  "anonymous_examples": "Fixture examples are kernel-checked during source elaboration; they are not exported declarations and no standalone signature-query row is claimed for them",
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declaration_linters": [
+    "unusedArguments",
+    "simpNF",
+    "synTaut"
+  ],
+  "defLemma_replacement": "Native getConstInfo and Meta.isProp declaration-kind inspection",
+  "private_import_overlay": "Root-only unchanged canonical artifacts plus isolated compiled probes; no canonical source or checker change",
+  "canonical_evidence": {
+    "action": "reuse unchanged accepted Round23 source/root/signature/linter/axiom evidence",
+    "receipt_path": "docs/evidence/phase2-round-23-warp-calibration/receipt.json",
+    "receipt_sha256": "6a454dfdb414a69f0fd0aebf75256618c9ad1e0caac979cedb633ad91561afd3",
+    "unchanged_inputs": 362,
+    "unchanged_successful_outputs": 363,
+    "unchanged_modules": 357,
+    "fresh_root_build_or_full_suite_query": false
+  },
+  "scope_limits": [
+    "Negative candidate density at an actual normalized smooth fixture is pointwise, not negative original action or cap unsafety",
+    "Warp-only rigidity retains the nonnegative open-rectangle premise, f>0 and a>0; original reachability and weak equality bridges are not supplied",
+    "Constant-history incompatibility rejects the stated enclosure conditions at diagnostic cap5/2; enclosure-boundary physical realization is not proved",
+    "The separate original upper-contact history state is no sharp zero object or global comparison",
+    "No new independent global safety, determining value/selection, original smooth endpoint or all-form equality theorem"
+  ],
+  "route_status": "Low-order warp/constant-history construction parked UNRESOLVED/UNREFUTED at full original scope after two substantive unsuccessful tests",
+  "next_action": "Choose a substantively different full-state/characteristic producer; retain genuine history derivatives, global Q sign and the tied original zero object together",
+  "remaining_original_gates": [
+    "informative determination and justified selection",
+    "independent original all-form safety at the characterized sharp value",
+    "every used domain/polar/interface/path/normalization/Haar/recovery bridge",
+    "sharp original smooth witnesses and endpoint equality/attainment with all-form transfer",
+    "separate PhaseII manuscript, native, single independent outer review and private delivery"
+  ],
+  "source_advice": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round24-advice-7n1_4eey/advice/report.md",
+    "report_sha256": "d40e7bd59b3c7729b99853d51f270dc034894d33721e001f29d79fd707aa20cd",
+    "manifest_sha256": "ddccbead972b6368bf86ac3a96e2eb8c006a467f64a83efc0a051c1a38ebafe6",
+    "matching_frozen_source_bindings": 6,
+    "recommendation": "NO CHANGE; source-only advice, not acceptance",
+    "lease_released": true
+  },
+  "worker_packets": [
+    {
+      "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round24-history-1co0bh6j/HistoryStateProbe.lean",
+      "sha256": "45f92afdcfe2e2fc2bba62cb48ebfb99e28a6bc9c21cb3c9f144306502e7cd45",
+      "status": "PROVISIONAL source-only candidate; Root final native sources/outputs are separately bound"
+    },
+    {
+      "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round24-history-1co0bh6j/pencil/AffinePencilProbe.lean",
+      "sha256": "4d40c4ac5b9bf42b0198fb88ce8e62d5cbe3a17a62eaadb4fce869074fdcc95d",
+      "status": "PROVISIONAL source-only candidate; Root final native sources/outputs are separately bound"
+    }
+  ],
+  "attempt_record": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round24-root-3dfv3ywp/attempts.md",
+    "sha256": "6ead0c9ae7b9dbf0bafe6d7a3b90657b033561e2dacdecfb46fca8f002938cce"
+  },
+  "independent_review": "One configured Astra/max outer delta review pending; no additional acceptance reviewer launched",
+  "file_hashes": {
+    "docs/evidence/phase2-round-24-field-feasibility/AffineFieldChecks.lean": "928b718b18c9627a1eb02f272e6e9243688e7f9269513e5af694a822a38cd314",
+    "docs/evidence/phase2-round-24-field-feasibility/AffineFieldChecks.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-24-field-feasibility/HistoryStateChecks.lean": "754bdf843fa4828e60050316fb4a622ad520015398906e3ef714238db30f5461",
+    "docs/evidence/phase2-round-24-field-feasibility/HistoryStateChecks.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-24-field-feasibility/ResearchAxioms.lean": "cb6bbe9237afe4e54d7df9e09a9fabf794ce4d48a6a415428a0ef80eb9b90d94",
+    "docs/evidence/phase2-round-24-field-feasibility/ResearchAxioms.txt": "0e62bb698e63212237b919c241a4378f8e2255c7dfa4d6f984b232b497978831",
+    "docs/evidence/phase2-round-24-field-feasibility/ResearchLinters.lean": "a79e07c08b01b4fde3c849abe9a59d15c2eec4acf43f06b1e4c23b24c4eddde7",
+    "docs/evidence/phase2-round-24-field-feasibility/ResearchLinters.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-24-field-feasibility/WarpOnlyPencilChecks.lean": "4b353afdf34ed3cb9d8610987eed35632bf562ca9f56006dff280260d3b365ef",
+    "docs/evidence/phase2-round-24-field-feasibility/WarpOnlyPencilChecks.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-24-field-feasibility/audit_unchanged.py": "8effafbb3243159561e0aa25d09f52f570bf2377f1f0c97db3d534c0c84e4722",
+    "docs/evidence/phase2-round-24-field-feasibility/bind_research.py": "bb391c1fc5b17cb300c8e307ee9b17a14e98af5208e071066366f61dfe4abd84",
+    "docs/evidence/phase2-round-24-field-feasibility/current-environment.json": "2f50aa68103048685c424284ce3c17f01b4bedc6e4d7163e8e7e0cb07495f65b",
+    "docs/evidence/phase2-round-24-field-feasibility/preservation.json": "087c65fe2886595f37065a08f2577fcb931a59865aea5c2ee264abd18bb5f4f0",
+    "docs/evidence/phase2-round-24-field-feasibility/research-native.json": "07b7e224c6fbb903c4bc61b630e9cd1c552f405c1d48d24dc4aab88ae1aabf21",
+    "docs/evidence/phase2-round-24-field-feasibility/run_diagnostics.py": "881f1b120502a8d7ebbc5d33c75b904f7669a80393bcdf15227a1e6b5c8e6d37",
+    "docs/evidence/phase2-round-24-field-feasibility/run_module.py": "cd03822a919f659b68c5c75a80b90810932c96329f861d51f85d15c4218feb02",
+    "docs/evidence/phase2-round-24-field-feasibility/source-advice.md": "d40e7bd59b3c7729b99853d51f270dc034894d33721e001f29d79fd707aa20cd",
+    "docs/evidence/phase2-round-24-field-feasibility/verify_research.py": "44e95ef01eb5fccce37ac61932014c41651aca1d52c0c598b34f0338cf56d73b"
+  },
+  "document_hashes": {
+    "docs/mathematical-status.md": "e7e8d13b7a7dd96a691842da216dddea6016be4e8fb80824ad340b04acd68431",
+    "docs/theorem-map.md": "ca9f9799726245170bf17045d02cfc1a69fca5cb33b0d482354f152204b30a9a",
+    "docs/research/phase2-unrestricted.md": "cc11df7bd0273e8dff2a4d90e5f4799144511ed38f63a7246a408df3dff93b24",
+    "docs/verification.md": "2cc22f51b41d1c4407b6e9479667e783ba3e0b6655fca331818d0ddaf1feb7fb"
+  },
+  "no_local_authority_reference_workflow_or_accepted_paper_delivered": true
+}
