@@ -147,7 +147,6 @@ private theorem zero_interval_of_signed_polar_system
     (hK : ∀ᵐ x ∂volume.restrict (Ioo (0 : ℝ) (1 / 2)), |K x| ≤ m)
     (hR : AbsolutelyContinuousOnInterval R 0 (1 / 2)) (hR0 : R 0 = 0)
     (hp : ContinuousOn p (Ioo (0 : ℝ) (1 / 2)))
-    (hq : ContinuousOn q (Ioo (0 : ℝ) (1 / 2)))
     (hRD : ∀ x ∈ Ioo (0 : ℝ) (1 / 2), HasDerivAt R (p x) x)
     (hqlocal : ∀ a ∈ Ioo (0 : ℝ) (1 / 2), ∀ c ∈ Ioo (0 : ℝ) (1 / 2),
       AbsolutelyContinuousOnInterval q a c)
@@ -170,7 +169,7 @@ private theorem zero_interval_of_signed_polar_system
   have hB : 0 ≤ B := by dsimp only [B]; positivity
   have hD : 0 ≤ D := by dsimp only [D]; positivity
   apply Analysis.exists_zero_interval_of_singular_flux_bounds
-    (by norm_num : (0 : ℝ) < 1 / 2) hA hB hD hR hR0 hp hq
+    (by norm_num : (0 : ℝ) < 1 / 2) hA hB hD hR hR0 hp
     (by filter_upwards [ae_restrict_mem measurableSet_Ioo] with x hx; exact hRD x hx)
     hqlocal hq0 hP hP0 hF hF0 hbound
   · filter_upwards [hSys, hK, ae_restrict_mem measurableSet_Ioo] with x hS hKx hx
@@ -235,7 +234,7 @@ theorem IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum
   have hg := h.geometry_bounds hC
   obtain ⟨_, _, hRAC, hReq, hRD, hRL, hRR, _⟩ :=
     h.probe_pole_integrability_of_minimum hC hr hp hmin
-  obtain ⟨_, _, hqC, hQeq, hlocal, hSys⟩ :=
+  obtain ⟨_, _, _, hQeq, hlocal, hSys⟩ :=
     h.probe_first_order_system_of_minimum hC hr hp hmin
   obtain ⟨_, hPAC, _, hP0, hP1, _, _, _, _, _, _⟩ :=
     h.probe_euler_flux_of_minimum hC hmin
@@ -291,7 +290,7 @@ theorem IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum
     obtain ⟨δ, hδ, hδh, hz⟩ := zero_interval_of_signed_polar_system
       (by positivity : 0 < 1 / C) (by positivity : 0 ≤ 2 * C) hcoefL
       (hK.filter_mono (ae_mono (Measure.restrict_mono hsub le_rfl)))
-      (hRAC.mono hACsub) hR0 (hp.mono hsub) (hqC.mono hsub)
+      (hRAC.mono hACsub) hR0 (hp.mono hsub)
       (fun x hx => hRD x (hsub hx))
       (fun a ha c hc => (hlocal a (hsub ha) c (hsub hc)).2)
       hq0 (hPAC.mono hACsub) hP0 (hFAC.mono hACsub) hF0
@@ -341,8 +340,6 @@ theorem IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum
       exact hx (href x hxI)
     have hpRC : ContinuousOn pR (Ioo (0 : ℝ) (1 / 2)) :=
       (hp.comp (continuous_const.sub continuous_id).continuousOn href).neg
-    have hqRC : ContinuousOn qR (Ioo (0 : ℝ) (1 / 2)) :=
-      hqC.comp (continuous_const.sub continuous_id).continuousOn href
     have hRRD (x : ℝ) (hx : x ∈ Ioo (0 : ℝ) (1 / 2)) : HasDerivAt RR (pR x) x := by
       simpa only [RR, pR, Function.comp_def, zero_sub, mul_neg_one, id_eq] using
         (hRD (1 - x) (href x hx)).comp x
@@ -394,7 +391,7 @@ theorem IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum
     obtain ⟨δ, hδ, hδh, hz⟩ := zero_interval_of_signed_polar_system
       (by positivity : 0 < 1 / C) (by positivity : 0 ≤ 2 * C) hcoefR hKR
       (hRRAC.mono hACsub) (by simpa only [RR, sub_zero] using hR1)
-      hpRC hqRC hRRD hqRlocal (hq1.comp reflect_right_zero)
+      hpRC hRRD hqRlocal (hq1.comp reflect_right_zero)
       (hPRAC.mono hACsub) (by simp only [PR, P, lam, sub_zero, hP1, neg_zero])
       (hFRAC.mono hACsub) (by simp only [FR, F, sub_zero, hF1, neg_zero])
       ⟨N, hN, fun x hx => by simpa only [pR, qR, abs_neg] using hNb (1 - x) (href x hx)⟩

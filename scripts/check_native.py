@@ -359,6 +359,10 @@ MODULES = [
     "RicciFlowSharpEstimate.Analysis.PolarFluxLeadingRates",
     "RicciFlowSharpEstimate.Geometry.WeakProbeBoundaryUniqueness",
     "RicciFlowSharpEstimate.Geometry.WeakProbeZeroTraceRates",
+    "RicciFlowSharpEstimate.Analysis.QuadraticPoleRemainder",
+    "RicciFlowSharpEstimate.Analysis.ClampedPoleAsymptotics",
+    "RicciFlowSharpEstimate.Geometry.WeakCurvatureZeroTracePole",
+    "RicciFlowSharpEstimate.Geometry.AreaCurvatureAllPoleLimits",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1740,7 +1744,14 @@ SELECTOR = r"""
       analysis ++ `leading_rates_of_degenerate_derivative_flux,
       analysis ++ `leading_rates_of_degenerate_derivative_flux_right,
       area ++ `IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum,
-      area ++ `IsRecoverableAreaCompetitor.probe_zero_trace_leading_rates_of_minimum
+      area ++ `IsRecoverableAreaCompetitor.probe_zero_trace_leading_rates_of_minimum,
+      analysis ++ `tendsto_quadratic_remainder_of_ae_second_derivative_limit,
+      analysis ++ `eventually_eq_obstacle_of_negative_quadratic_remainder,
+      area ++
+        `IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_second_pole_rates_of_minimum,
+      area ++
+        `IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_quadratic_pole_rates_of_minimum,
+      area ++ `IsRecoverableAreaCompetitor.exists_curvature_pole_limits_of_minimum
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4481,6 +4492,16 @@ open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.probe_pole_state_nonzero_of_minimum
 open RicciFlowSharpEstimate.Geometry.AreaProfile in
 #check IsRecoverableAreaCompetitor.probe_zero_trace_leading_rates_of_minimum
+open RicciFlowSharpEstimate.Analysis in
+#check tendsto_quadratic_remainder_of_ae_second_derivative_limit
+open RicciFlowSharpEstimate.Analysis in
+#check eventually_eq_obstacle_of_negative_quadratic_remainder
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_second_pole_rates_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_quadratic_pole_rates_of_minimum
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.exists_curvature_pole_limits_of_minimum
 
 """
 

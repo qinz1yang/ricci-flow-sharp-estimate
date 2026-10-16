@@ -1,0 +1,231 @@
+{
+  "native_receipt_sha256": "3c11e5db70ec509f6fa035f4b5f447c83efaa01eda4f4049908a94624c6586cc",
+  "native_counts": {
+    "modules": 348,
+    "inputs": 353,
+    "outputs": 354,
+    "selectors": 1361,
+    "signature_queries": 1462,
+    "axiom_rows": 4132,
+    "private_axiom_rows": 1546,
+    "fresh_source_elaborations": 11,
+    "reused_source_elaborations": 337
+  },
+  "verified_provenance_receipts": 44,
+  "verified_source_provenance_records": 8267,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_outputs_silent": true,
+  "declaration_linter_output_silent": true,
+  "reconstructed_driver_hashes_match": true,
+  "physical_checker_root_inventories_match": true,
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN; C_rot remains undetermined",
+  "round_mainline_status": "Actual zero-R quadratic adjoint remainder and same-Kc saturation at both poles natively established; single outer delta review pending",
+  "parent_revision": "b31dc1e18538799f1f7806e362c77cd8943f990b",
+  "parent_review_scope": "Round19 mathematical/evidence review passes; only its Q7 API/affected delta accompanies new Round20 mathematics; unchanged proof review reused",
+  "new_public_declarations": {
+    "modules": 4,
+    "theorems": 5,
+    "definitions": 0
+  },
+  "declarations": [
+    "RicciFlowSharpEstimate.Analysis.tendsto_quadratic_remainder_of_ae_second_derivative_limit",
+    "RicciFlowSharpEstimate.Analysis.eventually_eq_obstacle_of_negative_quadratic_remainder",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_second_pole_rates_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_quadratic_pole_rates_of_minimum",
+    "RicciFlowSharpEstimate.Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_curvature_pole_limits_of_minimum"
+  ],
+  "source_sha256": {
+    "RicciFlowSharpEstimate/Analysis/SingularFluxUniqueness.lean": "1f72da5c8e6046c776710bc43180f388357edac66bae754a8c9ff189926a4832",
+    "RicciFlowSharpEstimate/Geometry/WeakProbeBoundaryUniqueness.lean": "da10bd20b5a877722eb15cf8d00c5054a16191cbcf779c9df6886dc9c3618aa4",
+    "RicciFlowSharpEstimate/Analysis/QuadraticPoleRemainder.lean": "0c24ac4f4758820eebb219dbc5be0e999096d7181e63a1fcebb2a878d4a34819",
+    "RicciFlowSharpEstimate/Analysis/ClampedPoleAsymptotics.lean": "40f04fe77d104c3ae8686228ca1c3082fb94d42dc1013a08c91e712fdf848c64",
+    "RicciFlowSharpEstimate/Geometry/WeakCurvatureZeroTracePole.lean": "be72660491d09a90b108068e29cd125eccb82d1f4d908a8a28c5ea24321b3e2f",
+    "RicciFlowSharpEstimate/Geometry/AreaCurvatureAllPoleLimits.lean": "9b7e2fb0a34ef93ad2daa6fb4d3e45ac729620425b8fa037b1fde491c2543c4f"
+  },
+  "documentation_sha256": {
+    "docs/mathematical-status.md": "cd33512210361c4633f0668ddc76b4cf69ee253ae442d3d273f79a669831ba90",
+    "docs/theorem-map.md": "504598658d2c31f89ad389593609ed286780070c29e34a5acbd52a0c3df75970",
+    "docs/research/phase2-unrestricted.md": "98823ce3df912171387dd7248cfb14439a317be520ea6c3f35c6a55ac4a0c703",
+    "docs/verification.md": "4a2b7d5238c5bcd4863cb78c99588148c0fee1acaaea353d22a251695c07c097"
+  },
+  "root_statement_audit": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-root-nv6jwtmp/round20-root-audit.md",
+    "sha256": "cbfd1709466986caa73a16552d64e5a7b7ba27382abfa9c681ae35dc5d07a60b",
+    "scope": "Builder semantics/integration inspection, not independent acceptance"
+  },
+  "source_simplifier": {
+    "frozen_files_verified": 9352,
+    "changed_source_files_verified": 6,
+    "only_two_private_standard_cancellation_substitutions": true,
+    "all_five_new_public_signatures_and_Q7_weakened_signature_unchanged": true,
+    "source_only_not_acceptance": true,
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-advice-pg6qg8ul/advice/report.md",
+    "report_sha256": "c59cdaaa4b8fbfd08e24e57808783307e9f215122c6c4ededa76ef5ac71106ed",
+    "patch_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-advice-pg6qg8ul/advice/simplification.patch",
+    "patch_sha256": "382a056e0d5f567b8b4c6cd1704f43ce2dbaae5dc3608bbc4473abae937e3ee2",
+    "input_snapshot": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-advice-pg6qg8ul/published",
+    "input_manifest_sha256": "026a761cebf17caaf439ff823bd3659c7fd1b2079607c1555cc01fd5ec83a07d",
+    "integrated_diff_sha256": "651f44b2575b090721cd3d8ec6cfa44b6642f1c4487e11440cc3110f0118a804",
+    "lease": "released; read-only without symlinks; no worker compiler/cache/Git/network/descendants"
+  },
+  "worker_packets": [
+    {
+      "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-quadratic-viyzrym5/QuadraticPoleRemainder.lean",
+      "sha256": "e5c5df6798d129ad85d6217006ddea5826d26b379a22484653b98ff5aae0b1b4",
+      "status": "PROVISIONAL source-only candidate; Root repaired and validated final canonical bytes",
+      "lease": "released; no worker native/cache/Git/network/descendants"
+    },
+    {
+      "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-quadratic-viyzrym5/ClampedPoleAsymptotics.lean",
+      "sha256": "9dda3c35b0e89c30d9b468c4c38ece7c7a7309924bfb4f3d4c0133ca5fdb13ce",
+      "status": "PROVISIONAL source-only candidate; Root repaired and validated final canonical bytes",
+      "lease": "released; no worker native/cache/Git/network/descendants"
+    }
+  ],
+  "additional_native_probes": [
+    {
+      "name": "AllPoleChecks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-root-nv6jwtmp/AllPoleChecks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-root-nv6jwtmp/AllPoleChecks.lean",
+      "source_sha256": "976ddfe2b70a296dd8735b928c6c8c9090822e54c8510bf8a7ca73fcc5d305cf",
+      "output_path": "docs/evidence/phase2-round-20-polar-saturation/all-pole-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-16T01:22:16.133523+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final source and native cache; no scratch overlay",
+      "scope": "Actual endpoint K,r,p,z, unit mass, zero complete action and global minimality; one common scale box and multiplier with full residual/complementarity/balances, literal a.e.-tied boxed curvature, all node and both pole laws, derived zero-trace leading coefficients, quadratic remainder/cubic denominator and all saturation and doubly cancelling divergence cases; all four strong original graph recovery limits and complete-action convergence to the identical displayed minimum"
+    },
+    {
+      "name": "Q7Checks",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-root-nv6jwtmp/Q7Checks.lean"
+      ],
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-root-nv6jwtmp/Q7Checks.lean",
+      "source_sha256": "dcf483980047d1fe482780ac8280546e659ae6a494f6e9bcfef930307712eddf",
+      "output_path": "docs/evidence/phase2-round-20-polar-saturation/q7-minimal-consumer.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-16T01:22:55.221407+00:00",
+      "writer_lock": ".lake/rfse-root-writer.lock",
+      "imports": "Canonical final source and native cache; no scratch overlay",
+      "scope": "The repaired generic singular-flux uniqueness engine consumes local AC without a separately supplied q-continuity premise"
+    }
+  ],
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "phase1_final_revision": "721fd81b76a3c841389761fbe55ce917e0926a44",
+    "prior_outer_reviewed_revision": "b31dc1e18538799f1f7806e362c77cd8943f990b",
+    "unchanged_prior_native_modules": 342,
+    "authorized_parent_source_changes": [
+      "RicciFlowSharpEstimate/Analysis/SingularFluxUniqueness.lean",
+      "RicciFlowSharpEstimate/Geometry/WeakProbeBoundaryUniqueness.lean"
+    ],
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "historical_task_unchanged": true,
+    "phase2_task_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "prior_tracked_evidence_unchanged": true,
+    "unchanged_tracked_evidence_files": 11130,
+    "prior_native_receipt_sha256": "957b8b6523f3c589cd1679566142b030ec853714ca8ac7cf90562ed8bac37ebb",
+    "same_native_toolchain_platform_dependencies": true,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "pre_restart_historical_round_files_unchanged": 142,
+    "pre_restart_tracked_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ]
+  },
+  "checker_policy_delta": "Only module, required-selector and exact-query inventories; remaining policy AST unchanged",
+  "checker_policy_audit_sha256": "3146b5c21e4d80885eb839120e9021f42b27af650c4a045cbd17817bb8c3065c",
+  "reuse_origin": "docs/evidence/phase2-round-18-polar-clamp/receipt.json",
+  "reuse_reason": "Unchanged-prefix policy requires the earlier receipt because Q7 changes two Round19 leaves. The other accepted mathematics keeps its previous review.",
+  "used_flux_rate": "P/d ->0 derived from accepted corrected-flux laws suffices for both singular second-law terms; no new O(d^2) theorem claimed",
+  "root_prebuild_after_timeout": {
+    "command": [
+      "lake",
+      "build"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-10-16T00:54:31.789105+00:00",
+    "completed_utc": "2026-10-16T00:59:10.632279+00:00",
+    "output_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-root-nv6jwtmp/root-prebuild.txt",
+    "output_sha256": "10da6e01e817736ecd97d3a5b98099384a425cb5a419253a6a1d6563045f2f34",
+    "writer_lock": ".lake/rfse-root-writer.lock",
+    "reason": "The first unchanged-policy native gate reached its 180s root-build timeout. No surviving RFSE native process remained before this Root-only prebuild; no successful receipt was claimed for the failed attempt."
+  },
+  "execution_continuation": {
+    "partial_prefix_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-root-nv6jwtmp/partial-native-prefix.json",
+    "partial_prefix_sha256": "33f2c0efc10e1fd8e04b49ac01657259ae0aa75bb42b472a0bd03f24aba0ef82",
+    "continuation_script_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round20-root-nv6jwtmp/finish_native.py",
+    "continuation_script_sha256": "b6431f6beabba25056ee7bdac61fb2d9022ef9bbb2bf9616d9976a7e76176f81",
+    "successful_checker_entrypoint_claimed": false,
+    "exact_native_commands_and_literal_drivers_preserved": true,
+    "external_wall_timeout_removed_after_observed_transport_failure": true,
+    "Lean_options_linters_axiom_policy_and_tracked_checker_unchanged": true
+  },
+  "failed_helper_attempts": "The first unchanged checker run reached its 180s root-build timeout. Serial Root prebuild then succeeded. A second helper run completed the root and 337 reused/10 fresh sources before its combined-source command reached 180s. The explicit strict prefix and remaining identical native commands complete the gate without that external wall limit. Neither helper entry point is claimed successful; no Lean option/linter/axiom policy changed, no duplicate RFSE compiler was launched, and no failed mathematical route is inferred.",
+  "Q7_delta": "Derived q continuity internalized from local AC, redundant public premise removed, sole physical caller adapted with unchanged headline; minimal-input external consumer passes",
+  "independent_review": "Single configured Round20 outer delta review pending; no duplicate unchanged acceptance review",
+  "remaining_original_gates": [
+    "Every further domain/polar/interface/representative/admissible-path bridge actually used",
+    "Informative determining data and justified threshold selection",
+    "Independent universal safety over every original geometry/form with all coverage/Haar/recovery bridges",
+    "Exact original smooth endpoint equality/attainment and all-form transfer",
+    "Final Phase-II manuscript/research, native, independent review and private delivery"
+  ],
+  "next_principal_test": "Confront a concrete determining/selection or cross-geometry sufficiency implication before extending contact-pattern machinery; successor centered-residual/scale/path proposals remain unproved",
+  "conditional_routes": {
+    "operator_sign_selection": "parked UNRESOLVED and UNREFUTED optional sufficient mechanism",
+    "positive_reference_quotient_coverage": "mandatory only if that mechanism is used; all-probe coverage remains required",
+    "matrix_jacobi_selector": "parked after two unsuccessful tests; not refuted"
+  },
+  "scope_limits": [
+    "No assumption that either pole has zero or nonzero R trace",
+    "Canonical q and regular W; arbitrary raw weak endpoint assignments are not traces",
+    "The same a.e.-tied boxed Kc has ordinary pole limits; arbitrary raw K modifications do not",
+    "No new O(d^2) Euler-flux estimate is claimed",
+    "No total node/contact count, finite switching, symmetry, finite dimension or branch uniqueness",
+    "No independent global comparison or determination of C_rot",
+    "No original smooth attainment or convergence of recovered smooth pole values"
+  ],
+  "bitlesson_unchanged_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+}

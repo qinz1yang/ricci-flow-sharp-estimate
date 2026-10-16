@@ -66,6 +66,17 @@ private theorem ae_hasDerivAt_of_local_ac {q : ℝ → ℝ} {b : ℝ}
   exact (hx a c ⟨ha0, hax.trans hxI.2⟩ ⟨hxI.1.trans hxc, hcb⟩
     (mem_uIcc_of_le hax.le hxc.le)).hasDerivAt
 
+private theorem continuousOn_of_local_ac {q : ℝ → ℝ} {b : ℝ}
+    (hq : ∀ a ∈ Ioo (0 : ℝ) b, ∀ c ∈ Ioo (0 : ℝ) b,
+      AbsolutelyContinuousOnInterval q a c) : ContinuousOn q (Ioo (0 : ℝ) b) := by
+  intro x hx
+  have ha : x / 2 ∈ Ioo (0 : ℝ) b := by constructor <;> linarith [hx.1, hx.2]
+  have hc : (x + b) / 2 ∈ Ioo (0 : ℝ) b := by constructor <;> linarith [hx.1, hx.2]
+  have hm : uIcc (x / 2) ((x + b) / 2) ∈ 𝓝 x := by
+    rw [uIcc_of_le (by linarith [hx.1, hx.2] : x / 2 ≤ (x + b) / 2)]
+    exact Icc_mem_nhds (by linarith [hx.1]) (by linarith [hx.2])
+  exact ((hq _ ha _ hc).continuousOn.continuousAt hm).continuousWithinAt
+
 /-- Genuine derivative bounds for the coupled states imply boundary uniqueness.
 The derivative flux controls p with the singular squared-coordinate weight;
 no nonzero leading coefficient, pole derivative or auxiliary selector is assumed. -/
@@ -73,7 +84,7 @@ theorem exists_zero_interval_of_singular_flux_bounds
     {r p q P F : ℝ → ℝ} {b A B D : ℝ}
     (hb : 0 < b) (hA : 0 ≤ A) (hB : 0 ≤ B) (hD : 0 ≤ D)
     (hr : AbsolutelyContinuousOnInterval r 0 b) (hr0 : r 0 = 0)
-    (hp : ContinuousOn p (Ioo (0 : ℝ) b)) (hq : ContinuousOn q (Ioo (0 : ℝ) b))
+    (hp : ContinuousOn p (Ioo (0 : ℝ) b))
     (hrD : ∀ᵐ x ∂volume.restrict (Ioo (0 : ℝ) b), HasDerivAt r (p x) x)
     (hqlocal : ∀ a ∈ Ioo (0 : ℝ) b, ∀ c ∈ Ioo (0 : ℝ) b,
       AbsolutelyContinuousOnInterval q a c)
@@ -90,6 +101,7 @@ theorem exists_zero_interval_of_singular_flux_bounds
     (hFP : ∀ x ∈ Ioo (0 : ℝ) b, |p x| ≤ D * |F x| / x ^ 2) :
     ∃ δ : ℝ, 0 < δ ∧ δ < b ∧
       ∀ x ∈ Ioo (0 : ℝ) δ, r x = 0 ∧ p x = 0 ∧ q x = 0 ∧ P x = 0 := by
+  have hq : ContinuousOn q (Ioo (0 : ℝ) b) := continuousOn_of_local_ac hqlocal
   let μ := volume.restrict (Ioo (0 : ℝ) b)
   obtain ⟨N, hN, hNb⟩ := hbound
   have hrC : ContinuousOn r (Ioo (0 : ℝ) b) :=

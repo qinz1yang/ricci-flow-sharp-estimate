@@ -9,6 +9,23 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 20 closes the zero-probe-trace curvature-clamp cases at both physical
+poles. The actual canonical adjoint has essential second-derivative limit
+-3*q*²/4 and a genuine quadratic remainder with coefficient -3*q*²/8.
+The same denominator satisfies D/d³ -> q*²/4 > 0, where d is the inward
+distance and the nonzero q* is derived by boundary uniqueness. Every
+lower-order trace case gives eventual equality to one curvature obstacle;
+when both lower-order traces cancel, -H/D tends to positive infinity and
+the upper obstacle is selected. Node-free polar neighborhoods make these
+everywhere conclusions for the same boxed representative. Combined with
+Round 18, one minimum and one box/multiplier now have both curvature pole
+limits, without a nonzero probe-trace assumption. The
+[checkpoint](evidence/phase2-round-20-polar-saturation/checkpoint.json)
+records the bounded packet; one outer delta review remains pending. Q7's
+derived continuity premise is removed with its actual caller adapted.
+No total node/contact count, determining characterization, independent
+universal comparison or original smooth endpoint classification is claimed.
+
 Round 19 establishes the zero-probe-trace leading state at both physical
 poles of the actual signed minimum. The canonical operator has a derived
 nonzero trace qL or qR; the genuine probe derivative tends to qL/4 on the
@@ -18,9 +35,11 @@ excludes a simultaneous zero probe/operator trace using the complete Euler
 source, its actual action multiplier and genuine zero fluxes. No source sign,
 curvature limit or polar nondegeneracy is supplied. The
 [checkpoint](evidence/phase2-round-19-zero-traces/checkpoint.json) records
-this bounded packet; its single outer delta review is pending. Higher
-zero-trace clamp cancellations, determining selection, independent universal
-sufficiency and the original smooth endpoint classification remain open.
+this bounded packet. Its mathematical/evidence review passes at b31dc1e;
+Q7's remaining API gate is addressed in Round 20. The higher zero-trace
+clamp cancellation is resolved by the Round 20 packet above. Determining
+selection, independent universal sufficiency and the original smooth
+endpoint classification remain open.
 
 Round 18 proves a finite one-sided limit of the same boxed curvature
 representative at each physical pole whose actual probe trace is nonzero.

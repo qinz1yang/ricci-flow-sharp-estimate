@@ -3764,8 +3764,9 @@ clamp selection does not identify C_rot or prove cross-geometry sufficiency.
 The zero-R test succeeds in its contracted scope. Seven new leaves contain
 eight public theorems and no definitions. The
 [checkpoint](../evidence/phase2-round-19-zero-traces/checkpoint.json) binds
-the source and same-endpoint consumer; one configured outer delta review is
-pending. The accepted Round18 packet is reused unchanged. Phase I remains
+the source and same-endpoint consumer. Its mathematical/evidence review
+passes at b31dc1e; Q7's remaining API delta is included in Round 20 below.
+The accepted Round18 packet is reused unchanged. Phase I remains
 COMPLETE, Phase II OPEN, and only AC1/AC2 are fully met.
 
 ### Hypothesis and decisive boundary test
@@ -3872,3 +3873,119 @@ independent universal safety across every original rotational metric and
 smooth one-form, all used coverage/Haar/recovery bridges, exact original
 smooth endpoint equality/attainment and final manuscript/native/review/private
 delivery remain open. Necessary boundary structure does not determine C_rot.
+
+## Round 20: quadratic polar adjoint remainder and same-curvature saturation
+
+The bounded zero-R clamp test succeeds. Four new leaves contain five public
+theorems and no definitions. The
+[checkpoint](../evidence/phase2-round-20-polar-saturation/checkpoint.json)
+binds final sources, native evidence and the same-endpoint consumer. One
+configured outer delta review remains pending. Phase I remains COMPLETE;
+Phase II remains OPEN and only AC1/AC2 are fully met.
+
+### Exact hypothesis and decisive estimate
+
+Fix one genuine recoverable global minimum, its actual complete-action
+multiplier lambda, canonical q=EulerMomentum/f², Euler flux P and the
+explicit same-probe extension R. No curvature trace or nondegeneracy is
+supplied. At a zero-R pole use inward distance d=x or d=1-x. The accepted
+boundary theorem derives q*!=0, q -> q*, r/d -> q*/4 and the oriented limits
+p -> q*/4 on the left and p -> -q*/4 on the right.
+
+The accepted corrected fluxes are EL=P-(2-b)*b*R/2 and
+ER=P-(2+b)*b*R/2, with EL/x -> 0 and ER/(1-x) -> 0. Boundedness of
+(2-b)/x or (2+b)/(1-x), and R -> 0, therefore give P/d -> 0.
+This is the rate actually used. The stronger suggested O(d²) estimate is
+unneeded and is not claimed as a new result. Together with f/d -> 2 and
+finite r/d and p limits, this controls both singular terms P*p/f and
+b*P*r/f² without differentiating or taking a limit of measurable K.
+
+The full actual second-adjoint density is
+
+```text
+S = (2*f*p² + 6*q*r - 4*b*r*p + b²*r²/(2*f))*K
+    + 3*b²*p² - 3*b*q*p + 4*P*p/f - b*P*r/f².
+```
+
+The K coefficient tends to zero, and bounded K suffices for its essential
+product limit. Both P terms tend to zero by the actual rate above. With
+b -> 2 on the left and b -> -2 on the right, the remaining expression has
+the same limit -3*q*²/4 at either pole. The regular-adjoint C1 identity and
+genuine locally AC derivative tie this density a.e. to the actual H'' for
+H=W-t*(x-1/2). All complete lower-action and mass-correction terms remain.
+
+### Genuine remainder and actual obstacle selection
+
+The reusable FTC engine derives local integrability from the uniform
+essential second-derivative remainder, identifies the actual derivative
+primitive using its finite trace, then integrates once more for H. Thus,
+with h0 and h1 the genuine value and inward derivative traces,
+
+```text
+(Hhat(d) - h0 - h1*d)/d² -> -3*q*²/8,
+D/d³ -> q*²/4 > 0,             D = 2*f*r².
+```
+
+For a zero left probe trace, h0=t/2 and
+h1=LL=2*integral(1-s)*A(s)-2*integral B(s)-t. At the right pole,
+h0=-t/2 and h1=-LR, where
+LR=-2*integral s*A(s)-2*integral B(s)-t. The generic minimum theorem keeps
+A=weakCurvatureWarpCoefficient-lambda*r²; the zero-action application sets
+lambda=0. Exact reflection supplies the right inward minus sign and retains
+the same functions; no geometric symmetry is used.
+
+The nonzero r/d limit first proves an eventual node-free neighborhood.
+Consequently the same boxed representative Kc equals the literal divided
+clamp throughout that neighborhood, rather than just a.e. or off-zero.
+If h0>0, or h0=0 and h1>0, it is eventually the lower obstacle kappa.
+If h0<0, or h0=0 and h1<=0, it is eventually the upper obstacle C*kappa.
+In the doubly cancelling case, (-H/D)*d -> 3/2, so -H/D -> positive
+infinity. The nonzero quadratic term precludes a further cubic cancellation.
+
+### Same-object application, outcome and remaining work
+
+The physical producer selects one box and t from the accepted Round18
+theorem once. Uniqueness of genuine corrected-q limits identifies the
+constants from its additional minimum applications explicitly. It returns
+the original full residual/complementarity/scale laws and node traces, the
+accepted nonzero-R pole selections, the new zero-R laws and both unconditional
+pole limits of that same Kc. The endpoint consumer starts from the actual
+zero-minimum producer once and preserves identical K,r,p,z, unit mass, zero
+action, global minimality, all four strong original graph recovery limits
+and complete-action convergence. Either or both probe traces may vanish.
+
+Q7 is a bounded accompanying API repair: local AC derives interior q
+continuity internally, the redundant public premise is removed, and the
+sole canonical physical caller is adapted without changing its headline.
+A separate external consumer uses the revised minimal hypotheses. Its API
+and affected native delta receive no mainline theorem credit.
+
+The observed contribution closes the actual zero-R quadratic/saturation
+obstruction; the needed rate has no remaining uncontrolled term. This
+establishes necessary polar structure, not a determining constant. The next
+principal test must confront a concrete determining/selection or
+cross-geometry sufficiency implication before expanding contact-pattern
+machinery. One possible unproved test is whether the complete centered
+residual can vanish a.e.: the two pole values would force t=0 and both R
+traces zero, while the new quadratic rate would oppose bounded divided
+curvature. Any resulting scale/contact selection and any cap-expansion path
+still need their actual same-object and admissible-path proofs. No such
+successor implication is claimed here.
+
+The proposed next comparison target has a strictly larger scope than the
+accepted witnesses above rotationalThreshold: start at an arbitrary cap
+C>1 with an actual zero-action global minimum and seek an original smooth
+negative competitor below every cap C'>C. A candidate mechanism is complete
+centered-residual nonvanishing, scale/contact selection and a moment-corrected
+cap-expansion direction, using the actual free interval in the same box.
+That same-box identification and every feasibility/recovery/action-error
+bridge remain unproved. Success would exclude lower-cap zero minima and
+justify a selection implication; it would still not determine C_rot.
+
+An informative characterization and justified selection of C_rot,
+independent safety for every original rotational metric and smooth
+one-form, every used coverage/Haar/recovery bridge, exact original smooth
+endpoint equality/attainment and all-form transfer, and final manuscript,
+native, independent-review and private-delivery gates remain open. No total
+node/contact count, finite switching family, symmetry, unique branch or
+smooth attainment follows from this packet.

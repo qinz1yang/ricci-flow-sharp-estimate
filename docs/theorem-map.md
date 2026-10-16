@@ -890,9 +890,37 @@ canonical source and an actual endpoint consumer. That consumer retains one
 chosen kappa,t, all accepted scale/residual/node/nonzero-trace pole laws and
 all four original strong recovery limits. Corrected-q constants from its two
 applications are explicitly identified by uniqueness of their actual limits.
-The single configured outer delta review is pending.
+The mathematical/evidence component of the single outer review passes at
+b31dc1e. Its Q7 API delta is included in the Round 20 packet below.
 
 No raw weak-K trace, higher zero-R H/D selection, total node/contact count,
 determining value, independent global comparison or smooth attainment is
 asserted. All original determining, coverage, smooth-endpoint and final gates
 remain open.
+
+## Phase II Round 20: complete curvature pole limits and zero-trace saturation
+
+| Declaration | Result and use |
+|---|---|
+| `Analysis.tendsto_quadratic_remainder_of_ae_second_derivative_limit` | Genuine local derivative/AC laws and actual endpoint traces turn an essential second-derivative limit into the ordinary quadratic remainder limit. |
+| `Analysis.eventually_eq_obstacle_of_negative_quadratic_remainder` | A negative quadratic coefficient and positive cubic denominator force each lexicographic lower/upper obstacle case of the literal clamp. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_second_pole_rates_of_minimum` | The actual complete adjoint has essential second-derivative limit -3*q*²/4 at either zero probe trace; the nonzero q* is derived. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.curvature_adjoint_zero_trace_quadratic_pole_rates_of_minimum` | Genuine endpoint FTC gives both oriented quadratic remainders, retaining the actual complete-action multiplier and every Green term. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.exists_curvature_pole_limits_of_minimum` | One zero-action minimum and one scale-balanced box/multiplier retain all residual/node laws, both pole limits, zero-trace leading rates and every saturation/cancelling-divergence case. |
+
+Four new leaves contain five public theorems and no definitions. Q7 removes
+the redundant q-continuity binder from the generic singular-flux engine;
+local AC now derives it internally. The sole physical caller is adapted,
+with its public headline unchanged. The
+[checkpoint](evidence/phase2-round-20-polar-saturation/checkpoint.json) binds
+the final source and two external consumers. The actual endpoint consumer
+retains the identical K,r,p,z, unit mass, zero action, global minimum, one
+kappa,t and full node/pole package, all four strong original graph limits
+and complete-action convergence. The minimal-input consumer supplies no
+q-continuity premise to the repaired generic engine.
+
+The sufficient physical flux estimate is P/d -> 0 from the accepted
+corrected-flux laws. No new O(d²) bound is claimed. The one outer delta
+review remains pending. C_rot, determining selection, independent universal
+sufficiency, original smooth endpoint/all-form equality and final delivery
+remain open; no total node/contact count or smooth attainment is inferred.

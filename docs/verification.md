@@ -2103,13 +2103,105 @@ hashes remain unchanged. Both tasks, accepted paper bytes, immutable tracker
 prefix, historical stop-state, fixed pins, compiler/platform and ten clean
 dependency revisions are preserved. All worker/advice read leases are
 released; workers ran no Lean/Lake and accessed no Root writable cache.
-The single configured Round19 outer delta review remains pending; there is
-no duplicate acceptance review of unchanged mathematics.
+The single Round19 outer review passes its mathematical/evidence component
+at b31dc1e. Its remaining Q7 API/affected-evidence gate is addressed by the
+Round20 delta. The unchanged mathematical review is reused; no duplicate
+acceptance review is claimed.
 
 Phase I remains COMPLETE; Phase II remains OPEN and C_rot undetermined.
-Higher zero-R H/D cancellation rates and every further used polar/interface/
+At that checkpoint, higher zero-R H/D cancellation rates and every further
+used polar/interface/
 representative/coverage bridge, informative determination/selection,
 independent universal sufficiency, exact original smooth endpoint equality
 and all-form transfer, and final full-suite manuscript/evidence/review/private
 delivery remain required. No total node/contact count or smooth attainment
 is claimed by this checkpoint.
+
+## Phase II, Round 20 quadratic polar remainder and complete pole limits
+
+Four new leaves contain five public theorems and no definitions. The actual
+complete adjoint has essential second-derivative limit -3*q*²/4 at every
+zero probe trace, with the derived q*!=0. Genuine endpoint FTC gives the
+oriented quadratic remainder -3*q*²/8. The same D=2*f*r² has
+D/d³ ->q*²/4>0 and the same probe is eventually nonzero. All lower-order
+trace cases yield eventual equality of the literal boxed Kc to an obstacle;
+double cancellation gives -H/D ->positive infinity and upper saturation.
+Together with the accepted nonzero-R feedback, one actual minimum and one
+box/multiplier have both Kc pole limits. The sufficient Euler-flux rate is
+P/d ->0 from the accepted corrected fluxes; no new O(d²) theorem is claimed.
+
+Q7 internalizes continuity derived from local AC in the generic singular-flux
+engine and removes that public binder. Its sole physical caller is adapted
+without changing the physical headline. This accompanying API repair gets
+no separate mainline theorem credit. The exact revised signature and its
+minimal-input external consumer supply no q-continuity premise.
+
+The final gate covers 348 physical/checker/root modules, 353 input hashes
+and 354 successful native command/output bindings. Eleven source
+elaborations are fresh and silent; 337 accepted elaborations are reused.
+The unchanged-prefix reuse origin is Round18, because Q7 changes two
+Round19 leaves. Thus four unchanged Round19 Analysis leaves are freshly
+elaborated along with the three affected Q7 leaves and four new leaves;
+their accepted mathematical review is retained. The 1,361 required
+selectors, 1,462 exact queries, unsuppressed declaration linters and native
+declaration-kind inspection pass. All 4,132 actual transitive axiom rows,
+including 1,546 private rows, use only propext, Classical.choice and
+Quot.sound. The reconstructed literal diagnostic hashes and 8,267 source
+command provenance records through 44 receipts match.
+
+The [native receipt](evidence/phase2-round-20-polar-saturation/receipt.json)
+has SHA256
+`3c11e5db70ec509f6fa035f4b5f447c83efaa01eda4f4049908a94624c6586cc`.
+Its execution provenance is explicit. The unchanged helper first reached
+its 180s root-build limit; a serial Root prebuild then succeeded. Its next
+run completed the root, 337 matched reused sources and ten fresh silent
+sources before the combined source reached the same wall limit. No
+successful helper entry point is claimed. The observed fail-fast prefix
+is retained with its exact commands, raw bindings and explicitly inferred
+zero exits: the helper aborts before the next command on any failed status
+or forbidden diagnostic. Root then completed the remaining exact source
+command and three literal drivers without that external wall timeout.
+The receipt binds the partial-prefix record and continuation script. Lean
+options, all diagnostic/axiom requirements and checker policy outside the
+three inventories are unchanged. No duplicate RFSE compiler was launched;
+these transport retries receive no mathematical route-failure credit.
+
+The canonical AllPoleChecks consumer passes with empty output and source
+SHA256 `976ddfe2b70a296dd8735b928c6c8c9090822e54c8510bf8a7ca73fcc5d305cf`.
+It calls the actual endpoint producer once and the new pole producer once,
+retaining identical K,r,p,z, unit mass, zero action, global minimality, one
+kappa,t and full scale/residual/node/pole data, all four strong original
+graph recovery limits and complete-action convergence. Its zero-R cases
+include the derived leading coefficients, actual quadratic/cubic rates,
+all saturation signs and doubly cancelling divergence. The Q7Checks
+minimal-input consumer also passes silently, with source SHA256
+`dcf483980047d1fe482780ac8280546e659ae6a494f6e9bcfef930307712eddf`.
+Both import final canonical source/cache with no scratch overlay.
+
+The source simplifier inspected one frozen read-only snapshot, with 9,352
+input bindings, and proposed exactly two private field-cancellation
+substitutions. All five new signatures, Q7's weakened signature and every
+same-object equation are unchanged. The source-only worker packets and
+advice are provisional; final Root native evidence covers the integrated
+canonical bytes. Neither advice nor Root's semantic audit is independent
+acceptance. All worker leases are released.
+
+The [checkpoint](evidence/phase2-round-20-polar-saturation/checkpoint.json)
+binds six final sources, four documents, both consumers, source advice,
+Root's statement audit, native provenance and preservation. The only two
+parent source edits implement Q7; 342 unaffected parent leaves, all 149
+Phase-I leaves, 11,130 prior evidence files, 2,325 Phase-I workflow hashes
+and 142 pre-restart historical Round-file hashes are preserved. Both tasks,
+accepted paper bytes, fixed pins, compiler/platform and ten clean dependency
+revisions remain. The immutable tracker prefix is unchanged.
+
+The single configured Round20 outer delta review remains pending, covering
+new mathematics and Q7 while reusing the accepted unchanged proof review.
+Phase I remains COMPLETE; Phase II remains OPEN and C_rot undetermined.
+The next principal test must confront a concrete determining/selection or
+cross-geometry sufficiency implication. Every used domain/path/coverage/Haar/
+recovery bridge, independent universal safety, exact original smooth
+endpoint/all-form equality and final full-suite manuscript/evidence/review/
+private delivery remains required. No total node/contact count, fixed
+switching, symmetry, finite family, unique branch or smooth attainment is
+claimed.
