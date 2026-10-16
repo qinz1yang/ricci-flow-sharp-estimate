@@ -9,6 +9,19 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 26 proves the strict bound **1+sqrt(3/2)<C_rot**. The complete
+warp calibration retains a positive multiple of the actual slope-weighted
+mass. Its passage through genuine strong recovery applies to every normalized
+recoverable competitor, without continuity, stationarity or minimality as
+extra inputs. The original positive curvature primitive makes the slope
+strictly decreasing; its zero set is null, so physical mass one forces
+strictly positive action throughout the displayed cap range. The accepted
+zero object at the unrestricted threshold then excludes that range for C_rot.
+The [checkpoint](evidence/phase2-round-26-strict-pinching/checkpoint.json)
+records this bounded advance. Sharp determination, a produced compatible
+global comparison/zero object, and original smooth endpoint classification
+remain open. One outer delta review is pending.
+
 Round 25's full quadratic-flux characteristic test is **STALLED** on the
 sharp producer. The new derivative-square coefficient is retained in the
 genuine complete-action identity. A private native no-go result excludes
@@ -17,10 +30,10 @@ remainder saturation, for a scale-balanced box selected from an actual zero
 minimum. It uses the genuine free-curvature interval and actual weak probe
 states. Whole-state tightness and sign on an open state enclosure are extra
 conditions of this producer. Slack comparisons, nonsmooth envelopes and
-nonquadratic potentials remain open. No new canonical theorem, safe cap,
-value or original smooth endpoint result is added. The
+nonquadratic potentials remain open. That investigation added no canonical
+theorem, safe cap, value or original smooth endpoint result. The
 [research checkpoint](evidence/phase2-round-25-bellman-characteristics/checkpoint.json)
-records the exact scope and evidence; one outer delta review is pending.
+records the exact scope and evidence; its single outer review passes at 978eec8.
 
 Round 24's joint variable-field/equality test is **STALLED**. Three private
 native research probes check complete flux identities, a physical failure

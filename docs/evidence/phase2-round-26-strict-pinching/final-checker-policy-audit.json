@@ -1,0 +1,6 @@
+{
+  "final_checker_sha256": "9bbca38b787d272ebcc569abb0b73c611d163d4cfc9835d82c6e5a067d372a9d",
+  "policy_ast_equal_to_parent_outside_inventories": true,
+  "prefix_checker_differs_only_in_signature_inventory": true,
+  "completed_utc": "2026-10-16T11:58:00.812999+00:00"
+}

@@ -372,6 +372,9 @@ MODULES = [
     "RicciFlowSharpEstimate.Geometry.AreaWarpStateBounds",
     "RicciFlowSharpEstimate.Geometry.AreaWarpCalibration",
     "RicciFlowSharpEstimate.Geometry.RotationalQuadraticPinching",
+    "RicciFlowSharpEstimate.Geometry.AreaSlopeMass",
+    "RicciFlowSharpEstimate.Geometry.AreaSlopeCalibration",
+    "RicciFlowSharpEstimate.Geometry.RotationalStrictPinching",
 ]
 OPTIONS = [
     "-DautoImplicit=false", "-Dpp.unicode.fun=true",
@@ -1773,7 +1776,12 @@ SELECTOR = r"""
       area ++ `warpSlope_sq_add_four_mul_warp_bounds,
       area ++ `meridionalAction_nonneg_of_quadratic_pinching,
       geo ++ `quadratic_pinching_mem_rotationalSafeCaps,
-      geo ++ `quadratic_pinching_le_rotationalThreshold
+      geo ++ `quadratic_pinching_le_rotationalThreshold,
+      area ++ `meridionalAction_ge_slope_mass_of_quadratic_pinching,
+      area ++ `IsRecoverableAreaCompetitor.integral_warp_mul_slope_sq_mul_probe_sq_pos,
+      area ++ `IsRecoverableAreaCompetitor.action_ge_slope_mass_of_quadratic_pinching,
+      area ++ `IsRecoverableAreaCompetitor.action_pos_of_quadratic_pinching,
+      geo ++ `quadratic_pinching_lt_rotationalThreshold
     ] do
     unless decls.contains required do
       throwError "Missing required declaration {required}"
@@ -4550,6 +4558,16 @@ open RicciFlowSharpEstimate.Geometry in
 #check quadratic_pinching_mem_rotationalSafeCaps
 open RicciFlowSharpEstimate.Geometry in
 #check quadratic_pinching_le_rotationalThreshold
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check meridionalAction_ge_slope_mass_of_quadratic_pinching
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.integral_warp_mul_slope_sq_mul_probe_sq_pos
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.action_ge_slope_mass_of_quadratic_pinching
+open RicciFlowSharpEstimate.Geometry.AreaProfile in
+#check IsRecoverableAreaCompetitor.action_pos_of_quadratic_pinching
+open RicciFlowSharpEstimate.Geometry in
+#check quadratic_pinching_lt_rotationalThreshold
 
 """
 

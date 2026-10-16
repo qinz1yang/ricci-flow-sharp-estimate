@@ -1,0 +1,8 @@
+{
+  "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round26-slope-uw4p6dza/AreaSlopeMass.lean",
+  "sha256": "1b2da2de49ab2e0eb5aecb08716aa47a024957dfeb1eab6900f294f38e164ab6",
+  "status": "PROVISIONAL source-only original, no compiler/review evidence from worker",
+  "lease_released": true,
+  "final_root_delta": "Only the source-simplifier direct integral_eq_zero_of_ae substitution; final canonical native gates separately recorded",
+  "final_root_source_sha256": "af2922b902116d226f3e41c025d897da0d31a5b4c1e85d38ad551c82af8170b4"
+}

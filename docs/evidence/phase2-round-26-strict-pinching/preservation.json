@@ -1,0 +1,58 @@
+{
+  "parent_revision": "978eec876a9ed7ee815bd0d936d395a53a8ce91c",
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN",
+  "unchanged_parent_leaves": 356,
+  "changed_parent_leaves": [
+    "RicciFlowSharpEstimate/Geometry/AreaWarpCalibration.lean"
+  ],
+  "new_canonical_modules": [
+    "RicciFlowSharpEstimate/Geometry/AreaSlopeCalibration.lean",
+    "RicciFlowSharpEstimate/Geometry/AreaSlopeMass.lean",
+    "RicciFlowSharpEstimate/Geometry/RotationalStrictPinching.lean"
+  ],
+  "current_canonical_modules": 360,
+  "new_public_theorems": 5,
+  "unchanged_phase1_sources": 149,
+  "unchanged_phase1_workflow_files": 2325,
+  "unchanged_prior_evidence_files": 12623,
+  "unchanged_pre_restart_round_files": 142,
+  "paper_sha256": {
+    "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+    "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+  },
+  "both_tasks_unchanged": true,
+  "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+  "bitlesson_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855",
+  "pins_sha256": {
+    "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+  },
+  "native_receipt_sha256": "0db3f375f387a538709b078e4e7417e3bed98c3f0fe017fa28989de1479c3d26",
+  "current_native_inputs": 365,
+  "current_successful_outputs": 366,
+  "source_elaboration_reuse": 354,
+  "fresh_source_elaborations": 6,
+  "consumer": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file.",
+      "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round26-root-qnjuwqv6/SlopeGapChecks.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "bf054097a4dddc14e26125eab14d3b2d1c0d4e23932794119b7289f4f57e7613",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "canonical_imports_without_scratch_overlay": true,
+    "LEAN_PATH": "/home/ubuntu/projects/rfse/.lake/packages/Cli/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/batteries/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/Qq/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/aesop/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/importGraph/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/plausible/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/mathlib/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/DifferentialGeometry/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/build/lib/lean:/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/lib/lean",
+    "writer_lock": ".lake/rfse-root-writer.lock",
+    "completed_utc": "2026-10-16T12:01:35.581622+00:00"
+  },
+  "audit_source_sha256": "80d924d52fb067c59270539952b50cd3f794a54c8c6ed58a2d9956207185dac1"
+}

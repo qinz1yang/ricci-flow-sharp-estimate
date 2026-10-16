@@ -356,3 +356,6 @@ import RicciFlowSharpEstimate.Geometry.RotationalPinchingSafety
 import RicciFlowSharpEstimate.Geometry.AreaWarpStateBounds
 import RicciFlowSharpEstimate.Geometry.AreaWarpCalibration
 import RicciFlowSharpEstimate.Geometry.RotationalQuadraticPinching
+import RicciFlowSharpEstimate.Geometry.AreaSlopeMass
+import RicciFlowSharpEstimate.Geometry.AreaSlopeCalibration
+import RicciFlowSharpEstimate.Geometry.RotationalStrictPinching

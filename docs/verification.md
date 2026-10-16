@@ -2483,6 +2483,57 @@ source blobs, 12,602 prior evidence files, 2,325 Phase-I workflow files and
 142 pre-restart historical Round files are preserved, with both TASKs,
 accepted paper, pins, BitLesson and immutable prefix. The actual compiler,
 platform and ten clean pinned dependency revisions match. This round adds
-zero canonical modules/declarations and no safe cap. One configured outer
-delta review is pending. Phase I remains COMPLETE; Phase II remains OPEN,
+zero canonical modules/declarations and no safe cap. Its single outer
+delta review passes at 978eec8 for that restricted packet. Phase I remains
+COMPLETE; Phase II remains OPEN,
 with every original determining, sharp-safety, endpoint and final gate intact.
+
+## Phase II Round 26: strict quadratic-pinching gap
+
+The [native receipt](evidence/phase2-round-26-strict-pinching/receipt.json)
+and [checkpoint](evidence/phase2-round-26-strict-pinching/checkpoint.json)
+cover three new canonical leaves and the additive calibration estimate.
+Five new public theorems give the smooth slope-weighted bound, positivity of
+the actual weak weighted mass, its genuine recovery comparison, strict weak
+action positivity, and `1+sqrt(3/2)<C_rot`. The sharp value remains open.
+
+The canonical gate has 360 modules, 365 source/configuration/checker input
+bindings and 366 successful command/output records. It reuses the accepted
+354-module Round22 prefix and freshly elaborates six sources, including the
+changed calibration and its affected/new closure. Root aggregate, native
+declaration kinds, all three declaration linters, exact signatures and actual
+transitive axiom checks are rerun. The checker changes only its inventories;
+commands, Lean options and diagnostic policy are retained. The bound Root
+runner holds the real writer lock and omits only the helper's external
+180-second wall timeout. The helper entry point is not claimed successful.
+
+The five new signature queries initially lacked their namespace scopes.
+After that inventory-only correction, the actual successful compilation,
+linter and axiom prefix is retained and the corrected literal signature
+driver is run afresh. Root canceled the obsolete initial query command;
+that cancellation is recorded separately from compiler results. The final
+receipt distinguishes the successful continuation from the initial wrapper.
+No mathematical source, Lean option or diagnostic gate is changed by that
+repair.
+
+The exact driver contains 1,480 signature queries. The actual axiom audit
+covers 4,227 distinct declarations, including 1,623 private rows; only the
+three permitted foundations occur. All five new statements have exact
+signature and axiom rows, and declaration-linter output is empty.
+
+The canonical consumer uses actual imports without a scratch overlay. It
+retains arbitrary original curvature/probe inputs, a genuine round unit-mass
+application, all four graph limits and complete-action convergence of the
+same recoverable object, arbitrary original metric/form safety in the
+accepted range, and the new strict threshold bound. No minimum or supplied
+comparison certificate is added to the new weak estimate.
+
+One source-only worker packet supplies the slope-mass proof. Eight frozen
+source-advice bindings cover the final mathematics; the sole final delta is
+the suggested direct a.e.-zero integral substitution in the new slope-mass
+proof. Advice is not independent acceptance. Earlier development errors
+remain separate from the final native outputs. Unchanged accepted proof
+reviews and all prior evidence are reused. Both tasks, Phase-I paper and
+sources, pins, immutable tracker prefix, BitLesson and historical state are
+preserved. One configured outer delta review is pending; the full Phase-II
+determining, sharp-safety, endpoint and delivery gates remain open.

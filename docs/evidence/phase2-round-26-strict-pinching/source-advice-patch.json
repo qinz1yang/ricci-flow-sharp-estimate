@@ -1,0 +1,5 @@
+{
+  "encoding": "Exact original UTF-8 patch serialized as a JSON string",
+  "original_patch_sha256": "d125a0e637a57e5f542ef4d8ca7208932468b95fbcdd37baa7c6687579e00a0a",
+  "patch": "--- a/RicciFlowSharpEstimate/Geometry/AreaSlopeMass.lean\n+++ b/RicciFlowSharpEstimate/Geometry/AreaSlopeMass.lean\n@@ -130,7 +130,7 @@\n   have hmass0 : probeMass K r = 0 := by\n     rw [probeMass, intervalIntegral.integral_of_le (by norm_num : (0 : \u211d) \u2264 1),\n       integral_Ioc_eq_integral_Ioo]\n-    simpa using integral_congr_ae hmassae\n+    exact integral_eq_zero_of_ae hmassae\n   have hmass1 : probeMass K r = 1 := h.2.2.2.2.2.1\n   linarith only [hmass0, hmass1]\n \n"
+}

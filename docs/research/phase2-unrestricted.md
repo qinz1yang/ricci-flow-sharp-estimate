@@ -4441,7 +4441,8 @@ binds the two private sources, exact native records, type/axiom diagnostics
 and source advice. The advice's direct a.e.-restriction substitution and
 Root's real-tuple proof annotation preserve all signatures and scope; final
 native evidence covers the integrated bytes. No canonical source or root
-gate is changed; one configured outer review remains pending.
+gate is changed; its single outer delta review passes at 978eec8 for this
+restricted scope.
 
 A substantively different producer can allow angular dependence in a
 degree-two homogeneous potential Φ(x,f,b,r,v). The prospective Hamiltonian
@@ -4459,3 +4460,82 @@ original zero object from informative data. Every physical pole, weak
 equality, original-probe coverage and recovery bridge used, independent
 sharp-value safety, threshold selection, original smooth endpoint/all-form
 equality and final manuscript/acceptance delivery remain open.
+
+## Round 26: slack angular test and a strict comparison gap
+
+The principal construction tests the degree-two angular perturbation
+
+`Phi=2*kappa*f*r*v+(Lambda-kappa^2*f/2)*f*b*r^2/2`
+`    +epsilon*f*r^2*v^2/(r^2+v^2)`,
+
+with the last term set to zero at the zero state. Its two angular formulas
+are `epsilon*f*r^2*t^2/(1+t^2)` and
+`epsilon*f*v^2*z^2/(1+z^2)`, with t=v/r, z=r/v. These are a research
+construction calculation, not a new canonical regularity theorem. No C2
+regularity of a nonquadratic homogeneous function at the zero state is used.
+
+The decisive sign test fails before a sharp equality object is produced.
+For the actual smooth quartic curvature from Round24,
+`K=50/17-(480/17)*x^2*(1-x)^2`, the original moments and box
+`[20/17,50/17]` hold. At its midpoint f=7/17, b=0 and K=kappa=20/17.
+Along a constant probe v=0, the angular correction is identically zero,
+including its actual derivative. The complete calibrated density there is
+`f*kappa^2*(2-5/2+kappa*f/2)*r^2`, and the parenthesis is -149/578.
+Thus no amplitude in this family gives the required pointwise global sign
+at the tested cap 5/2.
+Positive physical normalization preserves that sign. This diagnostic does
+not prove negative integrated action, cap unsafety or failure of angular
+fields in general; it earns no positive comparison credit. The informative
+angular characteristic producer and compatible zero object remain open.
+
+The independent bounded alternative succeeds. In the accepted Bernstein
+expansion of the complete warp-calibration remainder G(C,u,4v,k), the two
+middle blocks are each at least 1/16. Their retained sum gives
+
+`G >= (3/16)*v*(1-v) >= (3/16)*u*v`,
+
+using the original state bound u<=1-v, where u=kappa*f and v=b^2/4.
+The two remaining blocks and the completed squares stay nonnegative.
+Consequently the literal complete action satisfies
+
+`A_K(r) >= (3*kappa^2/64)*integral(f*b^2*r^2)`.
+
+This estimate has continuous curvature, the actual C2 probe derivatives,
+both exact moments, a positive box and the same quadratic pinching condition.
+The physical endpoint flux identity is the accepted full identity with its
+arbitrary smooth pole values; no new artificial boundary condition appears.
+
+For every ratio-C smooth recovery member, its own moment and box imply
+kappa>=2/C. Hence a common coefficient `3/(16*C^2)` is available without
+choosing a convergent sequence of box witnesses or identifying independent
+boxes. Strong curvature convergence gives convergence of the actual warp
+and slope. The bounded multiplier `f*b^2` and genuine strong L2 probe limit
+give convergence of the exact weighted mass. Full-action convergence then
+passes the bound to the same original recoverable K,r,p,z. No minimum,
+stationarity, probe continuity or sign is an input to this comparison.
+All original derivative and recovery ties stay in the recoverable predicate.
+
+For that actual weak object, integrating its positive a.e. curvature lower
+bound over each nontrivial interval proves strict decrease of the literal
+slope primitive. Its zero set has at most one point and is null. Genuine
+integrability follows from the graph L2 probe and bounded actual f,b. A zero
+slope-weighted mass would therefore force the original physical mass to be
+zero, contradicting mass one. Thus every recoverable competitor in
+`1<=C<=1+sqrt(3/2)` has strictly positive complete action.
+
+Finally, the accepted original threshold producer supplies a recoverable
+unit-mass object with action zero at the still-unknown C_rot. The new
+independent positivity excludes `C_rot<=1+sqrt(3/2)`, proving
+**1+sqrt(3/2)<C_rot**. Global minimality from the producer is not used in
+this contradiction and is not a determining input. The all-original-form
+meaning of C_rot is the unchanged original safe-cap definition and accepted
+normalization/Haar/threshold construction.
+
+The [checkpoint](../evidence/phase2-round-26-strict-pinching/checkpoint.json)
+records this positive bounded contribution. It rejects the current field
+cap as a sharp-value candidate, without producing a new exact sharp value,
+a compatible sharp global field/zero object, or original smooth endpoint
+classification. Informative cap production and selection, independent sharp
+safety, original sharp witnesses at that value, every used chart/polar/path/
+recovery bridge, all-form equality and the final separate Phase-II manuscript
+and acceptance gates remain open. One outer delta review is pending.

@@ -1,0 +1,31 @@
+{
+  "reason": "Cancel the obsolete signature inventory after its namespace-only correction; preserve all365 actually successful prefix records and run only the corrected final driver. This is an orchestration cancellation, not a mathematical source/compiler rejection.",
+  "successful_prefix_records": 365,
+  "terminated_owned_signature_processes": [
+    889203,
+    891052
+  ],
+  "commands": [
+    [
+      "/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file.",
+      "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round26-root-qnjuwqv6/math-target-1lsuk3gf/Signatures.lean"
+    ],
+    [
+      "lean",
+      "-DautoImplicit=false",
+      "-Dpp.unicode.fun=true",
+      "-DmaxSynthPendingDepth=3",
+      "-Dweak.linter.mathlibStandardSet=true",
+      "-Dlinter.style.header.license=No license is granted by this file.",
+      "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round26-root-qnjuwqv6/math-target-1lsuk3gf/Signatures.lean"
+    ]
+  ],
+  "utc": "2026-10-16T11:51:55.136038+00:00"
+}

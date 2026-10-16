@@ -22,6 +22,13 @@ private theorem row_nonneg {a b c x : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b)
   have : 0 ≤ 1 - x := sub_nonneg.mpr hx1
   positivity
 
+private theorem row_ge {a b c d x : ℝ} (ha : d ≤ a) (hb : d ≤ b)
+    (hc : d ≤ c) (hx0 : 0 ≤ x) (hx1 : x ≤ 1) : d ≤ row a b c x := by
+  have h := row_nonneg (sub_nonneg.mpr ha) (sub_nonneg.mpr hb)
+    (sub_nonneg.mpr hc) hx0 hx1
+  unfold row at *
+  nlinarith only [h]
+
 private def block0 (C y z : ℝ) : ℝ :=
   row (row 0 (5 - 2 * C) (4 - C) z)
     (row (-11 / 2 + 5 / 2 * C) (-1 / 8 + C / 2) 3 z)
@@ -85,6 +92,80 @@ private theorem remainder_nonneg_of_coordinates (C v y z : ℝ)
   rw [remainder_bernstein C v y z hC]
   have : 0 ≤ 1 - v := sub_nonneg.mpr hv1
   positivity
+
+private theorem remainder_ge_of_coordinates (C v y z : ℝ)
+    (hC : C ^ 2 = 2 * C + 1 / 2) (hlo : 11 / 5 ≤ C) (hhi : C ≤ 9 / 4)
+    (hv0 : 0 ≤ v) (hv1 : v ≤ 1) (hy0 : 0 ≤ y) (hy1 : y ≤ 1)
+    (hz0 : 0 ≤ z) (hz1 : z ≤ 1) :
+    3 / 16 * v * (1 - v) ≤
+      remainder C ((1 - v) * ((2 * C - 4) + (5 - 2 * C) * y)) (4 * v)
+        (1 + (C - 1) * z) := by
+  have h0 : 0 ≤ block0 C y z := by
+    unfold block0
+    apply row_nonneg _ _ _ hy0 hy1 <;>
+      apply row_nonneg <;> first | exact hz0 | exact hz1 | linarith
+  have h1 : 1 / 16 ≤ block1 C y z := by
+    unfold block1
+    apply row_ge _ _ _ hy0 hy1 <;>
+      apply row_ge <;> first | exact hz0 | exact hz1 | linarith
+  have h2 : 1 / 16 ≤ block2 C y z := by
+    unfold block2
+    apply row_ge _ _ _ hy0 hy1 <;>
+      apply row_ge <;> first | exact hz0 | exact hz1 | linarith
+  have h3 : 0 ≤ block3 C y z := by
+    unfold block3
+    apply row_nonneg _ _ _ hy0 hy1 <;>
+      apply row_nonneg <;> first | exact hz0 | exact hz1 | linarith
+  have hv : 0 ≤ 1 - v := sub_nonneg.mpr hv1
+  rw [remainder_bernstein C v y z hC]
+  calc
+    3 / 16 * v * (1 - v) =
+        0 * (1 - v) ^ 3 + 3 * (1 / 16) * v * (1 - v) ^ 2 +
+          3 * (1 / 16) * v ^ 2 * (1 - v) + 0 * v ^ 3 := by ring
+    _ ≤ _ := by gcongr
+
+private theorem reachable_remainder_ge (C u v k : ℝ)
+    (hC : C ^ 2 = 2 * C + 1 / 2) (hlo : 11 / 5 ≤ C) (hhi : C ≤ 9 / 4)
+    (hv0 : 0 ≤ v) (hv1 : v ≤ 1) (hu0 : 0 ≤ u)
+    (huL : 1 - v ≤ C * u) (huU : u ≤ 1 - v) (hk0 : 1 ≤ k) (hk1 : k ≤ C) :
+    3 / 16 * u * v ≤ remainder C u (4 * v) k := by
+  rcases lt_or_eq_of_le hv1 with hv | hv
+  · have hB : 0 < 5 - 2 * C := by linarith
+    have hA : 0 ≤ 2 * C - 4 := by linarith
+    have hD : 0 < C - 1 := by linarith
+    have hV : 0 < 1 - v := sub_pos.mpr hv
+    have hCA : C * (2 * C - 4) = 1 := by nlinarith [hC]
+    have huA : (1 - v) * (2 * C - 4) ≤ u := by
+      calc
+        _ ≤ C * u * (2 * C - 4) := mul_le_mul_of_nonneg_right huL hA
+        _ = (C * (2 * C - 4)) * u := by ring
+        _ = u := by rw [hCA, one_mul]
+    let y := (u / (1 - v) - (2 * C - 4)) / (5 - 2 * C)
+    let z := (k - 1) / (C - 1)
+    have hy0 : 0 ≤ y := div_nonneg
+      (sub_nonneg.mpr ((le_div_iff₀ hV).mpr (by simpa only [mul_comm] using huA))) hB.le
+    have hy1 : y ≤ 1 := by
+      apply (div_le_iff₀ hB).mpr
+      have := (div_le_one hV).mpr huU
+      linarith
+    have hz0 : 0 ≤ z := div_nonneg (sub_nonneg.mpr hk0) hD.le
+    have hz1 : z ≤ 1 := (div_le_one hD).mpr (by linarith)
+    have hu : (1 - v) * ((2 * C - 4) + (5 - 2 * C) * y) = u := by
+      dsimp [y]
+      field_simp
+      ring
+    have hk : 1 + (C - 1) * z = k := by
+      dsimp [z]
+      field_simp
+      ring
+    have hG := remainder_ge_of_coordinates C v y z hC hlo hhi hv0 hv.le hy0 hy1 hz0 hz1
+    rw [hu, hk] at hG
+    exact (by nlinarith [mul_nonneg (sub_nonneg.mpr huU) hv0] :
+      3 / 16 * u * v ≤ 3 / 16 * v * (1 - v)).trans hG
+  · have hu : u = 0 := by rw [hv] at huU; linarith
+    rw [hu, hv]
+    unfold remainder
+    nlinarith [mul_nonneg (sub_nonneg.mpr hk1) (show 0 ≤ 4 - (C - k) by linarith)]
 
 private theorem reachable_remainder_nonneg_of_lt (C u v k : ℝ)
     (hC : C ^ 2 = 2 * C + 1 / 2) (hlo : 11 / 5 ≤ C) (hhi : C ≤ 9 / 4)
@@ -276,6 +357,88 @@ theorem meridionalAction_nonneg_of_quadratic_pinching (K r : ℝ → ℝ)
   have hf := (warp_nonneg_le_two_mul_min K hK
     (fun y hy => hκ.le.trans (hbox y hy).1) hzero hone x hx).1
   exact warp_calibration_density_nonneg K r κ C x hκ hC hlo hhi (hrootbox x hx) hf
+    (warpSlope_sq_add_four_mul_warp_bounds K hK κ (C * κ) hκ.le hrootbox hzero hone x hx)
+
+private theorem warp_calibration_density_ge_slope (K r : ℝ → ℝ) (κ C x : ℝ)
+    (hκ : 0 < κ) (hC : C ^ 2 = 2 * C + 1 / 2)
+    (hlo : 11 / 5 ≤ C) (hhi : C ≤ 9 / 4)
+    (hbox : κ ≤ K x ∧ K x ≤ C * κ) (hf : 0 ≤ warp K x)
+    (hstate : (warpSlope K x) ^ 2 + 4 * κ * warp K x ≤ 4 ∧
+      4 ≤ (warpSlope K x) ^ 2 + 4 * (C * κ) * warp K x) :
+    3 * κ ^ 2 / 64 * (warp K x * warpSlope K x ^ 2 * r x ^ 2) ≤
+      warpCalibrationDensity K r κ (C * κ) x := by
+  let f := warp K x
+  let b := warpSlope K x
+  have hv0 : 0 ≤ b ^ 2 / 4 := div_nonneg (sq_nonneg b) (by norm_num)
+  have hu0 : 0 ≤ κ * f := mul_nonneg hκ.le hf
+  have hv1 : b ^ 2 / 4 ≤ 1 := by dsimp [b] at *; nlinarith [hstate.1]
+  have huL : 1 - b ^ 2 / 4 ≤ C * (κ * f) := by dsimp [f, b] at *; nlinarith [hstate.2]
+  have huU : κ * f ≤ 1 - b ^ 2 / 4 := by dsimp [f, b] at *; nlinarith [hstate.1]
+  have hkL : 1 ≤ K x / κ := (le_div_iff₀ hκ).mpr (by simpa using hbox.1)
+  have hkU : K x / κ ≤ C := (div_le_iff₀ hκ).mpr hbox.2
+  have hG := reachable_remainder_ge C (κ * f) (b ^ 2 / 4) (K x / κ)
+    hC hlo hhi hv0 hv1 hu0 huL huU hkL hkU
+  have hfour : 4 * (b ^ 2 / 4) = b ^ 2 := by ring
+  rw [hfour] at hG
+  have hid : warpCalibrationDensity K r κ (C * κ) x =
+      f * (meridionalOperator K r x + κ * r x) ^ 2 +
+        2 * κ * (f * deriv r x + (C - K x / κ - κ * f / 2) * b / 4 * r x) ^ 2 +
+        κ * remainder C (κ * f) (b ^ 2) (K x / κ) * r x ^ 2 := by
+    dsimp [warpCalibrationDensity, remainder, f, b]
+    field_simp
+    ring
+  rw [hid]
+  have hs0 : 0 ≤ f * (meridionalOperator K r x + κ * r x) ^ 2 :=
+    mul_nonneg hf (sq_nonneg _)
+  have hs1 : 0 ≤ 2 * κ *
+      (f * deriv r x + (C - K x / κ - κ * f / 2) * b / 4 * r x) ^ 2 := by positivity
+  have hmul := mul_le_mul_of_nonneg_right hG (mul_nonneg hκ.le (sq_nonneg (r x)))
+  dsimp only [f, b] at *
+  nlinarith only [hs0, hs1, hmul]
+
+/-- The complete quadratic-pinching calibration retains a positive multiple
+of the physical slope-weighted probe mass, with arbitrary smooth pole values. -/
+theorem meridionalAction_ge_slope_mass_of_quadratic_pinching (K r : ℝ → ℝ)
+    (hK : Continuous K) (hr : ContDiff ℝ 2 r)
+    (hzero : (∫ x in (0 : ℝ)..1, K x) = 2)
+    (hone : (∫ x in (0 : ℝ)..1, x * K x) = 1)
+    (κ Λ : ℝ) (hκ : 0 < κ)
+    (hbox : ∀ x ∈ Icc (0 : ℝ) 1, κ ≤ K x ∧ K x ≤ Λ)
+    (hpinch : Λ ^ 2 ≤ 2 * κ * Λ + κ ^ 2 / 2) :
+    3 * κ ^ 2 / 64 * (∫ x in (0 : ℝ)..1,
+      warp K x * warpSlope K x ^ 2 * r x ^ 2) ≤ meridionalAction K r := by
+  let C : ℝ := 1 + Real.sqrt (3 / 2)
+  have hs : (Real.sqrt (3 / 2 : ℝ)) ^ 2 = 3 / 2 := Real.sq_sqrt (by norm_num)
+  have hs0 : 0 ≤ Real.sqrt (3 / 2 : ℝ) := Real.sqrt_nonneg _
+  have hC : C ^ 2 = 2 * C + 1 / 2 := by dsimp [C]; nlinarith
+  have hlo : 11 / 5 ≤ C := by dsimp [C]; nlinarith
+  have hhi : C ≤ 9 / 4 := by dsimp [C]; nlinarith
+  have hscale : Λ ≤ C * κ := by
+    have hκΛ : κ ≤ Λ := (hbox 0 (by norm_num)).1.trans (hbox 0 (by norm_num)).2
+    have hCsq : (C * κ - κ) ^ 2 = 3 / 2 * κ ^ 2 := by
+      have := congrArg (fun y : ℝ => y * κ ^ 2) hC
+      nlinarith
+    have hCκ : 0 ≤ C * κ - κ := by
+      nlinarith [mul_nonneg hκ.le (by linarith : 0 ≤ C - 1)]
+    have hsq : (Λ - κ) ^ 2 ≤ (C * κ - κ) ^ 2 := by nlinarith [hpinch, hCsq]
+    have := (sq_le_sq₀ (sub_nonneg.mpr hκΛ) hCκ).mp hsq
+    linarith
+  have hrootbox (x : ℝ) (hx : x ∈ Icc (0 : ℝ) 1) : κ ≤ K x ∧ K x ≤ C * κ :=
+    ⟨(hbox x hx).1, (hbox x hx).2.trans hscale⟩
+  have hi : IntervalIntegrable
+      (fun x => warp K x * warpSlope K x ^ 2 * r x ^ 2) volume 0 1 := by
+    have hf := warp_continuous K hK
+    have hb := warpSlope_continuous K hK
+    exact (show Continuous (fun x => warp K x * warpSlope K x ^ 2 * r x ^ 2) by
+      fun_prop).intervalIntegrable 0 1
+  rw [action_eq_warp_calibration K r hK hr hzero hone κ (C * κ),
+    ← intervalIntegral.integral_const_mul]
+  apply intervalIntegral.integral_mono_on zero_le_one (hi.const_mul _)
+    ((warp_calibration_density_continuous K r hK hr κ (C * κ)).intervalIntegrable 0 1)
+  intro x hx
+  have hf := (warp_nonneg_le_two_mul_min K hK
+    (fun y hy => hκ.le.trans (hbox y hy).1) hzero hone x hx).1
+  exact warp_calibration_density_ge_slope K r κ C x hκ hC hlo hhi (hrootbox x hx) hf
     (warpSlope_sq_add_four_mul_warp_bounds K hK κ (C * κ) hκ.le hrootbox hzero hone x hx)
 
 end RicciFlowSharpEstimate.Geometry.AreaProfile

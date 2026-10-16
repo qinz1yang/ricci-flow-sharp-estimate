@@ -1,0 +1,54 @@
+{
+  "frozen_inputs_manifest": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round26-advice-01ykx7qg/inputs.json",
+  "manifest_sha256": "4b87d5ed7aaa0eafc2e22a6d8460c6931be2e60ec90e70bc9294c06e030c23cd",
+  "frozen_input_bindings": {
+    "AreaWarpCalibration.lean": {
+      "source": "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/AreaWarpCalibration.lean",
+      "sha256": "2a042c966734963fa4952ee059b2e9a1c3acba130a52aa5b8796dc7794860eb0"
+    },
+    "AreaSlopeMass.lean": {
+      "source": "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/AreaSlopeMass.lean",
+      "sha256": "1b2da2de49ab2e0eb5aecb08716aa47a024957dfeb1eab6900f294f38e164ab6"
+    },
+    "AreaSlopeCalibration.lean": {
+      "source": "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/AreaSlopeCalibration.lean",
+      "sha256": "b4fb4f54a184ac89a36b1d2cea4ca59aae6e33a21d60e674f196ff969d599924"
+    },
+    "RotationalStrictPinching.lean": {
+      "source": "/home/ubuntu/projects/rfse/RicciFlowSharpEstimate/Geometry/RotationalStrictPinching.lean",
+      "sha256": "31bcc7c01be749883a93d34bc53439b4de2731feadb5c204e43461162beaa717"
+    },
+    "attempts.md": {
+      "source": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round26-root-qnjuwqv6/attempts.md",
+      "sha256": "786e58ef2e613ee710b3a2d6d809e271dfd447e960786e7541e6fc81fe4f0f7f"
+    },
+    "contract.md": {
+      "source": "/home/ubuntu/projects/rfse/.humanize/rlcr/2026-10-12_19-57-48/round-26-contract.md",
+      "sha256": "d7cade72a5d755ca805db5b6ffbac9000175ab06b6bb69b7c5dc83565523030c"
+    },
+    "bitlesson.md": {
+      "source": "/home/ubuntu/projects/rfse/.humanize/bitlesson.md",
+      "sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+    },
+    "ParentAreaWarpCalibration.lean": {
+      "source": "978eec8:RicciFlowSharpEstimate/Geometry/AreaWarpCalibration.lean",
+      "sha256": "da2cf849ab9809eae696b101a1060fbdc24a68c6a483cee208bf4a985ebe4d0e"
+    }
+  },
+  "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round26-advice-01ykx7qg/advice/report.md",
+  "report_sha256": "40a3c8577e7895fa2de2993502a77e910736f94e7747991d3b10a2ff75df0434",
+  "patch_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round26-advice-01ykx7qg/advice/simplification.patch",
+  "patch_sha256": "d125a0e637a57e5f542ef4d8ca7208932468b95fbcdd37baa7c6687579e00a0a",
+  "changes": "Only the proposed direct integral_eq_zero_of_ae substitution in new AreaSlopeMass; all other canonical source bytes match frozen advice inputs.",
+  "final_root_sources_match_declared_literal_transformation": true,
+  "final_source_bindings": {
+    "AreaWarpCalibration.lean": "2a042c966734963fa4952ee059b2e9a1c3acba130a52aa5b8796dc7794860eb0",
+    "AreaSlopeMass.lean": "af2922b902116d226f3e41c025d897da0d31a5b4c1e85d38ad551c82af8170b4",
+    "AreaSlopeCalibration.lean": "b4fb4f54a184ac89a36b1d2cea4ca59aae6e33a21d60e674f196ff969d599924",
+    "RotationalStrictPinching.lean": "31bcc7c01be749883a93d34bc53439b4de2731feadb5c204e43461162beaa717"
+  },
+  "independent_acceptance": false,
+  "lease_released": true,
+  "final_attempt_record_sha256": "d9141ccf46241054f1432b9e1b700731bc11617085c788cd718f62bae88ffcf3",
+  "context_status_delta": "After advice, attempts.md received its final native outcome and next action. The original eight frozen advice files remain unchanged; mathematical source deltas are still exactly the one declared proof substitution."
+}

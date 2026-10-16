@@ -9,6 +9,11 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+The current bounded lower conclusion is **1+sqrt(3/2)<C_rot**, from Round26's
+retained slope-weighted calibration and genuine weak recovery. This is a
+strict bound, not a characterization of the unrestricted sharp value. Its
+new declaration map is recorded at the end of this file.
+
 The Round 15 physical-pole packet proves unweighted integrability and finite
 probe traces for the actual signed minimum. It applies to every continuous
 recoverable global minimum at C>=1, with the actual action multiplier. The
@@ -1036,4 +1041,21 @@ geometry-state enclosure; no theorem that all enclosed states are physically
 reachable is asserted. Fields with slack, restricted domains or nonsmooth
 envelopes are not excluded. The general sharp comparison and determining
 producer remain unresolved; this round is STALLED and adds no safe bound.
-One configured outer delta review remains pending.
+Its single outer delta review passes at 978eec8 for that restricted scope.
+
+## Phase II Round 26: a strict gap above quadratic pinching
+
+| Declaration | Exact contribution |
+|---|---|
+| `Geometry.AreaProfile.meridionalAction_ge_slope_mass_of_quadratic_pinching` | The complete action bounds `3*kappa^2/64` times the actual integral `f*b^2*r^2`, under the original moments, positive box and quadratic pinching. Curvature is continuous and the probe is arbitrary C2. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.integral_warp_mul_slope_sq_mul_probe_sq_pos` | The actual positive-curvature primitive has a null slope-zero set, so its slope-weighted mass is strictly positive for every genuine recoverable unit-mass competitor. No continuity of r is supplied. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.action_ge_slope_mass_of_quadratic_pinching` | At every `1<=C<=1+sqrt(3/2)`, actual smooth recovery gives the complete weak-action bound with coefficient `3/(16*C^2)`, retaining the same K,r,p,z. |
+| `Geometry.AreaProfile.IsRecoverableAreaCompetitor.action_pos_of_quadratic_pinching` | Every such original recoverable competitor has strictly positive action, without a minimum, stationary system or source sign premise. |
+| `Geometry.quadratic_pinching_lt_rotationalThreshold` | The accepted actual threshold zero object contradicts that positivity if `C_rot<=1+sqrt(3/2)`, giving the strict lower bound. This does not determine C_rot. |
+
+The [checkpoint](evidence/phase2-round-26-strict-pinching/checkpoint.json)
+binds the canonical sources, exact native evidence and the consumer retaining
+all four same-object graph recovery limits. Only AC1/AC2 are fully met.
+Informative sharp production/selection, independent comparison at that value,
+original smooth endpoint/all-form equality, every used bridge and final
+Phase-II delivery remain open. One outer delta review is pending.

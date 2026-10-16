@@ -1,0 +1,7 @@
+✔ [10000/10006] Built RicciFlowSharpEstimate.Geometry.AreaSlopeMass (28s)
+✔ [10001/10006] Built RicciFlowSharpEstimate.Geometry.AreaWarpCalibration (60s)
+✔ [10002/10006] Built RicciFlowSharpEstimate.Geometry.AreaSlopeCalibration (38s)
+✔ [10003/10006] Built RicciFlowSharpEstimate.Geometry.RotationalQuadraticPinching (42s)
+✔ [10004/10006] Built RicciFlowSharpEstimate.Geometry.RotationalStrictPinching (56s)
+✔ [10005/10006] Built RicciFlowSharpEstimate (66s)
+Build completed successfully (10006 jobs).
