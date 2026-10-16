@@ -2441,7 +2441,7 @@ dependencies match. Failed development elaboration and driver-syntax logs
 remain separate from the five successful final private native commands.
 Source-only worker packets and NO CHANGE simplifier advice are distinct
 from final private native evidence. One configured outer delta review of
-this research checkpoint remains pending.
+this research checkpoint passes at aaa93b6.
 
 The diagnostics have restricted mathematical scope: the negative candidate
 density is pointwise, the rectangle and history-correction obstructions
@@ -2450,3 +2450,39 @@ global comparison is produced. The joint test is STALLED and adds zero
 canonical declarations. The accepted C_rot lower bound and all original
 determining, sharp safety, endpoint and final delivery obligations remain
 unchanged. Phase I remains COMPLETE; Phase II remains OPEN.
+
+## Phase II Round 25: full quadratic Bellman characteristic test
+
+The [research checkpoint](evidence/phase2-round-25-bellman-characteristics/checkpoint.json)
+binds two final private source elaborations and separate declaration/type/axiom
+diagnostics. The sources retain the full original density, genuine field and
+probe derivative laws, open-domain compatibility and the same-selected-box
+minimum consumer. The negative theorem uses explicit a.e. remainder saturation;
+it does not deduce that condition from zero action or claim a global positive
+comparison. The joint sharp producer remains STALLED.
+
+All 35 selected private/generated declarations have exact type and actual
+transitive-axiom rows; every named private source declaration is covered.
+The two source elaborations and two diagnostic commands exit zero; both
+source logs and the declaration-linter log are empty. Native
+declaration-kind inspection and all three
+unsuppressed declaration linters are retained; only propext, Classical.choice
+and Quot.sound are permitted. Root uses the accepted compiler/options and
+actual writer lock, with isolated private outputs. Source-only advice and the
+worker original remain distinct from Root's integrated final native bytes.
+The five frozen advice hashes and the two deliberate proof-only source deltas
+are explicitly bound; no unchanged-final-source claim is made for the earlier
+uncompiled candidates.
+
+Canonical source, root aggregate and checker are unchanged. The accepted
+Round23 canonical gate and Round24 restricted review/evidence are reused,
+with no fresh canonical build or old private-proof rerun. Four current
+document bindings accompany the new research checkpoint. All 362 canonical
+inputs and 363 accepted outputs match. All 357 canonical modules, 149 Phase-I
+source blobs, 12,602 prior evidence files, 2,325 Phase-I workflow files and
+142 pre-restart historical Round files are preserved, with both TASKs,
+accepted paper, pins, BitLesson and immutable prefix. The actual compiler,
+platform and ten clean pinned dependency revisions match. This round adds
+zero canonical modules/declarations and no safe cap. One configured outer
+delta review is pending. Phase I remains COMPLETE; Phase II remains OPEN,
+with every original determining, sharp-safety, endpoint and final gate intact.

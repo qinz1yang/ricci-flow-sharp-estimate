@@ -1,0 +1,20 @@
+--- a/FreeCharacteristicProbe.lean
++++ b/FreeCharacteristicProbe.lean
+@@ -476,15 +476,9 @@
+   have hsub : Ioo A B ⊆ Ioo (0 : ℝ) 1 := by
+     intro x hx
+     exact ⟨hA.trans hx.1, hx.2.trans hB⟩
+-  have hrestrict : (volume.restrict (Ioo (0 : ℝ) 1)).restrict (Ioo A B) = μ := by
+-    rw [Measure.restrict_restrict measurableSet_Ioo, inter_eq_left.mpr hsub]
+   have hgood : ∀ᵐ x ∂μ, (x ∈ Icc A B → l + η ≤ K x ∧ K x ≤ h - η) ∧
+-      fieldCost s a c x (warp K x) (warpSlope K x) (K x) (r x) (warp K x * p x) = 0 := by
+-    have hh : ∀ᵐ x ∂(volume.restrict (Ioo (0 : ℝ) 1)).restrict (Ioo A B),
+-        (x ∈ Icc A B → l + η ≤ K x ∧ K x ≤ h - η) ∧
+-          fieldCost s a c x (warp K x) (warpSlope K x) (K x) (r x) (warp K x * p x) = 0 :=
+-      ae_restrict_of_ae (hK.and hsat)
+-    simpa only [hrestrict] using hh
++      fieldCost s a c x (warp K x) (warpSlope K x) (K x) (r x) (warp K x * p x) = 0 :=
++    ae_restrict_of_ae_restrict_of_subset hsub (hK.and hsat)
+   have hμpos : 0 < μ univ := by
+     simpa [μ, Real.volume_Ioo] using (sub_pos.mpr hAB)
+   have hμne : μ ≠ 0 := by

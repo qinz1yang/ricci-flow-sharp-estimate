@@ -1,0 +1,62 @@
+{
+  "platform": "Linux-6.8.0-1069-gcp-x86_64-with-glibc2.35",
+  "lean_version": "Lean (version 4.35.0-rc3, x86_64-unknown-linux-gnu, commit 470d5ce1400764999581fd26d5d72b00d990b0f4, Release)",
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "dependencies": {
+    "DifferentialGeometry": {
+      "revision": "788efe97894474c032de6dfb1289d515f613d15a",
+      "tracked_sources_clean": true
+    },
+    "mathlib": {
+      "revision": "c55e6e786f49471c72fbddbec5415808896aec1e",
+      "tracked_sources_clean": true
+    },
+    "plausible": {
+      "revision": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+      "tracked_sources_clean": true
+    },
+    "LeanSearchClient": {
+      "revision": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+      "tracked_sources_clean": true
+    },
+    "importGraph": {
+      "revision": "7e81a29bda33a6b257bd37557a6aa6aebe175d96",
+      "tracked_sources_clean": true
+    },
+    "proofwidgets": {
+      "revision": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+      "tracked_sources_clean": true
+    },
+    "aesop": {
+      "revision": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+      "tracked_sources_clean": true
+    },
+    "Qq": {
+      "revision": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "tracked_sources_clean": true
+    },
+    "batteries": {
+      "revision": "3b7c8101932390d60e92a3f3d917901d5b5a773b",
+      "tracked_sources_clean": true
+    },
+    "Cli": {
+      "revision": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "tracked_sources_clean": true
+    }
+  },
+  "lean_binary_path": "/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+  "options": [
+    "-DautoImplicit=false",
+    "-Dpp.unicode.fun=true",
+    "-DmaxSynthPendingDepth=3",
+    "-Dweak.linter.mathlibStandardSet=true",
+    "-Dlinter.style.header.license=No license is granted by this file."
+  ],
+  "unchanged_accepted_native_inputs": 362,
+  "unchanged_accepted_command_output_bindings": 363,
+  "unchanged_canonical_modules": 357,
+  "fresh_canonical_build_or_full_suite_recomputation": false,
+  "parent_revision": "aaa93b605193446abfa4ed25a74db0e0086bd5b4",
+  "parent_receipt_path": "/home/ubuntu/projects/rfse/docs/evidence/phase2-round-23-warp-calibration/receipt.json",
+  "parent_receipt_sha256": "6a454dfdb414a69f0fd0aebf75256618c9ad1e0caac979cedb633ad91561afd3"
+}

@@ -1016,3 +1016,24 @@ assert negative original action; the enclosure and rectangle hypotheses are
 not established as physical reachability statements. No compatible sharp
 zero object or weak equality bridge is produced. The joint test is STALLED;
 the accepted bound and every original sharp-value/endpoint gate are unchanged.
+The single outer delta review passes at aaa93b6 for this restricted checkpoint.
+
+## Phase II Round 25: the tight Bellman characteristic test
+
+No canonical source or public API is added. Two private research sources
+in the [checkpoint](evidence/phase2-round-25-bellman-characteristics/checkpoint.json)
+check the full flux `f*(s*r^2+2*a*r*v+c*v^2)`, including its derivative-square
+term, literal original probe jets and every geometry-state total derivative.
+The second source proves the incompatibility of a specified whole-state
+tight Bellman producer through a free-control region, and applies it to the
+box selected from an actual zero recoverable global minimum.
+
+The private conclusion is scope-specific: every such minimum supplies a
+positive box witness for which the stated tight system and a.e. remainder
+saturation cannot coexist. It does not infer saturation from zero action.
+The system assumes sign and directional tightness throughout an open
+geometry-state enclosure; no theorem that all enclosed states are physically
+reachable is asserted. Fields with slack, restricted domains or nonsmooth
+envelopes are not excluded. The general sharp comparison and determining
+producer remain unresolved; this round is STALLED and adds no safe bound.
+One configured outer delta review remains pending.

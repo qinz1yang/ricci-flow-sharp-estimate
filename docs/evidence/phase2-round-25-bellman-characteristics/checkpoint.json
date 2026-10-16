@@ -1,0 +1,113 @@
+{
+  "round": 25,
+  "parent_revision": "aaa93b605193446abfa4ed25a74db0e0086bd5b4",
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN",
+  "mainline_progress_verdict": "STALLED",
+  "mainline_result": "Sharp producer not delivered; specified whole-state tight quadratic Bellman producer has a native selected-box incompatibility theorem",
+  "new_canonical_modules": 0,
+  "new_canonical_declarations": 0,
+  "safe_lower_bound_unchanged": "1+sqrt(3/2) <= C_rot; no new safe cap or identification",
+  "fresh_native_scope": "Two private sources including the full actual flux and selected-box minimum consumer, declaration kinds/linters, explicit types and actual transitive axioms",
+  "private_research_declarations_selected": 35,
+  "all_named_private_source_declarations_covered": true,
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declaration_linters": [
+    "unusedArguments",
+    "simpNF",
+    "synTaut"
+  ],
+  "defLemma_replacement": "Native declaration-kind inspection via getConstInfo and Meta.isProp",
+  "private_import_overlay": "Root-only unchanged canonical artifacts and isolated private compiled outputs; no worker cache or canonical source mutation",
+  "negative_scope": [
+    "One box witness selected from each actual zero recoverable global minimum at C>1 with continuous interior r,p; no arbitrary-box theorem is advertised",
+    "Whole-state tightness and nonnegative remainder for all controls/directions on an open geometry-state enclosure are extra hypotheses of this producer",
+    "The stated coefficient regularity and explicit a.e. remainder saturation are retained; saturation is not derived from zero action",
+    "The actual state is (x,warp K x,warpSlope K x), v=warp K x*p x, with the same original K,r,p,z and selected curvature box",
+    "No claim that every ambient state is physically reachable, that every comparison is tight, or that slack/restricted-domain/nonsmooth/nonquadratic certificates are impossible",
+    "No new global positive comparison, determining value, sharp zero producer or original smooth endpoint theorem"
+  ],
+  "canonical_evidence": {
+    "action": "reuse unchanged accepted Round23 canonical gate and Round24 restricted checkpoint review/evidence",
+    "receipt_path": "docs/evidence/phase2-round-23-warp-calibration/receipt.json",
+    "receipt_sha256": "6a454dfdb414a69f0fd0aebf75256618c9ad1e0caac979cedb633ad91561afd3",
+    "unchanged_inputs": 362,
+    "unchanged_successful_outputs": 363,
+    "unchanged_modules": 357,
+    "fresh_root_build_or_full_suite_query": false,
+    "accepted_round24_checkpoint_path": "docs/evidence/phase2-round-24-field-feasibility/checkpoint.json",
+    "accepted_round24_checkpoint_sha256": "abca92fea074489d728cea7cf66fc97747233e7fee5c6be159ad8ca544f52176"
+  },
+  "source_advice": {
+    "frozen_manifest_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round25-advice-jwp4f14i/inputs.json",
+    "frozen_manifest_sha256": "8c097ef058d96820137aa4e081dff6c6394d7b6fb8739733ef0ea82b0deef729",
+    "five_original_frozen_bindings_match": true,
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round25-advice-jwp4f14i/advice/report.md",
+    "report_sha256": "be954907e5ec8020bf4fc7728d5d2f2496b14bc3a639aa30358b589bb073dfb7",
+    "patch_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round25-advice-jwp4f14i/advice/simplification.patch",
+    "patch_sha256": "a0949b3a5ade34d3b888f134ae1f9e547d08c62d1ecf7d1cdc1eebe45f8be7df",
+    "final_source_bindings": {
+      "QuadraticFluxProbe.lean": "f7d9ce99c5a45458f367c639516251d44d6d45b7f73343c12bf058a080646461",
+      "FreeCharacteristicProbe.lean": "6b4a658378be8b3f5b8cc883503647f44ab5a4996cec0eae45b56646111af421"
+    },
+    "exact_root_deltas_from_frozen_sources": {
+      "QuadraticFluxProbe.lean": "One explicit real-product annotation in a proof-local vector identity; no statement change.",
+      "FreeCharacteristicProbe.lean": "Direct ae_restrict_of_ae_restrict_of_subset, adopting advice with a by-exact proof wrapper; no statement or saturation/domain change."
+    },
+    "final_root_sources_match_declared_literal_transformations": true,
+    "source_advice_is_acceptance": false,
+    "leases_released": true
+  },
+  "worker_packet": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round25-control-z6zg4gxw/ControlQuadraticProbe.lean",
+    "sha256": "61344cff5297545a1220e4ff09eb4ee2ded00b10025f917b90df4adfb9b36d09",
+    "status": "PROVISIONAL source-only original, lease released; integrated into Root private FreeCharacteristicProbe for native validation",
+    "no_geometry_claim": true
+  },
+  "attempt_record": {
+    "path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round25-root-pl9udqj9/attempts.md",
+    "sha256": "528a6e852a97aaa34793c0e0f7d18b6bd63c98d0d5709fe438e96678514af82a"
+  },
+  "next_action": "Rotate the specified tight producer; actually test global angular/slack characteristic production, including nodal and zero states, with an original zero object and informative selection",
+  "remaining_original_gates": [
+    "informative determination and justified selection",
+    "independent original all-form safety at the characterized sharp value",
+    "tied original zero object and every used domain, polar, interface, chart, path and recovery bridge",
+    "sharp original smooth witnesses, exact original smooth endpoint and all-form equality transfer",
+    "separate PhaseII manuscript, native, independent mathematical/manuscript review and private delivery"
+  ],
+  "independent_review": "One configured Astra/max outer delta review pending; no second acceptance reviewer launched",
+  "file_hashes": {
+    "docs/evidence/phase2-round-25-bellman-characteristics/FreeCharacteristicProbe.lean": "6b4a658378be8b3f5b8cc883503647f44ab5a4996cec0eae45b56646111af421",
+    "docs/evidence/phase2-round-25-bellman-characteristics/FreeCharacteristicProbe.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-25-bellman-characteristics/QuadraticFluxProbe.lean": "f7d9ce99c5a45458f367c639516251d44d6d45b7f73343c12bf058a080646461",
+    "docs/evidence/phase2-round-25-bellman-characteristics/QuadraticFluxProbe.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-25-bellman-characteristics/ResearchAxioms.lean": "ff7e220f9357638411796e29b82d9abcccb2489fc7fab9edbaa423e9298a8825",
+    "docs/evidence/phase2-round-25-bellman-characteristics/ResearchAxioms.txt": "80a94429046b53f664e1bb0e15401656293b43f77b64b3a869827156f21e0be1",
+    "docs/evidence/phase2-round-25-bellman-characteristics/ResearchLinters.lean": "2d12ac8756a3da75a504d188730539d8f7205c03d39bf2325246a163b0e82eb3",
+    "docs/evidence/phase2-round-25-bellman-characteristics/ResearchLinters.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-25-bellman-characteristics/advice-integration.json": "9c5b1e8e91dee99112b9461e3aba19f7acc0b4dd3df2cabe3c85fba8dd164f27",
+    "docs/evidence/phase2-round-25-bellman-characteristics/audit_unchanged.py": "59b4336f896ab5f94a3a872e40a66e06d11a11e27d01606686f118a78b2cdf09",
+    "docs/evidence/phase2-round-25-bellman-characteristics/bind_research.py": "82a73a17cbfbe8897287144354660e1e59fd1ef19ab17a405b0d38eaf8eeee02",
+    "docs/evidence/phase2-round-25-bellman-characteristics/current-environment.json": "b0133c261a1ee1ceae9afacf44a920cf50bfb3337cf3429515d32995a90400d1",
+    "docs/evidence/phase2-round-25-bellman-characteristics/preservation.json": "fb9293c7d5274e458a10c228ad2e6a4b550d94635bbf4278d8e82cd155a82f79",
+    "docs/evidence/phase2-round-25-bellman-characteristics/research-native.json": "717d192161892a2ff67947f91a16c02544c49b29790d024ce773fb25e55e060b",
+    "docs/evidence/phase2-round-25-bellman-characteristics/run_diagnostics.py": "51c5b6616d952b24b625441de8a5e00f555fd0210580970adbd83ec6233c37fc",
+    "docs/evidence/phase2-round-25-bellman-characteristics/run_module.py": "cd03822a919f659b68c5c75a80b90810932c96329f861d51f85d15c4218feb02",
+    "docs/evidence/phase2-round-25-bellman-characteristics/source-advice.md": "be954907e5ec8020bf4fc7728d5d2f2496b14bc3a639aa30358b589bb073dfb7",
+    "docs/evidence/phase2-round-25-bellman-characteristics/source-advice.patch": "a0949b3a5ade34d3b888f134ae1f9e547d08c62d1ecf7d1cdc1eebe45f8be7df",
+    "docs/evidence/phase2-round-25-bellman-characteristics/verify_research.py": "76432b94bbf8e00dbae502287dcea29e75660f807ef6e4bf1901704c855186b1",
+    "docs/evidence/phase2-round-25-bellman-characteristics/worker-origin.json": "82138622f9c7808d3add8071b49dd9392587f193e3ebc0b179dbe8d43d91b9ab"
+  },
+  "document_hashes": {
+    "docs/mathematical-status.md": "46e6752d57a2120292093b0c29a3aab89845857481edf53e7161c9816af21c0a",
+    "docs/theorem-map.md": "6a2bfaa424ba41085cb2bd6f6ffaa9f338eb5a84a366d829c02dc7e47bd8cd04",
+    "docs/research/phase2-unrestricted.md": "24c9b7d3247a8a0e102425bc27daa946d88d969633575dc57396896f0921d1e0",
+    "docs/verification.md": "fb79944d1e8bf6d671e36fbde63d1160ae2c9f2180c5c5c8ba815032ea48cd97"
+  },
+  "no_local_authority_reference_workflow_or_accepted_paper_delivered": true
+}

@@ -4268,6 +4268,9 @@ bridges and final manuscript/native/review/private-delivery gates remain OPEN.
 
 ## Round 24: joint field and equality feasibility
 
+This restricted checkpoint passes its single outer review at aaa93b6;
+the joint producer remains STALLED, with no new bound or canonical theorem.
+
 The single principal target is a genuinely variable probe-independent field
 and a compatible nonzero recoverable zero object at the same selected cap.
 The complete remainder is kept as `A*p^2+B*p*r+D*r^2`, with
@@ -4361,3 +4364,98 @@ characteristic data or nonconstant gamma(u), eta(u), retaining every
 global extension is claimed. Every used weak/polar/interface/recovery bridge,
 independent sharp-value safety, original smooth endpoint/all-form equality
 and final Phase-II manuscript/native/review/private-delivery gate stays open.
+
+## Round 25: full quadratic flux and Bellman characteristic compatibility
+
+The principal test adds the derivative-square coefficient. For the actual
+state `v=f*r'`, use `F=f*(s*r^2+2*a*r*v+c*v^2)`, with coefficients chosen
+on `(x,f,b)` before probes. Actual chain and product rules, using f'=b,
+b'=-2K and genuine probe derivatives, give the complete density plus F' as
+
+`f*(q+a*r+c*v)^2+V*v^2+B*r*v+D*r^2`, where
+
+`V=2*a-b*c+f*Dc-f*c^2`,
+`B=-K*b+2*s+2*f*Da+2*f*c*(K-a)`,
+`D=f*(K^2+2*K*a-a^2)+b*s+f*Ds-K*b^2/2`.
+
+Every total derivative is `Ds=s_x+b*s_f-2*K*s_b`, with the analogous
+formulas for a,c. The native coordinate-partial bridge uses the actual
+Fréchet derivative on the geometry-state path. No curvature derivative or
+independent probe jet is supplied. These identities alone provide no sign.
+
+**Producer hypothesis.** Attempt a regular classical Bellman field on an
+open state domain U with f>0: the remainder is nonnegative for all controls
+in the box and every state direction, and every direction has a control
+where it vanishes. This whole-state tightness is an additional ansatz,
+stronger than a comparison with slack. A global sharp zero object must
+also satisfy the explicitly stated a.e. remainder-saturation equation.
+That equation is not inferred from zero action in this test.
+
+**Decisive control selection.** At one geometry state the remainder is
+`(f*k^2+d1*k+d0)*r^2+(b1*k+b0)*r*v+(v1*k+v0)*v^2`.
+Nonnegativity for all controls/directions and directional zero controls
+force one common zero matrix. The v-axis selects an affine minimum; a
+uniformly small positive r pins the other diagonal if that slope is
+nonzero. The zero-slope case uses both axes. No common selector is supplied
+as a premise. If f>0 and r!=0, a zero direction pins its control to this
+matrix root: two distinct zero controls would give negative midpoint cost.
+
+An interior zero control therefore gives strictly positive endpoint r²
+costs. Their continuity produces an actual open box of states with interior
+matrix roots. On that box affine V and positivity force V identically zero
+in the control, then force B identically zero. The literal coefficients give
+
+`c_b=0`,
+`2*a-b*c+f*(c_x+b*c_f)-f*c^2=0`,
+`-b-4*f*a_b+2*f*c=0`.
+
+These equations are incompatible. Genuine mean-value calculus makes c
+independent of b on the box, so its actual x and f partials are independent
+of b too. The middle equation makes a affine in b, with
+`a_b=(c-f*c_f)/2`. The last then forces `b=2*f^2*c_f` on a nontrivial
+b interval. No second mixed-partial interchange is assumed.
+
+**Original-object test.** The accepted free-interval producer, applied to
+one actual zero recoverable global minimum at C>1, supplies one κ and an
+interval with strict curvature margins and |r| bounded away from zero.
+A positive-measure argument chooses a point satisfying the same a.e.
+kernel equation. Its state is literally `(x,warp K x,warpSlope K x)`, with
+`v=warp K x*p x`. The native negative theorem returns that selected positive
+box witness and excludes the stated tight system for it. It does not
+silently identify different boxes, replace the probe or assume source sign.
+The original minimum and all its recovery data remain the given objects.
+
+**Outcome and remaining gap.** The tight Bellman producer fails this
+compatibility test. No compatible sharp field, zero object or cap selection
+is produced; the joint target is STALLED. The no-go concerns the specified
+regularity, open-enclosure tightness and explicit saturation conditions.
+It neither establishes physical reachability of every ambient state nor
+rules out general quadratic comparisons. In particular, the accepted
+Round23 comparison has a=κ,c=0 and a positive v-axis remainder2*κ*v²,
+so it is a valid slack comparison without whole-state tightness. No
+sharp-compatible slack extension is obtained here. The bound remains
+`1+sqrt(3/2)<=C_rot`.
+
+The [research checkpoint](../evidence/phase2-round-25-bellman-characteristics/checkpoint.json)
+binds the two private sources, exact native records, type/axiom diagnostics
+and source advice. The advice's direct a.e.-restriction substitution and
+Root's real-tuple proof annotation preserve all signatures and scope; final
+native evidence covers the integrated bytes. No canonical source or root
+gate is changed; one configured outer review remains pending.
+
+A substantively different producer can allow angular dependence in a
+degree-two homogeneous potential Φ(x,f,b,r,v). The prospective Hamiltonian
+after completing the q square is
+
+`Phi_x+b*Phi_f+(v/f)*Phi_r-(b*v/f)*Phi_v-Phi_v^2/(4*f)`
+`+K*(-2*Phi_b+r*Phi_v-b*r*v-b^2*r^2/2)+f*K^2*r^2`.
+
+This is an explicitly labeled research calculation, not a new native
+theorem, assumed Bellman solution or value characterization. At r=0 the
+control dependence is affine and must be treated without division by r²;
+two projective charts and the zero state need genuine compatibility. The
+next test must actually produce/control a global extension and a tied
+original zero object from informative data. Every physical pole, weak
+equality, original-probe coverage and recovery bridge used, independent
+sharp-value safety, threshold selection, original smooth endpoint/all-form
+equality and final manuscript/acceptance delivery remain open.

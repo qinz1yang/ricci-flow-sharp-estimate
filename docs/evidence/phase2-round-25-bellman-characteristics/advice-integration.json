@@ -1,0 +1,20 @@
+{
+  "frozen_manifest_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round25-advice-jwp4f14i/inputs.json",
+  "frozen_manifest_sha256": "8c097ef058d96820137aa4e081dff6c6394d7b6fb8739733ef0ea82b0deef729",
+  "five_original_frozen_bindings_match": true,
+  "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round25-advice-jwp4f14i/advice/report.md",
+  "report_sha256": "be954907e5ec8020bf4fc7728d5d2f2496b14bc3a639aa30358b589bb073dfb7",
+  "patch_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round25-advice-jwp4f14i/advice/simplification.patch",
+  "patch_sha256": "a0949b3a5ade34d3b888f134ae1f9e547d08c62d1ecf7d1cdc1eebe45f8be7df",
+  "final_source_bindings": {
+    "QuadraticFluxProbe.lean": "f7d9ce99c5a45458f367c639516251d44d6d45b7f73343c12bf058a080646461",
+    "FreeCharacteristicProbe.lean": "6b4a658378be8b3f5b8cc883503647f44ab5a4996cec0eae45b56646111af421"
+  },
+  "exact_root_deltas_from_frozen_sources": {
+    "QuadraticFluxProbe.lean": "One explicit real-product annotation in a proof-local vector identity; no statement change.",
+    "FreeCharacteristicProbe.lean": "Direct ae_restrict_of_ae_restrict_of_subset, adopting advice with a by-exact proof wrapper; no statement or saturation/domain change."
+  },
+  "final_root_sources_match_declared_literal_transformations": true,
+  "source_advice_is_acceptance": false,
+  "leases_released": true
+}

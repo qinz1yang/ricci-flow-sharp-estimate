@@ -9,6 +9,19 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 25's full quadratic-flux characteristic test is **STALLED** on the
+sharp producer. The new derivative-square coefficient is retained in the
+genuine complete-action identity. A private native no-go result excludes
+the specified whole-state tight Bellman system, with explicit a.e.
+remainder saturation, for a scale-balanced box selected from an actual zero
+minimum. It uses the genuine free-curvature interval and actual weak probe
+states. Whole-state tightness and sign on an open state enclosure are extra
+conditions of this producer. Slack comparisons, nonsmooth envelopes and
+nonquadratic potentials remain open. No new canonical theorem, safe cap,
+value or original smooth endpoint result is added. The
+[research checkpoint](evidence/phase2-round-25-bellman-characteristics/checkpoint.json)
+records the exact scope and evidence; one outer delta review is pending.
+
 Round 24's joint variable-field/equality test is **STALLED**. Three private
 native research probes check complete flux identities, a physical failure
 of one candidate's pointwise calibrated density, a conditional warp-only
@@ -19,6 +32,7 @@ theorem or new bound is added. The restricted construction is parked;
 informative field/zero-object production and independent sharp comparison
 remain open. Its [research checkpoint](evidence/phase2-round-24-field-feasibility/checkpoint.json)
 distinguishes new private diagnostics from unchanged accepted evidence.
+Its single outer delta review passes at aaa93b6 for that restricted scope.
 
 Round 23 constructs a warp-dependent comparison giving the stronger independent
 bound **1+sqrt(3/2)<=C_rot**. The actual two-pole state inequalities
