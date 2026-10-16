@@ -4538,4 +4538,71 @@ a compatible sharp global field/zero object, or original smooth endpoint
 classification. Informative cap production and selection, independent sharp
 safety, original sharp witnesses at that value, every used chart/polar/path/
 recovery bridge, all-form equality and the final separate Phase-II manuscript
-and acceptance gates remain open. One outer delta review is pending.
+and acceptance gates remain open. Its single outer delta review passes at 62e08ab.
+
+## Round27: CK trace data and the unsuccessful angular extension
+
+The mainline objective was to produce both constant-axis trace data of a
+homogeneous field, then control its full Hamiltonian jointly with an original
+zero object at an informative cap. The accepted CK prefix/tail calibration
+is a global triangular-logarithm comparison; it is not already a local
+geometry-state certificate. Its free characteristics suggest, for f>0,b>0,
+
+`g=sqrt(lambda*b)`,
+
+`T=2*lambda*log(f)+(4/3)*b*g-b^3/12+c`,
+
+`Phi=T*r^2+2*g*r*v+epsilon*f*r^2*v^2/(r^2+v^2)`.
+
+Here both `W(0)=T/f` and `W_t(0)=2*g/f` change. The actual derivatives
+`T_f=2*lambda/f`, `T_b=2*g-b^2/4` give the exact axis Hamiltonian
+`f*(K-g/f)^2`. This local identity does not resolve the logarithmic pole
+limit or imply an equality trajectory.
+
+For lambda=9/16,c=0, the actual round state at x=1/4 has f=3/8,b=1,K=2.
+At r=1,v=t the complete Hamiltonian satisfies
+
+`H(0)=0`, `H'(0)=6*log(3/8)-37/9<0`,
+
+independently of epsilon. The private Lean diagnostic proves this using the
+displayed potential's actual partials and the full six-entry density, and
+ties the state to the true jet of `1+(8*t/3)*(x-1/4)`. This rejects exactly
+that free-trace completion. It is not negative integrated action, round-cap
+unsafety or a general angular no-go.
+
+The same principal attempt then joined the free characteristics to the two
+curvature-bound branches through `I=b^2+4*n*f`. A polar gauge spends the CK
+boundary margin and leaves positive constant-axis slack. The full mixed term
+and the geometry derivatives of the angular correction are retained.
+These joining, regularity and endpoint calculations remain **research
+calculations**, not new canonical or weak-domain theorems. Complete-H tests
+of the joined fields still fail numerically on actual admissible polynomial
+geometries, including a ratio-5/2 fixture with both exact moments. No
+compatible original zero trajectory, global sign or determining selection
+is obtained. The failed interior premise was tested before constructing a
+long chart/polar API.
+
+The one independent alternative tested the literal family
+`w=x*(1-x)`, `K_tau=2*(1+tau-6*tau*w)`, with actual primitives
+`f=2*w*(1-tau*w)` and `b=2*(1-2*x)*(1-2*tau*w)`. Exact rational polynomial
+arithmetic on the tested even/odd probe blocks supplied no improved upper
+barrier over the accepted CK bound. Floating root observations are not
+theorems about that whole family or the unrestricted problem. No new
+negative original metric/form witness is claimed.
+
+The [attempt record](../evidence/phase2-round-27-trace-data/attempts.md)
+states the hypotheses, formulas, decisive tests, outcomes, exact proved scope
+and remaining gaps. The [checkpoint](../evidence/phase2-round-27-trace-data/checkpoint.json)
+keeps the native private diagnostic separate from all exploratory data.
+This round is **STALLED** and adds no canonical theorem or bound. Park this
+tested angular producer after the Round26–27 failures and rotate to a
+substantively different nonlocal comparison mechanism; do not merely refit
+its amplitudes or return automatically to source-sign selection.
+
+The full positive dependency remains informative construction/selection,
+independent original scalar/all-form safety and a tied zero object with
+same-object recovery, derived global minimality, accepted cap expansion and
+sharp identification, followed by original smooth endpoint/all-form equality
+and all final delivery gates. Only AC1/AC2 are fully met. Phase I remains
+COMPLETE; Phase II remains OPEN. One outer delta review of this restricted
+packet is pending.

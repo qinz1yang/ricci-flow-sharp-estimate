@@ -1,0 +1,12 @@
+{
+  "principal": "CK free trace with joined characteristic/polar axis slack and full angular sign test",
+  "principal_status": "UNRESOLVED; tested exact free family fails; joined/slack trials unsuccessful at exploratory scope",
+  "alternative": "one exact polynomial curvature/probe family test",
+  "alternative_status": "No improved original upper-barrier witness produced; no theorem of full-family positivity/absence",
+  "mainline_progress_verdict": "STALLED",
+  "new_canonical_modules": 0,
+  "new_canonical_declarations": 0,
+  "accepted_bounds_unchanged": "1+sqrt(3/2)<C_rot<C_CK",
+  "next": "Park tested angular trace producer and rotate to a different nonlocal comparison mechanism before more fitting.",
+  "all_original_acceptance_gates_retained": true
+}

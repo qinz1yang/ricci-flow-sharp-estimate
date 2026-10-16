@@ -1,0 +1,312 @@
+Selected 55 research declarations, including private/generated declarations
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF: ℝ → ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.density_add_jet_eq_square: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.density_add_jet_eq_square: ∀
+  (f b K r r1 r2 Px Pf Pb Pr Pv : ℝ),
+  f ≠ 0 →
+    RicciFlowSharpEstimate.Geometry.AreaProfile.meridionalActionDensity f b K r r1 r2 +
+        (Px + b * Pf - 2 * K * Pb + r1 * Pr + (f * r2 + b * r1) * Pv) =
+      f * (f * r2 + 2 * b * r1 - K * r + Pv / (2 * f)) ^ 2 +
+        RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian✝ f b K r (f * r1) Px Pf Pb Pr Pv
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian._proof_2: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian._proof_2: (1 +
+    1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR: ℝ → ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian._proof_1: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian._proof_1: (3 +
+    1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian: ℝ → ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace._proof_2: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace._proof_2: (2 + 1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.round_moments_and_box: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.round_moments_and_box: ∀ (C : ℝ),
+  1 ≤ C → ∫ (x : ℝ) in 0..1, 2 = 2 ∧ ∫ (x : ℝ) in 0..1, x * 2 = 1 ∧ (∀ x ∈ Set.Icc 0 1, 2 ≤ 2 ∧ 2 ≤ 2) ∧ 2 ≤ C * 2
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_zero: ∀ (ε : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian✝ ε 0 = 0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace_point: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace_point: RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace✝
+    (3 / 8) 1 =
+  RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue✝
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential: ℝ → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_derivative_neg: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_derivative_neg: 6 *
+      Real.log (3 / 8) -
+    37 / 9 <
+  0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR.eq_1: ∀ (ε t : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR✝ ε t =
+    2 * RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue✝ + 3 / 2 * t + 3 * ε / 4 * t ^ 4 / (1 + t ^ 2) ^ 2
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian: ℝ →
+  ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian.eq_1: ∀ (ε t : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian✝ ε t =
+    RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian✝ (3 / 8) 1 2 1 t 0
+      (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF✝ ε t)
+      (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB✝ t)
+      (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR✝ ε t)
+      (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV✝ ε t)
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential_hasDerivAt_f: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential_hasDerivAt_f: ∀ (ε t : ℝ),
+  HasDerivAt (fun f ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε f 1 1 t)
+    (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF✝ ε t) (3 / 8)
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB._proof_1: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB._proof_1: (4 + 1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential.eq_1: ∀ (ε f b r v : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε f b r v =
+    RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace✝ f b * r ^ 2 +
+        2 * RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude✝ b * r * v +
+      ε * f * r ^ 2 * v ^ 2 / (r ^ 2 + v ^ 2)
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF.eq_1: ∀ (ε t : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF✝ ε t = 3 + ε * t ^ 2 / (1 + t ^ 2)
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude._proof_1: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude._proof_1: (8 + 1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential_hasDerivAt_b: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential_hasDerivAt_b: ∀ (ε t : ℝ),
+  HasDerivAt (fun b ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε (3 / 8) b 1 t)
+    (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB✝ t) 1
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue._proof_1: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue._proof_1: (10 + 1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential_hasDerivAt_r: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential_hasDerivAt_r: ∀ (ε t : ℝ),
+  HasDerivAt (fun r ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε (3 / 8) 1 r t)
+    (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR✝ ε t) 1
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe_deriv: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe_deriv: ∀ (t : ℝ),
+  deriv (RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t) = fun x ↦ 8 * t / 3
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV_hasDerivAt: ∀ (ε : ℝ),
+  HasDerivAt (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV✝ ε) (3 * ε / 4) 0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude_hasDerivAt_one: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude_hasDerivAt_one: HasDerivAt
+  RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude✝ (3 / 8) 1
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB_hasDerivAt: HasDerivAt
+  RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB✝ (3 / 4) 0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian.eq_1: ∀
+  (f b K r v Px Pf Pb Pr Pv : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian✝ f b K r v Px Pf Pb Pr Pv =
+    Px + b * Pf + v / f * Pr - b * v / f * Pv - Pv ^ 2 / (4 * f) +
+        K * (-2 * Pb + r * Pv - b * r * v - b ^ 2 * r ^ 2 / 2) +
+      f * K ^ 2 * r ^ 2
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_hasDerivAt: ∀ (ε : ℝ),
+  HasDerivAt (RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian✝ ε) (6 * Real.log (3 / 8) - 37 / 9) 0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude._proof_2: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude._proof_2: (15 + 1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB: ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude: ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue.eq_1: RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue✝ =
+  9 / 8 * Real.log (3 / 8) + 11 / 12
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.exists_negative_traceHamiltonian_at_round_state: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.exists_negative_traceHamiltonian_at_round_state: ∀
+  (ε : ℝ),
+  ∃ t,
+    0 < t ∧
+      RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian✝
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.warp (fun x ↦ 2) (1 / 4))
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.warpSlope (fun x ↦ 2) (1 / 4)) 2
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t (1 / 4))
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.warp (fun x ↦ 2) (1 / 4) *
+            deriv (RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t) (1 / 4))
+          0 (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF✝ ε t)
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB✝ t)
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR✝ ε t)
+          (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV✝ ε t) <
+        0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace_axis_identity: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace_axis_identity: ∀ (f b K : ℝ),
+  f ≠ 0 →
+    0 < b →
+      RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian✝ f b K 1 0 0 (9 / 8 / f)
+          (2 * RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude✝ b - b ^ 2 / 4)
+          (2 * RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace✝ f b)
+          (2 * RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude✝ b) =
+        f * (K - RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude✝ b / f) ^ 2
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace: ℝ → ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_eq: ∀ (ε t : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian✝ ε t =
+    RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF✝ ε t +
+              8 / 3 * t * RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR✝ ε t -
+            8 / 3 * t * RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV✝ ε t -
+          2 / 3 * RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV✝ ε t ^ 2 +
+        2 *
+          (-2 * RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB✝ t +
+                RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV✝ ε t -
+              t -
+            1 / 2) +
+      3 / 2
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe: ℝ → ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceValue: ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.exists_negative_traceHamiltonian: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.exists_negative_traceHamiltonian: ∀ (ε : ℝ),
+  ∃ t, 0 < t ∧ RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian✝ ε t < 0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_eq_potential_derivatives: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian_eq_potential_derivatives: ∀
+  (ε t : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.traceHamiltonian✝ ε t =
+    RicciFlowSharpEstimate.Geometry.AreaProfile.completeHamiltonian✝ (3 / 8) 1 2 1 t
+      (deriv (fun x ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε (3 / 8) 1 1 t) (1 / 4))
+      (deriv (fun f ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε f 1 1 t) (3 / 8))
+      (deriv (fun b ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε (3 / 8) b 1 t) 1)
+      (deriv (fun r ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε (3 / 8) 1 r t) 1)
+      (deriv (fun v ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε (3 / 8) 1 1 v) t)
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude.eq_1: ∀ (b : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude✝ b = √(9 / 16 * b)
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF_hasDerivAt: ∀ (ε : ℝ),
+  HasDerivAt (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialF✝ ε) 0 0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB.eq_1: ∀ (t : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialB✝ t = 5 / 4 + 3 / 4 * t
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV: ℝ → ℝ → ℝ
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace._proof_1: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace._proof_1: (7 + 1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace.eq_1: ∀ (f b : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace✝ f b =
+    9 / 8 * Real.log f + 4 / 3 * b * RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude✝ b - b ^ 3 / 12
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude_one: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude_one: RicciFlowSharpEstimate.Geometry.AreaProfile.traceAmplitude✝
+    1 =
+  3 / 4
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace._proof_3: [propext]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.freeTrace._proof_3: (11 + 1).AtLeastTwo
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe_hasDerivAt: ∀ (t x : ℝ),
+  HasDerivAt (RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t) (8 * t / 3) x
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe.eq_1: ∀ (t x : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t x = 1 + 8 * t / 3 * (x - 1 / 4)
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV.eq_1: ∀ (ε t : ℝ),
+  RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV✝ ε t = 3 / 2 + 3 * ε / 4 * t / (1 + t ^ 2) ^ 2
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR_hasDerivAt: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR_hasDerivAt: ∀ (ε : ℝ),
+  HasDerivAt (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialR✝ ε) (3 / 2) 0
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.round_state_and_probe: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.round_state_and_probe: ∀ (t : ℝ),
+  1 / 4 ∈ Set.Ioo 0 1 ∧
+    RicciFlowSharpEstimate.Geometry.AreaProfile.warp (fun x ↦ 2) (1 / 4) = 3 / 8 ∧
+      RicciFlowSharpEstimate.Geometry.AreaProfile.warpSlope (fun x ↦ 2) (1 / 4) = 1 ∧
+        RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t (1 / 4) = 1 ∧
+          deriv (RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t) (1 / 4) = 8 * t / 3 ∧
+            deriv (deriv (RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t)) (1 / 4) = 0 ∧
+              RicciFlowSharpEstimate.Geometry.AreaProfile.warp (fun x ↦ 2) (1 / 4) *
+                  deriv (RicciFlowSharpEstimate.Geometry.AreaProfile.traceProbe✝ t) (1 / 4) =
+                t
+_private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential_hasDerivAt_v: [propext,
+ Classical.choice,
+ Quot.sound]
+TYPE _private.FreeTraceChecks.0.RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential_hasDerivAt_v: ∀ (ε t : ℝ),
+  HasDerivAt (fun v ↦ RicciFlowSharpEstimate.Geometry.AreaProfile.tracePotential✝ ε (3 / 8) 1 1 v)
+    (RicciFlowSharpEstimate.Geometry.AreaProfile.pointPartialV✝ ε t) t

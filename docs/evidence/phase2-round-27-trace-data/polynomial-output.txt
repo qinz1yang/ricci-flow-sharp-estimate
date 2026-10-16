@@ -1,0 +1,6 @@
+even 2 [{'tau_approx': 1.622910207996438, 'ratio_approx': 13.911329681242929}]
+even 3 [{'tau_approx': 1.5511207740416006, 'ratio_approx': 11.366624368034488}]
+even 4 [{'tau_approx': 1.548490548693327, 'ratio_approx': 11.288758369588804}]
+odd 2 []
+odd 3 []
+odd 4 []

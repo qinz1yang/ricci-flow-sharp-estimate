@@ -1,0 +1,72 @@
+{
+  "scope": "One private free-trace diagnostic only; no new canonical theorem or bound; mainline STALLED",
+  "modules": [
+    {
+      "command": [
+        "/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "--root=/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/imports",
+        "-o",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/imports/FreeTraceChecks.olean",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/imports/FreeTraceChecks.lean"
+      ],
+      "LEAN_PATH": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/imports:/home/ubuntu/projects/rfse/.lake/packages/Cli/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/batteries/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/Qq/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/aesop/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/importGraph/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/plausible/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/mathlib/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/DifferentialGeometry/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/build/lib/lean:/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/lib/lean",
+      "exit_code": 0,
+      "source_sha256": "42a1762dd90f972163fd6667e8781b25937278595cbf80b0e87cda9693bddc0e",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-16T13:20:46.237664+00:00",
+      "name": "FreeTraceChecks",
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/FreeTraceChecks.lean",
+      "compiled_source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/imports/FreeTraceChecks.lean",
+      "olean_sha256": "0896b313c1889c9abc81884760a3d00f327a1b4a65f1a019a3b5e3f24daac238"
+    }
+  ],
+  "diagnostics": [
+    {
+      "name": "ResearchLinters",
+      "command": [
+        "/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/ResearchLinters.lean"
+      ],
+      "LEAN_PATH": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/imports:/home/ubuntu/projects/rfse/.lake/packages/Cli/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/batteries/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/Qq/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/aesop/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/importGraph/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/plausible/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/mathlib/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/DifferentialGeometry/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/build/lib/lean:/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/lib/lean",
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/ResearchLinters.lean",
+      "source_sha256": "9ffae99c3a8ace662453eb058462311e3c7e979751641e2da0e88476d3e798c6",
+      "output_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/ResearchLinters.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-10-16T13:31:38.950283+00:00"
+    },
+    {
+      "name": "ResearchAxioms",
+      "command": [
+        "/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean",
+        "-DautoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-DmaxSynthPendingDepth=3",
+        "-Dweak.linter.mathlibStandardSet=true",
+        "-Dlinter.style.header.license=No license is granted by this file.",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/ResearchAxioms.lean"
+      ],
+      "LEAN_PATH": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/imports:/home/ubuntu/projects/rfse/.lake/packages/Cli/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/batteries/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/Qq/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/aesop/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/importGraph/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/plausible/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/mathlib/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/packages/DifferentialGeometry/.lake/build/lib/lean:/home/ubuntu/projects/rfse/.lake/build/lib/lean:/home/ubuntu/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/lib/lean",
+      "exit_code": 0,
+      "source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/ResearchAxioms.lean",
+      "source_sha256": "5ca057b2d8dfda02ef7b284d04b43998e1006c61695b5d8a0760e4a8e94ec320",
+      "output_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/ResearchAxioms.txt",
+      "output_sha256": "8ddea83431de174c48cc404979ccd084a841a1dd584b30e3fad829bd40d171ba",
+      "completed_utc": "2026-10-16T13:34:24.859784+00:00"
+    }
+  ],
+  "runner_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/run_diagnostics.py",
+  "runner_sha256": "4a6b7c635a26bde13c3c98ac8362d3324d2437fe87cb959ee9935049c1b2350c",
+  "writer_lock": ".lake/rfse-root-writer.lock",
+  "parent_source_gate": "Round26 canonical gate and accepted delta review reused unchanged; no new root build or old private-proof rerun"
+}

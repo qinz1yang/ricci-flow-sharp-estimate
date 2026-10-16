@@ -1,0 +1,32 @@
+{
+  "recommendation": "NO CHANGE on the frozen worker original; Root native repairs are separate",
+  "frozen_input_manifest": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-advice-yh7xkbct/inputs.json",
+  "manifest_sha256": "5644e5e4394bf0bd6104de5e5bdd328f40e52c53590fdd29b317185fa534e1af",
+  "frozen_input_bindings": {
+    "FreeTraceChecks.lean": {
+      "source": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/FreeTraceChecks.lean",
+      "sha256": "7bd2dd6097f81ac61c1ebdb32aec64318f7795d6a9b2c9d8b0e1550f8fb9b858"
+    },
+    "contract.md": {
+      "source": "/home/ubuntu/projects/rfse/.humanize/rlcr/2026-10-12_19-57-48/round-27-contract.md",
+      "sha256": "85575e8635e7c8b6296483996a291e15bbcbd4ea950e6647dcb2f847b259b114"
+    },
+    "bitlesson.md": {
+      "source": "/home/ubuntu/projects/rfse/.humanize/bitlesson.md",
+      "sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+    },
+    "attempts.md": {
+      "source": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/attempts.md",
+      "sha256": "ff76d81f68b57f2f6774fd70387ed280c694ad8c66282c809ca0b35bd3c4265a"
+    }
+  },
+  "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-advice-yh7xkbct/advice/report.md",
+  "report_sha256": "514740e41ad8a6fd15e0a00a70ee217fa449bbdc427afe6c9b6c8f5f769e0faf",
+  "patch_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-advice-yh7xkbct/advice/simplification.patch",
+  "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "native_evidence_or_acceptance": false,
+  "lease_released": true,
+  "Root_proof_repair_scope": "Expression/Pi/id normalization, exact sqrt evaluation, derivative conversions, explicit eventually filter membership and removal of redundant tactics; original mathematical statements retained (constant-function quantifier spelling is definitionally equal). Final bytes require Root native gates and the single outer delta review.",
+  "no_claim_that_final_repaired_source_matches_original_advice_bytes": true,
+  "final_Root_source_sha256": "42a1762dd90f972163fd6667e8781b25937278595cbf80b0e87cda9693bddc0e"
+}

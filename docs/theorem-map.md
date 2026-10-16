@@ -1058,4 +1058,21 @@ binds the canonical sources, exact native evidence and the consumer retaining
 all four same-object graph recovery limits. Only AC1/AC2 are fully met.
 Informative sharp production/selection, independent comparison at that value,
 original smooth endpoint/all-form equality, every used bridge and final
-Phase-II delivery remain open. One outer delta review is pending.
+Phase-II delivery remain open. Its single outer delta review passes at 62e08ab.
+
+## Phase II Round 27: the CK trace-data construction remains unresolved
+
+No canonical declaration or public API is added. The sole private research
+probe in the [checkpoint](evidence/phase2-round-27-trace-data/checkpoint.json)
+derives actual potential partials, the complete six-entry square identity,
+the free trace's axis square, and a negative complete Hamiltonian for each
+amplitude in the stated rational-angular completion. The value occurs at
+the literal round warp/slope and actual polynomial probe derivatives.
+It does not assert negative original action or exclude other angular fields.
+
+The principal positive producer, including the joined field's global sign,
+an original compatible zero object and cap selection, is not delivered.
+The slack/polar-joining calculations and finite polynomial-family tests are
+labeled exploratory; they earn no global-comparison credit. The accepted
+strict lower and CK upper bounds are unchanged. This round is STALLED;
+all original sharp-value, endpoint and final-delivery obligations remain open.

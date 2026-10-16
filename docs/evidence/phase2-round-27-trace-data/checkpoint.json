@@ -1,0 +1,176 @@
+{
+  "round": 27,
+  "parent_revision": "62e08abf33c2dc3d9ba808c129648a46f3081ac0",
+  "phase1_status": "COMPLETE; preserved",
+  "phase2_status": "OPEN",
+  "mainline_progress_verdict": "STALLED",
+  "mainline_result": "CK trace and positive-axis/polar-joined extension did not produce complete global sign or a compatible original zero object; one polynomial alternative did not improve the accepted upper information",
+  "new_canonical_modules": 0,
+  "new_canonical_declarations": 0,
+  "accepted_bounds_unchanged": "1+sqrt(3/2)<C_rot<C_CK; neither sharp value nor endpoint determined",
+  "fresh_native_scope": "One private source with actual potential partials, full density completion, exact free-axis square and negative H for each epsilon at the actual round probe jet; kinds/linters, exact types and actual transitive axioms",
+  "private_named_source_declarations": 35,
+  "private_research_declarations_selected": 55,
+  "all_named_private_source_declarations_covered": true,
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declaration_linters": [
+    "unusedArguments",
+    "simpNF",
+    "synTaut"
+  ],
+  "defLemma_replacement": "Native declaration-kind inspection via getConstInfo and Meta.isProp",
+  "private_import_overlay": "Root-only unchanged canonical source/artifact links and isolated private outputs; no worker cache or canonical mutation",
+  "negative_scope": [
+    "Only the explicitly stated CK free-trace rational-angular family is rejected for every amplitude by the native diagnostic.",
+    "Actual K=2,x=1/4 has f=3/8,b=1 and the literal polynomial probe has r=1 and v=t; the potential partials are proved rather than supplied.",
+    "The full six-entry density and all curvature/lower-order terms are retained. Negative pointwise H is not negative integrated action or round-cap unsafety.",
+    "Joined characteristic/polar formulas, positive axis slack and all subsequent mixed-sign tests remain separately labeled research calculations; no native global/polar/weak-extension theorem is credited.",
+    "Finite polynomial blocks and floating sign-change roots are exploratory; no full-family positivity, root uniqueness, improved original upper witness or cap determination is asserted.",
+    "No general angular impossibility, original sharp zero producer, global comparison or original smooth endpoint theorem."
+  ],
+  "canonical_evidence": {
+    "action": "Reuse unchanged accepted Round26 canonical gate and outer delta review; no fresh canonical build or old private-proof replay",
+    "receipt_path": "docs/evidence/phase2-round-26-strict-pinching/receipt.json",
+    "receipt_sha256": "0db3f375f387a538709b078e4e7417e3bed98c3f0fe017fa28989de1479c3d26",
+    "unchanged_inputs": 365,
+    "unchanged_successful_outputs": 366,
+    "unchanged_modules": 360,
+    "fresh_root_build_or_full_suite_query": false
+  },
+  "source_advice_scope": "NO CHANGE on the frozen provisional worker original only; final Root native proof repairs separately recorded and source-bound, not attributed to advice or independent acceptance",
+  "source_advice": {
+    "recommendation": "NO CHANGE on the frozen worker original; Root native repairs are separate",
+    "frozen_input_manifest": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-advice-yh7xkbct/inputs.json",
+    "manifest_sha256": "5644e5e4394bf0bd6104de5e5bdd328f40e52c53590fdd29b317185fa534e1af",
+    "frozen_input_bindings": {
+      "FreeTraceChecks.lean": {
+        "source": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/FreeTraceChecks.lean",
+        "sha256": "7bd2dd6097f81ac61c1ebdb32aec64318f7795d6a9b2c9d8b0e1550f8fb9b858"
+      },
+      "contract.md": {
+        "source": "/home/ubuntu/projects/rfse/.humanize/rlcr/2026-10-12_19-57-48/round-27-contract.md",
+        "sha256": "85575e8635e7c8b6296483996a291e15bbcbd4ea950e6647dcb2f847b259b114"
+      },
+      "bitlesson.md": {
+        "source": "/home/ubuntu/projects/rfse/.humanize/bitlesson.md",
+        "sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855"
+      },
+      "attempts.md": {
+        "source": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/attempts.md",
+        "sha256": "ff76d81f68b57f2f6774fd70387ed280c694ad8c66282c809ca0b35bd3c4265a"
+      }
+    },
+    "report_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-advice-yh7xkbct/advice/report.md",
+    "report_sha256": "514740e41ad8a6fd15e0a00a70ee217fa449bbdc427afe6c9b6c8f5f769e0faf",
+    "patch_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-advice-yh7xkbct/advice/simplification.patch",
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native_evidence_or_acceptance": false,
+    "lease_released": true,
+    "Root_proof_repair_scope": "Expression/Pi/id normalization, exact sqrt evaluation, derivative conversions, explicit eventually filter membership and removal of redundant tactics; original mathematical statements retained (constant-function quantifier spelling is definitionally equal). Final bytes require Root native gates and the single outer delta review.",
+    "no_claim_that_final_repaired_source_matches_original_advice_bytes": true,
+    "final_Root_source_sha256": "42a1762dd90f972163fd6667e8781b25937278595cbf80b0e87cda9693bddc0e"
+  },
+  "worker_packet": {
+    "status": "PROVISIONAL source-only original, worker released; Root validation pending",
+    "source": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-trace-iba72cx_/FreeTraceChecks.lean",
+    "sha256": "7bd2dd6097f81ac61c1ebdb32aec64318f7795d6a9b2c9d8b0e1550f8fb9b858",
+    "handoff": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-trace-iba72cx_/HANDOFF.txt",
+    "handoff_sha256": "7b991c09e7820e32a43dcb2e9c1a79df0e4e565abdcd9ca661711ff525103bc6",
+    "input_bindings_sha256": "32c7aec9ee8b001b79fa08d2691fe87fc4a7c80494c4f4da4fbdd2de36446441"
+  },
+  "preservation": {
+    "phase1_status": "COMPLETE; preserved",
+    "phase2_status": "OPEN",
+    "parent_revision": "62e08abf33c2dc3d9ba808c129648a46f3081ac0",
+    "unchanged_canonical_modules": 360,
+    "canonical_source_changes": [],
+    "new_canonical_declarations": 0,
+    "unchanged_phase1_modules": 149,
+    "unchanged_phase1_workflow_files": 2325,
+    "paper_sha256": {
+      "paper/exponential_pair.tex": "ec96278228e25fce2869d4886567f453bd36222e6d4c524ee43606eb927b5627",
+      "paper/exponential_pair.pdf": "497c84c04ac387b4f3bb60569d7991f5c2e4c408b5778a81b4024aa35a1e3ace"
+    },
+    "both_tasks_unchanged": true,
+    "pins_sha256": {
+      "lakefile.toml": "fc931f32effa655371dcb9dcb2f80a0e14fb6eeb8cc9baeb2695ef21617af536",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "lake-manifest.json": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9"
+    },
+    "unchanged_prior_evidence_files": 13010,
+    "immutable_tracker_prefix_sha256": "3222e336ce7edb57d5cd4794bbc6c0c43ec833a595d69254214c98a8e6ded6e1",
+    "bitlesson_sha256": "48215551a10642e35fca9e2bcbb8dfa5fba713b266a62d43c5721903e1e83855",
+    "unchanged_pre_restart_round_files": 142,
+    "pre_restart_source_and_evidence_bindings": 9107,
+    "intentional_existing_file_deltas": [
+      "RicciFlowSharpEstimate.lean",
+      "docs/mathematical-status.md",
+      "docs/research/phase2-unrestricted.md",
+      "docs/theorem-map.md",
+      "docs/verification.md",
+      "scripts/check_native.py"
+    ],
+    "current_environment_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/current-environment.json",
+    "current_environment_sha256": "8aa311c1976e2523c0e658e40cdbaad7970d0f60c1cc5fc7b7ff338ed7329f3a",
+    "audit_source_path": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/audit_unchanged.py",
+    "audit_source_sha256": "3b8c85b8ee3f1c83259f82464bfdff27e8518c406a5db56d61aecedf2ae93411"
+  },
+  "attempt_record": {
+    "path": "docs/evidence/phase2-round-27-trace-data/attempts.md",
+    "sha256": "ff76d81f68b57f2f6774fd70387ed280c694ad8c66282c809ca0b35bd3c4265a"
+  },
+  "next_action": "Park the tested angular trace mechanism after the Round26\u201327 unsuccessful attempts; select a substantively different nonlocal full-action comparison target, retaining every original positive dependency and final gate",
+  "remaining_original_gates": [
+    "informative determining data and justified cap selection",
+    "independent original scalar/all-form safety at the characterized sharp value",
+    "tied original zero object with genuine derivative/domain/moment/box/mass and same-object recovery laws",
+    "derived global minimality, accepted cap expansion and sharp original smooth witnesses at the selected value",
+    "original smooth endpoint equality/attainment or nonattainment and same-metric all-form equality transfer",
+    "every used state-domain, angular/chart, zero-state, polar, interface, admissible-path and recovery bridge",
+    "separate PhaseII manuscript, final native/declaration/axiom gates, independent mathematical/manuscript review and private delivery"
+  ],
+  "independent_review": "One configured outer delta review pending; no extra acceptance reviewer launched",
+  "file_hashes": {
+    "docs/evidence/phase2-round-27-trace-data/FreeTraceChecks.lean": "42a1762dd90f972163fd6667e8781b25937278595cbf80b0e87cda9693bddc0e",
+    "docs/evidence/phase2-round-27-trace-data/FreeTraceChecks.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-27-trace-data/ResearchAxioms.lean": "5ca057b2d8dfda02ef7b284d04b43998e1006c61695b5d8a0760e4a8e94ec320",
+    "docs/evidence/phase2-round-27-trace-data/ResearchAxioms.txt": "8ddea83431de174c48cc404979ccd084a841a1dd584b30e3fad829bd40d171ba",
+    "docs/evidence/phase2-round-27-trace-data/ResearchLinters.lean": "9ffae99c3a8ace662453eb058462311e3c7e979751641e2da0e88476d3e798c6",
+    "docs/evidence/phase2-round-27-trace-data/ResearchLinters.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-27-trace-data/Root-proof-repairs.json": "90de197b4be148586a2a4c633377edf827c7ed20835ae6cebc575e27100b7365",
+    "docs/evidence/phase2-round-27-trace-data/actual-state-output.txt": "f0cf5af1b856f091cb3bb164f783535a55550080143dd1840b86d9b3d8a23245",
+    "docs/evidence/phase2-round-27-trace-data/actual_state_test.py": "6a707975d8a8a1222d2f48a454c432c650073e70620603cdd0172bf75f553080",
+    "docs/evidence/phase2-round-27-trace-data/advice-integration.json": "09970cf690ab25f271ee81e88ad779eb76c4f45c0a8392139dc8d73f54b1c4d6",
+    "docs/evidence/phase2-round-27-trace-data/attempt-status.json": "3f937ccfd179c471971bc3a671005b3ea7678465135a00e34f05b0601e97d5ae",
+    "docs/evidence/phase2-round-27-trace-data/attempts.md": "ff76d81f68b57f2f6774fd70387ed280c694ad8c66282c809ca0b35bd3c4265a",
+    "docs/evidence/phase2-round-27-trace-data/audit_unchanged.py": "3b8c85b8ee3f1c83259f82464bfdff27e8518c406a5db56d61aecedf2ae93411",
+    "docs/evidence/phase2-round-27-trace-data/bind_research.py": "32e5ee5b5c6d39a576eaea1a0a47425fb70ea2cbb72bb2fdda126b08cc718948",
+    "docs/evidence/phase2-round-27-trace-data/ck_angular_test.py": "84c08f489bd9d97c4191a6ec8e6cb9eb8c50163ae372dee401504e09666778c8",
+    "docs/evidence/phase2-round-27-trace-data/current-environment.json": "8aa311c1976e2523c0e658e40cdbaad7970d0f60c1cc5fc7b7ff338ed7329f3a",
+    "docs/evidence/phase2-round-27-trace-data/exploratory-command.json": "b6d9542bcd0f8261b75488cef12053e37d4d9d305704e685b53fb12ddd7bc25e",
+    "docs/evidence/phase2-round-27-trace-data/polynomial-output.txt": "aef2e0e6ff3a30284dce96cc884f50973737ecdb7cae32e14d2c0ba582a556cd",
+    "docs/evidence/phase2-round-27-trace-data/polynomial-results.json": "c728e40e7f9740c3a1d32109113bf67c7fa3d988fd28a95e0740fcec2a4a97b0",
+    "docs/evidence/phase2-round-27-trace-data/polynomial_driver.py": "57b16ad09c808ee33480947c98baf5b95f2d40fbbc48a0a3c240f9a21bceff92",
+    "docs/evidence/phase2-round-27-trace-data/polynomial_test.py": "6bb7c3152675b1c87c515b6370787f49cdee834ec6efcf817a72fb16d68016e2",
+    "docs/evidence/phase2-round-27-trace-data/preservation.json": "11c196e0df044144e7e18f0f513984128289c29982bfec50f9fe892f12ae4283",
+    "docs/evidence/phase2-round-27-trace-data/research-native.json": "a4833a7d2107c0c36756d99aa90af0e606562c9efec5d5d19923b59986ba4b7e",
+    "docs/evidence/phase2-round-27-trace-data/run_diagnostics.py": "4a6b7c635a26bde13c3c98ac8362d3324d2437fe87cb959ee9935049c1b2350c",
+    "docs/evidence/phase2-round-27-trace-data/run_module.py": "cd03822a919f659b68c5c75a80b90810932c96329f861d51f85d15c4218feb02",
+    "docs/evidence/phase2-round-27-trace-data/source-advice.md": "514740e41ad8a6fd15e0a00a70ee217fa449bbdc427afe6c9b6c8f5f769e0faf",
+    "docs/evidence/phase2-round-27-trace-data/source-advice.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/phase2-round-27-trace-data/trace-input-bindings.json": "32c7aec9ee8b001b79fa08d2691fe87fc4a7c80494c4f4da4fbdd2de36446441",
+    "docs/evidence/phase2-round-27-trace-data/verify_research.py": "80c80255077e14157de3d28a905e17f6c032b960a3807a146b9e49dfc0448c1d",
+    "docs/evidence/phase2-round-27-trace-data/worker-origin.json": "8cd3636e32b2e982ce287d46b02b5b2666c6f4d30978705d1ed4516a8ff7dd8c"
+  },
+  "document_hashes": {
+    "docs/mathematical-status.md": "7507f90d082517e6a11d05a11203ce6bd72a2b974fc1269122d9dc40c542495f",
+    "docs/theorem-map.md": "eb86743bad7c0c12e0939c570f332dd06ba1fca64849e7de0b11fc2d7ba3a383",
+    "docs/research/phase2-unrestricted.md": "f4335eb5a5aa04d27566be5cd70054bd5c3aa4202547f922759444f9127d8152",
+    "docs/verification.md": "c6a35cd63b0c49abe5a6c579a537511fdb24933ea743a3cbdf305f6edd9bd71d"
+  },
+  "no_local_authority_reference_workflow_bitlesson_or_accepted_paper_delivered": true
+}

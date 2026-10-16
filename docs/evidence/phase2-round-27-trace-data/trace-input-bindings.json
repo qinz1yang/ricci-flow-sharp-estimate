@@ -1,0 +1,42 @@
+{
+  "snapshot": "/tmp/hmz-fence-e3qlri4c/math-target-round21-review-1l420mm4/published",
+  "files": [
+    {
+      "path": "RicciFlowSharpEstimate/Geometry/AreaProfile.lean",
+      "sha256": "c3e8f04442cca286777927cab169734c7c14c6622580e12183770bcc416e702b",
+      "mode": "0o444"
+    },
+    {
+      "path": "RicciFlowSharpEstimate/Geometry/AreaAction.lean",
+      "sha256": "b628ed712f25a09a199f60f8f32e8bb8786825578db5e24aa75759ffd365c59c",
+      "mode": "0o444"
+    },
+    {
+      "path": "RicciFlowSharpEstimate/Geometry/AreaProfileCalculus.lean",
+      "sha256": "040e906268ead59f3a61df56cc113af6d2c31533b8a2e434c8a703ad9d9ac5ca",
+      "mode": "0o444"
+    },
+    {
+      "path": "RicciFlowSharpEstimate/Variational/Calibration.lean",
+      "sha256": "6b1fc4d1855e4feb7efc0695669899db68a8c29a737dc7fab33c8a401d26d38c",
+      "mode": "0o444"
+    },
+    {
+      "path": "RicciFlowSharpEstimate/Variational/ObstaclePrimitives.lean",
+      "sha256": "a29b64a8db408246797e3283f3cc2417b870b981502db1acb8f9d19fe99dcf1a",
+      "mode": "0o444"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "mode": "0o444"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "bda62da80d7595b35ad9b4a6001b1f533d0d9790915a81f9b5de4294f765d7e9",
+      "mode": "0o444"
+    }
+  ],
+  "worker_scratch": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-trace-iba72cx_",
+  "scope": "relevant fixed source bindings only; no unavailable historical full-manifest certification"
+}

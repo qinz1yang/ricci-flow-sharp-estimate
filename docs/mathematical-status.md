@@ -9,6 +9,20 @@ map](research/phase2-unrestricted.md) record the complete-action variation packe
 and the remaining global comparison, selection, recovery and endpoint gaps.
 The accepted phase-I TeX/PDF and historical evidence remain unchanged.
 
+Round 27's angular trace-data construction is **STALLED**. A CK free-arc
+trace produces both axis data and an exact constant-axis square. The private
+diagnostic shows that its specified rational-angular completion has negative
+complete Hamiltonian at an actual round interior probe jet, for every
+amplitude. This is neither negative integrated action nor a general angular
+impossibility theorem. A joined characteristic field with positive axis
+slack and the one polynomial-family upper-barrier alternative did not produce
+a global comparison or a compatible zero object. Those latter calculations
+remain exploratory. The [research checkpoint](evidence/phase2-round-27-trace-data/checkpoint.json)
+records the restricted scope; no canonical theorem or bound is added.
+The tested producer is parked unresolved, with a different construction
+mechanism required next. All original determining, endpoint and final gates
+remain open.
+
 Round 26 proves the strict bound **1+sqrt(3/2)<C_rot**. The complete
 warp calibration retains a positive multiple of the actual slope-weighted
 mass. Its passage through genuine strong recovery applies to every normalized
@@ -20,7 +34,7 @@ zero object at the unrestricted threshold then excludes that range for C_rot.
 The [checkpoint](evidence/phase2-round-26-strict-pinching/checkpoint.json)
 records this bounded advance. Sharp determination, a produced compatible
 global comparison/zero object, and original smooth endpoint classification
-remain open. One outer delta review is pending.
+remain open. Its single outer delta review passes at 62e08ab.
 
 Round 25's full quadratic-flux characteristic test is **STALLED** on the
 sharp producer. The new derivative-square coefficient is retained in the

@@ -1,0 +1,8 @@
+{
+  "status": "PROVISIONAL source-only original, worker released; Root validation pending",
+  "source": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-trace-iba72cx_/FreeTraceChecks.lean",
+  "sha256": "7bd2dd6097f81ac61c1ebdb32aec64318f7795d6a9b2c9d8b0e1550f8fb9b858",
+  "handoff": "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-trace-iba72cx_/HANDOFF.txt",
+  "handoff_sha256": "7b991c09e7820e32a43dcb2e9c1a79df0e4e565abdcd9ca661711ff525103bc6",
+  "input_bindings_sha256": "32c7aec9ee8b001b79fa08d2691fe87fc4a7c80494c4f4da4fbdd2de36446441"
+}

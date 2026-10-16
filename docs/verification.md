@@ -2535,5 +2535,33 @@ proof. Advice is not independent acceptance. Earlier development errors
 remain separate from the final native outputs. Unchanged accepted proof
 reviews and all prior evidence are reused. Both tasks, Phase-I paper and
 sources, pins, immutable tracker prefix, BitLesson and historical state are
-preserved. One configured outer delta review is pending; the full Phase-II
+preserved. Its single outer delta review passes at 62e08ab; the full Phase-II
 determining, sharp-safety, endpoint and delivery gates remain open.
+
+## Phase II Round 27: restricted trace-data diagnostic
+
+The [research checkpoint](evidence/phase2-round-27-trace-data/checkpoint.json)
+separates one private native proof from the joined-field and polynomial
+exploratory calculations. No canonical source, root aggregate or checker is
+changed. The accepted Round26 canonical inputs, outputs and review are reused;
+no fresh canonical build or old private-proof replay is claimed.
+
+The private diagnostic retains the complete density and actual potential
+partials, literal round primitives and true probe derivatives. Its negative
+Hamiltonian is specific to the displayed completion and implies no negative
+integrated action or cap unsafety. All three final private commands pass:
+source elaboration, the declaration gate and the exact type/axiom query.
+Source and linter outputs are empty. Native declaration kinds and all three
+unsuppressed declaration linters pass;55 private/generated declarations,
+including all35 named source declarations, have explicit types and actual
+transitive axiom rows using only permitted foundations. The unchanged
+options and real writer lock are retained. Development failures and
+source-only advice are kept separate from the final evidence. The configured
+outer delta review remains pending.
+
+The mainline verdict is STALLED: neither the principal global/equality
+producer nor the alternative's improved original upper-barrier witness is
+delivered. Both TASKs, Phase-I artifacts, canonical mathematics, prior
+evidence, pins, BitLesson, immutable tracker prefix and historical state are
+preserved. Every original Phase-II determining, safety, endpoint, bridge,
+manuscript and final acceptance gate stays open.

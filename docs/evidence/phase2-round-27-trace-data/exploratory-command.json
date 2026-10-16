@@ -1,0 +1,29 @@
+{
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/actual_state_test.py"
+      ],
+      "exit_code": 0,
+      "scope": "Exploratory calculations only; no theorem/refutation/global-cap inference",
+      "output": "actual-state-output.txt"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "/tmp/hmz-fence-rfse-route-_1tj3d8t/math-target-round27-root-15qj5eln/polynomial_driver.py"
+      ],
+      "exit_code": 0,
+      "output": "polynomial-output.txt"
+    }
+  ],
+  "source_hashes": {
+    "polynomial_test.py": "6bb7c3152675b1c87c515b6370787f49cdee834ec6efcf817a72fb16d68016e2",
+    "polynomial_driver.py": "57b16ad09c808ee33480947c98baf5b95f2d40fbbc48a0a3c240f9a21bceff92",
+    "ck_angular_test.py": "84c08f489bd9d97c4191a6ec8e6cb9eb8c50163ae372dee401504e09666778c8",
+    "actual_state_test.py": "6a707975d8a8a1222d2f48a454c432c650073e70620603cdd0172bf75f553080"
+  },
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "scope": "Exploratory diagnostics only; neither native theorem evidence nor general refutation or cap identification"
+}
